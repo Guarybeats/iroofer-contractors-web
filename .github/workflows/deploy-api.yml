@@ -1,0 +1,31 @@
+name: Deploy API to Google Cloud Run
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'api/**'
+      - '.github/workflows/deploy-api.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+      - uses: google-github-actions/deploy-cloudrun@v2
+        with:
+          service: iroofer-leads-api
+          region: us-east1
+          source: ./api
+          flags: --allow-unauthenticated
+        env:
+          ADMIN_USER: ${{ secrets.API_ADMIN_USER }}
+          ADMIN_PASS: ${{ secrets.API_ADMIN_PASS }}
+          ALLOWED_ORIGINS: ${{ secrets.API_ALLOWED_ORIGINS }}

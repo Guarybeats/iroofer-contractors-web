@@ -1,0 +1,102 @@
+from datetime import datetime, timezone
+import os
+import sqlite3
+import base64
+
+from fastapi import FastAPI, HTTPException, Depends, Request
+from fastapi.security import HTTPAuthorizationCredentials
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
+from pydantic import BaseModel, EmailStr, constr
+
+DB_PATH = os.getenv("LEADS_DB", "leads.db")
+ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "*").split(",")
+
+app = FastAPI(title="iRoofer Contractors — Lead API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=ALLOWED_ORIGINS,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+def init_db():
+    conn = sqlite3.connect(DB_PATH)
+    conn.execute(
+        """CREATE TABLE IF NOT EXISTS leads (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            full_name TEXT NOT NULL,
+            phone TEXT NOT NULL,
+            email TEXT,
+            address TEXT,
+            service TEXT,
+            how_soon TEXT,
+            message TEXT,
+            created_at TEXT NOT NULL
+        )"""
+    )
+    conn.commit()
+    conn.close()
+
+
+init_db()
+
+
+class LeadIn(BaseModel):
+    fullName: constr(strip_whitespace=True, min_length=1, max_length=120)
+    phone: constr(strip_whitespace=True, min_length=7, max_length=40)
+    email: EmailStr | None = None
+    address: constr(strip_whitespace=True, max_length=200) | None = None
+    service: constr(strip_whitespace=True, max_length=80) | None = None
+    howSoon: constr(strip_whitespace=True, max_length=80) | None = None
+    message: constr(strip_whitespace=True, max_length=2000) | None = None
+
+
+def check_admin(request: Request):
+    u = os.getenv("ADMIN_USER")
+    p = os.getenv("ADMIN_PASS")
+    if not u or not p:
+        raise HTTPException(503, "Admin auth not configured")
+    header = request.headers.get("Authorization", "")
+    if not header.startswith("Basic "):
+        raise HTTPException(401, "Invalid admin credentials")
+    try:
+        decoded = base64.b64decode(header[6:]).decode("utf-8")
+    except Exception:
+        raise HTTPException(401, "Invalid admin credentials")
+    if decoded != f"{u}:{p}":
+        raise HTTPException(401, "Invalid admin credentials")
+    return True
+
+
+@app.get("/api/health")
+def health():
+    return {"ok": True, "brand": "iRoofer Contractors"}
+
+
+@app.post("/api/leads")
+def create_lead(lead: LeadIn, request: Request):
+    now = datetime.now(timezone.utc).isoformat()
+    conn = sqlite3.connect(DB_PATH)
+    cur = conn.execute(
+        """INSERT INTO leads (full_name, phone, email, address, service, how_soon, message, created_at)
+           VALUES (?,?,?,?,?,?,?,?)""",
+        (lead.fullName, lead.phone, lead.email, lead.address, lead.service,
+         lead.howSoon, lead.message, now)
+    )
+    conn.commit()
+    lid = cur.lastrowid
+    conn.close()
+    return JSONResponse(status_code=201, content={"id": lid, "status": "received"})
+
+
+@app.get("/api/leads")
+def list_leads(_: bool = Depends(check_admin)):
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
+    rows = conn.execute("SELECT * FROM leads ORDER BY id DESC LIMIT 200").fetchall()
+    conn.close()
+    return {"leads": [dict(r) for r in rows]}
