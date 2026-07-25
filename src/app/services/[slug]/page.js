@@ -12,26 +12,29 @@ export default function ServiceDetail({ params }) {
   if (!service) notFound();
 
   return (
-    <section className="block">
-      <div className="container">
-        <Link href="/services" style={{ fontWeight: 600 }}>← All services</Link>
-        <div className="service-hero" style={{ marginTop: 18 }}>
-          <div>
-            <h1>{service.title}</h1>
-            <p style={{ color: 'var(--rust-600)', fontWeight: 700, marginTop: -8 }}>{service.tagline}</p>
-            <p style={{ color: 'var(--muted)', fontSize: '1.05rem' }}>{service.summary}</p>
-            <ul style={{ lineHeight: 2 }}>
+    <section className="sec-light sec-pad">
+      <div className="tex" aria-hidden="true" />
+      <div className="wrap" style={{ position: 'relative' }}>
+        <Link href="/services" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>← All services</Link>
+        <div className="faq-grid" style={{ marginTop: 18, alignItems: 'start' }}>
+          <div className="rv">
+            <span className="eyebrow dark">Roofing service</span>
+            <h2 style={{ fontSize: 'clamp(2.2rem,4.6vw,3.6rem)', fontWeight: 900 }}>{service.title}</h2>
+            <p style={{ color: 'var(--orange)', fontWeight: 800, marginTop: -8, textTransform: 'uppercase', letterSpacing: '.04em' }}>{service.tagline}</p>
+            <p style={{ color: '#52606b', fontSize: '1.05rem', marginTop: 8 }}>{service.summary}</p>
+            <ul style={{ lineHeight: 2, marginTop: 16, color: '#52606b' }}>
               {service.bullets.map((b) => <li key={b}>{b}</li>)}
             </ul>
-            <p style={{ marginTop: 12 }}>
-              <Link className="btn" href="/#quote">Get a free quote for {service.title}</Link>
+            <p style={{ marginTop: 18 }}>
+              <a className="btn btn-ink" href="/#contact">Get a free quote for {service.title} <span className="arr">→</span></a>
             </p>
           </div>
-          <img src={service.image} alt={service.title} />
-        </div>
-
-        <div style={{ maxWidth: 460, margin: '40px auto 0' }}>
-          <QuoteForm variant="detail" id={`quote-${service.slug}`} />
+          <div className="rv">
+            <img src={service.image} alt={service.title} style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)' }} />
+            <div style={{ maxWidth: 460, margin: '32px auto 0' }}>
+              <QuoteForm variant="detail" id={`quote-${service.slug}`} />
+            </div>
+          </div>
         </div>
       </div>
     </section>
