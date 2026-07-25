@@ -24,7 +24,7 @@ roofing with honest pricing, clean job sites, and work we're proud to put our na
 
 ## Trust signals to feature
 - A+ rating with the Better Business Bureau
-- 500+ 5-star reviews (4.7★ average)
+- 500+ 5-star reviews (5★ average)
 - Local & family-owned
 - Free, no-pressure roof quotes
 

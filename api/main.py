@@ -53,6 +53,7 @@ class LeadIn(BaseModel):
     service: constr(strip_whitespace=True, max_length=80) | None = None
     howSoon: constr(strip_whitespace=True, max_length=80) | None = None
     message: constr(strip_whitespace=True, max_length=2000) | None = None
+    source: constr(strip_whitespace=True, max_length=60) | None = None
 
 
 def check_admin(request: Request):

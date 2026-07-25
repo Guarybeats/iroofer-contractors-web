@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8100';
 
-export default function QuoteForm({ variant = 'top', id = 'quote' }) {
+export default function QuoteForm({ variant = 'top', id = 'quote', source = '' }) {
   const [status, setStatus] = useState('idle'); // idle | sending | ok | error
   const [msg, setMsg] = useState('');
 
@@ -18,7 +18,8 @@ export default function QuoteForm({ variant = 'top', id = 'quote' }) {
       address: fd.get('address') || '',
       service: fd.get('service') || '',
       howSoon: fd.get('howSoon') || '',
-      message: fd.get('message') || ''
+      message: fd.get('message') || '',
+      source: source || undefined
     };
     try {
       const res = await fetch(`${API_URL}/api/leads`, {
