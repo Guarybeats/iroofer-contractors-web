@@ -1,7 +1,6 @@
 import './globals.css';
 import { brand } from '@/lib/brand';
 import SiteScripts from '@/components/SiteScripts';
-import LeadChat from '@/components/LeadChat';
 
 export const metadata = {
   title: `${brand.name} — ${brand.tagline}`,
@@ -132,7 +131,6 @@ export default function RootLayout({ children }) {
         </button>
 
         <SiteScripts />
-        <LeadChat />
       </body>
     </html>
   );
