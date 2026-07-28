@@ -61,12 +61,25 @@ export default function RoofEstimator() {
         <div className="est-form">
           <div className="field">
             <label htmlFor="sqft">Roof size (square feet)</label>
-            <input
-              id="sqft" type="range" min="800" max="6000" step="100" value={sqft}
-              onChange={(e) => setSqft(Number(e.target.value))}
-              style={{ padding: 0 }}
-            />
-            <div className="est-sqft-val">{sqft.toLocaleString('en-US')} sq ft · {(squares).toFixed(1)} squares</div>
+            <div className="est-slider">
+              <input
+                id="sqft" type="range" min="800" max="6000" step="50" value={sqft}
+                onChange={(e) => setSqft(Number(e.target.value))}
+                style={{
+                  padding: 0,
+                  background: `linear-gradient(90deg, var(--orange) 0%, var(--orange) ${((sqft - 800) / (6000 - 800)) * 100}%, #d7dee0 ${((sqft - 800) / (6000 - 800)) * 100}%, #d7dee0 100%)`,
+                }}
+              />
+              <output className="est-bubble">{sqft.toLocaleString('en-US')} sq ft</output>
+            </div>
+            <div className="est-presets">
+              {[1500, 2000, 3500].map((v) => (
+                <button key={v} type="button" className={`est-preset${sqft === v ? ' active' : ''}`} onClick={() => setSqft(v)}>
+                  {v.toLocaleString('en-US')}
+                </button>
+              ))}
+            </div>
+            <div className="est-sqft-val">{(squares).toFixed(1)} squares · ~{(squares * 100).toLocaleString('en-US')} sq ft of roof</div>
           </div>
 
           <div className="field">
