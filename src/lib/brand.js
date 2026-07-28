@@ -81,14 +81,22 @@ export function getService(slug) {
 
 // Service-area cities for local SEO (Dallas, GA + surrounding Paulding/Cobb/Douglas counties)
 export const cities = [
-  { slug: 'dallas-ga', name: 'Dallas', state: 'GA', county: 'Paulding County', blurb: 'our home base — same-day roof inspections across Dallas and across the county line.' },
-  { slug: 'douglasville', name: 'Douglasville', state: 'GA', county: 'Douglas County', blurb: 'fast storm-response and full replacements for Douglasville homeowners.' },
-  { slug: 'hiram', name: 'Hiram', state: 'GA', county: 'Paulding County', blurb: 'roof repair and replacement crews working Hiram neighborhoods weekly.' },
-  { slug: 'powder-springs', name: 'Powder Springs', state: 'GA', county: 'Cobb County', blurb: 'architectural shingle replacements and storm claims help in Powder Springs.' },
-  { slug: 'marietta', name: 'Marietta', state: 'GA', county: 'Cobb County', blurb: 'insurance-backed roof rebuilds and new construction roofing in Marietta.' },
-  { slug: 'acworth', name: 'Acworth', state: 'GA', county: 'Cobb County', blurb: 'leak repair, ventilation upgrades and full tear-offs across Acworth.' },
-  { slug: 'kennesaw', name: 'Kennesaw', state: 'GA', county: 'Cobb County', blurb: 'local, family-owned roofing for Kennesaw homes and small businesses.' },
-  { slug: 'austell', name: 'Austell', state: 'GA', county: 'Cobb County', blurb: 'emergency tarping and honest estimates for Austell property owners.' },
+  { slug: 'dallas-ga', name: 'Dallas', state: 'GA', county: 'Paulding County', blurb: 'our home base — same-day roof inspections across Dallas and across the county line.',
+    localNote: 'As the town we call home, Dallas homeowners get priority scheduling and the crew chief on every job. From historic downtown to the new subdivisions off Hwy 92, we know the rooflines here.' },
+  { slug: 'douglasville', name: 'Douglasville', state: 'GA', county: 'Douglas County', blurb: 'fast storm-response and full replacements for Douglasville homeowners.',
+    localNote: 'Douglasville sees its share of spring straight-line winds off the ridge. We document hail and wind damage for your insurance claim and rebuild to manufacturer spec.' },
+  { slug: 'hiram', name: 'Hiram', state: 'GA', county: 'Paulding County', blurb: 'roof repair and replacement crews working Hiram neighborhoods weekly.',
+    localNote: 'Hiram families trust us for architectural shingle replacements that match the neighborhood and hold up to Georgia summers. Most jobs done in one to two days.' },
+  { slug: 'powder-springs', name: 'Powder Springs', state: 'GA', county: 'Cobb County', blurb: 'architectural shingle replacements and storm claims help in Powder Springs.',
+    localNote: 'In Powder Springs we handle everything from single-slope ranch reroofs to steep two-story tear-offs, plus ridge-vent and attic ventilation upgrades that cut cooling bills.' },
+  { slug: 'marietta', name: 'Marietta', state: 'GA', county: 'Cobb County', blurb: 'insurance-backed roof rebuilds and new construction roofing in Marietta.',
+    localNote: 'Marietta’s mix of historic homes and new builds means we tailor every scope — from gentle repairs on older roofs to full code-compliant installs on new construction.' },
+  { slug: 'acworth', name: 'Acworth', state: 'GA', county: 'Cobb County', blurb: 'leak repair, ventilation upgrades and full tear-offs across Acworth.',
+    localNote: 'Acworth lakefront and in-town homes alike call us for fast leak tracing and clean tear-offs — we protect your landscaping and run a daily magnet nail-sweep.' },
+  { slug: 'kennesaw', name: 'Kennesaw', state: 'GA', county: 'Cobb County', blurb: 'local, family-owned roofing for Kennesaw homes and small businesses.',
+    localNote: 'Kennesaw homeowners and small businesses rely on us for honest pricing and a real person on the phone — no call center, no surprise line items.' },
+  { slug: 'austell', name: 'Austell', state: 'GA', county: 'Cobb County', blurb: 'emergency tarping and honest estimates for Austell property owners.',
+    localNote: 'When a storm hits Austell we tarp the same day and meet your adjuster on-site, so your claim is documented before the next rain.' },
 ];
 
 export function getCity(slug) {

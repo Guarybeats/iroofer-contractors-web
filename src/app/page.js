@@ -83,12 +83,12 @@ export default function HomePage() {
       <div className="certs" aria-label="Credentials">
         <div className="track">
           <div className="set">
-            <div className="c">GAF Certified</div><div className="c">Owens Corning Preferred</div><div className="c">BBB A+ Accredited</div>
-            <div className="c">Licensed · Bonded · Insured</div><div className="c">GAF Installer</div><div className="c">5-Star Rated</div>
+            <div className="c">Owens Corning Preferred</div><div className="c">BBB A+ Accredited</div>
+            <div className="c">Licensed · Bonded · Insured</div><div className="c">Local & Family-Owned</div><div className="c">5-Star Rated</div>
           </div>
           <div className="set" aria-hidden="true">
-            <div className="c">GAF Certified</div><div className="c">Owens Corning Preferred</div><div className="c">BBB A+ Accredited</div>
-            <div className="c">Licensed · Bonded · Insured</div><div className="c">GAF Installer</div><div className="c">5-Star Rated</div>
+            <div className="c">Owens Corning Preferred</div><div className="c">BBB A+ Accredited</div>
+            <div className="c">Licensed · Bonded · Insured</div><div className="c">Local & Family-Owned</div><div className="c">5-Star Rated</div>
           </div>
         </div>
       </div>
