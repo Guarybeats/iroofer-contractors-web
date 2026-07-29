@@ -9,7 +9,7 @@ from fastapi import FastAPI, HTTPException, Depends, Request
 from fastapi.security import HTTPAuthorizationCredentials
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from pydantic import BaseModel, EmailStr, constr
+from pydantic import BaseModel, EmailStr, constr, ValidationError
 
 DB_PATH = os.getenv("LEADS_DB", "leads.db")
 ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "*").split(",")
@@ -93,8 +93,33 @@ def health():
 
 
 @app.post("/api/leads")
-def create_lead(lead: LeadIn, request: Request):
+async def create_lead(request: Request):
+    """Accept a lead submission as either JSON (recommended) or form-encoded data.
+
+    The frontend previously submitted a plain HTML form (application/x-www-form-urlencoded),
+    which FastAPI did not validate against the Pydantic model. To support both submission
+    styles we inspect the Content-Type and parse accordingly, then validate with LeadIn.
+    """
     now = datetime.now(timezone.utc).isoformat()
+
+    # Parse payload depending on Content-Type
+    content_type = request.headers.get("content-type", "")
+    try:
+        if "application/json" in content_type:
+            payload = await request.json()
+        else:
+            form = await request.form()
+            # form is a MultiDict-like; convert to plain dict (keep first value)
+            payload = {k: v for k, v in form.items()}
+
+        # Validate / coerce with Pydantic
+        lead = LeadIn(**payload)
+    except ValidationError as e:
+        # Return Pydantic validation errors (422)
+        return JSONResponse(status_code=422, content={"detail": e.errors()})
+    except Exception as e:
+        raise HTTPException(400, f"Invalid request payload: {e}")
+
     conn = sqlite3.connect(DB_PATH)
     cur = conn.execute(
         "INSERT INTO leads (full_name, phone, email, address, service, how_soon, message, source, created_at) "
