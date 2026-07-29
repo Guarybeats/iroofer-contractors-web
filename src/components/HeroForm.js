@@ -68,7 +68,7 @@ export default function HeroForm() {
           {errors.phone && <span className="field-error">{errors.phone}</span>}
         </div>
         <button className="btn btn-solid" type="submit" disabled={status === 'sending'}>
-          {status === 'sending' ? 'Sending…' : 'Get My Free Quote <span className="arr">→</span>'}
+          {status === 'sending' ? 'Sending…' : <>Get My Free Quote <span className="arr">→</span></>}
         </button>
         {status === 'ok' && <p style={{ color: 'var(--rust-600)', fontWeight: 600, marginTop: 12, fontSize: '.9rem' }}>{msg}</p>}
         {status === 'error' && <p style={{ color: '#b00', fontWeight: 600, marginTop: 12, fontSize: '.9rem' }}>{msg}</p>}
