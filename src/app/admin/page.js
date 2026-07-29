@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { brand } from '@/lib/brand';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8100';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://iroofer-lead-api-556154145006.us-central1.run.app';
 
 export default function AdminPage() {
   const [pass, setPass] = useState('');
