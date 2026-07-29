@@ -2,9 +2,7 @@
 
 import { useState, useCallback, useRef } from "react";
 
-const API_URL =
-  process.env.NEXT_PUBLIC_API_URL ||
-  "https://iroofer-lead-api-556154145006.us-central1.run.app";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "/api/leads/";
 
 const DEFAULT_SUCCESS_MSG =
   "Request received! A member of our local team will reach out shortly.";
@@ -66,11 +64,12 @@ function useLeadForm({
         service: fd.get("service")?.toString()?.trim() || undefined,
         howSoon: fd.get("howSoon")?.toString()?.trim() || undefined,
         message: fd.get("message")?.toString()?.trim() || undefined,
+        estimateInfo: fd.get("estimateInfo")?.toString()?.trim() || undefined,
         source,
       };
 
       try {
-        const res = await fetch(`${API_URL}/api/leads`, {
+        const res = await fetch(`${API_URL}`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload),

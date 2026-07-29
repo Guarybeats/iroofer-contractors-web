@@ -143,7 +143,20 @@ export default function RoofEstimator() {
       </div>
 
       <div className="est-book" id="book">
-        <QuoteForm variant="contact" id="quote-estimator" source="Online Estimator" />
+        <QuoteForm
+          variant="contact"
+          id="quote-estimator"
+          source="Online Estimator"
+          estimateData={{
+            size: `${sqft.toLocaleString('en-US')} sq ft (${squares.toFixed(1)} squares)`,
+            material: m.label,
+            pitch: p.label,
+            stories: `${stories} story${stories === '1' ? '' : 'ies'}`,
+            extras: Object.keys(EXTRAS).filter((k) => extras[k]).map((k) => EXTRAS[k].label).join(', ') || 'None',
+            range: `${fmt(low)} – ${fmt(high)}`,
+            breakdown: `Materials & labor: ${fmt(materialCost)}, Add-ons: ${fmt(extrasCost)}`,
+          }}
+        />
       </div>
     </div>
   );

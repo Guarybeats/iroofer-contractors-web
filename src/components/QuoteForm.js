@@ -3,7 +3,7 @@
 import { useCallback, useRef } from "react";
 import useLeadForm from "./useLeadForm";
 
-export default function QuoteForm({ id = "quote", source = "website", variant }) {
+export default function QuoteForm({ id = "quote", source = "website", variant, estimateData }) {
   const formRef = useRef(null);
   const formClass = variant === "contact" || variant === "detail" ? "cform" : "quote-card";
 
@@ -133,6 +133,9 @@ export default function QuoteForm({ id = "quote", source = "website", variant })
           placeholder="Tell us what you’re seeing…"
         />
       </div>
+      {estimateData && (
+        <input type="hidden" name="estimateInfo" value={JSON.stringify(estimateData)} />
+      )}
       {/* Honeypot — hidden from users, bots often fill it */}
       <input
         type="text"
