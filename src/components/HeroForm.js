@@ -1,77 +1,107 @@
-'use client';
-import { useState } from 'react';
+"use client";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://iroofer-lead-api-556154145006.us-central1.run.app';
+import { useCallback, useRef } from "react";
+import useLeadForm from "./useLeadForm";
 
-export default function HeroForm() {
-  const [status, setStatus] = useState('idle'); // idle | sending | ok | error
-  const [msg, setMsg] = useState('');
-  const [errors, setErrors] = useState({});
-
-  function validate(fd) {
+export default function HeroForm({ source = "hero" }) {
+  const formRef = useRef(null);
+  const validate = useCallback((fd) => {
     const errs = {};
-    if (!fd.get('fullName')?.trim()) errs.fullName = 'Please enter your name';
-    if (!fd.get('phone')?.trim()) errs.phone = 'Please enter your phone number';
+    const name = fd.get("fullName")?.toString()?.trim() || "";
+    const phone = fd.get("phone")?.toString()?.trim() || "";
+
+    if (!name) errs.fullName = "Please enter your name";
+    if (!phone) errs.phone = "Please enter your phone number";
+    else if (!/^[\d\s\-\(\)\+]{7,}$/.test(phone))
+      errs.phone = "Please enter a valid phone number";
+
     return errs;
-  }
+  }, []);
+
+  const { status, msg, errors, submit, clearError } = useLeadForm({
+    source,
+    validate,
+  });
 
   async function onSubmit(e) {
     e.preventDefault();
-    const fd = new FormData(e.currentTarget);
-    const errs = validate(fd);
-    if (Object.keys(errs).length) {
-      setErrors(errs);
-      return;
-    }
-    setErrors({});
-    setStatus('sending');
-    const payload = {
-      fullName: fd.get('fullName') || '',
-      phone: fd.get('phone') || '',
-      email: '',
-      address: '',
-      service: '',
-      howSoon: '',
-      message: '',
-      source: 'hero'
-    };
-    try {
-      const res = await fetch(`${API_URL}/api/leads`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-      if (!res.ok) throw new Error('Request failed');
-      setStatus('ok');
-      setMsg('Request received! A member of our local team will reach out shortly.');
-      e.currentTarget.reset();
-    } catch (err) {
-      setStatus('error');
-      setMsg('Something went wrong sending your request. Please call us directly — we’re local and happy to help.');
+    const ok = await submit(new FormData(e.currentTarget));
+    if (ok && formRef.current) {
+      formRef.current.reset();
     }
   }
 
   return (
-    <form className="hform" id="hform" onSubmit={onSubmit}>
+    <form ref={formRef} className="hform" id="hform" onSubmit={onSubmit}>
       <div className="bar" />
       <div className="pad">
         <h4>Free estimate in 60 seconds</h4>
         <p className="sub">No spam. A real roofer calls you back.</p>
         <div className="field">
           <label htmlFor="hn">Your name</label>
-          <input id="hn" name="fullName" type="text" required placeholder="Jane Doe" className={errors.fullName ? 'err' : ''} />
-          {errors.fullName && <span className="field-error">{errors.fullName}</span>}
+          <input
+            id="hn"
+            name="fullName"
+            type="text"
+            required
+            placeholder="Jane Doe"
+            className={errors.fullName ? "err" : ""}
+            onChange={() => clearError("fullName")}
+          />
+          {errors.fullName && (
+            <span className="field-error">{errors.fullName}</span>
+          )}
         </div>
         <div className="field">
           <label htmlFor="hp">Phone number</label>
-          <input id="hp" name="phone" type="tel" required placeholder="(470) 236-1410" className={errors.phone ? 'err' : ''} />
-          {errors.phone && <span className="field-error">{errors.phone}</span>}
+          <input
+            id="hp"
+            name="phone"
+            type="tel"
+            required
+            placeholder="(470) 236-1410"
+            className={errors.phone ? "err" : ""}
+            onChange={() => clearError("phone")}
+          />
+          {errors.phone && (
+            <span className="field-error">{errors.phone}</span>
+          )}
         </div>
-        <button className="btn btn-solid" type="submit" disabled={status === 'sending'}>
-          {status === 'sending' ? 'Sending…' : <>Get My Free Quote <span className="arr">→</span></>}
+        {/* Honeypot — hidden from users, bots often fill it */}
+        <input
+          type="text"
+          name="_honeypot"
+          tabIndex={-1}
+          autoComplete="off"
+          style={{
+            position: "absolute",
+            opacity: 0,
+            height: 0,
+            width: 0,
+            pointerEvents: "none",
+          }}
+          aria-hidden="true"
+        />
+        <button
+          className="btn btn-solid"
+          type="submit"
+          disabled={status === "sending"}
+        >
+          {status === "sending"
+            ? "Sending…"
+            : (
+                <>
+                  Get My Free Quote{" "}
+                  <span className="arr">→</span>
+                </>
+              )}
         </button>
-        {status === 'ok' && <p style={{ color: 'var(--rust-600)', fontWeight: 600, marginTop: 12, fontSize: '.9rem' }}>{msg}</p>}
-        {status === 'error' && <p style={{ color: '#b00', fontWeight: 600, marginTop: 12, fontSize: '.9rem' }}>{msg}</p>}
+        {status === "ok" && (
+          <p className="form-status-ok">{msg}</p>
+        )}
+        {status === "error" && (
+          <p className="form-status-error">{msg}</p>
+        )}
       </div>
     </form>
   );
