@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
+import HeroForm from '@/components/HeroForm';
 import LocalSeo from '@/components/LocalSeo';
 import { brand, services } from '@/lib/brand';
 
@@ -69,16 +70,7 @@ export default function HomePage() {
               <span className="star">★</span>
             </div>
 
-            <form className="hform" id="hform" action={`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8100'}/api/leads`} method="POST">
-              <div className="bar" />
-              <div className="pad">
-                <h4>Free estimate in 60 seconds</h4>
-                <p className="sub">No spam. A real roofer calls you back.</p>
-                <div className="field"><label htmlFor="hn">Your name</label><input id="hn" name="fullName" type="text" required placeholder="Jane Doe" /></div>
-                <div className="field"><label htmlFor="hp">Phone number</label><input id="hp" name="phone" type="tel" required placeholder={brand.phone} /></div>
-                <button className="btn btn-solid" type="submit">Get My Free Quote <span className="arr">→</span></button>
-              </div>
-            </form>
+            <HeroForm />
           </div>
         </div>
       </section>

@@ -1,16 +1,30 @@
 'use client';
 import { useState } from 'react';
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8100';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://iroofer-lead-api-556154145006.us-central1.run.app';
 
-export default function QuoteForm({ variant = 'top', id = 'quote', source = '' }) {
+export default function QuoteForm({ id = 'quote', source = 'website' }) {
   const [status, setStatus] = useState('idle'); // idle | sending | ok | error
   const [msg, setMsg] = useState('');
+  const [errors, setErrors] = useState({});
+
+  function validate(fd) {
+    const errs = {};
+    if (!fd.get('fullName')?.trim()) errs.fullName = 'Please enter your name';
+    if (!fd.get('phone')?.trim()) errs.phone = 'Please enter your phone number';
+    return errs;
+  }
 
   async function onSubmit(e) {
     e.preventDefault();
-    setStatus('sending');
     const fd = new FormData(e.currentTarget);
+    const errs = validate(fd);
+    if (Object.keys(errs).length) {
+      setErrors(errs);
+      return;
+    }
+    setErrors({});
+    setStatus('sending');
     const payload = {
       fullName: fd.get('fullName') || '',
       phone: fd.get('phone') || '',
@@ -19,7 +33,7 @@ export default function QuoteForm({ variant = 'top', id = 'quote', source = '' }
       service: fd.get('service') || '',
       howSoon: fd.get('howSoon') || '',
       message: fd.get('message') || '',
-      source: source || undefined
+      source: source
     };
     try {
       const res = await fetch(`${API_URL}/api/leads`, {
@@ -45,11 +59,13 @@ export default function QuoteForm({ variant = 'top', id = 'quote', source = '' }
       </p>
       <div className="field">
         <label htmlFor={`${id}-name`}>Full Name</label>
-        <input id={`${id}-name`} name="fullName" required placeholder="Jane Homeowner" />
+        <input id={`${id}-name`} name="fullName" required placeholder="Jane Homeowner" className={errors.fullName ? 'err' : ''} />
+        {errors.fullName && <span className="field-error">{errors.fullName}</span>}
       </div>
       <div className="field">
         <label htmlFor={`${id}-phone`}>Phone</label>
-        <input id={`${id}-phone`} name="phone" required type="tel" placeholder="(770) 555-0100" />
+        <input id={`${id}-phone`} name="phone" required type="tel" placeholder="(770) 555-0100" className={errors.phone ? 'err' : ''} />
+        {errors.phone && <span className="field-error">{errors.phone}</span>}
       </div>
       <div className="field">
         <label htmlFor={`${id}-email`}>Email</label>
