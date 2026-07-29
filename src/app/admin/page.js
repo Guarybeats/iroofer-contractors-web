@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { brand } from '@/lib/brand';
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://iroofer-lead-api-556154145006.us-central1.run.app';
@@ -8,19 +8,32 @@ export default function AdminPage() {
   const [pass, setPass] = useState('');
   const [leads, setLeads] = useState(null);
   const [err, setErr] = useState('');
+  const controllerRef = useRef(null);
 
   async function load(e) {
     e.preventDefault();
     setErr('');
+    if (controllerRef.current) {
+      controllerRef.current.abort();
+    }
+    const controller = new AbortController();
+    controllerRef.current = controller;
+
     try {
       const res = await fetch(`${API_URL}/api/leads`, {
-        headers: { Authorization: 'Basic ' + btoa(`admin:${pass}`) }
+        headers: { Authorization: 'Basic ' + btoa(unescape(encodeURIComponent(`admin:${pass}`))) },
+        signal: controller.signal,
       });
       if (!res.ok) throw new Error('Invalid password');
       const data = await res.json();
       setLeads(data.leads || []);
     } catch (e) {
+      if (e.name === 'AbortError') return;
       setErr('Could not load leads. Check the password and that the API is running.');
+    } finally {
+      if (controllerRef.current === controller) {
+        controllerRef.current = null;
+      }
     }
   }
 

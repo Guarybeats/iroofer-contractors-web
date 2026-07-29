@@ -338,6 +338,10 @@ section{position:relative}
 .cform textarea{resize:vertical;min-height:96px}
 .cform .note{font-size:.7rem;color:#7a858e;margin-top:.8rem;text-align:center}
 
+/* form status messages */
+.form-status-ok{color:var(--green);font-weight:600;margin-top:.75rem;font-size:.9rem}
+.form-status-error{color:#d83a3a;font-weight:600;margin-top:.75rem;font-size:.9rem}
+
 /* legacy quote-card (used by QuoteForm) */
 .quote-card{background:var(--chalk);color:var(--ink);border-radius:4px;padding:2rem;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
 .quote-card h3{font-size:1.5rem;color:var(--ink)}

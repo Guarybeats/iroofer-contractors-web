@@ -4,15 +4,30 @@ import sqlite3
 import base64
 import smtplib
 from email.message import EmailMessage
+from collections import defaultdict
+from time import time
+
+from typing import Optional
 
 from fastapi import FastAPI, HTTPException, Depends, Request
-from fastapi.security import HTTPAuthorizationCredentials
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, EmailStr, constr, ValidationError
 
 DB_PATH = os.getenv("LEADS_DB", "leads.db")
-ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "*").split(",")
+ALLOWED_ORIGINS = [
+    o.strip()
+    for o in os.getenv(
+        "ALLOWED_ORIGINS",
+        "http://localhost:3002,https://iroofer-contractors-web.pages.dev",
+    ).split(",")
+    if o.strip()
+]
+
+# Simple in-memory rate limiter: {ip: [timestamps]}
+RATE_LIMIT_WINDOW = 60  # seconds
+RATE_LIMIT_MAX = 5  # max submissions per window
+_rate_limit_store = defaultdict(list)
 
 # Email delivery -> iRoofer inbox
 SMTP_HOST = os.getenv("SMTP_HOST", "smtp.gmail.com")
@@ -62,12 +77,12 @@ init_db()
 class LeadIn(BaseModel):
     fullName: constr(strip_whitespace=True, min_length=1, max_length=120)
     phone: constr(strip_whitespace=True, min_length=7, max_length=40)
-    email: EmailStr | None = None
-    address: constr(strip_whitespace=True, max_length=200) | None = None
-    service: constr(strip_whitespace=True, max_length=80) | None = None
-    howSoon: constr(strip_whitespace=True, max_length=80) | None = None
-    message: constr(strip_whitespace=True, max_length=2000) | None = None
-    source: constr(strip_whitespace=True, max_length=60) | None = None
+    email: Optional[EmailStr] = None
+    address: Optional[constr(strip_whitespace=True, max_length=200)] = None
+    service: Optional[constr(strip_whitespace=True, max_length=80)] = None
+    howSoon: Optional[constr(strip_whitespace=True, max_length=80)] = None
+    message: Optional[constr(strip_whitespace=True, max_length=2000)] = None
+    source: Optional[constr(strip_whitespace=True, max_length=60)] = None
 
 
 def check_admin(request: Request):
@@ -102,6 +117,20 @@ async def create_lead(request: Request):
     """
     now = datetime.now(timezone.utc).isoformat()
 
+    # --- rate limiting ---
+    client_ip = request.client.host if request.client else "unknown"
+    window_start = time() - RATE_LIMIT_WINDOW
+    timestamps = _rate_limit_store[client_ip]
+    _rate_limit_store[client_ip] = [
+        t for t in timestamps if t > window_start
+    ]
+    if len(_rate_limit_store[client_ip]) >= RATE_LIMIT_MAX:
+        raise HTTPException(
+            status_code=429,
+            detail="Too many requests. Please try again later.",
+        )
+    _rate_limit_store[client_ip].append(time())
+
     # Parse payload depending on Content-Type
     content_type = request.headers.get("content-type", "")
     try:
@@ -112,13 +141,18 @@ async def create_lead(request: Request):
             # form is a MultiDict-like; convert to plain dict (keep first value)
             payload = {k: v for k, v in form.items()}
 
+        # --- honeypot check ---
+        if payload.get("_honeypot") or payload.get("website"):
+            # silently accept so bot doesn't know it was blocked
+            return JSONResponse(status_code=201, content={"id": None, "status": "received"})
+
         # Validate / coerce with Pydantic
         lead = LeadIn(**payload)
     except ValidationError as e:
         # Return Pydantic validation errors (422)
         return JSONResponse(status_code=422, content={"detail": e.errors()})
-    except Exception as e:
-        raise HTTPException(400, f"Invalid request payload: {e}")
+    except Exception:
+        raise HTTPException(400, "Invalid request payload")
 
     conn = sqlite3.connect(DB_PATH)
     cur = conn.execute(
