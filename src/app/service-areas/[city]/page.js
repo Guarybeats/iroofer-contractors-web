@@ -88,7 +88,10 @@ export default function CityPage({ params }) {
             </p>
           </div>
           <div className="rv">
-            <img src="/assets/hero.jpg" alt={`Roofing work in ${c.name}, ${c.state}`} loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
+            <picture>
+              <source srcSet="/assets/hero.webp" type="image/webp" />
+              <img src="/assets/hero.jpg" alt={`Roofing work in ${c.name}, ${c.state}`} loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
+            </picture>
             <div style={{ maxWidth: 460, margin: '32px auto 0' }}>
               <QuoteForm variant="detail" id={`quote-${c.slug}`} source={`Service Area: ${c.name}`} />
             </div>

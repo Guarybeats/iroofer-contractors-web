@@ -23,7 +23,10 @@ export default function ServicesPage() {
         <div className="cards">
           {services.map((s) => (
             <Link className="card" key={s.slug} href={`/services/${s.slug}`} style={{ color: 'inherit' }}>
-              <img src={s.image} alt={s.title} loading="lazy" />
+              <picture>
+                <source srcSet={s.webp} type="image/webp" />
+                <img src={s.image} alt={s.title} loading="lazy" />
+              </picture>
               <div className="body">
                 <h3>{s.title}</h3>
                 <p>{s.summary}</p>

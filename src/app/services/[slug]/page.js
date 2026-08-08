@@ -30,7 +30,10 @@ export default function ServiceDetail({ params }) {
             </p>
           </div>
           <div className="rv">
-            <img src={service.image} alt={service.title} loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
+            <picture>
+              <source srcSet={service.webp} type="image/webp" />
+              <img src={service.image} alt={service.title} loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
+            </picture>
             <div style={{ maxWidth: 460, margin: '32px auto 0' }}>
               <QuoteForm variant="detail" id={`quote-${service.slug}`} />
             </div>

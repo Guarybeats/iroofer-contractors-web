@@ -5,13 +5,17 @@ import LocalSeo from '@/components/LocalSeo';
 import { brand, services } from '@/lib/brand';
 
 const svcs = [
-  { n: '01', title: 'Roof Repair', tag: 'Same week', img: '/assets/service-repair.jpg',
+  { n: '01', title: 'Roof Repair', tag: 'Same week', img: '/assets/service-repair.webp',
+    imgJpg: '/assets/service-repair.jpg',
     body: 'Water stains, lifted flashing, cracked boots and mystery leaks. We trace the source — not just the symptom — then patch, re-seal and color-match so the fix disappears into your roofline.' },
-  { n: '02', title: 'Roof Replacement', tag: 'Most popular', img: '/assets/service-replacement.jpg',
+  { n: '02', title: 'Roof Replacement', tag: 'Most popular', img: '/assets/service-replacement.webp',
+    imgJpg: '/assets/service-replacement.jpg',
     body: 'Full tear-off to the deck, ice & water shield, synthetic underlayment and architectural shingles installed to manufacturer spec. Includes ridge venting, drip edge and a magnet-sweep cleanup of every nail.' },
-  { n: '03', title: 'New Construction', tag: 'Builders', img: '/assets/service-newconstruction.jpg',
+  { n: '03', title: 'New Construction', tag: 'Builders', img: '/assets/service-newconstruction.webp',
+    imgJpg: '/assets/service-newconstruction.jpg',
     body: 'We partner with builders and homeowners on new builds to install a roof that matches the design and the budget — code-compliant, inspected, and built to last.' },
-  { n: '04', title: 'Storm & Insurance Claims', tag: '24/7 response', img: '/assets/service-repair.jpg',
+  { n: '04', title: 'Storm & Insurance Claims', tag: '24/7 response', img: '/assets/service-repair.webp',
+    imgJpg: '/assets/service-repair.jpg',
     body: 'Hail and wind damage documented with photos and a written scope. We meet your adjuster on-site, supplement the claim when needed, and guide you through the paperwork so you are not fronting the cost.' },
 ];
 
@@ -62,7 +66,10 @@ export default function HomePage() {
 
           <div className="hero-media">
             <div className="frame" aria-hidden="true"></div>
-            <img className="main" src="/assets/hero.jpg" alt="iRoofer crew installing shingles on a Georgia home" />
+            <picture>
+              <source srcSet="/assets/hero.webp" type="image/webp" />
+              <img className="main" src="/assets/hero.jpg" alt="iRoofer crew installing shingles on a Georgia home" loading="eager" />
+            </picture>
             <div className="badge" aria-hidden="true">
               <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs>
                 <text fill="#f3f5f4" fontFamily="Public Sans" fontSize="11.5" fontWeight="700" letterSpacing="2.4"><textPath href="#circ">FREE INSPECTIONS • STORM RESPONSE • </textPath></text>
@@ -113,7 +120,10 @@ export default function HomePage() {
                       <p>{s.body}</p>
                       <Link className="svc-link" href="/#contact">Get an estimate →</Link>
                     </div>
-                    <img loading="lazy" src={s.img} alt={s.title} />
+                    <picture>
+                      <source srcSet={s.img} type="image/webp" />
+                      <img loading="lazy" src={s.imgJpg} alt={s.title} />
+                    </picture>
                   </div></div></div>
                 </article>
               ))}
@@ -157,8 +167,14 @@ export default function HomePage() {
 
           <div className="ba-wrap">
             <div className="ba rv" id="ba" style={{ '--pos': '52%' }}>
-              <img className="before" src="/assets/service-repair.jpg" alt="Roof before: storm damage" loading="lazy" />
-              <img className="after" src="/assets/service-replacement.jpg" alt="Roof after: full replacement" loading="lazy" />
+              <picture>
+                <source srcSet="/assets/service-repair.webp" type="image/webp" />
+                <img className="before" src="/assets/service-repair.jpg" alt="Roof before: storm damage" loading="lazy" />
+              </picture>
+              <picture>
+                <source srcSet="/assets/service-replacement.webp" type="image/webp" />
+                <img className="after" src="/assets/service-replacement.jpg" alt="Roof after: full replacement" loading="lazy" />
+              </picture>
               <span className="tag t-before">Before — storm damage</span>
               <span className="tag t-after">After — full replacement</span>
               <div className="handle" aria-hidden="true"><span className="grip">◂</span></div>
@@ -168,11 +184,17 @@ export default function HomePage() {
 
             <div className="gallery rv">
               <div className="gcard">
-                <img loading="lazy" src="/assets/service-newconstruction.jpg" alt="New construction roof" />
+                <picture>
+                  <source srcSet="/assets/service-newconstruction.webp" type="image/webp" />
+                  <img loading="lazy" src="/assets/service-newconstruction.jpg" alt="New construction roof" />
+                </picture>
                 <div className="cap"><span>Paulding County</span><b>New construction</b></div>
               </div>
               <div className="gcard">
-                <img loading="lazy" src="/assets/hero.jpg" alt="Aerial view of finished roofs" />
+                <picture>
+                  <source srcSet="/assets/hero.webp" type="image/webp" />
+                  <img loading="lazy" src="/assets/hero.jpg" alt="Aerial view of finished roofs" />
+                </picture>
                 <div className="cap"><span>Subdivision · 14 homes</span><b>Storm rebuild</b></div>
               </div>
             </div>

@@ -75,6 +75,7 @@ export default function RootLayout({ children }) {
             <nav className="menu" aria-label="Primary">
               <a className="lnk" href="/#services">Services</a>
               <a className="lnk" href="/service-areas">Service Areas</a>
+              <a className="lnk" href="/blog">Blog</a>
               <a className="lnk" href="/estimator">Instant Quote</a>
               <a className="lnk" href="/emergency-roof-repair-dallas-ga">Emergency</a>
               <a className="lnk" href="/storm-damage-roof-repair-dallas-ga">Storm Damage</a>
@@ -97,6 +98,7 @@ export default function RootLayout({ children }) {
         {/* MOBILE NAV */}
         <nav className="mnav" id="mnav" aria-label="Mobile">
           <a href="/#services">Services</a>
+          <a href="/blog">Blog</a>
           <a href="/estimator">Instant Quote</a>
           <a href="/emergency-roof-repair-dallas-ga">Emergency</a>
           <a href="/storm-damage-roof-repair-dallas-ga">Storm Damage</a>
@@ -129,6 +131,7 @@ export default function RootLayout({ children }) {
                 <a href="/services/roof-repair">Roof Repair</a>
                 <a href="/services/roof-replacement">Roof Replacement</a>
                 <a href="/services/new-construction">New Construction</a>
+                <a href="/blog">Blog</a>
                 <a href="/emergency-roof-repair-dallas-ga">Emergency Roof Repair</a>
                 <a href="/storm-damage-roof-repair-dallas-ga">Storm &amp; Insurance</a>
                 <a href="/#faq">FAQ</a>

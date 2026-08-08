@@ -115,17 +115,20 @@ export default function StormDamagePage() {
             </div>
 
             <div className="rv">
-              <img
-                src="/assets/storm-damage.jpg"
-                alt="Storm-damaged asphalt shingle roof after a Georgia hail storm"
-                loading="lazy"
-                style={{
-                  borderRadius: 8,
-                  border: '1px solid rgba(22,29,37,.1)',
-                  width: '100%',
-                  marginBottom: 24,
-                }}
-              />
+              <picture>
+                <source srcSet="/assets/storm-damage.webp" type="image/webp" />
+                <img
+                  src="/assets/storm-damage.jpg"
+                  alt="Storm-damaged asphalt shingle roof after a Georgia hail storm"
+                  loading="lazy"
+                  style={{
+                    borderRadius: 8,
+                    border: '1px solid rgba(22,29,37,.1)',
+                    width: '100%',
+                    marginBottom: 24,
+                  }}
+                />
+              </picture>
               <div style={{ maxWidth: 460, margin: 0 }}>
                 <QuoteForm variant="emergency" id="storm-quote" source="Storm Damage Page" />
               </div>

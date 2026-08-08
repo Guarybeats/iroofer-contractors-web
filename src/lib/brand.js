@@ -35,6 +35,7 @@ export const services = [
     title: 'Roof Repair',
     tagline: 'Stop the leak before it spreads.',
     image: '/assets/service-repair.jpg',
+    webp: '/assets/service-repair.webp',
     summary:
       'From storm damage to worn flashing, we find the source and fix it right — so a small problem stays small.',
     bullets: [
@@ -49,6 +50,7 @@ export const services = [
     title: 'Roof Replacement',
     tagline: 'A new roof that lasts decades.',
     image: '/assets/service-replacement.jpg',
+    webp: '/assets/service-replacement.webp',
     summary:
       'Full tear-off and replacement with architectural asphalt shingles, installed clean and built to last.',
     bullets: [
@@ -63,6 +65,7 @@ export const services = [
     title: 'New Construction',
     tagline: 'Roofing done right from frame-up.',
     image: '/assets/service-newconstruction.jpg',
+    webp: '/assets/service-newconstruction.webp',
     summary:
       'We partner with builders and homeowners on new builds to install a roof that matches the design and the budget.',
     bullets: [

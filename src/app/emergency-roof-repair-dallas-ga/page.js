@@ -115,17 +115,20 @@ export default function EmergencyPage() {
             </div>
 
             <div className="rv">
-              <img
-                src="/assets/emergency-tarp.jpg"
-                alt="Roofing crew installing a blue emergency tarp on a storm-damaged roof"
-                loading="lazy"
-                style={{
-                  borderRadius: 8,
-                  border: '1px solid rgba(22,29,37,.1)',
-                  width: '100%',
-                  marginBottom: 24,
-                }}
-              />
+              <picture>
+                <source srcSet="/assets/emergency-tarp.webp" type="image/webp" />
+                <img
+                  src="/assets/emergency-tarp.jpg"
+                  alt="Roofing crew installing a blue emergency tarp on a storm-damaged roof"
+                  loading="lazy"
+                  style={{
+                    borderRadius: 8,
+                    border: '1px solid rgba(22,29,37,.1)',
+                    width: '100%',
+                    marginBottom: 24,
+                  }}
+                />
+              </picture>
               <div style={{ maxWidth: 460, margin: 0 }}>
                 <QuoteForm variant="emergency" id="emergency-quote" source="Emergency Page" />
               </div>
