@@ -3,14 +3,44 @@ import { brand } from '@/lib/brand';
 import SiteScripts from '@/components/SiteScripts';
 
 export const metadata = {
-  title: `${brand.name} — ${brand.tagline}`,
+  title: {
+    default: `${brand.name} — ${brand.tagline}`,
+    template: `%s | ${brand.name}`,
+  },
   description: brand.pitch,
+  robots: { index: true, follow: true },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: brand.url,
+    siteName: brand.name,
+    title: `${brand.name} — ${brand.tagline}`,
+    description: brand.pitch,
+    images: [
+      {
+        url: `${brand.url}/assets/logo.png`,
+        width: 337,
+        height: 200,
+        alt: brand.name,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${brand.name} — ${brand.tagline}`,
+    description: brand.pitch,
+    images: [`${brand.url}/assets/logo.png`],
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <link rel="canonical" href={brand.url} />
+        <meta name="theme-color" content="#161d25" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="32x32" />
+        <link rel="icon" href="/assets/logo.png" type="image/png" sizes="337x200" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
