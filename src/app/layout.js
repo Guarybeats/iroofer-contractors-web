@@ -67,6 +67,7 @@ export default function RootLayout({ children }) {
         {/* MOBILE NAV */}
         <nav className="mnav" id="mnav" aria-label="Mobile">
           <a href="/#services">Services</a>
+          <a href="/estimator">Instant Quote</a>
           <a href="/emergency-roof-repair-dallas-ga">Emergency</a>
           <a href="/storm-damage-roof-repair-dallas-ga">Storm Damage</a>
           <a href="/#work">Our Work</a>
