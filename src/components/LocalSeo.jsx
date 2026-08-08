@@ -6,7 +6,7 @@ export const GBP_URL = 'https://g.page/iroofer-contractors';
 
 // Drop in your real street address to unlock LocalBusiness + geo ranking signals.
 // Dallas, GA has no street number confirmed — leave empty to omit PostalAddress.
-export const STREET_ADDRESS = ''; // e.g. '152 Freedom Dr'
+export const STREET_ADDRESS = '152 Freedom Dr';
 
 // Build the JSON-LD schema graph. Pure function so it can render in <head>.
 export function buildSeoGraph() {
@@ -44,7 +44,7 @@ export function buildSeoGraph() {
           streetAddress: STREET_ADDRESS,
           addressLocality: 'Dallas',
           addressRegion: 'GA',
-          postalCode: '30132',
+          postalCode: '30157',
           addressCountry: 'US',
         }
       : {
