@@ -1,22 +1,27 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
 import LocalSeo from '@/components/LocalSeo';
-import { brand } from '@/lib/brand';
+import { brand, services } from '@/lib/brand';
+import { notFound } from 'next/navigation';
 
 export const metadata = {
-  title: '24/7 Emergency Roof Repair Dallas, GA | Iroofer Contractors',
+  title: 'New Construction Roofing — iRoofer Contractors Dallas, GA',
   description:
-    'Storm-damaged roof in Dallas, GA? Our crew is on call 24/7 for emergency roof repair, tarping, and insurance claim support. Same-day response, free inspection. Call now.',
+    'Building a new home in North Georgia? iRoofer Contractors handles complete new-construction roofing — design-matched shingles, code-compliant installation, builder coordination. Free consultation.',
 };
 
+const service = services.find((s) => s.slug === 'new-construction') || null;
+
 const steps = [
-  'Do NOT climb onto a damaged roof — storm damage is often invisible from the ground.',
-  'Snap ground-level photos of debris, dented gutters, and any interior water stains.',
-  'Call us for a free damage inspection and a temporary tarp if you are actively leaking.',
-  'We document the damage, write the scope, and meet your insurance adjuster — you only sign off before a single shingle moves.',
+  'Review plans and select shingles that match your home design and budget — we recommend options that handle Georgia weather.',
+  'Coordinate delivery of materials and schedule installation around your builder’s timeline so you don’t hold up the project.',
+  'Install synthetic underlayment, ice & water shield, drip edge, and architectural shingles to manufacturer spec — we pass final inspection.',
+  'Walk the roof with the builder and us, register the manufacturer warranty, and do a magnetic nail sweep of the entire property.',
 ];
 
-export default function EmergencyPage() {
+export default function NewConstructionPage() {
+  if (!service) notFound();
+
   return (
     <>
       <LocalSeo />
@@ -38,7 +43,7 @@ export default function EmergencyPage() {
                 ← All services
               </Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>
-                24/7 emergency
+                New construction
               </span>
               <h1
                 style={{
@@ -48,13 +53,13 @@ export default function EmergencyPage() {
                   marginTop: 8,
                 }}
               >
-                Emergency Roof Repair in Dallas, GA
+                New Construction Roof Installation in Dallas, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
-                A roof failure never waits for business hours. Whether a storm just dropped a tree or
-                a leak started after last night's rain, we respond within 24 hours — often much
-                faster. We tarp, document, and file your insurance claim so you aren't footing the
-                bill upfront.
+                Building a new home in North Georgia means every trade needs to run on schedule.
+                We work directly with you, your builder, and the inspector to install a roof that
+                matches your design vision, meets every code requirement, and ships on time — so
+                your build doesn’t stall waiting on the weather.
               </p>
 
               <div className="cta" style={{ marginTop: 28 }}>
@@ -70,12 +75,12 @@ export default function EmergencyPage() {
                   href="/#contact"
                   style={{ marginLeft: 16, verticalAlign: 'middle' }}
                 >
-                  Request emergency tarp <span className="arr">→</span>
+                  Request a consultation <span className="arr">→</span>
                 </Link>
               </div>
 
               <h4 style={{ marginTop: 40, fontSize: '1.1rem' }}>
-                After a storm — do this now
+                Builder checklist — what you need before we start
               </h4>
               <ol style={{ marginTop: 12, lineHeight: 1.7, color: '#52606b' }}>
                 {steps.map((step) => (
@@ -116,8 +121,8 @@ export default function EmergencyPage() {
 
             <div className="rv">
               <img
-                src="/assets/emergency-tarp.jpg"
-                alt="Roofing crew installing a blue emergency tarp on a storm-damaged roof"
+                src={service.image}
+                alt="New construction roof installation in progress — crew installing architectural shingles on a custom home in Dallas, GA"
                 loading="lazy"
                 style={{
                   borderRadius: 8,
@@ -127,7 +132,7 @@ export default function EmergencyPage() {
                 }}
               />
               <div style={{ maxWidth: 460, margin: 0 }}>
-                <QuoteForm variant="emergency" id="emergency-quote" source="Emergency Page" />
+                <QuoteForm variant="emergency" id="new-construction-quote" source="New Construction Page" />
               </div>
             </div>
           </div>

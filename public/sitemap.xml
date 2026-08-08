@@ -24,7 +24,9 @@
 <url><loc>https://iroofercontractors.com/service-areas/kennesaw</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 <url><loc>https://iroofercontractors.com/service-areas/austell</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
-<url><loc>https://iroofercontractors.com/sitemap.xml</loc></url>
 <url><loc>https://iroofercontractors.com/blog/georgia-hail-storm-roof-checklist</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-<url><loc>https://iroofercontractors.com/#contact</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
+<url><loc>https://iroofercontractors.com/services</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://iroofercontractors.com/service-areas</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://iroofercontractors.com/about</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
 </urlset>
