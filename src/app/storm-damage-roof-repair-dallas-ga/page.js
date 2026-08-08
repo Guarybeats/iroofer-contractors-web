@@ -4,19 +4,19 @@ import LocalSeo from '@/components/LocalSeo';
 import { brand } from '@/lib/brand';
 
 export const metadata = {
-  title: '24/7 Emergency Roof Repair Dallas, GA | Iroofer Contractors',
+  title: 'Storm Damage Roof Repair Dallas, GA | iRoofer Contractors',
   description:
-    'Storm-damaged roof in Dallas, GA? Our crew is on call 24/7 for emergency roof repair, tarping, and insurance claim support. Same-day response, free inspection. Call now.',
+    'Hail, wind, or tree damage from a Georgia storm? We inspect, document, and handle your insurance claim for a full roof restoration. Free assessment, 24-hour response for emergencies.',
 };
 
 const steps = [
-  'Do NOT climb onto a damaged roof — storm damage is often invisible from the ground.',
-  'Snap ground-level photos of debris, dented gutters, and any interior water stains.',
-  'Call us for a free damage inspection and a temporary tarp if you are actively leaking.',
-  'We document the damage, write the scope, and meet your insurance adjuster — you only sign off before a single shingle moves.',
+  'Stay inside and keep away from windows — storm-damaged roofs can be unstable.',
+  'Take ground-level photos: dented gutters, granules in drains, missing shingles, and any interior leaks or water stains.',
+  'Call us for a free storm-damage inspection — we’ll document everything and tell you if a claim is worth filing.',
+  'We meet your insurance adjuster on-site, write the full scope, and handle supplements so you’re not chasing paperwork.',
 ];
 
-export default function EmergencyPage() {
+export default function StormDamagePage() {
   return (
     <>
       <LocalSeo />
@@ -38,7 +38,7 @@ export default function EmergencyPage() {
                 ← All services
               </Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>
-                24/7 emergency
+                Storm damage
               </span>
               <h1
                 style={{
@@ -48,13 +48,13 @@ export default function EmergencyPage() {
                   marginTop: 8,
                 }}
               >
-                Emergency Roof Repair in Dallas, GA
+                Storm Damage Roof Repair in Dallas, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
-                A roof failure never waits for business hours. Whether a storm just dropped a tree or
-                a leak started after last night's rain, we respond within 24 hours — often much
-                faster. We tarp, document, and file your insurance claim so you aren't footing the
-                bill upfront.
+                North Georgia weather can turn on a roof fast — hail the size of golf balls, 70-mph
+                wind gusts, or a falling oak limb. When the sky clears, the last thing you want is
+                a hidden leak or a failed insurance claim. We inspect, document, and restore your
+                roof so you can close with confidence.
               </p>
 
               <div className="cta" style={{ marginTop: 28 }}>
@@ -70,7 +70,7 @@ export default function EmergencyPage() {
                   href="/#contact"
                   style={{ marginLeft: 16, verticalAlign: 'middle' }}
                 >
-                  Request emergency tarp <span className="arr">→</span>
+                  Request tarp <span className="arr">→</span>
                 </Link>
               </div>
 
@@ -116,8 +116,8 @@ export default function EmergencyPage() {
 
             <div className="rv">
               <img
-                src="/assets/emergency-tarp.jpg"
-                alt="Roofing crew installing a blue emergency tarp on a storm-damaged roof"
+                src="/assets/storm-damage.jpg"
+                alt="Storm-damaged asphalt shingle roof after a Georgia hail storm"
                 style={{
                   borderRadius: 8,
                   border: '1px solid rgba(22,29,37,.1)',
@@ -126,7 +126,7 @@ export default function EmergencyPage() {
                 }}
               />
               <div style={{ maxWidth: 460, margin: 0 }}>
-                <QuoteForm variant="emergency" id="emergency-quote" source="Emergency Page" />
+                <QuoteForm variant="emergency" id="storm-quote" source="Storm Damage Page" />
               </div>
             </div>
           </div>
