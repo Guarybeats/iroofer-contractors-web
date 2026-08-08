@@ -431,6 +431,33 @@ footer{background:var(--ink3);color:#9aa6b0;padding:4.5rem 0 2rem;border-top:1px
   .storm{clip-path:polygon(0 3vw,100% 0,100% 100%,0 100%);padding-top:7rem}
   .cards{grid-template-columns:1fr}
 }
+
+@media (max-width:600px){
+  .hero h1{font-size:clamp(2rem,7vw,2.6rem)}
+  .hero p.lead{font-size:.95rem}
+  .hero-cta{flex-direction:column;gap:.6rem}
+  .stats{gap:1.2rem}
+  .stat .num{font-size:1.6rem}
+  .storm{padding-top:6rem;padding-bottom:4rem}
+  .storm h2{font-size:clamp(1.8rem,6vw,2.8rem)}
+  .est-grid{grid-template-columns:1fr}
+  .est-form{padding:1.2rem}
+  .est-price{font-size:1.5rem}
+  .est-checks{grid-template-columns:1fr}
+  .ba{display:none}
+  .gallery{grid-template-columns:1fr}
+  .svc-head{font-size:.9rem}
+  .hform{width:100%}
+}
+
+@media (max-width:480px){
+  .hero{padding:4rem 0 2rem}
+  .sec-pad{padding:3.4rem 0}
+  .hero h1{font-size:clamp(1.8rem,8vw,2.2rem)}
+  .stat .num{font-size:1.4rem}
+  .sec-head h2{font-size:clamp(1.8rem,6vw,2.6rem)}
+  .storm h2{font-size:clamp(1.8rem,7vw,2.4rem)}
+}
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
   .rv{opacity:1;transform:none}
