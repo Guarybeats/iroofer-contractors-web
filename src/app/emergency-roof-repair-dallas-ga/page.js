@@ -67,7 +67,7 @@ export default function EmergencyPage() {
                 </a>
                 <Link
                   className="btn btn-solid"
-                  href="/#contact"
+                  href="/estimator"
                   style={{ marginLeft: 16, verticalAlign: 'middle' }}
                 >
                   Request emergency tarp <span className="arr">→</span>

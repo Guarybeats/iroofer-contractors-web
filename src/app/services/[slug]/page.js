@@ -26,7 +26,7 @@ export default function ServiceDetail({ params }) {
               {service.bullets.map((b) => <li key={b}>{b}</li>)}
             </ul>
             <p style={{ marginTop: 18 }}>
-              <a className="btn btn-ink" href="/#contact">Get a free quote for {service.title} <span className="arr">→</span></a>
+              <a className="btn btn-ink" href="/estimator">Get a free quote for {service.title} <span className="arr">→</span></a>
             </p>
           </div>
           <div className="rv">

@@ -72,7 +72,7 @@ export default function NewConstructionPage() {
                 </a>
                 <Link
                   className="btn btn-solid"
-                  href="/#contact"
+                  href="/estimator"
                   style={{ marginLeft: 16, verticalAlign: 'middle' }}
                 >
                   Request a consultation <span className="arr">→</span>

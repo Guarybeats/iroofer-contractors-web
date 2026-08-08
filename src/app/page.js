@@ -53,7 +53,7 @@ export default function HomePage() {
             <h1>A roof that<br />outlasts the<br /><span className="stroke">weather.</span></h1>
             <p className="lead">Family-owned and operated since 2019. We tear off, rebuild, and stand behind every roof with expert craftsmanship and honest service.</p>
             <div className="hero-cta">
-              <a className="btn btn-solid" href="/#contact">Get a Free Inspection <span className="arr">→</span></a>
+              <a className="btn btn-solid" href="/estimator">Get a Free Inspection <span className="arr">→</span></a>
               <a className="btn btn-ghost" href="/#work">See Our Work</a>
             </div>
             <div className="stats">
@@ -105,7 +105,7 @@ export default function HomePage() {
               <span className="eyebrow dark">What we do</span>
               <h2>Every job on your roof, done by one crew.</h2>
               <p>From a single missing shingle to a full tear-off after a storm — same team, same warranty, same phone number. Tap a service to see what’s included.</p>
-              <a className="btn btn-ink" href="/#contact">Start a project <span className="arr">→</span></a>
+              <a className="btn btn-ink" href="/estimator">Start a project <span className="arr">→</span></a>
             </div>
 
             <div className="svc-list rv">
@@ -118,7 +118,7 @@ export default function HomePage() {
                   <div className="svc-body"><div className="svc-inner"><div className="row">
                     <div>
                       <p>{s.body}</p>
-                      <Link className="svc-link" href="/#contact">Get an estimate →</Link>
+                      <Link className="svc-link" href="/estimator">Get an estimate →</Link>
                     </div>
                     <picture>
                       <source srcSet={s.img} type="image/webp" />
@@ -141,7 +141,7 @@ export default function HomePage() {
             <p>Georgia spring storms roll through fast. If a storm just hit your neighborhood, the damage is often invisible from the ground — and your insurance window is ticking. We tarp, document and file within 24 hours.</p>
             <div className="cta">
               <a className="bigphone" href={`tel:${brand.phone}`}>{brand.phone}</a>
-              <a className="btn btn-solid" href="/#contact">Request emergency tarp <span className="arr">→</span></a>
+              <a className="btn btn-solid" href="/estimator">Request emergency tarp <span className="arr">→</span></a>
             </div>
           </div>
           <div className="steps rv">

@@ -70,7 +70,7 @@ export default function ServicesPage() {
             the cost.
           </p>
           <p>
-            Based in Dallas (670-236-1410), we serve Dallas and all of Paulding County with free,
+            Based in Dallas (470-236-1410), we serve Dallas and all of Paulding County with free,
             no-pressure roof inspections. Call today — we answer our own phones.
           </p>
         </div>
