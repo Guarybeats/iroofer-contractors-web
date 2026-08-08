@@ -46,6 +46,25 @@ export default function CityPage({ params }) {
           ))}
         </div>
 
+        {/* SEO CONTENT BLOCKS */}
+        <div style={{ marginTop: 48, maxWidth: 880 }}>
+          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 16 }}>
+            Trusted roofing services in {c.name}, {c.state}
+          </h2>
+          <p style={{ color: '#52606b', fontSize: '1.02rem', lineHeight: 1.7, marginBottom: 16 }}>
+            As a locally owned roofing company based in {c.county}, iRoofer Contractors understands the
+            unique weather challenges that {c.name} homeowners face. From severe thunderstorms and hail
+            to summer heat expansion and winter ice, we build and repair roofs that stand up to Georgia
+            weather year after year.
+          </p>
+          <p style={{ color: '#52606b', fontSize: '1.02rem', lineHeight: 1.7, marginBottom: 16 }}>
+            We specialize in {c.name} roof repair, full roof replacement, new construction roofing, and
+            storm &amp; insurance claim assistance. Every {c.name} roof inspection is free, with no
+            obligation, and we walk you through every step — from permitting and material selection to
+            the final warranty walkthrough.
+          </p>
+        </div>
+
         <div className="faq-grid" style={{ marginTop: 44, alignItems: 'start' }}>
           <div className="rv">
             <h2 style={{ fontSize: 'clamp(1.6rem,3vw,2.2rem)', fontWeight: 900 }}>Why {c.name} homeowners choose iRoofer</h2>
@@ -69,11 +88,50 @@ export default function CityPage({ params }) {
             </p>
           </div>
           <div className="rv">
-            <img src="/assets/hero.jpg" alt={`Roofing work in ${c.name}, ${c.state}`} style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
+            <img src="/assets/hero.jpg" alt={`Roofing work in ${c.name}, ${c.state}`} loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
             <div style={{ maxWidth: 460, margin: '32px auto 0' }}>
               <QuoteForm variant="detail" id={`quote-${c.slug}`} source={`Service Area: ${c.name}`} />
             </div>
           </div>
+        </div>
+
+        {/* SEO KEYWORDS SECTION */}
+        <div style={{ marginTop: 48, maxWidth: 880, fontSize: '0.95rem', lineHeight: 1.7, color: '#52606b' }}>
+          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 20 }}>
+            {c.name} roofing services — what you need to know
+          </h2>
+          <p style={{ marginBottom: 12 }}>
+            Whether you need emergency roof repair in {c.name}, a full roof replacement on your
+            {c.name} home, or new construction roofing for a builder project, iRoofer Contractors
+            brings the same family-owned service to every {c.name} neighborhood. We're licensed,
+            bonded, and insured in Georgia, and we carry the manufacturer warranties that protect
+            your investment for decades.
+          </p>
+          <p style={{ marginBottom: 12 }}>
+            <strong>Roof repair in {c.name}</strong> — From storm damage and hail dents to worn
+            flashing and mysterious leaks, we trace the source and fix it right. Most {c.name}
+            emergency repairs are completed the same day, with a 2-year workmanship warranty.
+          </p>
+          <p style={{ marginBottom: 12 }}>
+            <strong>Roof replacement in {c.name}</strong> — Full tear-off to the deck, ice & water
+            shield, synthetic underlayment, and architectural shingles installed to manufacturer spec.
+            We handle the permit, coordinate with your {c.name} inspector, and do a magnetic nail
+            sweep so your family and pets stay safe.
+          </p>
+          <p style={{ marginBottom: 12 }}>
+            <strong>New construction roofing in {c.name}</strong> — We partner with local builders
+            and homeowners to install design-matched roofs on new homes. From shingle selection to
+            final walkthrough and warranty setup — we keep your build on schedule.
+          </p>
+          <p style={{ marginBottom: 12 }}>
+            <strong>Storm &amp; insurance claim help in {c.name}</strong> — After a Georgia storm,
+            we document all damage with photos, write a full scope of work, and meet your insurance
+            adjuster on-site. We handle supplements and paperwork so you're never fronting the cost.
+          </p>
+          <p>
+            Based in Dallas ({brand.phone}), we serve {c.name} and all of {c.county} with free,
+            no-pressure roof inspections. Call today — we answer our own phones.
+          </p>
         </div>
       </div>
     </section>
