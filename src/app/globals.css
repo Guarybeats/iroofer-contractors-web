@@ -216,6 +216,16 @@ section{position:relative}
 .storm .steps li:first-of-type{border-top:0}
 .storm .steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--display);font-weight:800;color:var(--orange);font-size:1.1rem}
 
+/* ============ INSTANT QUOTE SECTION ============ */
+.iq{background:linear-gradient(160deg,#10202c,#0c1620);color:var(--chalk)}
+.iq .wrap{position:relative;z-index:2}
+.iq-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:start}
+.iq-grid .iq-copy{max-width:40rem}
+.iq-grid .iq-form{position:sticky;top:120px}
+.iq-form .quote-card{background:var(--chalk);color:var(--ink);border-radius:8px;padding:2.4rem;box-shadow:0 40px 80px -30px rgba(0,0,0,.5);max-width:100%}
+.iq-form .quote-card h3{font-size:1.5rem;margin-bottom:.3rem}
+.iq-form .quote-card .sub{margin:0 0 1.4rem;font-size:.9rem;color:#5a6772}
+
 /* ============ WORK / BEFORE-AFTER ============ */
 .work .ba-wrap{margin-top:3rem;display:grid;grid-template-columns:1.6fr 1fr;gap:1.4rem}
 .ba{position:relative;aspect-ratio:16/11;border-radius:4px;overflow:hidden;user-select:none;background:#000;--pos:52%}
@@ -387,6 +397,8 @@ footer{background:var(--ink3);color:#9aa6b0;padding:4.5rem 0 2rem;border-top:1px
   .step:nth-child(even){transform:none}
   .step .arrow{display:none}
   .foot-grid{grid-template-columns:1fr 1fr}
+  .iq-grid{grid-template-columns:1fr}
+  .iq-form{position:static}
 }
 @media (max-width:760px){
   .menu,.head-phone{display:none}

@@ -145,6 +145,28 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* INSTANT QUOTE */}
+      <section className="iq sec-pad" id="instant-quote">
+        <div className="wrap" style={{ position: 'relative' }}>
+          <div className="iq-grid">
+            <div className="iq-copy rv">
+              <span className="eyebrow">Free, no-pressure quote</span>
+              <h2 style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.2rem)', fontWeight: 800 }}>
+                Your roof, answered in minutes.
+              </h2>
+              <p style={{ color: '#52606b', maxWidth: 480 }}>
+                Enter your address and describe your project — we’ll give you a straight, itemized
+                estimate (or handle the insurance claim start-to-finish). Free inspection, free quote,
+                and no obligation to sign anything.
+              </p>
+            </div>
+            <div className="iq-form rv">
+              <QuoteForm variant="emergency" id="hquote" source="Instant Quote (homepage)" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* WORK / BEFORE-AFTER */}
       <section className="sec-light sec-pad work" id="work">
         <div className="tex" aria-hidden="true" />
