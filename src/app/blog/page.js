@@ -15,6 +15,14 @@ const posts = [
     readTime: '6 min read',
     category: 'Storm Damage',
   },
+  {
+    slug: 'when-to-replace-vs-repair-a-roof',
+    title: 'Roof Replacement vs. Roof Repair: When to Tear Off vs. Patch',
+    date: 'October 2026',
+    excerpt: 'After Georgia weather takes its toll, how do you know whether to patch a few shingles or tear off and start fresh? Here are the 5 questions every Dallas homeowner should ask before deciding.',
+    readTime: '8 min read',
+    category: 'Maintenance',
+  },
 ];
 
 export default function BlogPage() {
@@ -58,7 +66,7 @@ export default function BlogPage() {
                 color: 'var(--orange)', fontWeight: 700, textDecoration: 'none',
                 display: 'inline-flex', alignItems: 'center', gap: 4
               }}>
-                Read the full checklist <span style={{ fontSize: '1.2rem' }}>→</span>
+                Read the full article <span style={{ fontSize: '1.2rem' }}>→</span>
               </Link>
             </article>
           ))}
