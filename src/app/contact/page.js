@@ -24,6 +24,10 @@ export default function ContactPage() {
               <span className="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" /></svg></span>
               <div><div className="lbl">Shop &amp; office</div><span className="val">{brand.location}</span></div>
             </div>
+            <div className="row">
+              <span className="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16Zm1 12h-2v-6h2z" /></svg></span>
+              <div><div className="lbl">Hours</div><span className="val">{brand.hours.full}</span></div>
+            </div>
           </div>
           <div className="towns">
             <div className="lbl">Proudly serving</div>

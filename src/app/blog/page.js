@@ -23,6 +23,14 @@ const posts = [
     readTime: '8 min read',
     category: 'Maintenance',
   },
+  {
+    slug: 'choosing-roofing-materials-dallas-ga',
+    title: 'How to Choose the Right Roofing Material for Your Dallas Home',
+    date: 'October 2026',
+    excerpt: 'Asphalt, metal, slate, or tile — each handles Dallas heat, hail, and storms differently. Here is our guide to choosing the right material based on budget, timeline, and home style.',
+    readTime: '7 min read',
+    category: 'Materials',
+  },
 ];
 
 export default function BlogPage() {

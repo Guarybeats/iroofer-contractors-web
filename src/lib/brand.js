@@ -10,6 +10,12 @@ export const brand = {
   phone: '(470) 236-1410',
   email: 'iroofercontractors@gmail.com',
   url: 'https://iroofercontractors.com',
+  hours: {
+    weekdays: 'MON–FRI 9am–7pm',
+    saturday: 'SAT 9am–5pm',
+    sunday: 'SUN Closed',
+    full: 'MON–FRI 9am–7pm | SAT 9am–5pm | SUN Closed',
+  },
   serviceArea: [
     'Dallas, GA', 'Douglasville', 'Hiram', 'Powder Springs',
     'Marietta', 'Acworth', 'Kennesaw', 'Austell'
