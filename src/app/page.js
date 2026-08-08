@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
 import HeroForm from '@/components/HeroForm';
-import QuickEstimator from '@/components/QuickEstimator';
 import LocalSeo from '@/components/LocalSeo';
 import { brand, services } from '@/lib/brand';
 
@@ -80,11 +79,11 @@ export default function HomePage() {
       <div className="certs" aria-label="Credentials">
         <div className="track">
           <div className="set">
-            <div className="c">Owens Corning Preferred</div><div className="c">BBB A+ Accredited</div>
+            <div className="c">Owens Corning Preferred</div>
             <div className="c">Licensed · Bonded · Insured</div><div className="c">Local & Family-Owned</div><div className="c">5-Star Rated</div>
           </div>
           <div className="set" aria-hidden="true">
-            <div className="c">Owens Corning Preferred</div><div className="c">BBB A+ Accredited</div>
+            <div className="c">Owens Corning Preferred</div>
             <div className="c">Licensed · Bonded · Insured</div><div className="c">Local & Family-Owned</div><div className="c">5-Star Rated</div>
           </div>
         </div>
@@ -145,29 +144,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* INSTANT QUOTE */}
-      <section className="iq sec-pad" id="instant-quote">
-        <div className="wrap" style={{ position: 'relative' }}>
-          <div className="iq-grid">
-            <div className="iq-copy rv">
-              <span className="eyebrow">Free, no-pressure quote</span>
-              <h2 style={{ fontSize: 'clamp(1.6rem, 3.5vw, 2.2rem)', fontWeight: 800 }}>
-                Your roof, answered in minutes.
-              </h2>
-              <p style={{ color: '#52606b', maxWidth: 480 }}>
-                Enter your address and describe your project — we’ll give you a straight, itemized
-                estimate (or handle the insurance claim start-to-finish). Free inspection, free quote,
-                and no obligation to sign anything.
-              </p>
-            </div>
-            <div className="iq-form rv">
-              <QuoteForm variant="emergency" id="hquote" source="Instant Quote (homepage)" />
-              <QuickEstimator compact={true} />
-            </div>
-            </div>
-            </div>
-            </section>
 
       {/* WORK / BEFORE-AFTER */}
       <section className="sec-light sec-pad work" id="work">
@@ -231,7 +207,7 @@ export default function HomePage() {
             </div>
             <div className="rating-big">
               <div className="sc">{brand.rating}</div>
-              <div><div className="stars">★★★★★</div><div className="meta">{brand.reviewCount} verified reviews · Google &amp; BBB</div></div>
+              <div><div className="stars">★★★★★</div><div className="meta">{brand.reviewCount} verified reviews &middot; Google</div></div>
             </div>
           </div>
         </div>
