@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
 import HeroForm from '@/components/HeroForm';
+import QuickEstimator from '@/components/QuickEstimator';
 import LocalSeo from '@/components/LocalSeo';
 import { brand, services } from '@/lib/brand';
 
@@ -162,10 +163,11 @@ export default function HomePage() {
             </div>
             <div className="iq-form rv">
               <QuoteForm variant="emergency" id="hquote" source="Instant Quote (homepage)" />
+              <QuickEstimator compact={true} />
             </div>
-          </div>
-        </div>
-      </section>
+            </div>
+            </div>
+            </section>
 
       {/* WORK / BEFORE-AFTER */}
       <section className="sec-light sec-pad work" id="work">

@@ -216,6 +216,16 @@ section{position:relative}
 .storm .steps li:first-of-type{border-top:0}
 .storm .steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--display);font-weight:800;color:var(--orange);font-size:1.1rem}
 
+/* ============ QUICK ESTIMATOR (instant-quote section) ============ */
+.iq .quick-est{background:rgba(255,255,255,.04);border:1px solid var(--line-w);border-radius:8px;padding:2rem;margin-top:2rem}
+.iq .quick-est .qe-head h3{font-size:1.2rem}
+.iq .quick-est .qe-form{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.iq .quick-est .field{flex-direction:column}
+.iq .quick-est .qe-price .qe-amount{font-family:var(--display);font-weight:800;font-size:1.6rem;color:var(--orange)}
+.iq .quick-est .qe-hint{font-size:.72rem;color:var(--steel)}
+.iq .quick-est .btn-block{background:var(--chalk);color:var(--ink)}
+.iq .quick-est .btn-block:hover{background:#e7ecea}
+
 /* ============ INSTANT QUOTE SECTION ============ */
 .iq{background:linear-gradient(160deg,#10202c,#0c1620);color:var(--chalk)}
 .iq .wrap{position:relative;z-index:2}
@@ -399,6 +409,7 @@ footer{background:var(--ink3);color:#9aa6b0;padding:4.5rem 0 2rem;border-top:1px
   .foot-grid{grid-template-columns:1fr 1fr}
   .iq-grid{grid-template-columns:1fr}
   .iq-form{position:static}
+  .iq .quick-est .qe-form{grid-template-columns:1fr}
 }
 @media (max-width:760px){
   .menu,.head-phone{display:none}
