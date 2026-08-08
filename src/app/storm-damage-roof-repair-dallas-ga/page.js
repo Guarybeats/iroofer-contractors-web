@@ -67,10 +67,10 @@ export default function StormDamagePage() {
                 </a>
                 <Link
                   className="btn btn-solid"
-                  href="/#contact"
+                  href="/estimator"
                   style={{ marginLeft: 16, verticalAlign: 'middle' }}
                 >
-                  Request emergency tarp <span className="arr">→</span>
+                  Request emergency tarp →
                 </Link>
               </div>
 
