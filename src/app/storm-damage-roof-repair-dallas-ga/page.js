@@ -70,7 +70,7 @@ export default function StormDamagePage() {
                   href="/#contact"
                   style={{ marginLeft: 16, verticalAlign: 'middle' }}
                 >
-                  Request tarp <span className="arr">→</span>
+                  Request emergency tarp <span className="arr">→</span>
                 </Link>
               </div>
 
