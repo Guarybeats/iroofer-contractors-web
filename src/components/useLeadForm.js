@@ -2,7 +2,11 @@
 
 import { useState, useCallback, useRef } from "react";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "/api/leads/";
+const API_URL = process.env.NEXT_PUBLIC_API_URL
+  ? `${process.env.NEXT_PUBLIC_API_URL}/api/leads`
+  : "/api/leads/";
+
+const API_FALLBACK = `mailto:${process.env.NEXT_PUBLIC_LEAD_EMAIL || "iroofercontractors@gmail.com"}`;
 
 const DEFAULT_SUCCESS_MSG =
   "Request received! A member of our local team will reach out shortly.";
@@ -58,7 +62,7 @@ function useLeadForm({
 
       const payload = {
         fullName: fd.get("fullName")?.toString()?.trim() || "",
-        phone: fd.get("phone")?.toString()?.trim() || "",
+        phone: fd.get("phone")?.toString().trim() || "",
         email: fd.get("email")?.toString()?.trim() || undefined,
         address: fd.get("address")?.toString()?.trim() || undefined,
         service: fd.get("service")?.toString()?.trim() || undefined,
@@ -81,9 +85,19 @@ function useLeadForm({
         return true;
       } catch (err) {
         if (err.name === "AbortError") return false;
-        setStatus("error");
-        setMsg(errorMsg);
-        return false;
+        // Fall back to mailto on static hosts where /api/leads isn't built.
+        const mailto = `${API_FALLBACK}?subject=${encodeURIComponent(
+          `New iRoofer lead: ${payload.fullName || "Unknown"} (${payload.phone || "No phone"})`
+        )}&body=${encodeURIComponent(
+          Object.entries(payload)
+            .filter(([, v]) => v)
+            .map(([k, v]) => `${k}: ${v}`)
+            .join("\n")
+        )}`;
+        window.location.href = mailto;
+        setStatus("ok");
+        setMsg(successMsg);
+        return true;
       } finally {
         if (controllerRef.current === controller) {
           controllerRef.current = null;
