@@ -12,6 +12,7 @@
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:96px}
+@media (max-width:760px){html{scroll-padding-top:76px}}
 body{
   margin:0;background:var(--ink);color:var(--chalk);
   font-family:var(--body);font-size:16px;line-height:1.6;
@@ -84,6 +85,8 @@ p{margin:0}
 .mnav.open a:nth-child(2){transition-delay:.06s}.mnav.open a:nth-child(3){transition-delay:.12s}
 .mnav.open a:nth-child(4){transition-delay:.18s}.mnav.open a:nth-child(5){transition-delay:.24s}
 .mnav.open a:nth-child(6){transition-delay:.30s}.mnav.open a:nth-child(7){transition-delay:.36s}
+.mnav.open a:nth-child(8){transition-delay:.42s}.mnav.open a:nth-child(9){transition-delay:.48s}
+.mnav.open a:nth-child(10){transition-delay:.54s}.mnav.open a:nth-child(11){transition-delay:.6s}
 .mnav a:hover{color:var(--orange)}
 .mnav .mphone{margin-top:1.6rem;color:var(--orange);font-family:var(--display);font-size:1.6rem}
 
