@@ -133,6 +133,45 @@ export default function CityPage({ params }) {
             no-pressure roof inspections. Call today — we answer our own phones.
           </p>
         </div>
+
+        {/* LOCAL FAQ SECTION */}
+        <div style={{ marginTop: 48, maxWidth: 880 }}>
+          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 20 }}>
+            Frequently asked questions about roofing in {c.name}, {c.state}
+          </h2>
+          <div style={{ display: 'grid', gap: 16 }}>
+            <div>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: 6, color: 'var(--ink)' }}>
+                How much does a roof replacement cost in {c.name}?
+              </h3>
+              <p style={{ margin: 0 }}>
+                Most residential roof replacements in {c.name} range from $3,500 to $12,000
+                depending on roof size, pitch, and materials. We provide a detailed, line-item-free
+                estimate after a free on-site inspection — no surprises.
+              </p>
+            </div>
+            <div>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: 6, color: 'var(--ink)' }}>
+                What roofing materials do you recommend for {c.name} weather?
+              </h3>
+              <p style={{ margin: 0 }}>
+                For {c.name} homes we typically recommend architectural asphalt shingles (Class A
+                fire rating) with ice &amp; water shield in the eaves and synthetic underlayment.
+                This combination handles Georgia's heat, hail, and occasional winter ice best.
+              </p>
+            </div>
+            <div>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: 6, color: 'var(--ink)' }}>
+                Do you offer emergency roof repair in {c.name}?
+              </h3>
+              <p style={{ margin: 0 }}>
+                Yes — 24/7 emergency tarping and storm damage repair for {c.name} homeowners. We
+                respond same-day for active leaks, document damage for insurance, and complete
+                permanent repairs within 48 hours.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
