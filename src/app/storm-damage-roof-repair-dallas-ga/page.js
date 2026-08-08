@@ -118,6 +118,7 @@ export default function StormDamagePage() {
               <img
                 src="/assets/storm-damage.jpg"
                 alt="Storm-damaged asphalt shingle roof after a Georgia hail storm"
+                loading="lazy"
                 style={{
                   borderRadius: 8,
                   border: '1px solid rgba(22,29,37,.1)',
