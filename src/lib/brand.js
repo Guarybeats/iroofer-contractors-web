@@ -23,7 +23,6 @@ export const brand = {
     import: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap'
   },
   trust: [
-    { num: 'A+', lbl: 'BBB Rating' },
     { num: '54', lbl: '5-Star Google Reviews' },
     { num: '5★', lbl: 'Average Rating' },
     { num: '100%', lbl: 'Local & Family-Owned' }
