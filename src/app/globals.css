@@ -44,7 +44,7 @@ p{margin:0}
 
 /* ============ TOP TICKER ============ */
 .topbar{background:var(--ink3);color:var(--steel);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
-  border-bottom:1px solid var(--line-w);overflow:hidden}
+  border-bottom:1px solid var(--line-w);overflow:hidden;z-index:1300;position:relative}
 .topbar .track{display:flex;gap:0;width:max-content;animation:tick 38s linear infinite}
 .topbar .set{display:flex;align-items:center;flex-shrink:0}
 .topbar .item{padding:.55rem 1.4rem;display:flex;align-items:center;gap:1.4rem}
