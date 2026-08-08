@@ -19,7 +19,7 @@ export default function ServiceDetail({ params }) {
         <div className="faq-grid" style={{ marginTop: 18, alignItems: 'start' }}>
           <div className="rv">
             <span className="eyebrow dark">Roofing service</span>
-            <h2 style={{ fontSize: 'clamp(2.2rem,4.6vw,3.6rem)', fontWeight: 900 }}>{service.title}</h2>
+            <h1 style={{ fontSize: 'clamp(2.2rem,4.6vw,3.6rem)', fontWeight: 900 }}>{service.title}</h1>
             <p style={{ color: 'var(--orange)', fontWeight: 800, marginTop: -8, textTransform: 'uppercase', letterSpacing: '.04em' }}>{service.tagline}</p>
             <p style={{ color: '#52606b', fontSize: '1.05rem', marginTop: 8 }}>{service.summary}</p>
             <ul style={{ lineHeight: 2, marginTop: 16, color: '#52606b' }}>
