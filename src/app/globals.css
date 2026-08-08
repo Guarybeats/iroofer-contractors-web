@@ -58,7 +58,7 @@ p{margin:0}
 .site-head.scrolled{background:rgba(16,21,27,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-w);padding:.55rem 0}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
 .brand{display:flex;align-items:center;gap:.65rem;text-decoration:none}
-.brand img.brand-logo{height:64px;width:auto;display:block}
+.brand img.brand-logo{height:clamp(48px,12vw,64px);width:auto;display:block;max-width:180px;object-fit:contain}
 .brand .name{font-family:var(--display);font-weight:800;font-size:1.35rem;letter-spacing:.02em;color:var(--chalk);line-height:.9}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:1.25rem}
 .menu{display:flex;align-items:center;gap:1.35rem}
