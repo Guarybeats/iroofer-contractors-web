@@ -55,11 +55,9 @@ export default function SiteScripts() {
   // --- Page-content bindings (re-run on every route change so client-navigated pages work) ---
   useEffect(() => {
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    // Opt the page into the hide-then-reveal animation. Content is visible by
-    // default (CSS), so if this line never runs the page is still readable.
-    document.documentElement.classList.add('reveal-ready');
-
-    // reveal
+    // reveal — handled by CSS animation (bulletproof, no JS dependency).
+    // The observer below is an optional scroll-stagger enhancer; visibility
+    // is guaranteed by the CSS @keyframes regardless of whether this runs.
     const rvEls = document.querySelectorAll('.rv');
     let io;
     if (reduce || !('IntersectionObserver' in window)) {
