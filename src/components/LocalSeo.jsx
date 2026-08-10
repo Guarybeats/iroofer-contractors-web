@@ -8,6 +8,15 @@ export const GBP_URL = 'https://g.page/iroofer-contractors';
 // Dallas, GA has no street number confirmed — leave empty to omit PostalAddress.
 export const STREET_ADDRESS = '152 Freedom Dr';
 
+// Social profile URLs used as schema.org sameAs citations (Google E-A-T signal).
+// Keep these in sync with the business's real, public social profiles.
+export const SAME_AS = [
+  GBP_URL,
+  'https://twitter.com/irooferc',
+  'https://www.facebook.com/iroofercontractors',
+  'https://www.instagram.com/iroofercontractors/',
+];
+
 // Build the JSON-LD schema graph. Pure function so it can render in <head>.
 export function buildSeoGraph() {
   const nowIso = new Date().toISOString();
@@ -25,11 +34,7 @@ export function buildSeoGraph() {
     founder: { '@type': 'Person', name: brand.owner },
     image: `${brand.url}/assets/logo.png`,
     logo: `${brand.url}/assets/logo.png`,
-    sameAs: [
-      GBP_URL,
-      'https://www.facebook.com/iroofercontractors',
-      'https://www.instagram.com/iroofercontractors',
-    ],
+    sameAs: SAME_AS,
     areaServed: [
       ...brand.serviceArea.map((c) => ({
         '@type': 'City',
