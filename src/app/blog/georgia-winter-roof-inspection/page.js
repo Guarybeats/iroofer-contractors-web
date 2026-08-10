@@ -26,7 +26,7 @@ export default function BlogPostPage() {
             <span className="eyebrow dark">{post.category}</span>
             <h1>{post.title}</h1>
             <p className="byline">
-              By Cristian Mendez — founder of iRoofer Contractors
+              By iRoofer Contractors
             </p>
             <p className="meta">{post.date} · {post.readTime}</p>
           </div>
