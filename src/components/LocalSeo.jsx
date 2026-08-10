@@ -1,26 +1,12 @@
 import { brand, services } from '@/lib/brand';
 
-// Google Business Profile link — real GBP Maps short link (provided by owner).
-export const GBP_URL = 'https://maps.app.goo.gl/4N6Buw4pRivTJjMW6';
-
-// Review link. The GBP is a maps.app.goo.gl short link; appending /review works
-// for redirect short links and lands customers on the write-a-review flow.
-// If Google ever changes this, replace with the "Get more reviews" link from
-// the GBP dashboard.
-export const REVIEW_URL = 'https://maps.app.goo.gl/4N6Buw4pRivTJjMW6';
+// Google Business Profile link — update this to your real GBP URL.
+// Find it in your Google Business dashboard or by searching the business name on Maps.
+export const GBP_URL = 'https://g.page/iroofer-contractors';
 
 // Drop in your real street address to unlock LocalBusiness + geo ranking signals.
 // Dallas, GA has no street number confirmed — leave empty to omit PostalAddress.
 export const STREET_ADDRESS = '152 Freedom Dr';
-
-// Social profile URLs used as schema.org sameAs citations (Google E-A-T signal).
-// Keep these in sync with the business's real, public social profiles.
-export const SAME_AS = [
-  GBP_URL,
-  'https://twitter.com/irooferc',
-  'https://www.facebook.com/iroofercontractors',
-  'https://www.instagram.com/iroofercontractors/',
-];
 
 // Build the JSON-LD schema graph. Pure function so it can render in <head>.
 export function buildSeoGraph() {
@@ -39,7 +25,11 @@ export function buildSeoGraph() {
     founder: { '@type': 'Person', name: brand.owner },
     image: `${brand.url}/assets/logo.png`,
     logo: `${brand.url}/assets/logo.png`,
-    sameAs: SAME_AS,
+    sameAs: [
+      GBP_URL,
+      'https://www.facebook.com/iroofercontractors',
+      'https://www.instagram.com/iroofercontractors',
+    ],
     areaServed: [
       ...brand.serviceArea.map((c) => ({
         '@type': 'City',
@@ -47,33 +37,6 @@ export function buildSeoGraph() {
         address: { '@type': 'PostalAddress', addressRegion: 'GA', addressCountry: 'US' },
       })),
       { '@type': 'AdministrativeArea', name: 'Atlanta Metro' },
-    ],
-    // Geographic center of the service area (Dallas, GA) — boosts local pack relevance.
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 33.9218,
-      longitude: -84.8424,
-    },
-    // Regular business hours (used by Google for the "Open now" badge).
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '09:00',
-        closes: '19:00',
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: 'Saturday',
-        opens: '09:00',
-        closes: '17:00',
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: 'Sunday',
-        opens: '00:00',
-        closes: '00:00',
-      },
     ],
     address: STREET_ADDRESS
       ? {

@@ -1,13 +1,10 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
-
+import LocalSeo from '@/components/LocalSeo';
 import { brand, services } from '@/lib/brand';
 import { notFound } from 'next/navigation';
 
 export const metadata = {
-  alternates: { canonical: 'https://iroofercontractors.com/new-construction' },
-  openGraph: { url: 'https://iroofercontractors.com/new-construction' },
-
   title: 'New Construction Roofing — iRoofer Contractors Dallas, GA',
   description:
     'Building a new home in North Georgia? iRoofer Contractors handles complete new-construction roofing — design-matched shingles, code-compliant installation, builder coordination. Free consultation.',
@@ -27,7 +24,7 @@ export default function NewConstructionPage() {
 
   return (
     <>
-
+      <LocalSeo />
       <section className="sec-light sec-pad">
         <div className="tex" aria-hidden="true" />
         <div className="wrap" style={{ position: 'relative' }}>
@@ -75,7 +72,7 @@ export default function NewConstructionPage() {
                 </a>
                 <Link
                   className="btn btn-solid"
-                  href="/estimator"
+                  href="/#contact"
                   style={{ marginLeft: 16, verticalAlign: 'middle' }}
                 >
                   Request a consultation <span className="arr">→</span>

@@ -1,22 +1,17 @@
 import Link from 'next/link';
-import ReviewButton from '@/components/ReviewButton';
 import QuoteForm from '@/components/QuoteForm';
 import HeroForm from '@/components/HeroForm';
-
+import LocalSeo from '@/components/LocalSeo';
 import { brand, services } from '@/lib/brand';
 
 const svcs = [
-  { n: '01', title: 'Roof Repair', tag: 'Same week', img: '/assets/service-repair.webp',
-    imgJpg: '/assets/service-repair.jpg',
+  { n: '01', title: 'Roof Repair', tag: 'Same week', img: '/assets/service-repair.jpg',
     body: 'Water stains, lifted flashing, cracked boots and mystery leaks. We trace the source — not just the symptom — then patch, re-seal and color-match so the fix disappears into your roofline.' },
-  { n: '02', title: 'Roof Replacement', tag: 'Most popular', img: '/assets/service-replacement.webp',
-    imgJpg: '/assets/service-replacement.jpg',
+  { n: '02', title: 'Roof Replacement', tag: 'Most popular', img: '/assets/service-replacement.jpg',
     body: 'Full tear-off to the deck, ice & water shield, synthetic underlayment and architectural shingles installed to manufacturer spec. Includes ridge venting, drip edge and a magnet-sweep cleanup of every nail.' },
-  { n: '03', title: 'New Construction', tag: 'Builders', img: '/assets/service-newconstruction.webp',
-    imgJpg: '/assets/service-newconstruction.jpg',
+  { n: '03', title: 'New Construction', tag: 'Builders', img: '/assets/service-newconstruction.jpg',
     body: 'We partner with builders and homeowners on new builds to install a roof that matches the design and the budget — code-compliant, inspected, and built to last.' },
-  { n: '04', title: 'Storm & Insurance Claims', tag: '24/7 response', img: '/assets/service-repair.webp',
-    imgJpg: '/assets/service-repair.jpg',
+  { n: '04', title: 'Storm & Insurance Claims', tag: '24/7 response', img: '/assets/service-repair.jpg',
     body: 'Hail and wind damage documented with photos and a written scope. We meet your adjuster on-site, supplement the claim when needed, and guide you through the paperwork so you are not fronting the cost.' },
 ];
 
@@ -44,7 +39,7 @@ const faqs = [
 export default function HomePage() {
   return (
     <>
-
+      <LocalSeo reviews={reviews} />
       {/* HERO */}
       <section className="hero" id="home">
         <div className="hero-bgword" aria-hidden="true">Roofing</div>
@@ -54,7 +49,7 @@ export default function HomePage() {
             <h1>A roof that<br />outlasts the<br /><span className="stroke">weather.</span></h1>
             <p className="lead">Family-owned and operated since 2019. We tear off, rebuild, and stand behind every roof with expert craftsmanship and honest service.</p>
             <div className="hero-cta">
-              <a className="btn btn-solid" href="/estimator">Get a Free Inspection <span className="arr">→</span></a>
+              <a className="btn btn-solid" href="/#contact">Get a Free Inspection <span className="arr">→</span></a>
               <a className="btn btn-ghost" href="/#work">See Our Work</a>
             </div>
             <div className="stats">
@@ -67,10 +62,7 @@ export default function HomePage() {
 
           <div className="hero-media">
             <div className="frame" aria-hidden="true"></div>
-            <picture>
-              <source srcSet="/assets/hero.webp" type="image/webp" />
-              <img className="main" src="/assets/hero.jpg" alt="iRoofer crew installing shingles on a Georgia home" loading="eager" />
-            </picture>
+            <img className="main" src="/assets/hero.jpg" alt="iRoofer crew installing shingles on a Georgia home" />
             <div className="badge" aria-hidden="true">
               <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs>
                 <text fill="#f3f5f4" fontFamily="Public Sans" fontSize="11.5" fontWeight="700" letterSpacing="2.4"><textPath href="#circ">FREE INSPECTIONS • STORM RESPONSE • </textPath></text>
@@ -106,7 +98,7 @@ export default function HomePage() {
               <span className="eyebrow dark">What we do</span>
               <h2>Every job on your roof, done by one crew.</h2>
               <p>From a single missing shingle to a full tear-off after a storm — same team, same warranty, same phone number. Tap a service to see what’s included.</p>
-              <a className="btn btn-ink" href="/estimator">Start a project <span className="arr">→</span></a>
+              <a className="btn btn-ink" href="/#contact">Start a project <span className="arr">→</span></a>
             </div>
 
             <div className="svc-list rv">
@@ -119,12 +111,9 @@ export default function HomePage() {
                   <div className="svc-body"><div className="svc-inner"><div className="row">
                     <div>
                       <p>{s.body}</p>
-                      <Link className="svc-link" href="/estimator">Get an estimate →</Link>
+                      <Link className="svc-link" href="/#contact">Get an estimate →</Link>
                     </div>
-                    <picture>
-                      <source srcSet={s.img} type="image/webp" />
-                      <img loading="lazy" src={s.imgJpg} alt={s.title} />
-                    </picture>
+                    <img loading="lazy" src={s.img} alt={s.title} />
                   </div></div></div>
                 </article>
               ))}
@@ -142,7 +131,7 @@ export default function HomePage() {
             <p>Georgia spring storms roll through fast. If a storm just hit your neighborhood, the damage is often invisible from the ground — and your insurance window is ticking. We tarp, document and file within 24 hours.</p>
             <div className="cta">
               <a className="bigphone" href={`tel:${brand.phone}`}>{brand.phone}</a>
-              <a className="btn btn-solid" href="/estimator">Request emergency tarp <span className="arr">→</span></a>
+              <a className="btn btn-solid" href="/#contact">Request emergency tarp <span className="arr">→</span></a>
             </div>
           </div>
           <div className="steps rv">
@@ -168,14 +157,8 @@ export default function HomePage() {
 
           <div className="ba-wrap">
             <div className="ba rv" id="ba" style={{ '--pos': '52%' }}>
-              <picture>
-                <source srcSet="/assets/service-repair.webp" type="image/webp" />
-                <img className="before" src="/assets/service-repair.jpg" alt="Roof before: storm damage" loading="lazy" />
-              </picture>
-              <picture>
-                <source srcSet="/assets/service-replacement.webp" type="image/webp" />
-                <img className="after" src="/assets/service-replacement.jpg" alt="Roof after: full replacement" loading="lazy" />
-              </picture>
+              <img className="before" src="/assets/service-repair.jpg" alt="Roof before: storm damage" loading="lazy" />
+              <img className="after" src="/assets/service-replacement.jpg" alt="Roof after: full replacement" loading="lazy" />
               <span className="tag t-before">Before — storm damage</span>
               <span className="tag t-after">After — full replacement</span>
               <div className="handle" aria-hidden="true"><span className="grip">◂</span></div>
@@ -185,17 +168,11 @@ export default function HomePage() {
 
             <div className="gallery rv">
               <div className="gcard">
-                <picture>
-                  <source srcSet="/assets/service-newconstruction.webp" type="image/webp" />
-                  <img loading="lazy" src="/assets/service-newconstruction.jpg" alt="New construction roof" />
-                </picture>
+                <img loading="lazy" src="/assets/service-newconstruction.jpg" alt="New construction roof" />
                 <div className="cap"><span>Paulding County</span><b>New construction</b></div>
               </div>
               <div className="gcard">
-                <picture>
-                  <source srcSet="/assets/hero.webp" type="image/webp" />
-                  <img loading="lazy" src="/assets/hero.jpg" alt="Aerial view of finished roofs" />
-                </picture>
+                <img loading="lazy" src="/assets/hero.jpg" alt="Aerial view of finished roofs" />
                 <div className="cap"><span>Subdivision · 14 homes</span><b>Storm rebuild</b></div>
               </div>
             </div>
@@ -314,10 +291,6 @@ export default function HomePage() {
           <div className="rv">
             <QuoteForm variant="contact" id="cform" />
           </div>
-        </div>
-
-        <div style={{ marginTop: 28, textAlign: 'center' }}>
-          <ReviewButton variant="orange" label="Leave us a Google review" />
         </div>
       </section>
     </>

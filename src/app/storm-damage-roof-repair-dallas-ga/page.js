@@ -1,12 +1,9 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
-
+import LocalSeo from '@/components/LocalSeo';
 import { brand } from '@/lib/brand';
 
 export const metadata = {
-  alternates: { canonical: 'https://iroofercontractors.com/storm-damage-roof-repair-dallas-ga' },
-  openGraph: { url: 'https://iroofercontractors.com/storm-damage-roof-repair-dallas-ga' },
-
   title: 'Storm Damage Roof Repair Dallas, GA | iRoofer Contractors',
   description:
     'Hail, wind, or tree damage from a Georgia storm? We inspect, document, and handle your insurance claim for a full roof restoration. Free assessment, 24-hour response for emergencies.',
@@ -22,7 +19,7 @@ const steps = [
 export default function StormDamagePage() {
   return (
     <>
-
+      <LocalSeo />
       <section className="sec-light sec-pad">
         <div className="tex" aria-hidden="true" />
         <div className="wrap" style={{ position: 'relative' }}>
@@ -70,10 +67,10 @@ export default function StormDamagePage() {
                 </a>
                 <Link
                   className="btn btn-solid"
-                  href="/estimator"
+                  href="/#contact"
                   style={{ marginLeft: 16, verticalAlign: 'middle' }}
                 >
-                  Request emergency tarp →
+                  Request tarp <span className="arr">→</span>
                 </Link>
               </div>
 
@@ -118,20 +115,17 @@ export default function StormDamagePage() {
             </div>
 
             <div className="rv">
-              <picture>
-                <source srcSet="/assets/storm-damage.webp" type="image/webp" />
-                <img
-                  src="/assets/storm-damage.jpg"
-                  alt="Storm-damaged asphalt shingle roof after a Georgia hail storm"
-                  loading="lazy"
-                  style={{
-                    borderRadius: 8,
-                    border: '1px solid rgba(22,29,37,.1)',
-                    width: '100%',
-                    marginBottom: 24,
-                  }}
-                />
-              </picture>
+              <img
+                src="/assets/storm-damage.jpg"
+                alt="Storm-damaged asphalt shingle roof after a Georgia hail storm"
+                loading="lazy"
+                style={{
+                  borderRadius: 8,
+                  border: '1px solid rgba(22,29,37,.1)',
+                  width: '100%',
+                  marginBottom: 24,
+                }}
+              />
               <div style={{ maxWidth: 460, margin: 0 }}>
                 <QuoteForm variant="emergency" id="storm-quote" source="Storm Damage Page" />
               </div>

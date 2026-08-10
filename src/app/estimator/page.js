@@ -1,9 +1,6 @@
 import RoofEstimator from '@/components/RoofEstimator';
 
-export const metadata = {
-  alternates: { canonical: 'https://iroofercontractors.com/estimator' },
-  openGraph: { url: 'https://iroofercontractors.com/estimator' },
- title: 'Instant Roof Estimate — iRoofer Contractors' };
+export const metadata = { title: 'Instant Roof Estimate — iRoofer Contractors' };
 
 export default function EstimatorPage() {
   return (

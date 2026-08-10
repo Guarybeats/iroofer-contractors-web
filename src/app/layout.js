@@ -1,49 +1,16 @@
 import './globals.css';
 import { brand } from '@/lib/brand';
 import SiteScripts from '@/components/SiteScripts';
-import LocalSeo from '@/components/LocalSeo';
 
 export const metadata = {
-  title: {
-    default: `${brand.name} — ${brand.tagline}`,
-    template: `%s | ${brand.name}`,
-  },
+  title: `${brand.name} — ${brand.tagline}`,
   description: brand.pitch,
-  alternates: {
-    canonical: brand.url,
-  },
-  robots: { index: true, follow: true },
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: brand.url,
-    siteName: brand.name,
-    title: `${brand.name} — ${brand.tagline}`,
-    description: brand.pitch,
-    images: [
-      {
-        url: `${brand.url}/assets/logo.png`,
-        width: 337,
-        height: 200,
-        alt: brand.name,
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: `${brand.name} — ${brand.tagline}`,
-    description: brand.pitch,
-    images: [`${brand.url}/assets/logo.png`],
-  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <head>
-      <meta name="theme-color" content="#161d25" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="32x32" />
-        <link rel="icon" href="/assets/logo.png" type="image/png" sizes="337x200" />
+      <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -53,18 +20,18 @@ export default function RootLayout({ children }) {
         <div className="topbar" aria-hidden="true">
           <div className="track">
             <div className="set">
-              <div className="item">Family-Owned &amp; Operated Since 2019</div>
-              <div className="item">Licensed · Bonded · Insured</div>
               <div className="item"><b>{brand.rating}</b> {brand.reviewCount} Reviews</div>
-              <div className="item">Free No-Pressure Roof Inspections</div>
+              <div className="item">Licensed · Bonded · Insured</div>
               <div className="item">24/7 Emergency Storm Response</div>
+              <div className="item">Free No-Pressure Roof Inspections</div>
+              <div className="item">Family-Owned &amp; Operated Since 2019</div>
             </div>
             <div className="set" aria-hidden="true">
-              <div className="item">Family-Owned &amp; Operated Since 2019</div>
-              <div className="item">Licensed · Bonded · Insured</div>
               <div className="item"><b>{brand.rating}</b> {brand.reviewCount} Reviews</div>
-              <div className="item">Free No-Pressure Roof Inspections</div>
+              <div className="item">Licensed · Bonded · Insured</div>
               <div className="item">24/7 Emergency Storm Response</div>
+              <div className="item">Free No-Pressure Roof Inspections</div>
+              <div className="item">Family-Owned &amp; Operated Since 2019</div>
             </div>
           </div>
         </div>
@@ -78,7 +45,6 @@ export default function RootLayout({ children }) {
             <nav className="menu" aria-label="Primary">
               <a className="lnk" href="/#services">Services</a>
               <a className="lnk" href="/service-areas">Service Areas</a>
-              <a className="lnk" href="/blog">Blog</a>
               <a className="lnk" href="/estimator">Instant Quote</a>
               <a className="lnk" href="/emergency-roof-repair-dallas-ga">Emergency</a>
               <a className="lnk" href="/storm-damage-roof-repair-dallas-ga">Storm Damage</a>
@@ -92,7 +58,7 @@ export default function RootLayout({ children }) {
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11 11 0 0 0 .56 3.5 1 1 0 0 1-.25 1Z"/></svg>
                 {brand.phone}
               </a>
-              <a className="btn btn-solid" href="/estimator">Free Estimate <span className="arr">→</span></a>
+              <a className="btn btn-solid" href="/#contact">Free Estimate <span className="arr">→</span></a>
               <button className="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
             </div>
           </div>
@@ -100,16 +66,15 @@ export default function RootLayout({ children }) {
 
         {/* MOBILE NAV */}
         <nav className="mnav" id="mnav" aria-label="Mobile">
-          <a href="#services">Services</a>
+          <a href="/#services">Services</a>
           <a href="/estimator">Instant Quote</a>
           <a href="/emergency-roof-repair-dallas-ga">Emergency</a>
           <a href="/storm-damage-roof-repair-dallas-ga">Storm Damage</a>
-          <a href="/service-areas">Service Areas</a>
-          <a href="/blog">Blog</a>
-          <a href="/services">All Services</a>
           <a href="/#work">Our Work</a>
+          <a href="/#process">Process</a>
           <a href="/#reviews">Reviews</a>
           <a href="/#faq">FAQ</a>
+          <a href="/#contact">Contact</a>
           <a className="mphone" href={`tel:${brand.phone}`}>{brand.phone}</a>
         </nav>
 
@@ -134,7 +99,6 @@ export default function RootLayout({ children }) {
                 <a href="/services/roof-repair">Roof Repair</a>
                 <a href="/services/roof-replacement">Roof Replacement</a>
                 <a href="/services/new-construction">New Construction</a>
-                <a href="/blog">Blog</a>
                 <a href="/emergency-roof-repair-dallas-ga">Emergency Roof Repair</a>
                 <a href="/storm-damage-roof-repair-dallas-ga">Storm &amp; Insurance</a>
                 <a href="/#faq">FAQ</a>
@@ -152,9 +116,6 @@ export default function RootLayout({ children }) {
                 <a href={`tel:${brand.phone}`}>{brand.phone}</a>
                 <a href={`mailto:${brand.email}`}>{brand.email}</a>
                 <a href="/#contact">{brand.location}</a>
-                <div className="hours">
-                  <strong>Hours:</strong> {brand.hours.weekdays} · {brand.hours.saturday} · {brand.hours.sunday}
-                </div>
                 <p className="lic">Fully licensed · bonded · insured<br />© {new Date().getFullYear()} {brand.name}</p>
               </div>
             </div>
@@ -174,7 +135,6 @@ export default function RootLayout({ children }) {
         </button>
 
         <SiteScripts />
-        <LocalSeo />
       </body>
     </html>
   );

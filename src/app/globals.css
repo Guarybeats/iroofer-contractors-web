@@ -12,7 +12,6 @@
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:96px}
-@media (max-width:760px){html{scroll-padding-top:76px}}
 body{
   margin:0;background:var(--ink);color:var(--chalk);
   font-family:var(--body);font-size:16px;line-height:1.6;
@@ -45,7 +44,7 @@ p{margin:0}
 
 /* ============ TOP TICKER ============ */
 .topbar{background:var(--ink3);color:var(--steel);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;
-  border-bottom:1px solid var(--line-w);overflow:hidden;z-index:1300;position:relative}
+  border-bottom:1px solid var(--line-w);overflow:hidden}
 .topbar .track{display:flex;gap:0;width:max-content;animation:tick 38s linear infinite}
 .topbar .set{display:flex;align-items:center;flex-shrink:0}
 .topbar .item{padding:.55rem 1.4rem;display:flex;align-items:center;gap:1.4rem}
@@ -54,11 +53,11 @@ p{margin:0}
 @keyframes tick{to{transform:translateX(-50%)}}
 
 /* ============ HEADER ============ */
-.site-head{position:sticky;top:0;z-index:1200;transition:.3s ease;padding:.9rem 0;background:rgba(16,21,27,.92);backdrop-filter:blur(10px)}
+.site-head{position:sticky;top:0;z-index:1200;transition:.3s ease;padding:.9rem 0;background:rgba(16,21,27,.0)}
 .site-head.scrolled{background:rgba(16,21,27,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-w);padding:.55rem 0}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
 .brand{display:flex;align-items:center;gap:.65rem;text-decoration:none}
-.brand img.brand-logo{height:clamp(48px,12vw,64px);width:auto;display:block;max-width:180px;object-fit:contain}
+.brand img.brand-logo{height:64px;width:auto;display:block}
 .brand .name{font-family:var(--display);font-weight:800;font-size:1.35rem;letter-spacing:.02em;color:var(--chalk);line-height:.9}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:1.25rem}
 .menu{display:flex;align-items:center;gap:1.35rem}
@@ -85,8 +84,6 @@ p{margin:0}
 .mnav.open a:nth-child(2){transition-delay:.06s}.mnav.open a:nth-child(3){transition-delay:.12s}
 .mnav.open a:nth-child(4){transition-delay:.18s}.mnav.open a:nth-child(5){transition-delay:.24s}
 .mnav.open a:nth-child(6){transition-delay:.30s}.mnav.open a:nth-child(7){transition-delay:.36s}
-.mnav.open a:nth-child(8){transition-delay:.42s}.mnav.open a:nth-child(9){transition-delay:.48s}
-.mnav.open a:nth-child(10){transition-delay:.54s}.mnav.open a:nth-child(11){transition-delay:.6s}
 .mnav a:hover{color:var(--orange)}
 .mnav .mphone{margin-top:1.6rem;color:var(--orange);font-family:var(--display);font-size:1.6rem}
 
@@ -383,8 +380,6 @@ footer{background:var(--ink3);color:#9aa6b0;padding:4.5rem 0 2rem;border-top:1px
 .foot-col a{display:block;text-decoration:none;font-size:.9rem;padding:.32rem 0;transition:.2s;color:#9aa6b0}
 .foot-col a:hover{color:var(--orange);padding-left:5px}
 .foot-col .lic{font-size:.78rem;color:#6f7c87;margin-top:1rem;line-height:1.6}
-.foot-col .hours{font-size:.82rem;color:#9aa6b0;margin:1rem 0 1rem;font-style:italic}
-.foot-col .hours strong{color:#cfd8dc;font-style:normal;font-weight:700}
 .foot-bottom{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:3.4rem;padding-top:1.6rem;border-top:1px solid var(--line-w);font-size:.78rem;color:#6f7c87}
 .foot-bottom a{text-decoration:none;color:#6f7c87}.foot-bottom a:hover{color:var(--orange)}
 
@@ -399,16 +394,8 @@ footer{background:var(--ink3);color:#9aa6b0;padding:4.5rem 0 2rem;border-top:1px
 #toTop:hover{background:var(--orange);color:#12181f;border-color:var(--orange)}
 
 /* ============ REVEAL ============ */
-/* Bulletproof: content ALWAYS becomes visible. The animation auto-plays on
-   render (no JS dependency), so a blank page is impossible. JS adds `.in`
-   for scroll-stagger enhancement, but visibility never relies on it. */
-.rv{opacity:0;transform:translateY(28px);animation:rvIn .7s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:var(--d,0s)}
-.rv.in{animation-play-state:running}
-@keyframes rvIn{to{opacity:1;transform:none}}
-/* Fallback if animations are unsupported: just show it. */
-@media (prefers-reduced-motion:reduce){
-  .rv{opacity:1;transform:none;animation:none}
-}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
 
 /* ============ RESPONSIVE ============ */
 @media (max-width:1024px){
@@ -425,7 +412,7 @@ footer{background:var(--ink3);color:#9aa6b0;padding:4.5rem 0 2rem;border-top:1px
   .iq .quick-est .qe-form{grid-template-columns:1fr}
 }
 @media (max-width:760px){
-  .menu,.head-phone,.head-hours{display:none}
+  .menu,.head-phone{display:none}
   .burger{display:block}
   .hero{padding:5rem 0 3rem}
   .sec-pad{padding:4.6rem 0}

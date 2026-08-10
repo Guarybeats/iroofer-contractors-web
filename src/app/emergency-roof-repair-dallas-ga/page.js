@@ -1,12 +1,9 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
-
+import LocalSeo from '@/components/LocalSeo';
 import { brand } from '@/lib/brand';
 
 export const metadata = {
-  alternates: { canonical: 'https://iroofercontractors.com/emergency-roof-repair-dallas-ga' },
-  openGraph: { url: 'https://iroofercontractors.com/emergency-roof-repair-dallas-ga' },
-
   title: '24/7 Emergency Roof Repair Dallas, GA | Iroofer Contractors',
   description:
     'Storm-damaged roof in Dallas, GA? Our crew is on call 24/7 for emergency roof repair, tarping, and insurance claim support. Same-day response, free inspection. Call now.',
@@ -22,7 +19,7 @@ const steps = [
 export default function EmergencyPage() {
   return (
     <>
-
+      <LocalSeo />
       <section className="sec-light sec-pad">
         <div className="tex" aria-hidden="true" />
         <div className="wrap" style={{ position: 'relative' }}>
@@ -70,7 +67,7 @@ export default function EmergencyPage() {
                 </a>
                 <Link
                   className="btn btn-solid"
-                  href="/estimator"
+                  href="/#contact"
                   style={{ marginLeft: 16, verticalAlign: 'middle' }}
                 >
                   Request emergency tarp <span className="arr">→</span>
@@ -118,20 +115,17 @@ export default function EmergencyPage() {
             </div>
 
             <div className="rv">
-              <picture>
-                <source srcSet="/assets/emergency-tarp.webp" type="image/webp" />
-                <img
-                  src="/assets/emergency-tarp.jpg"
-                  alt="Roofing crew installing a blue emergency tarp on a storm-damaged roof"
-                  loading="lazy"
-                  style={{
-                    borderRadius: 8,
-                    border: '1px solid rgba(22,29,37,.1)',
-                    width: '100%',
-                    marginBottom: 24,
-                  }}
-                />
-              </picture>
+              <img
+                src="/assets/emergency-tarp.jpg"
+                alt="Roofing crew installing a blue emergency tarp on a storm-damaged roof"
+                loading="lazy"
+                style={{
+                  borderRadius: 8,
+                  border: '1px solid rgba(22,29,37,.1)',
+                  width: '100%',
+                  marginBottom: 24,
+                }}
+              />
               <div style={{ maxWidth: 460, margin: 0 }}>
                 <QuoteForm variant="emergency" id="emergency-quote" source="Emergency Page" />
               </div>
