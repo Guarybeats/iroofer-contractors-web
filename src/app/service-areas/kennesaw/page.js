@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
 import { brand, services, cities } from '@/lib/brand';
+import CityMap from '@/components/CityMap';
 
 export const metadata = {
   alternates: { canonical: 'https://iroofercontractors.com/service-areas/kennesaw' },
@@ -37,6 +38,8 @@ export default function KennesawPage() {
             {city.localNote}
           </p>
         </div>
+
+        <CityMap city={city.name} state={city.state} />
 
         <div className="cards" style={{ marginTop: 36 }}>
           {services.map((s) => (
