@@ -399,8 +399,12 @@ footer{background:var(--ink3);color:#9aa6b0;padding:4.5rem 0 2rem;border-top:1px
 #toTop:hover{background:var(--orange);color:#12181f;border-color:var(--orange)}
 
 /* ============ REVEAL ============ */
-.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
-.rv.in{opacity:1;transform:none}
+/* Progressive enhancement: content is VISIBLE by default. JS adds `reveal-ready`
+   to <html> on mount, which opts elements into the hide-then-reveal animation.
+   If JS fails/slow, content stays fully visible — never a blank page. */
+.rv{opacity:1;transform:none}
+html.reveal-ready .rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+html.reveal-ready .rv.in{opacity:1;transform:none}
 
 /* ============ RESPONSIVE ============ */
 @media (max-width:1024px){

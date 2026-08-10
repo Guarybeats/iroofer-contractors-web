@@ -55,6 +55,9 @@ export default function SiteScripts() {
   // --- Page-content bindings (re-run on every route change so client-navigated pages work) ---
   useEffect(() => {
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    // Opt the page into the hide-then-reveal animation. Content is visible by
+    // default (CSS), so if this line never runs the page is still readable.
+    document.documentElement.classList.add('reveal-ready');
 
     // reveal
     const rvEls = document.querySelectorAll('.rv');
@@ -99,7 +102,14 @@ export default function SiteScripts() {
         el.textContent = fmt(el, parseFloat(el.getAttribute('data-count')));
       });
     } else {
-      cntEls.forEach((el) => animateCount(el));
+      cntEls.forEach((el) => {
+        // Set final value immediately so a counter can never get stuck at 0
+        // if the animation frame is interrupted.
+        const target = parseFloat(el.getAttribute('data-count'));
+        el.textContent = fmt(el, target);
+        el.dataset._final = String(target);
+        animateCount(el);
+      });
     }
 
     // services accordion
