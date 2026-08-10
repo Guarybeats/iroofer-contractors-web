@@ -1,8 +1,13 @@
 import { brand, services } from '@/lib/brand';
 
-// Google Business Profile link — update this to your real GBP URL.
-// Find it in your Google Business dashboard or by searching the business name on Maps.
-export const GBP_URL = 'https://g.page/iroofer-contractors';
+// Google Business Profile link — real GBP Maps short link (provided by owner).
+export const GBP_URL = 'https://maps.app.goo.gl/4N6Buw4pRivTJjMW6';
+
+// Review link. The GBP is a maps.app.goo.gl short link; appending /review works
+// for redirect short links and lands customers on the write-a-review flow.
+// If Google ever changes this, replace with the "Get more reviews" link from
+// the GBP dashboard.
+export const REVIEW_URL = 'https://maps.app.goo.gl/4N6Buw4pRivTJjMW6';
 
 // Drop in your real street address to unlock LocalBusiness + geo ranking signals.
 // Dallas, GA has no street number confirmed — leave empty to omit PostalAddress.
@@ -27,6 +32,7 @@ export function buildSeoGraph() {
     logo: `${brand.url}/assets/logo.png`,
     sameAs: [
       GBP_URL,
+      'https://twitter.com/irooferc',
       'https://www.facebook.com/iroofercontractors',
       'https://www.instagram.com/iroofercontractors',
     ],
@@ -53,6 +59,16 @@ export function buildSeoGraph() {
           addressRegion: 'GA',
           addressCountry: 'US',
         },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 33.9218,
+      longitude: -84.8424,
+    },
+    openingHoursSpecification: [
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '09:00', closes: '19:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '09:00', closes: '17:00' },
+      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Sunday', opens: '00:00', closes: '00:00' },
+    ],
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '5',

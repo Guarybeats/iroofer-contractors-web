@@ -1,5 +1,6 @@
 import QuoteForm from '@/components/QuoteForm';
 import { brand } from '@/lib/brand';
+import ReviewButton from '@/components/ReviewButton';
 
 export const metadata = { title: 'Contact — iRoofer Contractors' };
 
@@ -34,6 +35,10 @@ export default function ContactPage() {
         </div>
         <div className="rv">
           <QuoteForm variant="contact" id="quote-contact" />
+        </div>
+
+        <div style={{ marginTop: 28, textAlign: 'center' }}>
+          <ReviewButton variant="orange" label="Leave us a Google review" />
         </div>
       </div>
     </section>

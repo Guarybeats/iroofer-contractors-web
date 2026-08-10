@@ -2,6 +2,7 @@ import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
 import HeroForm from '@/components/HeroForm';
 import LocalSeo from '@/components/LocalSeo';
+import ReviewButton from '@/components/ReviewButton';
 import { brand, services } from '@/lib/brand';
 
 const svcs = [
@@ -291,6 +292,10 @@ export default function HomePage() {
           <div className="rv">
             <QuoteForm variant="contact" id="cform" />
           </div>
+        </div>
+
+        <div style={{ marginTop: 28, textAlign: 'center' }}>
+          <ReviewButton variant="orange" label="Leave us a Google review" />
         </div>
       </section>
     </>
