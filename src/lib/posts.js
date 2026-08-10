@@ -1,12 +1,6 @@
-import Link from 'next/link';
-import { brand } from '@/lib/brand';
-
-export const metadata = {
-  title: 'Roof Tips & News — iRoofer Contractors Blog',
-  description: 'Georgia roofing insights from iRoofer Contractors. Storm damage checklists, insurance claim tips, and roof maintenance advice for Dallas, GA homeowners.',
-};
-
-const posts = [
+// Shared blog post metadata — single source of truth for the blog index
+// and the RelatedPosts component. Keep in sync with src/app/blog/<slug>/page.js.
+export const posts = [
   {
     slug: 'solar-panels-roof-dallas-ga',
     title: 'Solar Panels on Your Dallas Roof: What Homeowners Need to Know Before Installing',
@@ -75,7 +69,7 @@ const posts = [
     slug: 'dallas-ga-hail-storm-insurance-claims',
     title: 'Dallas GA Hail Storm: How to File an Insurance Claim That Actually Gets Paid',
     date: 'November 2026',
-    excerpt: 'Hail damage is the #1 cause of denied claims in North Georgia. Here’s exactly what adjusters look for, how to document your damage, and what to do if your claim gets lowballed.',
+    excerpt: "Hail damage is the #1 cause of denied claims in North Georgia. Here's exactly what adjusters look for, how to document your damage, and what to do if your claim gets lowballed.",
     readTime: '10 min read',
     category: 'Storm Damage',
   },
@@ -83,7 +77,7 @@ const posts = [
     slug: 'gutter-maintenance-dallas-ga',
     title: 'Gutters in Dallas GA: How Often to Clean, When to Replace, and Why It Matters for Your Roof',
     date: 'November 2026',
-    excerpt: 'Clogged gutters cause 30% of the basement leaks and foundation issues we see in Paulding County. Here’s how to keep your gutters — and roof — working together.',
+    excerpt: "Clogged gutters cause 30% of the basement leaks and foundation issues we see in Paulding County. Here's how to keep your gutters — and roof — working together.",
     readTime: '6 min read',
     category: 'Maintenance',
   },
@@ -91,7 +85,7 @@ const posts = [
     slug: 'attic-ventilation-dallas-heat',
     title: 'Why Your Attic Is Oven-Hot in Dallas Summers (And What a Roof Vent Can Fix)',
     date: 'December 2026',
-    excerpt: 'Poor attic ventilation costs Atlanta-area homeowners 15–25% more on summer cooling. Here’s how ridge vents, soffit vents, and powered exhaust fans can drop your electric bill.',
+    excerpt: "Poor attic ventilation costs Atlanta-area homeowners 15–25% more on summer cooling. Here's how ridge vents, soffit vents, and powered exhaust fans can drop your electric bill.",
     readTime: '8 min read',
     category: 'Maintenance',
   },
@@ -115,7 +109,7 @@ const posts = [
     slug: 'architectural-vs-3-tab-shingles',
     title: 'Architectural vs. 3-Tab Shingles: The $1,500 Decision That Could Save You $8,000',
     date: 'January 2027',
-    excerpt: 'The difference between architectural and 3-tab shingles is more than price — it’s lifespan, warranty, and how your insurance claim gets paid.',
+    excerpt: "The difference between architectural and 3-tab shingles is more than price — it's lifespan, warranty, and how your insurance claim gets paid.",
     readTime: '7 min read',
     category: 'Materials',
   },
@@ -123,7 +117,7 @@ const posts = [
     slug: 'wind-damage-roof-repair-dallas',
     title: 'Wind Damage on Your Roof: How to Spot It Before the Next Storm Hits',
     date: 'February 2027',
-    excerpt: 'Georgia wind gusts hit 70+ mph several times a year. Here’s how to tell if your roof is leaking, lifting, or ready to blow off entirely.',
+    excerpt: "Georgia wind gusts hit 70+ mph several times a year. Here's how to tell if your roof is leaking, lifting, or ready to blow off entirely.",
     readTime: '6 min read',
     category: 'Storm Damage',
   },
@@ -131,7 +125,7 @@ const posts = [
     slug: 'emergency-roof-tarping-dallas',
     title: 'Emergency Roof Tarping: What to Expect When We Come to Your Dallas Home',
     date: 'February 2027',
-    excerpt: 'When a storm rips off shingles and rain is coming, emergency tarping is your only line of defense. Here’s what our 24/7 crew does — and what it costs.',
+    excerpt: "When a storm rips off shingles and rain is coming, emergency tarping is your only line of defense. Here's what our 24/7 crew does — and what it costs.",
     readTime: '5 min read',
     category: 'Emergency',
   },
@@ -147,7 +141,7 @@ const posts = [
     slug: 'metal-roofing-pros-cons-dallas',
     title: 'Metal Roofing in Dallas: The Pros, Cons, and Hidden Costs No One Mentions',
     date: 'March 2027',
-    excerpt: 'Metal roofs last 50+ years and beat hail — but they cost 2x asphalt. Here’s the full breakdown including cooling savings, installation gotchas, and noise concerns.',
+    excerpt: "Metal roofs last 50+ years and beat hail — but they cost 2x asphalt. Here's the full breakdown including cooling savings, installation gotchas, and noise concerns.",
     readTime: '9 min read',
     category: 'Materials',
   },
@@ -155,7 +149,7 @@ const posts = [
     slug: 'georgia-winter-roof-inspection',
     title: 'Georgia Winter Roof Prep: The 10-Point Checklist Before the Cold Hits',
     date: 'March 2027',
-    excerpt: 'Georgia winters are mild — but ice dams, freeze-thaw cycles, and hidden leaks can still cost you thousands. Here’s what to check before January freezes arrive.',
+    excerpt: "Georgia winters are mild — but ice dams, freeze-thaw cycles, and hidden leaks can still cost you thousands. Here's what to check before January freezes arrive.",
     readTime: '6 min read',
     category: 'Maintenance',
   },
@@ -168,58 +162,3 @@ const posts = [
     category: 'Warranty',
   },
 ];
-
-export default function BlogPage() {
-  return (
-    <section className="sec-light sec-pad">
-      <div className="tex" aria-hidden="true" />
-      <div className="wrap" style={{ position: 'relative', maxWidth: 880, margin: '0 auto' }}>
-        <div className="sec-head rv" style={{ marginBottom: 48 }}>
-          <span className="eyebrow dark">From the roof</span>
-          <h1 style={{ fontSize: 'clamp(2.2rem,5vw,3.2rem)', fontWeight: 900, lineHeight: 1.05 }}>
-            Roof Tips &amp; News
-          </h1>
-          <p style={{ color: '#52606b', fontSize: '1.05rem', marginTop: 12, maxWidth: 640 }}>
-            Storm damage checklists, insurance claim tips, and roof maintenance advice — written by
-            Cristian Mendez, a local Dallas, GA roofer with 150+ roofs under his belt since 2019.
-          </p>
-        </div>
-
-        <div style={{ display: 'grid', gap: 36 }}>
-          {posts.map((p) => (
-            <article key={p.slug} style={{
-              background: '#fff', border: '1px solid rgba(22,29,37,.08)',
-              borderRadius: 8, padding: '2rem', boxShadow: '0 2px 8px rgba(0,0,0,.02)'
-            }}>
-              <div style={{ display: 'flex', gap: 12, marginBottom: 12, flexWrap: 'wrap' }}>
-                <span style={{
-                  fontSize: '.8rem', fontWeight: 700, color: 'var(--orange)',
-                  textTransform: 'uppercase', letterSpacing: '.04em'
-                }}>{p.category}</span>
-                <span style={{ color: '#8ea2b4', fontSize: '.85rem' }}>{p.date} · {p.readTime}</span>
-              </div>
-              <h2 style={{ fontSize: 'clamp(1.3rem,2.5vw,1.6rem)', fontWeight: 800, margin: '0 0 12px' }}>
-                <Link href={`/blog/${p.slug}`} style={{ color: 'inherit', textDecoration: 'none' }}>
-                  {p.title}
-                </Link>
-              </h2>
-              <p style={{ color: '#52606b', fontSize: '.95rem', lineHeight: 1.6, margin: '0 0 16px' }}>
-                {p.excerpt}
-              </p>
-              <Link href={`/blog/${p.slug}`} style={{
-                color: 'var(--orange)', fontWeight: 700, textDecoration: 'none',
-                display: 'inline-flex', alignItems: 'center', gap: 4
-              }}>
-                Read the full article <span style={{ fontSize: '1.2rem' }}>→</span>
-              </Link>
-            </article>
-          ))}
-        </div>
-
-        <div style={{ marginTop: 48, textAlign: 'center', color: '#8ea2b4', fontSize: '.9rem' }}>
-          More posts coming soon — sign up for our monthly roof-care newsletter.
-        </div>
-      </div>
-    </section>
-  );
-}

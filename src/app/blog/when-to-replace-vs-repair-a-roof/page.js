@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { brand } from '@/lib/brand';
+import RelatedPosts from '@/components/RelatedPosts';
 import { notFound } from 'next/navigation';
 
 const post = {
@@ -49,7 +49,7 @@ export default function BlogPostPage() {
               <li><strong>Single missing or cracked shingle</strong> — patch, seal, and monitor</li>
               <li><strong>Small puncture</strong> (tennis ball, branch) — patch from the inside or replace 1-2 shingles</li>
               <li><strong>Flashing leak</strong> around chimney or vent — re-seal the flashing</li>
-              <li><strong>Lift edge (less than 6 inches)</strong> — glue down with roofing adhesive</li>
+              <li><strong>Lift edge (6 inches or less)</strong> — glue down with roofing adhesive</li>
             </ul>
 
             <h2>How to Decide in 5 Questions</h2>
@@ -67,6 +67,7 @@ export default function BlogPostPage() {
 
             <h2>Still Unsure? Get a Second Opinion</h2>
             <p>Every roof inspection from iRoofer includes a detailed written report with photos. No pressure, no upsell. If you're within your insurance window, we'll help you document the damage for your claim.</p>
+            <RelatedPosts slug="when-to-replace-vs-repair-a-roof" />
             <p><Link href="/estimator" className="btn btn-solid">Get a Free Roof Inspection →</Link></p>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { brand } from '@/lib/brand';
+import RelatedPosts from '@/components/RelatedPosts';
 
 const post = {
   slug: 'choosing-roofing-materials-dallas-ga',
@@ -92,6 +92,7 @@ export default function BlogPostPage() {
 
             <h2>Still Deciding? Let's Talk Materials</h2>
             <p>We'll walk you through the options during a free, no-pressure inspection. We show you real samples, explain the pros/cons for your specific roof structure, and provide exact pricing — no sales pressure.</p>
+            <RelatedPosts slug="choosing-roofing-materials-dallas-ga" />
             <p><Link href="/estimator" className="btn btn-solid">Get a Free Material Consultation →</Link></p>
           </div>
         </div>

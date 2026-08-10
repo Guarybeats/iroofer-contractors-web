@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { brand } from '@/lib/brand';
+import RelatedPosts from '@/components/RelatedPosts';
 
 export const metadata = {
   title: 'Georgia Hail Storm Roof Checklist: What Dallas Homeowners Need to Know | iRoofer Contractors',
@@ -87,6 +88,8 @@ export default function BlogStormChecklist() {
             Get emergency roof help <span className="arr">→</span>
           </Link>
         </div>
+
+        <RelatedPosts slug="georgia-hail-storm-roof-checklist" />
       </div>
     </article>
   );
