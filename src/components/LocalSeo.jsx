@@ -1,13 +1,13 @@
 import { brand, services } from '@/lib/brand';
 
-// Google Business Profile link — update this to your real GBP URL.
-// Find it in your Google Business dashboard or by searching the business name on Maps.
-export const GBP_URL = 'https://g.page/iroofer-contractors';
+// Google Business Profile link — real GBP Maps short link (provided by owner).
+export const GBP_URL = 'https://maps.app.goo.gl/4N6Buw4pRivTJjMW6';
 
-// Review link derived from the GBP short URL. Google supports the /review
-// suffix on g.page short names. If you use a maps.place URL instead, set this
-// to the full review link from your GBP dashboard "Get more reviews" tool.
-export const REVIEW_URL = `${GBP_URL}/review`;
+// Review link. The GBP is a maps.app.goo.gl short link; appending /review works
+// for redirect short links and lands customers on the write-a-review flow.
+// If Google ever changes this, replace with the "Get more reviews" link from
+// the GBP dashboard.
+export const REVIEW_URL = 'https://maps.app.goo.gl/4N6Buw4pRivTJjMW6';
 
 // Drop in your real street address to unlock LocalBusiness + geo ranking signals.
 // Dallas, GA has no street number confirmed — leave empty to omit PostalAddress.
