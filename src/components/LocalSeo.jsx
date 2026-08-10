@@ -43,6 +43,33 @@ export function buildSeoGraph() {
       })),
       { '@type': 'AdministrativeArea', name: 'Atlanta Metro' },
     ],
+    // Geographic center of the service area (Dallas, GA) — boosts local pack relevance.
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 33.9218,
+      longitude: -84.8424,
+    },
+    // Regular business hours (used by Google for the "Open now" badge).
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '09:00',
+        closes: '19:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: 'Saturday',
+        opens: '09:00',
+        closes: '17:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: 'Sunday',
+        opens: '00:00',
+        closes: '00:00',
+      },
+    ],
     address: STREET_ADDRESS
       ? {
           '@type': 'PostalAddress',

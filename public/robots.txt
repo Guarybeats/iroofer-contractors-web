@@ -1,4 +1,14 @@
 User-agent: *
 Allow: /
 
+# Block admin/API/internal surfaces from indexing
+Disallow: /admin/
+Disallow: /api/
+Disallow: /estimator?*
+Disallow: /*?*utm_*
+Disallow: /*?*fbclid
+
+# Be polite to crawlers
+Crawl-delay: 1
+
 Sitemap: https://iroofercontractors.com/sitemap.xml
