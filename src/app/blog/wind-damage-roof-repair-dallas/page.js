@@ -2,6 +2,9 @@ import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 
 export const metadata = {
+  alternates: { canonical: 'https://iroofercontractors.com/blog/wind-damage-roof-repair-dallas' },
+  openGraph: { url: 'https://iroofercontractors.com/blog/wind-damage-roof-repair-dallas' },
+
   title: 'Wind Damage on Your Roof: How to Spot It Before the Next Storm Hits',
   description:
     'Georgia wind gusts hit 70+ mph several times a year. Learn how to identify wind damage on your roof — lifted shingles, creased shingles, and exposed decking — before the next storm.',

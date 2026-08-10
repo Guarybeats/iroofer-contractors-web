@@ -2,6 +2,9 @@ import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 
 export const metadata = {
+  alternates: { canonical: 'https://iroofercontractors.com/blog/metal-roofing-pros-cons-dallas' },
+  openGraph: { url: 'https://iroofercontractors.com/blog/metal-roofing-pros-cons-dallas' },
+
   title: 'Metal Roofing in Dallas: The Pros, Cons, and Hidden Costs No One Mentions',
   description:
     'Metal roofs last 50+ years and beat hail — but they cost 2x asphalt. We break down cooling savings, installation gotchas, and noise concerns.',

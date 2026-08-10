@@ -2,6 +2,9 @@ import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 
 export const metadata = {
+  alternates: { canonical: 'https://iroofercontractors.com/blog/attic-ventilation-dallas-heat' },
+  openGraph: { url: 'https://iroofercontractors.com/blog/attic-ventilation-dallas-heat' },
+
   title: 'Why Your Attic Is Oven-Hot in Dallas Summers (And What a Roof Vent Can Fix)',
   description:
     'Poor attic ventilation costs Atlanta-area homeowners 15-25% more on summer cooling. Learn how ridge vents, soffit vents, and powered exhaust fans can lower your electric bill.',

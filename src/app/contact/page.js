@@ -1,7 +1,10 @@
 import QuoteForm from '@/components/QuoteForm';
 import { brand } from '@/lib/brand';
 
-export const metadata = { title: 'Contact — iRoofer Contractors' };
+export const metadata = {
+  alternates: { canonical: 'https://iroofercontractors.com/contact' },
+  openGraph: { url: 'https://iroofercontractors.com/contact' },
+ title: 'Contact — iRoofer Contractors' };
 
 export default function ContactPage() {
   return (

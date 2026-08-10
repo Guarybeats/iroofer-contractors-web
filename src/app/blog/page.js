@@ -2,6 +2,9 @@ import Link from 'next/link';
 import { brand } from '@/lib/brand';
 
 export const metadata = {
+  alternates: { canonical: 'https://iroofercontractors.com/blog' },
+  openGraph: { url: 'https://iroofercontractors.com/blog' },
+
   title: 'Roof Tips & News — iRoofer Contractors Blog',
   description: 'Georgia roofing insights from iRoofer Contractors. Storm damage checklists, insurance claim tips, and roof maintenance advice for Dallas, GA homeowners.',
 };

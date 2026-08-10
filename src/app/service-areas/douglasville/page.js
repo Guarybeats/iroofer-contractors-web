@@ -3,6 +3,9 @@ import QuoteForm from '@/components/QuoteForm';
 import { brand, services, cities } from '@/lib/brand';
 
 export const metadata = {
+  alternates: { canonical: 'https://iroofercontractors.com/service-areas/douglasville' },
+  openGraph: { url: 'https://iroofercontractors.com/service-areas/douglasville' },
+
   title: 'Roofing in Douglasville, GA — iRoofer Contractors',
   description:
     'Local roofing in Dallas, GA (Paulding County). Our home base — same-day roof inspections across Dallas and across the county line. Free inspection, honest pricing, 5★ rated. Call (470) 236-1410.',

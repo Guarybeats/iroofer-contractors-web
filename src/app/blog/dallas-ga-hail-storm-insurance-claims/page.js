@@ -2,6 +2,9 @@ import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 
 export const metadata = {
+  alternates: { canonical: 'https://iroofercontractors.com/blog/dallas-ga-hail-storm-insurance-claims' },
+  openGraph: { url: 'https://iroofercontractors.com/blog/dallas-ga-hail-storm-insurance-claims' },
+
   title: 'Dallas GA Hail Storm: How to File an Insurance Claim That Actually Gets Paid | iRoofer Contractors',
   description:
     'Hail damage is the #1 cause of denied roofing insurance claims in North Georgia. Learn how to document damage, meet the adjuster, and what to do if your claim gets lowballed.',

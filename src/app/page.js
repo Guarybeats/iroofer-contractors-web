@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
 import HeroForm from '@/components/HeroForm';
-import LocalSeo from '@/components/LocalSeo';
+
 import { brand, services } from '@/lib/brand';
 
 const svcs = [
@@ -43,7 +43,7 @@ const faqs = [
 export default function HomePage() {
   return (
     <>
-      <LocalSeo reviews={reviews} />
+
       {/* HERO */}
       <section className="hero" id="home">
         <div className="hero-bgword" aria-hidden="true">Roofing</div>

@@ -3,6 +3,9 @@ import { brand } from '@/lib/brand';
 import RelatedPosts from '@/components/RelatedPosts';
 
 export const metadata = {
+  alternates: { canonical: 'https://iroofercontractors.com/blog/georgia-hail-storm-roof-checklist' },
+  openGraph: { url: 'https://iroofercontractors.com/blog/georgia-hail-storm-roof-checklist' },
+
   title: 'Georgia Hail Storm Roof Checklist: What Dallas Homeowners Need to Know | iRoofer Contractors',
   description:
     'After a Georgia hail storm hits Dallas, follow our 6-step checklist: safety, photos, tarp, claim, inspection, repair. Written by Cristian Mendez, founder of iRoofer Contractors.',

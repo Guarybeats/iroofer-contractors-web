@@ -1,9 +1,12 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
-import LocalSeo from '@/components/LocalSeo';
+
 import { brand } from '@/lib/brand';
 
 export const metadata = {
+  alternates: { canonical: 'https://iroofercontractors.com/emergency-roof-repair-dallas-ga' },
+  openGraph: { url: 'https://iroofercontractors.com/emergency-roof-repair-dallas-ga' },
+
   title: '24/7 Emergency Roof Repair Dallas, GA | Iroofer Contractors',
   description:
     'Storm-damaged roof in Dallas, GA? Our crew is on call 24/7 for emergency roof repair, tarping, and insurance claim support. Same-day response, free inspection. Call now.',
@@ -19,7 +22,7 @@ const steps = [
 export default function EmergencyPage() {
   return (
     <>
-      <LocalSeo />
+
       <section className="sec-light sec-pad">
         <div className="tex" aria-hidden="true" />
         <div className="wrap" style={{ position: 'relative' }}>

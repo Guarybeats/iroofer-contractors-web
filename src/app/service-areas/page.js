@@ -2,6 +2,9 @@ import Link from 'next/link';
 import { cities, brand } from '@/lib/brand';
 
 export const metadata = {
+  alternates: { canonical: 'https://iroofercontractors.com/service-areas' },
+  openGraph: { url: 'https://iroofercontractors.com/service-areas' },
+
   title: 'Service Areas — iRoofer Contractors',
   description: `Local roofing across Dallas, GA and the greater Atlanta metro — Douglasville, Hiram, Powder Springs, Marietta, Acworth, Kennesaw, Austell. Free inspection: ${brand.phone}.`,
 };

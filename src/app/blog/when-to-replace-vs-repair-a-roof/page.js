@@ -11,6 +11,9 @@ const post = {
 };
 
 export const metadata = {
+  alternates: { canonical: 'https://iroofercontractors.com/blog/when-to-replace-vs-repair-a-roof' },
+  openGraph: { url: 'https://iroofercontractors.com/blog/when-to-replace-vs-repair-a-roof' },
+
   title: 'Roof Replacement vs. Roof Repair: When to Tear Off vs. Patch',
   description: 'How to decide between roof repair and full replacement. Signs you need a new roof, when patching makes sense, and what to expect for cost and timeline in Dallas, GA.',
 };

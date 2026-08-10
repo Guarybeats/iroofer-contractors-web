@@ -1,6 +1,9 @@
 import { brand } from '@/lib/brand';
 
 export const metadata = {
+  alternates: { canonical: 'https://iroofercontractors.com/about' },
+  openGraph: { url: 'https://iroofercontractors.com/about' },
+
   title: 'About — iRoofer Contractors',
   description: `${brand.owner}, founder of iRoofer Contractors. Family-owned roofing in Dallas, GA since 2019. 150+ roofs completed. Licensed · Bonded · Insured. ${brand.phone}.`,
 };

@@ -2,6 +2,9 @@ import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 
 export const metadata = {
+  alternates: { canonical: 'https://iroofercontractors.com/blog/architectural-vs-3-tab-shingles' },
+  openGraph: { url: 'https://iroofercontractors.com/blog/architectural-vs-3-tab-shingles' },
+
   title: 'Architectural vs. 3-Tab Shingles: The $1,500 Decision That Could Save You $8,000',
   description:
     'The difference between architectural and 3-tab shingles goes beyond price. We break down lifespan, warranty, hail rating, and insurance value.',

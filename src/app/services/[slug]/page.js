@@ -7,6 +7,19 @@ export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
 }
 
+export function generateMetadata({ params }) {
+  const service = getService(params.slug);
+  if (!service) return {};
+  const url = `${brand.url}/services/${service.slug}`;
+  return {
+    title: service.title,
+    description: service.summary,
+    alternates: { canonical: url },
+    openGraph: { title: service.title, description: service.summary, url },
+    twitter: { title: service.title, description: service.summary, url },
+  };
+}
+
 export default function ServiceDetail({ params }) {
   const service = getService(params.slug);
   if (!service) notFound();

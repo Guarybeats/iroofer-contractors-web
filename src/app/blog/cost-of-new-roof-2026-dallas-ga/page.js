@@ -2,6 +2,9 @@ import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 
 export const metadata = {
+  alternates: { canonical: 'https://iroofercontractors.com/blog/cost-of-new-roof-2026-dallas-ga' },
+  openGraph: { url: 'https://iroofercontractors.com/blog/cost-of-new-roof-2026-dallas-ga' },
+
   title: '$8K–$30K: What Your New Roof Actually Costs in 2026 (Dallas GA Pricing)',
   description:
     'We break down real replacement costs per square footage, material tier, and roof pitch — plus what insurance typically covers in Paulding County.',

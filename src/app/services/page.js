@@ -2,6 +2,9 @@ import Link from 'next/link';
 import { services, brand } from '@/lib/brand';
 
 export const metadata = {
+  alternates: { canonical: 'https://iroofercontractors.com/services' },
+  openGraph: { url: 'https://iroofercontractors.com/services' },
+
   title: 'Roofing Services — iRoofer Contractors',
   description: `Dallas, GA roofing services since 2019. Roof repair, full replacement, new construction, and storm & insurance claims. Same local crew, same warranty, same phone number. ${brand.phone}`,
 };
