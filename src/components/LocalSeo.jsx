@@ -4,6 +4,11 @@ import { brand, services } from '@/lib/brand';
 // Find it in your Google Business dashboard or by searching the business name on Maps.
 export const GBP_URL = 'https://g.page/iroofer-contractors';
 
+// Review link derived from the GBP short URL. Google supports the /review
+// suffix on g.page short names. If you use a maps.place URL instead, set this
+// to the full review link from your GBP dashboard "Get more reviews" tool.
+export const REVIEW_URL = `${GBP_URL}/review`;
+
 // Drop in your real street address to unlock LocalBusiness + geo ranking signals.
 // Dallas, GA has no street number confirmed — leave empty to omit PostalAddress.
 export const STREET_ADDRESS = '152 Freedom Dr';
