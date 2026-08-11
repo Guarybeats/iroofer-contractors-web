@@ -121,6 +121,11 @@ export default function RootLayout({ children }) {
                 <a href={`tel:${brand.phone}`}>{brand.phone}</a>
                 <a href={`mailto:${brand.email}`}>{brand.email}</a>
                 <a href="/#contact">{brand.location}</a>
+                <p className="lic foot-hours">
+                  {brand.hours.weekdays}<br />
+                  {brand.hours.saturday}<br />
+                  {brand.hours.sunday}
+                </p>
                 <p className="lic">Fully licensed · bonded · insured<br />© {new Date().getFullYear()} {brand.name}</p>
               </div>
             </div>
