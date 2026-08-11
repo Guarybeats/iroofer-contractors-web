@@ -58,7 +58,7 @@ export const services = [
     image: '/assets/service-replacement.jpg',
     webp: '/assets/service-replacement.webp',
     summary:
-      'Full tear-off and replacement with architectural asphalt shingles, installed clean and built to last.',
+      'Full tear-off and replacement with GAF-certified architectural asphalt shingles, installed clean and built to last. Backed by a manufacturer warranty and our workmanship guarantee.',
     bullets: [
       'Complete tear-off & deck inspection',
       'Architectural & premium shingle options',
@@ -79,6 +79,21 @@ export const services = [
       'Design-matched shingle selection',
       'Code-compliant installation',
       'Final walkthrough & warranty setup'
+    ]
+  },
+  {
+    slug: 'gutter-repair-replacement',
+    title: 'Gutter Repair & Replacement',
+    tagline: 'Protect your roof, fascia, and foundation.',
+    image: '/assets/service-repair.jpg',
+    webp: '/assets/service-repair.webp',
+    summary:
+      'Clogged or failing gutters are the #1 cause of preventable roof and foundation damage in Dallas, GA. We repair, realign, and replace gutters and downspouts so water flows away from your home.',
+    bullets: [
+      'Gutter cleaning, repair & realignment',
+      'Full seamless gutter replacement',
+      'Downspout & drainage correction',
+      'Leaf-guard & gutter guard options'
     ]
   }
 ];

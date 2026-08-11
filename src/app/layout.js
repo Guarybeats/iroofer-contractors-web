@@ -4,8 +4,8 @@ import SiteScripts from '@/components/SiteScripts';
 import LocalSeo from '@/components/LocalSeo';
 
 export const metadata = {
-  title: `${brand.name} — ${brand.tagline}`,
-  description: brand.pitch,
+  title: `iRoofer Contractors — Dallas GA Roof Repair, Replacement & Free Estimates`,
+  description: `iRoofer Contractors is a local, family-owned roofer in Dallas, GA offering roof repair, roof replacement, storm damage repair, and free estimates. We handle insurance claims and serve Dallas, Douglasville, Hiram, Powder Springs, Marietta, Acworth, Kennesaw & Austell.`,
 };
 
 export default function RootLayout({ children }) {

@@ -8,7 +8,7 @@ export const metadata = {
   alternates: { canonical: 'https://iroofercontractors.com/service-areas/dallas-ga' },
   openGraph: { url: 'https://iroofercontractors.com/service-areas/dallas-ga' },
 
-  title: 'Roofing in Dallas, GA — iRoofer Contractors',
+  title: 'Dallas, GA Roof Repair & Replacement — Free Estimates | iRoofer',
   description:
     'Local roofing in Dallas, GA (Paulding County). Our home base — same-day roof inspections across Dallas and across the county line. Free inspection, honest pricing, 5★ rated. Call (470) 236-1410.',
 };

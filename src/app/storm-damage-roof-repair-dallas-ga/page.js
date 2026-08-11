@@ -3,9 +3,9 @@ import QuoteForm from '@/components/QuoteForm';
 import { brand } from '@/lib/brand';
 
 export const metadata = {
-  title: 'Storm Damage Roof Repair Dallas, GA | iRoofer Contractors',
+  title: 'Storm Damage Roof Repair & Insurance Claims | Dallas, GA Roofing',
   description:
-    'Hail, wind, or tree damage from a Georgia storm? We inspect, document, and handle your insurance claim for a full roof restoration. Free assessment, 24-hour response for emergencies.',
+    'Hail, wind, or tree damage from a Georgia storm? We inspect, document storm damage, and handle your roof insurance claim for a full roof restoration. Free estimate, 24-hour emergency response in Dallas, GA.',
 };
 
 const steps = [

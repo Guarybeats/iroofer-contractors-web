@@ -8,7 +8,7 @@ export const metadata = {
   alternates: { canonical: 'https://iroofercontractors.com/service-areas/hiram' },
   openGraph: { url: 'https://iroofercontractors.com/service-areas/hiram' },
 
-  title: 'Roofing in Hiram, GA — iRoofer Contractors',
+  title: 'Hiram, GA Roof Repair & Replacement — Free Estimates | iRoofer',
   description:
     'Local roofing in Dallas, GA (Paulding County). Our home base — same-day roof inspections across Dallas and across the county line. Free inspection, honest pricing, 5★ rated. Call (470) 236-1410.',
 };

@@ -109,14 +109,37 @@ export function buildSeoGraph() {
   };
 }
 
-export default function LocalSeo({ reviews = SHARED_REVIEWS }) {
+export default function LocalSeo({ reviews = SHARED_REVIEWS, faq = null }) {
   // expose reviews to buildSeoGraph without prop drilling into a module global
   globalThis.__reviews = reviews;
   const graph = buildSeoGraph();
+
+  // Optional FAQPage schema (rich-result eligible). Pass `faq` from a page that
+  // renders an FAQ section so Google can surface the Q&A directly in search.
+  const faqSchema = faq
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faq.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null;
+
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+    </>
   );
 }
