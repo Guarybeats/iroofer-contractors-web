@@ -190,6 +190,16 @@ section{position:relative}
 .card p{color:#52606b;flex:1}
 .card .more{margin-top:14px;font-weight:800;color:var(--orange);display:inline-flex;gap:6px}
 
+/* ============ BLOG TEASER ============ */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:36px}
+.bcard{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:10px;transition:transform .2s ease,box-shadow .2s ease}
+.bcard:hover{transform:translateY(-6px);box-shadow:0 20px 44px rgba(20,29,39,.18)}
+.bcard .cat{font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--orange)}
+.bcard h4{font-size:1.18rem;color:var(--ink);text-transform:none;letter-spacing:0;line-height:1.15}
+.bcard p{color:#52606b;font-size:.95rem}
+.bcard .more{margin-top:auto;font-weight:800;color:var(--orange);display:inline-flex;gap:6px}
+@media (max-width:860px){.blog-grid{grid-template-columns:1fr}}
+
 /* ============ STORM BANNER ============ */
 .storm{background:linear-gradient(160deg,#10202c,#0c1620);color:var(--chalk);clip-path:polygon(0 5vw,100% 0,100% 100%,0 100%);
   padding:9rem 0 6rem;overflow:hidden;margin-top:-4.5vw}

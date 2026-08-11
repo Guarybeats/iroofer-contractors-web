@@ -3,6 +3,7 @@ import QuoteForm from '@/components/QuoteForm';
 import HeroForm from '@/components/HeroForm';
 import ReviewButton from '@/components/ReviewButton';
 import { brand, services } from '@/lib/brand';
+import { posts } from '@/lib/posts';
 
 const svcs = [
   { n: '01', title: 'Roof Repair', tag: 'Same week', img: '/assets/service-repair.jpg',
@@ -227,6 +228,31 @@ export default function HomePage() {
             {[...reviews].reverse().map((r, i) => (
               <div className="rcard" key={`c${i}`}><div className="stars">★★★★★</div><p className="q">{r.q}</p><div className="who"><span className="av">{r.who.charAt(0)}</span><div><b>{r.who}</b><span>{r.where}</span></div></div></div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* BLOG TEASER */}
+      <section className="sec-light sec-pad" id="blog">
+        <div className="tex" aria-hidden="true" />
+        <div className="wrap" style={{ position: 'relative' }}>
+          <div className="sec-head rv">
+            <span className="eyebrow dark">From the roof</span>
+            <h2>Roof tips &amp; storm advice.</h2>
+            <p>Checklists, insurance-claim walkthroughs, and maintenance advice written by a local Dallas, GA roofer — not a content farm.</p>
+          </div>
+          <div className="blog-grid rv">
+            {posts.slice(0, 3).map((p) => (
+              <Link href={`/blog/${p.slug}`} key={p.slug} className="bcard">
+                <span className="cat">{p.category}</span>
+                <h4>{p.title}</h4>
+                <p>{p.excerpt}</p>
+                <span className="more">Read the full article →</span>
+              </Link>
+            ))}
+          </div>
+          <div style={{ textAlign: 'center', marginTop: 32 }}>
+            <Link href="/blog" className="btn btn-ink">Read all articles <span className="arr">→</span></Link>
           </div>
         </div>
       </section>

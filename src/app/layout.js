@@ -53,6 +53,7 @@ export default function RootLayout({ children }) {
               <a className="lnk" href="/#work">Our Work</a>
               <a className="lnk" href="/#process">Process</a>
               <a className="lnk" href="/#reviews">Reviews</a>
+              <a className="lnk" href="/blog">Blog</a>
               <a className="lnk" href="/#faq">FAQ</a>
             </nav>
             <div className="head-cta">
@@ -75,6 +76,7 @@ export default function RootLayout({ children }) {
           <a href="/#work">Our Work</a>
           <a href="/#process">Process</a>
           <a href="/#reviews">Reviews</a>
+          <a href="/blog">Blog</a>
           <a href="/#faq">FAQ</a>
           <a href="/#contact">Contact</a>
           <a className="mphone" href={`tel:${brand.phone}`}>{brand.phone}</a>
@@ -111,6 +113,7 @@ export default function RootLayout({ children }) {
                 <a href="/#process">Our Process</a>
                 <a href="/#reviews">Reviews</a>
                 <a href="/about">About Us</a>
+                <a href="/blog">Blog</a>
                 <a href="/#contact">Contact</a>
               </div>
               <div className="foot-col">
