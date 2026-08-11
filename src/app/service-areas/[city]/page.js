@@ -69,7 +69,7 @@ export default function CityPage({ params }) {
             </p>
           </div>
           <div className="rv">
-            <img src="/assets/hero.jpg" alt={`Roofing work in ${c.name}, ${c.state}`} style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
+            <img src="/assets/hero.webp" alt={`Roofing work in ${c.name}, ${c.state}`} style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} loading="eager" decoding="async" />
             <div style={{ maxWidth: 460, margin: '32px auto 0' }}>
               <QuoteForm variant="detail" id={`quote-${c.slug}`} source={`Service Area: ${c.name}`} />
             </div>

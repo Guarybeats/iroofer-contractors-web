@@ -53,8 +53,8 @@ p{margin:0}
 @keyframes tick{to{transform:translateX(-50%)}}
 
 /* ============ HEADER ============ */
-.site-head{position:sticky;top:0;z-index:1200;transition:.3s ease;padding:.9rem 0;background:rgba(16,21,27,.0)}
-.site-head.scrolled{background:rgba(16,21,27,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-w);padding:.55rem 0}
+.site-head{position:sticky;top:0;z-index:1200;transition:.3s ease;padding:.9rem 0;background:rgba(16,21,27,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-w)}
+.site-head.scrolled{background:rgba(16,21,27,.97);padding:.55rem 0}
 .nav{display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
 .brand{display:flex;align-items:center;gap:.65rem;text-decoration:none}
 .brand img.brand-logo{height:64px;width:auto;display:block}

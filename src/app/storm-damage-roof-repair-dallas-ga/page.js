@@ -115,7 +115,7 @@ export default function StormDamagePage() {
 
             <div className="rv">
               <img
-                src="/assets/storm-damage.jpg"
+                src="/assets/storm-damage.webp"
                 alt="Storm-damaged asphalt shingle roof after a Georgia hail storm"
                 loading="lazy"
                 style={{

@@ -115,7 +115,7 @@ export default function EmergencyPage() {
 
             <div className="rv">
               <img
-                src="/assets/emergency-tarp.jpg"
+                src="/assets/emergency-tarp.webp"
                 alt="Roofing crew installing a blue emergency tarp on a storm-damaged roof"
                 loading="lazy"
                 style={{

@@ -96,7 +96,7 @@ export default function MariettaPage() {
           <div className="rv">
             <picture>
               <source srcSet="/assets/hero.webp" type="image/webp" />
-              <img src="/assets/hero.jpg" alt="Roofing work in Marietta, GA" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
+              <img src="/assets/hero.webp" alt="Roofing work in Marietta, GA" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
             </picture>
             <div style={{ maxWidth: 460, margin: '32px auto 0' }}>
               <QuoteForm variant="detail" id={`quote-${city.slug}`} source={`Service Area: ${city.name}`} />

@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
         <header className="site-head" id="head">
           <div className="wrap nav">
             <a className="brand" href="/">
-              <img className="brand-logo" src="/assets/logo.png" alt={`${brand.name} logo`} />
+              <img className="brand-logo" src="/assets/logo.webp" alt={`${brand.name} logo`} loading="eager" decoding="async" />
             </a>
             <nav className="menu" aria-label="Primary">
               <a className="lnk" href="/#services">Services</a>
@@ -89,7 +89,7 @@ export default function RootLayout({ children }) {
           <div className="wrap">
             <div className="foot-grid">
               <div className="foot-brand">
-                <img className="brand-logo" src="/assets/logo.png" alt={brand.name} style={{ height: 52 }} />
+                <img className="brand-logo" src="/assets/logo.webp" alt={brand.name} style={{ height: 52 }} loading="eager" decoding="async" />
                 <p>A local, family-owned roofing company built on showing up, doing it right, and standing behind the work — one Dallas, GA roof at a time.</p>
                 <div className="socials">
                   <a href="https://www.facebook.com/iroofercontractors" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5c0-1.1.4-2 2-2h2V2h-3c-3 0-4 1.8-4 4.5V10H7v4h3v8h3Z"/></svg></a>
