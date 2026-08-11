@@ -4,7 +4,9 @@ import { brand } from '@/lib/brand';
 export const metadata = {
   title: 'Georgia Hail Storm Roof Checklist: What Dallas Homeowners Need to Know | iRoofer Contractors',
   description:
-    'After a Georgia hail storm hits Dallas, follow our 6-step checklist: safety, photos, tarp, claim, inspection, repair. 20 years of Texas and Georgia roofing experience.',
+    'After a Georgia hail storm hits Dallas, follow our 6-step checklist: safety, photos, tarp, claim, inspection, repair. Years of roofing experience across Dallas, GA and the greater Atlanta metro.',
+  alternates: { canonical: 'https://iroofercontractors.com/blog/georgia-hail-storm-roof-checklist' },
+  openGraph: { url: 'https://iroofercontractors.com/blog/georgia-hail-storm-roof-checklist' },
 };
 
 const steps = [
@@ -51,6 +53,9 @@ export default function BlogStormChecklist() {
           </h1>
           <p style={{ color: '#52606b', marginTop: 12, fontSize: '1.05rem' }}>
             North Georgia gets its share of hail storms — some the size of quarters, some larger. When the skies clear, the last thing you want is a hidden roof leak or a denied insurance claim. Follow this six-step checklist, written by a local Dallas roofer who has inspected hundreds of storm-damaged roofs.
+          </p>
+          <p className="byline">
+            By iRoofer Contractors
           </p>
         </div>
 

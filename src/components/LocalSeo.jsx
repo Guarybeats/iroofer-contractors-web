@@ -1,4 +1,5 @@
 import { brand, services } from '@/lib/brand';
+import { reviews as SHARED_REVIEWS } from '@/lib/reviews';
 
 // Google Business Profile link — real GBP Maps short link (provided by owner).
 export const GBP_URL = 'https://maps.app.goo.gl/4N6Buw4pRivTJjMW6';
@@ -75,7 +76,7 @@ export function buildSeoGraph() {
       reviewCount: brand.reviewCount,
       bestRating: '5',
     },
-    review: (globalThis.__reviews || []).map((r) => ({
+    review: (globalThis.__reviews || SHARED_REVIEWS).map((r) => ({
       '@type': 'Review',
       reviewBody: r.q.replace(/[“”]/g, ''),
       author: { '@type': 'Person', name: r.who },
@@ -108,7 +109,7 @@ export function buildSeoGraph() {
   };
 }
 
-export default function LocalSeo({ reviews = [] }) {
+export default function LocalSeo({ reviews = SHARED_REVIEWS }) {
   // expose reviews to buildSeoGraph without prop drilling into a module global
   globalThis.__reviews = reviews;
   const graph = buildSeoGraph();

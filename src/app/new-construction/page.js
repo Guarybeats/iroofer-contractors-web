@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
-import LocalSeo from '@/components/LocalSeo';
 import { brand, services } from '@/lib/brand';
 import { notFound } from 'next/navigation';
 
@@ -24,7 +23,7 @@ export default function NewConstructionPage() {
 
   return (
     <>
-      <LocalSeo />
+
       <section className="sec-light sec-pad">
         <div className="tex" aria-hidden="true" />
         <div className="wrap" style={{ position: 'relative' }}>

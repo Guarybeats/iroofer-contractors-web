@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
-import LocalSeo from '@/components/LocalSeo';
 import { brand } from '@/lib/brand';
 
 export const metadata = {
@@ -19,7 +18,7 @@ const steps = [
 export default function StormDamagePage() {
   return (
     <>
-      <LocalSeo />
+
       <section className="sec-light sec-pad">
         <div className="tex" aria-hidden="true" />
         <div className="wrap" style={{ position: 'relative' }}>
