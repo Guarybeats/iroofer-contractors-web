@@ -1,4 +1,5 @@
 import './globals.css';
+import Script from 'next/script';
 import { brand } from '@/lib/brand';
 import SiteScripts from '@/components/SiteScripts';
 import LocalSeo from '@/components/LocalSeo';
@@ -33,6 +34,17 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
         <LocalSeo />
+        {/* Google Analytics 4 (Measurement ID: G-EC6HCLKMEN) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-EC6HCLKMEN"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-config" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-EC6HCLKMEN');`}
+        </Script>
       </head>
       <body>
         {/* TOP TICKER */}
