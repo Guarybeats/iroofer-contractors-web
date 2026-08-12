@@ -30,7 +30,6 @@ export function buildSeoGraph() {
     email: brand.email,
     priceRange: '$$',
     foundingDate: String(brand.founded),
-    founder: { '@type': 'Person', name: brand.owner },
     image: `${brand.url}/assets/logo.png`,
     logo: `${brand.url}/assets/logo.png`,
     sameAs: [
