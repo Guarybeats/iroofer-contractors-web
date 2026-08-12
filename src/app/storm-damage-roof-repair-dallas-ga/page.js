@@ -1,12 +1,14 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
 import { brand } from '@/lib/brand';
+import { seo } from '@/lib/seo';
 
-export const metadata = {
+export const metadata = seo({
   title: 'Storm Damage Roof Repair & Insurance Claims | Dallas, GA Roofing',
   description:
     'Hail, wind, or tree damage from a Georgia storm? We inspect, document storm damage, and handle your roof insurance claim for a full roof restoration. Free estimate, 24-hour emergency response in Dallas, GA.',
-};
+  path: '/storm-damage-roof-repair-dallas-ga',
+});
 
 const steps = [
   'Stay inside and keep away from windows — storm-damaged roofs can be unstable.',

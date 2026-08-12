@@ -4,8 +4,25 @@ import SiteScripts from '@/components/SiteScripts';
 import LocalSeo from '@/components/LocalSeo';
 
 export const metadata = {
+  metadataBase: new URL('https://iroofercontractors.com'),
   title: `iRoofer Contractors — Dallas GA Roof Repair, Replacement & Free Estimates`,
   description: `iRoofer Contractors is a local, family-owned roofer in Dallas, GA offering roof repair, roof replacement, storm damage repair, and free estimates. We handle insurance claims and serve Dallas, Douglasville, Hiram, Powder Springs, Marietta, Acworth, Kennesaw & Austell.`,
+  alternates: { canonical: 'https://iroofercontractors.com/' },
+  openGraph: {
+    type: 'website',
+    url: 'https://iroofercontractors.com/',
+    siteName: 'iRoofer Contractors',
+    title: `iRoofer Contractors — Dallas GA Roof Repair, Replacement & Free Estimates`,
+    description: `Local, family-owned roofer in Dallas, GA. Roof repair, replacement, storm damage & free estimates. Call (470) 236-1410.`,
+    locale: 'en_US',
+    images: [{ url: 'https://iroofercontractors.com/assets/logo.png', alt: 'iRoofer Contractors logo', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `iRoofer Contractors — Dallas GA Roof Repair, Replacement & Free Estimates`,
+    description: `Local, family-owned roofer in Dallas, GA. Roof repair, replacement, storm damage & free estimates. Call (470) 236-1410.`,
+    images: ['https://iroofercontractors.com/assets/logo.png'],
+  },
 };
 
 export default function RootLayout({ children }) {

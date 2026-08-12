@@ -1,7 +1,13 @@
 import Link from 'next/link';
 import { services } from '@/lib/brand';
+import { seo } from '@/lib/seo';
 
-export const metadata = { title: 'Roofing Services — iRoofer Contractors' };
+export const metadata = seo({
+  title: 'Roofing Services Dallas, GA | Repair, Replacement & Storm Damage',
+  description:
+    'Explore iRoofer Contractors’ roofing services in Dallas, GA and Metro Atlanta — roof repair, full replacement, new construction, gutters, and 24/7 storm response.',
+  path: '/services',
+});
 
 export default function ServicesPage() {
   return (
@@ -10,7 +16,7 @@ export default function ServicesPage() {
       <div className="wrap" style={{ position: 'relative' }}>
         <div className="sec-head rv" style={{ marginBottom: 56 }}>
           <span className="eyebrow dark">What we do</span>
-          <h2>Roofing services for your home</h2>
+          <h1>Roofing services for your home</h1>
           <p>From a quick repair to a full replacement, every job is done by the same local crew — with the same warranty and the same phone number.</p>
         </div>
         <div className="cards">

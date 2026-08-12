@@ -1,12 +1,14 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
 import { brand } from '@/lib/brand';
+import { seo } from '@/lib/seo';
 
-export const metadata = {
+export const metadata = seo({
   title: '24/7 Emergency Roof Repair Dallas, GA | Iroofer Contractors',
   description:
     'Storm-damaged roof in Dallas, GA? Our crew is on call 24/7 for emergency roof repair, tarping, and insurance claim support. Same-day response, free inspection. Call now.',
-};
+  path: '/emergency-roof-repair-dallas-ga',
+});
 
 const steps = [
   'Do NOT climb onto a damaged roof — storm damage is often invisible from the ground.',

@@ -1,8 +1,14 @@
 import QuoteForm from '@/components/QuoteForm';
 import { brand } from '@/lib/brand';
 import ReviewButton from '@/components/ReviewButton';
+import { seo } from '@/lib/seo';
 
-export const metadata = { title: 'Contact — iRoofer Contractors' };
+export const metadata = seo({
+  title: 'Contact iRoofer Contractors | Free Roof Inspection Dallas, GA',
+  description:
+    'Talk to a real Dallas, GA roofer. Free inspections, free estimates, zero pressure. Call (470) 236-1410 or get a fast response from iRoofer Contractors.',
+  path: '/contact',
+});
 
 export default function ContactPage() {
   return (
@@ -10,7 +16,7 @@ export default function ContactPage() {
       <div className="wrap">
         <div className="rv">
           <span className="eyebrow">Let’s talk</span>
-          <h2>Talk to a <span className="ac">real roofer.</span></h2>
+          <h1>Talk to a <span className="ac">real roofer.</span></h1>
           <p className="lead">Tell us what’s going on and we’ll get back within one business hour — usually much faster. Free inspections, free estimates, zero pressure.</p>
           <div className="cinfo">
             <div className="row">

@@ -2,12 +2,14 @@ import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
 import { brand, services } from '@/lib/brand';
 import { notFound } from 'next/navigation';
+import { seo } from '@/lib/seo';
 
-export const metadata = {
+export const metadata = seo({
   title: 'New Construction Roofing — iRoofer Contractors Dallas, GA',
   description:
     'Building a new home in North Georgia? iRoofer Contractors handles complete new-construction roofing — design-matched shingles, code-compliant installation, builder coordination. Free consultation.',
-};
+  path: '/new-construction',
+});
 
 const service = services.find((s) => s.slug === 'new-construction') || null;
 

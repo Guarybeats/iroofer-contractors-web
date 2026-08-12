@@ -4,11 +4,13 @@ import { reviews as SHARED_REVIEWS } from '@/lib/reviews';
 // Google Business Profile link — real GBP Maps short link (provided by owner).
 export const GBP_URL = 'https://maps.app.goo.gl/4N6Buw4pRivTJjMW6';
 
-// Review link. The GBP is a maps.app.goo.gl short link; appending /review works
-// for redirect short links and lands customers on the write-a-review flow.
-// If Google ever changes this, replace with the "Get more reviews" link from
-// the GBP dashboard.
-export const REVIEW_URL = 'https://maps.app.goo.gl/4N6Buw4pRivTJjMW6';
+// Resolved GBP CID (from the maps.app.goo.gl short link above): Iroofer Contractors.
+const GBP_CID = '0x88f523a6d8c2b5f7:0xac06647fa50b5ba';
+
+// Review link. A bare maps.app.goo.gl short link lands on the general place
+// page, NOT the write-a-review composer. Use Google's dedicated writereview
+// endpoint keyed by the GBP CID so customers open straight to the review box.
+export const REVIEW_URL = `https://search.google.com/local/writereview?placeid=${GBP_CID}`;
 
 // Drop in your real street address to unlock LocalBusiness + geo ranking signals.
 // Dallas, GA has no street number confirmed — leave empty to omit PostalAddress.
