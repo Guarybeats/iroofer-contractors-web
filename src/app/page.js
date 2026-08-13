@@ -14,6 +14,8 @@ const svcs = [
     body: 'We partner with builders and homeowners on new builds to install a roof that matches the design and the budget — code-compliant, inspected, and built to last.' },
   { n: '04', title: 'Storm & Insurance Claims', tag: '24/7 response', img: '/assets/service-repair.jpg',
     body: 'Hail and wind damage documented with photos and a written scope. We meet your adjuster on-site, supplement the claim when needed, and guide you through the paperwork so you are not fronting the cost.' },
+  { n: '05', title: 'Gutter Repair & Replacement', tag: 'Protection', img: '/assets/service-gutters-main.jpg', link: '/services/gutter-repair-replacement',
+    body: 'Clogged or failing gutters are the #1 cause of preventable roof and foundation damage. We clean, repair, and replace seamless gutters so water flows away from your home, not into it.' },
 ];
 
 const reviews = [
@@ -118,17 +120,26 @@ export default function HomePage() {
             <div className="svc-list rv">
               {svcs.map((s, i) => (
                 <article className={`svc${i === 0 ? ' open' : ''}`} key={s.n}>
-                  <button className="svc-head" aria-expanded={i === 0 ? 'true' : 'false'}>
-                    <span className="svc-num">{s.n}</span><span className="svc-title">{s.title}</span>
-                    <span className="svc-tag">{s.tag}</span><span className="svc-plus" aria-hidden="true" />
-                  </button>
-                  <div className="svc-body"><div className="svc-inner"><div className="row">
-                    <div>
-                      <p>{s.body}</p>
-                      <Link className="svc-link" href="/#contact">Get an estimate →</Link>
-                    </div>
-                    <img loading="lazy" src={s.img} alt={s.title} />
-                  </div></div></div>
+                  {s.link ? (
+                    <Link className="svc-head" href={s.link} aria-label={`${s.n} ${s.title}`}>
+                      <span className="svc-num">{s.n}</span><span className="svc-title">{s.title}</span>
+                      <span className="svc-tag">{s.tag}</span><span className="svc-cta" aria-hidden="true">View service →</span>
+                    </Link>
+                  ) : (
+                    <button className="svc-head" aria-expanded={i === 0 ? 'true' : 'false'}>
+                      <span className="svc-num">{s.n}</span><span className="svc-title">{s.title}</span>
+                      <span className="svc-tag">{s.tag}</span><span className="svc-plus" aria-hidden="true" />
+                    </button>
+                  )}
+                  {!s.link && (
+                    <div className="svc-body"><div className="svc-inner"><div className="row">
+                      <div>
+                        <p>{s.body}</p>
+                        <Link className="svc-link" href="/#contact">Get an estimate →</Link>
+                      </div>
+                      <img loading="lazy" src={s.img} alt={s.title} />
+                    </div></div></div>
+                  )}
                 </article>
               ))}
             </div>

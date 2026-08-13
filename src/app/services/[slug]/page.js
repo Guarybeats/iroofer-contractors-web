@@ -5,7 +5,11 @@ import { getService, services, brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 
 export function generateStaticParams() {
-  return services.map((s) => ({ slug: s.slug }));
+  // gutter-repair-replacement has a dedicated static page — exclude it here
+  // so the dynamic route doesn't collide with it during static export.
+  return services
+    .filter((s) => s.slug !== 'gutter-repair-replacement')
+    .map((s) => ({ slug: s.slug }));
 }
 
 export function generateMetadata({ params }) {

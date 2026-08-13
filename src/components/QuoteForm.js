@@ -3,7 +3,7 @@
 import { useCallback, useRef } from "react";
 import useLeadForm from "./useLeadForm";
 
-export default function QuoteForm({ id = "quote", source = "website", variant, estimateData }) {
+export default function QuoteForm({ id = "quote", source = "website", variant, estimateData, title = "Get Your Free Roof Quote" }) {
   const formRef = useRef(null);
   const formClass = variant === "contact" || variant === "detail" ? "cform" : "quote-card";
 
@@ -38,7 +38,7 @@ export default function QuoteForm({ id = "quote", source = "website", variant, e
 
   return (
     <form ref={formRef} className={formClass} id={id} onSubmit={onSubmit}>
-      <h3>Get Your Free Roof Quote</h3>
+      <h3>{title}</h3>
       <p
         style={{
           color: "var(--steel, #8ea2b4)",

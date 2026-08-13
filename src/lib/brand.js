@@ -85,8 +85,8 @@ export const services = [
     slug: 'gutter-repair-replacement',
     title: 'Gutter Repair & Replacement',
     tagline: 'Protect your roof, fascia, and foundation.',
-    image: '/assets/service-repair.jpg',
-    webp: '/assets/service-repair.webp',
+    image: '/assets/service-gutters-main.jpg',
+    webp: '/assets/service-gutters-main.webp',
     summary:
       'Clogged or failing gutters are the #1 cause of preventable roof and foundation damage in Dallas, GA. We repair, realign, and replace gutters and downspouts so water flows away from your home.',
     bullets: [

@@ -74,14 +74,16 @@ export default function SiteScripts() {
       cntEls.forEach((el) => animateCount(el));
     }
 
-    // services accordion
+    // services accordion (only toggle <button> heads — link heads navigate instead)
     document.querySelectorAll('.svc').forEach((svc) => {
       const btn = svc.querySelector('.svc-head');
-      btn?.addEventListener('click', () => {
+      if (!btn || btn.tagName !== 'BUTTON') return;
+      btn.addEventListener('click', () => {
         const isOpen = svc.classList.contains('open');
         document.querySelectorAll('.svc').forEach((s) => {
           s.classList.remove('open');
-          s.querySelector('.svc-head')?.setAttribute('aria-expanded', 'false');
+          const h = s.querySelector('.svc-head');
+          if (h && h.tagName === 'BUTTON') h.setAttribute('aria-expanded', 'false');
         });
         if (!isOpen) { svc.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
       });
