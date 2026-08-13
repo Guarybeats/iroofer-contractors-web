@@ -1,0 +1,57 @@
+{
+  "business": {
+    "name": "iRoofer Contractors",
+    "type": ["RoofingContractor", "LocalBusiness"],
+    "address": {
+      "streetAddress": "152 Freedom Dr",
+      "addressLocality": "Dallas",
+      "addressRegion": "GA",
+      "postalCode": "30157",
+      "addressCountry": "US"
+    },
+    "phone": "(470) 236-1410",
+    "email": "iroofercontractors@gmail.com",
+    "founded": 2019,
+    "rating": { "value": 5.0, "reviewCount": 54, "max": 5 },
+    "hours": {
+      "monday": "09:00-19:00",
+      "tuesday": "09:00-19:00",
+      "wednesday": "09:00-19:00",
+      "thursday": "09:00-19:00",
+      "friday": "09:00-19:00",
+      "saturday": "09:00-17:00",
+      "sunday": "closed"
+    },
+    "licensed": true,
+    "insured": true,
+    "sab": true,
+    "serviceModel": "Service Area Business — street address shown in JSON-LD and Google Business Profile only, not on public pages"
+  },
+  "services": [
+    { "name": "Roof Repair", "summary": "Leak and storm-damage fixes, flashing, vent, and shingle repair." },
+    { "name": "Roof Replacement", "summary": "Full tear-off and re-roof with GAF architectural asphalt shingles." },
+    { "name": "New Construction", "summary": "Roof installation for builders and homeowners on new builds." },
+    { "name": "Storm & Hail Damage", "summary": "Free inspections, same-day emergency tarping, insurance documentation." },
+    { "name": "Gutter Repair & Replacement", "summary": "Repair, realignment, and replacement of gutters and downspouts." }
+  ],
+  "serviceArea": [
+    "Dallas, GA", "Douglasville, GA", "Hiram, GA", "Powder Springs, GA",
+    "Marietta, GA", "Kennesaw, GA", "Acworth, GA", "Austell, GA",
+    "Greater west Metro Atlanta (Paulding, Douglas, Cobb counties)"
+  ],
+  "localSignals": {
+    "stormSeason": "Spring and summer — hail, straight-line winds, falling limbs off the ridge.",
+    "commonDamage": ["dented shingles", "granule loss", "lifted flashing", "hidden leaks appearing weeks later"],
+    "insurance": "Most hail and wind damage above deductible is covered by Paulding/Cobb/Douglas County policies. We document with photos, meet the adjuster on-site, and handle supplements.",
+    "typicalCosts": { "repairRange": "$250–$3,500", "replacementRange": "$8,000–$30,000" },
+    "proof": "54 Google reviews at 5.0 stars. Free inspections. No-pressure written quotes.",
+    "responseTime": "Emergency same-day tarping available after storms; most repairs scheduled within 24–72 hours."
+  },
+  "canonicalPages": {
+    "hub": "https://iroofercontractors.com/dallas-ga-roofing",
+    "llms": "https://iroofercontractors.com/llms.txt",
+    "contact": "https://iroofercontractors.com/#contact",
+    "cityServicePages": "https://iroofercontractors.com/roof-repair-dallas-ga (pattern: /<service>-<city>-ga)"
+  },
+  "lastUpdated": "2026-08-13"
+}

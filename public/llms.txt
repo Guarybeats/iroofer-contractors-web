@@ -19,6 +19,10 @@ Dallas, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, and Au
 - Hours: MON–FRI 9am–7pm, SAT 9am–5pm, SUN Closed
 - Google Business Profile: https://maps.app.goo.gl/oZg9a1cuNvUi3Ut99
 
+## Agent-Ready Resources
+- Canonical "Roofing in Dallas GA" hub (services, storm/insurance process, FAQs, area): https://iroofercontractors.com/dallas-ga-roofing
+- Structured local-intel JSON (machine-readable signals: storm season, insurance, costs, proof): https://iroofercontractors.com/data/roofing-dallas-ga.json
+
 ## Key Pages
 - Home: https://iroofercontractors.com/
 - Services overview: https://iroofercontractors.com/services
