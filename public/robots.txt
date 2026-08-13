@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# AI / LLM crawlers — machine-readable site summary
+llm.txt: https://iroofercontractors.com/llms.txt
+
 Sitemap: https://iroofercontractors.com/sitemap.xml

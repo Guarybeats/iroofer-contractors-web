@@ -61,6 +61,9 @@
 <url><loc>https://iroofercontractors.com/blog/solar-panels-roof-dallas-ga</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 <url><loc>https://iroofercontractors.com/blog/when-to-replace-vs-repair-a-roof</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 <url><loc>https://iroofercontractors.com/blog/wind-damage-roof-repair-dallas</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+<url><loc>https://iroofercontractors.com/service-areas/austell</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://iroofercontractors.com/llms.txt</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+
 <!-- CITY-SERVICE-PAGES -->
   <url><loc>https://iroofercontractors.com/roof-repair-dallas-ga</loc><changefreq>weekly</changefreq><priority>0.9</priority>
     <image:image><image:loc>https://iroofercontractors.com/assets/service-repair.webp</image:loc><image:title>Roof Repair in Dallas, GA by iRoofer Contractors</image:title></image:image>

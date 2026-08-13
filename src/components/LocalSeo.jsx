@@ -1,5 +1,8 @@
+'use client';
+
 import { brand, services, cities } from '@/lib/brand';
 import { reviews as SHARED_REVIEWS } from '@/lib/reviews';
+import { usePathname } from 'next/navigation';
 
 // Google Business Profile link — real GBP Maps short link (provided by owner).
 // Verified to resolve to Iroofer Contractors (Dallas, GA).
@@ -15,7 +18,7 @@ export const REVIEW_URL = GBP_URL;
 export const STREET_ADDRESS = '152 Freedom Dr';
 
 // Build the JSON-LD schema graph. Pure function so it can render in <head>.
-export function buildSeoGraph() {
+export function buildSeoGraph(path) {
   const nowIso = new Date().toISOString();
 
   const localBusiness = {
@@ -116,9 +119,33 @@ export function buildSeoGraph() {
     }))
   );
 
+  // BreadcrumbList — machine-readable navigation trail for answer engines.
+  const breadcrumb = (() => {
+    const segs = (path || '').replace(/^\/+|\/+$/g, '').split('/').filter(Boolean);
+    if (!segs.length) return null;
+    const trail = [{ name: 'Home', url: brand.url }];
+    let acc = '';
+    for (const s of segs) {
+      acc += `/${s}`;
+      const label = s
+        .replace(/-/g, ' ')
+        .replace(/\b\w/g, (c) => c.toUpperCase());
+      trail.push({ name: label, url: `${brand.url}${acc}` });
+    }
+    return {
+      '@type': 'BreadcrumbList',
+      itemListElement: trail.map((t, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: t.name,
+        item: t.url,
+      })),
+    };
+  })();
+
   return {
     '@context': 'https://schema.org',
-    '@graph': [localBusiness, webSite, ...serviceGraph, ...comboServiceGraph],
+    '@graph': [localBusiness, webSite, ...serviceGraph, ...comboServiceGraph, ...(breadcrumb ? [breadcrumb] : [])],
   };
 }
 
@@ -144,7 +171,8 @@ export function FaqSchema({ faq }) {
 export default function LocalSeo({ reviews = SHARED_REVIEWS, faq = null }) {
   // expose reviews to buildSeoGraph without prop drilling into a module global
   globalThis.__reviews = reviews;
-  const graph = buildSeoGraph();
+  const pathname = usePathname();
+  const graph = buildSeoGraph(pathname || '/');
 
   // Optional FAQPage schema (rich-result eligible). Pass `faq` from a page that
   // renders an FAQ section so Google can surface the Q&A directly in search.
