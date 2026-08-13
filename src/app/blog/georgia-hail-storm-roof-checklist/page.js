@@ -52,7 +52,7 @@ export default function BlogStormChecklist() {
             Georgia Hail Storm Roof Checklist: What Dallas Homeowners Need to Know
           </h1>
           <p style={{ color: '#52606b', marginTop: 12, fontSize: '1.05rem' }}>
-            North Georgia gets its share of hail storms — some the size of quarters, some larger. When the skies clear, the last thing you want is a hidden roof leak or a denied insurance claim. Follow this six-step checklist, written by a local Dallas roofer who has inspected hundreds of storm-damaged roofs.
+            North Georgia gets its share of hail storms — some the size of quarters, some larger. When the skies clear, the last thing you want is a hidden roof leak or a denied insurance claim. Follow this six-step checklist, written by Iroofer Contractors.
           </p>
           <p className="byline">
             By iRoofer Contractors

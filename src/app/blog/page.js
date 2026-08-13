@@ -184,7 +184,7 @@ export default function BlogPage() {
           </h1>
           <p style={{ color: '#52606b', fontSize: '1.05rem', marginTop: 12, maxWidth: 640 }}>
             Storm damage checklists, insurance claim tips, and roof maintenance advice — written by
-            Cristian Mendez, a local Dallas, GA roofer with 150+ roofs under his belt since 2019.
+            Iroofer Contractors.
           </p>
         </div>
 
