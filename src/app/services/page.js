@@ -31,6 +31,16 @@ export default function ServicesPage() {
             </Link>
           ))}
         </div>
+        <div style={{ marginTop: 36, borderTop: '1px solid #e6e9ee', paddingTop: 20 }}>
+          <p style={{ fontSize: '.8rem', letterSpacing: '.04em', textTransform: 'uppercase', color: '#8ea2b4', marginBottom: 10 }}>Guides &amp; calculators</p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+            <Link href="/blog/roof-repair-cost-dallas-ga" className="chip" style={{ textDecoration: 'none' }}>Roof repair cost Dallas GA</Link>
+            <Link href="/blog/cost-of-new-roof-2026-dallas-ga" className="chip" style={{ textDecoration: 'none' }}>New roof cost 2026</Link>
+            <Link href="/blog/when-to-replace-vs-repair-a-roof" className="chip" style={{ textDecoration: 'none' }}>Replace vs. repair guide</Link>
+            <Link href="/blog/dallas-ga-hail-storm-insurance-claims" className="chip" style={{ textDecoration: 'none' }}>File an insurance claim</Link>
+            <Link href="/estimator" className="chip" style={{ textDecoration: 'none' }}>Free roof estimate</Link>
+          </div>
+        </div>
       </div>
     </section>
   );
