@@ -93,6 +93,7 @@ function pageFor(svc, city, t, allServices) {
 import QuoteForm from '@/components/QuoteForm';
 import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
+import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
   title: ${JSON.stringify(title)},
@@ -171,6 +172,7 @@ ${siblingLinks}
           </div>
         </div>
       </section>
+      <FaqSchema faq={faqs} />
     </>
   );
 }

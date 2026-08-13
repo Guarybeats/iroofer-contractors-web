@@ -3,6 +3,7 @@ import QuoteForm from '@/components/QuoteForm';
 import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 function faqItem(open){ return 'faq-item' + (open ? ' open' : ''); }
+import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
   title: "New Construction in Hiram, GA | iRoofer Contractors",
@@ -136,6 +137,7 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <FaqSchema faq={faqs} />
     </>
   );
 }

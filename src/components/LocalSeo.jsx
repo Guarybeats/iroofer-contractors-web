@@ -1,4 +1,4 @@
-import { brand, services } from '@/lib/brand';
+import { brand, services, cities } from '@/lib/brand';
 import { reviews as SHARED_REVIEWS } from '@/lib/reviews';
 
 // Google Business Profile link — real GBP Maps short link (provided by owner).
@@ -102,10 +102,43 @@ export function buildSeoGraph() {
     url: `${brand.url}/services/${s.slug}`,
   }));
 
+  // One Service node per city x service combo page — links each dedicated
+  // landing page (/<service-slug>-<city-slug>) into the schema graph.
+  const comboServiceGraph = services.flatMap((s) =>
+    cities.map((c) => ({
+      '@type': 'Service',
+      name: `${s.title} in ${c.name}, ${c.state}`,
+      serviceType: s.title,
+      provider: { '@type': 'RoofingContractor', name: brand.name, '@id': `${brand.url}/#business` },
+      areaServed: { '@type': 'City', name: c.name, address: { '@type': 'PostalAddress', addressRegion: c.state, addressCountry: 'US' } },
+      description: s.summary,
+      url: `${brand.url}/${s.slug}-${c.slug}`,
+    }))
+  );
+
   return {
     '@context': 'https://schema.org',
-    '@graph': [localBusiness, webSite, ...serviceGraph],
+    '@graph': [localBusiness, webSite, ...serviceGraph, ...comboServiceGraph],
   };
+}
+
+// Lightweight FAQPage-only schema — use on pages that render an FAQ section so
+// Google can surface the Q&A as a rich result, without re-emitting the full
+// LocalBusiness graph (which is already rendered globally in layout).
+export function FaqSchema({ faq }) {
+  if (!faq || !faq.length) return null;
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  };
+  return (
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+  );
 }
 
 export default function LocalSeo({ reviews = SHARED_REVIEWS, faq = null }) {
