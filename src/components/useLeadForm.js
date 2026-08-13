@@ -2,10 +2,16 @@
 
 import { useState, useCallback, useRef } from "react";
 
+// Post to the Cloudflare Pages Function at /api/leads. On Cloudflare this is a
+// real serverless Function (functions/api/leads.js) that emails the lead to
+// iroofercontractors@gmail.com. NEXT_PUBLIC_API_URL can override the origin
+// (e.g. a custom domain) but the path stays /api/leads.
 const API_URL = process.env.NEXT_PUBLIC_API_URL
-  ? `${process.env.NEXT_PUBLIC_API_URL}/api/leads`
-  : "/api/leads/";
+  ? `${process.env.NEXT_PUBLIC_API_URL.replace(/\/$/, "")}/api/leads`
+  : "/api/leads";
 
+// Last-resort fallback only if the Function is unreachable (e.g. misconfigured
+// deploy) — opens the visitor's mail client pre-filled so the lead isn't lost.
 const API_FALLBACK = `mailto:${process.env.NEXT_PUBLIC_LEAD_EMAIL || "iroofercontractors@gmail.com"}`;
 
 const DEFAULT_SUCCESS_MSG =
