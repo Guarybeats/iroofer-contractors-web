@@ -109,6 +109,9 @@ export default function QuoteForm({ id = "quote", source = "website", variant, e
           <option>Roof Repair</option>
           <option>Roof Replacement</option>
           <option>New Construction</option>
+          <option>Gutter Repair</option>
+          <option>Gutter Replacement</option>
+          <option>Gutter Cleaning</option>
           <option>Not sure yet</option>
         </select>
       </div>
