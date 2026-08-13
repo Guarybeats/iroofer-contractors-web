@@ -159,6 +159,14 @@ export default function RootLayout({ children }) {
                 <a href="/service-areas">All areas →</a>
               </div>
               <div className="foot-col">
+                <h5>Local services</h5>
+                <a href="/roof-repair-dallas-ga">Roof Repair Dallas, GA</a>
+                <a href="/roof-replacement-marietta-ga">Roof Replacement Marietta, GA</a>
+                <a href="/storm-damage-kennesaw-ga">Storm Damage Kennesaw, GA</a>
+                <a href="/storm-damage-roof-repair-dallas-ga">Storm Damage Dallas, GA</a>
+                <a href="/emergency-roof-repair-dallas-ga">Emergency Repair Dallas, GA</a>
+              </div>
+              <div className="foot-col">
                 <h5>Get in touch</h5>
                 <a href={`tel:${brand.phone}`}>{brand.phone}</a>
                 <a href={`mailto:${brand.email}`}>{brand.email}</a>
