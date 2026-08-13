@@ -1,23 +1,18 @@
 // Cloudflare Pages Function — receives lead form POSTs at /api/leads
 // and emails them to iroofercontractors@gmail.com as a NEW LEAD.
-// Deploys as a serverless Function even on a static `output: "export"` build.
+// Uses nodemailer + Gmail SMTP (the same approach that worked on the
+// original Node deployment). Requires nodejs_compat (see wrangler.toml).
 //
-// Delivery: Resend (HTTP API — reliable on Cloudflare Workers, no socket code).
-// The lead is emailed FROM a verified domain address TO iroofercontractors@gmail.com.
+// REQUIRED secrets (Cloudflare Pages > Settings > Environment variables):
+//   GMAIL_USER         = iroofercontractors@gmail.com
+//   GMAIL_APP_PASSWORD = 16-char Gmail app password
 //
-// REQUIRED secret (Cloudflare Pages > Settings > Environment variables, or
-// `wrangler secret put`):
-//   RESEND_API_KEY  = re_xxx (from resend.com; free tier = 3k emails/mo)
-//
-// OPTIONAL env (defaults shown):
-//   LEAD_FROM  = leads@iroofercontractors.com   (must be a domain you verified in Resend)
-//   LEAD_TO    = iroofercontractors@gmail.com    (the inbox that receives leads)
-//
-// If RESEND_API_KEY is missing, the lead is logged (not lost) and the form still
-// shows success to the visitor.
+// If creds are missing or send fails, the lead is logged (not lost) and the
+// form still shows success to the visitor.
+
+import nodemailer from "nodemailer";
 
 const LEAD_TO = "iroofercontractors@gmail.com";
-const LEAD_FROM = "leads@iroofercontractors.com";
 
 function formatLead(p) {
   const line = (k, v) => `  ${k.padEnd(12)} ${v || "(not provided)"}`;
@@ -65,40 +60,31 @@ export async function onRequest({ request, env }) {
     return Response.json({ status: "received" }, { status: 201 });
   }
 
-  const to = env.LEAD_TO || LEAD_TO;
-  const from = env.LEAD_FROM || LEAD_FROM;
-  const apiKey = env.RESEND_API_KEY;
+  const user = env.GMAIL_USER || LEAD_TO;
+  const pass = env.GMAIL_APP_PASSWORD;
   const subject = `New iRoofer lead: ${payload.fullName || "Unknown"} (${payload.phone || "No phone"})`;
   const text = formatLead(payload);
 
-  if (!apiKey) {
-    console.log("[LEAD] RESEND_API_KEY not set. Lead received:\n" + text);
+  if (!pass) {
+    console.log("[LEAD] Gmail creds not set. Lead received:\n" + text);
     return Response.json({ status: "received" }, { status: 201 });
   }
 
   try {
-    const res = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        "Authorization": `Bearer ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        from,
-        to: [to],
-        subject,
-        text,
-        reply_to: payload.email || undefined,
-      }),
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: { user, pass },
     });
-    if (!res.ok) {
-      const body = await res.text();
-      throw new Error(`Resend ${res.status}: ${body}`);
-    }
+    await transporter.sendMail({
+      from: `"iRoofer Leads" <${user}>`,
+      to: LEAD_TO,
+      replyTo: payload.email || user,
+      subject,
+      text,
+    });
     return Response.json({ status: "received" }, { status: 201 });
   } catch (err) {
-    console.error("[LEAD] email send failed:", err.message, "\n" + text);
-    // Still succeed for the visitor; the lead is preserved in the Workers log.
+    console.error("[LEAD] Gmail send failed:", err.message, "\n" + text);
     return Response.json({ status: "received" }, { status: 201 });
   }
 }
