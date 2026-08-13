@@ -41,6 +41,19 @@ export default function ServicesPage() {
             <Link href="/estimator" className="chip" style={{ textDecoration: 'none' }}>Free roof estimate</Link>
           </div>
         </div>
+        <div style={{ marginTop: 36, borderTop: '1px solid #e6e9ee', paddingTop: 20 }}>
+          <p style={{ fontSize: '.8rem', letterSpacing: '.04em', textTransform: 'uppercase', color: '#8ea2b4', marginBottom: 10 }}>Service areas</p>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+            <Link href="/service-areas/dallas-ga" className="chip" style={{ textDecoration: 'none' }}>Dallas, GA</Link>
+            <Link href="/service-areas/douglasville" className="chip" style={{ textDecoration: 'none' }}>Douglasville</Link>
+            <Link href="/service-areas/hiram" className="chip" style={{ textDecoration: 'none' }}>Hiram</Link>
+            <Link href="/service-areas/powder-springs" className="chip" style={{ textDecoration: 'none' }}>Powder Springs</Link>
+            <Link href="/service-areas/marietta" className="chip" style={{ textDecoration: 'none' }}>Marietta</Link>
+            <Link href="/service-areas/kennesaw" className="chip" style={{ textDecoration: 'none' }}>Kennesaw</Link>
+            <Link href="/service-areas/acworth" className="chip" style={{ textDecoration: 'none' }}>Acworth</Link>
+            <Link href="/service-areas/austell" className="chip" style={{ textDecoration: 'none' }}>Austell</Link>
+          </div>
+        </div>
       </div>
     </section>
   );

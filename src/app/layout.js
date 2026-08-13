@@ -147,6 +147,18 @@ export default function RootLayout({ children }) {
                 <a href="/#contact">Contact</a>
               </div>
               <div className="foot-col">
+                <h5>Service Areas</h5>
+                <a href="/service-areas/dallas-ga">Dallas, GA</a>
+                <a href="/service-areas/douglasville">Douglasville</a>
+                <a href="/service-areas/hiram">Hiram</a>
+                <a href="/service-areas/powder-springs">Powder Springs</a>
+                <a href="/service-areas/marietta">Marietta</a>
+                <a href="/service-areas/kennesaw">Kennesaw</a>
+                <a href="/service-areas/acworth">Acworth</a>
+                <a href="/service-areas/austell">Austell</a>
+                <a href="/service-areas">All areas →</a>
+              </div>
+              <div className="foot-col">
                 <h5>Get in touch</h5>
                 <a href={`tel:${brand.phone}`}>{brand.phone}</a>
                 <a href={`mailto:${brand.email}`}>{brand.email}</a>
