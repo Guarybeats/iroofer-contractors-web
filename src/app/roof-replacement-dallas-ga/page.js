@@ -53,6 +53,9 @@ export default function Page() {
                 Full tear-off and replacement with GAF-certified architectural asphalt shingles, installed clean and built to last. In Dallas, GA (Paulding County) we bring the same local crew, the same warranty,
                 and the same phone number to every job. As the town we call home, Dallas homeowners get priority scheduling and the crew chief on every job.
               </p>
+              <p style={{ color: '#52606b', fontSize: '.98rem', marginTop: 12, maxWidth: 680, borderLeft: '3px solid var(--orange)', paddingLeft: 12 }}>
+                Local note: many Dallas homes still carry their original 15–25 year architectural shingles, and Paulding&apos;s humidity plus ridge winds wear them faster than the rating suggests. We inspect the deck for rot (common on older builds) and upgrade underlayment so the new roof outlasts the last one.
+              </p>
               <div className="cta" style={{ marginTop: 28 }}>
                 <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>{brand.phone}</a>
                 <Link className="btn btn-solid" href="/#contact" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Get a free quote <span className="arr">→</span></Link>

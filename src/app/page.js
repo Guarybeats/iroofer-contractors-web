@@ -62,7 +62,7 @@ export default function HomePage() {
         <div className="wrap">
           <div className="hero-copy">
             <span className="eyebrow">Dallas, GA · Atlanta Metro</span>
-            <h1>A roof that<br />outlasts the<br /><span className="stroke">weather.</span></h1>
+            <h1>Dallas GA Roof Repair<br />&amp; Replacement<br /><span className="stroke">done right.</span></h1>
             <p className="lead">Family-owned and operated since 2019. We tear off, rebuild, and stand behind every roof with expert craftsmanship and honest service.</p>
             <div className="hero-cta">
               <a className="btn btn-solid" href="/#contact">Get a Free Inspection <span className="arr">→</span></a>

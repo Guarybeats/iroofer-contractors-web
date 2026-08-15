@@ -38,6 +38,9 @@ export default function RoofReplacementMariettaPage() {
                 Full tear-off, deck inspection, synthetic underlayment, and ridge vents — installed clean and built to last, backed by a
                 manufacturer warranty and our workmanship guarantee.
               </p>
+              <p style={{ color: '#52606b', fontSize: '.98rem', marginTop: 12, maxWidth: 680, borderLeft: '3px solid var(--orange)', paddingLeft: 12 }}>
+                Local note: Cobb County&apos;s tree canopy and spring storms make proper ventilation and impact-rated shingles matter here. We&apos;ve re-roofed everything from 1920s Craftsman homes near the square to large colonials out toward East Cobb — matching HOA-approved colors and clearing the permit inspection first try.
+              </p>
               <div className="cta" style={{ marginTop: 28 }}>
                 <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>{brand.phone}</a>
                 <Link className="btn btn-solid" href="/#contact" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Get a free quote <span className="arr">→</span></Link>

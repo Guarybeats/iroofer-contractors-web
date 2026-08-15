@@ -45,6 +45,9 @@ export default function StormDamageKennesawPage() {
                 When the sky clears, the last thing you want is a hidden leak or a denied claim. We inspect, document, and restore your roof
                 so you can close with confidence.
               </p>
+              <p style={{ color: '#52606b', fontSize: '.98rem', marginTop: 12, maxWidth: 680, borderLeft: '3px solid var(--orange)', paddingLeft: 12 }}>
+                Local note: the mature trees around the historic district and Adams Park throw more limbs than almost anywhere else we serve — and Cobb&apos;s hail events tend to hit the south side hardest. We keep emergency tarping stocked and a adjuster-meeting checklist ready so your claim lands fast.
+              </p>
               <div className="cta" style={{ marginTop: 28 }}>
                 <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>{brand.phone}</a>
                 <Link className="btn btn-solid" href="/#contact" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Request tarp <span className="arr">→</span></Link>
