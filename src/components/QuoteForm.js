@@ -70,7 +70,7 @@ export default function QuoteForm({ id = "quote", source = "website", variant, e
           name="phone"
           required
           type="tel"
-          placeholder="(770) 555-0100"
+          placeholder="(470) 000-0000"
           className={errors.phone ? "err" : ""}
           onChange={() => clearError("phone")}
         />
