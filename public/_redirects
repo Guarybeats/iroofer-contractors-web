@@ -1,0 +1,30 @@
+# Legacy WordPress URLs -> current pages (301). Added 2026-08-21 to recover
+# ~2,100 impressions/90d that were landing on 404s after the site rebuild.
+
+/about-us                     /about/                                       301
+/about-us-best-local-roofing-company-iroofer-contractors  /about/           301
+/contact-us                   /contact/                                     301
+/contact-us-roofing-services-near-you-iroofer-contractors /contact/         301
+/roofing                      /services/                                    301
+/gutters-services             /services/gutter-repair-replacement/          301
+/financing                    /blog/roof-financing-options-dallas-ga/       301
+/reviews                      /about/                                       301
+/privacy-policy               /                                             301
+
+# Legacy blog posts -> closest current article
+/blog/see-your-roof-like-never-before-the-benefits-of-drone-inspections   /blog/                                          301
+/blog/a-homeowners-guide-to-navigating-atlantas-hoa-roofing-rules         /blog/                                          301
+/blog/a-homeowners-guide-to-navigating-roof-insurance-claims-after-an-atlanta-hailstorm  /blog/dallas-ga-hail-storm-insurance-claims/  301
+/blog/beyond-the-missing-shingles-signs-your-atlanta-roof-has-hidden-storm-damage        /blog/georgia-hail-storm-roof-checklist/      301
+/blog/dont-let-cost-keep-you-from-a-safe-roof-a-guide-to-financing-your-atlanta-roof-replacement  /blog/roof-financing-options-dallas-ga/ 301
+/blog/love-the-trees-protect-the-roof-a-homeowners-guide-to-managing-atlantas-tree-canopy  /blog/gutter-maintenance-dallas-ga/  301
+/blog/love-the-trees-protect-the-roof-a-homeowners-guide-to-gutter-maintenance-in-atlanta  /blog/gutter-maintenance-dallas-ga/  301
+/blog/love-the-trees-protect-the-roof-a-homeowners-guide-to-atlantas-tree-canopy           /blog/gutter-maintenance-dallas-ga/  301
+/blog/atlanta-roof-repair-diy-or-call-i-roofer                            /services/roof-repair/                          301
+/diy-roof-patch-in-atlanta-know-when-to-call-the-pros                     /services/roof-repair/                          301
+/blog/warning-roof-needs-attention-iroofer-contractors                    /blog/when-to-replace-vs-repair-a-roof/          301
+/blog/roofing-underlayment-the-hidden-hero-of-your-dallas-roof            /blog/choosing-roofing-materials-dallas-ga/      301
+
+# Legacy service-area URLs (towns we no longer have pages for)
+/service-areas/canton-ga-usa  /service-areas/                               301
+/service-areas/rome-ga-usa    /service-areas/                               301

@@ -8,7 +8,7 @@ export const metadata = seo({
   title: 'Roofing in Dallas, GA | iRoofer Contractors',
   description:
     'Roof repair, replacement, storm restoration, and insurance-claim help in Dallas, GA and Paulding County. Local, family-owned, 54 Google reviews at 5.0. Free inspection.',
-  canonical: 'https://iroofercontractors.com/dallas-ga-roofing',
+  path: '/dallas-ga-roofing',
 });
 
 const faqs = [

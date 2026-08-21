@@ -1,10 +1,12 @@
 import Link from 'next/link';
 import { cities, brand } from '@/lib/brand';
+import { seo } from '@/lib/seo';
 
-export const metadata = {
-  title: `Service Areas — iRoofer Contractors`,
+export const metadata = seo({
+  title: 'Service Areas — Roofing in Dallas, GA & Metro Atlanta | iRoofer',
   description: `Local roofing across Dallas, GA and the greater Atlanta metro — Douglasville, Hiram, Powder Springs, Marietta, Acworth, Kennesaw, Austell. Free inspection: ${brand.phone}.`,
-};
+  path: '/service-areas',
+});
 
 export default function ServiceAreas() {
   return (
