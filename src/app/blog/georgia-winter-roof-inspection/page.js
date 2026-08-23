@@ -6,7 +6,7 @@ export const metadata = {
   alternates: { canonical: 'https://iroofercontractors.com/blog/georgia-winter-roof-inspection' },
   openGraph: { url: 'https://iroofercontractors.com/blog/georgia-winter-roof-inspection' },
 
-  title: 'Georgia Winter Roof Prep: The 10-Point Checklist Before the Cold Hits',
+  title: 'Georgia Winter Roof Prep: 10-Point Checklist',
   description:
     'Georgia winters are mild — but ice dams, freeze-thaw cycles, and hidden leaks can still cost you thousands. Here’s what to check before January freezes arrive.',
 };

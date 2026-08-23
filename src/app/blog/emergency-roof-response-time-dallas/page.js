@@ -6,7 +6,7 @@ export const metadata = {
   alternates: { canonical: 'https://iroofercontractors.com/blog/emergency-roof-response-time-dallas' },
   openGraph: { url: 'https://iroofercontractors.com/blog/emergency-roof-response-time-dallas' },
 
-  title: 'Emergency Roof Repair: How Long It Takes & When to Expect a Crew',
+  title: 'Emergency Roof Repair: How Fast We Respond',
   description:
     'After a big Georgia storm, how soon can a roofer get to you? Here’s what impacts response times and how to get help fast in Dallas, GA.',
 };

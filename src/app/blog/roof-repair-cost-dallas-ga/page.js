@@ -5,7 +5,7 @@ export const metadata = {
   alternates: { canonical: 'https://iroofercontractors.com/blog/roof-repair-cost-dallas-ga' },
   openGraph: { url: 'https://iroofercontractors.com/blog/roof-repair-cost-dallas-ga' },
 
-  title: '$250–$3,500: What Roof Repair Costs in Dallas, GA (2026 Pricing)',
+  title: 'Roof Repair Costs in Dallas, GA (2026 Guide)',
   description:
     'Leak fixes, shingle repair, flashing, and storm patch pricing for Dallas, GA homes — real per-repair ranges from a local roofer, plus when repair beats replacement.',
 };

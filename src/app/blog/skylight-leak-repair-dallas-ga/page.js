@@ -6,7 +6,7 @@ export const metadata = {
   alternates: { canonical: 'https://iroofercontractors.com/blog/skylight-leak-repair-dallas-ga' },
   openGraph: { url: 'https://iroofercontractors.com/blog/skylight-leak-repair-dallas-ga' },
 
-  title: 'Skylight Leak Repair in Dallas GA: Why They Leak, How We Fix Them, and When to Replace',
+  title: 'Skylight Leak Repair in Dallas, GA',
   description: 'Skylights are the #1 source of roof leaks we see in Dallas homes. Here\'s why they fail, the repair vs. replace decision, and what it costs.',
 };
 

@@ -16,7 +16,7 @@ export function generateMetadata({ params }) {
   const service = getService(params.slug);
   if (!service) return {};
   return seo({
-    title: `${service.title} in Dallas, GA & Metro Atlanta | iRoofer Contractors`,
+    title: `${service.title} | Dallas, GA & Metro Atlanta`,
     description: service.summary,
     path: `/services/${service.slug}`,
   });

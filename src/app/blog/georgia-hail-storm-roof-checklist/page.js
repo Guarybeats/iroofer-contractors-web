@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { brand } from '@/lib/brand';
 
 export const metadata = {
-  title: 'Georgia Hail Storm Roof Checklist: What Dallas Homeowners Need to Know | iRoofer Contractors',
+  title: 'Georgia Hail Storm Roof Checklist (6 Steps)',
   description:
     'After a Georgia hail storm hits Dallas, follow our 6-step checklist: safety, photos, tarp, claim, inspection, repair. Years of roofing experience across Dallas, GA and the greater Atlanta metro.',
   alternates: { canonical: 'https://iroofercontractors.com/blog/georgia-hail-storm-roof-checklist' },

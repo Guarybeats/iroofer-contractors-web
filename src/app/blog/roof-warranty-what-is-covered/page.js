@@ -6,7 +6,7 @@ export const metadata = {
   alternates: { canonical: 'https://iroofercontractors.com/blog/roof-warranty-what-is-covered' },
   openGraph: { url: 'https://iroofercontractors.com/blog/roof-warranty-what-is-covered' },
 
-  title: 'Roof Warranty Explained: What’s Covered (And What the Fine Print Hides)',
+  title: "Roof Warranties Explained: What's Covered",
   description:
     'Manufacturer warranties, workmanship warranties, and what happens when your roof fails after year 5. We decode the fine print so you know what you’re really getting.',
 };

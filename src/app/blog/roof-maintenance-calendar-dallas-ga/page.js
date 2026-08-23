@@ -6,7 +6,7 @@ export const metadata = {
   alternates: { canonical: 'https://iroofercontractors.com/blog/roof-maintenance-calendar-dallas-ga' },
   openGraph: { url: 'https://iroofercontractors.com/blog/roof-maintenance-calendar-dallas-ga' },
 
-  title: 'Year-Round Roof Maintenance Calendar for Dallas GA Homeowners',
+  title: 'Roof Maintenance Calendar | Dallas, GA Homeowners',
   description: 'A seasonal checklist: what to inspect, clean, and repair each quarter to extend your roof life and catch small issues before they become expensive leaks.',
 };
 

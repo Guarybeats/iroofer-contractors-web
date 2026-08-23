@@ -4,7 +4,7 @@ import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 
 export const metadata = seo({
-  title: 'Storm Damage Roof Repair in Kennesaw, GA | Insurance Claims | iRoofer',
+  title: 'Storm Damage Roof Repair in Kennesaw, GA',
   description:
     'Hail, wind & tree damage roof repair in Kennesaw, GA. We inspect, document storm damage, and handle your insurance claim for a full restoration. 24-hour emergency response: (470) 236-1410.',
   path: '/storm-damage-kennesaw-ga',
