@@ -22,6 +22,13 @@ const DEFAULT_LEAD_TO = "iroofercontractors@gmail.com";
 const DEFAULT_LEAD_FROM = "iRoofer Leads <onboarding@resend.dev>";
 const SEND_TIMEOUT_MS = 8000;
 
+// Backstop delivery: the private iRoofer Ops Space stores every lead and emails
+// the office inbox through its own (already configured) mail sender. This runs
+// whenever Resend is not configured or fails, so a lead always reaches Cristian
+// even with zero Cloudflare-side email setup.
+const INTAKE_URL = "https://accurate-ibis-174.convex.site/lead";
+const INTAKE_KEY = "iroofer-web-lead-2f7a9c14be5d4803";
+
 function formatLead(p) {
   const line = (k, v) => `  ${k.padEnd(12)} ${v || "(not provided)"}`;
   const est = p.estimateInfo ? `\n\n── ESTIMATE ──────────────────────\n  ${p.estimateInfo}` : "";
@@ -95,6 +102,33 @@ async function sendViaResend(env, { subject, text, replyTo }) {
   }
 }
 
+async function forwardToOpsIntake(env, { subject, text, payload, replyTo }) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), SEND_TIMEOUT_MS);
+  try {
+    const res = await fetch(env.LEAD_INTAKE_URL || INTAKE_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-intake-key": env.LEAD_INTAKE_KEY || INTAKE_KEY,
+      },
+      body: JSON.stringify({ subject, text, payload, replyTo }),
+      signal: controller.signal,
+    });
+    if (!res.ok) {
+      console.error("[LEAD] intake rejected:", res.status, (await res.text()).slice(0, 300));
+      return false;
+    }
+    const body = await res.json().catch(() => ({}));
+    return body.emailed === true;
+  } catch (err) {
+    console.error("[LEAD] intake forward failed:", err && err.name, err && err.message);
+    return false;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 export async function onRequest({ request, env }) {
   if (request.method !== "POST") {
     return new Response("Method not allowed", { status: 405 });
@@ -124,6 +158,16 @@ export async function onRequest({ request, env }) {
     delivered = await sendViaResend(env, { subject, text, replyTo: payload.email });
   } else {
     console.log("[LEAD] RESEND_API_KEY not set — email not attempted.");
+  }
+
+  // 3. Backstop: Ops Space intake stores the lead and emails the office inbox.
+  if (!delivered) {
+    delivered = await forwardToOpsIntake(env, {
+      subject,
+      text,
+      payload,
+      replyTo: payload.email,
+    });
   }
 
   if (!delivered) {
