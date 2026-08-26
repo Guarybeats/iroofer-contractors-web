@@ -6,7 +6,7 @@ function faqItem(open){ return 'faq-item' + (open ? ' open' : ''); }
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: "Gutter Repair & Replacement in Powder Springs, GA | iRoofer Contractors",
+  title: 'Gutter Repair & Replacement in Powder Springs, GA',
   description: "Gutter Repair & Replacement in Powder Springs, GA — Clogged or failing gutters are the #1 cause of preventable roof and foundation damage. We repair, realign, and replace. Local, family-owned, 5★ on Google, free inspection. Call (470) 236-1410.",
   path: '/gutter-repair-replacement-powder-springs',
 });

@@ -6,7 +6,7 @@ function faqItem(open){ return 'faq-item' + (open ? ' open' : ''); }
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: "Storm Damage Roof Repair in Acworth, GA | iRoofer Contractors",
+  title: 'Storm Damage Roof Repair in Acworth, GA',
   description: "Storm Damage Roof Repair in Acworth, GA — Hail, wind, or tree damage from a Georgia storm? We inspect, document storm damage, and handle your insurance claim. Local, family-owned, 5★ on Google, free inspection. Call (470) 236-1410.",
   path: '/storm-damage-roof-repair-acworth',
 });

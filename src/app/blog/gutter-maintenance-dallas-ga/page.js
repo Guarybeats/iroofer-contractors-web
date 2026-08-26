@@ -5,7 +5,7 @@ export const metadata = {
   alternates: { canonical: 'https://iroofercontractors.com/blog/gutter-maintenance-dallas-ga' },
   openGraph: { url: 'https://iroofercontractors.com/blog/gutter-maintenance-dallas-ga' },
 
-  title: 'Gutters in Dallas GA: How Often to Clean, When to Replace, and Why It Matters for Your Roof',
+  title: 'Gutter Maintenance in Dallas, GA: Clean or Replace?',
   description:
     'Clogged gutters cause 30% of the basement leaks and foundation issues we see in Paulding County. A complete guide to gutter maintenance, cleaning schedule, and replacement timing.',
 };

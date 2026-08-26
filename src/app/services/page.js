@@ -3,7 +3,7 @@ import { services } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 
 export const metadata = seo({
-  title: 'Roofing Services Dallas, GA | Repair, Replacement & Storm Damage',
+  title: 'Roofing Services in Dallas, GA | Repair & Replace',
   description:
     'Explore iRoofer Contractors’ roofing services in Dallas, GA and Metro Atlanta — roof repair, full replacement, new construction, gutters, and 24/7 storm response.',
   path: '/services',

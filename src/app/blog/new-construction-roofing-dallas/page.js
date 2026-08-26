@@ -5,7 +5,7 @@ export const metadata = {
   alternates: { canonical: 'https://iroofercontractors.com/blog/new-construction-roofing-dallas' },
   openGraph: { url: 'https://iroofercontractors.com/blog/new-construction-roofing-dallas' },
 
-  title: 'New Construction Roofing in Dallas GA: What Builders Need to Know',
+  title: 'New Construction Roofing in Dallas, GA',
   description:
     'From permit requirements to shingle selection to warranty coordination — a checklist for builders installing roofs on new Dallas homes.',
 };

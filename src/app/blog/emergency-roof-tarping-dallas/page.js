@@ -5,7 +5,7 @@ export const metadata = {
   alternates: { canonical: 'https://iroofercontractors.com/blog/emergency-roof-tarping-dallas' },
   openGraph: { url: 'https://iroofercontractors.com/blog/emergency-roof-tarping-dallas' },
 
-  title: 'Emergency Roof Tarping: What to Expect When We Come to Your Dallas Home',
+  title: 'Emergency Roof Tarping in Dallas, GA: What to Expect',
   description:
     'When a storm rips off shingles and rain is coming, emergency roof tarping is your only line of defense. Learn what our 24/7 crew does and what it costs.',
 };

@@ -6,7 +6,7 @@ export const metadata = {
   alternates: { canonical: 'https://iroofercontractors.com/blog/solar-panels-roof-dallas-ga' },
   openGraph: { url: 'https://iroofercontractors.com/blog/solar-panels-roof-dallas-ga' },
 
-  title: 'Solar Panels on Your Dallas Roof: What Homeowners Need to Know Before Installing',
+  title: 'Solar Panels on Your Dallas, GA Roof: What to Know',
   description: 'Solar + roofing: the install order matters, flashing details make or break leaks, and removal/reinstall costs. Get it right the first time.',
 };
 

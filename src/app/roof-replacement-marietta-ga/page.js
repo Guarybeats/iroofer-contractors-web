@@ -4,7 +4,7 @@ import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 
 export const metadata = seo({
-  title: 'Roof Replacement in Marietta, GA | Architectural Shingles | iRoofer',
+  title: 'Roof Replacement in Marietta, GA | iRoofer',
   description:
     'Full roof replacement in Marietta, GA — architectural & premium shingles, tear-off, deck inspection, and manufacturer warranty. Local, family-owned, 5★ on Google. Free estimate: (470) 236-1410.',
   path: '/roof-replacement-marietta-ga',

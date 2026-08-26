@@ -6,7 +6,7 @@ export const metadata = {
   alternates: { canonical: 'https://iroofercontractors.com/blog/roof-financing-options-dallas-ga' },
   openGraph: { url: 'https://iroofercontractors.com/blog/roof-financing-options-dallas-ga' },
 
-  title: 'Roof Financing Options in Dallas GA: How to Pay for a New Roof Without Breaking the Bank',
+  title: 'Roof Financing Options in Dallas, GA',
   description: 'From insurance supplements to zero-interest plans — here are the real financing options Dallas homeowners use to afford a quality roof replacement.',
 };
 

@@ -6,7 +6,7 @@ export const metadata = {
   alternates: { canonical: 'https://iroofercontractors.com/blog/how-to-choose-roofing-contractor-dallas-ga' },
   openGraph: { url: 'https://iroofercontractors.com/blog/how-to-choose-roofing-contractor-dallas-ga' },
 
-  title: 'How to Choose a Roofing Contractor in Dallas GA: 7 Red Flags & 5 Must-Ask Questions',
+  title: 'How to Choose a Roofing Contractor in Dallas, GA',
   description: "Don't hire a roofer until you read this. We break down the red flags, the questions that separate pros from storm chasers, and how to verify licenses and insurance in Georgia.",
 };
 
