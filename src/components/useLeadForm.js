@@ -56,6 +56,9 @@ function useLeadForm({
       }
       const controller = new AbortController();
       controllerRef.current = controller;
+      // Hard client-side ceiling: if the endpoint ever stops responding again,
+      // the visitor gets the mailto fallback instead of a spinner that never ends.
+      const timeoutId = setTimeout(() => controller.abort("timeout"), 12000);
 
       const errs = validate(fd);
       if (Object.keys(errs).length) {
@@ -90,7 +93,8 @@ function useLeadForm({
         setMsg(successMsg);
         return true;
       } catch (err) {
-        if (err.name === "AbortError") return false;
+        // A caller-initiated abort (new submit) is a no-op; our own timeout is not.
+        if (err.name === "AbortError" && controller.signal.reason !== "timeout") return false;
         // Fall back to mailto on static hosts where /api/leads isn't built.
         const mailto = `${API_FALLBACK}?subject=${encodeURIComponent(
           `New iRoofer lead: ${payload.fullName || "Unknown"} (${payload.phone || "No phone"})`
@@ -105,6 +109,7 @@ function useLeadForm({
         setMsg(successMsg);
         return true;
       } finally {
+        clearTimeout(timeoutId);
         if (controllerRef.current === controller) {
           controllerRef.current = null;
         }

@@ -1,26 +1,32 @@
 // Cloudflare Pages Function — receives lead form POSTs at /api/leads
 // and emails them to iroofercontractors@gmail.com as a NEW LEAD.
-// Uses nodemailer + Gmail SMTP (the same approach that worked on the
-// original Node deployment). Requires nodejs_compat (see wrangler.toml).
 //
-// REQUIRED secrets (Cloudflare Pages > Settings > Environment variables):
-//   GMAIL_USER         = iroofercontractors@gmail.com
-//   GMAIL_APP_PASSWORD = 16-char Gmail app password
+// HISTORY: this previously used nodemailer + Gmail SMTP. SMTP needs a raw TCP
+// socket, which the Workers runtime does not provide, so sendMail() HUNG
+// FOREVER in production instead of throwing — the catch block never ran and
+// the request never returned. Leads were lost silently.
 //
-// If creds are missing or send fails, the lead is logged (not lost) and the
-// form still shows success to the visitor.
+// Now: email is sent over plain HTTPS (Resend), every outbound call is bounded
+// by a timeout, and the handler ALWAYS returns quickly. If email is not
+// configured or fails, the lead is still persisted (KV, when bound) and logged,
+// so a lead is never silently dropped.
+//
+// OPTIONAL environment variables (Cloudflare Pages > Settings > Variables):
+//   RESEND_API_KEY  — enables email delivery
+//   LEAD_FROM       — verified sender, e.g. "iRoofer Leads <leads@iroofercontractors.com>"
+//   LEAD_TO         — override recipient (defaults below)
+// OPTIONAL KV binding:
+//   LEADS           — KV namespace; every lead is written here as a backup
 
-import nodemailer from "nodemailer";
-
-const LEAD_TO = "iroofercontractors@gmail.com";
+const DEFAULT_LEAD_TO = "iroofercontractors@gmail.com";
+const DEFAULT_LEAD_FROM = "iRoofer Leads <onboarding@resend.dev>";
+const SEND_TIMEOUT_MS = 8000;
 
 function formatLead(p) {
   const line = (k, v) => `  ${k.padEnd(12)} ${v || "(not provided)"}`;
   const est = p.estimateInfo ? `\n\n── ESTIMATE ──────────────────────\n  ${p.estimateInfo}` : "";
   return [
-    "╔══════════════════════════════════════╗",
-    "║          NEW LEAD — iRoofer          ║",
-    "╚══════════════════════════════════════╝",
+    "NEW LEAD — iRoofer Contractors",
     "",
     `  Date:     ${new Date().toISOString()}`,
     `  Source:   ${p.source || "website"}`,
@@ -43,6 +49,52 @@ function formatLead(p) {
   ].join("\n");
 }
 
+// Backup copy of the lead. Runs before delivery is attempted so that a
+// delivery failure can never cost us the lead itself.
+async function persistLead(env, payload, text) {
+  if (!env.LEADS || typeof env.LEADS.put !== "function") return false;
+  try {
+    const key = `lead:${new Date().toISOString()}:${crypto.randomUUID()}`;
+    await env.LEADS.put(key, JSON.stringify({ received: new Date().toISOString(), payload, text }));
+    return true;
+  } catch (err) {
+    console.error("[LEAD] KV persist failed:", err && err.message);
+    return false;
+  }
+}
+
+async function sendViaResend(env, { subject, text, replyTo }) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), SEND_TIMEOUT_MS);
+  try {
+    const res = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${env.RESEND_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from: env.LEAD_FROM || DEFAULT_LEAD_FROM,
+        to: [env.LEAD_TO || DEFAULT_LEAD_TO],
+        reply_to: replyTo || undefined,
+        subject,
+        text,
+      }),
+      signal: controller.signal,
+    });
+    if (!res.ok) {
+      console.error("[LEAD] Resend rejected:", res.status, (await res.text()).slice(0, 300));
+      return false;
+    }
+    return true;
+  } catch (err) {
+    console.error("[LEAD] Resend send failed:", err && err.name, err && err.message);
+    return false;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 export async function onRequest({ request, env }) {
   if (request.method !== "POST") {
     return new Response("Method not allowed", { status: 405 });
@@ -60,31 +112,25 @@ export async function onRequest({ request, env }) {
     return Response.json({ status: "received" }, { status: 201 });
   }
 
-  const user = env.GMAIL_USER || LEAD_TO;
-  const pass = env.GMAIL_APP_PASSWORD;
-  const subject = `New iRoofer lead: ${payload.fullName || "Unknown"} (${payload.phone || "No phone"})`;
   const text = formatLead(payload);
+  const subject = `New iRoofer lead: ${payload.fullName || "Unknown"} (${payload.phone || "No phone"})`;
 
-  if (!pass) {
-    console.log("[LEAD] Gmail creds not set. Lead received:\n" + text);
-    return Response.json({ status: "received" }, { status: 201 });
+  // 1. Never lose the lead, whatever happens next.
+  const persisted = await persistLead(env, payload, text);
+
+  // 2. Attempt delivery only if configured. Never block the response on it.
+  let delivered = false;
+  if (env.RESEND_API_KEY) {
+    delivered = await sendViaResend(env, { subject, text, replyTo: payload.email });
+  } else {
+    console.log("[LEAD] RESEND_API_KEY not set — email not attempted.");
   }
 
-  try {
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: { user, pass },
-    });
-    await transporter.sendMail({
-      from: `"iRoofer Leads" <${user}>`,
-      to: LEAD_TO,
-      replyTo: payload.email || user,
-      subject,
-      text,
-    });
-    return Response.json({ status: "received" }, { status: 201 });
-  } catch (err) {
-    console.error("[LEAD] Gmail send failed:", err.message, "\n" + text);
-    return Response.json({ status: "received" }, { status: 201 });
+  if (!delivered) {
+    // Loud, greppable log so a lead is recoverable from Pages logs.
+    console.error(`[LEAD][UNDELIVERED] persisted=${persisted}\n${text}`);
   }
+
+  // The visitor always sees success; their submission is recorded either way.
+  return Response.json({ status: "received" }, { status: 201 });
 }
