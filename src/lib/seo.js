@@ -4,7 +4,7 @@
 import { brand } from './brand';
 
 const BASE = brand.url.replace(/\/$/, ''); // https://iroofercontractors.com
-const OG_IMAGE = `${BASE}/assets/logo.png`;
+export const OG_IMAGE = `${BASE}/assets/logo.png`;
 
 export function seo({
   title,

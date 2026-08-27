@@ -1,14 +1,20 @@
+import { OG_IMAGE } from '@/lib/seo';
 import CityAreaPage from '@/components/CityAreaPage';
 import { getCity, brand } from '@/lib/brand';
 
 const city = getCity('austell');
 
 export const metadata = {
-  title: 'Roofing in Austell, GA — Emergency Repair, Replacement & Storm Claims | iRoofer Contractors',
+  twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
+  title: 'Roofing in Austell, GA | Repair & Replacement | iRoofer',
   description:
     'Family-owned roofer serving Austell, GA (Cobb County). Emergency tarping, roof repair, full replacement, gutters and drainage, storm claim documentation. Free inspection — call (470) 236-1410.',
   alternates: { canonical: `${brand.url}/service-areas/austell` },
   openGraph: {
+    type: 'website',
+    siteName: 'iRoofer Contractors',
+    locale: 'en_US',
+    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: `${brand.url}/service-areas/austell`,
     title: 'Roofing in Austell, GA — iRoofer Contractors',
     description:

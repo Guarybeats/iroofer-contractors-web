@@ -1,12 +1,18 @@
+import { OG_IMAGE } from '@/lib/seo';
 import Link from 'next/link';
 import { brand } from '@/lib/brand';
 
 export const metadata = {
+  twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   title: 'Georgia Hail Storm Roof Checklist (6 Steps)',
   description:
     'After a Georgia hail storm hits Dallas, follow our 6-step checklist: safety, photos, tarp, claim, inspection, repair. Years of roofing experience across Dallas, GA and the greater Atlanta metro.',
   alternates: { canonical: 'https://iroofercontractors.com/blog/georgia-hail-storm-roof-checklist' },
-  openGraph: { url: 'https://iroofercontractors.com/blog/georgia-hail-storm-roof-checklist' },
+  openGraph: {
+    type: 'website',
+    siteName: 'iRoofer Contractors',
+    locale: 'en_US',
+    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/georgia-hail-storm-roof-checklist' },
 };
 
 const steps = [

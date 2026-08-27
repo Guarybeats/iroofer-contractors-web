@@ -1,9 +1,15 @@
+import { OG_IMAGE } from '@/lib/seo';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 
 export const metadata = {
+  twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   alternates: { canonical: 'https://iroofercontractors.com/blog/emergency-roof-tarping-dallas' },
-  openGraph: { url: 'https://iroofercontractors.com/blog/emergency-roof-tarping-dallas' },
+  openGraph: {
+    type: 'website',
+    siteName: 'iRoofer Contractors',
+    locale: 'en_US',
+    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/emergency-roof-tarping-dallas' },
 
   title: 'Emergency Roof Tarping in Dallas, GA: What to Expect',
   description:

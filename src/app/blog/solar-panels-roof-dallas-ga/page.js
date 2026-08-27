@@ -1,10 +1,16 @@
+import { OG_IMAGE } from '@/lib/seo';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 import { brand } from '@/lib/brand';
 
 export const metadata = {
+  twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   alternates: { canonical: 'https://iroofercontractors.com/blog/solar-panels-roof-dallas-ga' },
-  openGraph: { url: 'https://iroofercontractors.com/blog/solar-panels-roof-dallas-ga' },
+  openGraph: {
+    type: 'website',
+    siteName: 'iRoofer Contractors',
+    locale: 'en_US',
+    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/solar-panels-roof-dallas-ga' },
 
   title: 'Solar Panels on Your Dallas, GA Roof: What to Know',
   description: 'Solar + roofing: the install order matters, flashing details make or break leaks, and removal/reinstall costs. Get it right the first time.',

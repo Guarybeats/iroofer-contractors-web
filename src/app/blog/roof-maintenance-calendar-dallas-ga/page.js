@@ -1,10 +1,16 @@
+import { OG_IMAGE } from '@/lib/seo';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 import { brand } from '@/lib/brand';
 
 export const metadata = {
+  twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   alternates: { canonical: 'https://iroofercontractors.com/blog/roof-maintenance-calendar-dallas-ga' },
-  openGraph: { url: 'https://iroofercontractors.com/blog/roof-maintenance-calendar-dallas-ga' },
+  openGraph: {
+    type: 'website',
+    siteName: 'iRoofer Contractors',
+    locale: 'en_US',
+    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/roof-maintenance-calendar-dallas-ga' },
 
   title: 'Roof Maintenance Calendar | Dallas, GA Homeowners',
   description: 'A seasonal checklist: what to inspect, clean, and repair each quarter to extend your roof life and catch small issues before they become expensive leaks.',

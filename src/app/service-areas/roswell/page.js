@@ -1,14 +1,20 @@
+import { OG_IMAGE } from '@/lib/seo';
 import CityAreaPage from '@/components/CityAreaPage';
 import { getCity, brand } from '@/lib/brand';
 
 const city = getCity('roswell');
 
 export const metadata = {
-  title: 'Roofing in Roswell, GA — Repair, Replacement & Storm Claims | iRoofer Contractors',
+  twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
+  title: 'Roofing in Roswell, GA | Repair & Replacement | iRoofer',
   description:
     'Family-owned roofer serving Roswell, GA (Fulton County). Steep-slope replacements, historic-district repairs, leak diagnostics and storm claim help. Free inspection — call (470) 236-1410.',
   alternates: { canonical: `${brand.url}/service-areas/roswell` },
   openGraph: {
+    type: 'website',
+    siteName: 'iRoofer Contractors',
+    locale: 'en_US',
+    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: `${brand.url}/service-areas/roswell`,
     title: 'Roofing in Roswell, GA — iRoofer Contractors',
     description:

@@ -1,14 +1,20 @@
+import { OG_IMAGE } from '@/lib/seo';
 import CityAreaPage from '@/components/CityAreaPage';
 import { getCity, brand } from '@/lib/brand';
 
 const city = getCity('alpharetta');
 
 export const metadata = {
-  title: 'Roofing in Alpharetta, GA — Repair, Replacement & HOA-Compliant Installs | iRoofer Contractors',
+  twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
+  title: 'Roofing in Alpharetta, GA | Repair & Replacement | iRoofer',
   description:
     'Family-owned roofer serving Alpharetta, GA (Fulton County). HOA-compliant roof replacement, leak diagnostics, gutters and storm claim help. Free photo-documented inspection — call (470) 236-1410.',
   alternates: { canonical: `${brand.url}/service-areas/alpharetta` },
   openGraph: {
+    type: 'website',
+    siteName: 'iRoofer Contractors',
+    locale: 'en_US',
+    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: `${brand.url}/service-areas/alpharetta`,
     title: 'Roofing in Alpharetta, GA — iRoofer Contractors',
     description:
