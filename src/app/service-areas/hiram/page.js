@@ -1,190 +1,89 @@
-import Link from 'next/link';
-import ReviewButton from '@/components/ReviewButton';
-import QuoteForm from '@/components/QuoteForm';
-import { brand, services, cities } from '@/lib/brand';
-import CityMap from '@/components/CityMap';
+import CityAreaPage from '@/components/CityAreaPage';
+import { getCity, brand } from '@/lib/brand';
+
+const city = getCity('hiram');
 
 export const metadata = {
-  alternates: { canonical: 'https://iroofercontractors.com/service-areas/hiram' },
-  openGraph: { url: 'https://iroofercontractors.com/service-areas/hiram' },
-
-  title: 'Roof Repair & Replacement in Hiram, GA',
+  title: 'Roofing in Hiram, GA — Roof Repair & Replacement | iRoofer Contractors',
   description:
-    'Local roofing in Dallas, GA (Paulding County). Our home base — same-day roof inspections across Dallas and across the county line. Free inspection, honest pricing, 5★ rated. Call (470) 236-1410.',
+    'Family-owned roofer serving Hiram, GA (Paulding County) — minutes from our Dallas, GA shop. Roof repair, architectural shingle replacement, gutters and storm claim help. Free inspection — call (470) 236-1410.',
+  alternates: { canonical: `${brand.url}/service-areas/hiram` },
+  openGraph: {
+    url: `${brand.url}/service-areas/hiram`,
+    title: 'Roofing in Hiram, GA — iRoofer Contractors',
+    description:
+      'Hiram roof repair and replacement from a family-owned crew based minutes away in Dallas, GA. Free photo-documented inspections.',
+  },
 };
 
-const city = {
-  slug: 'hiram',
-  name: 'Hiram',
-  state: 'GA',
-  county: 'Paulding County',
-  blurb: 'roof repair and replacement crews working Hiram neighborhoods weekly.',
-  localNote: 'Hiram families trust us for architectural shingle replacements that match the neighborhood and hold up to Georgia summers. Most jobs done in one to two days.',
-};
+const intro = [
+  'Hiram is about as close to home as it gets for us — a few minutes down Highway 92 from our shop at 152 Freedom Dr in Dallas. We are on Hiram roofs most weeks, which is why we can usually be at a leak the same day you call rather than the middle of next week.',
+  'We handle roof repair, full replacement, new-construction roofing, gutters, and storm and insurance claim documentation. Inspections are free, photo-documented, and honest — if your roof has years left, the report will say so.',
+];
+
+const sections = [
+  {
+    h2: 'A neighbor, not a call center',
+    paras: [
+      'Being this close changes the practical details of the job. Materials and dumpsters stage from a shop minutes away, so delivery timing is not a guessing game. If weather stops work at noon, we can secure the roof and be back the next morning. And if you find something you are not happy with after the crew leaves, we can be back that day.',
+      'It also means our reputation in Hiram is not built on advertising. Most of our work here comes from neighbors who saw the crew on a nearby roof or found us in our Google reviews — 54 of them, 5★ average — and the same crew chief runs your job from estimate to final walkthrough.',
+    ],
+  },
+  {
+    h2: 'Architectural shingle replacements that match the street',
+    paras: [
+      'Most Hiram replacements are family homes in subdivisions where the neighborhood has a consistent look, and where a badly chosen shingle stands out for twenty years. We bring shingle boards to the inspection so you can see profile and color against your brick, siding and trim in daylight rather than picking from a phone screen.',
+      'The install itself is where longevity comes from: full tear-off to the deck, synthetic underlayment, correct starter and drip edge, and properly fastened ridge and hip caps. Most Hiram homes are a one- to two-day job, and we register the manufacturer warranty for you at completion.',
+    ],
+  },
+  {
+    h2: 'Georgia summers are what actually kill shingles here',
+    paras: [
+      'Paulding County roofs rarely fail from cold. They fail from heat cycling — a deck that reaches extreme temperatures every afternoon in July and August, with shingles expanding and contracting above it. The main defense is attic ventilation that is genuinely balanced, with enough intake at the eaves to feed whatever exhaust is at the ridge.',
+      'We find minimum-spec or blocked intake ventilation on a large share of the Hiram roofs we open — often soffit vents choked with insulation. Correcting it during a replacement costs very little, extends shingle life, and takes measurable load off your air conditioning.',
+    ],
+  },
+  {
+    h2: 'Repairs, gutters and storm claims',
+    paras: [
+      'Not every roof needs replacing. Plenty of Hiram calls are a boot flashing that has cracked with age, a pipe collar, a valley that needs rebuilding, or a section of ridge cap that lifted in a gust. We quote the repair when the repair is the right answer, and we will tell you roughly how much life is left in the rest of the roof so you can plan.',
+      'For storm damage we photograph with dates, test soft metals for impact, mark damage on a roof diagram, write the scope, and meet your adjuster on site. Gutters get checked on every visit too, since overflowing or back-pitched gutters rot fascia and soak the foundation regardless of how good the shingles are.',
+    ],
+  },
+];
+
+const neighborhoods = [
+  'Highway 92 corridor',
+  'Hiram / Dallas line',
+  'Bill Carruth Parkway area',
+  'Nebo Road',
+  'Cedarcrest side',
+  'Old Cartersville Road',
+];
+
+const faq = [
+  {
+    q: 'How quickly can you get to Hiram?',
+    a: 'Hiram is minutes from our Dallas, GA shop, so active leaks are normally same-day. We stop the water first, then schedule the permanent repair once the roof is dry enough to diagnose properly.',
+  },
+  {
+    q: 'Can I see shingle colors before I decide?',
+    a: 'Yes. We bring shingle boards to the free inspection so you can hold options against your brick, siding and trim in daylight, and the exact product and color goes into the written scope.',
+  },
+  {
+    q: 'Why does my upstairs stay so hot in the summer?',
+    a: 'Very often it is attic ventilation rather than insulation — blocked or undersized intake at the soffits starving the ridge vent. We check intake and exhaust balance on every inspection and correct it during a replacement, when it is cheap to do.',
+  },
+  {
+    q: 'Does my roof need replacing or just a repair?',
+    a: 'Plenty of Hiram calls turn out to be a cracked boot flashing, a pipe collar, a valley, or lifted ridge caps. If a repair is right we quote the repair, and we tell you how much life the rest of the roof has so you can plan ahead.',
+  },
+  {
+    q: 'How long does a replacement take?',
+    a: 'Most Hiram homes are one to two days. Deck repairs found at tear-off or steeper, more complex rooflines can add a day — we call you the same day if anything under the shingles changes the plan.',
+  },
+];
 
 export default function HiramPage() {
-  return (
-    <section className="sec-light sec-pad">
-      <div className="tex" aria-hidden="true" />
-      <div className="wrap" style={{ position: 'relative' }}>
-        <Link href="/service-areas" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>← All service areas</Link>
-
-        <div style={{ marginTop: 18 }}>
-          <span className="eyebrow dark">Service area · {city.county}</span>
-          <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02 }}>Roofing in {city.name}, {city.state}</h1>
-          <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
-            iRoofer Contractors is a local, family-owned roofer serving {city.name} and nearby communities. {city.blurb} We handle roof repair, full replacement, new construction, and storm &amp; insurance claims — with free inspections and honest, upfront pricing.
-          </p>
-          <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, maxWidth: 680, borderLeft: '3px solid var(--orange)', paddingLeft: 14 }}>
-            {city.localNote}
-          </p>
-        </div>
-
-        <CityMap city={city.name} state={city.state} />
-
-        <div className="cards" style={{ marginTop: 36 }}>
-          {services.map((s) => (
-            <Link key={s.slug} href={`/services/${s.slug}`} className="svc-card">
-              <h3 style={{ fontSize: '1.3rem', fontWeight: 800 }}>{s.title} in {city.name}</h3>
-              <p style={{ color: '#52606b', marginTop: 8, fontSize: '.95rem' }}>{s.summary}</p>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>Get a quote →</span>
-            </Link>
-          ))}
-        </div>
-
-        {/* SEO CONTENT BLOCKS */}
-        <div style={{ marginTop: 48, maxWidth: 880 }}>
-          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 16 }}>
-            Trusted roofing services in {city.name}, {city.state}
-          </h2>
-          <p style={{ color: '#52606b', fontSize: '1.02rem', lineHeight: 1.7, marginBottom: 16 }}>
-            As a locally owned roofing company based in {city.county}, iRoofer Contractors understands the
-            unique weather challenges that {city.name} homeowners face. From severe thunderstorms and hail
-            to summer heat expansion and winter ice, we build and repair roofs that stand up to Georgia
-            weather year after year.
-          </p>
-          <p style={{ color: '#52606b', fontSize: '1.02rem', lineHeight: 1.7, marginBottom: 16 }}>
-            We specialize in {city.name} roof repair, full roof replacement, new construction roofing, and
-            storm &amp; insurance claim assistance. Every {city.name} roof inspection is free, with no
-            obligation, and we walk you through every step — from permitting and material selection to
-            the final warranty walkthrough.
-          </p>
-        </div>
-
-        <div className="faq-grid" style={{ marginTop: 44, alignItems: 'start' }}>
-          <div className="rv">
-            <h2 style={{ fontSize: 'clamp(1.6rem,3vw,2.2rem)', fontWeight: 900 }}>Why {city.name} homeowners choose iRoofer</h2>
-            <ul style={{ lineHeight: 2.1, color: '#52606b', marginTop: 12 }}>
-              <li>Local &amp; family-owned — we live and roof in {city.county}.</li>
-              <li>Free, no-pressure roof inspections with photos.</li>
-              <li>Honest upfront pricing — no surprise line items.</li>
-              <li>Storm &amp; insurance claim help, including adjuster meetings.</li>
-              <li>Daily cleanup and magnetic nail sweeps on every job.</li>
-              <li>5★ rated on Google with {brand.reviewCount} verified reviews.</li>
-            </ul>
-            <p style={{ marginTop: 18 }}>
-              <a className="btn btn-ink" href="/estimator">Get an instant roof estimate <span className="arr">→</span></a>
-            </p>
-            <p style={{ marginTop: 14, color: '#52606b' }}>
-              Other nearby areas: {cities.filter((x) => x.slug !== city.slug).map((x, i, arr) => (
-                <span key={x.slug}>
-                  <Link href={`/service-areas/${x.slug}`} style={{ color: 'var(--orange)' }}>{x.name}</Link>{i < arr.length - 1 ? ', ' : ''}
-                </span>
-              ))}
-            </p>
-          </div>
-          <div className="rv">
-            <picture>
-              <source srcSet="/assets/hero.webp" type="image/webp" />
-              <img src="/assets/hero.webp" alt="Roofing work in Hiram, GA" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
-            </picture>
-            <div style={{ maxWidth: 460, margin: '32px auto 0' }}>
-              <QuoteForm variant="detail" id={`quote-${city.slug}`} source={`Service Area: ${city.name}`} />
-            </div>
-          </div>
-        </div>
-
-        {/* SEO KEYWORDS SECTION */}
-        <div style={{ marginTop: 48, maxWidth: 880, fontSize: '0.95rem', lineHeight: 1.7, color: '#52606b' }}>
-          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 20 }}>
-            {city.name} roofing services — what you need to know
-          </h2>
-          <p style={{ marginBottom: 12 }}>
-            Whether you need emergency roof repair in {city.name}, a full roof replacement on your
-            {city.name} home, or new construction roofing for a builder project, iRoofer Contractors
-            brings the same family-owned service to every {city.name} neighborhood. We're licensed,
-            bonded, and insured in Georgia, and we carry the manufacturer warranties that protect
-            your investment for decades.
-          </p>
-          <p style={{ marginBottom: 12 }}>
-            <strong>Roof repair in {city.name}</strong> — From storm damage and hail dents to worn
-            flashing and mysterious leaks, we trace the source and fix it right. Most {city.name}
-            emergency repairs are completed the same day, with a 2-year workmanship warranty.
-          </p>
-          <p style={{ marginBottom: 12 }}>
-            <strong>Roof replacement in {city.name}</strong> — Full tear-off to the deck, ice & water
-            shield, synthetic underlayment, and architectural shingles installed to manufacturer spec.
-            We handle the permit, coordinate with your {city.name} inspector, and do a magnetic nail
-            sweep so your family and pets stay safe.
-          </p>
-          <p style={{ marginBottom: 12 }}>
-            <strong>New construction roofing in {city.name}</strong> — We partner with local builders
-            and homeowners to install design-matched roofs on new homes. From shingle selection to
-            final walkthrough and warranty setup — we keep your build on schedule.
-          </p>
-          <p style={{ marginBottom: 12 }}>
-            <strong>Storm &amp; insurance claim help in {city.name}</strong> — After a Georgia storm,
-            we document all damage with photos, write a full scope of work, and meet your insurance
-            adjuster on-site. We handle supplements and paperwork so you're never fronting the cost.
-          </p>
-          <p>
-            Based in Dallas ({brand.phone}), we serve {city.name} and all of {city.county} with free,
-            no-pressure roof inspections. Call today — we answer our own phones.
-          </p>
-        </div>
-
-        {/* LOCAL FAQ SECTION */}
-        <div style={{ marginTop: 48, maxWidth: 880 }}>
-          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 20 }}>
-            Frequently asked questions about roofing in {city.name}, {city.state}
-          </h2>
-          <div style={{ display: 'grid', gap: 16 }}>
-            <div>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: 6, color: 'var(--ink)' }}>
-                How much does a roof replacement cost in {city.name}?
-              </h3>
-              <p style={{ margin: 0 }}>
-                Most residential roof replacements in {city.name} range from $3,500 to $12,000
-                depending on roof size, pitch, and materials. We provide a detailed, line-item-free
-                estimate after a free on-site inspection — no surprises.
-              </p>
-            </div>
-            <div>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: 6, color: 'var(--ink)' }}>
-                What roofing materials do you recommend for {city.name} weather?
-              </h3>
-              <p style={{ margin: 0 }}>
-                For {city.name} homes we typically recommend architectural asphalt shingles (Class A
-                fire rating) with ice &amp; water shield in the eaves and synthetic underlayment.
-                This combination handles Georgia's heat, hail, and occasional winter ice best.
-              </p>
-            </div>
-            <div>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: 6, color: 'var(--ink)' }}>
-                Do you offer emergency roof repair in {city.name}?
-              </h3>
-              <p style={{ margin: 0 }}>
-                Yes — 24/7 emergency tarping and storm damage repair for {city.name} homeowners. We
-                respond same-day for active leaks, document damage for insurance, and complete
-                permanent repairs within 48 hours.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    <div style={{ marginTop: 28, textAlign: 'center' }}>
-      <ReviewButton variant="orange" label="Leave us a Google review" />
-    </div>
-    </section>
-  );
+  return <CityAreaPage city={city} intro={intro} sections={sections} neighborhoods={neighborhoods} faq={faq} />;
 }

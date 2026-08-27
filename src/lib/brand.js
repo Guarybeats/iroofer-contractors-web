@@ -103,7 +103,15 @@ export function getService(slug) {
   return services.find((s) => s.slug === slug);
 }
 
-// Service-area cities for local SEO (Dallas, GA + surrounding Paulding/Cobb/Douglas counties)
+// Service-area cities for local SEO (Dallas, GA + surrounding Paulding/Cobb/Douglas/
+// Cherokee/north Fulton counties).
+//
+// IMPORTANT: every city listed here must also have its own page at
+// src/app/service-areas/<slug>/page.js. The generic [city] dynamic route was removed
+// because it collided with those dedicated pages and the static export picked the
+// winner unpredictably (some cities silently shipped the short generic template).
+// Adding a city here without creating its page means the service-areas index links
+// to a 404 — create the page in the same change, using components/CityAreaPage.jsx.
 export const cities = [
   { slug: 'dallas-ga', name: 'Dallas', state: 'GA', county: 'Paulding County', blurb: 'our home base — same-day roof inspections across Dallas and across the county line.',
     localNote: 'As the town we call home, Dallas homeowners get priority scheduling and the crew chief on every job. From historic downtown to the new subdivisions off Hwy 92, we know the rooflines here.' },
