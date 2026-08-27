@@ -18,7 +18,8 @@ export const brand = {
   },
   serviceArea: [
     'Dallas, GA', 'Douglasville', 'Hiram', 'Powder Springs',
-    'Marietta', 'Acworth', 'Kennesaw', 'Austell'
+    'Marietta', 'Acworth', 'Kennesaw', 'Austell',
+    'Roswell', 'Alpharetta', 'Canton'
   ],
   pitch:
     'iRoofer Contractors is a local, family-owned roofing company serving Dallas, GA and the greater Atlanta metro. ' +
@@ -120,6 +121,12 @@ export const cities = [
     localNote: 'Kennesaw homeowners and small businesses rely on us for honest pricing and a real person on the phone — no call center, no surprise line items.' },
   { slug: 'austell', name: 'Austell', state: 'GA', county: 'Cobb County', blurb: 'emergency tarping and honest estimates for Austell property owners.',
     localNote: 'When a storm hits Austell we tarp the same day and meet your adjuster on-site, so your claim is documented before the next rain.' },
+  { slug: 'roswell', name: 'Roswell', state: 'GA', county: 'Fulton County', combo: false, blurb: 'steep-slope replacements, historic-district repairs and storm claims in Roswell.',
+    localNote: 'Roswell mixes 1980s Martin\u2019s Landing and Willeo Road two-story homes with the Canton Street historic district, where architectural review limits what can go on a roof. We spec shingles that pass review and still carry a full manufacturer warranty.' },
+  { slug: 'alpharetta', name: 'Alpharetta', state: 'GA', county: 'Fulton County', combo: false, blurb: 'HOA-compliant roof replacements and leak diagnostics across Alpharetta.',
+    localNote: 'Most Alpharetta work comes with an HOA architectural packet and a tight window for dumpster placement. We handle the submittal, stage materials off the street, and keep crews off the neighbors\u2019 lawns.' },
+  { slug: 'canton', name: 'Canton', state: 'GA', county: 'Cherokee County', combo: false, blurb: 'hail-belt inspections and full tear-offs for Canton and north Cherokee homes.',
+    localNote: 'North Cherokee catches hail cores that miss Atlanta entirely. We inspect for soft metal dents and bruised mats \u2014 the evidence adjusters actually accept \u2014 before you file.' },
 ];
 
 export function getCity(slug) {

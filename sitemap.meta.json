@@ -1,652 +1,667 @@
 {
- "/": {
-  "priority": "1.0",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/hero.jpg",
-    "title": "iRoofer Contractors \u2014 local family roofing in Dallas, GA"
-   }
-  ]
- },
- "/emergency-roof-repair-dallas-ga/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/emergency-tarp.jpg",
-    "title": "Emergency roof tarp installation in Dallas, GA"
-   }
-  ]
- },
- "/storm-damage-roof-repair-dallas-ga/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/storm-damage.webp",
-    "title": "Storm Damage Roof Repair in Dallas, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/services/roof-insurance-claims/": {
-  "priority": "0.9",
-  "changefreq": "monthly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/storm-damage.jpg",
-    "title": "Roof insurance claim help in Dallas, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/new-construction/": {
-  "priority": "0.8",
-  "changefreq": "monthly",
-  "images": []
- },
- "/estimator/": {
-  "priority": "0.8",
-  "changefreq": "monthly",
-  "images": []
- },
- "/about/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/contact/": {
-  "priority": "0.8",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/": {
-  "priority": "0.7",
-  "changefreq": "weekly",
-  "images": []
- },
- "/services/": {
-  "priority": "0.7",
-  "changefreq": "monthly",
-  "images": []
- },
- "/services/roof-repair/": {
-  "priority": "0.7",
-  "changefreq": "monthly",
-  "images": []
- },
- "/services/roof-replacement/": {
-  "priority": "0.7",
-  "changefreq": "monthly",
-  "images": []
- },
- "/services/new-construction/": {
-  "priority": "0.7",
-  "changefreq": "monthly",
-  "images": []
- },
- "/services/gutter-repair-replacement/": {
-  "priority": "0.7",
-  "changefreq": "monthly",
-  "images": []
- },
- "/service-areas/": {
-  "priority": "0.7",
-  "changefreq": "monthly",
-  "images": []
- },
- "/service-areas/dallas-ga/": {
-  "priority": "0.8",
-  "changefreq": "monthly",
-  "images": []
- },
- "/service-areas/douglasville/": {
-  "priority": "0.7",
-  "changefreq": "monthly",
-  "images": []
- },
- "/service-areas/hiram/": {
-  "priority": "0.7",
-  "changefreq": "monthly",
-  "images": []
- },
- "/service-areas/powder-springs/": {
-  "priority": "0.7",
-  "changefreq": "monthly",
-  "images": []
- },
- "/service-areas/marietta/": {
-  "priority": "0.7",
-  "changefreq": "monthly",
-  "images": []
- },
- "/service-areas/acworth/": {
-  "priority": "0.7",
-  "changefreq": "monthly",
-  "images": []
- },
- "/service-areas/kennesaw/": {
-  "priority": "0.7",
-  "changefreq": "monthly",
-  "images": []
- },
- "/service-areas/austell/": {
-  "priority": "0.7",
-  "changefreq": "monthly",
-  "images": []
- },
- "/roof-repair-dallas-ga/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-repair.webp",
-    "title": "Roof Repair in Dallas, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/roof-replacement-marietta-ga/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-replacement.jpg",
-    "title": "Roof replacement in Marietta, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/storm-damage-kennesaw-ga/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/storm-damage.jpg",
-    "title": "Storm damage roof repair in Kennesaw, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/blog/architectural-vs-3-tab-shingles/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/attic-ventilation-dallas-heat/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/choosing-roofing-materials-dallas-ga/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/cost-of-new-roof-2026-dallas-ga/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/dallas-ga-hail-storm-insurance-claims/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/emergency-roof-response-time-dallas/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/emergency-roof-tarping-dallas/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/georgia-hail-storm-roof-checklist/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/georgia-winter-roof-inspection/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/gutter-maintenance-dallas-ga/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/how-to-choose-roofing-contractor-dallas-ga/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/metal-roofing-pros-cons-dallas/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/new-construction-roofing-dallas/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/roof-financing-options-dallas-ga/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/roof-maintenance-calendar-dallas-ga/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/roof-warranty-what-is-covered/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/skylight-leak-repair-dallas-ga/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/solar-panels-roof-dallas-ga/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/when-to-replace-vs-repair-a-roof/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/blog/wind-damage-roof-repair-dallas/": {
-  "priority": "0.6",
-  "changefreq": "monthly",
-  "images": []
- },
- "/dallas-ga-roofing/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": []
- },
- "/roof-repair-douglasville/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-repair.webp",
-    "title": "Roof Repair in Douglasville, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/roof-repair-hiram/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-repair.webp",
-    "title": "Roof Repair in Hiram, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/roof-repair-powder-springs/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-repair.webp",
-    "title": "Roof Repair in Powder Springs, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/roof-repair-marietta/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-repair.webp",
-    "title": "Roof Repair in Marietta, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/roof-repair-acworth/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-repair.webp",
-    "title": "Roof Repair in Acworth, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/roof-repair-kennesaw/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-repair.webp",
-    "title": "Roof Repair in Kennesaw, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/roof-repair-austell/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-repair.webp",
-    "title": "Roof Repair in Austell, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/roof-replacement-dallas-ga/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-replacement.webp",
-    "title": "Roof Replacement in Dallas, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/roof-replacement-douglasville/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-replacement.webp",
-    "title": "Roof Replacement in Douglasville, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/roof-replacement-hiram/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-replacement.webp",
-    "title": "Roof Replacement in Hiram, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/roof-replacement-powder-springs/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-replacement.webp",
-    "title": "Roof Replacement in Powder Springs, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/roof-replacement-marietta/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-replacement.webp",
-    "title": "Roof Replacement in Marietta, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/roof-replacement-acworth/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-replacement.webp",
-    "title": "Roof Replacement in Acworth, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/roof-replacement-kennesaw/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-replacement.webp",
-    "title": "Roof Replacement in Kennesaw, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/roof-replacement-austell/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-replacement.webp",
-    "title": "Roof Replacement in Austell, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/new-construction-dallas-ga/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-newconstruction.webp",
-    "title": "New Construction in Dallas, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/new-construction-douglasville/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-newconstruction.webp",
-    "title": "New Construction in Douglasville, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/new-construction-hiram/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-newconstruction.webp",
-    "title": "New Construction in Hiram, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/new-construction-powder-springs/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-newconstruction.webp",
-    "title": "New Construction in Powder Springs, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/new-construction-marietta/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-newconstruction.webp",
-    "title": "New Construction in Marietta, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/new-construction-acworth/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-newconstruction.webp",
-    "title": "New Construction in Acworth, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/new-construction-kennesaw/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-newconstruction.webp",
-    "title": "New Construction in Kennesaw, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/new-construction-austell/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-newconstruction.webp",
-    "title": "New Construction in Austell, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/storm-damage-roof-repair-douglasville/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/storm-damage.webp",
-    "title": "Storm Damage Roof Repair in Douglasville, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/storm-damage-roof-repair-hiram/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/storm-damage.webp",
-    "title": "Storm Damage Roof Repair in Hiram, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/storm-damage-roof-repair-powder-springs/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/storm-damage.webp",
-    "title": "Storm Damage Roof Repair in Powder Springs, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/storm-damage-roof-repair-marietta/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/storm-damage.webp",
-    "title": "Storm Damage Roof Repair in Marietta, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/storm-damage-roof-repair-acworth/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/storm-damage.webp",
-    "title": "Storm Damage Roof Repair in Acworth, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/storm-damage-roof-repair-kennesaw/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/storm-damage.webp",
-    "title": "Storm Damage Roof Repair in Kennesaw, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/storm-damage-roof-repair-austell/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/storm-damage.webp",
-    "title": "Storm Damage Roof Repair in Austell, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/gutter-repair-replacement-dallas-ga/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-gutters-main.webp",
-    "title": "Gutter Repair &amp; Replacement in Dallas, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/gutter-repair-replacement-douglasville/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-gutters-main.webp",
-    "title": "Gutter Repair &amp; Replacement in Douglasville, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/gutter-repair-replacement-hiram/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-gutters-main.webp",
-    "title": "Gutter Repair &amp; Replacement in Hiram, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/gutter-repair-replacement-powder-springs/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-gutters-main.webp",
-    "title": "Gutter Repair &amp; Replacement in Powder Springs, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/gutter-repair-replacement-marietta/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-gutters-main.webp",
-    "title": "Gutter Repair &amp; Replacement in Marietta, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/gutter-repair-replacement-acworth/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-gutters-main.webp",
-    "title": "Gutter Repair &amp; Replacement in Acworth, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/gutter-repair-replacement-kennesaw/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-gutters-main.webp",
-    "title": "Gutter Repair &amp; Replacement in Kennesaw, GA by iRoofer Contractors"
-   }
-  ]
- },
- "/gutter-repair-replacement-austell/": {
-  "priority": "0.9",
-  "changefreq": "weekly",
-  "images": [
-   {
-    "loc": "https://iroofercontractors.com/assets/service-gutters-main.webp",
-    "title": "Gutter Repair &amp; Replacement in Austell, GA by iRoofer Contractors"
-   }
-  ]
- }
+  "/": {
+    "priority": "1.0",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/hero.jpg",
+        "title": "iRoofer Contractors \u2014 local family roofing in Dallas, GA"
+      }
+    ]
+  },
+  "/emergency-roof-repair-dallas-ga/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/emergency-tarp.jpg",
+        "title": "Emergency roof tarp installation in Dallas, GA"
+      }
+    ]
+  },
+  "/storm-damage-roof-repair-dallas-ga/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/storm-damage.webp",
+        "title": "Storm Damage Roof Repair in Dallas, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/services/roof-insurance-claims/": {
+    "priority": "0.9",
+    "changefreq": "monthly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/storm-damage.jpg",
+        "title": "Roof insurance claim help in Dallas, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/new-construction/": {
+    "priority": "0.8",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/estimator/": {
+    "priority": "0.8",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/about/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/contact/": {
+    "priority": "0.8",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/": {
+    "priority": "0.7",
+    "changefreq": "weekly",
+    "images": []
+  },
+  "/services/": {
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/services/roof-repair/": {
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/services/roof-replacement/": {
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/services/new-construction/": {
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/services/gutter-repair-replacement/": {
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/service-areas/": {
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/service-areas/dallas-ga/": {
+    "priority": "0.8",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/service-areas/douglasville/": {
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/service-areas/hiram/": {
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/service-areas/powder-springs/": {
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/service-areas/marietta/": {
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/service-areas/acworth/": {
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/service-areas/kennesaw/": {
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/service-areas/austell/": {
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/roof-repair-dallas-ga/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-repair.webp",
+        "title": "Roof Repair in Dallas, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/roof-replacement-marietta-ga/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-replacement.jpg",
+        "title": "Roof replacement in Marietta, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/storm-damage-kennesaw-ga/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/storm-damage.jpg",
+        "title": "Storm damage roof repair in Kennesaw, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/blog/architectural-vs-3-tab-shingles/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/attic-ventilation-dallas-heat/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/choosing-roofing-materials-dallas-ga/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/cost-of-new-roof-2026-dallas-ga/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/dallas-ga-hail-storm-insurance-claims/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/emergency-roof-response-time-dallas/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/emergency-roof-tarping-dallas/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/georgia-hail-storm-roof-checklist/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/georgia-winter-roof-inspection/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/gutter-maintenance-dallas-ga/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/how-to-choose-roofing-contractor-dallas-ga/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/metal-roofing-pros-cons-dallas/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/new-construction-roofing-dallas/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/roof-financing-options-dallas-ga/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/roof-maintenance-calendar-dallas-ga/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/roof-warranty-what-is-covered/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/skylight-leak-repair-dallas-ga/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/solar-panels-roof-dallas-ga/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/when-to-replace-vs-repair-a-roof/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/blog/wind-damage-roof-repair-dallas/": {
+    "priority": "0.6",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/dallas-ga-roofing/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": []
+  },
+  "/roof-repair-douglasville/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-repair.webp",
+        "title": "Roof Repair in Douglasville, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/roof-repair-hiram/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-repair.webp",
+        "title": "Roof Repair in Hiram, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/roof-repair-powder-springs/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-repair.webp",
+        "title": "Roof Repair in Powder Springs, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/roof-repair-marietta/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-repair.webp",
+        "title": "Roof Repair in Marietta, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/roof-repair-acworth/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-repair.webp",
+        "title": "Roof Repair in Acworth, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/roof-repair-kennesaw/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-repair.webp",
+        "title": "Roof Repair in Kennesaw, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/roof-repair-austell/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-repair.webp",
+        "title": "Roof Repair in Austell, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/roof-replacement-dallas-ga/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-replacement.webp",
+        "title": "Roof Replacement in Dallas, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/roof-replacement-douglasville/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-replacement.webp",
+        "title": "Roof Replacement in Douglasville, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/roof-replacement-hiram/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-replacement.webp",
+        "title": "Roof Replacement in Hiram, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/roof-replacement-powder-springs/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-replacement.webp",
+        "title": "Roof Replacement in Powder Springs, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/roof-replacement-marietta/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-replacement.webp",
+        "title": "Roof Replacement in Marietta, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/roof-replacement-acworth/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-replacement.webp",
+        "title": "Roof Replacement in Acworth, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/roof-replacement-kennesaw/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-replacement.webp",
+        "title": "Roof Replacement in Kennesaw, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/roof-replacement-austell/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-replacement.webp",
+        "title": "Roof Replacement in Austell, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/new-construction-dallas-ga/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-newconstruction.webp",
+        "title": "New Construction in Dallas, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/new-construction-douglasville/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-newconstruction.webp",
+        "title": "New Construction in Douglasville, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/new-construction-hiram/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-newconstruction.webp",
+        "title": "New Construction in Hiram, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/new-construction-powder-springs/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-newconstruction.webp",
+        "title": "New Construction in Powder Springs, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/new-construction-marietta/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-newconstruction.webp",
+        "title": "New Construction in Marietta, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/new-construction-acworth/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-newconstruction.webp",
+        "title": "New Construction in Acworth, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/new-construction-kennesaw/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-newconstruction.webp",
+        "title": "New Construction in Kennesaw, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/new-construction-austell/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-newconstruction.webp",
+        "title": "New Construction in Austell, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/storm-damage-roof-repair-douglasville/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/storm-damage.webp",
+        "title": "Storm Damage Roof Repair in Douglasville, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/storm-damage-roof-repair-hiram/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/storm-damage.webp",
+        "title": "Storm Damage Roof Repair in Hiram, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/storm-damage-roof-repair-powder-springs/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/storm-damage.webp",
+        "title": "Storm Damage Roof Repair in Powder Springs, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/storm-damage-roof-repair-marietta/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/storm-damage.webp",
+        "title": "Storm Damage Roof Repair in Marietta, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/storm-damage-roof-repair-acworth/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/storm-damage.webp",
+        "title": "Storm Damage Roof Repair in Acworth, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/storm-damage-roof-repair-kennesaw/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/storm-damage.webp",
+        "title": "Storm Damage Roof Repair in Kennesaw, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/storm-damage-roof-repair-austell/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/storm-damage.webp",
+        "title": "Storm Damage Roof Repair in Austell, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/gutter-repair-replacement-dallas-ga/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-gutters-main.webp",
+        "title": "Gutter Repair &amp; Replacement in Dallas, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/gutter-repair-replacement-douglasville/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-gutters-main.webp",
+        "title": "Gutter Repair &amp; Replacement in Douglasville, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/gutter-repair-replacement-hiram/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-gutters-main.webp",
+        "title": "Gutter Repair &amp; Replacement in Hiram, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/gutter-repair-replacement-powder-springs/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-gutters-main.webp",
+        "title": "Gutter Repair &amp; Replacement in Powder Springs, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/gutter-repair-replacement-marietta/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-gutters-main.webp",
+        "title": "Gutter Repair &amp; Replacement in Marietta, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/gutter-repair-replacement-acworth/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-gutters-main.webp",
+        "title": "Gutter Repair &amp; Replacement in Acworth, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/gutter-repair-replacement-kennesaw/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-gutters-main.webp",
+        "title": "Gutter Repair &amp; Replacement in Kennesaw, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/gutter-repair-replacement-austell/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/service-gutters-main.webp",
+        "title": "Gutter Repair &amp; Replacement in Austell, GA by iRoofer Contractors"
+      }
+    ]
+  },
+  "/service-areas/roswell/": {
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/service-areas/alpharetta/": {
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/service-areas/canton/": {
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "images": []
+  }
 }

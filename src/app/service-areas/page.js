@@ -4,7 +4,7 @@ import { seo } from '@/lib/seo';
 
 export const metadata = seo({
   title: 'Service Areas | Roofing in Dallas, GA & Atlanta',
-  description: `Local roofing across Dallas, GA and the greater Atlanta metro — Douglasville, Hiram, Powder Springs, Marietta, Acworth, Kennesaw, Austell. Free inspection: ${brand.phone}.`,
+  description: `Local roofing across Dallas, GA and the greater Atlanta metro — Douglasville, Hiram, Powder Springs, Marietta, Acworth, Kennesaw, Austell, Roswell, Alpharetta, Canton. Free inspection: ${brand.phone}.`,
   path: '/service-areas',
 });
 
@@ -16,7 +16,7 @@ export default function ServiceAreas() {
         <span className="eyebrow dark">Where we roof</span>
         <h1 style={{ fontSize: 'clamp(2.2rem,4.6vw,3.6rem)', fontWeight: 900 }}>Service Areas</h1>
         <p style={{ color: '#52606b', fontSize: '1.05rem', marginTop: 8, maxWidth: 640 }}>
-          iRoofer Contractors is based in Dallas, GA and serves homeowners and builders across Paulding, Douglas &amp; Cobb counties. Tap your town for local roofing help.
+          iRoofer Contractors is based in Dallas, GA and serves homeowners and builders across Paulding, Douglas, Cobb, Cherokee &amp; north Fulton counties. Tap your town for local roofing help.
         </p>
         <div className="cards" style={{ marginTop: 28, gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
           {cities.map((c) => (

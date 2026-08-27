@@ -1,190 +1,89 @@
-import Link from 'next/link';
-import ReviewButton from '@/components/ReviewButton';
-import QuoteForm from '@/components/QuoteForm';
-import { brand, services, cities } from '@/lib/brand';
-import CityMap from '@/components/CityMap';
+import CityAreaPage from '@/components/CityAreaPage';
+import { getCity, brand } from '@/lib/brand';
+
+const city = getCity('kennesaw');
 
 export const metadata = {
-  alternates: { canonical: 'https://iroofercontractors.com/service-areas/kennesaw' },
-  openGraph: { url: 'https://iroofercontractors.com/service-areas/kennesaw' },
-
-  title: 'Roof Repair & Replacement in Kennesaw, GA',
+  title: 'Roofing in Kennesaw, GA — Repair, Replacement & Storm Response | iRoofer Contractors',
   description:
-    'Local roofing in Dallas, GA (Paulding County). Our home base — same-day roof inspections across Dallas and across the county line. Free inspection, honest pricing, 5★ rated. Call (470) 236-1410.',
+    'Family-owned roofer serving Kennesaw, GA (Cobb County). Roof repair, full replacement, small-business and HOA-neighborhood roofing, storm claim help. Free photo-documented inspection — call (470) 236-1410.',
+  alternates: { canonical: `${brand.url}/service-areas/kennesaw` },
+  openGraph: {
+    url: `${brand.url}/service-areas/kennesaw`,
+    title: 'Roofing in Kennesaw, GA — iRoofer Contractors',
+    description:
+      'Kennesaw roof repair and replacement from a family-owned crew based in Dallas, GA. Free inspections, photo reports, honest answers.',
+  },
 };
 
-const city = {
-  slug: 'kennesaw',
-  name: 'Kennesaw',
-  state: 'GA',
-  county: 'Cobb County',
-  blurb: 'local, family-owned roofing for Kennesaw homes and small businesses.',
-  localNote: 'Kennesaw homeowners and small businesses rely on us for honest pricing and a real person on the phone — no call center, no surprise line items.',
-};
+const intro = [
+  'Kennesaw is one of our closest markets — a short run east from our Dallas, GA shop, which is why we can usually get someone on a Kennesaw roof quickly when water is coming in. The town is mostly 1990s and 2000s subdivision housing with HOAs, plus small commercial and retail buildings along Cobb Parkway and around Kennesaw State.',
+  'We handle roof repair, full replacement, new-construction roofing, gutters, and storm and insurance claim documentation for both homes and small business properties. Inspections are free and come back as dated photos with plain notes.',
+];
+
+const sections = [
+  {
+    h2: 'Subdivision roofs aging out on the same schedule',
+    paras: [
+      'Because so much of Kennesaw was built in a compressed period, entire streets reach shingle end-of-life together. If several neighbors replaced last season, yours is likely in the same window. The signs to watch are granule accumulation in gutters and at downspout outlets, curling on the south and west slopes, exposed fastener heads on ridge caps, and streaking that returns after cleaning.',
+      'HOA covenants apply in most of these neighborhoods. We put manufacturer, product line, and exact color in the written scope so your architectural request has real specifics, hold the material order until you have approval, and agree dumpster placement and crew parking before day one.',
+    ],
+  },
+  {
+    h2: 'Small business and light commercial roofs',
+    paras: [
+      'Kennesaw has a lot of owner-operated buildings — shops, offices, and service bays along Cobb Parkway and the side streets off it. Those roofs are usually a mix of steep-slope shingle on the street-facing section and low-slope membrane behind it, and the failures almost always start where the two meet, or at rooftop HVAC curbs and drains.',
+      'For commercial work we schedule around your open hours where we can, keep entrances and parking clear, and document conditions for your property insurer. We will tell you honestly whether a section can be repaired or whether it is time to plan a replacement, and we do not quote a full tear-off for a problem that is confined to one detail.',
+    ],
+  },
+  {
+    h2: 'Storm response and honest claim advice',
+    paras: [
+      'When a cell tracks over Cobb County, Kennesaw fills up with out-of-town crews knocking doors within days. Our position is simple: before you sign anything, get a dated photo report from a local company with a real address, and read any contingency agreement carefully — those often bind you to one contractor no matter how the claim turns out.',
+      'When we inspect after a storm we test soft metals for impact, mark bruised or torn mats on a roof diagram, photograph everything with dates, and write a scope of work an adjuster can verify. If the damage will not support a claim, we say so and quote the repair directly rather than pushing you into a filing that ends in a denial.',
+    ],
+  },
+  {
+    h2: 'Ventilation, gutters and roof lifespan in Georgia heat',
+    paras: [
+      'The single most common problem we find on Kennesaw replacements is attic ventilation that was built to the minimum and never balanced. Too little intake at the eaves with ridge vent above it starves airflow, superheats the deck through July and August, shortens shingle life, and raises cooling bills. It is inexpensive to correct during a replacement and expensive to ignore.',
+      'Gutters are the other quiet culprit. Overflowing or back-pitched gutters rot fascia and soak the ground at the foundation. We check drainage on every inspection and include gutter and downspout correction in the scope when the roof work would otherwise leave the real problem in place.',
+    ],
+  },
+];
+
+const neighborhoods = [
+  'Downtown Kennesaw / Main Street',
+  'Legacy Park',
+  'Barrett Parkway corridor',
+  'Kennesaw State area',
+  'Stilesboro & Old 41',
+  'Brookstone side',
+];
+
+const faq = [
+  {
+    q: 'How fast can you get to Kennesaw for a leak?',
+    a: 'Kennesaw is close to our Dallas, GA base, so active leaks are usually same-day or next-morning calls. We stop the water first with emergency tarping, then schedule the permanent repair once the roof is dry enough to see the full picture.',
+  },
+  {
+    q: 'My neighborhood has an HOA. Does that slow the job down?',
+    a: 'It adds a step, not a delay, if it is handled early. We give you the manufacturer, product line, and exact color for your architectural request, hold the material order until you have approval, and plan dumpster placement and parking to fit the covenants.',
+  },
+  {
+    q: 'Do you work on small commercial buildings in Kennesaw?',
+    a: 'Yes — shops, offices, and service buildings with steep-slope shingle, low-slope membrane, or a combination of both. We schedule around your open hours where possible and document conditions for your property insurer.',
+  },
+  {
+    q: 'A storm crew knocked on my door. Should I let them inspect?',
+    a: 'Get a second opinion from a local company with a verifiable address before you sign anything, and read contingency agreements closely. We will give you a free dated photo report of your own roof either way.',
+  },
+  {
+    q: 'Does my roof need replacing, or can it be repaired?',
+    a: 'That depends on shingle condition, flashing and valley integrity, deck condition, and ventilation — all of which we check at the free inspection. If a repair is the right answer we quote the repair. We do not sell replacements to roofs that do not need one.',
+  },
+];
 
 export default function KennesawPage() {
-  return (
-    <section className="sec-light sec-pad">
-      <div className="tex" aria-hidden="true" />
-      <div className="wrap" style={{ position: 'relative' }}>
-        <Link href="/service-areas" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>← All service areas</Link>
-
-        <div style={{ marginTop: 18 }}>
-          <span className="eyebrow dark">Service area · {city.county}</span>
-          <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02 }}>Roofing in {city.name}, {city.state}</h1>
-          <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
-            iRoofer Contractors is a local, family-owned roofer serving {city.name} and nearby communities. {city.blurb} We handle roof repair, full replacement, new construction, and storm &amp; insurance claims — with free inspections and honest, upfront pricing.
-          </p>
-          <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, maxWidth: 680, borderLeft: '3px solid var(--orange)', paddingLeft: 14 }}>
-            {city.localNote}
-          </p>
-        </div>
-
-        <CityMap city={city.name} state={city.state} />
-
-        <div className="cards" style={{ marginTop: 36 }}>
-          {services.map((s) => (
-            <Link key={s.slug} href={`/services/${s.slug}`} className="svc-card">
-              <h3 style={{ fontSize: '1.3rem', fontWeight: 800 }}>{s.title} in {city.name}</h3>
-              <p style={{ color: '#52606b', marginTop: 8, fontSize: '.95rem' }}>{s.summary}</p>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>Get a quote →</span>
-            </Link>
-          ))}
-        </div>
-
-        {/* SEO CONTENT BLOCKS */}
-        <div style={{ marginTop: 48, maxWidth: 880 }}>
-          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 16 }}>
-            Trusted roofing services in {city.name}, {city.state}
-          </h2>
-          <p style={{ color: '#52606b', fontSize: '1.02rem', lineHeight: 1.7, marginBottom: 16 }}>
-            As a locally owned roofing company based in {city.county}, iRoofer Contractors understands the
-            unique weather challenges that {city.name} homeowners face. From severe thunderstorms and hail
-            to summer heat expansion and winter ice, we build and repair roofs that stand up to Georgia
-            weather year after year.
-          </p>
-          <p style={{ color: '#52606b', fontSize: '1.02rem', lineHeight: 1.7, marginBottom: 16 }}>
-            We specialize in {city.name} roof repair, full roof replacement, new construction roofing, and
-            storm &amp; insurance claim assistance. Every {city.name} roof inspection is free, with no
-            obligation, and we walk you through every step — from permitting and material selection to
-            the final warranty walkthrough.
-          </p>
-        </div>
-
-        <div className="faq-grid" style={{ marginTop: 44, alignItems: 'start' }}>
-          <div className="rv">
-            <h2 style={{ fontSize: 'clamp(1.6rem,3vw,2.2rem)', fontWeight: 900 }}>Why {city.name} homeowners choose iRoofer</h2>
-            <ul style={{ lineHeight: 2.1, color: '#52606b', marginTop: 12 }}>
-              <li>Local &amp; family-owned — we live and roof in {city.county}.</li>
-              <li>Free, no-pressure roof inspections with photos.</li>
-              <li>Honest upfront pricing — no surprise line items.</li>
-              <li>Storm &amp; insurance claim help, including adjuster meetings.</li>
-              <li>Daily cleanup and magnetic nail sweeps on every job.</li>
-              <li>5★ rated on Google with {brand.reviewCount} verified reviews.</li>
-            </ul>
-            <p style={{ marginTop: 18 }}>
-              <a className="btn btn-ink" href="/estimator">Get an instant roof estimate <span className="arr">→</span></a>
-            </p>
-            <p style={{ marginTop: 14, color: '#52606b' }}>
-              Other nearby areas: {cities.filter((x) => x.slug !== city.slug).map((x, i, arr) => (
-                <span key={x.slug}>
-                  <Link href={`/service-areas/${x.slug}`} style={{ color: 'var(--orange)' }}>{x.name}</Link>{i < arr.length - 1 ? ', ' : ''}
-                </span>
-              ))}
-            </p>
-          </div>
-          <div className="rv">
-            <picture>
-              <source srcSet="/assets/hero.webp" type="image/webp" />
-              <img src="/assets/hero.webp" alt="Roofing work in Kennesaw, GA" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
-            </picture>
-            <div style={{ maxWidth: 460, margin: '32px auto 0' }}>
-              <QuoteForm variant="detail" id={`quote-${city.slug}`} source={`Service Area: ${city.name}`} />
-            </div>
-          </div>
-        </div>
-
-        {/* SEO KEYWORDS SECTION */}
-        <div style={{ marginTop: 48, maxWidth: 880, fontSize: '0.95rem', lineHeight: 1.7, color: '#52606b' }}>
-          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 20 }}>
-            {city.name} roofing services — what you need to know
-          </h2>
-          <p style={{ marginBottom: 12 }}>
-            Whether you need emergency roof repair in {city.name}, a full roof replacement on your
-            {city.name} home, or new construction roofing for a builder project, iRoofer Contractors
-            brings the same family-owned service to every {city.name} neighborhood. We're licensed,
-            bonded, and insured in Georgia, and we carry the manufacturer warranties that protect
-            your investment for decades.
-          </p>
-          <p style={{ marginBottom: 12 }}>
-            <strong>Roof repair in {city.name}</strong> — From storm damage and hail dents to worn
-            flashing and mysterious leaks, we trace the source and fix it right. Most {city.name}
-            emergency repairs are completed the same day, with a 2-year workmanship warranty.
-          </p>
-          <p style={{ marginBottom: 12 }}>
-            <strong>Roof replacement in {city.name}</strong> — Full tear-off to the deck, ice & water
-            shield, synthetic underlayment, and architectural shingles installed to manufacturer spec.
-            We handle the permit, coordinate with your {city.name} inspector, and do a magnetic nail
-            sweep so your family and pets stay safe.
-          </p>
-          <p style={{ marginBottom: 12 }}>
-            <strong>New construction roofing in {city.name}</strong> — We partner with local builders
-            and homeowners to install design-matched roofs on new homes. From shingle selection to
-            final walkthrough and warranty setup — we keep your build on schedule.
-          </p>
-          <p style={{ marginBottom: 12 }}>
-            <strong>Storm &amp; insurance claim help in {city.name}</strong> — After a Georgia storm,
-            we document all damage with photos, write a full scope of work, and meet your insurance
-            adjuster on-site. We handle supplements and paperwork so you're never fronting the cost.
-          </p>
-          <p>
-            Based in Dallas ({brand.phone}), we serve {city.name} and all of {city.county} with free,
-            no-pressure roof inspections. Call today — we answer our own phones.
-          </p>
-        </div>
-
-        {/* LOCAL FAQ SECTION */}
-        <div style={{ marginTop: 48, maxWidth: 880 }}>
-          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 20 }}>
-            Frequently asked questions about roofing in {city.name}, {city.state}
-          </h2>
-          <div style={{ display: 'grid', gap: 16 }}>
-            <div>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: 6, color: 'var(--ink)' }}>
-                How much does a roof replacement cost in {city.name}?
-              </h3>
-              <p style={{ margin: 0 }}>
-                Most residential roof replacements in {city.name} range from $3,500 to $12,000
-                depending on roof size, pitch, and materials. We provide a detailed, line-item-free
-                estimate after a free on-site inspection — no surprises.
-              </p>
-            </div>
-            <div>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: 6, color: 'var(--ink)' }}>
-                What roofing materials do you recommend for {city.name} weather?
-              </h3>
-              <p style={{ margin: 0 }}>
-                For {city.name} homes we typically recommend architectural asphalt shingles (Class A
-                fire rating) with ice &amp; water shield in the eaves and synthetic underlayment.
-                This combination handles Georgia's heat, hail, and occasional winter ice best.
-              </p>
-            </div>
-            <div>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: 6, color: 'var(--ink)' }}>
-                Do you offer emergency roof repair in {city.name}?
-              </h3>
-              <p style={{ margin: 0 }}>
-                Yes — 24/7 emergency tarping and storm damage repair for {city.name} homeowners. We
-                respond same-day for active leaks, document damage for insurance, and complete
-                permanent repairs within 48 hours.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    <div style={{ marginTop: 28, textAlign: 'center' }}>
-      <ReviewButton variant="orange" label="Leave us a Google review" />
-    </div>
-    </section>
-  );
+  return <CityAreaPage city={city} intro={intro} sections={sections} neighborhoods={neighborhoods} faq={faq} />;
 }
