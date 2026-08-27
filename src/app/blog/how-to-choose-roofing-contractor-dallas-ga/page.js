@@ -58,7 +58,7 @@ export default function BlogPostPage() {
               <li><strong>"Are you licensed and insured in Georgia? Can I see the certificates?"</strong> Verify at <a href="https://sos.ga.gov" target="_blank" rel="noopener noreferrer">sos.ga.gov</a> (search "roofing contractor").</li>
               <li><strong>"Who is my project manager, and will they be on-site daily?"</strong> You want a name and phone number, not a call center.</li>
               <li><strong>"What manufacturer certifications do your installers hold?"</strong> GAF Master Elite, CertainTeed SELECT ShingleMaster, Owens Corning Preferred — these mean trained, warrantied installs.</li>
-              <li><strong>"What's your workmanship warranty, and is it transferable?"</strong> We offer 10-year workmanship, transferable once. Many offer 1–2 years, non-transferable.</li>
+              <li><strong>"What's your workmanship warranty, and is it transferable?"</strong> Get the term in writing and ask whether it transfers — we put ours in the contract. Many offer 1–2 years, non-transferable.</li>
               <li><strong>"Can you provide a written scope of work with line-item pricing?"</strong> Vague "roof replacement — $X" quotes hide change orders. Demand detail.</li>
             </ol>
 
@@ -75,7 +75,7 @@ export default function BlogPostPage() {
             <ul>
               <li>Local since 2019 — Dallas, GA based, not a storm-chaser satellite office</li>
               <li>GAF Master Elite (top 2% nationally) + CertainTeed SELECT ShingleMaster</li>
-              <li>10-year workmanship warranty, transferable</li>
+              <li>Workmanship warranty in writing on every job</li>
               <li>Project manager on-site every day, direct cell number</li>
               <li>150+ roofs in Paulding, Cobb, Douglas counties — references on request</li>
             </ul>

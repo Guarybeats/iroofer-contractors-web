@@ -157,7 +157,7 @@ export default function BlogPostPage() {
             <h2>iRoofer’s Warranty Promise</h2>
             <p>We back every roof we install with:</p>
             <ul>
-              <li><strong>10-year workmanship warranty</strong> — one of the longest in the Dallas market.</li>
+              <li><strong>A 10-year manufacturer warranty</strong> on the shingles we install, registered in your name — plus our own workmanship warranty in writing on the install.</li>
               <li><strong>24-hour emergency response</strong> — call us anytime, we’ll secure your roof.</li>
               <li><strong>Full warranty management</strong> — we handle manufacturer claims directly, no $200 inspection fees passed to you.</li>
               <li><strong>Annual inspection program</strong> — $99/year (includes one visit, photo report, and priority scheduling).</li>

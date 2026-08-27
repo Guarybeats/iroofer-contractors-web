@@ -91,7 +91,7 @@ export default function BlogPostPage() {
               <li>Full fascia inspection and rot replacement if needed.</li>
               <li>Proper slope adjustment (1/4 inch per 10 feet).</li>
               <li>Downspout extensions to move water 5 feet from your foundation.</li>
-              <li>One-year workmanship warranty.</li>
+              <li>Workmanship warranty in writing on every gutter install.</li>
             </ul>
 
             <h2>DIY or Not?</h2>

@@ -75,7 +75,7 @@ export default function BlogPostPage() {
               <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                 <tbody>
                   <tr><td style={{ padding: '4px 0' }}><strong>Manufacturer warranty</strong></td><td style={{ padding: '4px 0' }}>50-year on shingles, 30-year on underlayment. Registered by us, transferable at sale.</td></tr>
-                  <tr><td style={{ padding: '4px 0' }}><strong>Workmanship warranty</strong></td><td style={{ padding: '4px 0' }}>10-year from us (includes leaks from improper installation).</td></tr>
+                  <tr><td style={{ padding: '4px 0' }}><strong>Workmanship warranty</strong></td><td style={{ padding: '4px 0' }}>In writing from us (covers leaks from improper installation) — ask for the current term.</td></tr>
                   <tr><td style={{ padding: '4px 0' }}><strong>Home builder warranty</strong></td><td style={{ padding: '4px 0' }}>1-year on workmanship, 2–10 years on major defects (per GA law).</td></tr>
                 </tbody>
               </table>
@@ -106,7 +106,7 @@ export default function BlogPostPage() {
               <li>Free estimate and material consultation before you commit.</li>
               <li>Priority scheduling — we block 2 days on your timeline.</li>
               <li>Direct billing to the builder; homeowner handles manufacturer registration.</li>
-              <li>10-year workmanship warranty, 2-year emergency response guarantee.</li>
+              <li>Workmanship warranty in writing on every install, plus 24/7 emergency response.</li>
             </ul>
 
             <h2>Working with Builders Across North Georgia</h2>

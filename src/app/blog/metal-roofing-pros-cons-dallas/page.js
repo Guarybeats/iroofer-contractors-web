@@ -140,7 +140,7 @@ export default function BlogPostPage() {
               <li><strong>Meticulous ice/water shield</strong> at every eave, valley, and penetration point.</li>
               <li><strong>Solid deck installation</strong> — no exposed purlins, so no noisy rain.</li>
               <li><strong>Ridge vent integration</strong> — properly vented ridge cap that won't leak.</li>
-              <li><strong>10-year workmanship warranty</strong> on all metal installations.</li>
+              <li><strong>Workmanship warranty in writing</strong> on all metal installations — ask us for the current terms.</li>
             </ul>
 
             <h2>Still Deciding?</h2>
