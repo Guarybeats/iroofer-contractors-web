@@ -104,7 +104,7 @@ export default function BlogPostPage() {
             <p>For your primary residence in Dallas — go architectural. Always.</p>
 
             <h2>What We Install in Dallas Homes</h2>
-            <p>Every residential replacement we do uses <strong>GAF Timberline HDZ</strong> architectural shingles — here’s why:</p>
+            <p>Every residential replacement we do uses <strong>Owens Corning architectural shingles</strong> — here’s why:</p>
             <ul>
               <li>Class 3 impact rating (hail-resistant).</li>
               <li>50-year warranty (transferable to next owner).</li>

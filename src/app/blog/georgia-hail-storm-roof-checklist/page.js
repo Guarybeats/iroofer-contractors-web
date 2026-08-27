@@ -44,7 +44,7 @@ const steps = [
   {
     n: '6',
     t: 'Repair or Replace — the Right Way',
-    d: 'If the damage is minor (a few dents, no granule loss), repairs may suffice. If 30%+ of shingles are struck or you see granule loss, replacement is usually the right call. We use GAF-certified materials and follow manufacturer + local building codes. Your warranty stays intact.',
+    d: 'If the damage is minor (a few dents, no granule loss), repairs may suffice. If 30%+ of shingles are struck or you see granule loss, replacement is usually the right call. We use manufacturer-approved materials and follow manufacturer + local building codes. Your warranty stays intact.',
   },
 ];
 

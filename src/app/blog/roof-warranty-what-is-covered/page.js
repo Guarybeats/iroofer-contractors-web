@@ -63,7 +63,7 @@ export default function BlogPostPage() {
             <h2>Manufacturer Warranty: What the Fine Print Says</h2>
             <p>We install three manufacturers in Dallas homes — here’s what their warranties actually cover:</p>
 
-            <h3>GAF Timberline HDZ (What We Install as Standard)</h3>
+            <h3>Owens Corning Architectural Shingles (What We Install as Standard)</h3>
             <ul>
               <li><strong>50-year limited warranty</strong> — transferable to the next homeowner, prorated after year 20.</li>
               <li><strong>Better warranty</strong> — covers algae resistance for the full 50 years.</li>
@@ -72,12 +72,12 @@ export default function BlogPostPage() {
               <li><strong>Fine print gotcha:</strong> Warranty is prorated to <strong>25–30% of replacement cost</strong> after year 10. So a $10,000 roof replacement at year 20 gets you $2,500 from GAF — you pay the rest.</li>
             </ul>
 
-            <h3>Premium GAF Legacy (Optional Upgrade)</h3>
+            <h3>Premium Laminated Shingles (Optional Upgrade)</h3>
             <ul>
               <li><strong>50-year limited warranty</strong> — same as HDZ but with <strong>StainGuard Plus</strong> algae protection.</li>
               <li><strong>Color care warranty</strong> — covers significant color fading (rare in Georgia).</li>
               <li><strong>Full manufacturer coverage</strong> on labor and materials if registered.</li>
-              <li><strong>Fine print:</strong> Must be registered within 30 days of installation and installed by a <strong>GAF Master Elite</strong> contractor (that’s us).</li>
+              <li><strong>Fine print:</strong> Must be registered within 30 days of installation and installed by a manufacturer-certified contractor — we’re an <strong>Owens Corning Preferred Contractor</strong>.</li>
             </ul>
 
             <h2>Workmanship Warranty: What’s Really Guaranteed</h2>
@@ -132,7 +132,7 @@ export default function BlogPostPage() {
               </thead>
               <tbody>
                 <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '6px 0' }}>Workmanship (iRoofer)</td><td style={{ padding: '6px 0' }}>2–5 business days</td></tr>
-                <tr><td style={{ padding: '6px 0' }}>Manufacturer (GAF)</td><td style={{ padding: '6px 0' }}>30–60 days</td></tr>
+                <tr><td style={{ padding: '6px 0' }}>Manufacturer</td><td style={{ padding: '6px 0' }}>30–60 days</td></tr>
               </tbody>
             </table>
             <p style={{ fontSize: '.85rem', color: '#8ea2b4' }}>Manufacturer claims require photo documentation, proof of purchase, and often a “field representative” visit — which costs $200 in inspection fees that the homeowner usually pays upfront.</p>
@@ -147,13 +147,13 @@ export default function BlogPostPage() {
             </ol>
             <p><strong>For manufacturer issues (shingle defects, granule loss):</strong></p>
             <ol>
-              <li>We handle this for you — just call us. We’re a GAF Master Elite contractor, so we can file claims directly.</li>
-              <li>GAF pays us directly — you’re not on the hook for the first $1,200. Some contractors make you pay upfront and reimburse later.</li>
+              <li>We handle this for you — just call us. We’re an Owens Corning Preferred Contractor, so we can file claims directly.</li>
+              <li>The manufacturer pays us directly — you’re not on the hook for the first $1,200. Some contractors make you pay upfront and reimburse later.</li>
               <li>Typical payout covers 75–100% of the replacement cost if you’re within 10 years of installation.</li>
             </ol>
 
             <h2>Transferability: What Happens When You Sell</h2>
-            <p>In Georgia, the manufacturer warranty transfers to the next homeowner when you sell — but <strong>only if it was registered</strong>. We register every GAF warranty in your name automatically. At closing, hand the warranty packet to the buyer. If they don’t register within 30 days of purchase, the warranty is void.</p>
+            <p>In Georgia, the manufacturer warranty transfers to the next homeowner when you sell — but <strong>only if it was registered</strong>. We register every manufacturer warranty in your name automatically. At closing, hand the warranty packet to the buyer. If they don’t register within 30 days of purchase, the warranty is void.</p>
             <p><strong>Workmanship warranty does NOT transfer</strong> — it stays with us (iRoofer). If the new owner needs service, they’ll need to call us with your original invoice number.</p>
 
             <h2>iRoofer’s Warranty Promise</h2>

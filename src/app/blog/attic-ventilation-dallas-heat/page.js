@@ -90,7 +90,7 @@ export default function BlogPostPage() {
             <h2>What We Install in Dallas Homes</h2>
             <p>At iRoofer, we install:</p>
             <ul>
-              <li><strong> ridge vent (GAF Cobra or IKO)</strong> with continuous soffit vent — covers the full ridge line for even airflow.</li>
+              <li><strong>Continuous ridge vent</strong> with continuous soffit vent — covers the full ridge line for even airflow.</li>
               <li><strong>Soffit vents</strong> — continuous perforated strip at the eave line, or individual vent holes if your soffit is solid.</li>
               <li><strong>Baffle channels</strong> — installed between rafters to keep soffit air flowing freely into the ridge.</li>
               <li><strong>Powered vent</strong> only when ridge vent isn’t feasible (no overhang, flat roof section, etc.)</li>

@@ -7,7 +7,7 @@ import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
   title: "Roof Replacement in Acworth, GA | iRoofer Contractors",
-  description: "Roof Replacement in Acworth, GA — Full tear-off and replacement with GAF-certified architectural asphalt shingles, installed clean and built to last. Local, family-owned, 5★ on Google, free inspection. Call (470) 236-1410.",
+  description: "Roof Replacement in Acworth, GA — Full tear-off and replacement with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, installed clean and built to last. Local, family-owned, 5★ on Google, free inspection. Call (470) 236-1410.",
   path: '/roof-replacement-acworth',
 });
 
@@ -50,7 +50,7 @@ export default function Page() {
                 Roof Replacement in Acworth, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
-                Full tear-off and replacement with GAF-certified architectural asphalt shingles, installed clean and built to last. In Acworth, GA (Cobb County) we bring the same local crew, the same warranty,
+                Full tear-off and replacement with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, installed clean and built to last. In Acworth, GA (Cobb County) we bring the same local crew, the same warranty,
                 and the same phone number to every job. Acworth lakefront and in-town homes alike call us for fast leak tracing and clean tear-offs.
               </p>
               <div className="cta" style={{ marginTop: 28 }}>

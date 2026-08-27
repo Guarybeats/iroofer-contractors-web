@@ -92,7 +92,7 @@ export default function BlogPostPage() {
             <h2>iRoofer's Recommendation for Dallas Homes</h2>
             <p>After inspecting 150+ roofs since 2019, here's what we install:</p>
             <ul>
-              <li><strong>Most homes:</strong> GAF Timberline HDZ architectural shingles (Class 3, 50-year warranty, made in Georgia)</li>
+              <li><strong>Most homes:</strong> Owens Corning architectural shingles (Class 3 impact rating, long-term manufacturer warranty)</li>
               <li><strong>Budget metal:</strong> 26-gauge standing seam (26-gauge = thicker than 29-gauge, holds up better to hail)</li>
               <li><strong>Premium metal:</strong> 24-gauge standing seam with Kynar finish (highest durability, 50-year color warranty)</li>
               <li><strong>New construction:</strong> Metal is the default recommendation — install it once, forget about it</li>

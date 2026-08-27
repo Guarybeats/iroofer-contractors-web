@@ -108,7 +108,7 @@ export default function BlogPostPage() {
               <div style={{ border: '1px solid #eee', borderRadius: 6, padding: 16 }}>
                 <h3 style={{ marginTop: 0 }}>Premium Shingles</h3>
                 <p style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--orange)' }}>$5.50–$7.00/sq</p>
-                <p style={{ fontSize: '.85rem', color: '#8ea2b4' }}>GAF Legacy or CertainTeed Landmark, 30–40 year lifespan, Class 4.</p>
+                <p style={{ fontSize: '.85rem', color: '#8ea2b4' }}>Premium laminated shingles, 30–40 year lifespan, Class 4.</p>
               </div>
               <div style={{ border: '1px solid #eee', borderRadius: 6, padding: 16 }}>
                 <h3 style={{ marginTop: 0 }}>Standing Seam Metal</h3>

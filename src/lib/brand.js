@@ -59,7 +59,7 @@ export const services = [
     image: '/assets/service-replacement.jpg',
     webp: '/assets/service-replacement.webp',
     summary:
-      'Full tear-off and replacement with GAF-certified architectural asphalt shingles, installed clean and built to last. Backed by the manufacturer’s warranty on the shingles.',
+      'Full tear-off and replacement with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, installed clean and built to last. Backed by the manufacturer’s warranty on the shingles.',
     bullets: [
       'Complete tear-off & deck inspection',
       'Architectural & premium shingle options',

@@ -64,7 +64,7 @@ export default function BlogPostPage() {
             <h3>3. Verify Your Ice & Water Shield</h3>
             <p>Georgia building code requires ice & water shield at eaves, valleys, and penetrations — but many older roofs (and some cheap replacements) skip this step. Ice dams form when warm attic air melts snow, then refreezes at the eave.</p>
             <p><strong>Do:</strong> From a safe distance, check if you have visible black or white synthetic material along your roof edge (that’s the ice & water shield).</p>
-            <p><strong>iRoofer recommendation:</strong> We install GAF Starter Row plus 6 feet of ice & water shield at all eaves — code-compliant and ice-dam-proof.</p>
+            <p><strong>iRoofer recommendation:</strong> We install a manufacturer starter row plus 6 feet of ice & water shield at all eaves — code-compliant and ice-dam-proof.</p>
 
             <h3>4. Check Your Attic Insulation and Ventilation</h3>
             <p>A warm attic is the #1 cause of ice dams. Even 2 inches of snow on a 65°F attic roof will create a melt-freeze cycle. Your attic should be 10–15°F cooler than outside air.</p>

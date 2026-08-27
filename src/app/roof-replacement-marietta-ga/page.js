@@ -12,7 +12,7 @@ export const metadata = seo({
 
 const faqs = [
   { q: 'How long does a roof replacement take in Marietta?', a: 'Most Marietta homes (1,800–3,200 sq ft) are torn off and re-roofed in one to two days, weather permitting. We protect your landscaping and run a daily magnet nail-sweep.' },
-  { q: 'What shingle do you recommend for Marietta homes?', a: 'Architectural asphalt shingles (GAF or CertainTeed) are our default — 25–30 year lifespan, Class 3 impact rating, and they match most Marietta neighborhood aesthetics. Premium and metal options are available.' },
+  { q: 'What shingle do you recommend for Marietta homes?', a: 'Architectural asphalt shingles from Owens Corning are our default — 25–30 year lifespan, Class 3 impact rating, and they match most Marietta neighborhood aesthetics. Premium and metal options are available.' },
   { q: 'Do you handle Marietta permit and code requirements?', a: 'Yes. We pull the Cobb County roofing permit, follow current code for underlayment and ridge ventilation, and leave you with the inspection sign-off.' },
   { q: 'Can you work with my insurance if the replacement is storm-related?', a: 'Absolutely. If hail or wind caused the damage, we document it, meet your adjuster, and handle supplements so your payout covers a full replacement rather than a patch.' },
   { q: 'What does a roof replacement cost in Marietta, GA?', a: 'Most full replacements run $8,000–$30,000 depending on size, pitch, and material. See our new roof cost guide for per-square pricing and real local quotes.' },

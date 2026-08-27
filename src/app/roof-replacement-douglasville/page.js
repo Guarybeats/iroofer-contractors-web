@@ -7,7 +7,7 @@ import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
   title: "Roof Replacement in Douglasville, GA | iRoofer Contractors",
-  description: "Roof Replacement in Douglasville, GA — Full tear-off and replacement with GAF-certified architectural asphalt shingles, installed clean and built to last. Local, family-owned, 5★ on Google, free inspection. Call (470) 236-1410.",
+  description: "Roof Replacement in Douglasville, GA — Full tear-off and replacement with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, installed clean and built to last. Local, family-owned, 5★ on Google, free inspection. Call (470) 236-1410.",
   path: '/roof-replacement-douglasville',
 });
 
@@ -50,7 +50,7 @@ export default function Page() {
                 Roof Replacement in Douglasville, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
-                Full tear-off and replacement with GAF-certified architectural asphalt shingles, installed clean and built to last. In Douglasville, GA (Douglas County) we bring the same local crew, the same warranty,
+                Full tear-off and replacement with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, installed clean and built to last. In Douglasville, GA (Douglas County) we bring the same local crew, the same warranty,
                 and the same phone number to every job. Douglasville sees its share of spring straight-line winds off the ridge — we document hail and wind damage for your claim.
               </p>
               <div className="cta" style={{ marginTop: 28 }}>

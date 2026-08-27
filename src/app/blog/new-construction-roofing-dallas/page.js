@@ -65,11 +65,11 @@ export default function BlogPostPage() {
             <h2>Shingle Selection: What We Install on New Homes</h2>
             <p>We keep three materials on the spec sheet for Dallas new construction:</p>
             <ul>
-              <li><strong>Architectural shingles (GAF Timberline HDZ)</strong> — $3.50–$5.50/sq ft. Our default for 70% of builds. Class 3 impact rating, 50-year warranty.</li>
-              <li><strong>Premium/laminated shingles (GAF Legacy)</strong> — $5.50–$7.50/sq ft. Color blends that match high-end homes. Class 4 impact rating.</li>
+              <li><strong>Architectural shingles (Owens Corning)</strong> — $3.50–$5.50/sq ft. Our default for 70% of builds. Class 3 impact rating, 50-year warranty.</li>
+              <li><strong>Premium/laminated shingles</strong> — $5.50–$7.50/sq ft. Color blends that match high-end homes. Class 4 impact rating.</li>
               <li><strong> Metal roofing (26-gauge standing seam)</strong> — $7–$12/sq ft. For modern, southwestern, or wildfire-prone builds.</li>
             </ul>
-            <p>We always install with ice & water shield at eaves, synthetic underlayment (GAF FeltMax or similar), and ridge vent — not just for warranty, but because Dallas weather rewards it.</p>
+            <p>We always install with ice & water shield at eaves, synthetic underlayment, and ridge vent — not just for warranty, but because Dallas weather rewards it.</p>
 
             <h2>Warranty Coordination: Who Covers What</h2>
             <p>In Georgia, new home roofing warranties come from three sources:</p>

@@ -7,7 +7,7 @@ import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
   title: "Roof Replacement in Austell, GA | iRoofer Contractors",
-  description: "Roof Replacement in Austell, GA — Full tear-off and replacement with GAF-certified architectural asphalt shingles, installed clean and built to last. Local, family-owned, 5★ on Google, free inspection. Call (470) 236-1410.",
+  description: "Roof Replacement in Austell, GA — Full tear-off and replacement with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, installed clean and built to last. Local, family-owned, 5★ on Google, free inspection. Call (470) 236-1410.",
   path: '/roof-replacement-austell',
 });
 
@@ -50,7 +50,7 @@ export default function Page() {
                 Roof Replacement in Austell, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
-                Full tear-off and replacement with GAF-certified architectural asphalt shingles, installed clean and built to last. In Austell, GA (Cobb County) we bring the same local crew, the same warranty,
+                Full tear-off and replacement with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, installed clean and built to last. In Austell, GA (Cobb County) we bring the same local crew, the same warranty,
                 and the same phone number to every job. When a storm hits Austell we tarp the same day and meet your adjuster on-site.
               </p>
               <div className="cta" style={{ marginTop: 28 }}>

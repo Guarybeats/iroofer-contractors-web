@@ -7,7 +7,7 @@ import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
   title: "Roof Replacement in Dallas, GA | iRoofer Contractors",
-  description: "Roof Replacement in Dallas, GA — Full tear-off and replacement with GAF-certified architectural asphalt shingles, installed clean and built to last. Local, family-owned, 5★ on Google, free inspection. Call (470) 236-1410.",
+  description: "Roof Replacement in Dallas, GA — Full tear-off and replacement with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, installed clean and built to last. Local, family-owned, 5★ on Google, free inspection. Call (470) 236-1410.",
   path: '/roof-replacement-dallas-ga',
 });
 
@@ -50,7 +50,7 @@ export default function Page() {
                 Roof Replacement in Dallas, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
-                Full tear-off and replacement with GAF-certified architectural asphalt shingles, installed clean and built to last. In Dallas, GA (Paulding County) we bring the same local crew, the same warranty,
+                Full tear-off and replacement with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, installed clean and built to last. In Dallas, GA (Paulding County) we bring the same local crew, the same warranty,
                 and the same phone number to every job. As the town we call home, Dallas homeowners get priority scheduling and the crew chief on every job.
               </p>
               <p style={{ color: '#52606b', fontSize: '.98rem', marginTop: 12, maxWidth: 680, borderLeft: '3px solid var(--orange)', paddingLeft: 12 }}>

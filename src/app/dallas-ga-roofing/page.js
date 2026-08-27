@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: 'How much is a full roof replacement near Dallas, GA?',
-    a: 'Full tear-off and re-roof with GAF architectural shingles typically runs $8,000–$30,000. Price depends on square footage, pitch, ventilation, and any rotten decking we find.',
+    a: 'Full tear-off and re-roof with architectural asphalt shingles typically runs $8,000–$30,000. Price depends on square footage, pitch, ventilation, and any rotten decking we find.',
   },
   {
     q: 'Do you handle insurance claims for storm damage?',
@@ -83,7 +83,7 @@ export default function DallasGaRoofingPage() {
             </div>
             <div className="card">
               <h3>Roof Replacement</h3>
-              <p>Full tear-off and re-roof with GAF-certified architectural asphalt shingles, installed clean and built to last.</p>
+              <p>Full tear-off and re-roof with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, installed clean and built to last.</p>
               <Link href="/roof-replacement-dallas-ga" className="chip">Dallas roof replacement →</Link>
             </div>
             <div className="card">
