@@ -20,7 +20,7 @@ export const metadata = {
 const post = {
   slug: 'roof-financing-options-dallas-ga',
   title: 'Roof Financing Options in Dallas GA: How to Pay for a New Roof Without Breaking the Bank',
-  date: 'May 2027',
+  date: 'June 2026',
   readTime: '7 min read',
   category: 'Cost Guide',
 };

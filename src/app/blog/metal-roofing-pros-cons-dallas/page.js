@@ -20,7 +20,7 @@ export const metadata = {
 const post = {
   slug: 'metal-roofing-pros-cons-dallas',
   title: 'Metal Roofing in Dallas: The Pros, Cons, and Hidden Costs No One Mentions',
-  date: 'March 2027',
+  date: 'April 2026',
   readTime: '9 min read',
   category: 'Materials',
 };

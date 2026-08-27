@@ -53,7 +53,7 @@ export default function BlogStormChecklist() {
     <article className="sec-light sec-pad">
       <div className="wrap">
         <div className="rv">
-          <span className="eyebrow dark">September 2026</span>
+          <span className="eyebrow dark">October 2025</span>
           <h1 style={{ fontSize: 'clamp(2.4rem, 5vw, 3.4rem)', fontWeight: 900, lineHeight: 1.05 }}>
             Georgia Hail Storm Roof Checklist: What Dallas Homeowners Need to Know
           </h1>

@@ -20,7 +20,7 @@ export const metadata = {
 const post = {
   slug: 'cost-of-new-roof-2026-dallas-ga',
   title: '$8K–$30K: What Your New Roof Actually Costs in 2026 (Dallas GA Pricing)',
-  date: 'January 2027',
+  date: 'February 2026',
   readTime: '12 min read',
   category: 'Cost Guide',
 };
@@ -154,7 +154,7 @@ export default function BlogPostPage() {
               <li><strong>Cash/check</strong> — 5% discount for paying upfront.</li>
             </ul>
 
-            <h2>Real Quotes We Gave This Month (October 2026)</h2>
+            <h2>Real Quotes We Gave This Month (November 2025)</h2>
             <div style={{ background: '#f8f9fa', padding: '16px', borderRadius: 6, margin: '16px 0' }}>
               <p><strong>1,850 sqft ranch in Dallas</strong><br />Architectural shingles, 6:12 pitch, 22 squares → <strong>$7,920</strong> (before insurance)</p>
               <p><strong>3,200 sqft two-story in Hiram</strong><br />Premium shingles, 8:12 pitch, 35 squares, 1 layer tear-off → <strong>$15,400</strong></p>

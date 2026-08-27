@@ -20,7 +20,7 @@ export const metadata = {
 const post = {
   slug: 'new-construction-roofing-dallas',
   title: 'New Construction Roofing in Dallas GA: What Builders Need to Know',
-  date: 'December 2026',
+  date: 'January 2026',
   readTime: '9 min read',
   category: 'New Construction',
 };

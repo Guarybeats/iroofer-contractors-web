@@ -21,7 +21,7 @@ export const metadata = {
 const post = {
   slug: 'emergency-roof-response-time-dallas',
   title: 'Emergency Roof Response: How Long It Takes & When to Expect a Crew',
-  date: 'April 2027',
+  date: 'May 2026',
   readTime: '5 min read',
   category: 'Emergency',
 };

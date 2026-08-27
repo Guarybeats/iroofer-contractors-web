@@ -20,7 +20,7 @@ export const metadata = {
 const post = {
   slug: 'skylight-leak-repair-dallas-ga',
   title: 'Skylight Leak Repair in Dallas GA: Why They Leak, How We Fix Them, and When to Replace',
-  date: 'June 2027',
+  date: 'July 2026',
   readTime: '6 min read',
   category: 'Repairs',
 };

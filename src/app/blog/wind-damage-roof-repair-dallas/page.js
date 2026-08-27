@@ -20,7 +20,7 @@ export const metadata = {
 const post = {
   slug: 'wind-damage-roof-repair-dallas',
   title: 'Wind Damage on Your Roof: How to Spot It Before the Next Storm Hits',
-  date: 'February 2027',
+  date: 'March 2026',
   readTime: '6 min read',
   category: 'Storm Damage',
 };

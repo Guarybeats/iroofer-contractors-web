@@ -20,7 +20,7 @@ export const metadata = {
 const post = {
   slug: 'how-to-choose-roofing-contractor-dallas-ga',
   title: 'How to Choose a Roofing Contractor in Dallas GA: 7 Red Flags & 5 Must-Ask Questions',
-  date: 'May 2027',
+  date: 'June 2026',
   readTime: '8 min read',
   category: 'Homeowner Guide',
 };

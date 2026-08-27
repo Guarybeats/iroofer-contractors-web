@@ -21,7 +21,7 @@ export const metadata = {
 const post = {
   slug: 'roof-warranty-what-is-covered',
   title: 'Roof Warranty Explained: What’s Covered (And What the Fine Print Hides)',
-  date: 'April 2027',
+  date: 'May 2026',
   readTime: '8 min read',
   category: 'Warranty',
 };

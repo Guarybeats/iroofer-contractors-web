@@ -20,7 +20,7 @@ export const metadata = {
 const post = {
   slug: 'gutter-maintenance-dallas-ga',
   title: 'Gutters in Dallas GA: How Often to Clean, When to Replace, and Why It Matters for Your Roof',
-  date: 'November 2026',
+  date: 'December 2025',
   readTime: '6 min read',
   category: 'Maintenance',
 };

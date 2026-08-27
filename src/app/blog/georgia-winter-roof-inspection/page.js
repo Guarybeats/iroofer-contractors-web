@@ -21,7 +21,7 @@ export const metadata = {
 const post = {
   slug: 'georgia-winter-roof-inspection',
   title: 'Georgia Winter Roof Prep: The 10-Point Checklist Before the Cold Hits',
-  date: 'March 2027',
+  date: 'April 2026',
   readTime: '6 min read',
   category: 'Maintenance',
 };

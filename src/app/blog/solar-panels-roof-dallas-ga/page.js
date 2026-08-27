@@ -20,7 +20,7 @@ export const metadata = {
 const post = {
   slug: 'solar-panels-roof-dallas-ga',
   title: 'Solar Panels on Your Dallas Roof: What Homeowners Need to Know Before Installing',
-  date: 'July 2027',
+  date: 'August 2026',
   readTime: '8 min read',
   category: 'Homeowner Guide',
 };

@@ -20,7 +20,7 @@ export const metadata = {
 const post = {
   slug: 'emergency-roof-tarping-dallas',
   title: 'Emergency Roof Tarping: What to Expect When We Come to Your Dallas Home',
-  date: 'February 2027',
+  date: 'March 2026',
   readTime: '5 min read',
   category: 'Emergency',
 };

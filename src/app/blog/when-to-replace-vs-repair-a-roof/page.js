@@ -7,7 +7,7 @@ import { notFound } from 'next/navigation';
 const post = {
   slug: 'when-to-replace-vs-repair-a-roof',
   title: 'Roof Replacement vs. Roof Repair: When to Tear Off vs. Patch',
-  date: 'October 2026',
+  date: 'November 2025',
   readTime: '8 min read',
   category: 'Maintenance',
 };

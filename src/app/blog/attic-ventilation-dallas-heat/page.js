@@ -20,7 +20,7 @@ export const metadata = {
 const post = {
   slug: 'attic-ventilation-dallas-heat',
   title: 'Why Your Attic Is Oven-Hot in Dallas Summers (And What a Roof Vent Can Fix)',
-  date: 'December 2026',
+  date: 'January 2026',
   readTime: '8 min read',
   category: 'Maintenance',
 };

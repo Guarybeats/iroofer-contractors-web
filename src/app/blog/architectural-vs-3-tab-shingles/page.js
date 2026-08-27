@@ -20,7 +20,7 @@ export const metadata = {
 const post = {
   slug: 'architectural-vs-3-tab-shingles',
   title: 'Architectural vs. 3-Tab Shingles: The $1,500 Decision That Could Save You $8,000',
-  date: 'January 2027',
+  date: 'February 2026',
   readTime: '7 min read',
   category: 'Materials',
 };

@@ -20,7 +20,7 @@ export const metadata = {
 const post = {
   slug: 'roof-repair-cost-dallas-ga',
   title: '$250–$3,500: What Roof Repair Costs in Dallas, GA (2026 Pricing)',
-  date: 'January 2027',
+  date: 'February 2026',
   readTime: '9 min read',
   category: 'Cost Guide',
 };
@@ -108,7 +108,7 @@ export default function BlogPostPage() {
               <p><strong>Dallas two-story, valley re-flash</strong><br />Open valley, 18 ft → <strong>$1,050</strong></p>
               <p><strong>Powder Springs, 4 shingles + flashing after hail</strong><br />Insurance-covered, $0 out of pocket → <strong>$680</strong></p>
             </div>
-            <p style={{ fontSize: '.85rem', color: '#8ea2b4' }}>Real jobs from October 2026 — actual prices vary with site conditions.</p>
+            <p style={{ fontSize: '.85rem', color: '#8ea2b4' }}>Real jobs from November 2025 — actual prices vary with site conditions.</p>
 
             <h2>Get a Free Repair Quote</h2>
             <p>Every repair starts with a free inspection and a written price — no surprises, no pressure. If it’s storm damage, we’ll document it for your claim.</p>

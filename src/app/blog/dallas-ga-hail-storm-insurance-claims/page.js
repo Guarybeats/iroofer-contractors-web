@@ -20,7 +20,7 @@ export const metadata = {
 const post = {
   slug: 'dallas-ga-hail-storm-insurance-claims',
   title: 'Dallas GA Hail Storm: How to File an Insurance Claim That Actually Gets Paid',
-  date: 'November 2026',
+  date: 'December 2025',
   readTime: '10 min read',
   category: 'Storm Damage',
 };

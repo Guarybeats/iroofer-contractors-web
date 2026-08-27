@@ -20,7 +20,7 @@ export const metadata = {
 const post = {
   slug: 'roof-maintenance-calendar-dallas-ga',
   title: 'Year-Round Roof Maintenance Calendar for Dallas GA Homeowners',
-  date: 'June 2027',
+  date: 'July 2026',
   readTime: '7 min read',
   category: 'Maintenance',
 };
