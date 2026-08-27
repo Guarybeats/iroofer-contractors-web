@@ -1,190 +1,89 @@
-import Link from 'next/link';
-import ReviewButton from '@/components/ReviewButton';
-import QuoteForm from '@/components/QuoteForm';
-import { brand, services, cities } from '@/lib/brand';
-import CityMap from '@/components/CityMap';
+import CityAreaPage from '@/components/CityAreaPage';
+import { getCity, brand } from '@/lib/brand';
+
+const city = getCity('powder-springs');
 
 export const metadata = {
-  alternates: { canonical: 'https://iroofercontractors.com/service-areas/powder-springs' },
-  openGraph: { url: 'https://iroofercontractors.com/service-areas/powder-springs' },
-
-  title: 'Roof Repair & Replacement in Powder Springs, GA',
+  title: 'Roofing in Powder Springs, GA — Repair, Replacement & Tree Damage | iRoofer Contractors',
   description:
-    'Local roofing in Dallas, GA (Paulding County). Our home base — same-day roof inspections across Dallas and across the county line. Free inspection, honest pricing, 5★ rated. Call (470) 236-1410.',
+    'Family-owned roofer serving Powder Springs, GA (Cobb County). Ranch and two-story replacements, tree and limb damage repair, ventilation upgrades, gutters, storm claims. Free inspection — call (470) 236-1410.',
+  alternates: { canonical: `${brand.url}/service-areas/powder-springs` },
+  openGraph: {
+    url: `${brand.url}/service-areas/powder-springs`,
+    title: 'Roofing in Powder Springs, GA — iRoofer Contractors',
+    description:
+      'Powder Springs roof repair, replacement and limb-damage response from a family-owned crew based in Dallas, GA. Free photo reports.',
+  },
 };
 
-const city = {
-  slug: 'powder-springs',
-  name: 'Powder Springs',
-  state: 'GA',
-  county: 'Cobb County',
-  blurb: 'architectural shingle replacements and storm claims help in Powder Springs.',
-  localNote: 'In Powder Springs we handle everything from single-slope ranch reroofs to steep two-story tear-offs, plus ridge-vent and attic ventilation upgrades that cut cooling bills.',
-};
+const intro = [
+  'iRoofer Contractors serves Powder Springs from our shop in Dallas, GA. Powder Springs is a mature Cobb County town — a lot of 1970s and 1980s ranches and split-levels alongside newer two-story subdivisions, and a heavy tree canopy over most of it.',
+  'We handle roof repair, full replacement, new-construction roofing, gutters, and storm and insurance claim documentation. Inspections are free and come back as dated photos with plain notes on what needs doing now and what can wait a season.',
+];
+
+const sections = [
+  {
+    h2: 'Trees: the biggest single risk to a Powder Springs roof',
+    paras: [
+      'The tree canopy that makes these neighborhoods pleasant is also the main thing that damages their roofs. We see three patterns repeatedly: abrasion where limbs rub shingles in the wind and scrub the granules off in a stripe, impact damage from falling limbs during summer storms, and constant leaf litter packing valleys and gutters so water backs up under the shingles instead of shedding.',
+      'Limb strikes need care because the visible dent is not always the extent of the damage — decking can be cracked under an intact-looking shingle. When we inspect after a limb comes down we check the deck from the attic side where we can get access, not just the surface, and we photograph everything for your claim.',
+    ],
+  },
+  {
+    h2: 'Ranches, split-levels and steep two-stories',
+    paras: [
+      'Powder Springs housing spans a wide range of roof geometry, and the right approach differs across it. Single-slope ranch roofs are straightforward but often have low-slope porch or carport sections tied into them, which need a different detail than the main field — a place where sealant gets used as a shortcut and fails.',
+      'Split-levels bring their own weak point: the tie-in where the upper roof meets the lower wall, which is where a large share of local leaks originate. On the newer two-story subdivisions the challenges are pitch and access rather than detailing. We quote the actual geometry of your house instead of pricing by square footage alone, and steep-slope staging is in the number from the start.',
+    ],
+  },
+  {
+    h2: 'Older roofs, previous layers and deck condition',
+    paras: [
+      'On homes of this age we frequently find a previous shingle layer left in place under the current one, plank decking rather than plywood, missing or undersized drip edge, and chimney flashing that was sealed with caulk instead of stepped in properly. All of it affects how a new roof fastens and how long it lasts.',
+      'We look for these signs at the estimate and tell you what we expect to find, so the price reflects the real job. Once the deck is exposed we photograph it — if sheathing or rot repair is needed, you see the reason before you approve it.',
+    ],
+  },
+  {
+    h2: 'Ventilation, gutters and cooling bills',
+    paras: [
+      'Attic ventilation on homes of this era was usually built to the minimum, and decades of added insulation have often blocked what intake there was. The result is a superheated attic in July, shingles aging from underneath, and an HVAC system fighting the roof all afternoon.',
+      'We balance intake and exhaust during replacements, which is inexpensive at that point and awkward to retrofit later. We also check gutter pitch and downspout discharge on every inspection — under a heavy canopy, gutters clog faster than owners expect, and overflow rots fascia and soaks the foundation.',
+    ],
+  },
+];
+
+const neighborhoods = [
+  'Downtown Powder Springs',
+  'Silver Comet Trail corridor',
+  'Macland Road area',
+  'Lost Mountain side',
+  'Florence Road',
+  'Hiram–Powder Springs Road',
+];
+
+const faq = [
+  {
+    q: 'A limb fell on my roof. Do I need a full replacement?',
+    a: 'Not usually, but it needs a proper look. The visible damage can hide cracked decking underneath, so we inspect the surface and the deck from the attic side where access allows, photograph everything for your claim, and quote the repair if a repair will do.',
+  },
+  {
+    q: 'Branches are touching my roof. Does that really matter?',
+    a: 'Yes. Limbs rubbing in the wind scrub granules off the shingles in a stripe, which shortens roof life in that area significantly. Trimming back overhanging limbs is one of the cheapest things you can do for your roof.',
+  },
+  {
+    q: 'I have a carport with a flat roof tied into my shingles. Can you do both?',
+    a: 'Yes — and that transition is exactly where shortcuts fail. Low-slope sections need a different detail than the steep field above them, not sealant over the seam.',
+  },
+  {
+    q: 'My house was built in the 1970s. What should I expect?',
+    a: 'Commonly a previous shingle layer left in place, plank decking, missing drip edge, or caulked chimney flashing. We flag what we expect at the estimate and photograph the deck once it is open, so any additional work is visible rather than asserted.',
+  },
+  {
+    q: 'Why is my upstairs so hot even with good insulation?',
+    a: 'Usually blocked or undersized attic intake ventilation, often insulation packed over the soffit vents. We check intake and exhaust balance on every inspection and correct it during a replacement.',
+  },
+];
 
 export default function PowderSpringsPage() {
-  return (
-    <section className="sec-light sec-pad">
-      <div className="tex" aria-hidden="true" />
-      <div className="wrap" style={{ position: 'relative' }}>
-        <Link href="/service-areas" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>← All service areas</Link>
-
-        <div style={{ marginTop: 18 }}>
-          <span className="eyebrow dark">Service area · {city.county}</span>
-          <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02 }}>Roofing in {city.name}, {city.state}</h1>
-          <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
-            iRoofer Contractors is a local, family-owned roofer serving {city.name} and nearby communities. {city.blurb} We handle roof repair, full replacement, new construction, and storm &amp; insurance claims — with free inspections and honest, upfront pricing.
-          </p>
-          <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, maxWidth: 680, borderLeft: '3px solid var(--orange)', paddingLeft: 14 }}>
-            {city.localNote}
-          </p>
-        </div>
-
-        <CityMap city={city.name} state={city.state} />
-
-        <div className="cards" style={{ marginTop: 36 }}>
-          {services.map((s) => (
-            <Link key={s.slug} href={`/services/${s.slug}`} className="svc-card">
-              <h3 style={{ fontSize: '1.3rem', fontWeight: 800 }}>{s.title} in {city.name}</h3>
-              <p style={{ color: '#52606b', marginTop: 8, fontSize: '.95rem' }}>{s.summary}</p>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>Get a quote →</span>
-            </Link>
-          ))}
-        </div>
-
-        {/* SEO CONTENT BLOCKS */}
-        <div style={{ marginTop: 48, maxWidth: 880 }}>
-          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 16 }}>
-            Trusted roofing services in {city.name}, {city.state}
-          </h2>
-          <p style={{ color: '#52606b', fontSize: '1.02rem', lineHeight: 1.7, marginBottom: 16 }}>
-            As a locally owned roofing company based in {city.county}, iRoofer Contractors understands the
-            unique weather challenges that {city.name} homeowners face. From severe thunderstorms and hail
-            to summer heat expansion and winter ice, we build and repair roofs that stand up to Georgia
-            weather year after year.
-          </p>
-          <p style={{ color: '#52606b', fontSize: '1.02rem', lineHeight: 1.7, marginBottom: 16 }}>
-            We specialize in {city.name} roof repair, full roof replacement, new construction roofing, and
-            storm &amp; insurance claim assistance. Every {city.name} roof inspection is free, with no
-            obligation, and we walk you through every step — from permitting and material selection to
-            the final warranty walkthrough.
-          </p>
-        </div>
-
-        <div className="faq-grid" style={{ marginTop: 44, alignItems: 'start' }}>
-          <div className="rv">
-            <h2 style={{ fontSize: 'clamp(1.6rem,3vw,2.2rem)', fontWeight: 900 }}>Why {city.name} homeowners choose iRoofer</h2>
-            <ul style={{ lineHeight: 2.1, color: '#52606b', marginTop: 12 }}>
-              <li>Local &amp; family-owned — we live and roof in {city.county}.</li>
-              <li>Free, no-pressure roof inspections with photos.</li>
-              <li>Honest upfront pricing — no surprise line items.</li>
-              <li>Storm &amp; insurance claim help, including adjuster meetings.</li>
-              <li>Daily cleanup and magnetic nail sweeps on every job.</li>
-              <li>5★ rated on Google with {brand.reviewCount} verified reviews.</li>
-            </ul>
-            <p style={{ marginTop: 18 }}>
-              <a className="btn btn-ink" href="/estimator">Get an instant roof estimate <span className="arr">→</span></a>
-            </p>
-            <p style={{ marginTop: 14, color: '#52606b' }}>
-              Other nearby areas: {cities.filter((x) => x.slug !== city.slug).map((x, i, arr) => (
-                <span key={x.slug}>
-                  <Link href={`/service-areas/${x.slug}`} style={{ color: 'var(--orange)' }}>{x.name}</Link>{i < arr.length - 1 ? ', ' : ''}
-                </span>
-              ))}
-            </p>
-          </div>
-          <div className="rv">
-            <picture>
-              <source srcSet="/assets/hero.webp" type="image/webp" />
-              <img src="/assets/hero.webp" alt="Roofing work in Powder Springs, GA" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
-            </picture>
-            <div style={{ maxWidth: 460, margin: '32px auto 0' }}>
-              <QuoteForm variant="detail" id={`quote-${city.slug}`} source={`Service Area: ${city.name}`} />
-            </div>
-          </div>
-        </div>
-
-        {/* SEO KEYWORDS SECTION */}
-        <div style={{ marginTop: 48, maxWidth: 880, fontSize: '0.95rem', lineHeight: 1.7, color: '#52606b' }}>
-          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 20 }}>
-            {city.name} roofing services — what you need to know
-          </h2>
-          <p style={{ marginBottom: 12 }}>
-            Whether you need emergency roof repair in {city.name}, a full roof replacement on your
-            {city.name} home, or new construction roofing for a builder project, iRoofer Contractors
-            brings the same family-owned service to every {city.name} neighborhood. We're licensed,
-            bonded, and insured in Georgia, and we carry the manufacturer warranties that protect
-            your investment for decades.
-          </p>
-          <p style={{ marginBottom: 12 }}>
-            <strong>Roof repair in {city.name}</strong> — From storm damage and hail dents to worn
-            flashing and mysterious leaks, we trace the source and fix it right. Most {city.name}
-            emergency repairs are completed the same day, with a 2-year workmanship warranty.
-          </p>
-          <p style={{ marginBottom: 12 }}>
-            <strong>Roof replacement in {city.name}</strong> — Full tear-off to the deck, ice & water
-            shield, synthetic underlayment, and architectural shingles installed to manufacturer spec.
-            We handle the permit, coordinate with your {city.name} inspector, and do a magnetic nail
-            sweep so your family and pets stay safe.
-          </p>
-          <p style={{ marginBottom: 12 }}>
-            <strong>New construction roofing in {city.name}</strong> — We partner with local builders
-            and homeowners to install design-matched roofs on new homes. From shingle selection to
-            final walkthrough and warranty setup — we keep your build on schedule.
-          </p>
-          <p style={{ marginBottom: 12 }}>
-            <strong>Storm &amp; insurance claim help in {city.name}</strong> — After a Georgia storm,
-            we document all damage with photos, write a full scope of work, and meet your insurance
-            adjuster on-site. We handle supplements and paperwork so you're never fronting the cost.
-          </p>
-          <p>
-            Based in Dallas ({brand.phone}), we serve {city.name} and all of {city.county} with free,
-            no-pressure roof inspections. Call today — we answer our own phones.
-          </p>
-        </div>
-
-        {/* LOCAL FAQ SECTION */}
-        <div style={{ marginTop: 48, maxWidth: 880 }}>
-          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 20 }}>
-            Frequently asked questions about roofing in {city.name}, {city.state}
-          </h2>
-          <div style={{ display: 'grid', gap: 16 }}>
-            <div>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: 6, color: 'var(--ink)' }}>
-                How much does a roof replacement cost in {city.name}?
-              </h3>
-              <p style={{ margin: 0 }}>
-                Most residential roof replacements in {city.name} range from $3,500 to $12,000
-                depending on roof size, pitch, and materials. We provide a detailed, line-item-free
-                estimate after a free on-site inspection — no surprises.
-              </p>
-            </div>
-            <div>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: 6, color: 'var(--ink)' }}>
-                What roofing materials do you recommend for {city.name} weather?
-              </h3>
-              <p style={{ margin: 0 }}>
-                For {city.name} homes we typically recommend architectural asphalt shingles (Class A
-                fire rating) with ice &amp; water shield in the eaves and synthetic underlayment.
-                This combination handles Georgia's heat, hail, and occasional winter ice best.
-              </p>
-            </div>
-            <div>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: 6, color: 'var(--ink)' }}>
-                Do you offer emergency roof repair in {city.name}?
-              </h3>
-              <p style={{ margin: 0 }}>
-                Yes — 24/7 emergency tarping and storm damage repair for {city.name} homeowners. We
-                respond same-day for active leaks, document damage for insurance, and complete
-                permanent repairs within 48 hours.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    <div style={{ marginTop: 28, textAlign: 'center' }}>
-      <ReviewButton variant="orange" label="Leave us a Google review" />
-    </div>
-    </section>
-  );
+  return <CityAreaPage city={city} intro={intro} sections={sections} neighborhoods={neighborhoods} faq={faq} />;
 }
