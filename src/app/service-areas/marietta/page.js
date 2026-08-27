@@ -1,190 +1,89 @@
-import Link from 'next/link';
-import ReviewButton from '@/components/ReviewButton';
-import QuoteForm from '@/components/QuoteForm';
-import { brand, services, cities } from '@/lib/brand';
-import CityMap from '@/components/CityMap';
+import CityAreaPage from '@/components/CityAreaPage';
+import { getCity, brand } from '@/lib/brand';
+
+const city = getCity('marietta');
 
 export const metadata = {
-  alternates: { canonical: 'https://iroofercontractors.com/service-areas/marietta' },
-  openGraph: { url: 'https://iroofercontractors.com/service-areas/marietta' },
-
-  title: 'Roof Repair & Replacement in Marietta, GA',
+  title: 'Roofing in Marietta, GA — Repair, Replacement & Insurance Claims | iRoofer Contractors',
   description:
-    'Local roofing in Dallas, GA (Paulding County). Our home base — same-day roof inspections across Dallas and across the county line. Free inspection, honest pricing, 5★ rated. Call (470) 236-1410.',
+    'Family-owned roofer serving Marietta, GA (Cobb County). Older-home repairs, full replacements, new construction and storm claim documentation. Free photo-documented inspection — call (470) 236-1410.',
+  alternates: { canonical: `${brand.url}/service-areas/marietta` },
+  openGraph: {
+    url: `${brand.url}/service-areas/marietta`,
+    title: 'Roofing in Marietta, GA — iRoofer Contractors',
+    description:
+      'Marietta roof repair, replacement and storm claim help from a family-owned crew based in Dallas, GA. Free inspections with photo reports.',
+  },
 };
 
-const city = {
-  slug: 'marietta',
-  name: 'Marietta',
-  state: 'GA',
-  county: 'Cobb County',
-  blurb: 'insurance-backed roof rebuilds and new construction roofing in Marietta.',
-  localNote: 'Marietta mix of historic homes and new builds means we tailor every scope — from gentle repairs on older roofs to full code-compliant installs on new construction.',
-};
+const intro = [
+  'iRoofer Contractors has worked Marietta for years out of our Dallas, GA shop. No other city on our map has this much variety: 1920s and 1950s homes in and around the Marietta Square, mid-century ranches off Roswell Road and Powers Ferry, and new infill construction on the same streets. A scope that fits one of those roofs is wrong for the other two.',
+  'We handle roof repair, full replacement, new-construction roofing, gutters, and storm and insurance claim documentation. Inspections are free, photo-documented, and honest about what the roof actually needs — including when the answer is that it needs nothing yet.',
+];
+
+const sections = [
+  {
+    h2: 'Older Marietta homes: what we find under the shingles',
+    paras: [
+      'On pre-1970s Marietta houses the shingles are rarely the whole story. We regularly open roofs to find plank decking rather than plywood, layers from a previous nail-over, undersized or missing drip edge, and chimney flashing that was sealed instead of stepped. Any of those change the job, so we look for them at the inspection and put the likely findings in the estimate rather than surprising you mid-tear-off.',
+      'Plank decking in particular matters: gaps between boards affect how shingles fasten and may require sheathing over the planks. We tell you before we start whether we expect that cost, and we photograph the deck once it is exposed so you can see exactly what you are paying for.',
+    ],
+  },
+  {
+    h2: 'Marietta Square, historic character and matching a roof to the house',
+    paras: [
+      'Around the Square and in the older neighborhoods nearby, a roof is part of the architecture. Color and shingle profile matter, and on some properties exterior changes come with local review or neighborhood expectations. We bring shingle boards to the inspection, spec the exact product and color in writing, and pick options that suit the period of the house instead of defaulting to the same builder-grade shingle on every job.',
+      'Steep, cut-up rooflines are common in this part of town — dormers, porch roofs, and low-slope rear additions tied into steep main roofs. Those tie-ins need the right detail for each slope, not one product stretched across both.',
+    ],
+  },
+  {
+    h2: 'Cobb County storms and insurance claim documentation',
+    paras: [
+      'Marietta sits in the path of the spring and summer cells that track across Cobb County, and wind damage here is often partial: a few slopes stripped, ridge caps lifted, or fasteners backed out while the rest of the roof looks untouched. That is exactly the kind of loss that gets underpaid when it is poorly documented.',
+      'We photograph with dates, mark damage on a roof diagram, test soft metals for impact, write a scope of work an adjuster can verify, and meet the adjuster on site. If the damage does not support a claim, we say so and quote the repair directly — a denied claim costs you time and gets your roof no closer to fixed.',
+    ],
+  },
+  {
+    h2: 'Ventilation and the leaks that are not shingle failures',
+    paras: [
+      'Two Marietta patterns come up again and again in our repair calls. The first is bonus rooms and additions where a lower roof meets a wall — the tie-in flashing there fails long before the shingles do. The second is attic ventilation that was never sized correctly, which bakes the underside of the deck through Georgia summers, shortens shingle life, and drives up cooling costs.',
+      'We correct intake and exhaust ventilation as part of every replacement, rebuild tie-in and step flashing instead of caulking it, and confirm gutters and downspouts move water away from the foundation. Repairing the roof and leaving the airflow and drainage broken just books the next repair.',
+    ],
+  },
+];
+
+const neighborhoods = [
+  'Marietta Square & historic district',
+  'East Cobb / Roswell Road',
+  'Powers Ferry',
+  'Whitlock Avenue corridor',
+  'West Marietta',
+  'Kennesaw Mountain side',
+];
+
+const faq = [
+  {
+    q: 'My Marietta home was built in the 1950s. Does that complicate a roof replacement?',
+    a: 'Sometimes, and it is better to know up front. Older Marietta roofs often have plank decking, previous nail-over layers, missing drip edge, or sealed chimney flashing. We check for all of that at the free inspection and tell you what we expect to find, so the estimate reflects the real job.',
+  },
+  {
+    q: 'Can you match a shingle to an older or historic Marietta home?',
+    a: 'Yes. We bring shingle boards to the inspection, discuss profile and color against the age and style of the house, and put the exact product and color in the written scope — useful if your property is subject to local review or neighborhood expectations.',
+  },
+  {
+    q: 'Do you handle storm and insurance claims in Cobb County?',
+    a: 'Yes. We document damage with dated photos and a roof diagram, write the scope of work, meet your adjuster on site, and handle supplements. If the damage will not support a claim, we tell you and quote the repair instead.',
+  },
+  {
+    q: 'How quickly can you get to a Marietta leak?',
+    a: 'Active leaks are our priority calls — we respond for emergency tarping and get the water stopped first, then schedule the permanent repair once we can see the full picture in dry conditions.',
+  },
+  {
+    q: 'Are you local, or do you just advertise in Marietta?',
+    a: 'We are based in Dallas, GA — a real shop about 25 miles west — and Marietta has been part of our regular service area for years. You can see our Google reviews and reach the same crew chief through the whole job.',
+  },
+];
 
 export default function MariettaPage() {
-  return (
-    <section className="sec-light sec-pad">
-      <div className="tex" aria-hidden="true" />
-      <div className="wrap" style={{ position: 'relative' }}>
-        <Link href="/service-areas" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>← All service areas</Link>
-
-        <div style={{ marginTop: 18 }}>
-          <span className="eyebrow dark">Service area · {city.county}</span>
-          <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02 }}>Roofing in {city.name}, {city.state}</h1>
-          <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
-            iRoofer Contractors is a local, family-owned roofer serving {city.name} and nearby communities. {city.blurb} We handle roof repair, full replacement, new construction, and storm &amp; insurance claims — with free inspections and honest, upfront pricing.
-          </p>
-          <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, maxWidth: 680, borderLeft: '3px solid var(--orange)', paddingLeft: 14 }}>
-            {city.localNote}
-          </p>
-        </div>
-
-        <CityMap city={city.name} state={city.state} />
-
-        <div className="cards" style={{ marginTop: 36 }}>
-          {services.map((s) => (
-            <Link key={s.slug} href={`/services/${s.slug}`} className="svc-card">
-              <h3 style={{ fontSize: '1.3rem', fontWeight: 800 }}>{s.title} in {city.name}</h3>
-              <p style={{ color: '#52606b', marginTop: 8, fontSize: '.95rem' }}>{s.summary}</p>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>Get a quote →</span>
-            </Link>
-          ))}
-        </div>
-
-        {/* SEO CONTENT BLOCKS */}
-        <div style={{ marginTop: 48, maxWidth: 880 }}>
-          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 16 }}>
-            Trusted roofing services in {city.name}, {city.state}
-          </h2>
-          <p style={{ color: '#52606b', fontSize: '1.02rem', lineHeight: 1.7, marginBottom: 16 }}>
-            As a locally owned roofing company based in {city.county}, iRoofer Contractors understands the
-            unique weather challenges that {city.name} homeowners face. From severe thunderstorms and hail
-            to summer heat expansion and winter ice, we build and repair roofs that stand up to Georgia
-            weather year after year.
-          </p>
-          <p style={{ color: '#52606b', fontSize: '1.02rem', lineHeight: 1.7, marginBottom: 16 }}>
-            We specialize in {city.name} roof repair, full roof replacement, new construction roofing, and
-            storm &amp; insurance claim assistance. Every {city.name} roof inspection is free, with no
-            obligation, and we walk you through every step — from permitting and material selection to
-            the final warranty walkthrough.
-          </p>
-        </div>
-
-        <div className="faq-grid" style={{ marginTop: 44, alignItems: 'start' }}>
-          <div className="rv">
-            <h2 style={{ fontSize: 'clamp(1.6rem,3vw,2.2rem)', fontWeight: 900 }}>Why {city.name} homeowners choose iRoofer</h2>
-            <ul style={{ lineHeight: 2.1, color: '#52606b', marginTop: 12 }}>
-              <li>Local &amp; family-owned — we live and roof in {city.county}.</li>
-              <li>Free, no-pressure roof inspections with photos.</li>
-              <li>Honest upfront pricing — no surprise line items.</li>
-              <li>Storm &amp; insurance claim help, including adjuster meetings.</li>
-              <li>Daily cleanup and magnetic nail sweeps on every job.</li>
-              <li>5★ rated on Google with {brand.reviewCount} verified reviews.</li>
-            </ul>
-            <p style={{ marginTop: 18 }}>
-              <a className="btn btn-ink" href="/estimator">Get an instant roof estimate <span className="arr">→</span></a>
-            </p>
-            <p style={{ marginTop: 14, color: '#52606b' }}>
-              Other nearby areas: {cities.filter((x) => x.slug !== city.slug).map((x, i, arr) => (
-                <span key={x.slug}>
-                  <Link href={`/service-areas/${x.slug}`} style={{ color: 'var(--orange)' }}>{x.name}</Link>{i < arr.length - 1 ? ', ' : ''}
-                </span>
-              ))}
-            </p>
-          </div>
-          <div className="rv">
-            <picture>
-              <source srcSet="/assets/hero.webp" type="image/webp" />
-              <img src="/assets/hero.webp" alt="Roofing work in Marietta, GA" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
-            </picture>
-            <div style={{ maxWidth: 460, margin: '32px auto 0' }}>
-              <QuoteForm variant="detail" id={`quote-${city.slug}`} source={`Service Area: ${city.name}`} />
-            </div>
-          </div>
-        </div>
-
-        {/* SEO KEYWORDS SECTION */}
-        <div style={{ marginTop: 48, maxWidth: 880, fontSize: '0.95rem', lineHeight: 1.7, color: '#52606b' }}>
-          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 20 }}>
-            {city.name} roofing services — what you need to know
-          </h2>
-          <p style={{ marginBottom: 12 }}>
-            Whether you need emergency roof repair in {city.name}, a full roof replacement on your
-            {city.name} home, or new construction roofing for a builder project, iRoofer Contractors
-            brings the same family-owned service to every {city.name} neighborhood. We're licensed,
-            bonded, and insured in Georgia, and we carry the manufacturer warranties that protect
-            your investment for decades.
-          </p>
-          <p style={{ marginBottom: 12 }}>
-            <strong>Roof repair in {city.name}</strong> — From storm damage and hail dents to worn
-            flashing and mysterious leaks, we trace the source and fix it right. Most {city.name}
-            emergency repairs are completed the same day, with a 2-year workmanship warranty.
-          </p>
-          <p style={{ marginBottom: 12 }}>
-            <strong>Roof replacement in {city.name}</strong> — Full tear-off to the deck, ice & water
-            shield, synthetic underlayment, and architectural shingles installed to manufacturer spec.
-            We handle the permit, coordinate with your {city.name} inspector, and do a magnetic nail
-            sweep so your family and pets stay safe.
-          </p>
-          <p style={{ marginBottom: 12 }}>
-            <strong>New construction roofing in {city.name}</strong> — We partner with local builders
-            and homeowners to install design-matched roofs on new homes. From shingle selection to
-            final walkthrough and warranty setup — we keep your build on schedule.
-          </p>
-          <p style={{ marginBottom: 12 }}>
-            <strong>Storm &amp; insurance claim help in {city.name}</strong> — After a Georgia storm,
-            we document all damage with photos, write a full scope of work, and meet your insurance
-            adjuster on-site. We handle supplements and paperwork so you're never fronting the cost.
-          </p>
-          <p>
-            Based in Dallas ({brand.phone}), we serve {city.name} and all of {city.county} with free,
-            no-pressure roof inspections. Call today — we answer our own phones.
-          </p>
-        </div>
-
-        {/* LOCAL FAQ SECTION */}
-        <div style={{ marginTop: 48, maxWidth: 880 }}>
-          <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 20 }}>
-            Frequently asked questions about roofing in {city.name}, {city.state}
-          </h2>
-          <div style={{ display: 'grid', gap: 16 }}>
-            <div>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: 6, color: 'var(--ink)' }}>
-                How much does a roof replacement cost in {city.name}?
-              </h3>
-              <p style={{ margin: 0 }}>
-                Most residential roof replacements in {city.name} range from $3,500 to $12,000
-                depending on roof size, pitch, and materials. We provide a detailed, line-item-free
-                estimate after a free on-site inspection — no surprises.
-              </p>
-            </div>
-            <div>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: 6, color: 'var(--ink)' }}>
-                What roofing materials do you recommend for {city.name} weather?
-              </h3>
-              <p style={{ margin: 0 }}>
-                For {city.name} homes we typically recommend architectural asphalt shingles (Class A
-                fire rating) with ice &amp; water shield in the eaves and synthetic underlayment.
-                This combination handles Georgia's heat, hail, and occasional winter ice best.
-              </p>
-            </div>
-            <div>
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: 6, color: 'var(--ink)' }}>
-                Do you offer emergency roof repair in {city.name}?
-              </h3>
-              <p style={{ margin: 0 }}>
-                Yes — 24/7 emergency tarping and storm damage repair for {city.name} homeowners. We
-                respond same-day for active leaks, document damage for insurance, and complete
-                permanent repairs within 48 hours.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    <div style={{ marginTop: 28, textAlign: 'center' }}>
-      <ReviewButton variant="orange" label="Leave us a Google review" />
-    </div>
-    </section>
-  );
+  return <CityAreaPage city={city} intro={intro} sections={sections} neighborhoods={neighborhoods} faq={faq} />;
 }

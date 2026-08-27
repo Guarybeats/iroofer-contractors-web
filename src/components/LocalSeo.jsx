@@ -64,8 +64,11 @@ export function buildSeoGraph(path) {
         },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 33.9218,
-      longitude: -84.8424,
+      // Matches the verified Google Business Profile pin for 152 Freedom Dr,
+      // Dallas, GA 30157. Do not change without re-checking the GBP map pin —
+      // a mismatch between schema geo and the GBP pin weakens local ranking.
+      latitude: 33.8810,
+      longitude: -84.8204,
     },
     openingHoursSpecification: [
       { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '09:00', closes: '19:00' },
@@ -107,8 +110,10 @@ export function buildSeoGraph(path) {
 
   // One Service node per city x service combo page — links each dedicated
   // landing page (/<service-slug>-<city-slug>) into the schema graph.
+  // Cities flagged `combo: false` have no generated /<service>-<city> pages yet,
+  // so they are excluded here to avoid schema URLs that 404.
   const comboServiceGraph = services.flatMap((s) =>
-    cities.map((c) => ({
+    cities.filter((c) => c.combo !== false).map((c) => ({
       '@type': 'Service',
       name: `${s.title} in ${c.name}, ${c.state}`,
       serviceType: s.title,
