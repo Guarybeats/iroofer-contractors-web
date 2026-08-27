@@ -1,14 +1,20 @@
+import { OG_IMAGE } from '@/lib/seo';
 import CityAreaPage from '@/components/CityAreaPage';
 import { getCity, brand } from '@/lib/brand';
 
 const city = getCity('kennesaw');
 
 export const metadata = {
-  title: 'Roofing in Kennesaw, GA — Repair, Replacement & Storm Response | iRoofer Contractors',
+  twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
+  title: 'Roofing in Kennesaw, GA | Repair & Replacement | iRoofer',
   description:
     'Family-owned roofer serving Kennesaw, GA (Cobb County). Roof repair, full replacement, small-business and HOA-neighborhood roofing, storm claim help. Free photo-documented inspection — call (470) 236-1410.',
   alternates: { canonical: `${brand.url}/service-areas/kennesaw` },
   openGraph: {
+    type: 'website',
+    siteName: 'iRoofer Contractors',
+    locale: 'en_US',
+    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: `${brand.url}/service-areas/kennesaw`,
     title: 'Roofing in Kennesaw, GA — iRoofer Contractors',
     description:

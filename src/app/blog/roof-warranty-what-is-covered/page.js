@@ -1,10 +1,16 @@
+import { OG_IMAGE } from '@/lib/seo';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 import { brand } from '@/lib/brand';
 
 export const metadata = {
+  twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   alternates: { canonical: 'https://iroofercontractors.com/blog/roof-warranty-what-is-covered' },
-  openGraph: { url: 'https://iroofercontractors.com/blog/roof-warranty-what-is-covered' },
+  openGraph: {
+    type: 'website',
+    siteName: 'iRoofer Contractors',
+    locale: 'en_US',
+    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/roof-warranty-what-is-covered' },
 
   title: "Roof Warranties Explained: What's Covered",
   description:
@@ -151,7 +157,7 @@ export default function BlogPostPage() {
             <h2>iRoofer’s Warranty Promise</h2>
             <p>We back every roof we install with:</p>
             <ul>
-              <li><strong>10-year workmanship warranty</strong> — one of the longest in the Dallas market.</li>
+              <li><strong>A 10-year manufacturer warranty</strong> on the shingles we install, registered in your name — plus our own workmanship warranty in writing on the install.</li>
               <li><strong>24-hour emergency response</strong> — call us anytime, we’ll secure your roof.</li>
               <li><strong>Full warranty management</strong> — we handle manufacturer claims directly, no $200 inspection fees passed to you.</li>
               <li><strong>Annual inspection program</strong> — $99/year (includes one visit, photo report, and priority scheduling).</li>

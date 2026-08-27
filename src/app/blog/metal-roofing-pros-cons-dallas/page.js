@@ -1,9 +1,15 @@
+import { OG_IMAGE } from '@/lib/seo';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 
 export const metadata = {
+  twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   alternates: { canonical: 'https://iroofercontractors.com/blog/metal-roofing-pros-cons-dallas' },
-  openGraph: { url: 'https://iroofercontractors.com/blog/metal-roofing-pros-cons-dallas' },
+  openGraph: {
+    type: 'website',
+    siteName: 'iRoofer Contractors',
+    locale: 'en_US',
+    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/metal-roofing-pros-cons-dallas' },
 
   title: 'Metal Roofing in Dallas, GA: Pros and Cons',
   description:
@@ -134,7 +140,7 @@ export default function BlogPostPage() {
               <li><strong>Meticulous ice/water shield</strong> at every eave, valley, and penetration point.</li>
               <li><strong>Solid deck installation</strong> — no exposed purlins, so no noisy rain.</li>
               <li><strong>Ridge vent integration</strong> — properly vented ridge cap that won't leak.</li>
-              <li><strong>10-year workmanship warranty</strong> on all metal installations.</li>
+              <li><strong>Workmanship warranty in writing</strong> on all metal installations — ask us for the current terms.</li>
             </ul>
 
             <h2>Still Deciding?</h2>

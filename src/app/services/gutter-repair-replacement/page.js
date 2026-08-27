@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
+import RelatedGuides from '@/components/RelatedGuides';
 import { services, brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 
@@ -57,6 +58,7 @@ export default function GutterPage() {
             </ul>
             <p style={{ marginTop: 20 }}>
               <a className="btn btn-ink" href="#gutter-quote">Get a free gutter inspection <span className="arr">→</span></a>
+              <RelatedGuides slug="gutter-repair-replacement" />
             </p>
           </div>
           <div className="rv">

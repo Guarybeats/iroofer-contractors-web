@@ -1,10 +1,16 @@
+import { OG_IMAGE } from '@/lib/seo';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 import { brand } from '@/lib/brand';
 
 export const metadata = {
+  twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   alternates: { canonical: 'https://iroofercontractors.com/blog/georgia-winter-roof-inspection' },
-  openGraph: { url: 'https://iroofercontractors.com/blog/georgia-winter-roof-inspection' },
+  openGraph: {
+    type: 'website',
+    siteName: 'iRoofer Contractors',
+    locale: 'en_US',
+    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/georgia-winter-roof-inspection' },
 
   title: 'Georgia Winter Roof Prep: 10-Point Checklist',
   description:

@@ -1,14 +1,20 @@
+import { OG_IMAGE } from '@/lib/seo';
 import CityAreaPage from '@/components/CityAreaPage';
 import { getCity, brand } from '@/lib/brand';
 
 const city = getCity('acworth');
 
 export const metadata = {
-  title: 'Roofing in Acworth, GA — Roof Repair, Replacement & Leak Detection | iRoofer Contractors',
+  twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
+  title: 'Roofing in Acworth, GA | Repair & Replacement | iRoofer',
   description:
     'Family-owned roofer serving Acworth, GA (Cobb County). Leak tracing, full tear-offs, ventilation upgrades, gutters and storm claim help near Lake Acworth and Allatoona. Free inspection — call (470) 236-1410.',
   alternates: { canonical: `${brand.url}/service-areas/acworth` },
   openGraph: {
+    type: 'website',
+    siteName: 'iRoofer Contractors',
+    locale: 'en_US',
+    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: `${brand.url}/service-areas/acworth`,
     title: 'Roofing in Acworth, GA — iRoofer Contractors',
     description:

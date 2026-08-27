@@ -1,3 +1,4 @@
+import { OG_IMAGE } from '@/lib/seo';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 import { notFound } from 'next/navigation';
@@ -11,8 +12,13 @@ const post = {
 };
 
 export const metadata = {
+  twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   alternates: { canonical: 'https://iroofercontractors.com/blog/when-to-replace-vs-repair-a-roof' },
-  openGraph: { url: 'https://iroofercontractors.com/blog/when-to-replace-vs-repair-a-roof' },
+  openGraph: {
+    type: 'website',
+    siteName: 'iRoofer Contractors',
+    locale: 'en_US',
+    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/when-to-replace-vs-repair-a-roof' },
 
   title: 'Roof Replacement vs. Roof Repair: When to Tear Off vs. Patch',
   description: 'How to decide between roof repair and full replacement. Signs you need a new roof, when patching makes sense, and what to expect for cost and timeline in Dallas, GA.',

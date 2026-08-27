@@ -1,14 +1,20 @@
+import { OG_IMAGE } from '@/lib/seo';
 import CityAreaPage from '@/components/CityAreaPage';
 import { getCity, brand } from '@/lib/brand';
 
 const city = getCity('hiram');
 
 export const metadata = {
-  title: 'Roofing in Hiram, GA — Roof Repair & Replacement | iRoofer Contractors',
+  twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
+  title: 'Roofing in Hiram, GA | Repair & Replacement | iRoofer',
   description:
     'Family-owned roofer serving Hiram, GA (Paulding County) — minutes from our Dallas, GA shop. Roof repair, architectural shingle replacement, gutters and storm claim help. Free inspection — call (470) 236-1410.',
   alternates: { canonical: `${brand.url}/service-areas/hiram` },
   openGraph: {
+    type: 'website',
+    siteName: 'iRoofer Contractors',
+    locale: 'en_US',
+    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: `${brand.url}/service-areas/hiram`,
     title: 'Roofing in Hiram, GA — iRoofer Contractors',
     description:

@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
+import RelatedGuides from '@/components/RelatedGuides';
 import { getService, services, brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 
@@ -43,6 +44,7 @@ export default function ServiceDetail({ params }) {
             <p style={{ marginTop: 18 }}>
               <a className="btn btn-ink" href="/#contact">Get a free quote for {service.title} <span className="arr">→</span></a>
             </p>
+            <RelatedGuides slug={service.slug} />
           </div>
           <div className="rv">
             <img src={service.image} alt={service.title} loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />

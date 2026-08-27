@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
+import RelatedGuides from '@/components/RelatedGuides';
 import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
@@ -133,6 +134,7 @@ export default function Page() {
           </div>
           <div style={{ marginTop: 24 }}>
             <a className="btn btn-ink" href="/#contact">Get your free damage report <span className="arr">→</span></a>
+            <RelatedGuides slug="roof-insurance-claims" />
           </div>
         </div>
       </section>
