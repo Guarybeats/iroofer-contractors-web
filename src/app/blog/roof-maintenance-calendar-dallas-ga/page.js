@@ -1,4 +1,5 @@
 import { OG_IMAGE } from '@/lib/seo';
+import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 import { brand } from '@/lib/brand';
@@ -81,6 +82,7 @@ export default function BlogPostPage() {
               By iRoofer Contractors
             </p>
             <p className="meta">{post.date} · {post.readTime}</p>
+            <PriceDisclaimer />
           </div>
 
           <div className="post-body rv">
