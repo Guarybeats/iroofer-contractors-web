@@ -4,6 +4,13 @@ import HeroForm from '@/components/HeroForm';
 import ReviewButton from '@/components/ReviewButton';
 import { brand, services } from '@/lib/brand';
 import { posts } from '@/lib/posts';
+import { reviews } from '@/lib/reviews';
+
+// Marquee rows: split the review set in half so no quote is rendered more than
+// twice (once per row track). Each track repeats the *other* half to keep the
+// scroll seamless without triplicating review text in the HTML.
+const revA = reviews.slice(0, Math.ceil(reviews.length / 2));
+const revB = reviews.slice(Math.ceil(reviews.length / 2));
 
 const svcs = [
   { n: '01', title: 'Roof Repair', tag: 'Same week', img: '/assets/service-repair.jpg',
@@ -18,18 +25,6 @@ const svcs = [
     body: 'Clogged or failing gutters are the #1 cause of preventable roof and foundation damage. We clean, repair, and replace seamless gutters so water flows away from your home, not into it.' },
 ];
 
-const reviews = [
-  { q: '“After having already gotten three quotes at around the same price, I figured iRoofer’s quote would be far more. Why? The fancy metal roof over the truck bed. The fancy drone Cristian used to take pictures. The highly detailed and informative marketing materials. But nope. Their quote was very competitive and, given all the other advantages, it was a no-brainer. They got to my job extremely quickly as my insurance was due to be rescinded within a week or so. The job was done in a day and they took great pains to cover everything around the house to catch as many nails as possible. The roof looks great and within a few hours of getting the detailed completion package stock full of photos, my insurance re-applied my policy. Highly, highly recommend.”', who: 'Jarratt Bryan', where: 'Dallas, GA' },
-  { q: '“Cristian and iRoofer are great! And let me tell why. As you might already know a good percentage of commercial roofers either can’t handle the job, never get back to you or your job is too big or too small. Well Cristian is definitely the opposite. He’s very professional, courteous, punctual, organized and does a great job. He haggled with the insurance companies on my behave to get an honest settlement to get my commercial warehouse roofer back to 100%. This included matching the existing roof materials, siding, custom gutters and insulation. I would highly recommend Cristian & iRoofer. B. Grace / Southern Sky Home”', who: 'Bill Grace', where: 'Dallas, GA' },
-  { q: '“Iroofer Contractors in Dallas, GA, were a total lifesaver! My roof was shot, and they came to the rescue. Their crew was super friendly and knowledgeable. They explained everything clearly, from the inspection to the new roof going on. The quality of their work is top-notch. I’m so happy with how it turned out. If you need a roofing company you can trust, Iroofer Contractors is the way to go!”', who: 'Carlos Duran', where: 'Dallas, GA' },
-  { q: `“This was a blessing from out of nowhere. Chris was amazing and very patient with me being a new homeowner. He explained everything thing 100 percent of why and how things should look like. He helped me understand everything down to the insurance part which I had no idea what I was doing. The crew was on time and quick. They did an amazing job.. happy homeowner.”`, who: 'Amaka Allen', where: 'Dallas, GA' },
-  { q: `“I roofers were very professional and competitively priced. The project manager/owner Cristian Mendez is knowledgeable, experienced and patient He led through each step of the process of repairing and replacing my roof. He applies the latest drone and office automation technologies. I highly recommend Iroofers and Cristian Mendez.”`, who: 'Tyrone DeNeal, Sr.', where: 'Dallas, GA' },
-  { q: `“Iroofer Contractors replaced my roof after a hurricane. They were honest, on time and did a great job on my roof. Next, they replaced my mother’s roof along with rotten wood since it was the original roof on the house. We love the roof and the job that was performed. I would recommend Iroofer to any of my friends and family.”`, who: 'Taakena Ross-Gober', where: 'Dallas, GA' },
-  { q: `“They did very well with my old roof. The house looks new! Cristian and the crew went that extra mile on everything! I highly recommend them. They were very professional and I have absolutely nothing bad to say about them or their work. It poured down rain this morning, and there were NO LEAKS. I love ❤️ IRoofer Contractors!”`, who: 'Jill Kerns', where: 'Dallas, GA' },
-  { q: `“Cristian was extremely professional and had excellent customer service skills. From the roof inspection to roof installation, it was an awesome experience. The installers worked quickly and promptly cleaned up debris upon completion. I’ll be happy to do business with them again and recommend their service.”`, who: 'Kay Hillery', where: 'Dallas, GA' },
-  { q: `“IRoofer Team did a superb job. They are very knowledgeable, professional and made this process seamless. I would recommend them to anyone who wants a roofing company that does a job very well done!! Thanks.”`, who: 'Willie Holt', where: 'Dallas, GA' },
-  { q: `“I will tell you this! You still have good people out here and that will help you in each and every way! I recommend this company to the fullest.. They are my new roofing company and i will stick with them and if you need any help or about your roofing they are definitely the ones to call first hand. I had no idea what I was doing me being a first new home owner myself. They guide me and was kind and caring so helpful not only with my roof repairs but other things also that I wouldn’t know about myself.. I tell you that I learned alot about being a home owner. They wait patiently and they will work with you! You have more then 5 stars from me you will get 10 stars! Thank you for working with me and being patient with me! Thank you for all you do! I have found my new roofing company! 😊 Cristian Mendez is the most responsible and helpful and will go out his way for someone! Thanks once again! His crew members are wonderful too!”`, who: 'Sharon Thomas', where: 'Dallas, GA' },
-];
 
 const faqs = [
   { q: 'How long does a full replacement take?', a: 'Most single-family homes in our area are torn off and rebuilt in one to two days, weather permitting. Larger or steep-pitch roofs may take three. We give you a firm schedule in writing before we start.' },
@@ -239,18 +234,18 @@ export default function HomePage() {
 
         <div className="rev-row r1" aria-label="Customer reviews">
           <div className="rev-track">
-            {reviews.map((r, i) => (
+            {revA.map((r, i) => (
               <div className="rcard" key={`a${i}`}><div className="stars">★★★★★</div><p className="q">{r.q}</p><div className="who"><span className="av">{r.who.charAt(0)}</span><div><b>{r.who}</b><span>{r.where}</span></div></div></div>
             ))}
-            {reviews.map((r, i) => (
-              <div className="rcard" key={`b${i}`} aria-hidden="true"><div className="stars">★★★★★</div><p className="q">{r.q}</p><div className="who"><span className="av">{r.who.charAt(0)}</span><div><b>{r.who}</b><span>{r.where}</span></div></div></div>
+            {revB.map((r, i) => (
+              <div className="rcard" key={`b${i}`}><div className="stars">★★★★★</div><p className="q">{r.q}</p><div className="who"><span className="av">{r.who.charAt(0)}</span><div><b>{r.who}</b><span>{r.where}</span></div></div></div>
             ))}
           </div>
         </div>
 
         <div className="rev-row r2" aria-hidden="true">
           <div className="rev-track">
-            {[...reviews].reverse().map((r, i) => (
+            {[...revB, ...revA].map((r, i) => (
               <div className="rcard" key={`c${i}`}><div className="stars">★★★★★</div><p className="q">{r.q}</p><div className="who"><span className="av">{r.who.charAt(0)}</span><div><b>{r.who}</b><span>{r.where}</span></div></div></div>
             ))}
           </div>
