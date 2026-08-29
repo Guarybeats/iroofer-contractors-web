@@ -12,6 +12,15 @@ import { reviews } from '@/lib/reviews';
 const revA = reviews.slice(0, Math.ceil(reviews.length / 2));
 const revB = reviews.slice(Math.ceil(reviews.length / 2));
 
+const dallasLinks = [
+  { href: '/roof-replacement-dallas-ga', label: 'Roof replacement in Dallas, GA' },
+  { href: '/roof-repair-dallas-ga', label: 'Roof repair in Dallas, GA' },
+  { href: '/storm-damage-roof-repair-dallas-ga', label: 'Storm damage roof repair' },
+  { href: '/gutter-repair-replacement-dallas-ga', label: 'Gutter repair & replacement' },
+  { href: '/new-construction-dallas-ga', label: 'New construction roofing' },
+  { href: '/dallas-ga-roofing', label: 'All Dallas, GA roofing services' },
+];
+
 const svcs = [
   { n: '01', title: 'Roof Repair', tag: 'Same week', img: '/assets/service-repair.jpg',
     body: 'Water stains, lifted flashing, cracked boots and mystery leaks. We trace the source — not just the symptom — then patch, re-seal and color-match so the fix disappears into your roofline.' },
@@ -138,6 +147,23 @@ export default function HomePage() {
                 </article>
               ))}
             </div>
+          </div>
+
+          {/* Dallas, GA service links — gives the city/service pages an internal link
+              from the strongest page on the site. See skills note: Google was serving
+              the homepage for "roof replacement dallas ga" while these pages sat unlinked. */}
+          <div className="rv" style={{ marginTop: 46, borderTop: '1px solid rgba(22,29,37,.12)', paddingTop: 22 }}>
+            <span className="eyebrow dark">Roofing in Dallas, GA</span>
+            <p style={{ color: '#52606b', marginTop: 8, maxWidth: 640 }}>
+              Straight to the service you need in Dallas and Paulding County:
+            </p>
+            <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '.6rem 1.4rem', marginTop: 12, listStyle: 'none', padding: 0 }}>
+              {dallasLinks.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>{l.label} →</Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>

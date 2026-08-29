@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
 import RelatedGuides from '@/components/RelatedGuides';
+import PriceDisclaimer from '@/components/PriceDisclaimer';
 import { services, brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 
@@ -104,6 +105,7 @@ export default function GutterPage() {
           <h2 style={{ fontSize: 'clamp(1.8rem,3.6vw,2.6rem)', fontWeight: 900 }}>What gutter work costs in Dallas, GA</h2>
           <p style={{ color: '#52606b', marginTop: 12, maxWidth: 640 }}>Rough ranges for Paulding and Cobb counties — your exact quote comes after a free inspection, no obligation.</p>
         </div>
+        <PriceDisclaimer />
         <div className="cards" style={{ marginTop: 24 }}>
           <div className="card"><div className="body"><h3>Gutter Cleaning</h3><p style={{ color: '#52606b' }}>Per-run cleaning with flush-through, clog removal, and a quick damage check.</p><span className="more">$1.50–$3.00 per linear ft</span></div></div>
           <div className="card"><div className="body"><h3>Repair & Realignment</h3><p style={{ color: '#52606b' }}>Sagging runs, popped seams, and leaking joints re-hung and re-sealed.</p><span className="more">$150–$400 per repair</span></div></div>
