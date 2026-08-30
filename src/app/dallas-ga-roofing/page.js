@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
-import { brand } from '@/lib/brand';
+import { brand, cities } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
 
@@ -122,9 +122,9 @@ export default function DallasGaRoofingPage() {
             <h2>Service area around Dallas, GA</h2>
           </div>
           <div className="chips" style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
-            {['Dallas', 'Douglasville', 'Hiram', 'Powder Springs', 'Marietta', 'Kennesaw', 'Acworth', 'Austell'].map((c) => (
-              <Link key={c} href={`/service-areas/${c.toLowerCase().replace(/ /g, '-')}`} className="chip">
-                {c}, GA →
+            {cities.slice(0, 8).map((c) => (
+              <Link key={c.slug} href={`/service-areas/${c.slug}/`} className="chip">
+                {c.name}, {c.state} →
               </Link>
             ))}
           </div>
