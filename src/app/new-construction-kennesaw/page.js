@@ -69,7 +69,7 @@ export default function Page() {
             </div>
 
             <div className="rv">
-              <img src="/assets/service-newconstruction.webp" alt="New Construction in Kennesaw, GA by iRoofer Contractors" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%', marginBottom: 24 }} />
+              <img src="/assets/service-newconstruction.webp?v=2" alt="New Construction in Kennesaw, GA by iRoofer Contractors" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%', marginBottom: 24 }} />
               <div style={{ maxWidth: 460, margin: 0 }}>
                 <QuoteForm variant="contact" id="new-construction-kennesaw-quote" source="New Construction Kennesaw GA" />
               </div>

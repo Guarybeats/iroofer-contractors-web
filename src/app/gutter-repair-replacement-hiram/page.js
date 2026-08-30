@@ -69,7 +69,7 @@ export default function Page() {
             </div>
 
             <div className="rv">
-              <img src="/assets/service-gutters-main.webp" alt="Gutter Repair & Replacement in Hiram, GA by iRoofer Contractors" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%', marginBottom: 24 }} />
+              <img src="/assets/service-gutters-main.webp?v=2" alt="Gutter Repair & Replacement in Hiram, GA by iRoofer Contractors" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%', marginBottom: 24 }} />
               <div style={{ maxWidth: 460, margin: 0 }}>
                 <QuoteForm variant="contact" id="gutter-repair-replacement-hiram-quote" source="Gutter Repair & Replacement Hiram GA" />
               </div>

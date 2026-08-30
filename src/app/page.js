@@ -23,15 +23,15 @@ const dallasLinks = [
 ];
 
 const svcs = [
-  { n: '01', title: 'Roof Repair', tag: 'Same week', img: '/assets/service-repair.jpg',
+  { n: '01', title: 'Roof Repair', tag: 'Same week', img: '/assets/service-repair.jpg?v=2',
     body: 'Water stains, lifted flashing, cracked boots and mystery leaks. We trace the source — not just the symptom — then patch, re-seal and color-match so the fix disappears into your roofline.' },
-  { n: '02', title: 'Roof Replacement', tag: 'Most popular', img: '/assets/service-replacement.jpg',
+  { n: '02', title: 'Roof Replacement', tag: 'Most popular', img: '/assets/service-replacement.jpg?v=2',
     body: 'Full tear-off to the deck, ice & water shield, synthetic underlayment and architectural shingles installed to manufacturer spec. Includes ridge venting, drip edge and a magnet-sweep cleanup of every nail.' },
-  { n: '03', title: 'New Construction', tag: 'Builders', img: '/assets/service-newconstruction.jpg',
+  { n: '03', title: 'New Construction', tag: 'Builders', img: '/assets/service-newconstruction.jpg?v=2',
     body: 'We partner with builders and homeowners on new builds to install a roof that matches the design and the budget — code-compliant, inspected, and built to last.' },
-  { n: '04', title: 'Storm & Insurance Claims', tag: '24/7 response', img: '/assets/service-repair.jpg',
+  { n: '04', title: 'Storm & Insurance Claims', tag: '24/7 response', img: '/assets/service-repair.jpg?v=2',
     body: 'Hail and wind damage documented with photos and a written scope. We meet your adjuster on-site, supplement the claim when needed, and guide you through the paperwork so you are not fronting the cost.' },
-  { n: '05', title: 'Gutter Repair & Replacement', tag: 'Protection', img: '/assets/service-gutters-main.jpg', link: '/services/gutter-repair-replacement',
+  { n: '05', title: 'Gutter Repair & Replacement', tag: 'Protection', img: '/assets/service-gutters-main.jpg?v=2', link: '/services/gutter-repair-replacement',
     body: 'Clogged or failing gutters are the #1 cause of preventable roof and foundation damage. We clean, repair, and replace seamless gutters so water flows away from your home, not into it.' },
 ];
 
@@ -83,7 +83,7 @@ export default function HomePage() {
 
           <div className="hero-media">
             <div className="frame" aria-hidden="true"></div>
-            <img className="main" src="/assets/hero.webp" alt="iRoofer crew installing shingles on a Georgia home" loading="eager" decoding="async" />
+            <img className="main" src="/assets/hero.webp?v=2" alt="iRoofer crew installing shingles on a Georgia home" loading="eager" decoding="async" />
             <div className="badge" aria-hidden="true">
               <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs>
                 <text fill="#f3f5f4" fontFamily="Public Sans" fontSize="11.5" fontWeight="700" letterSpacing="2.4"><textPath href="#circ">FREE INSPECTIONS • STORM RESPONSE • </textPath></text>
@@ -204,8 +204,8 @@ export default function HomePage() {
 
           <div className="ba-wrap">
             <div className="ba rv" id="ba" style={{ '--pos': '52%' }}>
-              <img className="before" src="/assets/service-repair.webp" alt="Roof before: storm damage" loading="lazy" />
-              <img className="after" src="/assets/service-replacement.webp" alt="Roof after: full replacement" loading="lazy" />
+              <img className="before" src="/assets/service-repair.webp?v=2" alt="Roof before: storm damage" loading="lazy" />
+              <img className="after" src="/assets/service-replacement.webp?v=2" alt="Roof after: full replacement" loading="lazy" />
               <span className="tag t-before">Before — storm damage</span>
               <span className="tag t-after">After — full replacement</span>
               <div className="handle" aria-hidden="true"><span className="grip">◂</span></div>
@@ -215,11 +215,11 @@ export default function HomePage() {
 
             <div className="gallery rv">
               <div className="gcard">
-                <img loading="lazy" src="/assets/service-newconstruction.webp" alt="New construction roof" />
+                <img loading="lazy" src="/assets/service-newconstruction.webp?v=2" alt="New construction roof" />
                 <div className="cap"><span>Paulding County</span><b>New construction</b></div>
               </div>
               <div className="gcard">
-                <img loading="lazy" src="/assets/hero.webp" alt="Aerial view of finished roofs" />
+                <img loading="lazy" src="/assets/hero.webp?v=2" alt="Aerial view of finished roofs" />
                 <div className="cap"><span>Subdivision · 14 homes</span><b>Storm rebuild</b></div>
               </div>
             </div>
