@@ -13,9 +13,9 @@ export const metadata = seo({
 });
 
 const gallery = [
-  { src: '/assets/service-gutters-main.webp', fallback: '/assets/service-gutters-main.jpg', alt: 'Seamless gutter installation on a Dallas, GA home', cap: 'Seamless gutter install', tag: 'New gutters' },
-  { src: '/assets/service-gutters-repair.webp', fallback: '/assets/service-gutters-repair.jpg', alt: 'Repairing a sagging gutter run in Paulding County', cap: 'Gutter repair & realignment', tag: 'Repair' },
-  { src: '/assets/service-gutters-clean.webp', fallback: '/assets/service-gutters-clean.jpg', alt: 'Clearing leaves and debris from an overflowing gutter', cap: 'Cleaning & leaf guard', tag: 'Protection' },
+  { src: '/assets/service-gutters-main.webp?v=2', fallback: '/assets/service-gutters-main.jpg?v=2', alt: 'Seamless gutter installation on a Dallas, GA home', cap: 'Seamless gutter install', tag: 'New gutters' },
+  { src: '/assets/service-gutters-repair.webp?v=2', fallback: '/assets/service-gutters-repair.jpg?v=2', alt: 'Repairing a sagging gutter run in Paulding County', cap: 'Gutter repair & realignment', tag: 'Repair' },
+  { src: '/assets/service-gutters-clean.webp?v=2', fallback: '/assets/service-gutters-clean.jpg?v=2', alt: 'Clearing leaves and debris from an overflowing gutter', cap: 'Cleaning & leaf guard', tag: 'Protection' },
 ];
 
 const servicesList = [
@@ -63,7 +63,7 @@ export default function GutterPage() {
             </p>
           </div>
           <div className="rv">
-            <img src="/assets/service-gutters-main.webp" alt="Seamless gutter installation on a Dallas, GA home" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} loading="eager" decoding="async" />
+            <img src="/assets/service-gutters-main.webp?v=2" alt="Seamless gutter installation on a Dallas, GA home" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} loading="eager" decoding="async" />
           </div>
         </div>
 

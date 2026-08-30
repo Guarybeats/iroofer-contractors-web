@@ -41,8 +41,8 @@ export const services = [
     slug: 'roof-repair',
     title: 'Roof Repair',
     tagline: 'Stop the leak before it spreads.',
-    image: '/assets/service-repair.jpg',
-    webp: '/assets/service-repair.webp',
+    image: '/assets/service-repair.jpg?v=2',
+    webp: '/assets/service-repair.webp?v=2',
     summary:
       'From storm damage to worn flashing, we find the source and fix it right — so a small problem stays small.',
     bullets: [
@@ -56,8 +56,8 @@ export const services = [
     slug: 'roof-replacement',
     title: 'Roof Replacement',
     tagline: 'A new roof that lasts decades.',
-    image: '/assets/service-replacement.jpg',
-    webp: '/assets/service-replacement.webp',
+    image: '/assets/service-replacement.jpg?v=2',
+    webp: '/assets/service-replacement.webp?v=2',
     summary:
       'Full tear-off and replacement with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, installed clean and built to last. Backed by the manufacturer’s warranty on the shingles.',
     bullets: [
@@ -71,8 +71,8 @@ export const services = [
     slug: 'new-construction',
     title: 'New Construction',
     tagline: 'Roofing done right from frame-up.',
-    image: '/assets/service-newconstruction.jpg',
-    webp: '/assets/service-newconstruction.webp',
+    image: '/assets/service-newconstruction.jpg?v=2',
+    webp: '/assets/service-newconstruction.webp?v=2',
     summary:
       'We partner with builders and homeowners on new builds to install a roof that matches the design and the budget.',
     bullets: [
@@ -86,8 +86,8 @@ export const services = [
     slug: 'gutter-repair-replacement',
     title: 'Gutter Repair & Replacement',
     tagline: 'Protect your roof, fascia, and foundation.',
-    image: '/assets/service-gutters-main.jpg',
-    webp: '/assets/service-gutters-main.webp',
+    image: '/assets/service-gutters-main.jpg?v=2',
+    webp: '/assets/service-gutters-main.webp?v=2',
     summary:
       'Clogged or failing gutters are the #1 cause of preventable roof and foundation damage in Dallas, GA. We repair, realign, and replace gutters and downspouts so water flows away from your home.',
     bullets: [
@@ -101,8 +101,8 @@ export const services = [
     slug: 'storm-damage-roof-repair',
     title: 'Storm Damage Roof Repair',
     tagline: '24/7 storm response across west Metro Atlanta.',
-    image: '/assets/storm-damage.jpg',
-    webp: '/assets/storm-damage.webp',
+    image: '/assets/storm-damage.jpg?v=2',
+    webp: '/assets/storm-damage.webp?v=2',
     summary:
       'Wind, hail, and fallen limbs do damage that is easy to miss from the ground. We inspect free, tarp the same day when a roof is open to the weather, and document everything you need for your claim.',
     bullets: [

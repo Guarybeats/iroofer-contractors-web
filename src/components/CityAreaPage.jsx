@@ -106,9 +106,9 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
           </div>
           <div className="rv">
             <picture>
-              <source srcSet="/assets/hero.webp" type="image/webp" />
+              <source srcSet="/assets/hero.webp?v=2" type="image/webp" />
               <img
-                src="/assets/hero.jpg"
+                src="/assets/hero.jpg?v=2"
                 alt={`iRoofer Contractors roofing crew working in ${city.name}, ${city.state}`}
                 loading="lazy"
                 style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }}
