@@ -21,6 +21,11 @@ export const guidesByService = {
     { href: '/blog/roof-maintenance-calendar-dallas-ga', title: 'Year-round roof maintenance calendar' },
     { href: '/blog/skylight-leak-repair-dallas-ga', title: 'Tracking down a skylight leak' },
   ],
+  'storm-damage-roof-repair': [
+    { href: '/blog/georgia-hail-storm-roof-checklist', title: 'Georgia hail storm roof checklist' },
+    { href: '/blog/emergency-roof-tarping-dallas', title: 'Emergency roof tarping: what happens first' },
+    { href: '/blog/wind-damage-roof-repair-dallas', title: 'Wind damage roof repair, step by step' },
+  ],
   'roof-insurance-claims': [
     { href: '/blog/dallas-ga-hail-storm-insurance-claims', title: 'Hail storm insurance claims in Dallas, GA' },
     { href: '/blog/georgia-hail-storm-roof-checklist', title: 'Georgia hail storm roof checklist' },
