@@ -1,7 +1,6 @@
 'use client';
 
 import { brand, services, cities } from '@/lib/brand';
-import { reviews as SHARED_REVIEWS } from '@/lib/reviews';
 import { usePathname } from 'next/navigation';
 
 // Google Business Profile link — real GBP Maps short link (provided by owner).
@@ -19,8 +18,6 @@ export const STREET_ADDRESS = '152 Freedom Dr';
 
 // Build the JSON-LD schema graph. Pure function so it can render in <head>.
 export function buildSeoGraph(path) {
-  const nowIso = new Date().toISOString();
-
   const localBusiness = {
     '@type': ['RoofingContractor', 'LocalBusiness'],
     '@id': `${brand.url}/#business`,
@@ -73,21 +70,11 @@ export function buildSeoGraph(path) {
     openingHoursSpecification: [
       { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '09:00', closes: '19:00' },
       { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '09:00', closes: '17:00' },
-      { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Sunday', opens: '00:00', closes: '00:00' },
+      // Sunday omitted on purpose = closed. '00:00'-'00:00' reads as ambiguous/open-24h.
     ],
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '5',
-      reviewCount: brand.reviewCount,
-      bestRating: '5',
-    },
-    review: (globalThis.__reviews || SHARED_REVIEWS).map((r) => ({
-      '@type': 'Review',
-      reviewBody: r.q.replace(/[“”]/g, ''),
-      author: { '@type': 'Person', name: r.who },
-      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-      datePublished: nowIso,
-    })),
+    // Self-hosted review markup (aggregateRating + embedded reviews) is ignored by
+    // Google for LocalBusiness since 2019 and reads as self-serving to quality checks.
+    // Ratings live on the Google Business Profile, linked in sameAs above.
   };
 
   const webSite = {
@@ -112,17 +99,11 @@ export function buildSeoGraph(path) {
   // landing page (/<service-slug>-<city-slug>) into the schema graph.
   // Cities flagged `combo: false` have no generated /<service>-<city> pages yet,
   // so they are excluded here to avoid schema URLs that 404.
-  const comboServiceGraph = services.flatMap((s) =>
-    cities.filter((c) => c.combo !== false).map((c) => ({
-      '@type': 'Service',
-      name: `${s.title} in ${c.name}, ${c.state}`,
-      serviceType: s.title,
-      provider: { '@type': 'RoofingContractor', name: brand.name, '@id': `${brand.url}/#business` },
-      areaServed: { '@type': 'City', name: c.name, address: { '@type': 'PostalAddress', addressRegion: c.state, addressCountry: 'US' } },
-      description: s.summary,
-      url: `${brand.url}/${s.slug}-${c.slug}`,
-    }))
-  );
+  // NOTE (2026-08-30): the per-city combo Service nodes were removed. 32 near-identical
+  // Service objects on every page is schema bloat with no ranking benefit; the four core
+  // Service nodes above already carry areaServed for the full service area, and each
+  // combo landing page states its own city in copy, title and breadcrumb.
+  const comboServiceGraph = [];
 
   // BreadcrumbList — machine-readable navigation trail for answer engines.
   const breadcrumb = (() => {
@@ -173,9 +154,7 @@ export function FaqSchema({ faq }) {
   );
 }
 
-export default function LocalSeo({ reviews = SHARED_REVIEWS, faq = null }) {
-  // expose reviews to buildSeoGraph without prop drilling into a module global
-  globalThis.__reviews = reviews;
+export default function LocalSeo({ faq = null }) {
   const pathname = usePathname();
   const graph = buildSeoGraph(pathname || '/');
 

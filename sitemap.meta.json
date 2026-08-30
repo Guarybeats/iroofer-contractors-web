@@ -144,26 +144,6 @@
       }
     ]
   },
-  "/roof-replacement-marietta-ga/": {
-    "priority": "0.9",
-    "changefreq": "weekly",
-    "images": [
-      {
-        "loc": "https://iroofercontractors.com/assets/service-replacement.jpg",
-        "title": "Roof replacement in Marietta, GA by iRoofer Contractors"
-      }
-    ]
-  },
-  "/storm-damage-kennesaw-ga/": {
-    "priority": "0.9",
-    "changefreq": "weekly",
-    "images": [
-      {
-        "loc": "https://iroofercontractors.com/assets/storm-damage.jpg",
-        "title": "Storm damage roof repair in Kennesaw, GA by iRoofer Contractors"
-      }
-    ]
-  },
   "/blog/architectural-vs-3-tab-shingles/": {
     "priority": "0.6",
     "changefreq": "monthly",

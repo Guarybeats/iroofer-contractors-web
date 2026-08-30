@@ -10,6 +10,14 @@ export const metadata = {
   title: `iRoofer Contractors | Roof Repair & Replacement Dallas GA`,
   description: `iRoofer Contractors — local Dallas, GA roofer for repair, replacement & storm damage. 5★ on Google, free inspection. Call (470) 236-1410.`,
   robots: { index: true, follow: true },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/assets/icon-32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/assets/icon-192.png', type: 'image/png', sizes: '192x192' },
+    ],
+    apple: [{ url: '/assets/icon-180.png', sizes: '180x180' }],
+  },
   alternates: { canonical: 'https://iroofercontractors.com/' },
   openGraph: {
     type: 'website',
@@ -18,13 +26,13 @@ export const metadata = {
     title: `iRoofer Contractors | Roof Repair & Replacement Dallas GA`,
     description: `Local Dallas, GA roofer for repair, replacement & storm damage. 5★ on Google, free inspection. Call (470) 236-1410.`,
     locale: 'en_US',
-    images: [{ url: 'https://iroofercontractors.com/assets/hero.webp', alt: 'iRoofer Contractors roofing a home in Dallas, GA', width: 1280, height: 960 }],
+    images: [{ url: 'https://iroofercontractors.com/assets/hero.jpg', alt: 'iRoofer Contractors roofing a home in Dallas, GA', width: 1280, height: 960 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: `iRoofer Contractors | Roof Repair & Replacement Dallas GA`,
     description: `Local Dallas, GA roofer for repair, replacement & storm damage. 5★ on Google, free inspection. Call (470) 236-1410.`,
-    images: ['https://iroofercontractors.com/assets/hero.webp'],
+    images: ['https://iroofercontractors.com/assets/hero.jpg'],
   },
 };
 
@@ -162,8 +170,8 @@ export default function RootLayout({ children }) {
               <div className="foot-col">
                 <h5>Local services</h5>
                 <a href="/roof-repair-dallas-ga">Roof Repair Dallas, GA</a>
-                <a href="/roof-replacement-marietta-ga">Roof Replacement Marietta, GA</a>
-                <a href="/storm-damage-kennesaw-ga">Storm Damage Kennesaw, GA</a>
+                <a href="/roof-replacement-marietta">Roof Replacement Marietta, GA</a>
+                <a href="/storm-damage-roof-repair-kennesaw">Storm Damage Kennesaw, GA</a>
                 <a href="/storm-damage-roof-repair-dallas-ga">Storm Damage Dallas, GA</a>
                 <a href="/emergency-roof-repair-dallas-ga">Emergency Repair Dallas, GA</a>
               </div>

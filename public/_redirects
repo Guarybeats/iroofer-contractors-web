@@ -28,3 +28,8 @@
 # Legacy service-area URLs (towns we no longer have pages for)
 /service-areas/canton-ga-usa  /service-areas/                               301
 /service-areas/rome-ga-usa    /service-areas/                               301
+
+# Duplicate service+city pages consolidated 2026-08-30 (split ranking signals).
+# Keep the site-convention URL, 301 the twin.
+/roof-replacement-marietta-ga   /roof-replacement-marietta/            301
+/storm-damage-kennesaw-ga       /storm-damage-roof-repair-kennesaw/    301
