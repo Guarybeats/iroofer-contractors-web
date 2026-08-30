@@ -96,6 +96,21 @@ export const services = [
       'Downspout & drainage correction',
       'Leaf-guard & gutter guard options'
     ]
+  },
+  {
+    slug: 'storm-damage-roof-repair',
+    title: 'Storm Damage Roof Repair',
+    tagline: '24/7 storm response across west Metro Atlanta.',
+    image: '/assets/storm-damage.jpg',
+    webp: '/assets/storm-damage.webp',
+    summary:
+      'Wind, hail, and fallen limbs do damage that is easy to miss from the ground. We inspect free, tarp the same day when a roof is open to the weather, and document everything you need for your claim.',
+    bullets: [
+      'Free post-storm roof inspection',
+      'Same-day emergency tarping',
+      'Hail and wind damage documentation for your claim',
+      'Full repair or replacement once the claim is settled'
+    ]
   }
 ];
 

@@ -643,5 +643,15 @@
     "priority": "0.7",
     "changefreq": "monthly",
     "images": []
+  },
+  "/services/storm-damage-roof-repair/": {
+    "priority": "0.8",
+    "changefreq": "monthly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/storm-damage.jpg",
+        "title": "Storm damage roof repair in Dallas, GA and Metro Atlanta"
+      }
+    ]
   }
 }
