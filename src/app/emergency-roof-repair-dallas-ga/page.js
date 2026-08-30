@@ -75,9 +75,9 @@ export default function EmergencyPage() {
                 </Link>
               </div>
 
-              <h4 style={{ marginTop: 40, fontSize: '1.1rem' }}>
+              <h2 style={{ marginTop: 40, fontSize: '1.1rem' }}>
                 After a storm — do this now
-              </h4>
+              </h2>
               <ol style={{ marginTop: 12, lineHeight: 1.7, color: '#52606b' }}>
                 {steps.map((step) => (
                   <li key={step.substring(0, 30)}>{step}</li>

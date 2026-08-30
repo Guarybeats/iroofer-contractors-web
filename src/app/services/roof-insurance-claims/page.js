@@ -96,7 +96,7 @@ export default function Page() {
           <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(260px,1fr))' }}>
             {steps.map(([t, d]) => (
               <div key={t} className="svc-card">
-                <h4 style={{ fontSize: '1.05rem', fontWeight: 800 }}>{t}</h4>
+                <h3 style={{ fontSize: '1.05rem', fontWeight: 800 }}>{t}</h3>
                 <p style={{ color: '#52606b', fontSize: '.95rem', marginTop: 8 }}>{d}</p>
               </div>
             ))}

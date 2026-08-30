@@ -4,6 +4,7 @@ import QuoteForm from '@/components/QuoteForm';
 import RelatedGuides from '@/components/RelatedGuides';
 import { getService, services, brand, cities } from '@/lib/brand';
 import { seo } from '@/lib/seo';
+import Pic from '@/components/Pic';
 
 export function generateStaticParams() {
   // gutter-repair-replacement has a dedicated static page — exclude it here
@@ -59,7 +60,7 @@ export default function ServiceDetail({ params }) {
             )}
           </div>
           <div className="rv">
-            <img src={service.image} alt={service.title} loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
+            <Pic src={service.image} alt={service.title} style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
             <div style={{ maxWidth: 460, margin: '32px auto 0' }}>
               <QuoteForm variant="detail" id={`quote-${service.slug}`} />
             </div>

@@ -120,19 +120,19 @@ export default function Page() {
           </div>
           <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
             <Link key="roof-repair" href="/roof-repair-powder-springs" className="svc-card">
-              <h4 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Repair in Powder Springs</h4>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Repair in Powder Springs</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
             <Link key="roof-replacement" href="/roof-replacement-powder-springs" className="svc-card">
-              <h4 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Powder Springs</h4>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Powder Springs</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
             <Link key="storm-damage-roof-repair" href="/storm-damage-roof-repair-powder-springs" className="svc-card">
-              <h4 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Storm Damage Roof Repair in Powder Springs</h4>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Storm Damage Roof Repair in Powder Springs</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
             <Link key="gutter-repair-replacement" href="/gutter-repair-replacement-powder-springs" className="svc-card">
-              <h4 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Gutter Repair & Replacement in Powder Springs</h4>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Gutter Repair & Replacement in Powder Springs</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
           </div>

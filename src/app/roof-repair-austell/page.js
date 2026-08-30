@@ -120,19 +120,19 @@ export default function Page() {
           </div>
           <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
             <Link key="roof-replacement" href="/roof-replacement-austell" className="svc-card">
-              <h4 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Austell</h4>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Austell</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
             <Link key="new-construction" href="/new-construction-austell" className="svc-card">
-              <h4 style={{ fontSize: '1.1rem', fontWeight: 800 }}>New Construction in Austell</h4>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>New Construction in Austell</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
             <Link key="storm-damage-roof-repair" href="/storm-damage-roof-repair-austell" className="svc-card">
-              <h4 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Storm Damage Roof Repair in Austell</h4>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Storm Damage Roof Repair in Austell</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
             <Link key="gutter-repair-replacement" href="/gutter-repair-replacement-austell" className="svc-card">
-              <h4 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Gutter Repair & Replacement in Austell</h4>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Gutter Repair & Replacement in Austell</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
           </div>

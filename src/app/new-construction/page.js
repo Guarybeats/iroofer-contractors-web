@@ -80,9 +80,9 @@ export default function NewConstructionPage() {
                 </Link>
               </div>
 
-              <h4 style={{ marginTop: 40, fontSize: '1.1rem' }}>
+              <h2 style={{ marginTop: 40, fontSize: '1.1rem' }}>
                 Builder checklist — what you need before we start
-              </h4>
+              </h2>
               <ol style={{ marginTop: 12, lineHeight: 1.7, color: '#52606b' }}>
                 {steps.map((step) => (
                   <li key={step.substring(0, 30)}>{step}</li>

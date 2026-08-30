@@ -120,19 +120,19 @@ export default function Page() {
           </div>
           <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
             <Link key="roof-repair" href="/roof-repair-douglasville" className="svc-card">
-              <h4 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Repair in Douglasville</h4>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Repair in Douglasville</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
             <Link key="roof-replacement" href="/roof-replacement-douglasville" className="svc-card">
-              <h4 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Douglasville</h4>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Douglasville</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
             <Link key="new-construction" href="/new-construction-douglasville" className="svc-card">
-              <h4 style={{ fontSize: '1.1rem', fontWeight: 800 }}>New Construction in Douglasville</h4>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>New Construction in Douglasville</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
             <Link key="gutter-repair-replacement" href="/gutter-repair-replacement-douglasville" className="svc-card">
-              <h4 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Gutter Repair & Replacement in Douglasville</h4>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Gutter Repair & Replacement in Douglasville</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
           </div>

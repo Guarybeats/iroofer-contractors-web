@@ -120,19 +120,19 @@ export default function Page() {
           </div>
           <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
             <Link key="roof-repair" href="/roof-repair-hiram" className="svc-card">
-              <h4 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Repair in Hiram</h4>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Repair in Hiram</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
             <Link key="roof-replacement" href="/roof-replacement-hiram" className="svc-card">
-              <h4 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Hiram</h4>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Hiram</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
             <Link key="new-construction" href="/new-construction-hiram" className="svc-card">
-              <h4 style={{ fontSize: '1.1rem', fontWeight: 800 }}>New Construction in Hiram</h4>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>New Construction in Hiram</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
             <Link key="gutter-repair-replacement" href="/gutter-repair-replacement-hiram" className="svc-card">
-              <h4 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Gutter Repair & Replacement in Hiram</h4>
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Gutter Repair & Replacement in Hiram</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
           </div>

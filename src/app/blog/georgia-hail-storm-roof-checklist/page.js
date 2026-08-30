@@ -75,7 +75,7 @@ export default function BlogStormChecklist() {
                   fontFamily: 'var(--display)', fontSize: '1.4rem', fontWeight: 800, flexShrink: 0,
                 }}>{s.n}</span>
                 <div>
-                  <h3 style={{ fontSize: '1.2rem', fontWeight: 700, marginTop: 0 }}>{s.t}</h3>
+                  <h2 style={{ fontSize: '1.2rem', fontWeight: 700, marginTop: 0 }}>{s.t}</h2>
                   <p style={{ color: '#52606b', fontSize: '.95rem', lineHeight: 1.6, margin: '8px 0 0' }}>{s.d}</p>
                 </div>
               </li>
@@ -84,7 +84,7 @@ export default function BlogStormChecklist() {
         </div>
 
         <div className="rv" style={{ marginTop: 48, padding: '2rem', background: '#fff', border: '1px solid rgba(22,29,37,.1)', borderRadius: 8 }}>
-          <h3 style={{ marginTop: 0, fontSize: '1.3rem' }}>Need help after a storm?</h3>
+          <h2 style={{ marginTop: 0, fontSize: '1.3rem' }}>Need help after a storm?</h2>
           <p style={{ color: '#52606b' }}>
             If you're in Dallas, GA or the surrounding area and your roof has taken a hit, we're here to help.
             Call{' '}

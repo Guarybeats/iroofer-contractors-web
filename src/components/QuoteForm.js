@@ -38,7 +38,7 @@ export default function QuoteForm({ id = "quote", source = "website", variant, e
 
   return (
     <form ref={formRef} className={formClass} id={id} onSubmit={onSubmit}>
-      <h3>{title}</h3>
+      <h2>{title}</h2>
       <p
         style={{
           color: "var(--steel, #8ea2b4)",
