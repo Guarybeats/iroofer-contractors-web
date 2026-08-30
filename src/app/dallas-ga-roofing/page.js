@@ -79,22 +79,22 @@ export default function DallasGaRoofingPage() {
             <div className="card">
               <h3>Roof Repair</h3>
               <p>Leaks, storm damage, flashing, vents, and shingle repair. We find the source and fix it right so a small problem stays small.</p>
-              <Link href="/roof-repair-dallas-ga" className="chip">Dallas roof repair →</Link>
+              <Link href="/roof-repair-dallas-ga/" className="chip">Dallas roof repair →</Link>
             </div>
             <div className="card">
               <h3>Roof Replacement</h3>
               <p>Full tear-off and re-roof with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, installed clean and built to last.</p>
-              <Link href="/roof-replacement-dallas-ga" className="chip">Dallas roof replacement →</Link>
+              <Link href="/roof-replacement-dallas-ga/" className="chip">Dallas roof replacement →</Link>
             </div>
             <div className="card">
               <h3>Storm & Hail Damage</h3>
               <p>Free inspections, same-day emergency tarping, and insurance documentation after Georgia storms.</p>
-              <Link href="/storm-damage-roof-repair-dallas-ga" className="chip">Storm damage help →</Link>
+              <Link href="/storm-damage-roof-repair-dallas-ga/" className="chip">Storm damage help →</Link>
             </div>
             <div className="card">
               <h3>Gutters</h3>
               <p>Repair, realignment, and replacement of gutters and downspouts so water flows away from your home.</p>
-              <Link href="/gutter-repair-replacement-dallas-ga" className="chip">Gutter services →</Link>
+              <Link href="/gutter-repair-replacement-dallas-ga/" className="chip">Gutter services →</Link>
             </div>
           </div>
         </div>

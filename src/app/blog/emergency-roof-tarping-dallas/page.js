@@ -2,6 +2,7 @@ import { OG_IMAGE } from '@/lib/seo';
 import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
@@ -28,6 +29,7 @@ const post = {
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="emergency-roof-tarping-dallas" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -113,7 +115,7 @@ export default function BlogPostPage() {
 
             <h2>Don’t Wait for Morning</h2>
             <p>Every hour your roof stays exposed is $500 in potential damage. Call now — we’re here 24/7.</p>
-            <p><Link href="/emergency-roof-repair-dallas-ga" className="btn btn-solid">Get Emergency Help Now →</Link></p>
+            <p><Link href="/emergency-roof-repair-dallas-ga/" className="btn btn-solid">Get Emergency Help Now →</Link></p>
           </div>
         </div>
             <RelatedPosts slug="emergency-roof-tarping-dallas" />

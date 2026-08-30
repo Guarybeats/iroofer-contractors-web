@@ -3,6 +3,7 @@ import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 import { brand } from '@/lib/brand';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
@@ -28,6 +29,7 @@ const post = {
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="skylight-leak-repair-dallas-ga" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -95,7 +97,7 @@ export default function BlogPostPage() {
             <h2>Leaking Skylight? We'll Diagnose It Free.</h2>
             <p>Not sure if it's a leak or condensation? We'll climb up, run a hose test, and tell you exactly what's happening — no charge if you're in our service area.</p>
             <RelatedPosts slug="skylight-leak-repair-dallas-ga" />
-            <p><Link href="/estimator" className="btn btn-solid">Schedule a Skylight Inspection →</Link></p>
+            <p><Link href="/estimator/" className="btn btn-solid">Schedule a Skylight Inspection →</Link></p>
           </div>
         </div>
       </article>

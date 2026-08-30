@@ -43,7 +43,7 @@ export default function Page() {
         <div className="wrap" style={{ position: 'relative' }}>
           <div className="faq-grid" style={{ alignItems: 'start' }}>
             <div className="rv">
-              <Link href="/services/gutter-repair-replacement" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>
+              <Link href="/services/gutter-repair-replacement/" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>
                 ← Gutter Repair & Replacement
               </Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>Dallas, GA</span>
@@ -107,7 +107,7 @@ export default function Page() {
               </div>
           </div>
           <div style={{ marginTop: 28 }}>
-            <Link href="/service-areas/dallas-ga" className="btn btn-ink">More about our Dallas service area <span className="arr">→</span></Link>
+            <Link href="/service-areas/dallas-ga/" className="btn btn-ink">More about our Dallas service area <span className="arr">→</span></Link>
           </div>
         </div>
       </section>
@@ -119,19 +119,19 @@ export default function Page() {
             <h2>Other services we offer in Dallas, GA</h2>
           </div>
           <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
-            <Link key="roof-repair" href="/roof-repair-dallas-ga" className="svc-card">
+            <Link key="roof-repair" href="/roof-repair-dallas-ga/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Repair in Dallas</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
-            <Link key="roof-replacement" href="/roof-replacement-dallas-ga" className="svc-card">
+            <Link key="roof-replacement" href="/roof-replacement-dallas-ga/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Dallas</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
-            <Link key="new-construction" href="/new-construction-dallas-ga" className="svc-card">
+            <Link key="new-construction" href="/new-construction-dallas-ga/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>New Construction in Dallas</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
-            <Link key="storm-damage-roof-repair" href="/storm-damage-roof-repair-dallas-ga" className="svc-card">
+            <Link key="storm-damage-roof-repair" href="/storm-damage-roof-repair-dallas-ga/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Storm Damage Roof Repair in Dallas</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>

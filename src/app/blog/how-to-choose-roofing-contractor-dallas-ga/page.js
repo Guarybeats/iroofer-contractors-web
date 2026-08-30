@@ -3,6 +3,7 @@ import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 import { brand } from '@/lib/brand';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
@@ -28,6 +29,7 @@ const post = {
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="how-to-choose-roofing-contractor-dallas-ga" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -85,7 +87,7 @@ export default function BlogPostPage() {
             <h2>Get a Second Opinion — Free</h2>
             <p>Already have a quote? We'll review it line by line at no cost. No pressure to switch — just honest feedback on scope, materials, and pricing.</p>
             <RelatedPosts slug="how-to-choose-roofing-contractor-dallas-ga" />
-            <p><Link href="/estimator" className="btn btn-solid">Request a Free Quote Review →</Link></p>
+            <p><Link href="/estimator/" className="btn btn-solid">Request a Free Quote Review →</Link></p>
           </div>
         </div>
       </article>

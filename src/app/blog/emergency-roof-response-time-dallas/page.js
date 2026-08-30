@@ -3,6 +3,7 @@ import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 import { brand } from '@/lib/brand';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
@@ -29,6 +30,7 @@ const post = {
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="emergency-roof-response-time-dallas" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -171,7 +173,7 @@ export default function BlogPostPage() {
 
             <h2>Don’t Wait — Every Hour Costs You</h2>
             <p>If your roof is compromised, every hour delays makes the damage worse. Water damage escalates, insurance claims get complicated, and prices go up when crews are stretched thin.</p>
-            <p><Link href="/emergency-roof-repair-dallas-ga" className="btn btn-solid">Emergency Roof Help →</Link></p>
+            <p><Link href="/emergency-roof-repair-dallas-ga/" className="btn btn-solid">Emergency Roof Help →</Link></p>
           </div>
         </div>
             <RelatedPosts slug="emergency-roof-response-time-dallas" />

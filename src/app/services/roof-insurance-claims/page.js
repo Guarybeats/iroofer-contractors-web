@@ -56,7 +56,7 @@ export default function Page() {
         <div className="wrap" style={{ position: 'relative' }}>
           <div className="faq-grid" style={{ alignItems: 'start' }}>
             <div className="rv">
-              <Link href="/services" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>← All services</Link>
+              <Link href="/services/" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>← All services</Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>Dallas, GA &amp; Metro Atlanta</span>
               <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02, marginTop: 8 }}>
                 Roof Insurance Claims, Handled For You
@@ -154,8 +154,8 @@ export default function Page() {
             ))}
           </div>
           <div style={{ marginTop: 28 }}>
-            <Link href="/storm-damage-roof-repair-dallas-ga" className="btn btn-ink">Storm damage roof repair in Dallas, GA <span className="arr">→</span></Link>
-            <Link href="/blog/dallas-ga-hail-storm-insurance-claims" className="btn btn-ink" style={{ marginLeft: 12 }}>Hail claim guide <span className="arr">→</span></Link>
+            <Link href="/storm-damage-roof-repair-dallas-ga/" className="btn btn-ink">Storm damage roof repair in Dallas, GA <span className="arr">→</span></Link>
+            <Link href="/blog/dallas-ga-hail-storm-insurance-claims/" className="btn btn-ink" style={{ marginLeft: 12 }}>Hail claim guide <span className="arr">→</span></Link>
           </div>
         </div>
       </section>

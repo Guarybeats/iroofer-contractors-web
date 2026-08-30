@@ -43,7 +43,7 @@ export default function Page() {
         <div className="wrap" style={{ position: 'relative' }}>
           <div className="faq-grid" style={{ alignItems: 'start' }}>
             <div className="rv">
-              <Link href="/services/roof-repair" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>
+              <Link href="/services/roof-repair/" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>
                 ← Roof Repair
               </Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>Powder Springs, GA</span>
@@ -107,7 +107,7 @@ export default function Page() {
               </div>
           </div>
           <div style={{ marginTop: 28 }}>
-            <Link href="/service-areas/powder-springs" className="btn btn-ink">More about our Powder Springs service area <span className="arr">→</span></Link>
+            <Link href="/service-areas/powder-springs/" className="btn btn-ink">More about our Powder Springs service area <span className="arr">→</span></Link>
           </div>
         </div>
       </section>
@@ -119,19 +119,19 @@ export default function Page() {
             <h2>Other services we offer in Powder Springs, GA</h2>
           </div>
           <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
-            <Link key="roof-replacement" href="/roof-replacement-powder-springs" className="svc-card">
+            <Link key="roof-replacement" href="/roof-replacement-powder-springs/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Powder Springs</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
-            <Link key="new-construction" href="/new-construction-powder-springs" className="svc-card">
+            <Link key="new-construction" href="/new-construction-powder-springs/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>New Construction in Powder Springs</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
-            <Link key="storm-damage-roof-repair" href="/storm-damage-roof-repair-powder-springs" className="svc-card">
+            <Link key="storm-damage-roof-repair" href="/storm-damage-roof-repair-powder-springs/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Storm Damage Roof Repair in Powder Springs</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
-            <Link key="gutter-repair-replacement" href="/gutter-repair-replacement-powder-springs" className="svc-card">
+            <Link key="gutter-repair-replacement" href="/gutter-repair-replacement-powder-springs/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Gutter Repair & Replacement in Powder Springs</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>

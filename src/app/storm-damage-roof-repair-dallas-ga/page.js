@@ -110,7 +110,7 @@ export default function Page() {
               </div>
           </div>
           <div style={{ marginTop: 28 }}>
-            <Link href="/service-areas/dallas-ga" className="btn btn-ink">More about our Dallas service area <span className="arr">→</span></Link>
+            <Link href="/service-areas/dallas-ga/" className="btn btn-ink">More about our Dallas service area <span className="arr">→</span></Link>
           </div>
         </div>
       </section>
@@ -122,19 +122,19 @@ export default function Page() {
             <h2>Other services we offer in Dallas, GA</h2>
           </div>
           <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
-            <Link key="roof-repair" href="/roof-repair-dallas-ga" className="svc-card">
+            <Link key="roof-repair" href="/roof-repair-dallas-ga/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Repair in Dallas</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
-            <Link key="roof-replacement" href="/roof-replacement-dallas-ga" className="svc-card">
+            <Link key="roof-replacement" href="/roof-replacement-dallas-ga/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Dallas</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
-            <Link key="new-construction" href="/new-construction-dallas-ga" className="svc-card">
+            <Link key="new-construction" href="/new-construction-dallas-ga/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>New Construction in Dallas</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
-            <Link key="gutter-repair-replacement" href="/gutter-repair-replacement-dallas-ga" className="svc-card">
+            <Link key="gutter-repair-replacement" href="/gutter-repair-replacement-dallas-ga/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Gutter Repair & Replacement in Dallas</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>

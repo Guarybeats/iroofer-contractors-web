@@ -2,6 +2,7 @@ import { OG_IMAGE } from '@/lib/seo';
 import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
@@ -28,6 +29,7 @@ const post = {
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="new-construction-roofing-dallas" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -116,7 +118,7 @@ export default function BlogPostPage() {
 
             <h2>Ready to Partner on Your Next Build?</h2>
             <p>Schedule a free consultation — we’ll review your specs, provide exact pricing, and coordinate with your timeline. No call center, no middleman.</p>
-            <p><Link href="/new-construction" className="btn btn-solid">Talk to a Builder Specialist →</Link></p>
+            <p><Link href="/new-construction/" className="btn btn-solid">Talk to a Builder Specialist →</Link></p>
           </div>
         </div>
             <RelatedPosts slug="new-construction-roofing-dallas" />

@@ -48,14 +48,14 @@ export default function BlogPage() {
                 <span style={{ color: '#8ea2b4', fontSize: '.85rem' }}>{p.date} · {p.readTime}</span>
               </div>
               <h2 style={{ fontSize: 'clamp(1.3rem,2.5vw,1.6rem)', fontWeight: 800, margin: '0 0 12px' }}>
-                <Link href={`/blog/${p.slug}`} style={{ color: 'inherit', textDecoration: 'none' }}>
+                <Link href={`/blog/${p.slug}/`} style={{ color: 'inherit', textDecoration: 'none' }}>
                   {p.title}
                 </Link>
               </h2>
               <p style={{ color: '#52606b', fontSize: '.95rem', lineHeight: 1.6, margin: '0 0 16px' }}>
                 {p.excerpt}
               </p>
-              <Link href={`/blog/${p.slug}`} style={{
+              <Link href={`/blog/${p.slug}/`} style={{
                 color: 'var(--orange)', fontWeight: 700, textDecoration: 'none',
                 display: 'inline-flex', alignItems: 'center', gap: 4
               }}>

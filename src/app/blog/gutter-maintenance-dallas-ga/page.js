@@ -2,6 +2,7 @@ import { OG_IMAGE } from '@/lib/seo';
 import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
@@ -28,6 +29,7 @@ const post = {
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="gutter-maintenance-dallas-ga" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -101,7 +103,7 @@ export default function BlogPostPage() {
 
             <h2>Need Gutter Service in Dallas GA?</h2>
             <p>Schedule a free gutter + roof inspection — we’ll check your gutters, fascia, and roof edge all at once. No pressure, no upsell.</p>
-            <p><Link href="/contact" className="btn btn-solid">Request Free Gutter Inspection →</Link></p>
+            <p><Link href="/contact/" className="btn btn-solid">Request Free Gutter Inspection →</Link></p>
           </div>
         </div>
             <RelatedPosts slug="gutter-maintenance-dallas-ga" />

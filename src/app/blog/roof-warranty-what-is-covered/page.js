@@ -3,6 +3,7 @@ import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 import { brand } from '@/lib/brand';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
@@ -29,6 +30,7 @@ const post = {
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="roof-warranty-what-is-covered" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -167,7 +169,7 @@ export default function BlogPostPage() {
 
             <h2>Questions About Your Warranty?</h2>
             <p>If you had your roof installed by someone else or you’re unsure what’s covered, we’ll review your paperwork for free. Call us or schedule a consultation — we’ll tell you the truth, even if we can’t help.</p>
-            <p><Link href="/contact" className="btn btn-solid">Review My Warranty →</Link></p>
+            <p><Link href="/contact/" className="btn btn-solid">Review My Warranty →</Link></p>
           </div>
         </div>
             <RelatedPosts slug="roof-warranty-what-is-covered" />

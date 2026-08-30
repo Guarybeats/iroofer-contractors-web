@@ -50,7 +50,7 @@ export default function RelatedPosts({ slug }) {
         {related.map((p) => (
           <Link
             key={p.slug}
-            href={`/blog/${p.slug}`}
+            href={`/blog/${p.slug}/`}
             style={{
               display: 'block',
               background: '#fff',

@@ -2,6 +2,7 @@ import { OG_IMAGE } from '@/lib/seo';
 import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
@@ -28,6 +29,7 @@ const post = {
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="metal-roofing-pros-cons-dallas" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -148,7 +150,7 @@ export default function BlogPostPage() {
             <h2>Still Deciding?</h2>
             <p>We’ll walk you through the pros and cons during a free consultation — show you real metal samples, explain the installation process, and provide exact pricing for your specific home. No pressure, no upsell.</p>
             <RelatedPosts slug="metal-roofing-pros-cons-dallas" />
-            <p><Link href="/estimator" className="btn btn-solid">Talk to a Metal Roofing Specialist →</Link></p>
+            <p><Link href="/estimator/" className="btn btn-solid">Talk to a Metal Roofing Specialist →</Link></p>
           </div>
         </div>
       </article>

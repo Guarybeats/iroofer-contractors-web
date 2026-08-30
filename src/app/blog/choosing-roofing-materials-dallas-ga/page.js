@@ -2,6 +2,7 @@ import { OG_IMAGE } from '@/lib/seo';
 import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 const post = {
   slug: 'choosing-roofing-materials-dallas-ga',
@@ -27,6 +28,7 @@ export const metadata = {
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="choosing-roofing-materials-dallas-ga" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -104,7 +106,7 @@ export default function BlogPostPage() {
             <h2>Still Deciding? Let's Talk Materials</h2>
             <p>We'll walk you through the options during a free, no-pressure inspection. We show you real samples, explain the pros/cons for your specific roof structure, and provide exact pricing — no sales pressure.</p>
             <RelatedPosts slug="choosing-roofing-materials-dallas-ga" />
-            <p><Link href="/estimator" className="btn btn-solid">Get a Free Material Consultation →</Link></p>
+            <p><Link href="/estimator/" className="btn btn-solid">Get a Free Material Consultation →</Link></p>
           </div>
         </div>
       </article>

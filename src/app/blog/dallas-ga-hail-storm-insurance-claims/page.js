@@ -2,6 +2,7 @@ import { OG_IMAGE } from '@/lib/seo';
 import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
@@ -28,6 +29,7 @@ const post = {
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="dallas-ga-hail-storm-insurance-claims" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -103,7 +105,7 @@ export default function BlogPostPage() {
 
             <h2>Still Unsure Whether You Have a Valid Claim?</h2>
             <p>Every free inspection from iRoofer includes a detailed written report with photos. No pressure, no obligation. If we find damage, we’ll help you file — and fight for the full payout.</p>
-            <p><Link href={`/contact`} className="btn btn-solid">Schedule Free Storm-Damage Inspection →</Link></p>
+            <p><Link href={`/contact/`} className="btn btn-solid">Schedule Free Storm-Damage Inspection →</Link></p>
           </div>
         </div>
             <RelatedPosts slug="dallas-ga-hail-storm-insurance-claims" />
