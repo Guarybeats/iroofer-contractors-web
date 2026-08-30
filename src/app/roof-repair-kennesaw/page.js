@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import RelatedGuides from '@/components/RelatedGuides';
 import QuoteForm from '@/components/QuoteForm';
 import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
@@ -30,7 +31,7 @@ const faqs = [
   },
   {
     "q": "What does roof repair cost in Kennesaw, GA?",
-    "a": "It depends on size, pitch, and material — we give a free, written quote after inspection. Most repairs run $250–$3,500; full replacements $8,000–$30,000."
+    "a": "It depends on size, pitch, and material — we give a free, written quote after inspection. Pitch, access, decking condition and material choice all move the number, so we measure the roof first and put the figure in writing — no phone estimates, no pressure."
   }
 ];
 
@@ -102,7 +103,7 @@ export default function Page() {
               </div>
               <div className={faqItem(false)}>
                 <button className="faq-q" aria-expanded={false}>{"What does roof repair cost in Kennesaw, GA?"}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{"It depends on size, pitch, and material — we give a free, written quote after inspection. Most repairs run $250–$3,500; full replacements $8,000–$30,000."}</p></div></div>
+                <div className="faq-a"><div><p>{"It depends on size, pitch, and material — we give a free, written quote after inspection. Pitch, access, decking condition and material choice all move the number, so we measure the roof first and put the figure in writing — no phone estimates, no pressure."}</p></div></div>
               </div>
           </div>
           <div style={{ marginTop: 28 }}>
@@ -135,6 +136,11 @@ export default function Page() {
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
           </div>
+        </div>
+      </section>
+      <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <RelatedGuides slug="roof-repair" heading="Local roofing guides" />
         </div>
       </section>
       <FaqSchema faq={faqs} />
