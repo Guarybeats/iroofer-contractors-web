@@ -30,6 +30,8 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
+    site: '@irooferc',
+    creator: '@irooferc',
     title: `iRoofer Contractors | Roof Repair & Replacement Dallas GA`,
     description: `Local Dallas, GA roofer for repair, replacement & storm damage. 5★ on Google, free inspection. Call (470) 236-1410.`,
     images: ['https://iroofercontractors.com/assets/hero.jpg'],
