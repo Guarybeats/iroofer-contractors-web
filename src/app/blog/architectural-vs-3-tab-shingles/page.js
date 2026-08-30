@@ -2,6 +2,7 @@ import { OG_IMAGE } from '@/lib/seo';
 import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
@@ -28,6 +29,7 @@ const post = {
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="architectural-vs-3-tab-shingles" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -115,7 +117,7 @@ export default function BlogPostPage() {
             <h2>Still Deciding? We Can Help.</h2>
             <p>We’ll walk you through the material options during your free inspection — show you real samples, explain the insurance implications, and provide exact pricing for your specific roof. No pressure, no upsell.</p>
             <RelatedPosts slug="architectural-vs-3-tab-shingles" />
-            <p><Link href="/estimator" className="btn btn-solid">Get a Free Material Consultation →</Link></p>
+            <p><Link href="/estimator/" className="btn btn-solid">Get a Free Material Consultation →</Link></p>
           </div>
         </div>
       </article>

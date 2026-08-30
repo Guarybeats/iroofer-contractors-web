@@ -20,7 +20,7 @@ export default function ServiceAreas() {
         </p>
         <div className="cards" style={{ marginTop: 28, gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
           {cities.map((c) => (
-            <Link key={c.slug} href={`/service-areas/${c.slug}`} className="svc-card">
+            <Link key={c.slug} href={`/service-areas/${c.slug}/`} className="svc-card">
               <h2 style={{ fontSize: '1.35rem', fontWeight: 800 }}>{c.name}, {c.state}</h2>
               <p style={{ color: '#52606b', marginTop: 6, fontSize: '.95rem' }}>{c.county} · {c.blurb}</p>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>Get a quote →</span>

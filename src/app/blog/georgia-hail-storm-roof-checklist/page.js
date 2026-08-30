@@ -1,6 +1,7 @@
 import { OG_IMAGE } from '@/lib/seo';
 import Link from 'next/link';
 import { brand } from '@/lib/brand';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
@@ -50,7 +51,9 @@ const steps = [
 
 export default function BlogStormChecklist() {
   return (
-    <article className="sec-light sec-pad">
+    <>
+      <BlogPostingSchema slug="georgia-hail-storm-roof-checklist" />
+      <article className="sec-light sec-pad">
       <div className="wrap">
         <div className="rv">
           <span className="eyebrow dark">October 2025</span>
@@ -91,11 +94,12 @@ export default function BlogStormChecklist() {
             <a href={`tel:${brand.phone}`} style={{ color: 'var(--orange)', fontWeight: 600 }}>{brand.phone}</a>
             {' '}for a free, no-pressure storm-damage inspection. We’ll document the damage, explain your options, and handle the insurance process from start to finish.
           </p>
-          <Link href="/emergency-roof-repair-dallas-ga" className="btn btn-solid" style={{ display: 'inline-block', marginTop: 16 }}>
+          <Link href="/emergency-roof-repair-dallas-ga/" className="btn btn-solid" style={{ display: 'inline-block', marginTop: 16 }}>
             Get emergency roof help <span className="arr">→</span>
           </Link>
         </div>
       </div>
     </article>
+    </>
   );
 }

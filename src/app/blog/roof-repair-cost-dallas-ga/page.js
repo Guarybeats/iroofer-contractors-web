@@ -2,6 +2,7 @@ import { OG_IMAGE } from '@/lib/seo';
 import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
@@ -28,6 +29,7 @@ const post = {
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="roof-repair-cost-dallas-ga" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -45,7 +47,7 @@ export default function BlogPostPage() {
             <p>“How much will it cost to fix my roof?” is the call we get most after a storm or a ceiling stain shows up. The honest answer: most Dallas, GA roof repairs run <strong>$250–$3,500</strong>, with the average leak repair landing around $450–$900. This guide breaks down the real numbers we quote every week in Paulding and Cobb counties — so you know what’s fair before we climb the ladder.</p>
 
             <h2>Roof Repair vs. Replacement: The $ Line</h2>
-            <p>The fastest way to know which you need: if the damage is isolated (one slope, one valley, a few shingles) and the rest of the roof is under 15 years old, repair almost always wins. If leaks are showing in multiple rooms or the shingles are curling across the whole roof, see our <Link href="/blog/when-to-replace-vs-repair-a-roof" style={{ color: 'var(--orange)' }}>roof replacement vs. repair guide →</Link>.</p>
+            <p>The fastest way to know which you need: if the damage is isolated (one slope, one valley, a few shingles) and the rest of the roof is under 15 years old, repair almost always wins. If leaks are showing in multiple rooms or the shingles are curling across the whole roof, see our <Link href="/blog/when-to-replace-vs-repair-a-roof/" style={{ color: 'var(--orange)' }}>roof replacement vs. repair guide →</Link>.</p>
 
             <h2>Dallas GA Repair Pricing by Job Type (2026)</h2>
             <p>These are the ranges we actually quote — not national averages:</p>
@@ -96,11 +98,11 @@ export default function BlogPostPage() {
               <li><strong>Height &amp; pitch</strong> — two-story and steep roofs need more safety gear and time (1.1x–1.5x).</li>
               <li><strong>Access</strong> — tight side yards or no driveway access add setup cost.</li>
               <li><strong>Deck condition</strong> — if plywood is rotted under the leak, add $15–$35 per 4×8 sheet.</li>
-              <li><strong>Insurance</strong> — storm-caused damage is often covered; see our <Link href="/blog/dallas-ga-hail-storm-insurance-claims" style={{ color: 'var(--orange)' }}>insurance claim walkthrough →</Link>.</li>
+              <li><strong>Insurance</strong> — storm-caused damage is often covered; see our <Link href="/blog/dallas-ga-hail-storm-insurance-claims/" style={{ color: 'var(--orange)' }}>insurance claim walkthrough →</Link>.</li>
             </ul>
 
             <h2>When Repair Is the Wrong Call</h2>
-            <p>We’ll tell you straight: if you’ve had 2+ leaks in 12 months, or the shingles are 15+ years old with widespread granule loss, repeated patches cost more than a full <Link href="/blog/cost-of-new-roof-2026-dallas-ga" style={{ color: 'var(--orange)' }}>replacement ($8K–$30K) →</Link>. A free inspection tells you which side you’re on.</p>
+            <p>We’ll tell you straight: if you’ve had 2+ leaks in 12 months, or the shingles are 15+ years old with widespread granule loss, repeated patches cost more than a full <Link href="/blog/cost-of-new-roof-2026-dallas-ga/" style={{ color: 'var(--orange)' }}>replacement ($8K–$30K) →</Link>. A free inspection tells you which side you’re on.</p>
 
             <h2>Real Repairs We Did This Month</h2>
             <div style={{ background: '#f8f9fa', padding: '16px', borderRadius: 6, margin: '16px 0' }}>
@@ -113,7 +115,7 @@ export default function BlogPostPage() {
             <h2>Get a Free Repair Quote</h2>
             <p>Every repair starts with a free inspection and a written price — no surprises, no pressure. If it’s storm damage, we’ll document it for your claim.</p>
             <RelatedPosts slug="roof-repair-cost-dallas-ga" />
-            <p><Link href="/estimator" className="btn btn-solid">Get a Free Quote →</Link></p>
+            <p><Link href="/estimator/" className="btn btn-solid">Get a Free Quote →</Link></p>
           </div>
         </div>
       </article>

@@ -32,7 +32,7 @@ export default function ServiceDetail({ params }) {
     <section className="sec-light sec-pad">
       <div className="tex" aria-hidden="true" />
       <div className="wrap" style={{ position: 'relative' }}>
-        <Link href="/services" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>← All services</Link>
+        <Link href="/services/" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>← All services</Link>
         <div className="faq-grid" style={{ marginTop: 18, alignItems: 'start' }}>
           <div className="rv">
             <span className="eyebrow dark">Roofing service</span>

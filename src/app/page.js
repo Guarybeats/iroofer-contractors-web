@@ -290,7 +290,7 @@ export default function HomePage() {
           </div>
           <div className="blog-grid rv">
             {posts.slice(0, 3).map((p) => (
-              <Link href={`/blog/${p.slug}`} key={p.slug} className="bcard">
+              <Link href={`/blog/${p.slug}/`} key={p.slug} className="bcard">
                 <span className="cat">{p.category}</span>
                 <h3>{p.title}</h3>
                 <p>{p.excerpt}</p>
@@ -299,16 +299,16 @@ export default function HomePage() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: 32 }}>
-            <Link href="/blog" className="btn btn-ink">Read all articles <span className="arr">→</span></Link>
+            <Link href="/blog/" className="btn btn-ink">Read all articles <span className="arr">→</span></Link>
           </div>
           <div style={{ marginTop: 28, borderTop: '1px solid #e6e9ee', paddingTop: 20 }}>
             <p style={{ fontSize: '.8rem', letterSpacing: '.04em', textTransform: 'uppercase', color: '#8ea2b4', marginBottom: 10 }}>Popular guides</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
-              <Link href="/blog/roof-repair-cost-dallas-ga" className="chip" style={{ textDecoration: 'none' }}>Roof repair cost Dallas GA</Link>
-              <Link href="/blog/when-to-replace-vs-repair-a-roof" className="chip" style={{ textDecoration: 'none' }}>Replace vs. repair guide</Link>
-              <Link href="/blog/dallas-ga-hail-storm-insurance-claims" className="chip" style={{ textDecoration: 'none' }}>How to file an insurance claim</Link>
-              <Link href="/blog/georgia-hail-storm-roof-checklist" className="chip" style={{ textDecoration: 'none' }}>Hail damage inspection checklist</Link>
-              <Link href="/storm-damage-roof-repair-dallas-ga" className="chip" style={{ textDecoration: 'none' }}>Emergency storm response</Link>
+              <Link href="/blog/roof-repair-cost-dallas-ga/" className="chip" style={{ textDecoration: 'none' }}>Roof repair cost Dallas GA</Link>
+              <Link href="/blog/when-to-replace-vs-repair-a-roof/" className="chip" style={{ textDecoration: 'none' }}>Replace vs. repair guide</Link>
+              <Link href="/blog/dallas-ga-hail-storm-insurance-claims/" className="chip" style={{ textDecoration: 'none' }}>How to file an insurance claim</Link>
+              <Link href="/blog/georgia-hail-storm-roof-checklist/" className="chip" style={{ textDecoration: 'none' }}>Hail damage inspection checklist</Link>
+              <Link href="/storm-damage-roof-repair-dallas-ga/" className="chip" style={{ textDecoration: 'none' }}>Emergency storm response</Link>
             </div>
           </div>
         </div>

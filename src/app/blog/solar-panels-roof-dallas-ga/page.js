@@ -3,6 +3,7 @@ import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 import { brand } from '@/lib/brand';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
@@ -28,6 +29,7 @@ const post = {
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="solar-panels-roof-dallas-ga" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -112,7 +114,7 @@ export default function BlogPostPage() {
             <h2>Thinking Solar? Start With a Roof Assessment.</h2>
             <p>We'll tell you exactly how much life your roof has left, whether it's solar-ready, and what (if anything) needs doing first. Free for Dallas GA homeowners.</p>
             <RelatedPosts slug="solar-panels-roof-dallas-ga" />
-            <p><Link href="/estimator" className="btn btn-solid">Get a Solar-Ready Roof Assessment →</Link></p>
+            <p><Link href="/estimator/" className="btn btn-solid">Get a Solar-Ready Roof Assessment →</Link></p>
           </div>
         </div>
       </article>

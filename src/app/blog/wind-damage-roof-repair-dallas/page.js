@@ -2,6 +2,7 @@ import { OG_IMAGE } from '@/lib/seo';
 import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
@@ -28,6 +29,7 @@ const post = {
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="wind-damage-roof-repair-dallas" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -130,7 +132,7 @@ export default function BlogPostPage() {
               <li>Meet the adjuster on-site — point out the damage.</li>
               <li>File within 1 year (Georgia statute of limitations for property claims).</li>
             </ul>
-            <p><Link href="/blog/dallas-ga-hail-storm-insurance-claims" style={{ color: 'var(--orange)' }}>Read: How to File an Insurance Claim After Storm Damage →</Link></p>
+            <p><Link href="/blog/dallas-ga-hail-storm-insurance-claims/" style={{ color: 'var(--orange)' }}>Read: How to File an Insurance Claim After Storm Damage →</Link></p>
 
             <h2>iRoofer’s Wind Damage Protocol</h2>
             <p>After any wind event in Dallas or the North Georgia metro, we:</p>
@@ -143,7 +145,7 @@ export default function BlogPostPage() {
 
             <h2>Don’t Wait for the Next Storm</h2>
             <p>After the last wind event, 40% of our service calls were from homeowners who thought their damage was “minor” — until water started leaking. Don’t let a $50 repair become a $3,000 ceiling replacement.</p>
-            <p><Link href="/emergency-roof-repair-dallas-ga" className="btn btn-solid">Schedule Free Wind Damage Inspection →</Link></p>
+            <p><Link href="/emergency-roof-repair-dallas-ga/" className="btn btn-solid">Schedule Free Wind Damage Inspection →</Link></p>
           </div>
         </div>
             <RelatedPosts slug="wind-damage-roof-repair-dallas" />

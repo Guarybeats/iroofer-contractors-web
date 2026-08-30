@@ -2,6 +2,7 @@ import { OG_IMAGE } from '@/lib/seo';
 import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
@@ -28,6 +29,7 @@ const post = {
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="attic-ventilation-dallas-heat" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -105,7 +107,7 @@ export default function BlogPostPage() {
             <h2>Need Better Attic Ventilation in Dallas?</h2>
             <p>Schedule a free inspection — we’ll check your attic temperature, soffit airflow, ridge vent condition, and recommend exactly what your home needs.</p>
             <RelatedPosts slug="attic-ventilation-dallas-heat" />
-            <p><Link href="/estimator" className="btn btn-solid">Get a Free Ventilation Consultation →</Link></p>
+            <p><Link href="/estimator/" className="btn btn-solid">Get a Free Ventilation Consultation →</Link></p>
           </div>
         </div>
       </article>

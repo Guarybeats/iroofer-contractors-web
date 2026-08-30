@@ -3,6 +3,7 @@ import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 import { brand } from '@/lib/brand';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
@@ -29,6 +30,7 @@ const post = {
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="georgia-winter-roof-inspection" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -116,7 +118,7 @@ export default function BlogPostPage() {
 
             <h2>Don’t Let Winter Catch You Off Guard</h2>
             <p>After 8 North Georgia winters and 150+ emergency responses, we know exactly what fails and when. Schedule your winter roof inspection before the January freeze hits.</p>
-            <p><Link href="/contact" className="btn btn-solid">Schedule Winter Inspection →</Link></p>
+            <p><Link href="/contact/" className="btn btn-solid">Schedule Winter Inspection →</Link></p>
           </div>
         </div>
             <RelatedPosts slug="georgia-winter-roof-inspection" />

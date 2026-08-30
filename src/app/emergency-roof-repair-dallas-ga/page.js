@@ -27,7 +27,7 @@ export default function EmergencyPage() {
           <div className="faq-grid" style={{ alignItems: 'start' }}>
             <div className="rv">
               <Link
-                href="/services"
+                href="/services/"
                 style={{
                   fontWeight: 700,
                   color: 'var(--orange)',

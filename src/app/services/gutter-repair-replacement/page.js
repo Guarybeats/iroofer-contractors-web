@@ -42,7 +42,7 @@ export default function GutterPage() {
     <section className="sec-light sec-pad">
       <div className="tex" aria-hidden="true" />
       <div className="wrap" style={{ position: 'relative' }}>
-        <Link href="/services" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>← All services</Link>
+        <Link href="/services/" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>← All services</Link>
 
         <div className="faq-grid" style={{ marginTop: 18, alignItems: 'center' }}>
           <div className="rv">
@@ -150,7 +150,7 @@ export default function GutterPage() {
         </div>
         <div className="cards" style={{ marginTop: 24 }}>
           {related.map((s) => (
-            <Link key={s.slug} href={`/services/${s.slug}`} className="card" style={{ color: 'inherit', textDecoration: 'none' }}>
+            <Link key={s.slug} href={`/services/${s.slug}/`} className="card" style={{ color: 'inherit', textDecoration: 'none' }}>
               <img src={s.webp} alt={s.title} loading="lazy" />
               <div className="body">
                 <h3>{s.title}</h3>

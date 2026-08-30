@@ -87,14 +87,14 @@ export default function RootLayout({ children }) {
             </a>
             <nav className="menu" aria-label="Primary">
               <a className="lnk" href="/#services">Services</a>
-              <a className="lnk" href="/service-areas">Service Areas</a>
-              <a className="lnk" href="/estimator">Instant Quote</a>
-              <a className="lnk" href="/emergency-roof-repair-dallas-ga">Emergency</a>
-              <a className="lnk" href="/storm-damage-roof-repair-dallas-ga">Storm Damage</a>
+              <a className="lnk" href="/service-areas/">Service Areas</a>
+              <a className="lnk" href="/estimator/">Instant Quote</a>
+              <a className="lnk" href="/emergency-roof-repair-dallas-ga/">Emergency</a>
+              <a className="lnk" href="/storm-damage-roof-repair-dallas-ga/">Storm Damage</a>
               <a className="lnk" href="/#work">Our Work</a>
               <a className="lnk" href="/#process">Process</a>
               <a className="lnk" href="/#reviews">Reviews</a>
-              <a className="lnk" href="/blog">Blog</a>
+              <a className="lnk" href="/blog/">Blog</a>
               <a className="lnk" href="/#faq">FAQ</a>
             </nav>
             <div className="head-cta">
@@ -111,13 +111,13 @@ export default function RootLayout({ children }) {
         {/* MOBILE NAV */}
         <nav className="mnav" id="mnav" aria-label="Mobile">
           <a href="/#services">Services</a>
-          <a href="/estimator">Instant Quote</a>
-          <a href="/emergency-roof-repair-dallas-ga">Emergency</a>
-          <a href="/storm-damage-roof-repair-dallas-ga">Storm Damage</a>
+          <a href="/estimator/">Instant Quote</a>
+          <a href="/emergency-roof-repair-dallas-ga/">Emergency</a>
+          <a href="/storm-damage-roof-repair-dallas-ga/">Storm Damage</a>
           <a href="/#work">Our Work</a>
           <a href="/#process">Process</a>
           <a href="/#reviews">Reviews</a>
-          <a href="/blog">Blog</a>
+          <a href="/blog/">Blog</a>
           <a href="/#faq">FAQ</a>
           <a href="/#contact">Contact</a>
           <a className="mphone" href={`tel:${brand.phone}`}>{brand.phone}</a>
@@ -141,11 +141,11 @@ export default function RootLayout({ children }) {
               </div>
               <div className="foot-col">
                 <h2>Services</h2>
-                <a href="/services/roof-repair">Roof Repair</a>
-                <a href="/services/roof-replacement">Roof Replacement</a>
-                <a href="/services/new-construction">New Construction</a>
-                <a href="/emergency-roof-repair-dallas-ga">Emergency Roof Repair</a>
-                <a href="/storm-damage-roof-repair-dallas-ga">Storm &amp; Insurance</a>
+                <a href="/services/roof-repair/">Roof Repair</a>
+                <a href="/services/roof-replacement/">Roof Replacement</a>
+                <a href="/services/new-construction/">New Construction</a>
+                <a href="/emergency-roof-repair-dallas-ga/">Emergency Roof Repair</a>
+                <a href="/storm-damage-roof-repair-dallas-ga/">Storm &amp; Insurance</a>
                 <a href="/#faq">FAQ</a>
               </div>
               <div className="foot-col">
@@ -153,29 +153,29 @@ export default function RootLayout({ children }) {
                 <a href="/#work">Our Work</a>
                 <a href="/#process">Our Process</a>
                 <a href="/#reviews">Reviews</a>
-                <a href="/about">About Us</a>
-                <a href="/blog">Blog</a>
+                <a href="/about/">About Us</a>
+                <a href="/blog/">Blog</a>
                 <a href="/#contact">Contact</a>
               </div>
               <div className="foot-col">
                 <h2>Service Areas</h2>
-                <a href="/service-areas/dallas-ga">Dallas, GA</a>
-                <a href="/service-areas/douglasville">Douglasville</a>
-                <a href="/service-areas/hiram">Hiram</a>
-                <a href="/service-areas/powder-springs">Powder Springs</a>
-                <a href="/service-areas/marietta">Marietta</a>
-                <a href="/service-areas/kennesaw">Kennesaw</a>
-                <a href="/service-areas/acworth">Acworth</a>
-                <a href="/service-areas/austell">Austell</a>
-                <a href="/service-areas">All areas →</a>
+                <a href="/service-areas/dallas-ga/">Dallas, GA</a>
+                <a href="/service-areas/douglasville/">Douglasville</a>
+                <a href="/service-areas/hiram/">Hiram</a>
+                <a href="/service-areas/powder-springs/">Powder Springs</a>
+                <a href="/service-areas/marietta/">Marietta</a>
+                <a href="/service-areas/kennesaw/">Kennesaw</a>
+                <a href="/service-areas/acworth/">Acworth</a>
+                <a href="/service-areas/austell/">Austell</a>
+                <a href="/service-areas/">All areas →</a>
               </div>
               <div className="foot-col">
                 <h2>Local services</h2>
-                <a href="/roof-repair-dallas-ga">Roof Repair Dallas, GA</a>
-                <a href="/roof-replacement-marietta">Roof Replacement Marietta, GA</a>
-                <a href="/storm-damage-roof-repair-kennesaw">Storm Damage Kennesaw, GA</a>
-                <a href="/storm-damage-roof-repair-dallas-ga">Storm Damage Dallas, GA</a>
-                <a href="/emergency-roof-repair-dallas-ga">Emergency Repair Dallas, GA</a>
+                <a href="/roof-repair-dallas-ga/">Roof Repair Dallas, GA</a>
+                <a href="/roof-replacement-marietta/">Roof Replacement Marietta, GA</a>
+                <a href="/storm-damage-roof-repair-kennesaw/">Storm Damage Kennesaw, GA</a>
+                <a href="/storm-damage-roof-repair-dallas-ga/">Storm Damage Dallas, GA</a>
+                <a href="/emergency-roof-repair-dallas-ga/">Emergency Repair Dallas, GA</a>
               </div>
               <div className="foot-col">
                 <h2>Get in touch</h2>
@@ -192,7 +192,7 @@ export default function RootLayout({ children }) {
             </div>
             <div className="foot-bottom">
               <span>Built tough in Dallas, GA.</span>
-              <span><a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Warranty</a></span>
+              <span>Licensed, bonded &amp; insured · <a href="/contact/">Contact</a></span>
             </div>
           </div>
         </footer>

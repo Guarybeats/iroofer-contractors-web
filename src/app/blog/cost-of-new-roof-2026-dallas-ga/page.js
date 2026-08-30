@@ -2,6 +2,7 @@ import { OG_IMAGE } from '@/lib/seo';
 import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
@@ -28,6 +29,7 @@ const post = {
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="cost-of-new-roof-2026-dallas-ga" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -143,7 +145,7 @@ export default function BlogPostPage() {
               <li>$400,000 home → $8,000 deductible</li>
               <li>$500,000 home → $10,000 deductible</li>
             </ul>
-            <p>If your damage is below the deductible, the claim won’t pay off — and filing it raises your premiums for 3 years. <Link href="/blog/dallas-ga-hail-storm-insurance-claims" style={{ color: 'var(--orange)' }}>Read our full insurance claim guide →</Link> for how to maximize your payout.</p>
+            <p>If your damage is below the deductible, the claim won’t pay off — and filing it raises your premiums for 3 years. <Link href="/blog/dallas-ga-hail-storm-insurance-claims/" style={{ color: 'var(--orange)' }}>Read our full insurance claim guide →</Link> for how to maximize your payout.</p>
 
             <h2>Financing Options for Dallas Homeowners</h2>
             <p>Many of our homeowners use:</p>
@@ -176,7 +178,7 @@ export default function BlogPostPage() {
             <h2>Need an Exact Quote for Your Home?</h2>
             <p>Enter your address and we’ll email you a detailed quote with material options, warranty details, and financing terms — no phone call required.</p>
             <RelatedPosts slug="cost-of-new-roof-2026-dallas-ga" />
-            <p><Link href="/estimator" className="btn btn-solid">Get a Free Quote →</Link></p>
+            <p><Link href="/estimator/" className="btn btn-solid">Get a Free Quote →</Link></p>
           </div>
         </div>
       </article>

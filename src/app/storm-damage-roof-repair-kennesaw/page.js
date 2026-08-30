@@ -107,7 +107,7 @@ export default function Page() {
               </div>
           </div>
           <div style={{ marginTop: 28 }}>
-            <Link href="/service-areas/kennesaw" className="btn btn-ink">More about our Kennesaw service area <span className="arr">→</span></Link>
+            <Link href="/service-areas/kennesaw/" className="btn btn-ink">More about our Kennesaw service area <span className="arr">→</span></Link>
           </div>
         </div>
       </section>
@@ -119,19 +119,19 @@ export default function Page() {
             <h2>Other services we offer in Kennesaw, GA</h2>
           </div>
           <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
-            <Link key="roof-repair" href="/roof-repair-kennesaw" className="svc-card">
+            <Link key="roof-repair" href="/roof-repair-kennesaw/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Repair in Kennesaw</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
-            <Link key="roof-replacement" href="/roof-replacement-kennesaw" className="svc-card">
+            <Link key="roof-replacement" href="/roof-replacement-kennesaw/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Kennesaw</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
-            <Link key="new-construction" href="/new-construction-kennesaw" className="svc-card">
+            <Link key="new-construction" href="/new-construction-kennesaw/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>New Construction in Kennesaw</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
-            <Link key="gutter-repair-replacement" href="/gutter-repair-replacement-kennesaw" className="svc-card">
+            <Link key="gutter-repair-replacement" href="/gutter-repair-replacement-kennesaw/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Gutter Repair & Replacement in Kennesaw</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>

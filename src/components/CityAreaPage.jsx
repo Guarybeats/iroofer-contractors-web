@@ -22,7 +22,7 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
       <CitySchema city={city} faq={faq} />
       <div className="wrap" style={{ position: 'relative' }}>
         <Link
-          href="/service-areas"
+          href="/service-areas/"
           style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}
         >
           ← All service areas
@@ -47,7 +47,7 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
 
         <div className="cards" style={{ marginTop: 36 }}>
           {services.map((s) => (
-            <Link key={s.slug} href={`/services/${s.slug}`} className="svc-card">
+            <Link key={s.slug} href={`/services/${s.slug}/`} className="svc-card">
               <h2 style={{ fontSize: '1.3rem', fontWeight: 800 }}>{s.title} in {city.name}</h2>
               <p style={{ color: MUTED, marginTop: 8, fontSize: '.95rem' }}>{s.summary}</p>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>
@@ -88,7 +88,7 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
               </p>
             )}
             <p style={{ marginTop: 18 }}>
-              <a className="btn btn-ink" href="/estimator">
+              <a className="btn btn-ink" href="/estimator/">
                 Get an instant roof estimate <span className="arr">→</span>
               </a>
             </p>
@@ -98,7 +98,7 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
                 .filter((x) => x.slug !== city.slug)
                 .map((x, i, arr) => (
                   <span key={x.slug}>
-                    <Link href={`/service-areas/${x.slug}`} style={{ color: 'var(--orange)' }}>{x.name}</Link>
+                    <Link href={`/service-areas/${x.slug}/`} style={{ color: 'var(--orange)' }}>{x.name}</Link>
                     {i < arr.length - 1 ? ', ' : ''}
                   </span>
                 ))}

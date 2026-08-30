@@ -3,6 +3,7 @@ import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 import { brand } from '@/lib/brand';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
@@ -72,6 +73,7 @@ const seasons = [
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="roof-maintenance-calendar-dallas-ga" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -148,7 +150,7 @@ export default function BlogPostPage() {
             <h2>Stay Ahead of the Weather</h2>
             <p>Join our seasonal reminder list — we'll text you when it's time for each quarterly check, plus storm alerts for Dallas GA.</p>
             <RelatedPosts slug="roof-maintenance-calendar-dallas-ga" />
-            <p><Link href="/estimator" className="btn btn-solid">Schedule Annual Inspection →</Link></p>
+            <p><Link href="/estimator/" className="btn btn-solid">Schedule Annual Inspection →</Link></p>
           </div>
         </div>
       </article>

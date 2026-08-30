@@ -3,6 +3,7 @@ import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 import { notFound } from 'next/navigation';
+import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 const post = {
   slug: 'when-to-replace-vs-repair-a-roof',
@@ -28,6 +29,7 @@ export const metadata = {
 export default function BlogPostPage() {
   return (
     <>
+      <BlogPostingSchema slug="when-to-replace-vs-repair-a-roof" post={post} />
       <article className="post">
         <div className="tex" aria-hidden="true" />
         <div className="wrap">
@@ -79,7 +81,7 @@ export default function BlogPostPage() {
             <h2>Still Unsure? Get a Second Opinion</h2>
             <p>Every roof inspection from iRoofer includes a detailed written report with photos. No pressure, no upsell. If you're within your insurance window, we'll help you document the damage for your claim.</p>
             <RelatedPosts slug="when-to-replace-vs-repair-a-roof" />
-            <p><Link href="/estimator" className="btn btn-solid">Get a Free Roof Inspection →</Link></p>
+            <p><Link href="/estimator/" className="btn btn-solid">Get a Free Roof Inspection →</Link></p>
           </div>
         </div>
       </article>
