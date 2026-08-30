@@ -14,11 +14,11 @@ export const metadata = seo({
 const faqs = [
   {
     q: 'What does roof repair cost in Dallas, GA?',
-    a: 'Most Dallas, GA roof repairs run $250–$3,500 depending on size, pitch, and material. We give a free, written quote after a same-day inspection — no pressure, no obligation.',
+    a: 'Most Dallas, GA roof repairs run $250–$3,500 depending on size, pitch, and material. We give a free, written quote after a same-day inspection — no pressure, no obligation. These are general planning ranges for the Dallas, GA area, not a quote — we put the real figure in writing after an on-site inspection.',
   },
   {
     q: 'How much is a full roof replacement near Dallas, GA?',
-    a: 'Full tear-off and re-roof with architectural asphalt shingles typically runs $8,000–$30,000. Price depends on square footage, pitch, ventilation, and any rotten decking we find.',
+    a: 'Full tear-off and re-roof with architectural asphalt shingles typically runs $8,000–$30,000. Price depends on square footage, pitch, ventilation, and any rotten decking we find. These are general planning ranges for the Dallas, GA area, not a quote — we put the real figure in writing after an on-site inspection.',
   },
   {
     q: 'Do you handle insurance claims for storm damage?',
