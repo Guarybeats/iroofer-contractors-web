@@ -5,6 +5,7 @@ import ReviewButton from '@/components/ReviewButton';
 import { brand, services } from '@/lib/brand';
 import { posts } from '@/lib/posts';
 import { reviews } from '@/lib/reviews';
+import Pic from '@/components/Pic';
 
 // Marquee rows: split the review set in half so no quote is rendered more than
 // twice (once per row track). Each track repeats the *other* half to keep the
@@ -141,7 +142,7 @@ export default function HomePage() {
                         <p>{s.body}</p>
                         <Link className="svc-link" href="/#contact">Get an estimate →</Link>
                       </div>
-                      <img loading="lazy" src={s.img} alt={s.title} />
+                      <Pic src={s.img} alt={s.title} />
                     </div></div></div>
                   )}
                 </article>
@@ -181,7 +182,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="steps rv">
-            <h4>After a storm — do this</h4>
+            <h2>After a storm — do this</h2>
             <ol>
               <li>Don’t climb up. Snap ground-level photos of debris, dents on gutters and any interior stains.</li>
               <li>Call us for a free damage inspection and a temporary tarp if you’re leaking.</li>
@@ -235,10 +236,10 @@ export default function HomePage() {
             <p>Four steps, no surprises, no pressure. You’ll know exactly what’s happening on your roof and why.</p>
           </div>
           <div className="steps-grid">
-            <div className="step rv"><div className="n">01</div><h4>Inspect &amp; document</h4><p>Free on-roof inspection with photos and a plain-English written report — usually same week.</p><span className="arrow" aria-hidden="true">→</span></div>
-            <div className="step rv"><div className="n">02</div><h4>Estimate &amp; insurance</h4><p>Transparent pricing or full claim support. We handle the adjuster and the supplements.</p><span className="arrow" aria-hidden="true">→</span></div>
-            <div className="step rv"><div className="n">03</div><h4>Install &amp; clean up</h4><p>Crew arrives at 7am, roof on by dusk. Magnet sweep, dumpster hauled, lawn left spotless.</p><span className="arrow" aria-hidden="true">→</span></div>
-            <div className="step rv"><div className="n">04</div><h4>Walkthrough + warranty</h4><p>We walk the roof with you, register the manufacturer warranty, and stand behind the work.</p></div>
+            <div className="step rv"><div className="n">01</div><h3>Inspect &amp; document</h3><p>Free on-roof inspection with photos and a plain-English written report — usually same week.</p><span className="arrow" aria-hidden="true">→</span></div>
+            <div className="step rv"><div className="n">02</div><h3>Estimate &amp; insurance</h3><p>Transparent pricing or full claim support. We handle the adjuster and the supplements.</p><span className="arrow" aria-hidden="true">→</span></div>
+            <div className="step rv"><div className="n">03</div><h3>Install &amp; clean up</h3><p>Crew arrives at 7am, roof on by dusk. Magnet sweep, dumpster hauled, lawn left spotless.</p><span className="arrow" aria-hidden="true">→</span></div>
+            <div className="step rv"><div className="n">04</div><h3>Walkthrough + warranty</h3><p>We walk the roof with you, register the manufacturer warranty, and stand behind the work.</p></div>
           </div>
         </div>
       </section>
@@ -291,7 +292,7 @@ export default function HomePage() {
             {posts.slice(0, 3).map((p) => (
               <Link href={`/blog/${p.slug}`} key={p.slug} className="bcard">
                 <span className="cat">{p.category}</span>
-                <h4>{p.title}</h4>
+                <h3>{p.title}</h3>
                 <p>{p.excerpt}</p>
                 <span className="more">Read the full article →</span>
               </Link>

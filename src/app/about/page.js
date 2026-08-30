@@ -39,7 +39,7 @@ export default function AboutPage() {
           <div className="rv" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
             {values.map((v) => (
               <div key={v.t} style={{ background: '#fff', border: '1px solid rgba(22,29,37,.10)', borderRadius: 8, padding: '1.4rem' }}>
-                <h4 style={{ color: 'var(--ink)', fontFamily: 'var(--display)', fontSize: '1.2rem', marginBottom: 6 }}>{v.t}</h4>
+                <h2 style={{ color: 'var(--ink)', fontFamily: 'var(--display)', fontSize: '1.2rem', marginBottom: 6 }}>{v.t}</h2>
                 <p style={{ color: '#52606b', fontSize: '.95rem', margin: 0 }}>{v.d}</p>
               </div>
             ))}

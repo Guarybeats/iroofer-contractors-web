@@ -140,7 +140,7 @@ export default function RootLayout({ children }) {
                 </div>
               </div>
               <div className="foot-col">
-                <h5>Services</h5>
+                <h2>Services</h2>
                 <a href="/services/roof-repair">Roof Repair</a>
                 <a href="/services/roof-replacement">Roof Replacement</a>
                 <a href="/services/new-construction">New Construction</a>
@@ -149,7 +149,7 @@ export default function RootLayout({ children }) {
                 <a href="/#faq">FAQ</a>
               </div>
               <div className="foot-col">
-                <h5>Company</h5>
+                <h2>Company</h2>
                 <a href="/#work">Our Work</a>
                 <a href="/#process">Our Process</a>
                 <a href="/#reviews">Reviews</a>
@@ -158,7 +158,7 @@ export default function RootLayout({ children }) {
                 <a href="/#contact">Contact</a>
               </div>
               <div className="foot-col">
-                <h5>Service Areas</h5>
+                <h2>Service Areas</h2>
                 <a href="/service-areas/dallas-ga">Dallas, GA</a>
                 <a href="/service-areas/douglasville">Douglasville</a>
                 <a href="/service-areas/hiram">Hiram</a>
@@ -170,7 +170,7 @@ export default function RootLayout({ children }) {
                 <a href="/service-areas">All areas →</a>
               </div>
               <div className="foot-col">
-                <h5>Local services</h5>
+                <h2>Local services</h2>
                 <a href="/roof-repair-dallas-ga">Roof Repair Dallas, GA</a>
                 <a href="/roof-replacement-marietta">Roof Replacement Marietta, GA</a>
                 <a href="/storm-damage-roof-repair-kennesaw">Storm Damage Kennesaw, GA</a>
@@ -178,7 +178,7 @@ export default function RootLayout({ children }) {
                 <a href="/emergency-roof-repair-dallas-ga">Emergency Repair Dallas, GA</a>
               </div>
               <div className="foot-col">
-                <h5>Get in touch</h5>
+                <h2>Get in touch</h2>
                 <a href={`tel:${brand.phone}`}>{brand.phone}</a>
                 <a href={`mailto:${brand.email}`}>{brand.email}</a>
                 <a href="/#contact">152 Freedom Dr<br />Dallas, GA 30157</a>

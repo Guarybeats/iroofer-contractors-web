@@ -48,7 +48,7 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
         <div className="cards" style={{ marginTop: 36 }}>
           {services.map((s) => (
             <Link key={s.slug} href={`/services/${s.slug}`} className="svc-card">
-              <h3 style={{ fontSize: '1.3rem', fontWeight: 800 }}>{s.title} in {city.name}</h3>
+              <h2 style={{ fontSize: '1.3rem', fontWeight: 800 }}>{s.title} in {city.name}</h2>
               <p style={{ color: MUTED, marginTop: 8, fontSize: '.95rem' }}>{s.summary}</p>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>
                 Get a quote →
@@ -108,7 +108,7 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
             <picture>
               <source srcSet="/assets/hero.webp" type="image/webp" />
               <img
-                src="/assets/hero.webp"
+                src="/assets/hero.jpg"
                 alt={`iRoofer Contractors roofing crew working in ${city.name}, ${city.state}`}
                 loading="lazy"
                 style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }}

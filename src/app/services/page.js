@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { services } from '@/lib/brand';
 import { seo } from '@/lib/seo';
+import Pic from '@/components/Pic';
 
 export const metadata = seo({
   title: 'Roofing Services in Dallas, GA | Repair & Replace',
@@ -22,9 +23,9 @@ export default function ServicesPage() {
         <div className="cards">
           {services.map((s) => (
             <Link className="card" key={s.slug} href={`/services/${s.slug}`} style={{ color: 'inherit' }}>
-              <img src={s.image} alt={s.title} loading="lazy" />
+              <Pic src={s.image} alt={s.title} />
               <div className="body">
-                <h3>{s.title}</h3>
+                <h2>{s.title}</h2>
                 <p>{s.summary}</p>
                 <span className="more">Learn more →</span>
               </div>
