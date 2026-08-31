@@ -3,7 +3,8 @@ import RelatedGuides from '@/components/RelatedGuides';
 import QuoteForm from '@/components/QuoteForm';
 import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
-function faqItem(open){ return 'faq-item' + (open ? ' open' : ''); }
+import { localCopy } from '@/lib/localCopy';
+import { reviews } from '@/lib/reviews';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
@@ -12,28 +13,11 @@ export const metadata = seo({
   path: '/storm-damage-roof-repair-dallas-ga',
 });
 
-const faqs = [
-  {
-    "q": "Do you offer storm damage roof repair in Dallas, GA?",
-    "a": "Yes. Storm Damage Roof Repair is one of our core services across Paulding County and the greater Atlanta metro. As the town we call home, Dallas homeowners get priority scheduling and the crew chief on every job."
-  },
-  {
-    "q": "How fast can you start a storm damage roof repair job in Dallas?",
-    "a": "Most Dallas jobs are scheduled within 24–72 hours after a free inspection. For active storm leaks we offer same-day tarping."
-  },
-  {
-    "q": "Do you handle permits for Dallas, GA?",
-    "a": "Yes. We pull the local roofing permit, follow current code for underlayment and ventilation, and leave you with the inspection sign-off."
-  },
-  {
-    "q": "Will my insurance cover this in Paulding County?",
-    "a": "If the damage is storm- or hail-related, it often is. We document everything, meet your adjuster on-site, and handle supplements so your payout reflects the true scope."
-  },
-  {
-    "q": "What does storm damage roof repair cost in Dallas, GA?",
-    "a": "It depends on size, pitch, and material — we give a free, written quote after inspection. Pitch, access, decking condition and material choice all move the number, so we measure the roof first and put the figure in writing — no phone estimates, no pressure."
-  }
-];
+// Page-specific copy lives in src/lib/localCopy.js — one entry per service x city.
+// Do not inline generic template text here; see the header of that file for why.
+const copy = localCopy['storm-damage-roof-repair']['dallas-ga'];
+const faqs = copy.faq;
+const review = reviews[2];
 
 export default function Page() {
   return (
@@ -50,12 +34,8 @@ export default function Page() {
               <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02, marginTop: 8 }}>
                 Storm Damage Roof Repair in Dallas, GA
               </h1>
-              <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
-                Hail, wind, or tree damage from a Georgia storm? We inspect, document storm damage, and handle your insurance claim. In Dallas, GA (Paulding County) we bring the same local crew, the same warranty,
-                and the same phone number to every job. As the town we call home, Dallas homeowners get priority scheduling and the crew chief on every job.
-              </p>
-              <p style={{ color: '#52606b', fontSize: '.98rem', marginTop: 12, maxWidth: 680, borderLeft: '3px solid var(--orange)', paddingLeft: 12 }}>
-                Local note: Dallas sits right where Paulding&apos;s spring supercells dump the heaviest hail. We&apos;ve tarp-and-restore roofs from the Freedom Dr corridor to the outskirts near Hiram, and we know exactly how Paulding County adjusters scope a claim — so your paperwork moves instead of stalling.
+              <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
+                {copy.intro}
               </p>
               <div className="cta" style={{ marginTop: 28 }}>
                 <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>{brand.phone}</a>
@@ -63,11 +43,9 @@ export default function Page() {
               </div>
 
               <div style={{ marginTop: 32, padding: '1.3rem', background: '#fff', border: '1px solid rgba(22,29,37,.08)', borderRadius: 8 }}>
-                <strong style={{ color: '#0b3d16' }}>What Dallas homeowners say</strong>
-                <p style={{ color: '#52606b', fontSize: '.95rem', marginTop: 8, fontStyle: 'italic' }}>
-                  “They did very well with my old roof. The house looks new! Cristian and the crew went that extra mile on everything! I highly recommend them. It poured down rain this morning, and there were NO LEAKS.”
-                </p>
-                <div style={{ color: '#8ea2b4', fontSize: '.85rem', marginTop: 4 }}>— Jill Kerns, Dallas, GA</div>
+                <strong style={{ color: '#0b3d16' }}>From our Google reviews</strong>
+                <p style={{ color: '#52606b', fontSize: '.95rem', marginTop: 8, fontStyle: 'italic' }}>{review.q}</p>
+                <div style={{ color: '#8ea2b4', fontSize: '.85rem', marginTop: 4 }}>— {review.who}, {review.where}</div>
               </div>
             </div>
 
@@ -83,31 +61,28 @@ export default function Page() {
 
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
+          {copy.sections.map((sec) => (
+            <div key={sec.h} className="rv" style={{ maxWidth: 780, marginBottom: 34 }}>
+              <h2 style={{ fontSize: 'clamp(1.5rem,2.6vw,2rem)', fontWeight: 800, lineHeight: 1.15 }}>{sec.h}</h2>
+              <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, lineHeight: 1.75 }}>{sec.p}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
+        <div className="wrap">
           <div className="sec-head rv">
             <span className="eyebrow dark">Dallas, GA Storm Damage Roof Repair FAQ</span>
             <h2>Questions Dallas homeowners ask us</h2>
           </div>
           <div className="faq-list rv">
-              <div className={faqItem(true)}>
-                <button className="faq-q" aria-expanded={true}>{"Do you offer storm damage roof repair in Dallas, GA?"}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{"Yes. Storm Damage Roof Repair is one of our core services across Paulding County and the greater Atlanta metro. As the town we call home, Dallas homeowners get priority scheduling and the crew chief on every job."}</p></div></div>
+            {faqs.map((f, i) => (
+              <div key={f.q} className={'faq-item' + (i === 0 ? ' open' : '')}>
+                <button className="faq-q" aria-expanded={i === 0}>{f.q}<span className="pm" aria-hidden="true" /></button>
+                <div className="faq-a"><div><p>{f.a}</p></div></div>
               </div>
-              <div className={faqItem(false)}>
-                <button className="faq-q" aria-expanded={false}>{"How fast can you start a storm damage roof repair job in Dallas?"}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{"Most Dallas jobs are scheduled within 24–72 hours after a free inspection. For active storm leaks we offer same-day tarping."}</p></div></div>
-              </div>
-              <div className={faqItem(false)}>
-                <button className="faq-q" aria-expanded={false}>{"Do you handle permits for Dallas, GA?"}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{"Yes. We pull the local roofing permit, follow current code for underlayment and ventilation, and leave you with the inspection sign-off."}</p></div></div>
-              </div>
-              <div className={faqItem(false)}>
-                <button className="faq-q" aria-expanded={false}>{"Will my insurance cover this in Paulding County?"}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{"If the damage is storm- or hail-related, it often is. We document everything, meet your adjuster on-site, and handle supplements so your payout reflects the true scope."}</p></div></div>
-              </div>
-              <div className={faqItem(false)}>
-                <button className="faq-q" aria-expanded={false}>{"What does storm damage roof repair cost in Dallas, GA?"}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{"It depends on size, pitch, and material — we give a free, written quote after inspection. Pitch, access, decking condition and material choice all move the number, so we measure the roof first and put the figure in writing — no phone estimates, no pressure."}</p></div></div>
-              </div>
+            ))}
           </div>
           <div style={{ marginTop: 28 }}>
             <Link href="/service-areas/dallas-ga/" className="btn btn-ink">More about our Dallas service area <span className="arr">→</span></Link>
@@ -143,7 +118,7 @@ export default function Page() {
       </section>
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
-          <RelatedGuides slug="roof-insurance-claims" heading="Local roofing guides" />
+          <RelatedGuides slug="storm-damage-roof-repair" heading="Local roofing guides" />
         </div>
       </section>
       <FaqSchema faq={faqs} />
