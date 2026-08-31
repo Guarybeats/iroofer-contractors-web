@@ -1,2 +1,15 @@
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
+
+/.well-known/webmcp.json
+  Content-Type: application/json
+  Cache-Control: public, max-age=3600
+  Access-Control-Allow-Origin: *
+
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), interest-cohort=()
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://iroofer-lead-api-556154145006.us-central1.run.app https://www.google-analytics.com https://region1.google-analytics.com https://www.googletagmanager.com; frame-src https://www.google.com https://maps.google.com; form-action 'self' https://iroofer-lead-api-556154145006.us-central1.run.app; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; upgrade-insecure-requests

@@ -8,7 +8,7 @@ export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   title: 'Roofing in Dallas, GA | Repair & Replacement | iRoofer',
   description:
-    'iRoofer Contractors is based in Dallas, GA (Paulding County) at 152 Freedom Dr. Roof repair, full replacement, new construction, gutters and storm claim help. Free photo-documented inspection — call (470) 236-1410.',
+    'Based in Dallas, GA (Paulding County) at 152 Freedom Dr. Roof repair, replacement, new construction, gutters and storm claims. Free inspection: (470) 236-1410.',
   alternates: { canonical: `${brand.url}/service-areas/dallas-ga` },
   openGraph: {
     type: 'website',

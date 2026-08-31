@@ -533,3 +533,19 @@ footer{background:var(--ink3);color:#9aa6b0;padding:4.5rem 0 2rem;border-top:1px
   .est-result{position:static}
   .est-checks{grid-template-columns:1fr}
 }
+
+/* WCAG 2.5.8 target size (minimum): give standalone links a 24px touch target
+   on touch devices without changing the visual design. */
+@media (pointer:coarse){
+  .svc-link,
+  .card .more,
+  .foot-col a,
+  .mnav a,
+  .area-links a,
+  .rel-list a{
+    min-height:24px;
+    display:inline-flex;
+    align-items:center;
+  }
+  .foot-col li + li{margin-top:.35rem}
+}

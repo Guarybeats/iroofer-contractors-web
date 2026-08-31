@@ -8,7 +8,7 @@ import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
   title: "New Construction in Dallas, GA | iRoofer Contractors",
-  description: "New Construction in Dallas, GA — We partner with builders and homeowners on new builds to install a roof that matches the design and the budget. Local, family-owned, 5★ on Google, free inspection. Call (470) 236-1410.",
+  description: 'New construction roofing in Dallas, GA. We work with builders and homeowners to match the design and the budget. Free consultation: (470) 236-1410.',
   path: '/new-construction-dallas-ga',
 });
 

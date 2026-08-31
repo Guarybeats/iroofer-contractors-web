@@ -8,7 +8,7 @@ import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
   title: 'Gutter Repair & Replacement in Kennesaw, GA',
-  description: "Gutter Repair & Replacement in Kennesaw, GA — Clogged or failing gutters are the #1 cause of preventable roof and foundation damage. We repair, realign, and replace. Local, family-owned, 5★ on Google, free inspection. Call (470) 236-1410.",
+  description: 'Gutter repair and replacement in Kennesaw, GA. We fix clogged, sagging and leaking gutters before they damage your roof. Free inspection: (470) 236-1410.',
   path: '/gutter-repair-replacement-kennesaw',
 });
 

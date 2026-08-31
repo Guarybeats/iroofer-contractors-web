@@ -7,7 +7,7 @@ import { seo } from '@/lib/seo';
 export const metadata = seo({
   title: 'New Construction Roofing — iRoofer Contractors Dallas, GA',
   description:
-    'Building a new home in North Georgia? iRoofer Contractors handles complete new-construction roofing — design-matched shingles, code-compliant installation, builder coordination. Free consultation.',
+    'Building in North Georgia? Complete new-construction roofing — design-matched shingles, code-compliant installation, builder coordination.',
   path: '/new-construction',
 });
 

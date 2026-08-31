@@ -55,6 +55,8 @@ export const services = [
   {
     slug: 'roof-replacement',
     title: 'Roof Replacement',
+    metaDesc:
+      'Full tear-off and replacement with architectural shingles, installed by an Owens Corning Preferred Contractor in Dallas, GA & Metro Atlanta.',
     tagline: 'A new roof that lasts decades.',
     image: '/assets/service-replacement.jpg?v=2',
     webp: '/assets/service-replacement.webp?v=2',
@@ -100,6 +102,8 @@ export const services = [
   {
     slug: 'storm-damage-roof-repair',
     title: 'Storm Damage Roof Repair',
+    metaDesc:
+      'Wind, hail and limb damage is easy to miss from the ground. Free inspection, same-day tarping, and full documentation for your claim.',
     tagline: '24/7 storm response across west Metro Atlanta.',
     image: '/assets/storm-damage.jpg?v=2',
     webp: '/assets/storm-damage.webp?v=2',

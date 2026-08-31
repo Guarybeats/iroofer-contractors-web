@@ -8,7 +8,7 @@ import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
   title: "Roof Repair in Kennesaw, GA | iRoofer Contractors",
-  description: "Roof Repair in Kennesaw, GA — From storm damage to worn flashing, we find the source and fix it right — so a small problem stays small. Local, family-owned, 5★ on Google, free inspection. Call (470) 236-1410.",
+  description: 'Roof repair in Kennesaw, GA — storm damage, leaks and worn flashing found and fixed right. Family-owned, 5★ on Google. Free inspection: (470) 236-1410.',
   path: '/roof-repair-kennesaw',
 });
 

@@ -8,7 +8,7 @@ import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
   title: 'Storm Damage Roof Repair in Powder Springs, GA',
-  description: "Storm Damage Roof Repair in Powder Springs, GA — Hail, wind, or tree damage from a Georgia storm? We inspect, document storm damage, and handle your insurance claim. Local, family-owned, 5★ on Google, free inspection. Call (470) 236-1410.",
+  description: 'Storm damage roof repair in Powder Springs, GA. We inspect hail and wind damage, document it, and handle your insurance claim. Free inspection: (470) 236-1410.',
   path: '/storm-damage-roof-repair-powder-springs',
 });
 

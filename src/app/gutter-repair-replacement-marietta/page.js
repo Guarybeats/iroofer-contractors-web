@@ -8,7 +8,7 @@ import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
   title: 'Gutter Repair & Replacement in Marietta, GA',
-  description: "Gutter Repair & Replacement in Marietta, GA — Clogged or failing gutters are the #1 cause of preventable roof and foundation damage. We repair, realign, and replace. Local, family-owned, 5★ on Google, free inspection. Call (470) 236-1410.",
+  description: 'Gutter repair and replacement in Marietta, GA. We fix clogged, sagging and leaking gutters before they damage your roof. Free inspection: (470) 236-1410.',
   path: '/gutter-repair-replacement-marietta',
 });
 

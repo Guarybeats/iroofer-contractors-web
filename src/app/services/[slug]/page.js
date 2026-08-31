@@ -19,7 +19,7 @@ export function generateMetadata({ params }) {
   if (!service) return {};
   return seo({
     title: `${service.title} | Dallas, GA & Metro Atlanta`,
-    description: service.summary,
+    description: service.metaDesc || service.summary,
     path: `/services/${service.slug}`,
   });
 }

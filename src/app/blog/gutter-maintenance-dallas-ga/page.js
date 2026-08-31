@@ -15,7 +15,7 @@ export const metadata = {
 
   title: 'Gutter Maintenance in Dallas, GA: Clean or Replace?',
   description:
-    'Clogged gutters cause 30% of the basement leaks and foundation issues we see in Paulding County. A complete guide to gutter maintenance, cleaning schedule, and replacement timing.',
+    'Clogged gutters cause 30% of the basement leaks and foundation issues we see in Paulding County. Cleaning schedule and replacement timing.',
 };
 
 const post = {

@@ -7,7 +7,7 @@ import { FaqSchema } from '@/components/LocalSeo';
 export const metadata = seo({
   title: 'Roofing in Dallas, GA | iRoofer Contractors',
   description:
-    'Roof repair, replacement, storm restoration, and insurance-claim help in Dallas, GA and Paulding County. Local, family-owned, 54 Google reviews at 5.0. Free inspection.',
+    'Roof repair, replacement, storm restoration and insurance-claim help in Dallas, GA and Paulding County. Family-owned. Free inspection.',
   path: '/dallas-ga-roofing',
 });
 
@@ -50,7 +50,7 @@ export default function DallasGaRoofingPage() {
           <div className="sec-head rv">
             <span className="eyebrow dark">Dallas, GA · Paulding County</span>
             <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02, marginTop: 8 }}>
-              Roofing in Dallas, GA
+              Dallas, GA Roofing Company
             </h1>
             <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 720 }}>
               iRoofer Contractors is a local, family-owned roofing company based in Dallas, Georgia. We handle roof repair, full

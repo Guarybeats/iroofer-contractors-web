@@ -4,7 +4,7 @@ import { seo } from '@/lib/seo';
 export const metadata = seo({
   title: 'Instant Roof Estimate — iRoofer Contractors',
   description:
-    'Get an instant ballpark price for your new roof in Dallas, GA. Free, no-pressure roof cost estimator from iRoofer Contractors — then book a free on-roof inspection.',
+    'Get an instant ballpark price for a new roof in Dallas, GA. Free, no-pressure estimator, then book a free on-roof inspection.',
   path: '/estimator',
 });
 

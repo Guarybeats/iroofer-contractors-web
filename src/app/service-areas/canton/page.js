@@ -8,7 +8,7 @@ export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   title: 'Roofing in Canton, GA | Repair & Replacement | iRoofer',
   description:
-    'Family-owned roofer serving Canton, GA (Cherokee County). Hail and wind damage inspections, insurance claim documentation, roof repair, full replacement and gutters. Free inspection — call (470) 236-1410.',
+    'Family-owned roofer serving Canton, GA (Cherokee County). Hail and wind inspections, claim help, repair and replacement. Free inspection: (470) 236-1410.',
   alternates: { canonical: `${brand.url}/service-areas/canton` },
   openGraph: {
     type: 'website',

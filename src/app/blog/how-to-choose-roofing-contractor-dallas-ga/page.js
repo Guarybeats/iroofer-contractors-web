@@ -15,7 +15,7 @@ export const metadata = {
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/how-to-choose-roofing-contractor-dallas-ga' },
 
   title: 'How to Choose a Roofing Contractor in Dallas, GA',
-  description: "Don't hire a roofer until you read this. We break down the red flags, the questions that separate pros from storm chasers, and how to verify licenses and insurance in Georgia.",
+  description: 'Red flags, the questions that separate pros from storm chasers, and how to verify a roofer’s license and insurance in Georgia.',
 };
 
 const post = {

@@ -6,7 +6,7 @@ import { seo } from '@/lib/seo';
 export const metadata = seo({
   title: '24/7 Emergency Roof Repair Dallas, GA | Iroofer Contractors',
   description:
-    'Storm-damaged roof in Dallas, GA? Our crew is on call 24/7 for emergency roof repair, tarping, and insurance claim support. Same-day response, free inspection. Call now.',
+    'Storm-damaged roof in Dallas, GA? On call 24/7 for emergency repair, tarping and insurance claim support. Same-day response, free inspection.',
   path: '/emergency-roof-repair-dallas-ga',
 });
 
