@@ -44,13 +44,18 @@ export default function HeroForm({ source = "hero" }) {
             name="fullName"
             type="text"
             required
+            autoComplete="name"
+            minLength={2}
+            maxLength={80}
             placeholder="Jane Doe"
             className={errors.fullName ? "err" : ""}
+            aria-invalid={errors.fullName ? "true" : "false"}
+            aria-describedby="hn-error"
             onChange={() => clearError("fullName")}
           />
-          {errors.fullName && (
-            <span className="field-error">{errors.fullName}</span>
-          )}
+          <span className="field-error" id="hn-error" role="alert">
+            {errors.fullName || ""}
+          </span>
         </div>
         <div className="field">
           <label htmlFor="hp">Phone number</label>
@@ -59,13 +64,21 @@ export default function HeroForm({ source = "hero" }) {
             name="phone"
             type="tel"
             required
+            autoComplete="tel"
+            inputMode="tel"
+            pattern="[\d\s\-()+]{7,}"
+            minLength={7}
+            maxLength={20}
+            title="Enter a phone number, at least 7 digits"
             placeholder="(470) 236-1410"
             className={errors.phone ? "err" : ""}
+            aria-invalid={errors.phone ? "true" : "false"}
+            aria-describedby="hp-error"
             onChange={() => clearError("phone")}
           />
-          {errors.phone && (
-            <span className="field-error">{errors.phone}</span>
-          )}
+          <span className="field-error" id="hp-error" role="alert">
+            {errors.phone || ""}
+          </span>
         </div>
         {/* Honeypot — hidden from users, bots often fill it */}
         <input
@@ -96,12 +109,14 @@ export default function HeroForm({ source = "hero" }) {
                 </>
               )}
         </button>
-        {status === "ok" && (
-          <p className="form-status-ok">{msg}</p>
-        )}
-        {status === "error" && (
-          <p className="form-status-error">{msg}</p>
-        )}
+        <div aria-live="polite">
+          {status === "ok" && (
+            <p className="form-status-ok">{msg}</p>
+          )}
+          {status === "error" && (
+            <p className="form-status-error" role="alert">{msg}</p>
+          )}
+        </div>
       </div>
     </form>
   );
