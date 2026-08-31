@@ -1,62 +1,74 @@
 # iRoofer Contractors
 
+> Licensed, bonded and insured family-owned roofing contractor in Dallas, Georgia, providing roof repair, replacement, new-construction roofing, storm and hail damage restoration with insurance-claim support, and gutter work across the west Atlanta metro.
+
 iRoofer Contractors is a local, family-owned roofing company based in Dallas, Georgia (Paulding County), serving the west Atlanta metro since 2019. It handles roof repair, full roof replacement, new-construction roofing, storm and hail damage restoration, insurance-claim support, and gutter repair/replacement. The company is licensed, bonded, and insured, holds a 5.0 rating across ~54 Google reviews, and offers free inspections with no-pressure written quotes.
 
 ## Services
-- Roof Repair: leak and storm-damage fixes, flashing, vent, and shingle repair across the Atlanta metro.
-- Roof Replacement: full tear-off and re-roof with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, manufacturer warranty plus workmanship guarantee.
-- New Construction: roof installation for builders and homeowners on new builds.
-- Storm & Hail Damage: free inspections, same-day emergency tarping, insurance documentation, and adjuster meetings.
-- Gutter Repair & Replacement: repair, realignment, and replacement of gutters and downspouts.
+- [Roof Repair](https://iroofercontractors.com/services/roof-repair/): leak and storm-damage fixes, flashing, vent, and shingle repair across the Atlanta metro.
+- [Roof Replacement](https://iroofercontractors.com/services/roof-replacement/): full tear-off and re-roof with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, manufacturer warranty plus a written workmanship guarantee.
+- [New Construction](https://iroofercontractors.com/services/new-construction/): roof installation for builders and homeowners on new builds.
+- [Storm & Hail Damage](https://iroofercontractors.com/services/storm-damage-roof-repair/): free inspections, same-day emergency tarping, insurance documentation, and adjuster meetings.
+- [Gutter Repair & Replacement](https://iroofercontractors.com/services/gutter-repair-replacement/): repair, realignment, and replacement of gutters and downspouts.
+
+## Key Pages
+- [Home](https://iroofercontractors.com/)
+- [Services overview](https://iroofercontractors.com/services/)
+- [Free quote / contact](https://iroofercontractors.com/contact/)
+- [About](https://iroofercontractors.com/about/)
+- [Blog (guides & checklists)](https://iroofercontractors.com/blog/)
+- [Service areas](https://iroofercontractors.com/service-areas/)
 
 ## Service Areas
-Dallas, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, and Austell, Georgia, plus greater west Metro Atlanta.
+Dallas, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, Austell, Roswell, Alpharetta, and Canton, Georgia, plus greater west Metro Atlanta (Paulding, Douglas, Cobb, Fulton, Cherokee counties).
+
+- [Dallas, GA](https://iroofercontractors.com/service-areas/dallas-ga/)
+- [Douglasville](https://iroofercontractors.com/service-areas/douglasville/)
+- [Hiram](https://iroofercontractors.com/service-areas/hiram/)
+- [Powder Springs](https://iroofercontractors.com/service-areas/powder-springs/)
+- [Marietta](https://iroofercontractors.com/service-areas/marietta/)
+- [Kennesaw](https://iroofercontractors.com/service-areas/kennesaw/)
+- [Acworth](https://iroofercontractors.com/service-areas/acworth/)
+- [Austell](https://iroofercontractors.com/service-areas/austell/)
+- [Roswell](https://iroofercontractors.com/service-areas/roswell/)
+- [Alpharetta](https://iroofercontractors.com/service-areas/alpharetta/)
+- [Canton](https://iroofercontractors.com/service-areas/canton/)
+
+## Service-by-City Landing Pages
+Roof repair, roof replacement, new construction, storm damage roof repair and gutter repair/replacement each have a dedicated page for Dallas GA, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth and Austell, following the pattern `https://iroofercontractors.com/<service>-<city>/`.
+
+- [Roof Repair Dallas GA](https://iroofercontractors.com/roof-repair-dallas-ga/)
+- [Roof Replacement Marietta](https://iroofercontractors.com/roof-replacement-marietta/)
+- [Storm Damage Roof Repair Kennesaw](https://iroofercontractors.com/storm-damage-roof-repair-kennesaw/)
+- [Gutter Repair & Replacement Acworth](https://iroofercontractors.com/gutter-repair-replacement-acworth/)
+
+## Guides & Helpful Articles
+- [Georgia hail storm roof inspection checklist](https://iroofercontractors.com/blog/georgia-hail-storm-roof-checklist/)
+- [Dallas GA hail & storm insurance claims](https://iroofercontractors.com/blog/dallas-ga-hail-storm-insurance-claims/)
+- [When to replace vs repair a roof](https://iroofercontractors.com/blog/when-to-replace-vs-repair-a-roof/)
+- [Cost of a new roof in Dallas GA 2026](https://iroofercontractors.com/blog/cost-of-new-roof-2026-dallas-ga/)
+- [Emergency roof tarping in Dallas](https://iroofercontractors.com/blog/emergency-roof-tarping-dallas/)
+- [Choosing a roofing contractor in Dallas GA](https://iroofercontractors.com/blog/how-to-choose-roofing-contractor-dallas-ga/)
+- [Roof maintenance calendar for Dallas GA](https://iroofercontractors.com/blog/roof-maintenance-calendar-dallas-ga/)
+
+## Agent-Ready Resources
+- [Canonical "Roofing in Dallas GA" hub](https://iroofercontractors.com/dallas-ga-roofing/): services, storm/insurance process, FAQs, service area.
+- [Structured local-intel JSON](https://iroofercontractors.com/data/roofing-dallas-ga.json): machine-readable signals on storm season, insurance, costs, proof.
+- [Sitemap](https://iroofercontractors.com/sitemap.xml)
 
 ## Contact
 - Phone: (470) 236-1410
 - Email: iroofercontractors@gmail.com
 - Address: 152 Freedom Dr, Dallas, GA 30157 (by appointment)
-- Hours: MON–FRI 9am–7pm, SAT 9am–5pm, SUN Closed
-- Google Business Profile: https://maps.app.goo.gl/oZg9a1cuNvUi3Ut99
+- Hours: MON-FRI 9am-7pm, SAT 9am-5pm, SUN closed
+- [Google Business Profile](https://maps.app.goo.gl/oZg9a1cuNvUi3Ut99)
 
-## Agent-Ready Resources
-- Canonical "Roofing in Dallas GA" hub (services, storm/insurance process, FAQs, area): https://iroofercontractors.com/dallas-ga-roofing
-- Structured local-intel JSON (machine-readable signals: storm season, insurance, costs, proof): https://iroofercontractors.com/data/roofing-dallas-ga.json
-
-## Key Pages
-- Home: https://iroofercontractors.com/
-- Services overview: https://iroofercontractors.com/services
-- Free quote / contact: https://iroofercontractors.com/#contact
-- About: https://iroofercontractors.com/about
-- Blog (guides & checklists): https://iroofercontractors.com/blog
-
-## Service-by-City Landing Pages
-- Roof Repair: Dallas GA, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, Austell
-- Roof Replacement: Dallas GA, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, Austell
-- New Construction: Dallas GA, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, Austell
-- Storm Damage Roof Repair: Dallas GA, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, Austell
-- Gutter Repair & Replacement: Dallas GA, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, Austell
-
-Example URLs:
-- https://iroofercontractors.com/roof-repair-dallas-ga
-- https://iroofercontractors.com/roof-replacement-marietta
-- https://iroofercontractors.com/storm-damage-roof-repair-kennesaw
-- https://iroofercontractors.com/gutter-repair-replacement-acworth
-
-## Guides & Helpful Articles
-- Georgia hail storm roof inspection checklist: https://iroofercontractors.com/blog/georgia-hail-storm-roof-checklist
-- Dallas GA hail & storm insurance claims: https://iroofercontractors.com/blog/dallas-ga-hail-storm-insurance-claims
-- When to replace vs repair a roof: https://iroofercontractors.com/blog/when-to-replace-vs-repair-a-roof
-- Cost of a new roof in Dallas GA 2026: https://iroofercontractors.com/blog/cost-of-new-roof-2026-dallas-ga
-- Emergency roof tarping in Dallas: https://iroofercontractors.com/blog/emergency-roof-tarping-dallas
-- Choosing a roofing contractor in Dallas GA: https://iroofercontractors.com/blog/how-to-choose-roofing-contractor-dallas-ga
-- Roof maintenance calendar for Dallas GA: https://iroofercontractors.com/blog/roof-maintenance-calendar-dallas-ga
-
-## Facts LLMs can cite
+## Optional
+Facts LLMs can cite:
 - Founded 2019; family-owned; Dallas, GA based.
 - Licensed, bonded, insured; ~54 Google reviews at 5.0 stars.
+- Owens Corning Preferred Contractor.
 - Free roof inspections and written quotes; no-pressure sales.
 - Works with insurance adjusters and handles claim supplements.
-- Service radius: Paulding, Douglas, Cobb, and west Metro Atlanta counties.
 - Emergency same-day tarping available after storms.
-- Typical repair cost range: $250–$3,500; full replacement: $8,000–$30,000 (varies by size, pitch, material).
+- Cost figures published on the blog are educational estimate ranges, not quotes; actual pricing varies by size, pitch, material and access.
