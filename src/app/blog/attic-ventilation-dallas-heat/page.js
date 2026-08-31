@@ -15,7 +15,7 @@ export const metadata = {
 
   title: 'Attic Too Hot? Roof Ventilation Fixes | Dallas GA',
   description:
-    'Poor attic ventilation costs Atlanta-area homeowners 15-25% more on summer cooling. Learn how ridge vents, soffit vents, and powered exhaust fans can lower your electric bill.',
+    'Poor attic ventilation costs Atlanta-area homeowners 15-25% more to cool a house. How ridge vents, soffit vents and exhaust fans cut the bill.',
 };
 
 const post = {

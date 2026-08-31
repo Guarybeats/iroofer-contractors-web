@@ -4,7 +4,7 @@ import { seo } from '@/lib/seo';
 
 export const metadata = seo({
   title: 'Service Areas | Roofing in Dallas, GA & Atlanta',
-  description: `Local roofing across Dallas, GA and the greater Atlanta metro — Douglasville, Hiram, Powder Springs, Marietta, Acworth, Kennesaw, Austell, Roswell, Alpharetta, Canton. Free inspection: ${brand.phone}.`,
+  description: `Local roofing across Dallas, GA and the west Atlanta metro — Douglasville, Hiram, Powder Springs, Marietta, Acworth, Kennesaw and more. Call ${brand.phone}.`,
   path: '/service-areas',
 });
 

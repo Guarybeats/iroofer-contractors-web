@@ -6,7 +6,7 @@ import Pic from '@/components/Pic';
 export const metadata = seo({
   title: 'Roofing Services in Dallas, GA | Repair & Replace',
   description:
-    'Explore iRoofer Contractors’ roofing services in Dallas, GA and Metro Atlanta — roof repair, full replacement, new construction, gutters, and 24/7 storm response.',
+    'iRoofer Contractors’ roofing services in Dallas, GA and Metro Atlanta — repair, replacement, new construction, gutters, 24/7 storm response.',
   path: '/services',
 });
 

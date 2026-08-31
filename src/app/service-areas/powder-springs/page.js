@@ -8,7 +8,7 @@ export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   title: 'Roofing in Powder Springs, GA | Repair & Replacement | iRoofer',
   description:
-    'Family-owned roofer serving Powder Springs, GA (Cobb County). Ranch and two-story replacements, tree and limb damage repair, ventilation upgrades, gutters, storm claims. Free inspection — call (470) 236-1410.',
+    'Family-owned roofer serving Powder Springs, GA (Cobb County). Ranch and two-story replacements, limb damage repair, gutters. Free inspection: (470) 236-1410.',
   alternates: { canonical: `${brand.url}/service-areas/powder-springs` },
   openGraph: {
     type: 'website',

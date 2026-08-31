@@ -15,7 +15,7 @@ export const metadata = {
 
   title: 'Roof Repair Costs in Dallas, GA (2026 Guide)',
   description:
-    'Leak fixes, shingle repair, flashing, and storm patch pricing for Dallas, GA homes — real per-repair ranges from a local roofer, plus when repair beats replacement.',
+    'Leak fixes, shingle repair, flashing and storm patch ranges for Dallas, GA homes, plus when repair beats a full replacement.',
 };
 
 const post = {

@@ -16,7 +16,7 @@ export const metadata = {
 
   title: "Roof Warranties Explained: What's Covered",
   description:
-    'Manufacturer warranties, workmanship warranties, and what happens when your roof fails after year 5. We decode the fine print so you know what you’re really getting.',
+    'Manufacturer warranties, workmanship warranties, and what happens when a roof fails after year 5. We decode the fine print.',
 };
 
 const post = {

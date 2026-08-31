@@ -8,7 +8,7 @@ import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
   title: "Storm Damage Roof Repair in Dallas, GA | iRoofer Contractors",
-  description: "Storm Damage Roof Repair in Dallas, GA — Hail, wind, or tree damage from a Georgia storm? We inspect, document storm damage, and handle your insurance claim. Local, family-owned, 5★ on Google, free inspection. Call (470) 236-1410.",
+  description: 'Storm damage roof repair in Dallas, GA. We inspect hail and wind damage, document it, and handle your insurance claim. Free inspection: (470) 236-1410.',
   path: '/storm-damage-roof-repair-dallas-ga',
 });
 

@@ -15,7 +15,7 @@ export const metadata = {
 
   title: 'Wind Damage Roof Repair in Dallas, GA: Signs',
   description:
-    'Georgia wind gusts hit 70+ mph several times a year. Learn how to identify wind damage on your roof — lifted shingles, creased shingles, and exposed decking — before the next storm.',
+    'Georgia wind gusts hit 70+ mph several times a year. How to spot wind damage — lifted shingles, creases, exposed decking — early.',
 };
 
 const post = {

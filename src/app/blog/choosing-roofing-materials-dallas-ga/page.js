@@ -22,7 +22,7 @@ export const metadata = {
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/choosing-roofing-materials-dallas-ga' },
 
   title: 'How to Choose a Roofing Material | Dallas, GA',
-  description: 'A guide to choosing between asphalt shingles, metal roofing, slate, and tile for Dallas GA weather. Factors: hail resistance, energy efficiency, cost, and lifespan.',
+  description: 'Choosing between asphalt shingles, metal, slate and tile for Dallas, GA weather — hail resistance, energy efficiency, cost and lifespan.',
 };
 
 export default function BlogPostPage() {

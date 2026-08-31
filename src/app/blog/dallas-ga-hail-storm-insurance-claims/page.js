@@ -15,7 +15,7 @@ export const metadata = {
 
   title: 'Hail Damage Insurance Claims | Dallas, GA Roofing',
   description:
-    'Hail damage is the #1 cause of denied roofing insurance claims in North Georgia. Learn how to document damage, meet the adjuster, and what to do if your claim gets lowballed.',
+    'Hail is the #1 cause of denied roofing claims in North Georgia. How to document damage, meet the adjuster and handle a lowballed claim.',
 };
 
 const post = {

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://webmachinelearning.github.io/webmcp/schema/webmcp.json",
+  "name": "iRoofer Contractors",
+  "description": "Roofing contractor in Dallas, GA serving Paulding, Cobb, Douglas, Cherokee and Fulton counties. Roof repair, roof replacement, storm damage restoration, gutters and new construction roofing.",
+  "version": "1.0.0",
+  "homepage": "https://iroofercontractors.com/",
+  "contact": {
+    "phone": "+1-470-236-1410",
+    "email": "iroofercontractors@gmail.com"
+  },
+  "transport": {
+    "type": "web",
+    "registration": "document.modelContext",
+    "note": "Tools are registered client-side by every page of this site via the Model Context API. Load any page and read document.modelContext (navigator.modelContext on older Chromium)."
+  },
+  "tools": [
+    { "name": "get_company_info", "description": "Contact details, business hours, service area and credentials for iRoofer Contractors.", "readOnly": true },
+    { "name": "list_services", "description": "List the roofing and gutter services offered, with a page URL for each.", "readOnly": true },
+    { "name": "list_service_areas", "description": "List the Georgia cities and counties served, with a page URL for each.", "readOnly": true },
+    { "name": "find_service_page", "description": "Find the best page on the site for a given service and/or city.", "readOnly": true },
+    { "name": "start_quote_request", "description": "Fill the free-quote form on the current page with the homeowner's details. Never submits — the human must press the button.", "readOnly": false },
+    { "name": "call_iroofer", "description": "Get the phone number to reach iRoofer Contractors, including 24/7 emergency storm response.", "readOnly": true }
+  ],
+  "llmsTxt": "https://iroofercontractors.com/llms.txt"
+}

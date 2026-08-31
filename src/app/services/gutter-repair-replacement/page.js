@@ -8,7 +8,7 @@ import { seo } from '@/lib/seo';
 export const metadata = seo({
   title: 'Gutter Repair & Replacement | Dallas, GA Roofers',
   description:
-    'Sagging, leaking, or clogged gutters damage your roof, fascia, and foundation. iRoofer Contractors repairs, realigns, and replaces seamless gutters in Dallas, GA & Metro Atlanta. Free inspection — call (470) 236-1410.',
+    'Sagging, leaking or clogged gutters damage roof, fascia and foundation. We repair and replace seamless gutters in Dallas, GA & Metro Atlanta.',
   path: '/services/gutter-repair-replacement',
 });
 

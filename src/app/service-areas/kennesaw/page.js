@@ -8,7 +8,7 @@ export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   title: 'Roofing in Kennesaw, GA | Repair & Replacement | iRoofer',
   description:
-    'Family-owned roofer serving Kennesaw, GA (Cobb County). Roof repair, full replacement, small-business and HOA-neighborhood roofing, storm claim help. Free photo-documented inspection — call (470) 236-1410.',
+    'Family-owned roofer serving Kennesaw, GA (Cobb County). Roof repair, full replacement and HOA-neighborhood roofing. Free inspection: (470) 236-1410.',
   alternates: { canonical: `${brand.url}/service-areas/kennesaw` },
   openGraph: {
     type: 'website',

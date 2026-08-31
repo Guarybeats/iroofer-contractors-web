@@ -8,7 +8,7 @@ export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   title: 'Roofing in Marietta, GA | Repair & Replacement | iRoofer',
   description:
-    'Family-owned roofer serving Marietta, GA (Cobb County). Older-home repairs, full replacements, new construction and storm claim documentation. Free photo-documented inspection — call (470) 236-1410.',
+    'Family-owned roofer serving Marietta, GA (Cobb County). Older-home repairs, full replacements, new construction, storm claims. Free inspection: (470) 236-1410.',
   alternates: { canonical: `${brand.url}/service-areas/marietta` },
   openGraph: {
     type: 'website',

@@ -9,7 +9,7 @@ function faqItem(open){ return 'faq-item' + (open ? ' open' : ''); }
 
 export const metadata = seo({
   title: 'Roof Insurance Claim Help in Dallas, GA',
-  description: "We inspect, document the damage, and meet your adjuster on-site so your roof claim reflects the real scope of work. Dallas, GA & Metro Atlanta. Free inspection — call (470) 236-1410.",
+  description: 'We inspect, document the damage and meet your adjuster on-site so your roof claim reflects the real scope. Dallas, GA & Metro Atlanta.',
   path: '/services/roof-insurance-claims',
 });
 

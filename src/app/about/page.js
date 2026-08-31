@@ -4,7 +4,7 @@ import { seo } from '@/lib/seo';
 export const metadata = seo({
   title: 'About iRoofer Contractors | Dallas, GA Roofers',
   description:
-    'iRoofer Contractors is a family-owned Dallas, GA roofing company founded in 2019 by Cristian Mendez. Honest pricing, clean job sites, and 150+ roofs across the west metro.',
+    'iRoofer Contractors is a family-owned Dallas, GA roofing company founded in 2019 by Cristian Mendez. Honest pricing, clean job sites, 150+ roofs.',
   path: '/about',
 });
 

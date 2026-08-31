@@ -8,7 +8,7 @@ export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   title: 'Roofing in Acworth, GA | Repair & Replacement | iRoofer',
   description:
-    'Family-owned roofer serving Acworth, GA (Cobb County). Leak tracing, full tear-offs, ventilation upgrades, gutters and storm claim help near Lake Acworth and Allatoona. Free inspection — call (470) 236-1410.',
+    'Family-owned roofer serving Acworth, GA (Cobb County). Leak tracing, tear-offs, ventilation, gutters and storm claim help. Free inspection: (470) 236-1410.',
   alternates: { canonical: `${brand.url}/service-areas/acworth` },
   openGraph: {
     type: 'website',
