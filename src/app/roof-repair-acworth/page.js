@@ -69,7 +69,7 @@ export default function Page() {
             </div>
 
             <div className="rv">
-              <img src="/assets/service-repair.webp?v=2" alt="Roof Repair in Acworth, GA by iRoofer Contractors" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%', marginBottom: 24 }} />
+              <img src="/assets/service-repair.webp?v=3" alt="Roof Repair in Acworth, GA by iRoofer Contractors" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%', marginBottom: 24 }} />
               <div style={{ maxWidth: 460, margin: 0 }}>
                 <QuoteForm variant="contact" id="roof-repair-acworth-quote" source="Roof Repair Acworth GA" />
               </div>
