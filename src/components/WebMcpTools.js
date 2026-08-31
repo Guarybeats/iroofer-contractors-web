@@ -28,9 +28,13 @@ function text(payload) {
 }
 
 function setNativeValue(el, value) {
-  const proto = el instanceof HTMLTextAreaElement
-    ? window.HTMLTextAreaElement.prototype
-    : window.HTMLInputElement.prototype;
+  const tag = el.tagName;
+  const proto =
+    tag === "TEXTAREA"
+      ? window.HTMLTextAreaElement.prototype
+      : tag === "SELECT"
+        ? window.HTMLSelectElement.prototype
+        : window.HTMLInputElement.prototype;
   const setter = Object.getOwnPropertyDescriptor(proto, "value")?.set;
   if (setter) setter.call(el, value);
   else el.value = value;
