@@ -534,20 +534,13 @@ footer{background:var(--ink3);color:#9aa6b0;padding:4.5rem 0 2rem;border-top:1px
   .est-checks{grid-template-columns:1fr}
 }
 
-/* WCAG 2.5.8 target size (minimum): 24px touch targets for standalone links,
-   without changing the visual design. Not gated on pointer:coarse so it also
-   applies to touch laptops and to automated accessibility checks. */
 .svc-link,
-.card .more,
-.foot-col a,
+.card .more{min-height:24px}
+
+/* WCAG 2.5.8 target size (minimum): give the remaining short links a 24px
+   touch target with vertical padding, without changing their display mode
+   (.foot-col a is display:block and must stay that way, or the footer link
+   lists collapse onto one line). */
 .foot-bottom a,
-.mnav a,
-.area-links a,
-.rel-list a,
-.rv ul li a{
-  min-height:24px;
-  display:inline-flex;
-  align-items:center;
-}
-.foot-col li + li{margin-top:.35rem}
-.rv ul li + li{margin-top:.25rem}
+.rv ul li a{display:inline-block;padding-block:.2rem;min-height:24px}
+.rv ul li + li{margin-top:.2rem}
