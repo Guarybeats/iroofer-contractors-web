@@ -41,8 +41,8 @@ export const services = [
     slug: 'roof-repair',
     title: 'Roof Repair',
     tagline: 'Stop the leak before it spreads.',
-    image: '/assets/service-repair.jpg?v=2',
-    webp: '/assets/service-repair.webp?v=2',
+    image: '/assets/service-repair.jpg?v=3',
+    webp: '/assets/service-repair.webp?v=3',
     summary:
       'From storm damage to worn flashing, we find the source and fix it right — so a small problem stays small.',
     bullets: [
