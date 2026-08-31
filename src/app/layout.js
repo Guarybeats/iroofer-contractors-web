@@ -3,6 +3,7 @@ import Script from 'next/script';
 import { brand } from '@/lib/brand';
 import SiteScripts from '@/components/SiteScripts';
 import LocalSeo from '@/components/LocalSeo';
+import WebMcpTools from '@/components/WebMcpTools';
 import { GBP_URL } from '@/components/LocalSeo';
 
 export const metadata = {
@@ -122,6 +123,8 @@ export default function RootLayout({ children }) {
           <a href="/#contact">Contact</a>
           <a className="mphone" href={`tel:${brand.phone}`}>{brand.phone}</a>
         </nav>
+
+        <WebMcpTools />
 
         <main>{children}</main>
 
