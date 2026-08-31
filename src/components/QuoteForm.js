@@ -54,14 +54,20 @@ export default function QuoteForm({ id = "quote", source = "website", variant, e
         <input
           id={`${id}-name`}
           name="fullName"
+          type="text"
           required
+          autoComplete="name"
+          minLength={2}
+          maxLength={80}
           placeholder="Jane Homeowner"
           className={errors.fullName ? "err" : ""}
+          aria-invalid={errors.fullName ? "true" : "false"}
+          aria-describedby={`${id}-name-error`}
           onChange={() => clearError("fullName")}
         />
-        {errors.fullName && (
-          <span className="field-error">{errors.fullName}</span>
-        )}
+        <span className="field-error" id={`${id}-name-error`} role="alert">
+          {errors.fullName || ""}
+        </span>
       </div>
       <div className="field">
         <label htmlFor={`${id}-phone`}>Phone</label>
@@ -70,13 +76,21 @@ export default function QuoteForm({ id = "quote", source = "website", variant, e
           name="phone"
           required
           type="tel"
+          autoComplete="tel"
+          inputMode="tel"
+          pattern="[\d\s\-()+]{7,}"
+          minLength={7}
+          maxLength={20}
+          title="Enter a phone number, at least 7 digits"
           placeholder="(470) 000-0000"
           className={errors.phone ? "err" : ""}
+          aria-invalid={errors.phone ? "true" : "false"}
+          aria-describedby={`${id}-phone-error`}
           onChange={() => clearError("phone")}
         />
-        {errors.phone && (
-          <span className="field-error">{errors.phone}</span>
-        )}
+        <span className="field-error" id={`${id}-phone-error`} role="alert">
+          {errors.phone || ""}
+        </span>
       </div>
       <div className="field">
         <label htmlFor={`${id}-email`}>Email</label>
@@ -84,19 +98,27 @@ export default function QuoteForm({ id = "quote", source = "website", variant, e
           id={`${id}-email`}
           name="email"
           type="email"
+          autoComplete="email"
+          inputMode="email"
+          maxLength={120}
           placeholder="jane@email.com"
           className={errors.email ? "err" : ""}
+          aria-invalid={errors.email ? "true" : "false"}
+          aria-describedby={`${id}-email-error`}
           onChange={() => clearError("email")}
         />
-        {errors.email && (
-          <span className="field-error">{errors.email}</span>
-        )}
+        <span className="field-error" id={`${id}-email-error`} role="alert">
+          {errors.email || ""}
+        </span>
       </div>
       <div className="field">
         <label htmlFor={`${id}-address`}>Property Address</label>
         <input
           id={`${id}-address`}
           name="address"
+          type="text"
+          autoComplete="street-address"
+          maxLength={160}
           placeholder="123 Main St, Dallas, GA"
         />
       </div>
@@ -133,6 +155,7 @@ export default function QuoteForm({ id = "quote", source = "website", variant, e
           id={`${id}-msg`}
           name="message"
           rows={3}
+          maxLength={1000}
           placeholder="Tell us what you’re seeing…"
         />
       </div>
@@ -161,12 +184,14 @@ export default function QuoteForm({ id = "quote", source = "website", variant, e
       >
         {status === "sending" ? "Sending…" : "Get My Free Quote"}
       </button>
-      {status === "ok" && (
-        <p className="form-status-ok">{msg}</p>
-      )}
-      {status === "error" && (
-        <p className="form-status-error">{msg}</p>
-      )}
+      <div aria-live="polite">
+        {status === "ok" && (
+          <p className="form-status-ok">{msg}</p>
+        )}
+        {status === "error" && (
+          <p className="form-status-error" role="alert">{msg}</p>
+        )}
+      </div>
       <p className="form-note">
         By submitting you agree to be contacted by iRoofer Contractors about your
         roof.

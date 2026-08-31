@@ -372,6 +372,7 @@ a.svc-head{text-decoration:none;color:var(--ink)}
 .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--orange);box-shadow:0 0 0 4px rgba(255,92,28,.16);background:#fff}
 .field input.err,.field select.err,.field textarea.err{border-color:#d83a3a;box-shadow:0 0 0 3px rgba(216,58,58,.14)}
 .field-error{display:block;font-size:.72rem;color:#d83a3a;margin-top:.3rem}
+.field-error:empty{display:none}
 /* bigger, tappable submit */
 .quote-card .btn.btn-block,.cform .btn.btn-block{padding:1.05rem 1.5rem;font-size:.92rem;margin-top:.4rem}
 .quote-card .form-note,.cform .note{font-size:.72rem;color:#7a858e;margin-top:.9rem;text-align:center}
