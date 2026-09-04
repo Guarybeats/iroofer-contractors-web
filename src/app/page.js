@@ -67,17 +67,17 @@ export default function HomePage() {
         <div className="wrap">
           <div className="hero-copy">
             <span className="eyebrow">Dallas, GA · Atlanta Metro</span>
-            <h1>Dallas GA Roof Repair<br />&amp; Replacement<br /><span className="stroke">done right.</span></h1>
+            <h1>Dallas GA Roof Repair <br />&amp; Replacement <br /><span className="stroke">done right.</span></h1>
             <p className="lead">Family-owned and operated since 2019. We tear off, rebuild, and stand behind every roof with expert craftsmanship and honest service.</p>
             <div className="hero-cta">
               <a className="btn btn-solid" href="/#contact">Get a Free Inspection <span className="arr">→</span></a>
               <a className="btn btn-ghost" href="/#work">See Our Work</a>
             </div>
             <div className="stats">
-              <div className="stat"><div className="num"><span className="cnt" data-count="2019" data-nogroup>0</span></div><div className="lbl">Serving Dallas, GA since</div></div>
-              <div className="stat"><div className="num"><span className="cnt" data-count="150">0</span><span className="suf">+</span></div><div className="lbl">Roofs completed</div></div>
-              <div className="stat"><div className="num">{brand.rating}</div><div className="lbl">{brand.reviewCount} rating</div></div>
-              <div className="stat"><div className="num"><span className="cnt" data-count="24">0</span><span className="suf">hr</span></div><div className="lbl">Storm response</div></div>
+              <div className="stat"><div className="num"><span className="cnt" data-count="2019" data-nogroup>2019</span></div><div className="lbl">Serving Dallas, GA since</div></div>
+              <div className="stat"><div className="num"><span className="cnt" data-count="150">150</span><span className="suf">+</span></div><div className="lbl">Roofs completed</div></div>
+              <div className="stat"><div className="num">{brand.rating}</div><div className="lbl">{brand.reviewCount} Google reviews</div></div>
+              <div className="stat"><div className="num"><span className="cnt" data-count="24">24</span><span className="suf">hr</span></div><div className="lbl">Storm response</div></div>
             </div>
           </div>
 
@@ -174,7 +174,7 @@ export default function HomePage() {
         <div className="wrap">
           <div className="rv">
             <span className="pulse"><span className="dot" /> Crews in your area today</span>
-            <h2>Hail doesn’t wait.<br /><span className="ac">Neither do we.</span></h2>
+            <h2>Hail doesn’t wait. <br /><span className="ac">Neither do we.</span></h2>
             <p>Georgia spring storms roll through fast. If a storm just hit your neighborhood, the damage is often invisible from the ground — and your insurance window is ticking. We tarp, document and file within 24 hours.</p>
             <div className="cta">
               <a className="bigphone" href={`tel:${brand.phone}`}>{brand.phone}</a>
