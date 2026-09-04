@@ -9,7 +9,7 @@
 /gutters-services             /services/gutter-repair-replacement/          301
 /financing                    /blog/roof-financing-options-dallas-ga/       301
 /reviews                      /about/                                       301
-/privacy-policy               /                                             301
+/privacy-policy               /privacy/                                     301
 
 # Legacy blog posts -> closest current article
 /blog/see-your-roof-like-never-before-the-benefits-of-drone-inspections   /blog/                                          301
@@ -33,3 +33,12 @@
 # Keep the site-convention URL, 301 the twin.
 /roof-replacement-marietta-ga   /roof-replacement-marietta/            301
 /storm-damage-kennesaw-ga       /storm-damage-roof-repair-kennesaw/    301
+
+# Trailing-slash twins (Next trailingSlash:true). Without these, /about-us/ 404s while /about-us 301s.
+/about-us/                    /about/                                       301
+/roofing/                     /services/                                    301
+/privacy-policy/              /privacy/                                     301
+/terms-of-service             /terms/                                       301
+/terms-of-service/            /terms/                                       301
+/llm.txt                      /llms.txt                                     301
+/llm.txt/                     /llms.txt                                     301

@@ -158,6 +158,8 @@ export default function RootLayout({ children }) {
                 <a href="/#reviews">Reviews</a>
                 <a href="/about/">About Us</a>
                 <a href="/blog/">Blog</a>
+                <a href="/privacy/">Privacy Policy</a>
+                <a href="/terms/">Terms of Service</a>
                 <a href="/#contact">Contact</a>
               </div>
               <div className="foot-col">
@@ -195,7 +197,7 @@ export default function RootLayout({ children }) {
             </div>
             <div className="foot-bottom">
               <span>Built tough in Dallas, GA.</span>
-              <span>Licensed, bonded &amp; insured · <a href="/contact/">Contact</a></span>
+              <span>Licensed, bonded &amp; insured · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/contact/">Contact</a></span>
             </div>
           </div>
         </footer>
