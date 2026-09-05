@@ -2,3 +2,7 @@ name = "iroofer-contractors-web"
 compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "out"
+
+# Public vars (site key is meant to be public). Secret TURNSTILE_SECRET_KEY stays in the dashboard.
+[vars]
+NEXT_PUBLIC_TURNSTILE_SITE_KEY = "0x4AAAAAAEoKTHy8HKuOxune"
