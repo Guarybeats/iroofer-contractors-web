@@ -50,7 +50,7 @@ function useLeadForm({
   }, []);
 
   const submit = useCallback(
-    async (fd) => {
+    async (fd, extras = {}) => {
       if (controllerRef.current) {
         controllerRef.current.abort();
       }
@@ -60,24 +60,33 @@ function useLeadForm({
       // the visitor gets the mailto fallback instead of a spinner that never ends.
       const timeoutId = setTimeout(() => controller.abort("timeout"), 12000);
 
-      const errs = validate(fd);
+      const errs = validate(fd, extras);
       if (Object.keys(errs).length) {
         setErrors(errs);
+        if (errs._form) {
+          setStatus("error");
+          setMsg(errs._form);
+        }
         return false;
       }
 
       setErrors({});
       setStatus("sending");
+      setMsg("");
 
       const payload = {
         fullName: fd.get("fullName")?.toString()?.trim() || "",
         phone: fd.get("phone")?.toString().trim() || "",
         email: fd.get("email")?.toString()?.trim() || undefined,
         address: fd.get("address")?.toString()?.trim() || undefined,
+        city: fd.get("city")?.toString()?.trim() || undefined,
+        zip: fd.get("zip")?.toString()?.trim() || undefined,
         service: fd.get("service")?.toString()?.trim() || undefined,
         howSoon: fd.get("howSoon")?.toString()?.trim() || undefined,
         message: fd.get("message")?.toString()?.trim() || undefined,
         estimateInfo: fd.get("estimateInfo")?.toString()?.trim() || undefined,
+        _honeypot: fd.get("_honeypot")?.toString() || "",
+        turnstileToken: extras.turnstileToken || "",
         source,
       };
 
@@ -88,19 +97,40 @@ function useLeadForm({
           body: JSON.stringify(payload),
           signal: controller.signal,
         });
+
+        const body = await res.json().catch(() => ({}));
+
+        // Hard 4xx = validation / spam / out-of-area — show the message, never mailto.
+        if (res.status >= 400 && res.status < 500) {
+          setStatus("error");
+          const serverMsg =
+            body.error ||
+            (res.status === 403
+              ? "Please complete the security check and try again."
+              : errorMsg);
+          setMsg(serverMsg);
+          if (body.field) {
+            setErrors({ [body.field]: serverMsg });
+          }
+          return false;
+        }
+
         if (!res.ok) throw new Error("Request failed");
+
         setStatus("ok");
         setMsg(successMsg);
         return true;
       } catch (err) {
         // A caller-initiated abort (new submit) is a no-op; our own timeout is not.
-        if (err.name === "AbortError" && controller.signal.reason !== "timeout") return false;
+        if (err.name === "AbortError" && controller.signal.reason !== "timeout") {
+          return false;
+        }
         // Fall back to mailto on static hosts where /api/leads isn't built.
         const mailto = `${API_FALLBACK}?subject=${encodeURIComponent(
           `New iRoofer lead: ${payload.fullName || "Unknown"} (${payload.phone || "No phone"})`
         )}&body=${encodeURIComponent(
           Object.entries(payload)
-            .filter(([, v]) => v)
+            .filter(([k, v]) => v && k !== "_honeypot" && k !== "turnstileToken")
             .map(([k, v]) => `${k}: ${v}`)
             .join("\n")
         )}`;

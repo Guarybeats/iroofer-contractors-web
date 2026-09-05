@@ -382,6 +382,11 @@ a.svc-head{text-decoration:none;color:var(--ink)}
 /* form status messages */
 .form-status-ok{color:var(--green);font-weight:600;margin-top:.75rem;font-size:.9rem}
 .form-status-error{color:#d83a3a;font-weight:600;margin-top:.75rem;font-size:.9rem}
+/* Turnstile widget spacing on lead forms */
+.turnstile-wrap{margin:0.6rem 0 0.9rem;min-height:65px}
+.hform .turnstile-wrap{margin:0.4rem 0 0.8rem}
+.quote-card .grid2,.cform .grid2{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+
 
 /* legacy quote-card (used by QuoteForm) */
 .quote-card{background:var(--chalk);color:var(--ink);border-radius:4px;padding:2rem;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
@@ -461,7 +466,7 @@ footer{background:var(--ink3);color:#9aa6b0;padding:4.5rem 0 2rem;border-top:1px
   .svc-inner .row{grid-template-columns:1fr;gap:1rem}
   .svc-inner img{height:170px}
   .steps-grid{grid-template-columns:1fr}
-  .cform .grid2{grid-template-columns:1fr}
+  .cform .grid2,.quote-card .grid2{grid-template-columns:1fr}
   .foot-grid{grid-template-columns:1fr}
   .fab{display:grid}
   #toTop{bottom:5rem}

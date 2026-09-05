@@ -1,19 +1,46 @@
 "use client";
 
-import { useCallback, useRef } from "react";
+import { useCallback, useRef, useState } from "react";
 import useLeadForm from "./useLeadForm";
+import TurnstileWidget, { turnstileConfigured } from "./TurnstileWidget";
+import {
+  isValidUsZip,
+  isInServiceArea,
+  isFake555Phone,
+  hasTemplateTokens,
+  OUT_OF_AREA_MSG,
+  INVALID_ZIP_MSG,
+} from "@/lib/leadValidation";
 
 export default function HeroForm({ source = "hero" }) {
   const formRef = useRef(null);
-  const validate = useCallback((fd) => {
+  const [turnstileToken, setTurnstileToken] = useState("");
+  const [resetSignal, setResetSignal] = useState(0);
+
+  const validate = useCallback((fd, extras = {}) => {
     const errs = {};
     const name = fd.get("fullName")?.toString()?.trim() || "";
     const phone = fd.get("phone")?.toString()?.trim() || "";
+    const zip = fd.get("zip")?.toString()?.trim() || "";
 
     if (!name) errs.fullName = "Please enter your name";
     if (!phone) errs.phone = "Please enter your phone number";
     else if (!/^[\d\s\-\(\)\+]{7,}$/.test(phone))
       errs.phone = "Please enter a valid phone number";
+    else if (isFake555Phone(phone))
+      errs.phone = "Please enter a real phone number";
+
+    if (!zip) errs.zip = "Please enter your ZIP code";
+    else if (!isValidUsZip(zip)) errs.zip = INVALID_ZIP_MSG;
+    else if (!isInServiceArea(zip)) errs.zip = OUT_OF_AREA_MSG;
+
+    if (hasTemplateTokens(name, phone, zip)) {
+      errs._form = "Please check your information and try again.";
+    }
+
+    if (turnstileConfigured() && !extras.turnstileToken) {
+      errs._form = "Please complete the security check below.";
+    }
 
     return errs;
   }, []);
@@ -25,9 +52,14 @@ export default function HeroForm({ source = "hero" }) {
 
   async function onSubmit(e) {
     e.preventDefault();
-    const ok = await submit(new FormData(e.currentTarget));
+    const ok = await submit(new FormData(e.currentTarget), { turnstileToken });
     if (ok && formRef.current) {
       formRef.current.reset();
+      setTurnstileToken("");
+      setResetSignal((n) => n + 1);
+    } else {
+      setResetSignal((n) => n + 1);
+      setTurnstileToken("");
     }
   }
 
@@ -80,6 +112,28 @@ export default function HeroForm({ source = "hero" }) {
             {errors.phone || ""}
           </span>
         </div>
+        <div className="field">
+          <label htmlFor="hz">ZIP code</label>
+          <input
+            id="hz"
+            name="zip"
+            type="text"
+            required
+            autoComplete="postal-code"
+            inputMode="numeric"
+            pattern="\d{5}(-\d{4})?"
+            minLength={5}
+            maxLength={10}
+            placeholder="30132"
+            className={errors.zip ? "err" : ""}
+            aria-invalid={errors.zip ? "true" : "false"}
+            aria-describedby="hz-error"
+            onChange={() => clearError("zip")}
+          />
+          <span className="field-error" id="hz-error" role="alert">
+            {errors.zip || ""}
+          </span>
+        </div>
         {/* Honeypot — hidden from users, bots often fill it */}
         <input
           type="text"
@@ -94,6 +148,10 @@ export default function HeroForm({ source = "hero" }) {
             pointerEvents: "none",
           }}
           aria-hidden="true"
+        />
+        <TurnstileWidget
+          onToken={setTurnstileToken}
+          resetSignal={resetSignal}
         />
         <button
           className="btn btn-solid"
