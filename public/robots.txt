@@ -4,5 +4,7 @@ Disallow: /admin/
 
 # AI / LLM crawlers — machine-readable site summary
 llms.txt: https://iroofercontractors.com/llms.txt
+# Also available at the emerging well-known path
+# https://iroofercontractors.com/.well-known/llms.txt
 
 Sitemap: https://iroofercontractors.com/sitemap.xml
