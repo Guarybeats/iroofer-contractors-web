@@ -8,8 +8,8 @@ import { GBP_URL } from '@/components/LocalSeo';
 
 export const metadata = {
   metadataBase: new URL('https://iroofercontractors.com'),
-  title: `iRoofer Contractors | Roof Repair & Replacement Dallas GA`,
-  description: `iRoofer Contractors — local Dallas, GA roofer for repair, replacement & storm damage. 5★ on Google, free inspection. Call (470) 236-1410.`,
+  title: `Dallas GA Roofing | Repair & Replacement | iRoofer`,
+  description: `Family-owned Dallas GA roofing since 2019. Repair, replacement & storm damage—Owens Corning Preferred. Call (470) 236-1410 for same-day service.`,
   robots: { index: true, follow: true },
   icons: {
     icon: [
@@ -24,8 +24,8 @@ export const metadata = {
     type: 'website',
     url: 'https://iroofercontractors.com/',
     siteName: 'iRoofer Contractors',
-    title: `iRoofer Contractors | Roof Repair & Replacement Dallas GA`,
-    description: `Local Dallas, GA roofer for repair, replacement & storm damage. 5★ on Google, free inspection. Call (470) 236-1410.`,
+    title: `Dallas GA Roofing | Repair & Replacement | iRoofer`,
+    description: `Family-owned Dallas GA roofing since 2019. Repair, replacement & storm damage—Owens Corning Preferred. Call (470) 236-1410 for same-day service.`,
     locale: 'en_US',
     images: [{ url: 'https://iroofercontractors.com/assets/hero.jpg', alt: 'iRoofer Contractors roofing a home in Dallas, GA', width: 1280, height: 960 }],
   },
@@ -33,8 +33,8 @@ export const metadata = {
     card: 'summary_large_image',
     site: '@irooferc',
     creator: '@irooferc',
-    title: `iRoofer Contractors | Roof Repair & Replacement Dallas GA`,
-    description: `Local Dallas, GA roofer for repair, replacement & storm damage. 5★ on Google, free inspection. Call (470) 236-1410.`,
+    title: `Dallas GA Roofing | Repair & Replacement | iRoofer`,
+    description: `Family-owned Dallas GA roofing since 2019. Repair, replacement & storm damage—Owens Corning Preferred. Call (470) 236-1410 for same-day service.`,
     images: ['https://iroofercontractors.com/assets/hero.jpg'],
   },
 };

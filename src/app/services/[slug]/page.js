@@ -107,6 +107,22 @@ export default function ServiceDetail({ params }) {
           </div>
         </div>
 
+        {hub.featuredLinks?.length > 0 && (
+          <div className="rv" style={{ marginTop: 56 }}>
+            <span className="eyebrow dark">City pages</span>
+            <p style={{ color: '#52606b', marginTop: 8, maxWidth: 640 }}>
+              Jump to the local page for your city and service:
+            </p>
+            <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '.6rem 1.4rem', marginTop: 12, listStyle: 'none', padding: 0 }}>
+              {hub.featuredLinks.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>{l.label} →</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         {hub.cityPrefix && (
           <div className="rv" style={{ marginTop: 56 }}>
             <span className="eyebrow dark">{hub.cityLabel}</span>

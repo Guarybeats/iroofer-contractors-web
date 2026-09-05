@@ -4,12 +4,11 @@ import QuoteForm from '@/components/QuoteForm';
 import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { localCopy } from '@/lib/localCopy';
-import { reviews } from '@/lib/reviews';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: "Roof Repair in Hiram, GA | iRoofer Contractors",
-  description: 'Roof repair in Hiram, GA — storm damage, leaks and worn flashing found and fixed right. Family-owned, 5★ on Google. Free inspection: (470) 236-1410.',
+  title: "Roof Repair Hiram GA | Same-Day Local Crew",
+  description: "Roof repair in Hiram, GA for leaks, flashing, and storm wear. Paulding County local crew\u2014licensed, bonded, insured. Call (470) 236-1410 today.",
   path: '/roof-repair-hiram',
 });
 
@@ -17,7 +16,13 @@ export const metadata = seo({
 // Do not inline generic template text here; see the header of that file for why.
 const copy = localCopy['roof-repair']['hiram'];
 const faqs = copy.faq;
-const review = reviews[1];
+const relatedLinks = [
+              { href: '/service-areas/hiram/', label: 'Hiram service area' },
+              { href: '/services/roof-repair/', label: 'roof repair services' },
+              { href: '/roof-repair-dallas-ga/', label: 'roof repair near Dallas' },
+              { href: '/roof-replacement-hiram/', label: 'roof replacement in Hiram' },
+              { href: '/', label: 'iRoofer Contractors home' }
+            ];
 
 export default function Page() {
   return (
@@ -43,9 +48,13 @@ export default function Page() {
               </div>
 
               <div style={{ marginTop: 32, padding: '1.3rem', background: '#fff', border: '1px solid rgba(22,29,37,.08)', borderRadius: 8 }}>
-                <strong style={{ color: '#0b3d16' }}>From our Google reviews</strong>
-                <p style={{ color: '#52606b', fontSize: '.95rem', marginTop: 8, fontStyle: 'italic' }}>{review.q}</p>
-                <div style={{ color: '#8ea2b4', fontSize: '.85rem', marginTop: 4 }}>— {review.who}, {review.where}</div>
+                <strong style={{ color: '#0b3d16' }}>What Area Homeowners Say</strong>
+                <p style={{ color: '#52606b', fontSize: '.95rem', marginTop: 8, fontStyle: 'italic' }}>
+                  {copy.socialProofPlaceholder || '[CITY REVIEW PLACEHOLDER]'}
+                </p>
+                <p style={{ color: '#8ea2b4', fontSize: '.85rem', marginTop: 8 }}>
+                  Paste 1–2 real local reviews here. Do not invent quotes or add star ratings/counts to titles or metas.
+                </p>
               </div>
             </div>
 
@@ -73,8 +82,8 @@ export default function Page() {
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="sec-head rv">
-            <span className="eyebrow dark">Hiram, GA Roof Repair FAQ</span>
-            <h2>Questions Hiram homeowners ask us</h2>
+            <span className="eyebrow dark">Hiram, GA FAQ</span>
+            <h2>Questions homeowners ask us</h2>
           </div>
           <div className="faq-list rv">
             {faqs.map((f, i) => (
@@ -93,12 +102,32 @@ export default function Page() {
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="sec-head rv">
-            <span className="eyebrow dark">More Hiram roofing services</span>
-            <h2>Other services we offer in Hiram, GA</h2>
+            <span className="eyebrow dark">Related pages</span>
+            <h2>Helpful links for homeowners</h2>
+          </div>
+          <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '.6rem 1.4rem', marginTop: 8, listStyle: 'none', padding: 0 }}>
+            {relatedLinks.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>{l.label} →</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <div className="sec-head rv">
+            <span className="eyebrow dark">More services</span>
+            <h2>Other services nearby</h2>
           </div>
           <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
             <Link key="roof-replacement" href="/roof-replacement-hiram/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Hiram</h3>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+            </Link>
+            <Link key="storm-damage-roof-repair" href="/storm-damage-roof-repair-hiram/" className="svc-card">
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Storm Damage Roof Repair in Hiram</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
             <Link key="new-construction" href="/new-construction-hiram/" className="svc-card">
@@ -107,10 +136,6 @@ export default function Page() {
             </Link>
             <Link key="gutter-repair-replacement" href="/gutter-repair-replacement-hiram/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Gutter Repair & Replacement in Hiram</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
-            </Link>
-            <Link key="storm-damage-roof-repair" href="/storm-damage-roof-repair-hiram/" className="svc-card">
-              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Storm Damage Roof Repair in Hiram</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
           </div>

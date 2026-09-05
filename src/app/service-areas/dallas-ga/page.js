@@ -18,7 +18,7 @@ export const metadata = {
     url: `${brand.url}/service-areas/dallas-ga`,
     title: 'Roofing in Dallas, GA — iRoofer Contractors',
     description:
-      'Your local Dallas, GA roofer — family-owned since 2019, based at 152 Freedom Dr. Free inspections, honest answers, 5★ rated on Google.',
+      'Your local Dallas, GA roofer — family-owned since 2019, based at 152 Freedom Dr. Free inspections and honest answers. Call (470) 236-1410.',
   },
 };
 
