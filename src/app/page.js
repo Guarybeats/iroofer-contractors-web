@@ -14,22 +14,26 @@ const revA = reviews.slice(0, Math.ceil(reviews.length / 2));
 const revB = reviews.slice(Math.ceil(reviews.length / 2));
 
 const dallasLinks = [
-  { href: '/roof-replacement-dallas-ga', label: 'Roof replacement in Dallas, GA' },
-  { href: '/roof-repair-dallas-ga', label: 'Roof repair in Dallas, GA' },
-  { href: '/storm-damage-roof-repair-dallas-ga', label: 'Storm damage roof repair' },
-  { href: '/gutter-repair-replacement-dallas-ga', label: 'Gutter repair & replacement' },
-  { href: '/new-construction-dallas-ga', label: 'New construction roofing' },
-  { href: '/dallas-ga-roofing', label: 'All Dallas, GA roofing services' },
+  { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas, GA' },
+  { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas, GA' },
+  { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair Dallas' },
+  { href: '/roof-repair-hiram/', label: 'Roof repair in Hiram' },
+  { href: '/gutter-repair-replacement-dallas-ga/', label: 'Gutter repair & replacement' },
+  { href: '/new-construction-dallas-ga/', label: 'New construction roofing' },
+  { href: '/dallas-ga-roofing/', label: 'All Dallas, GA roofing services' },
 ];
 
 const svcs = [
   { n: '01', title: 'Roof Repair', tag: 'Same week', img: '/assets/service-repair.jpg?v=3',
+    href: '/roof-repair-dallas-ga/', cta: 'Roof repair in Dallas, GA',
     body: 'Water stains, lifted flashing, cracked boots and mystery leaks. We trace the source — not just the symptom — then patch, re-seal and color-match so the fix disappears into your roofline.' },
   { n: '02', title: 'Roof Replacement', tag: 'Most popular', img: '/assets/service-replacement.jpg?v=2',
+    href: '/roof-replacement-dallas-ga/', cta: 'Roof replacement in Dallas, GA',
     body: 'Full tear-off to the deck, ice & water shield, synthetic underlayment and architectural shingles installed to manufacturer spec. Includes ridge venting, drip edge and a magnet-sweep cleanup of every nail.' },
   { n: '03', title: 'New Construction', tag: 'Builders', img: '/assets/service-newconstruction.jpg?v=2',
     body: 'We partner with builders and homeowners on new builds to install a roof that matches the design and the budget — code-compliant, inspected, and built to last.' },
   { n: '04', title: 'Storm & Insurance Claims', tag: '24/7 response', img: '/assets/service-repair.jpg?v=3',
+    href: '/storm-damage-roof-repair-dallas-ga/', cta: 'Storm damage roof repair Dallas',
     body: 'Hail and wind damage documented with photos and a written scope. We meet your adjuster on-site, supplement the claim when needed, and guide you through the paperwork so you are not fronting the cost.' },
   { n: '05', title: 'Gutter Repair & Replacement', tag: 'Protection', img: '/assets/service-gutters-main.jpg?v=2', link: '/services/gutter-repair-replacement',
     body: 'Clogged or failing gutters are the #1 cause of preventable roof and foundation damage. We clean, repair, and replace seamless gutters so water flows away from your home, not into it.' },
@@ -140,7 +144,7 @@ export default function HomePage() {
                     <div className="svc-body"><div className="svc-inner"><div className="row">
                       <div>
                         <p>{s.body}</p>
-                        <Link className="svc-link" href="/#contact">Get an estimate →</Link>
+                        <Link className="svc-link" href={s.href || "/#contact"}>{s.cta || "Get an estimate"} →</Link>
                       </div>
                       <Pic src={s.img} alt={s.title} />
                     </div></div></div>
@@ -178,7 +182,7 @@ export default function HomePage() {
             <p>Georgia spring storms roll through fast. If a storm just hit your neighborhood, the damage is often invisible from the ground — and your insurance window is ticking. We tarp, document and file within 24 hours.</p>
             <div className="cta">
               <a className="bigphone" href={`tel:${brand.phone}`}>{brand.phone}</a>
-              <a className="btn btn-solid" href="/#contact">Request emergency tarp <span className="arr">→</span></a>
+              <a className="btn btn-solid" href="/storm-damage-roof-repair-dallas-ga/">Storm damage roof repair Dallas <span className="arr">→</span></a>
             </div>
           </div>
           <div className="steps rv">

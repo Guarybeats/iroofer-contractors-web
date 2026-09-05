@@ -46,15 +46,24 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
         <CityMap city={city.name} state={city.state} />
 
         <div className="cards" style={{ marginTop: 36 }}>
-          {services.map((s) => (
-            <Link key={s.slug} href={`/services/${s.slug}/`} className="svc-card">
-              <h2 style={{ fontSize: '1.3rem', fontWeight: 800 }}>{s.title} in {city.name}</h2>
-              <p style={{ color: MUTED, marginTop: 8, fontSize: '.95rem' }}>{s.summary}</p>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>
-                Get a quote →
-              </span>
-            </Link>
-          ))}
+          {services.map((s) => {
+            const combo = city.combo !== false;
+            const href = combo ? `/${s.slug}-${city.slug}/` : `/services/${s.slug}/`;
+            const cta =
+              s.slug === 'roof-repair' ? `Roof repair in ${city.name}` :
+              s.slug === 'roof-replacement' ? `Roof replacement in ${city.name}` :
+              s.slug === 'storm-damage-roof-repair' ? `Storm damage roof repair ${city.name}` :
+              `View ${s.title} in ${city.name}`;
+            return (
+              <Link key={s.slug} href={href} className="svc-card">
+                <h2 style={{ fontSize: '1.3rem', fontWeight: 800 }}>{s.title} in {city.name}</h2>
+                <p style={{ color: MUTED, marginTop: 8, fontSize: '.95rem' }}>{s.summary}</p>
+                <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>
+                  {cta} →
+                </span>
+              </Link>
+            );
+          })}
         </div>
 
         {sections.map((sec, i) => (
