@@ -6,7 +6,7 @@ import { seo } from '@/lib/seo';
 export const metadata = seo({
   title: 'Contact iRoofer | Free Roof Inspection, Dallas GA',
   description:
-    'Talk to a real Dallas, GA roofer. Free inspections, free estimates, zero pressure. Call (470) 236-1410 or get a fast response from iRoofer Contractors.',
+    'Book a free roof inspection in Dallas, Hiram & nearby. Call iRoofer at (470) 236-1410 or request same-day service.',
   path: '/contact',
 });
 

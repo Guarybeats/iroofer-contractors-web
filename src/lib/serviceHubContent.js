@@ -31,7 +31,8 @@ export const serviceHubContent = {
     ],
         featuredLinks: [
       { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas, GA' },
-      { href: '/roof-repair-hiram/', label: 'Roof repair in Hiram' },
+      { href: '/roof-repair-powder-springs/', label: 'Roofing contractor in Powder Springs' },
+      { href: '/roof-repair-hiram/', label: 'Roofer in Hiram, GA' },
       { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair in Dallas' },
     ],
     cityPrefix: 'roof-repair',

@@ -8,7 +8,7 @@ export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   title: 'Roofing in Hiram, GA | Repair & Replacement | iRoofer',
   description:
-    'Family-owned roofer serving Hiram, GA (Paulding County), minutes from our Dallas shop. Repair, replacement and gutters. Free inspection: (470) 236-1410.',
+    'Roofing in Hiram, GA from a Dallas-based local crew—repair, replacement, storm help. Call (470) 236-1410 today.',
   alternates: { canonical: `${brand.url}/service-areas/hiram` },
   openGraph: {
     type: 'website',
@@ -18,7 +18,7 @@ export const metadata = {
     url: `${brand.url}/service-areas/hiram`,
     title: 'Roofing in Hiram, GA — iRoofer Contractors',
     description:
-      'Hiram roof repair and replacement from a family-owned crew based minutes away in Dallas, GA. Free photo-documented inspections.',
+      'Roofing in Hiram, GA from a Dallas-based local crew—repair, replacement, storm help. Call (470) 236-1410 today.',
   },
 };
 
@@ -91,5 +91,8 @@ const faq = [
 ];
 
 export default function HiramPage() {
-  return <CityAreaPage city={city} intro={intro} sections={sections} neighborhoods={neighborhoods} faq={faq} />;
+  const relatedLinks = [
+    { href: '/roof-repair-hiram/', label: 'Roofing services in Hiram' },
+  ];
+  return <CityAreaPage city={city} intro={intro} sections={sections} neighborhoods={neighborhoods} faq={faq} relatedLinks={relatedLinks} />;
 }

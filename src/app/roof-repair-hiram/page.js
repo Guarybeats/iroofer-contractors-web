@@ -7,7 +7,7 @@ import { localCopy } from '@/lib/localCopy';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: "Roof Repair Hiram GA | Same-Day Local Crew",
+  title: "Roofer Hiram GA | Roof Repair & Local Crew",
   description: "Roof repair in Hiram, GA for leaks, flashing, and storm wear. Paulding County local crew\u2014licensed, bonded, insured. Call (470) 236-1410 today.",
   path: '/roof-repair-hiram',
 });
@@ -37,8 +37,11 @@ export default function Page() {
               </Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>Hiram, GA</span>
               <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02, marginTop: 8 }}>
-                Roof Repair in Hiram, GA
+                Roofer in Hiram, GA — Roof Repair
               </h1>
+              <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
+                Looking for a roofer in Hiram, GA? iRoofer Contractors is the local roofing services crew neighbors call for leaks, storm wear, and flashing repairs in Paulding County. Call (470) 236-1410 for same-day help when scheduling allows.
+              </p>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
                 {copy.intro}
               </p>

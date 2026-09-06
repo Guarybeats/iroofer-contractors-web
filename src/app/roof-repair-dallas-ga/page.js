@@ -38,7 +38,7 @@ export default function Page() {
               </Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>Dallas, GA</span>
               <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02, marginTop: 8 }}>
-                Roof Repair in Dallas, GA
+                Roof Repair Dallas GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
                 {copy.intro}

@@ -13,14 +13,14 @@ export const metadata = {
     locale: 'en_US',
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/wind-damage-roof-repair-dallas' },
 
-  title: 'Wind Damage Roof Repair in Dallas, GA: Signs',
+  title: 'Wind Damage Roof Repair Dallas GA | iRoofer',
   description:
-    'Georgia wind gusts hit 70+ mph several times a year. How to spot wind damage — lifted shingles, creases, exposed decking — early.',
+    'Spot wind damage on your Dallas GA roof—lifted shingles, bruises, leaks. Free inspection & repair options. Call (470) 236-1410.',
 };
 
 const post = {
   slug: 'wind-damage-roof-repair-dallas',
-  title: 'Wind Damage on Your Roof: How to Spot It Before the Next Storm Hits',
+  title: 'Wind Damage Roof Repair in Dallas, GA',
   date: 'March 2026',
   readTime: '6 min read',
   category: 'Storm Damage',
@@ -145,6 +145,11 @@ export default function BlogPostPage() {
 
             <h2>Don’t Wait for the Next Storm</h2>
             <p>After the last wind event, 40% of our service calls were from homeowners who thought their damage was “minor” — until water started leaking. Don’t let a $50 repair become a $3,000 ceiling replacement.</p>
+            <p style={{ marginTop: 20 }}>
+              Related: <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Storm damage roof repair in Dallas</Link>
+              {' · '}
+              <Link href="/emergency-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Emergency roof repair Dallas GA</Link>
+            </p>
             <p><Link href="/emergency-roof-repair-dallas-ga/" className="btn btn-solid">Schedule Free Wind Damage Inspection →</Link></p>
           </div>
         </div>

@@ -8,7 +8,7 @@ import { reviews } from '@/lib/reviews';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: 'Storm Damage Roof Repair in Douglasville, GA',
+  title: 'Storm Damage Roof Repair Douglasville GA',
   description: 'Storm damage roof repair in Douglasville, GA. We inspect hail and wind damage, document it, and handle your insurance claim. Free inspection: (470) 236-1410.',
   path: '/storm-damage-roof-repair-douglasville',
 });
@@ -114,6 +114,19 @@ export default function Page() {
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
           </div>
+        </div>
+      </section>
+      <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <div className="sec-head rv">
+            <span className="eyebrow dark">Related pages</span>
+            <h2>Helpful links for homeowners</h2>
+          </div>
+          <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '.6rem 1.4rem', marginTop: 8, listStyle: 'none', padding: 0 }}>
+            <li>
+              <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>Storm damage roof repair Dallas →</Link>
+            </li>
+          </ul>
         </div>
       </section>
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>

@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const metadata = seo({
   title: 'About iRoofer Contractors | Dallas, GA Roofers',
   description:
-    'Family-owned Dallas, GA roofing company founded in 2019 by Cristian Mendez. Owens Corning Preferred Contractor, 150+ roofs, licensed · bonded · insured.',
+    'Meet iRoofer Contractors—family-owned Dallas GA roofers since 2019. Licensed, bonded, insured. Call Cristian’s crew at (470) 236-1410.',
   path: '/about',
 });
 
@@ -97,6 +97,9 @@ export default function AboutPage() {
             </p>
             <p style={{ marginTop: 8 }}>
               <Link href="/dallas-ga-roofing/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Dallas, GA roofing hub →</Link>
+            </p>
+            <p style={{ marginTop: 8 }}>
+              <Link href="/services/roof-insurance-claims/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Roof insurance claim help →</Link>
             </p>
           </div>
         </div>
