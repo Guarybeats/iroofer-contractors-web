@@ -17,6 +17,8 @@ const dallasLinks = [
   { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas, GA' },
   { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas, GA' },
   { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair Dallas' },
+  { href: '/blog/wind-damage-roof-repair-dallas/', label: 'Wind damage roof repair in Dallas' },
+  { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas' },
   { href: '/roof-repair-hiram/', label: 'Roof repair in Hiram' },
   { href: '/gutter-repair-replacement-dallas-ga/', label: 'Gutter repair & replacement' },
   { href: '/new-construction-dallas-ga/', label: 'New construction roofing' },

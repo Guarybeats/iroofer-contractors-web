@@ -9,7 +9,7 @@ import { GBP_URL } from '@/components/LocalSeo';
 export const metadata = {
   metadataBase: new URL('https://iroofercontractors.com'),
   title: `Dallas GA Roofing | Repair & Replacement | iRoofer`,
-  description: `Family-owned Dallas GA roofing since 2019. Repair, replacement & storm damage—Owens Corning Preferred. Call (470) 236-1410 for same-day service.`,
+  description: `Dallas GA roof repair, replacement & storm damage by a local crew since 2019. Owens Corning Preferred. Call (470) 236-1410 for same-day service.`,
   robots: { index: true, follow: true },
   icons: {
     icon: [
@@ -25,7 +25,7 @@ export const metadata = {
     url: 'https://iroofercontractors.com/',
     siteName: 'iRoofer Contractors',
     title: `Dallas GA Roofing | Repair & Replacement | iRoofer`,
-    description: `Family-owned Dallas GA roofing since 2019. Repair, replacement & storm damage—Owens Corning Preferred. Call (470) 236-1410 for same-day service.`,
+    description: `Dallas GA roof repair, replacement & storm damage by a local crew since 2019. Owens Corning Preferred. Call (470) 236-1410 for same-day service.`,
     locale: 'en_US',
     images: [{ url: 'https://iroofercontractors.com/assets/hero.jpg', alt: 'iRoofer Contractors roofing a home in Dallas, GA', width: 1280, height: 960 }],
   },
@@ -34,7 +34,7 @@ export const metadata = {
     site: '@irooferc',
     creator: '@irooferc',
     title: `Dallas GA Roofing | Repair & Replacement | iRoofer`,
-    description: `Family-owned Dallas GA roofing since 2019. Repair, replacement & storm damage—Owens Corning Preferred. Call (470) 236-1410 for same-day service.`,
+    description: `Dallas GA roof repair, replacement & storm damage by a local crew since 2019. Owens Corning Preferred. Call (470) 236-1410 for same-day service.`,
     images: ['https://iroofercontractors.com/assets/hero.jpg'],
   },
 };

@@ -90,6 +90,7 @@ export default function DallasGaRoofingPage() {
               <h3>Storm & Hail Damage</h3>
               <p>Free inspections, same-day emergency tarping, and insurance documentation after Georgia storms.</p>
               <Link href="/storm-damage-roof-repair-dallas-ga/" className="chip">Storm damage roof repair Dallas →</Link>
+              <Link href="/blog/wind-damage-roof-repair-dallas/" className="chip">Wind damage roof repair →</Link>
             </div>
             <div className="card">
               <h3>Gutters</h3>

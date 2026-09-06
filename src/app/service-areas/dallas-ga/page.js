@@ -8,7 +8,7 @@ export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
   title: 'Roofing in Dallas, GA | Repair & Replacement | iRoofer',
   description:
-    'Based in Dallas, GA (Paulding County) at 152 Freedom Dr. Roof repair, replacement, new construction, gutters and storm claims. Free inspection: (470) 236-1410.',
+    'Roofing in Dallas, GA: repair, replacement, and storm damage for Paulding County homes. Local crew. Call (470) 236-1410.',
   alternates: { canonical: `${brand.url}/service-areas/dallas-ga` },
   openGraph: {
     type: 'website',
@@ -18,7 +18,7 @@ export const metadata = {
     url: `${brand.url}/service-areas/dallas-ga`,
     title: 'Roofing in Dallas, GA — iRoofer Contractors',
     description:
-      'Your local Dallas, GA roofer — family-owned since 2019, based at 152 Freedom Dr. Free inspections and honest answers. Call (470) 236-1410.',
+      'Roofing in Dallas, GA: repair, replacement, and storm damage for Paulding County homes. Local crew. Call (470) 236-1410.',
   },
 };
 
@@ -96,5 +96,9 @@ const faq = [
 ];
 
 export default function DallasGaPage() {
-  return <CityAreaPage city={city} intro={intro} sections={sections} neighborhoods={neighborhoods} faq={faq} />;
+  const relatedLinks = [
+    { href: '/blog/wind-damage-roof-repair-dallas/', label: 'Wind damage roof repair Dallas' },
+    { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair in Dallas' },
+  ];
+  return <CityAreaPage city={city} intro={intro} sections={sections} neighborhoods={neighborhoods} faq={faq} relatedLinks={relatedLinks} />;
 }

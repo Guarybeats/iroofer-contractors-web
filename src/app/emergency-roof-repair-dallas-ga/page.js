@@ -2,9 +2,10 @@ import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
 import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
+import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: '24/7 Emergency Roof Repair Dallas, GA | Iroofer Contractors',
+  title: 'Emergency Roof Repair Dallas GA | 24/7 | iRoofer',
   description:
     'Storm-damaged roof in Dallas, GA? On call 24/7 for emergency repair, tarping and insurance claim support. Same-day response, free inspection.',
   path: '/emergency-roof-repair-dallas-ga',
@@ -15,6 +16,22 @@ const steps = [
   'Snap ground-level photos of debris, dented gutters, and any interior water stains.',
   'Call us for a free damage inspection and a temporary tarp if you are actively leaking.',
   'We document the damage, write the scope, and meet your insurance adjuster — you only sign off before a single shingle moves.',
+];
+
+
+const emergencyFaqs = [
+  {
+    q: 'Do you offer 24/7 emergency roof repair in Dallas, GA?',
+    a: 'We prioritize after-hours storm and active-leak calls as fast as crews allow. Call (470) 236-1410 and tell us if water is entering now.',
+  },
+  {
+    q: 'Can you tarp my roof the same day?',
+    a: 'Often yes for open decking or active leaks when materials and access are safe. Permanent repairs may follow once the scope is clear.',
+  },
+  {
+    q: 'Will insurance cover emergency roof repairs?',
+    a: 'Sudden wind or storm damage is often claim-eligible, subject to your policy. We document findings; we don’t guarantee claim approval.',
+  },
 ];
 
 export default function EmergencyPage() {
@@ -134,6 +151,43 @@ export default function EmergencyPage() {
           </div>
         </div>
       </section>
+
+      <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <div className="rv" style={{ maxWidth: 780 }}>
+            <h2 style={{ fontSize: 'clamp(1.5rem,2.6vw,2rem)', fontWeight: 800, lineHeight: 1.15 }}>
+              What counts as an emergency roof repair in Dallas
+            </h2>
+            <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, lineHeight: 1.75 }}>
+              Call it an emergency when water is actively entering the house, a tree or limb has opened the deck, shingles are peeled back across a slope after high wind, or a ceiling is staining and spreading during a storm. In Dallas and Paulding County, pop-up storms can turn a small lift into a soak-through attic in one afternoon.
+            </p>
+            <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, lineHeight: 1.75 }}>
+              iRoofer Contractors responds locally for emergency roof repair in Dallas, GA. We prioritize active leaks first: temporary tarp when needed, photo documentation for your records (and your insurer if the damage is storm-related), then a clear written scope for permanent repair. Owner Cristian Mendez’s licensed, bonded, and insured crew explains repair versus replacement without pressure.
+            </p>
+            <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, lineHeight: 1.75 }}>
+              Same-day emergency roof repair is available when the schedule and weather allow—call (470) 236-1410 as early as you can after the storm. If we cannot reach you the same day, we will give you a real arrival window and tarping guidance so the next rain does less damage.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <div className="sec-head rv">
+            <span className="eyebrow dark">Emergency FAQ</span>
+            <h2>Questions homeowners ask us</h2>
+          </div>
+          <div className="faq-list rv">
+            {emergencyFaqs.map((f, i) => (
+              <div key={f.q} className={'faq-item' + (i === 0 ? ' open' : '')}>
+                <button className="faq-q" aria-expanded={i === 0}>{f.q}<span className="pm" aria-hidden="true" /></button>
+                <div className="faq-a"><div><p>{f.a}</p></div></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <FaqSchema faq={emergencyFaqs} />
     </>
   );
 }

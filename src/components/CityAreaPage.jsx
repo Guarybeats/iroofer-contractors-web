@@ -15,7 +15,7 @@ import { brand, services, cities } from '@/lib/brand';
 
 const MUTED = '#52606b';
 
-export default function CityAreaPage({ city, intro, sections = [], neighborhoods = [], faq = [] }) {
+export default function CityAreaPage({ city, intro, sections = [], neighborhoods = [], faq = [], relatedLinks = [] }) {
   return (
     <section className="sec-light sec-pad">
       <div className="tex" aria-hidden="true" />
@@ -128,6 +128,19 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
             </div>
           </div>
         </div>
+
+        {relatedLinks.length > 0 && (
+          <div style={{ marginTop: 36, maxWidth: 880 }}>
+            <h2 style={{ fontSize: 'clamp(1.3rem,2.6vw,1.6rem)', fontWeight: 800, marginBottom: 12 }}>Related pages</h2>
+            <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '.6rem 1.4rem', listStyle: 'none', padding: 0, margin: 0 }}>
+              {relatedLinks.map((l) => (
+                <li key={l.href + l.label}>
+                  <Link href={l.href} style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>{l.label} →</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {faq.length > 0 && (
           <div style={{ marginTop: 48, maxWidth: 880 }}>
