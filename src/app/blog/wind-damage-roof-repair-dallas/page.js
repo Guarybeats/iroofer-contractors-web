@@ -44,7 +44,7 @@ export default function BlogPostPage() {
           </div>
 
           <div className="post-body rv">
-            <p>Georgia doesn’t just get hail — wind is the bigger roof killer. Spring and fall wind events in North Georgia regularly hit 60–80 mph. That’s enough to lift shingles, expose your roof deck, and leave you with hidden leaks that cost thousands. Here’s how to catch wind damage before the next storm hits.</p>
+            <p>Georgia doesn’t just get hail — wind is the bigger roof killer. Spring and fall wind events in North Georgia regularly hit 60–80 mph. That’s enough to lift shingles, expose your roof deck, and leave you with hidden leaks that get worse with every rain. Here’s how to catch wind damage before the next storm hits.</p>
 
             <h2>How Wind Damages Your Roof</h2>
             <p>When wind hits your roof, it does three things:</p>
@@ -79,7 +79,7 @@ export default function BlogPostPage() {
               <li>Damp or musty smell in the attic.</li>
               <li>Black streaks on ceilings (mold/mildew from moisture).</li>
             </ul>
-            <p><strong>Act fast:</strong> water damage escalates quickly. A small leak today can rot your ceiling drywall, your attic insulation, and your roof deck — turning a $150 shingle repair into a $3,000 ceiling replacement.</p>
+            <p><strong>Act fast:</strong> water damage escalates quickly. A small leak today can rot your ceiling drywall, your attic insulation, and your roof deck — turning a small shingle repair into a much larger interior repair.</p>
 
             <h2>How to Inspect Your Own Roof (Safely)</h2>
             <p><strong>Never walk on a wet or wind-damaged roof.</strong> Instead:</p>
@@ -91,38 +91,14 @@ export default function BlogPostPage() {
             </ol>
             <p>After Georgia wind events, we recommend a professional inspection within 48 hours — before the next storm rolls through.</p>
 
-            <h2>Types of Wind Damage (And Repair Costs)</h2>
-            <table style={{ width: '100%', borderCollapse: 'collapse', margin: '16px 0' }}>
-              <thead>
-                <tr style={{ borderBottom: '2px solid #eee' }}>
-                  <th align="left" style={{ padding: '8px 0' }}>Damage Type</th>
-                  <th align="left" style={{ padding: '8px 0' }}>What It Looks Like</th>
-                  <th align="left" style={{ padding: '8px 0' }}>Repair Cost</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style={{ borderBottom: '1px solid #eee' }}>
-                  <td style={{ padding: '6px 0' }}>Lifted shingle</td>
-                  <td style={{ padding: '6px 0' }}>Edge curled up, seal strip exposed</td>
-                  <td style={{ padding: '6px 0' }}>$50–$100 (patch)</td>
-                </tr>
-                <tr style={{ borderBottom: '1px solid #eee' }}>
-                  <td style={{ padding: '6px 0' }}>Creased shingle</td>
-                  <td style={{ padding: '6px 0' }}>Visible fold/ridge line</td>
-                  <td style={{ padding: '6px 0' }}>$50–$100 (replace 1–2 shingles)</td>
-                </tr>
-                <tr style={{ borderBottom: '1px solid #eee' }}>
-                  <td style={{ padding: '6px 0' }}>Missing shingle (1–2)</td>
-                  <td style={{ padding: '6px 0' }}>Small bare spot, deck visible</td>
-                  <td style={{ padding: '6px 0' }}>$150–$300 (replace patch)</td>
-                </tr>
-                <tr>
-                  <td style={{ padding: '6px 0' }}>Widespread (10+ shingles)</td>
-                  <td style={{ padding: '6px 0' }}>Multiple missing/lifted shingles</td>
-                  <td style={{ padding: '6px 0' }}>$2,000–$5,000 (partial replacement)</td>
-                </tr>
-              </tbody>
-            </table>
+            <h2>Types of Wind Damage</h2>
+            <ul>
+              <li><strong>Lifted shingle</strong> — edge curled up, seal strip exposed. Often a patch-level fix if caught early.</li>
+              <li><strong>Creased shingle</strong> — visible fold or ridge line where wind flipped the tab. Usually needs those shingles replaced.</li>
+              <li><strong>Missing shingle (small area)</strong> — bare spot with deck or underlayment showing. Needs a prompt patch before the next rain.</li>
+              <li><strong>Widespread missing or lifted shingles</strong> — damage across multiple slopes or large sections. May call for a partial or full replacement rather than scattered patches.</li>
+            </ul>
+            <p>A free inspection is the only reliable way to size the repair — scope depends on how many slopes are affected and whether decking is compromised.</p>
 
             <h2>Insurance Claims for Wind Damage</h2>
             <p>In Georgia, wind damage is covered under your dwelling policy — but only if you document it:</p>
@@ -143,8 +119,7 @@ export default function BlogPostPage() {
               <li><strong>Patch or replace</strong> — same-day tarping for emergencies, 2-day full repairs for larger damage.</li>
             </ul>
 
-            <h2>Don’t Wait for the Next Storm</h2>
-            <p>After the last wind event, 40% of our service calls were from homeowners who thought their damage was “minor” — until water started leaking. Don’t let a $50 repair become a $3,000 ceiling replacement.</p>
+            <h2>Don’t Wait for the Next Storm</h2>            <p>After a wind event, many homeowners assume the damage is minor — until water starts leaking. Catching lifted or missing shingles early is far easier than dealing with interior water damage later.</p>
             <p style={{ marginTop: 20 }}>
               Related: <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Storm damage roof repair in Dallas</Link>
               {' · '}
