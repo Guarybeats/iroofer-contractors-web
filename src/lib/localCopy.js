@@ -68,7 +68,6 @@ localCopy['roof-repair'] = {
       { q: "Can you repair a leaking roof the same day in Dallas, GA?", a: "Often yes for emergency leaks—especially tarping and urgent sealing. Permanent repairs depend on material and weather. Call (470) 236-1410 and we'll prioritize when we can." },
       { q: "Do you help with insurance if the damage is storm-related?", a: "Yes. We document storm-related findings and can support the adjuster process when a claim applies. Coverage depends on your policy; we don't guarantee claim outcomes." },
     ],
-    socialProofPlaceholder: "[CITY REVIEW PLACEHOLDER — Dallas, GA]",
   },
   'hiram': {
     intro: "Hiram roofs take a beating from the same mix that hits the rest of Paulding County: summer storms, wind through wooded lots, and humidity that finds every weak flashing. Ceiling stains, loose shingles after a blow, or a boot that's cracked open at the pipe—small problems that turn expensive if the next rain sits on them. iRoofer Contractors is family-owned out of nearby Dallas since 2019. We serve Hiram homeowners with the same licensed, bonded, and insured crew that works Dallas and the surrounding area. Owner Cristian Mendez's team inspects, documents, and repairs—so you're not left guessing what's leaking or how soon it needs attention.",
@@ -85,7 +84,6 @@ localCopy['roof-repair'] = {
       { q: "Trees keep dropping debris on my Hiram roof—what should I watch for?", a: "Punctures from limbs, clogged valleys, granule loss in shaded damp areas, and flashing lifted by wind. After any major storm or limb strike, get an inspection before the next heavy rain." },
       { q: "Can I get same-day roof repair in Hiram?", a: "Often yes for urgent leaks and tarping. Call (470) 236-1410 and ask for same-day service in Hiram—we prioritize active water intrusion when we can." },
     ],
-    socialProofPlaceholder: "[CITY REVIEW PLACEHOLDER — Hiram, GA]",
   },
   'douglasville': {
     intro: "Douglasville catches straight-line wind coming off the ridge in spring, and the damage it leaves is usually mechanical rather than dramatic: broken seals, creased tabs, and flashing pulled just far enough to let water behind it.",
@@ -202,7 +200,6 @@ localCopy['roof-replacement'] = {
       { q: "Can I replace only part of my roof?", a: "Sometimes—if damage is isolated and matches are available. Often a full replacement is cleaner for warranty, appearance, and long-term leak risk. We'll explain both options after we see the roof." },
       { q: "Do you offer financing or help with insurance on replacements?", a: "We support storm-related documentation and adjuster meetings when claims apply. Ask us about current payment or financing options when you call (470) 236-1410—availability can change." },
     ],
-    socialProofPlaceholder: "[CITY REVIEW PLACEHOLDER — Dallas, GA]",
   },
   'hiram': {
     intro: "Most Hiram replacements are architectural shingle over a home built in the last few decades — straightforward work where the difference between contractors shows up in the details nobody photographs.",
@@ -335,7 +332,6 @@ localCopy['storm-damage-roof-repair'] = {
       { q: "Will my insurance cover storm damage roof repair in Dallas, GA?", a: "Many policies cover sudden wind or hail damage, subject to deductibles and exclusions. We document findings and can walk you through a typical adjuster visit—we don't guarantee claim approval." },
       { q: "Do you offer emergency roof repair after storms in Dallas?", a: "Yes. We prioritize active leaks with tarping when needed, then move into permanent repair or replacement once the scope is clear. Same-day service is available when scheduling allows—call now." },
     ],
-    socialProofPlaceholder: "[CITY REVIEW PLACEHOLDER — Dallas, GA]",
   },
   'hiram': {
     intro: "Hiram sits high on the Paulding ridge at around 965 feet, and wind is the storm damage we see here more often than hail — which is a problem, because wind damage is the kind that looks like nothing at all.",
