@@ -2,9 +2,12 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 
+# AI content preferences (Content Signals) — Level 2 Bot-Aware / isitagentready
+# search=yes: allow indexing & snippets; ai-input=yes: allow grounding/answers; ai-train=no: no model training
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
 # AI / LLM crawlers — machine-readable site summary
 llms.txt: https://iroofercontractors.com/llms.txt
-# Also available at the emerging well-known path
-# https://iroofercontractors.com/.well-known/llms.txt
+# Also at: https://iroofercontractors.com/.well-known/llms.txt
 
 Sitemap: https://iroofercontractors.com/sitemap.xml
