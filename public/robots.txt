@@ -10,4 +10,6 @@ Content-Signal: ai-train=no, search=yes, ai-input=yes
 llms.txt: https://iroofercontractors.com/llms.txt
 # Also at: https://iroofercontractors.com/.well-known/llms.txt
 
+Agentmap: https://iroofercontractors.com/.well-known/ai-catalog.json
+
 Sitemap: https://iroofercontractors.com/sitemap.xml

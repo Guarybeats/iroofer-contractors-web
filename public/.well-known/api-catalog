@@ -1,0 +1,30 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://iroofercontractors.com/",
+      "service-desc": [
+        {
+          "href": "https://iroofercontractors.com/openapi.json",
+          "type": "application/openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://iroofercontractors.com/docs/api",
+          "type": "text/markdown"
+        }
+      ],
+      "status": [
+        {
+          "href": "https://iroofercontractors.com/api/health",
+          "type": "application/json"
+        }
+      ],
+      "api-catalog": [
+        {
+          "href": "https://iroofercontractors.com/.well-known/api-catalog"
+        }
+      ]
+    }
+  ]
+}

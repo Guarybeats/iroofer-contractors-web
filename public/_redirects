@@ -42,3 +42,7 @@
 /terms-of-service/            /terms/                                       301
 /llm.txt                      /llms.txt                                     301
 /llm.txt/                     /llms.txt                                     301
+
+# Agent API docs
+/docs/api                      /docs/api.md                                 200
+/docs/api/                     /docs/api.md                                 200

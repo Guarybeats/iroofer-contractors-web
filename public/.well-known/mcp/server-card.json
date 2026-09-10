@@ -1,0 +1,52 @@
+{
+  "serverInfo": {
+    "name": "iroofer-contractors",
+    "version": "1.0.0",
+    "title": "iRoofer Contractors",
+    "description": "Read-only and assisted tools for iRoofer Contractors (Dallas, GA roofing): company info, services, service areas, page find, phone, and quote-form fill (never auto-submit)."
+  },
+  "endpoint": "https://iroofercontractors.com/mcp",
+  "transports": [
+    {
+      "type": "streamable-http",
+      "url": "https://iroofercontractors.com/mcp"
+    },
+    {
+      "type": "webmcp",
+      "url": "https://iroofercontractors.com/.well-known/webmcp.json"
+    }
+  ],
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    },
+    "resources": {},
+    "prompts": {}
+  },
+  "tools": [
+    {
+      "name": "get_company_info",
+      "description": "Contact details, hours, credentials, service area."
+    },
+    {
+      "name": "list_services",
+      "description": "Roofing and gutter services with page URLs."
+    },
+    {
+      "name": "list_service_areas",
+      "description": "Georgia cities/counties served with page URLs."
+    },
+    {
+      "name": "find_service_page",
+      "description": "Best page for a service and/or city."
+    },
+    {
+      "name": "call_iroofer",
+      "description": "Phone number including 24/7 storm response."
+    },
+    {
+      "name": "start_quote_request",
+      "description": "Fill quote form fields; never submits \u2014 human must confirm."
+    }
+  ]
+}

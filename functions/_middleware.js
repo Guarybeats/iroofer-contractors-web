@@ -162,6 +162,30 @@ function estimateTokens(text) {
   return Math.max(1, Math.ceil(text.length / 4));
 }
 
+const AGENT_LINK_HEADER = [
+  '</.well-known/api-catalog>; rel="api-catalog"',
+  '</openapi.json>; rel="service-desc"; type="application/openapi+json"',
+  '</docs/api>; rel="service-doc"; type="text/markdown"',
+  '</.well-known/ai-catalog.json>; rel="describedby"; type="application/json"',
+  '</.well-known/mcp/server-card.json>; rel="describedby"; type="application/json"',
+  '</.well-known/agent-card.json>; rel="describedby"; type="application/json"',
+  '</llms.txt>; rel="describedby"; type="text/plain"',
+].join(", ");
+
+function withAgentLinkHeaders(res) {
+  const headers = new Headers(res.headers);
+  const existing = headers.get("Link");
+  headers.set(
+    "Link",
+    existing ? `${existing}, ${AGENT_LINK_HEADER}` : AGENT_LINK_HEADER,
+  );
+  return new Response(res.body, {
+    status: res.status,
+    statusText: res.statusText,
+    headers,
+  });
+}
+
 export async function onRequest(context) {
   const { request, next } = context;
   const url = new URL(request.url);
@@ -181,12 +205,19 @@ export async function onRequest(context) {
     return next();
   }
 
-  if (!prefersMarkdown(request.headers.get("accept") || "")) {
-    return next();
-  }
-
+  const wantsMd = prefersMarkdown(request.headers.get("accept") || "");
   const res = await next();
   const ct = (res.headers.get("content-type") || "").toLowerCase();
+
+  // Agent discovery Link headers on HTML document responses (RFC 8288 / 9727).
+  if (ct.includes("text/html") && res.status === 200 && !wantsMd) {
+    return withAgentLinkHeaders(res);
+  }
+
+  if (!wantsMd) {
+    return res;
+  }
+
   if (!ct.includes("text/html") || res.status !== 200) {
     return res;
   }
@@ -224,6 +255,13 @@ export async function onRequest(context) {
   headers.set(
     "x-original-tokens",
     String(estimateTokens(html)),
+  );
+
+  headers.set(
+    "Link",
+    headers.get("Link")
+      ? `${headers.get("Link")}, ${AGENT_LINK_HEADER}`
+      : AGENT_LINK_HEADER,
   );
 
   return new Response(markdown, { status: 200, headers });
