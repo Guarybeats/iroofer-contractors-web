@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "company-info",
+      "type": "skill-md",
+      "description": "Facts and contact details for iRoofer Contractors (Dallas, GA).",
+      "url": "https://iroofercontractors.com/.well-known/agent-skills/company-info/SKILL.md",
+      "digest": "sha256:be6de9918d26605cc725156eb77182bf17fc3d023be1f0fd943ca3c83f17fac0"
+    },
+    {
+      "name": "services-and-areas",
+      "type": "skill-md",
+      "description": "Match roofing services and Georgia service-area pages.",
+      "url": "https://iroofercontractors.com/.well-known/agent-skills/services-and-areas/SKILL.md",
+      "digest": "sha256:4f8f943b3fc172d30a0a5bb16a8d5cbae17733af249cfcd67aeb30ef93e7856a"
+    },
+    {
+      "name": "request-inspection",
+      "type": "skill-md",
+      "description": "How agents help homeowners request a free inspection without auto-submitting leads.",
+      "url": "https://iroofercontractors.com/.well-known/agent-skills/request-inspection/SKILL.md",
+      "digest": "sha256:5a081a28d84df186b97d457d9db7839a5367d727d2d4bf7eff59a083b28155a3"
+    }
+  ]
+}

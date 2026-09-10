@@ -1,0 +1,81 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "iRoofer Contractors public API",
+    "version": "1.0.0",
+    "description": "Public health check and lead intake for iRoofer Contractors. Lead POST is for the website form (Turnstile). Agents must not invent leads; prefer phone or human-confirmed form submit.",
+    "contact": {
+      "name": "iRoofer Contractors",
+      "url": "https://iroofercontractors.com/contact/",
+      "email": "iroofercontractors@gmail.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://iroofercontractors.com"
+    }
+  ],
+  "paths": {
+    "/api/health": {
+      "get": {
+        "summary": "Health check",
+        "operationId": "getHealth",
+        "responses": {
+          "200": {
+            "description": "Service is up",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": {
+                      "type": "boolean"
+                    },
+                    "service": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/mcp": {
+      "get": {
+        "summary": "MCP discovery / tools list (read-only)",
+        "operationId": "getMcp",
+        "responses": {
+          "200": {
+            "description": "MCP server metadata and tools"
+          }
+        }
+      },
+      "post": {
+        "summary": "MCP JSON-RPC (tools/list, tools/call for read-only tools)",
+        "operationId": "postMcp",
+        "responses": {
+          "200": {
+            "description": "JSON-RPC response"
+          }
+        }
+      }
+    },
+    "/api/leads": {
+      "post": {
+        "summary": "Website lead form intake",
+        "description": "Used by the on-site contact form. Requires Turnstile when configured. Not for unsolicited agent-generated leads.",
+        "operationId": "createLead",
+        "responses": {
+          "200": {
+            "description": "Lead accepted"
+          },
+          "400": {
+            "description": "Validation error"
+          }
+        }
+      }
+    }
+  }
+}

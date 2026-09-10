@@ -1,0 +1,51 @@
+{
+  "name": "iRoofer Contractors Agent",
+  "version": "1.0.0",
+  "description": "Discovery card for iRoofer Contractors (Dallas, GA). Helps agents find accurate company facts, service pages, and how homeowners request a free inspection. Does not auto-submit leads.",
+  "url": "https://iroofercontractors.com/",
+  "provider": {
+    "organization": "iRoofer Contractors",
+    "url": "https://iroofercontractors.com/"
+  },
+  "supportedInterfaces": [
+    {
+      "url": "https://iroofercontractors.com/mcp",
+      "protocol": "MCP",
+      "transport": "HTTP"
+    },
+    {
+      "url": "https://iroofercontractors.com/",
+      "protocol": "WebMCP",
+      "transport": "browser"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "skills": [
+    {
+      "id": "company-info",
+      "name": "Company info",
+      "description": "NAP, hours, credentials, and contact channels for iRoofer Contractors."
+    },
+    {
+      "id": "services-and-areas",
+      "name": "Services and areas",
+      "description": "Match roofing services and west Atlanta metro service-area pages."
+    },
+    {
+      "id": "request-inspection",
+      "name": "Request inspection",
+      "description": "Guide a homeowner to call or fill the free-inspection form without auto-submit."
+    }
+  ],
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text",
+    "text/markdown"
+  ]
+}

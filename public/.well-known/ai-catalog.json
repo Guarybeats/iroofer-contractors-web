@@ -1,0 +1,54 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "iRoofer Contractors",
+    "identifier": "did:web:iroofercontractors.com"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:iroofercontractors.com:server:mcp",
+      "displayName": "iRoofer MCP server",
+      "type": "application/mcp-server-card+json",
+      "url": "https://iroofercontractors.com/.well-known/mcp/server-card.json",
+      "representativeQueries": [
+        "who is iRoofer Contractors and how do I call them",
+        "list roofing services in Dallas GA",
+        "find roof repair page for Marietta",
+        "emergency storm roof phone number Dallas GA"
+      ]
+    },
+    {
+      "identifier": "urn:air:iroofercontractors.com:agent:a2a",
+      "displayName": "iRoofer A2A agent card",
+      "type": "application/json",
+      "url": "https://iroofercontractors.com/.well-known/agent-card.json",
+      "representativeQueries": [
+        "discover iRoofer agent skills",
+        "how can an agent help request a roof inspection",
+        "iRoofer service area coverage"
+      ]
+    },
+    {
+      "identifier": "urn:air:iroofercontractors.com:api:openapi",
+      "displayName": "iRoofer public OpenAPI",
+      "type": "application/openapi+json",
+      "url": "https://iroofercontractors.com/openapi.json",
+      "representativeQueries": [
+        "iRoofer API health check",
+        "openapi for iRoofer lead form",
+        "MCP HTTP endpoint for iRoofer"
+      ]
+    },
+    {
+      "identifier": "urn:air:iroofercontractors.com:skills:index",
+      "displayName": "iRoofer agent skills index",
+      "type": "application/json",
+      "url": "https://iroofercontractors.com/.well-known/agent-skills/index.json",
+      "representativeQueries": [
+        "agent skills for iRoofer Contractors",
+        "how to request free roof inspection with an agent",
+        "iRoofer NAP and credentials skill"
+      ]
+    }
+  ]
+}
