@@ -48,7 +48,7 @@ export default function ServiceDetail({ params }) {
                 {service.bullets.map((b) => <li key={b}>{b}</li>)}
               </ul>
               <p style={{ marginTop: 18 }}>
-                <a className="btn btn-ink" href="/#contact">Get a free quote for {service.title} <span className="arr">→</span></a>
+                <a className="btn btn-ink" href="/contact/">Get a free quote for {service.title} <span className="arr">→</span></a>
               </p>
               <RelatedGuides slug={service.slug} />
             </div>
@@ -106,6 +106,23 @@ export default function ServiceDetail({ params }) {
             ))}
           </div>
         </div>
+
+        {hub.deepenBlocks?.length > 0 && (
+          <div className="rv" style={{ marginTop: 56, maxWidth: 780 }}>
+            <span className="eyebrow dark">More detail</span>
+            {hub.deepenBlocks.map((b) => (
+              <div key={b.title} style={{ marginTop: 24 }}>
+                <h2 style={{ fontSize: 'clamp(1.35rem,2.4vw,1.85rem)', fontWeight: 800 }}>{b.title}</h2>
+                <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>{b.body}</p>
+              </div>
+            ))}
+            <p style={{ marginTop: 20 }}>
+              <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>
+              {' · '}
+              <Link href="/contact/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Contact</Link>
+            </p>
+          </div>
+        )}
 
         {hub.featuredLinks?.length > 0 && (
           <div className="rv" style={{ marginTop: 56 }}>
