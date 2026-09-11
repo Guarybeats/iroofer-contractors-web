@@ -43,8 +43,8 @@ export const services = [
     metaDesc:
       'Roof leak, flashing, and shingle repair across Metro Atlanta. Dallas GA jobs: see /roof-repair-dallas-ga/. Free inspection.',
     tagline: 'Stop the leak before it spreads.',
-    image: '/assets/service-repair.jpg?v=3',
-    webp: '/assets/service-repair.webp?v=3',
+    image: '/assets/service-repair.jpg?v=4',
+    webp: '/assets/service-repair.webp?v=4',
     summary:
       'From storm damage to worn flashing, we find the source and fix it right — so a small problem stays small.',
     bullets: [
@@ -60,8 +60,8 @@ export const services = [
     metaDesc:
       'Full tear-off and replacement with architectural shingles, installed by an Owens Corning Preferred Contractor in Dallas, GA & Metro Atlanta.',
     tagline: 'A new roof that lasts decades.',
-    image: '/assets/service-replacement.jpg?v=2',
-    webp: '/assets/service-replacement.webp?v=2',
+    image: '/assets/service-replacement.jpg?v=3',
+    webp: '/assets/service-replacement.webp?v=3',
     summary:
       'Full tear-off and replacement with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, installed clean and built to last. Backed by the manufacturer’s warranty on the shingles.',
     bullets: [
@@ -75,8 +75,8 @@ export const services = [
     slug: 'new-construction',
     title: 'New Construction',
     tagline: 'Roofing done right from frame-up.',
-    image: '/assets/service-newconstruction.jpg?v=2',
-    webp: '/assets/service-newconstruction.webp?v=2',
+    image: '/assets/service-newconstruction.jpg?v=3',
+    webp: '/assets/service-newconstruction.webp?v=3',
     summary:
       'We partner with builders and homeowners on new builds to install a roof that matches the design and the budget.',
     bullets: [
