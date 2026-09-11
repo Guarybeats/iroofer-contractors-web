@@ -124,13 +124,13 @@ export default function RoofEstimator() {
 
         <aside className="est-result">
           <div className="est-result-card">
-            <span className="eyebrow">Estimated range</span>
+            <span className="eyebrow">Planning range — not a quote</span>
             <div className="est-price">
               {fmt(low)} <span className="est-dash">–</span> {fmt(high)}
             </div>
             <p className="est-note">
-              Rough estimate for a {m.label.toLowerCase()} roof at {sqft.toLocaleString('en-US')} sq ft.
-              Final price depends on inspection — book a free on-site quote for an exact number.
+              Planning-only range for a {m.label.toLowerCase()} roof at {sqft.toLocaleString('en-US')} sq ft.
+              Not a contract price. Final figure depends on inspection — book a free on-site quote for an exact number in writing.
             </p>
             <ul className="est-break">
               <li><span>Materials &amp; labor</span><b>{fmt(materialCost)}</b></li>
