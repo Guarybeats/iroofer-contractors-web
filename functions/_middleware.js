@@ -196,6 +196,21 @@ export async function onRequest(context) {
     return Response.redirect(target.toString(), 301);
   }
 
+  // Strip Yahoo/legacy tracking params so Google consolidates on the clean URL
+  // (audit found indexed homepage variants with ?y_source=).
+  const STRIP_QUERY = ["y_source", "y_source_siteid"];
+  let stripped = false;
+  for (const key of STRIP_QUERY) {
+    if (url.searchParams.has(key)) {
+      url.searchParams.delete(key);
+      stripped = true;
+    }
+  }
+  if (stripped) {
+    const clean = url.pathname + (url.searchParams.toString() ? `?${url.searchParams}` : "") + url.hash;
+    return Response.redirect(new URL(clean, url.origin).toString(), 301);
+  }
+
   const path = url.pathname;
   if (
     path.startsWith("/api/") ||

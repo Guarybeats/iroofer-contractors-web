@@ -89,7 +89,7 @@ export default function HomePage() {
 
           <div className="hero-media">
             <div className="frame" aria-hidden="true"></div>
-            <img className="main" src="/assets/hero.webp?v=2" alt="iRoofer crew installing shingles on a Georgia home" loading="eager" decoding="async" />
+            <img className="main" src="/assets/hero.webp?v=2" alt="iRoofer crew installing shingles on a Georgia home" width={800} height={1000} loading="eager" decoding="async" fetchPriority="high" />
             <div className="badge" aria-hidden="true">
               <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs>
                 <text fill="#f3f5f4" fontFamily="Public Sans" fontSize="11.5" fontWeight="700" letterSpacing="2.4"><textPath href="#circ">FREE INSPECTIONS • STORM RESPONSE • </textPath></text>

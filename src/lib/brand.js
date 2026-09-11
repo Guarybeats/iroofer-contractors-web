@@ -40,6 +40,8 @@ export const services = [
   {
     slug: 'roof-repair',
     title: 'Roof Repair',
+    metaDesc:
+      'Roof leak, flashing, and shingle repair across Metro Atlanta. Dallas GA jobs: see /roof-repair-dallas-ga/. Free inspection.',
     tagline: 'Stop the leak before it spreads.',
     image: '/assets/service-repair.jpg?v=3',
     webp: '/assets/service-repair.webp?v=3',

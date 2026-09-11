@@ -17,9 +17,17 @@ export function generateStaticParams() {
 export function generateMetadata({ params }) {
   const service = getService(params.slug);
   if (!service) return {};
+  // Lock "roof repair Dallas GA" on /roof-repair-dallas-ga/ — hub stays metro-wide.
+  const isRepairHub = service.slug === 'roof-repair';
   return seo({
-    title: `${service.title} | Dallas, GA & Metro Atlanta`,
-    description: service.metaDesc || service.summary,
+    title: isRepairHub
+      ? `${service.title} | Metro Atlanta | iRoofer`
+      : `${service.title} | Dallas, GA & Metro Atlanta`,
+    description:
+      service.metaDesc ||
+      (isRepairHub
+        ? 'Roof leak, flashing, and shingle repair across Metro Atlanta. For Dallas, GA jobs see our local roof repair page. Free inspection.'
+        : service.summary),
     path: `/services/${service.slug}`,
   });
 }

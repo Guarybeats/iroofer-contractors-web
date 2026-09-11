@@ -7,14 +7,14 @@ import { FaqSchema } from '@/components/LocalSeo';
 export const metadata = seo({
   title: 'Roofing in Dallas, GA | iRoofer Contractors',
   description:
-    'Roof repair, replacement, storm restoration and insurance-claim help in Dallas, GA and Paulding County. Family-owned. Free inspection.',
+    'Dallas, GA roofing company for repair, replacement, storm restoration and insurance claims in Paulding County. Family-owned. Free inspection.',
   path: '/dallas-ga-roofing',
 });
 
 const faqs = [
   {
     q: 'What does roof repair cost in Dallas, GA?',
-    a: 'Most Dallas, GA roof repairs run $250–$3,500 depending on size, pitch, and material. We give a free, written quote after a same-day inspection — no pressure, no obligation. These are general planning ranges for the Dallas, GA area, not a quote — we put the real figure in writing after an on-site inspection.',
+    a: 'Most Dallas, GA roof repairs run $250–$3,500 depending on size, pitch, and material. We give a free, written quote after a same-day inspection — no pressure, no obligation. For Dallas leak and repair jobs, start at https://iroofercontractors.com/roof-repair-dallas-ga/ — these are planning ranges, not a quote.',
   },
   {
     q: 'How much is a full roof replacement near Dallas, GA?',
@@ -53,9 +53,9 @@ export default function DallasGaRoofingPage() {
               Dallas, GA Roofing Company
             </h1>
             <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 720 }}>
-              iRoofer Contractors is a local, family-owned roofing company based in Dallas, Georgia. We handle roof repair, full
-              replacement, new-construction roofing, storm restoration, and insurance claims across the west Atlanta metro —
-              with free inspections and a real person on the phone.
+              iRoofer Contractors is a local, family-owned roofing company based in Dallas, Georgia. This hub covers our full
+              Dallas menu — repair, replacement, storm restoration, and insurance claims across west Metro Atlanta —
+              with free inspections and a real person on the phone. Need a leak fixed? Use the Roof repair Dallas GA page.
             </p>
             <div className="cta" style={{ marginTop: 24 }}>
               <a className="bigphone" href="tel:(470) 236-1410" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }}>
@@ -65,6 +65,9 @@ export default function DallasGaRoofingPage() {
                 Get a free quote <span className="arr">→</span>
               </Link>
             </div>
+            <p style={{ marginTop: 16 }}>
+              <Link href="/roof-repair-dallas-ga/" className="chip">Roof repair Dallas GA (money page) →</Link>
+            </p>
           </div>
         </div>
       </section>
