@@ -1,10 +1,25 @@
 import './globals.css';
 import Script from 'next/script';
+import { Public_Sans, Big_Shoulders_Display } from 'next/font/google';
 import { brand } from '@/lib/brand';
 import SiteScripts from '@/components/SiteScripts';
 import LocalSeo from '@/components/LocalSeo';
 import WebMcpTools from '@/components/WebMcpTools';
 import { GBP_URL } from '@/components/LocalSeo';
+
+const publicSans = Public_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  display: 'swap',
+  variable: '--font-public-sans',
+});
+
+const bigShoulders = Big_Shoulders_Display({
+  subsets: ['latin'],
+  weight: ['600', '700', '800', '900'],
+  display: 'swap',
+  variable: '--font-big-shoulders',
+});
 
 export const metadata = {
   metadataBase: new URL('https://iroofercontractors.com'),
@@ -41,11 +56,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${publicSans.variable} ${bigShoulders.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=Public+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+        <link rel="preload" as="image" href="/assets/hero.webp?v=3" type="image/webp" fetchPriority="high" />
         <LocalSeo />
         {/* Google Analytics 4 (Measurement ID: G-EC6HCLKMEN) */}
         <Script
@@ -59,7 +72,7 @@ export default function RootLayout({ children }) {
   gtag('config', 'G-EC6HCLKMEN');`}
         </Script>
       </head>
-      <body>
+      <body className={publicSans.className}>
         {/* TOP TICKER */}
         <div className="topbar" aria-hidden="true">
           <div className="track">

@@ -89,7 +89,7 @@ export default function HomePage() {
 
           <div className="hero-media">
             <div className="frame" aria-hidden="true"></div>
-            <img className="main" src="/assets/hero.webp?v=2" alt="iRoofer crew installing shingles on a Georgia home" width={800} height={1000} loading="eager" decoding="async" fetchPriority="high" />
+            <img className="main" src="/assets/hero.webp?v=3" alt="iRoofer crew installing shingles on a Georgia home" width={800} height={1000} loading="eager" decoding="async" fetchPriority="high" />
             <div className="badge" aria-hidden="true">
               <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs>
                 <text fill="#f3f5f4" fontFamily="Public Sans" fontSize="11.5" fontWeight="700" letterSpacing="2.4"><textPath href="#circ">FREE INSPECTIONS • STORM RESPONSE • </textPath></text>
@@ -210,8 +210,8 @@ export default function HomePage() {
 
           <div className="ba-wrap">
             <div className="ba rv" id="ba" style={{ '--pos': '52%' }}>
-              <img className="before" src="/assets/service-repair.webp?v=3" alt="Roof before: storm damage" loading="lazy" />
-              <img className="after" src="/assets/service-replacement.webp?v=2" alt="Roof after: full replacement" loading="lazy" />
+              <img className="before" src="/assets/service-repair.webp?v=4" alt="Roof before: storm damage" loading="lazy" />
+              <img className="after" src="/assets/service-replacement.webp?v=3" alt="Roof after: full replacement" loading="lazy" />
               <span className="tag t-before">Before — storm damage</span>
               <span className="tag t-after">After — full replacement</span>
               <div className="handle" aria-hidden="true"><span className="grip">◂</span></div>
@@ -221,11 +221,11 @@ export default function HomePage() {
 
             <div className="gallery rv">
               <div className="gcard">
-                <img loading="lazy" src="/assets/service-newconstruction.webp?v=2" alt="New construction roof" />
+                <img loading="lazy" src="/assets/service-newconstruction.webp?v=3" alt="New construction roof" />
                 <div className="cap"><span>Paulding County</span><b>New construction</b></div>
               </div>
               <div className="gcard">
-                <img loading="lazy" src="/assets/hero.webp?v=2" alt="Aerial view of finished roofs" />
+                <img loading="lazy" src="/assets/hero.webp?v=3" alt="Aerial view of finished roofs" />
                 <div className="cap"><span>Subdivision · 14 homes</span><b>Storm rebuild</b></div>
               </div>
             </div>

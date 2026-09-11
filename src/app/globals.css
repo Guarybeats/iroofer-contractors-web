@@ -5,8 +5,8 @@
   --orange:#ff5c1c; --orange-d:#df470c;
   --steel:#8ea2b4; --green:#37d67a;
   --line:rgba(22,29,37,.12); --line-w:rgba(243,245,244,.12);
-  --display:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;
-  --body:'Public Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  --display:var(--font-big-shoulders),'Big Shoulders Display','Arial Narrow',Impact,sans-serif;
+  --body:var(--font-public-sans),'Public Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
   --maxw:1240px;
 }
 
