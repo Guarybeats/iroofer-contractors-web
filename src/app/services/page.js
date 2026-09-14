@@ -23,7 +23,7 @@ export default function ServicesPage() {
         <div className="cards">
           {services.map((s) => (
             <Link className="card" key={s.slug} href={`/services/${s.slug}/`} style={{ color: 'inherit' }}>
-              <Pic src={s.image} alt={s.title} />
+              <Pic src={s.image} alt={s.imageAlt || s.title} />
               <div className="body">
                 <h2>{s.title}</h2>
                 <p>{s.summary}</p>
@@ -33,7 +33,7 @@ export default function ServicesPage() {
           ))}
         </div>
         <div style={{ marginTop: 36, borderTop: '1px solid #e6e9ee', paddingTop: 20 }}>
-          <p style={{ fontSize: '.8rem', letterSpacing: '.04em', textTransform: 'uppercase', color: '#8ea2b4', marginBottom: 10 }}>Guides &amp; calculators</p>
+          <p style={{ fontSize: '.8rem', letterSpacing: '.04em', textTransform: 'uppercase', color: '#8ea2b4', marginBottom: 10 }}>Guides & calculators</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
             <Link href="/blog/roof-repair-cost-dallas-ga/" className="chip" style={{ textDecoration: 'none' }}>Roof repair cost Dallas GA</Link>
             <Link href="/blog/cost-of-new-roof-2026-dallas-ga/" className="chip" style={{ textDecoration: 'none' }}>New roof cost 2026</Link>
