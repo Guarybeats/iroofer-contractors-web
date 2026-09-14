@@ -38,6 +38,7 @@ export default function ServiceDetail({ params }) {
   const hub = serviceHubContent[service.slug];
   const related = services.filter((s) => s.slug !== service.slug);
   const cityList = comboCities();
+  const heroAlt = service.imageAlt || service.title;
 
   // Fallback: keep a minimal layout if a new service slug is added without hub copy
   if (!hub) {
@@ -61,7 +62,7 @@ export default function ServiceDetail({ params }) {
               <RelatedGuides slug={service.slug} />
             </div>
             <div className="rv">
-              <Pic src={service.image} alt={service.title} style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
+              <Pic src={service.image} alt={heroAlt} style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
               <div style={{ maxWidth: 460, margin: '32px auto 0' }}>
                 <QuoteForm variant="detail" id={`quote-${service.slug}`} />
               </div>
@@ -92,7 +93,7 @@ export default function ServiceDetail({ params }) {
             </p>
           </div>
           <div className="rv">
-            <Pic src={service.image} alt={service.title} style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
+            <Pic src={service.image} alt={heroAlt} style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
           </div>
         </div>
 
@@ -175,7 +176,7 @@ export default function ServiceDetail({ params }) {
         <div className="cards" style={{ marginTop: 24 }}>
           {related.map((s) => (
             <Link key={s.slug} href={`/services/${s.slug}/`} className="card" style={{ color: 'inherit', textDecoration: 'none' }}>
-              <img src={s.webp || s.image} alt={s.title} loading="lazy" />
+              <img src={s.webp || s.image} alt={s.imageAlt || s.title} loading="lazy" />
               <div className="body">
                 <h3>{s.title}</h3>
                 <p style={{ color: '#52606b' }}>{s.summary}</p>
