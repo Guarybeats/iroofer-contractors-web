@@ -47,14 +47,14 @@ export default function GutterPage() {
         <div className="faq-grid" style={{ marginTop: 18, alignItems: 'center' }}>
           <div className="rv">
             <span className="eyebrow dark">Gutter repair & replacement</span>
-            <h1 style={{ fontSize: 'clamp(2.2rem,4.6vw,3.6rem)', fontWeight: 900, lineHeight: 1.04 }}>Protect your roof, fascia &amp; <span className="ac">foundation.</span></h1>
+            <h1 style={{ fontSize: 'clamp(2.2rem,4.6vw,3.6rem)', fontWeight: 900, lineHeight: 1.04 }}>Protect your roof, fascia & <span className="ac">foundation.</span></h1>
             <p style={{ color: '#52606b', fontSize: '1.05rem', marginTop: 14, maxWidth: 640 }}>
               Clogged or failing gutters are the #1 cause of preventable roof and foundation damage in Dallas, GA — water has nowhere to go but back under your shingles and against your slab. We repair, realign, and replace gutters and downspouts so water flows <strong>away</strong> from your home, not into it.
             </p>
             <ul style={{ lineHeight: 2.1, color: '#52606b', marginTop: 16 }}>
               <li>Free, no-pressure gutter inspection with photos</li>
               <li>Seamless aluminum replacement, custom-cut on-site</li>
-              <li>Storm &amp; insurance claim help for hail/wind gutter damage</li>
+              <li>Storm & insurance claim help for hail/wind gutter damage</li>
               <li>Done by the same local crew that roofs your home</li>
             </ul>
             <p style={{ marginTop: 20 }}>
@@ -151,7 +151,7 @@ export default function GutterPage() {
         <div className="cards" style={{ marginTop: 24 }}>
           {related.map((s) => (
             <Link key={s.slug} href={`/services/${s.slug}/`} className="card" style={{ color: 'inherit', textDecoration: 'none' }}>
-              <img src={s.webp} alt={s.title} loading="lazy" />
+              <img src={s.webp} alt={s.imageAlt || s.title} loading="lazy" />
               <div className="body">
                 <h3>{s.title}</h3>
                 <p style={{ color: '#52606b' }}>{s.summary}</p>
