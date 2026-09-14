@@ -45,6 +45,7 @@ export const services = [
     tagline: 'Stop the leak before it spreads.',
     image: '/assets/service-repair.jpg?v=4',
     webp: '/assets/service-repair.webp?v=4',
+    imageAlt: 'Roof repair by iRoofer Contractors in Dallas, GA — leak, flashing, and shingle work',
     summary:
       'From storm damage to worn flashing, we find the source and fix it right — so a small problem stays small.',
     bullets: [
@@ -62,6 +63,7 @@ export const services = [
     tagline: 'A new roof that lasts decades.',
     image: '/assets/service-replacement.jpg?v=3',
     webp: '/assets/service-replacement.webp?v=3',
+    imageAlt: 'Full roof replacement with architectural shingles on a Dallas, GA home',
     summary:
       'Full tear-off and replacement with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, installed clean and built to last. Backed by the manufacturer’s warranty on the shingles.',
     bullets: [
@@ -77,6 +79,7 @@ export const services = [
     tagline: 'Roofing done right from frame-up.',
     image: '/assets/service-newconstruction.jpg?v=3',
     webp: '/assets/service-newconstruction.webp?v=3',
+    imageAlt: 'New construction roof installation on a Paulding County home by iRoofer Contractors',
     summary:
       'We partner with builders and homeowners on new builds to install a roof that matches the design and the budget.',
     bullets: [
@@ -92,6 +95,7 @@ export const services = [
     tagline: 'Protect your roof, fascia, and foundation.',
     image: '/assets/service-gutters-main.jpg?v=2',
     webp: '/assets/service-gutters-main.webp?v=2',
+    imageAlt: 'Seamless gutter installation on a Dallas, GA home by iRoofer Contractors',
     summary:
       'Clogged or failing gutters are the #1 cause of preventable roof and foundation damage in Dallas, GA. We repair, realign, and replace gutters and downspouts so water flows away from your home.',
     bullets: [
@@ -109,6 +113,7 @@ export const services = [
     tagline: '24/7 storm response across west Metro Atlanta.',
     image: '/assets/storm-damage.jpg?v=2',
     webp: '/assets/storm-damage.webp?v=2',
+    imageAlt: 'Storm damage roof inspection and repair after hail and wind in west Metro Atlanta',
     summary:
       'Wind, hail, and fallen limbs do damage that is easy to miss from the ground. We inspect free, tarp the same day when a roof is open to the weather, and document everything you need for your claim.',
     bullets: [
