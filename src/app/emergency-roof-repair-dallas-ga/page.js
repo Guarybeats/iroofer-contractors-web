@@ -70,9 +70,10 @@ export default function EmergencyPage() {
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
                 A roof failure never waits for business hours. Whether a storm just dropped a tree or
-                a leak started after last night's rain, we respond within 24 hours — often much
-                faster. We tarp, document, and file your insurance claim so you aren't footing the
-                bill upfront.
+                a leak started after last night&apos;s rain, iRoofer Contractors responds from our
+                Dallas shop at 152 Freedom Dr — often within hours across Paulding County. We tarp,
+                document, and support your insurance claim path so you are not footing the bill
+                upfront when the damage is storm-related.
               </p>
 
               <div className="cta" style={{ marginTop: 28 }}>
@@ -112,7 +113,7 @@ export default function EmergencyPage() {
               >
                 <strong style={{ color: '#0b3d16' }}>iRoofer Contractors</strong>
                 <div style={{ color: '#52606b', fontSize: '.9rem', marginTop: 4 }}>
-                  Licensed · Bonded · Insured | Dallas, GA since 2019
+                  Licensed · Bonded · Insured | 152 Freedom Dr, Dallas, GA 30157 · since 2019
                 </div>
                 <div style={{ marginTop: 6 }}>
                   <a
@@ -187,6 +188,26 @@ export default function EmergencyPage() {
           </div>
         </div>
       </section>
+
+      <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <div className="sec-head rv">
+            <span className="eyebrow dark">Related pages</span>
+            <h2>Helpful links after a Dallas emergency</h2>
+          </div>
+          <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '.6rem 1.4rem', marginTop: 8, listStyle: 'none', padding: 0 }}>
+            <li><Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>Storm damage roof repair Dallas GA →</Link></li>
+            <li><Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>Roof repair in Dallas GA →</Link></li>
+            <li><Link href="/services/storm-damage-roof-repair/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>Storm &amp; insurance service hub →</Link></li>
+            <li><Link href="/dallas-ga-roofing/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>All Dallas GA roofing services →</Link></li>
+            <li><Link href="/service-areas/dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>Dallas GA service area (152 Freedom Dr) →</Link></li>
+          </ul>
+          <div style={{ marginTop: 28 }}>
+            <Link href="/service-areas/dallas-ga/" className="btn btn-ink">More about our Dallas service area <span className="arr">→</span></Link>
+          </div>
+        </div>
+      </section>
+
       <FaqSchema faq={emergencyFaqs} />
     </>
   );

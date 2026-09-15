@@ -9,13 +9,13 @@ export const metadata = {
   title: 'Roofing in Kennesaw, GA | Repair & Replacement | iRoofer',
   description:
     'Family-owned roofer serving Kennesaw, GA (Cobb County). Roof repair, full replacement and HOA-neighborhood roofing. Free inspection: (470) 236-1410.',
-  alternates: { canonical: `${brand.url}/service-areas/kennesaw` },
+  alternates: { canonical: `${brand.url}/service-areas/kennesaw/` },
   openGraph: {
     type: 'website',
     siteName: 'iRoofer Contractors',
     locale: 'en_US',
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
-    url: `${brand.url}/service-areas/kennesaw`,
+    url: `${brand.url}/service-areas/kennesaw/`,
     title: 'Roofing in Kennesaw, GA — iRoofer Contractors',
     description:
       'Kennesaw roof repair and replacement from a family-owned crew based in Dallas, GA. Free inspections, photo reports, honest answers.',

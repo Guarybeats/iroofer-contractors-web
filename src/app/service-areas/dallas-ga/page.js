@@ -9,13 +9,13 @@ export const metadata = {
   title: 'Roofing in Dallas, GA | Repair & Replacement | iRoofer',
   description:
     'Roofing in Dallas, GA: repair, replacement, and storm damage for Paulding County homes. Local crew. Call (470) 236-1410.',
-  alternates: { canonical: `${brand.url}/service-areas/dallas-ga` },
+  alternates: { canonical: `${brand.url}/service-areas/dallas-ga/` },
   openGraph: {
     type: 'website',
     siteName: 'iRoofer Contractors',
     locale: 'en_US',
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
-    url: `${brand.url}/service-areas/dallas-ga`,
+    url: `${brand.url}/service-areas/dallas-ga/`,
     title: 'Roofing in Dallas, GA — iRoofer Contractors',
     description:
       'Roofing in Dallas, GA: repair, replacement, and storm damage for Paulding County homes. Local crew. Call (470) 236-1410.',

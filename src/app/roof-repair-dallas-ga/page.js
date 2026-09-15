@@ -17,12 +17,13 @@ export const metadata = seo({
 const copy = localCopy['roof-repair']['dallas-ga'];
 const faqs = copy.faq;
 const relatedLinks = [
-              { href: '/dallas-ga-roofing/', label: 'Dallas GA roofing' },
-              { href: '/services/roof-repair/', label: 'roof repair services' },
-              { href: '/storm-damage-roof-repair-dallas-ga/', label: 'storm damage roof repair Dallas' },
-              { href: '/service-areas/dallas-ga/', label: 'Dallas service area' },
-              { href: '/', label: 'iRoofer Contractors home' },
-              { href: '/roof-repair-hiram/', label: 'Roof repair in Hiram' }
+              { href: '/dallas-ga-roofing/', label: 'All Dallas GA roofing services' },
+              { href: '/services/roof-repair/', label: 'Metro Atlanta roof repair hub' },
+              { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair in Dallas GA' },
+              { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas GA' },
+              { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas GA' },
+              { href: '/service-areas/dallas-ga/', label: 'Dallas GA service area (152 Freedom Dr)' },
+              { href: '/roof-repair-hiram/', label: 'Roof repair in Hiram' },
             ];
 
 export default function Page() {

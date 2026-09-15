@@ -46,7 +46,7 @@ const faqs = [
   { q: 'How long does a full replacement take?', a: 'Most single-family homes in our area are torn off and rebuilt in one to two days, weather permitting. Larger or steep-pitch roofs may take three. We give you a firm schedule in writing before we start.' },
   { q: 'Do you work with my insurance company?', a: 'Yes — it’s most of what we do. We document the damage, write the scope, meet the adjuster on-site, and handle supplements so you’re not chasing paperwork.' },
   { q: 'How much does a new roof cost?', a: 'It depends on size, pitch and materials, but most replacements land in a predictable range we’ll quote to the dollar after a free inspection. We also offer financing for qualified homeowners.' },
-  { q: 'What warranty do you actually get?', a: 'The manufacturer’s warranty on the shingles, registered in your name and transferred if you sell. We stand behind every job we do — ask us for the details on your specific roof.' },
+  { q: 'What warranty do I actually get?', a: 'The manufacturer’s warranty on the shingles, registered in your name and transferred if you sell. We stand behind every job we do — ask us for the details on your specific roof.' },
   { q: 'Do I need to be home during the work?', a: 'Nope. Everything happens outside. We’ll text you photos at each milestone and do a final walkthrough whenever you’re free. We also run a magnet sweep so your kids and pets stay safe.' },
 ];
 
@@ -297,4 +297,94 @@ export default function HomePage() {
           <div className="blog-grid rv">
             {posts.slice(0, 3).map((p) => (
               <Link href={`/blog/${p.slug}/`} key={p.slug} className="bcard">
-                <span className="cat">{p.categ
+                <span className="cat">{p.category}</span>
+                <h3>{p.title}</h3>
+                <p>{p.excerpt}</p>
+                <span className="more">Read the full article →</span>
+              </Link>
+            ))}
+          </div>
+          <div style={{ textAlign: 'center', marginTop: 32 }}>
+            <Link href="/blog/" className="btn btn-ink">Read all articles <span className="arr">→</span></Link>
+          </div>
+          <div style={{ marginTop: 28, borderTop: '1px solid #e6e9ee', paddingTop: 20 }}>
+            <p style={{ fontSize: '.8rem', letterSpacing: '.04em', textTransform: 'uppercase', color: '#8ea2b4', marginBottom: 10 }}>Popular guides</p>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+              <Link href="/blog/roof-repair-cost-dallas-ga/" className="chip" style={{ textDecoration: 'none' }}>Roof repair cost Dallas GA</Link>
+              <Link href="/blog/when-to-replace-vs-repair-a-roof/" className="chip" style={{ textDecoration: 'none' }}>Replace vs. repair guide</Link>
+              <Link href="/blog/dallas-ga-hail-storm-insurance-claims/" className="chip" style={{ textDecoration: 'none' }}>How to file an insurance claim</Link>
+              <Link href="/blog/georgia-hail-storm-roof-checklist/" className="chip" style={{ textDecoration: 'none' }}>Hail damage inspection checklist</Link>
+              <Link href="/storm-damage-roof-repair-dallas-ga/" className="chip" style={{ textDecoration: 'none' }}>Emergency storm response</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="sec-light sec-pad" id="faq">
+        <div className="tex" aria-hidden="true" />
+        <div className="wrap" style={{ position: 'relative' }}>
+          <div className="faq-grid">
+            <div className="faq-side rv">
+              <span className="eyebrow dark">Good to know</span>
+              <h2>Questions we hear every week.</h2>
+              <p>Still unsure about something? A real person — not a call center — will answer the phone.</p>
+              <div className="faq-call">
+                <div className="lbl">Talk to a roofer</div>
+                <a href={`tel:${brand.phone}`}>{brand.phone}</a>
+              </div>
+            </div>
+
+            <div className="faq-list rv">
+              {faqs.map((f, i) => (
+                <div className={`faq-item${i === 0 ? ' open' : ''}`} key={i}>
+                  <button className="faq-q" aria-expanded={i === 0 ? 'true' : 'false'}>{f.q}<span className="pm" aria-hidden="true" /></button>
+                  <div className="faq-a"><div><p>{f.a}</p></div></div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section className="contact sec-pad" id="contact">
+        <div className="wrap">
+          <div className="rv">
+            <span className="eyebrow">Let’s talk</span>
+            <h2>Talk to a <span className="ac">real roofer.</span></h2>
+            <p className="lead">Tell us what’s going on and we’ll get back within one business hour — usually much faster. Free inspections, free estimates, zero pressure.</p>
+            <div className="cinfo">
+              <div className="row">
+                <span className="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11 11 0 0 0 .56 3.5 1 1 0 0 1-.25 1Z" /></svg></span>
+                <div><div className="lbl">Call or text</div><a href={`tel:${brand.phone}`}>{brand.phone}</a></div>
+              </div>
+              <div className="row">
+                <span className="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v.4l8 5 8-5V6H4Zm16 2.7-7.4 4.6a1 1 0 0 1-1.2 0L4 8.7V18h16V8.7Z" /></svg></span>
+                <div><div className="lbl">Email</div><a href={`mailto:${brand.email}`}>{brand.email}</a></div>
+              </div>
+              <div className="row">
+                <span className="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" /></svg></span>
+                <div><div className="lbl">Shop &amp; office</div><span className="val">{brand.location}</span></div>
+              </div>
+            </div>
+            <div className="towns">
+              <div className="lbl">Proudly serving</div>
+              <div className="chips">
+                {brand.serviceArea.map((a) => <span className="chip" key={a}>{a}</span>)}
+              </div>
+            </div>
+          </div>
+
+          <div className="rv">
+            <QuoteForm variant="contact" id="cform" />
+          </div>
+        </div>
+
+        <div style={{ marginTop: 28, textAlign: 'center' }}>
+          <ReviewButton variant="orange" label="Leave us a Google review" />
+        </div>
+      </section>
+    </>
+  );
+}
