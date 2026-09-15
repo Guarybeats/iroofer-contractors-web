@@ -17,11 +17,13 @@ export const metadata = seo({
 const copy = localCopy['storm-damage-roof-repair']['dallas-ga'];
 const faqs = copy.faq;
 const relatedLinks = [
-              { href: '/', label: 'Dallas roofing contractors' },
-              { href: '/services/roof-repair/', label: 'professional roof repair' },
-              { href: '/roof-repair-dallas-ga/', label: 'roof repair in Dallas, GA' },
-              { href: '/services/roof-insurance-claims/', label: 'roof insurance claims help' },
-              { href: '/emergency-roof-repair-dallas-ga/', label: 'emergency roof repair Dallas' }
+              { href: '/dallas-ga-roofing/', label: 'All Dallas GA roofing services' },
+              { href: '/services/storm-damage-roof-repair/', label: 'Storm damage roof repair hub' },
+              { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas GA' },
+              { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas GA' },
+              { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas GA' },
+              { href: '/services/roof-insurance-claims/', label: 'Roof insurance claims help' },
+              { href: '/service-areas/dallas-ga/', label: 'Dallas GA service area (152 Freedom Dr)' },
             ];
 
 export default function Page() {

@@ -9,13 +9,13 @@ export const metadata = {
   title: 'Roofing in Douglasville, GA | Repair & Replacement | iRoofer',
   description:
     'Family-owned roofer serving Douglasville, GA (Douglas County). Wind and hail claim help, repair, replacement and gutters. Free inspection: (470) 236-1410.',
-  alternates: { canonical: `${brand.url}/service-areas/douglasville` },
+  alternates: { canonical: `${brand.url}/service-areas/douglasville/` },
   openGraph: {
     type: 'website',
     siteName: 'iRoofer Contractors',
     locale: 'en_US',
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
-    url: `${brand.url}/service-areas/douglasville`,
+    url: `${brand.url}/service-areas/douglasville/`,
     title: 'Roofing in Douglasville, GA — iRoofer Contractors',
     description:
       'Douglasville storm damage documentation, roof repair and replacement from a family-owned crew based in Dallas, GA. Free photo reports.',

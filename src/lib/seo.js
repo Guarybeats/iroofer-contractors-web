@@ -1,10 +1,19 @@
 // Shared SEO metadata builder.
-// Emits a self-referencing canonical (no trailing slash, matching sitemap.xml),
-// full Open Graph, and Twitter card tags for every page that uses it.
+// Emits a self-referencing canonical WITH trailing slash (matching live site,
+// next.config trailingSlash: true, and public/sitemap.xml), plus full Open Graph
+// and Twitter card tags for every page that uses it.
 import { brand } from './brand';
 
 const BASE = brand.url.replace(/\/$/, ''); // https://iroofercontractors.com
 export const OG_IMAGE = `${BASE}/assets/logo.png`;
+
+/** Absolute site URL with trailing slash. Root → https://iroofercontractors.com/ */
+export function absoluteUrl(path = '') {
+  if (!path || path === '/' || path === '') return `${BASE}/`;
+  const clean = String(path).startsWith('/') ? String(path) : `/${path}`;
+  const withSlash = clean.endsWith('/') ? clean : `${clean}/`;
+  return `${BASE}${withSlash}`;
+}
 
 export function seo({
   title,
@@ -12,7 +21,7 @@ export function seo({
   path = '',
   noIndex = false,
 }) {
-  const url = path === '' ? BASE : `${BASE}${path}`;
+  const url = absoluteUrl(path);
   return {
     title,
     description,

@@ -9,13 +9,13 @@ export const metadata = {
   title: 'Roofing in Roswell, GA | Repair & Replacement | iRoofer',
   description:
     'Family-owned roofer serving Roswell, GA (Fulton County). Steep-slope replacements and historic-district repairs. Free inspection: (470) 236-1410.',
-  alternates: { canonical: `${brand.url}/service-areas/roswell` },
+  alternates: { canonical: `${brand.url}/service-areas/roswell/` },
   openGraph: {
     type: 'website',
     siteName: 'iRoofer Contractors',
     locale: 'en_US',
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
-    url: `${brand.url}/service-areas/roswell`,
+    url: `${brand.url}/service-areas/roswell/`,
     title: 'Roofing in Roswell, GA — iRoofer Contractors',
     description:
       'Roswell roof repair, replacement and storm claim help from a family-owned crew based in Dallas, GA. Free inspections, photo-documented reports.',

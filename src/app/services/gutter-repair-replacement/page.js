@@ -99,6 +99,22 @@ export default function GutterPage() {
           </div>
         </div>
 
+
+        <div className="rv" style={{ marginTop: 56 }}>
+          <span className="eyebrow dark">Dallas money pages</span>
+          <h2 style={{ fontSize: 'clamp(1.4rem,2.4vw,1.8rem)', fontWeight: 800, marginTop: 8 }}>Gutter work tied to your Dallas roof</h2>
+          <p style={{ color: '#52606b', marginTop: 8, maxWidth: 640 }}>
+            Same local crew from 152 Freedom Dr — gutters, drip edge, and roofing handled together when that is the smarter scope.
+          </p>
+          <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '.6rem 1.4rem', marginTop: 12, listStyle: 'none', padding: 0 }}>
+            <li><Link href="/gutter-repair-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>Gutter repair &amp; replacement Dallas GA →</Link></li>
+            <li><Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>Roof repair in Dallas GA →</Link></li>
+            <li><Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>Roof replacement in Dallas GA →</Link></li>
+            <li><Link href="/dallas-ga-roofing/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>All Dallas GA roofing services →</Link></li>
+            <li><Link href="/service-areas/dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>Dallas GA service area →</Link></li>
+          </ul>
+        </div>
+
         {/* WHAT IT COSTS */}
         <div className="sec-head rv" style={{ marginTop: 64 }}>
           <span className="eyebrow dark">Ballpark pricing</span>

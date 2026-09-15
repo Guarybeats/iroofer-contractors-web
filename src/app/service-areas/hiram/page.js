@@ -9,13 +9,13 @@ export const metadata = {
   title: 'Roofing in Hiram, GA | Repair & Replacement | iRoofer',
   description:
     'Roofing in Hiram, GA from a Dallas-based local crew—repair, replacement, storm help. Call (470) 236-1410 today.',
-  alternates: { canonical: `${brand.url}/service-areas/hiram` },
+  alternates: { canonical: `${brand.url}/service-areas/hiram/` },
   openGraph: {
     type: 'website',
     siteName: 'iRoofer Contractors',
     locale: 'en_US',
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
-    url: `${brand.url}/service-areas/hiram`,
+    url: `${brand.url}/service-areas/hiram/`,
     title: 'Roofing in Hiram, GA — iRoofer Contractors',
     description:
       'Roofing in Hiram, GA from a Dallas-based local crew—repair, replacement, storm help. Call (470) 236-1410 today.',
