@@ -133,13 +133,13 @@ export function getService(slug) {
 // Cherokee/north Fulton counties).
 //
 // IMPORTANT: every city listed here must also have its own page at
-// src/app/service-areas/<slug>/page.js. The generic [city] dynamic route was removed
-// because it collided with those dedicated pages and the static export picked the
-// winner unpredictably (some cities silently shipped the short generic template).
-// Adding a city here without creating its page means the service-areas index links
-// to a 404 — create the page in the same change, using components/CityAreaPage.jsx.
+// src/app/service-areas/<slug>/page.js — EXCEPT Dallas, which consolidates onto the
+// commercial hub /dallas-ga-roofing/ (see cityPath). The generic [city] dynamic route
+// was removed because it collided with dedicated pages and the static export picked
+// the winner unpredictably. Adding a city here without a page (or path override)
+// means the service-areas index links to a 404.
 export const cities = [
-  { slug: 'dallas-ga', name: 'Dallas', state: 'GA', county: 'Paulding County', blurb: 'our home base — same-day roof inspections across Dallas and across the county line.',
+  { slug: 'dallas-ga', name: 'Dallas', state: 'GA', county: 'Paulding County', path: '/dallas-ga-roofing/', blurb: 'our home base — same-day roof inspections across Dallas and across the county line.',
     localNote: 'As the town we call home, Dallas homeowners get priority scheduling and the crew chief on every job. From historic downtown to the new subdivisions off Hwy 92, we know the rooflines here.' },
   { slug: 'douglasville', name: 'Douglasville', state: 'GA', county: 'Douglas County', blurb: 'fast storm-response and full replacements for Douglasville homeowners.',
     localNote: 'Douglasville sees its share of spring straight-line winds off the ridge. We document hail and wind damage for your insurance claim and rebuild to manufacturer spec.' },
@@ -162,6 +162,13 @@ export const cities = [
   { slug: 'canton', name: 'Canton', state: 'GA', county: 'Cherokee County', combo: false, blurb: 'hail-belt inspections and full tear-offs for Canton and north Cherokee homes.',
     localNote: 'North Cherokee catches hail cores that miss Atlanta entirely. We inspect for soft metal dents and bruised mats \u2014 the evidence adjusters actually accept \u2014 before you file.' },
 ];
+
+/** Canonical path for a city card/link. Dallas consolidates to the roofing hub. */
+export function cityPath(cityOrSlug) {
+  const c = typeof cityOrSlug === 'string' ? getCity(cityOrSlug) : cityOrSlug;
+  if (!c) return '/service-areas/';
+  return c.path || `/service-areas/${c.slug}/`;
+}
 
 export function getCity(slug) {
   return cities.find((c) => c.slug === slug);

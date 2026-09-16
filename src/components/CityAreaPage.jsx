@@ -11,7 +11,7 @@ import CityMap from '@/components/CityMap';
 import CitySchema from '@/components/CitySchema';
 import QuoteForm from '@/components/QuoteForm';
 import ReviewButton from '@/components/ReviewButton';
-import { brand, services, cities } from '@/lib/brand';
+import { brand, services, cities, cityPath } from '@/lib/brand';
 
 const MUTED = '#52606b';
 
@@ -107,7 +107,7 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
                 .filter((x) => x.slug !== city.slug)
                 .map((x, i, arr) => (
                   <span key={x.slug}>
-                    <Link href={`/service-areas/${x.slug}/`} style={{ color: 'var(--orange)' }}>{x.name}</Link>
+                    <Link href={cityPath(x)} style={{ color: 'var(--orange)' }}>{x.name}</Link>
                     {i < arr.length - 1 ? ', ' : ''}
                   </span>
                 ))}

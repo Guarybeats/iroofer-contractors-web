@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
-import { brand, cities } from '@/lib/brand';
+import { brand, cities, cityPath } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
 
@@ -111,11 +111,6 @@ export default function DallasGaRoofingPage() {
               <Link href="/new-construction-dallas-ga/" className="chip">New construction Dallas GA →</Link>
               <Link href="/services/new-construction/" className="chip">New construction hub →</Link>
             </div>
-            <div className="card">
-              <h3>Dallas service area</h3>
-              <p>Neighborhood notes, storm claim process, and how we work from 152 Freedom Dr across Paulding County.</p>
-              <Link href="/service-areas/dallas-ga/" className="chip">Dallas GA service area →</Link>
-            </div>
           </div>
         </div>
       </section>
@@ -142,8 +137,8 @@ export default function DallasGaRoofingPage() {
             <h2>Service area around Dallas, GA</h2>
           </div>
           <div className="chips" style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
-            {cities.slice(0, 8).map((c) => (
-              <Link key={c.slug} href={`/service-areas/${c.slug}/`} className="chip">
+            {cities.filter((c) => c.slug !== 'dallas-ga').slice(0, 8).map((c) => (
+              <Link key={c.slug} href={cityPath(c)} className="chip">
                 {c.name}, {c.state} →
               </Link>
             ))}
@@ -176,7 +171,7 @@ export default function DallasGaRoofingPage() {
             <li><Link href="/emergency-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Emergency repair Dallas GA →</Link></li>
             <li><Link href="/gutter-repair-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Gutters Dallas GA →</Link></li>
             <li><Link href="/new-construction-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>New construction Dallas GA →</Link></li>
-            <li><Link href="/service-areas/dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Service area Dallas GA →</Link></li>
+            <li><Link href="/service-areas/" style={{ color: 'var(--orange)', fontWeight: 700 }}>All service areas →</Link></li>
             <li><Link href="/services/" style={{ color: 'var(--orange)', fontWeight: 700 }}>All services →</Link></li>
           </ul>
         </div>

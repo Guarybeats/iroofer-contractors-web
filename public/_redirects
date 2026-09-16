@@ -29,6 +29,11 @@
 /service-areas/canton-ga-usa  /service-areas/                               301
 /service-areas/rome-ga-usa    /service-areas/                               301
 
+# Dallas hub consolidation 2026-09-16 (GSC: keep commercial /dallas-ga-roofing/).
+# /service-areas/dallas-ga/ was mostly generic "roofer" noise @ ~pos 70.
+/service-areas/dallas-ga      /dallas-ga-roofing/                        301
+/service-areas/dallas-ga/     /dallas-ga-roofing/                        301
+
 # Duplicate service+city pages consolidated 2026-08-30 (split ranking signals).
 # Keep the site-convention URL, 301 the twin.
 /roof-replacement-marietta-ga   /roof-replacement-marietta/            301

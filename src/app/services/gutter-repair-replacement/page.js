@@ -111,7 +111,6 @@ export default function GutterPage() {
             <li><Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>Roof repair in Dallas GA →</Link></li>
             <li><Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>Roof replacement in Dallas GA →</Link></li>
             <li><Link href="/dallas-ga-roofing/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>All Dallas GA roofing services →</Link></li>
-            <li><Link href="/service-areas/dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>Dallas GA service area →</Link></li>
           </ul>
         </div>
 

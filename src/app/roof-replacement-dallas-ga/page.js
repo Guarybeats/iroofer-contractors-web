@@ -22,7 +22,7 @@ const relatedLinks = [
               { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas GA' },
               { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair Dallas GA' },
               { href: '/new-construction-dallas-ga/', label: 'New construction roofing Dallas GA' },
-              { href: '/service-areas/dallas-ga/', label: 'Dallas GA service area (152 Freedom Dr)' },
+
             ];
 
 export default function Page() {
@@ -85,7 +85,7 @@ export default function Page() {
             ))}
           </div>
           <div style={{ marginTop: 28 }}>
-            <Link href="/service-areas/dallas-ga/" className="btn btn-ink">More about our Dallas service area <span className="arr">→</span></Link>
+            <Link href="/dallas-ga-roofing/" className="btn btn-ink">Dallas GA roofing hub <span className="arr">→</span></Link>
           </div>
         </div>
       </section>
