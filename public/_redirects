@@ -34,6 +34,14 @@
 /service-areas/dallas-ga      /dallas-ga-roofing/                        301
 /service-areas/dallas-ga/     /dallas-ga-roofing/                        301
 
+# GSC 404 examples 2026-09-16 — towns without pages + bare /dallas (no -ga)
+/service-areas/villa-rica     /service-areas/                            301
+/service-areas/villa-rica/    /service-areas/                            301
+/service-areas/carrollton     /service-areas/                            301
+/service-areas/carrollton/    /service-areas/                            301
+/service-areas/dallas         /dallas-ga-roofing/                        301
+/service-areas/dallas/        /dallas-ga-roofing/                        301
+
 # Duplicate service+city pages consolidated 2026-08-30 (split ranking signals).
 # Keep the site-convention URL, 301 the twin.
 /roof-replacement-marietta-ga   /roof-replacement-marietta/            301

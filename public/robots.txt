@@ -6,10 +6,7 @@ Disallow: /admin/
 # search=yes: allow indexing & snippets; ai-input=yes: allow grounding/answers; ai-train=no: no model training
 Content-Signal: ai-train=no, search=yes, ai-input=yes
 
-# AI / LLM crawlers — machine-readable site summary
-llms.txt: https://iroofercontractors.com/llms.txt
-# Also at: https://iroofercontractors.com/.well-known/llms.txt
-
-Agentmap: https://iroofercontractors.com/.well-known/ai-catalog.json
+# llms.txt and Agentmap are not valid robots.txt directives (GSC syntax errors).
+# Discover them at /llms.txt and /.well-known/ai-catalog.json (also via Link headers / well-known).
 
 Sitemap: https://iroofercontractors.com/sitemap.xml
