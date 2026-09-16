@@ -1,0 +1,14 @@
+{
+  "resource": "https://iroofercontractors.com/",
+  "resource_name": "iRoofer Contractors",
+  "authorization_servers": [
+    "https://iroofercontractors.com"
+  ],
+  "scopes_supported": [
+    "public:read"
+  ],
+  "bearer_methods_supported": [
+    "header"
+  ],
+  "resource_documentation": "https://iroofercontractors.com/auth.md"
+}

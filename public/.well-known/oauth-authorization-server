@@ -1,0 +1,30 @@
+{
+  "issuer": "https://iroofercontractors.com",
+  "authorization_endpoint": "https://iroofercontractors.com/oauth/authorize",
+  "token_endpoint": "https://iroofercontractors.com/oauth/token",
+  "response_types_supported": [
+    "none"
+  ],
+  "grant_types_supported": [],
+  "token_endpoint_auth_methods_supported": [
+    "none"
+  ],
+  "scopes_supported": [
+    "public:read"
+  ],
+  "service_documentation": "https://iroofercontractors.com/auth.md",
+  "agent_auth": {
+    "skill": "https://iroofercontractors.com/auth.md",
+    "register_uri": "https://iroofercontractors.com/auth.md",
+    "registration_note": "No agent account registration is offered. Public discovery and read endpoints are anonymous; visiting register_uri does not create an account or mint tokens. OAuth token endpoints exist for discovery compliance only and do not issue access tokens for protected write APIs.",
+    "identity_types_supported": [
+      "anonymous"
+    ],
+    "anonymous": {
+      "credential_types_supported": [
+        "none"
+      ],
+      "claim_uri": "https://iroofercontractors.com/contact/"
+    }
+  }
+}
