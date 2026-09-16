@@ -162,7 +162,7 @@ a.svc-head{text-decoration:none;color:var(--ink)}
 .svc-head:focus-visible{outline:2px dashed var(--orange);outline-offset:3px}
 .svc-head:focus-visible .svc-cta{opacity:1;transform:none}
 .svc-num{font-family:var(--display);font-weight:800;font-size:1.5rem;color:#a9b3ad;transition:.3s}
-.svc-title{font-family:var(--display);font-weight:800;font-size:clamp(1.4rem,2.6vw,2.1rem);text-transform:uppercase;transition:.3s;min-width:0}
+.svc-title{font-family:var(--display);font-weight:800;font-size:clamp(1.4rem,2.6vw,2.1rem);text-transform:uppercase;transition:.3s;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .svc-tag{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--orange);
   border:1px solid var(--orange);padding:.3rem .6rem;border-radius:2px;white-space:nowrap}
 .svc-plus{position:relative;width:22px;height:22px;flex-shrink:0}
