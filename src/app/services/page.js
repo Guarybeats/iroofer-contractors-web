@@ -45,7 +45,7 @@ export default function ServicesPage() {
         <div style={{ marginTop: 36, borderTop: '1px solid #e6e9ee', paddingTop: 20 }}>
           <p style={{ fontSize: '.8rem', letterSpacing: '.04em', textTransform: 'uppercase', color: '#8ea2b4', marginBottom: 10 }}>Service areas</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
-            <Link href="/service-areas/dallas-ga/" className="chip" style={{ textDecoration: 'none' }}>Dallas, GA</Link>
+            <Link href="/dallas-ga-roofing/" className="chip" style={{ textDecoration: 'none' }}>Dallas, GA</Link>
             <Link href="/service-areas/douglasville/" className="chip" style={{ textDecoration: 'none' }}>Douglasville</Link>
             <Link href="/service-areas/hiram/" className="chip" style={{ textDecoration: 'none' }}>Hiram</Link>
             <Link href="/service-areas/powder-springs/" className="chip" style={{ textDecoration: 'none' }}>Powder Springs</Link>

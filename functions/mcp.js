@@ -69,7 +69,10 @@ const CITIES = [
   "canton",
 ].map((slug) => ({
   slug,
-  url: `${ORIGIN}/service-areas/${slug}/`,
+  url:
+    slug === "dallas-ga"
+      ? `${ORIGIN}/dallas-ga-roofing/`
+      : `${ORIGIN}/service-areas/${slug}/`,
 }));
 
 function textResult(payload) {

@@ -22,7 +22,7 @@ const relatedLinks = [
               { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair in Dallas GA' },
               { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas GA' },
               { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas GA' },
-              { href: '/service-areas/dallas-ga/', label: 'Dallas GA service area (152 Freedom Dr)' },
+
               { href: '/roof-repair-hiram/', label: 'Roof repair in Hiram' },
             ];
 
@@ -86,7 +86,7 @@ export default function Page() {
             ))}
           </div>
           <div style={{ marginTop: 28 }}>
-            <Link href="/service-areas/dallas-ga/" className="btn btn-ink">More about our Dallas service area <span className="arr">→</span></Link>
+            <Link href="/dallas-ga-roofing/" className="btn btn-ink">Dallas GA roofing hub <span className="arr">→</span></Link>
           </div>
         </div>
       </section>

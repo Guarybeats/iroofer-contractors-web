@@ -18,7 +18,7 @@
  */
 
 import { useEffect } from "react";
-import { brand, services, cities } from "@/lib/brand";
+import { brand, services, cities, cityPath } from "@/lib/brand";
 
 const ORIGIN = "https://iroofercontractors.com";
 
@@ -54,7 +54,7 @@ function buildTools() {
     city: `${c.name}, ${c.state}`,
     slug: c.slug,
     county: c.county,
-    url: `${ORIGIN}/service-areas/${c.slug}/`,
+    url: `${ORIGIN}${cityPath(c)}`,
   }));
 
   return [
@@ -67,7 +67,7 @@ function buildTools() {
       execute: async () =>
         text({
           name: brand.name,
-          owner: brand.owner,
+          business: brand.name,
           phone: brand.phone,
           email: brand.email,
           website: ORIGIN,

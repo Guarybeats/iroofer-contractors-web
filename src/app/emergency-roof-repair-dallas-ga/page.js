@@ -200,10 +200,9 @@ export default function EmergencyPage() {
             <li><Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>Roof repair in Dallas GA →</Link></li>
             <li><Link href="/services/storm-damage-roof-repair/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>Storm &amp; insurance service hub →</Link></li>
             <li><Link href="/dallas-ga-roofing/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>All Dallas GA roofing services →</Link></li>
-            <li><Link href="/service-areas/dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>Dallas GA service area (152 Freedom Dr) →</Link></li>
           </ul>
           <div style={{ marginTop: 28 }}>
-            <Link href="/service-areas/dallas-ga/" className="btn btn-ink">More about our Dallas service area <span className="arr">→</span></Link>
+            <Link href="/dallas-ga-roofing/" className="btn btn-ink">Dallas GA roofing hub <span className="arr">→</span></Link>
           </div>
         </div>
       </section>

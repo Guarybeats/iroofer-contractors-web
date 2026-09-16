@@ -177,7 +177,7 @@ export default function RootLayout({ children }) {
               </div>
               <div className="foot-col">
                 <h2>Service Areas</h2>
-                <a href="/service-areas/dallas-ga/">Dallas, GA</a>
+                <a href="/dallas-ga-roofing/">Dallas, GA</a>
                 <a href="/service-areas/douglasville/">Douglasville</a>
                 <a href="/service-areas/hiram/">Hiram</a>
                 <a href="/service-areas/powder-springs/">Powder Springs</a>
