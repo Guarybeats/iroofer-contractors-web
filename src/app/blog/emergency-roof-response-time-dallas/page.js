@@ -47,24 +47,25 @@ export default function BlogPostPage() {
           <div className="post-body rv">
             <p>We get it — after a Georgia storm rolls through Dallas, you’re standing in your backyard looking at a hole in your roof thinking, “I need someone here now.” But how now? How soon can a roofer actually arrive, and what affects the timeline?</p>
 
-            <h2>iRoofer’s Emergency Response Times</h2>
-            <p>We track our response times from every storm event. Here’s what our data shows:</p>
+            <h2>iRoofer’s Emergency Response Targets</h2>
+            <p>Response speed depends on crew availability, storm volume, and where you are. Here’s what we typically aim for when a crew is free — these are on-site targets, not guaranteed averages:</p>
             <div style={{ background: '#f8f9fa', padding: '16px', borderRadius: 6, margin: '16px 0' }}>
               <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '.9rem' }}>
                 <thead>
                   <tr style={{ borderBottom: '2px solid #e2e8f0' }}>
                     <th align="left" style={{ padding: '6px 0' }}>Request Time</th>
-                    <th align="left" style={{ padding: '6px 0' }}>Avg. Response</th>
-                    <th align="left" style={{ padding: '6px 0' }}>Crew Arrived</th>
+                    <th align="left" style={{ padding: '6px 0' }}>Typical first contact / dispatch target</th>
+                    <th align="left" style={{ padding: '6px 0' }}>Typical on-site window (when available)</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '4px 0' }}>6 AM – 10 PM</td><td style={{ padding: '4px 0' }}>45 min</td><td style={{ padding: '4px 0' }}>1.5 hrs</td></tr>
-                  <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '4px 0' }}>10 PM – 6 AM</td><td style={{ padding: '4px 0' }}>3 hrs</td><td style={{ padding: '4px 0' }}>4–6 hrs</td></tr>
-                  <tr><td style={{ padding: '4px 0' }}>Peak storm (72 hrs after)</td><td style={{ padding: '4px 0' }}>8 hrs</td><td style={{ padding: '4px 0' }}>24–48 hrs</td></tr>
+                  <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '4px 0' }}>6 AM – 10 PM</td><td style={{ padding: '4px 0' }}>Often within the hour</td><td style={{ padding: '4px 0' }}>About 1–3 hours</td></tr>
+                  <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '4px 0' }}>10 PM – 6 AM</td><td style={{ padding: '4px 0' }}>Same night when a crew is on call</td><td style={{ padding: '4px 0' }}>Often a few hours; can stretch overnight</td></tr>
+                  <tr><td style={{ padding: '4px 0' }}>Peak storm (72 hrs after)</td><td style={{ padding: '4px 0' }}>Expect longer queues</td><td style={{ padding: '4px 0' }}>Same day to 1–2 days is common</td></tr>
                 </tbody>
               </table>
             </div>
+            <p style={{ fontSize: '.85rem', color: '#64748b' }}>Times vary with weather, traffic, and how many emergencies are already queued. We’ll give you a realistic ETA when you call.</p>
 
             <h2>What Affects Emergency Response Time</h2>
             <p>We can’t control the weather — but we can control preparation. Here’s what impacts how fast a crew gets to you:</p>
@@ -74,12 +75,12 @@ export default function BlogPostPage() {
             <p><strong>Key insight:</strong> The first 2–4 hours after a storm are when response is fastest. After that, crews are committed to earlier calls and wait lists begin.</p>
 
             <h3>2. Your Location</h3>
-            <p>We station crews in three hubs: Dallas (covers Paulding County), Douglasville (covers Douglas County), and Hiram (covers northern Paulding). Drive time from Dallas:</p>
+            <p>We station crews in three hubs: Dallas (covers Paulding County), Douglasville (covers Douglas County), and Hiram (covers northern Paulding). Approximate drive times from Dallas (traffic and weather can add more):</p>
             <ul>
-              <li><strong>Within Dallas city limits</strong> — 10–20 minutes.</li>
-              <li><strong>Hiram, Powder Springs, Austell</strong> — 15–30 minutes.</li>
-              <li><strong>Marietta, Kennesaw, Acworth</strong> — 20–35 minutes.</li>
-              <li><strong>Outlying areas (Cartersville, Canton)</strong> — 45–60 minutes.</li>
+              <li><strong>Within Dallas city limits</strong> — roughly 10–20 minutes.</li>
+              <li><strong>Hiram, Powder Springs, Austell</strong> — roughly 15–30 minutes.</li>
+              <li><strong>Marietta, Kennesaw, Acworth</strong> — roughly 20–35 minutes.</li>
+              <li><strong>Outlying areas (Cartersville, Canton)</strong> — roughly 45–60 minutes.</li>
             </ul>
 
             <h3>3. Roof Accessibility</h3>
@@ -146,7 +147,7 @@ export default function BlogPostPage() {
               <li>Drone for damage assessment and photo documentation.</li>
               <li>Generator and LED work lights for after-dark emergency work.</li>
             </ul>
-            <p>Every truck is pre-staged — no waiting for materials. That’s why our after-hours average response is 45 minutes, not 2–3 hours like most competitors.</p>
+            <p>Every truck is pre-staged — no waiting for materials. When an after-hours crew is available, we aim to get someone on the road quickly and often on-site within about an hour in our core Dallas / Hiram / Douglasville area. During busy storm nights, it can take longer — we’ll be upfront about the ETA when you call.</p>
 
             <h2>Real Emergency Stories: When Minutes Mattered</h2>
             <div style={{ background: '#f0fdf4', padding: '16px', borderRadius: 6, border: '1px solid #86efac', marginBottom: '24px' }}>
