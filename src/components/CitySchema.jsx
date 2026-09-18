@@ -7,7 +7,15 @@
 // the page does not say is a spam signal, not a ranking signal.
 import { brand, services } from '@/lib/brand';
 
+function absUrl(pathname) {
+  const base = brand.url.replace(/\/$/, '');
+  if (!pathname || pathname === '/') return `${base}/`;
+  const clean = pathname.startsWith('/') ? pathname : `/${pathname}`;
+  return `${base}${clean.endsWith('/') ? clean : `${clean}/`}`;
+}
+
 export default function CitySchema({ city, faq = null }) {
+  const cityPath = `/service-areas/${city.slug}`;
   const cityNode = {
     '@type': 'City',
     name: city.name,
@@ -23,8 +31,8 @@ export default function CitySchema({ city, faq = null }) {
   const graph = [
     {
       '@type': 'WebPage',
-      '@id': `${brand.url}/service-areas/${city.slug}#webpage`,
-      url: `${brand.url}/service-areas/${city.slug}`,
+      '@id': `${absUrl(cityPath)}#webpage`,
+      url: absUrl(cityPath),
       name: `Roofing in ${city.name}, ${city.state}`,
       about: { '@id': `${brand.url}/#business` },
       isPartOf: { '@id': `${brand.url}/#website` },
@@ -36,14 +44,14 @@ export default function CitySchema({ city, faq = null }) {
       description: s.summary,
       provider: { '@id': `${brand.url}/#business` },
       areaServed: cityNode,
-      url: `${brand.url}/services/${s.slug}`,
+      url: absUrl(`/services/${s.slug}`),
     })),
   ];
 
   if (faq && faq.length) {
     graph.push({
       '@type': 'FAQPage',
-      '@id': `${brand.url}/service-areas/${city.slug}#faq`,
+      '@id': `${absUrl(cityPath)}#faq`,
       mainEntity: faq.map((f) => ({
         '@type': 'Question',
         name: f.q,

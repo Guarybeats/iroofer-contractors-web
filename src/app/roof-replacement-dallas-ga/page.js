@@ -17,11 +17,12 @@ export const metadata = seo({
 const copy = localCopy['roof-replacement']['dallas-ga'];
 const faqs = copy.faq;
 const relatedLinks = [
-              { href: '/dallas-ga-roofing/', label: 'Dallas GA roofing' },
-              { href: '/services/roof-replacement/', label: 'roof replacement services' },
-              { href: '/roof-repair-dallas-ga/', label: 'roof repair in Dallas' },
-              { href: '/service-areas/dallas-ga/', label: 'Dallas service area' },
-              { href: '/', label: 'iRoofer Contractors home' }
+              { href: '/dallas-ga-roofing/', label: 'All Dallas GA roofing services' },
+              { href: '/services/roof-replacement/', label: 'Roof replacement service hub' },
+              { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas GA' },
+              { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair Dallas GA' },
+              { href: '/new-construction-dallas-ga/', label: 'New construction roofing Dallas GA' },
+
             ];
 
 export default function Page() {
@@ -84,7 +85,7 @@ export default function Page() {
             ))}
           </div>
           <div style={{ marginTop: 28 }}>
-            <Link href="/service-areas/dallas-ga/" className="btn btn-ink">More about our Dallas service area <span className="arr">→</span></Link>
+            <Link href="/dallas-ga-roofing/" className="btn btn-ink">Dallas GA roofing hub <span className="arr">→</span></Link>
           </div>
         </div>
       </section>

@@ -5,8 +5,8 @@
   --orange:#ff5c1c; --orange-d:#df470c;
   --steel:#8ea2b4; --green:#37d67a;
   --line:rgba(22,29,37,.12); --line-w:rgba(243,245,244,.12);
-  --display:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;
-  --body:'Public Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  --display:var(--font-big-shoulders),'Big Shoulders Display','Arial Narrow',Impact,sans-serif;
+  --body:var(--font-public-sans),'Public Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
   --maxw:1240px;
 }
 
@@ -162,7 +162,7 @@ a.svc-head{text-decoration:none;color:var(--ink)}
 .svc-head:focus-visible{outline:2px dashed var(--orange);outline-offset:3px}
 .svc-head:focus-visible .svc-cta{opacity:1;transform:none}
 .svc-num{font-family:var(--display);font-weight:800;font-size:1.5rem;color:#a9b3ad;transition:.3s}
-.svc-title{font-family:var(--display);font-weight:800;font-size:clamp(1.4rem,2.6vw,2.1rem);text-transform:uppercase;transition:.3s;min-width:0}
+.svc-title{font-family:var(--display);font-weight:800;font-size:clamp(1.4rem,2.6vw,2.1rem);text-transform:uppercase;transition:.3s;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .svc-tag{font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--orange);
   border:1px solid var(--orange);padding:.3rem .6rem;border-radius:2px;white-space:nowrap}
 .svc-plus{position:relative;width:22px;height:22px;flex-shrink:0}

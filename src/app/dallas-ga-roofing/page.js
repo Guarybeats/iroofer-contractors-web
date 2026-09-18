@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
-import { brand, cities } from '@/lib/brand';
+import { brand, cities, cityPath } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
 
@@ -58,9 +58,10 @@ export default function DallasGaRoofingPage() {
               Dallas, GA Roofing Company
             </h1>
             <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 720 }}>
-              iRoofer Contractors is a local, family-owned roofing company and roofing contractor based in Dallas, Georgia.
-              Use this hub to jump to the right money page — repair, replacement, storm, claims, gutters, emergency —
-              with free inspections and a real person on the phone.
+              iRoofer Contractors is a local, family-owned roofing company and roofing contractor at 152 Freedom Dr, Dallas, GA 30157.
+              Use this hub to jump to the right money page — repair, replacement, storm, claims, gutters, emergency, and new construction —
+              with free inspections and a real person on the phone at (470) 236-1410.
+              Need a leak fixed today? Start on the Roof repair Dallas GA page.
             </p>
             <div className="cta" style={{ marginTop: 24 }}>
               <a className="bigphone" href="tel:(470) 236-1410" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }}>
@@ -70,6 +71,9 @@ export default function DallasGaRoofingPage() {
                 Get a free quote <span className="arr">→</span>
               </Link>
             </div>
+            <p style={{ marginTop: 16 }}>
+              <Link href="/roof-repair-dallas-ga/" className="chip">Roof repair Dallas GA (money page) →</Link>
+            </p>
           </div>
         </div>
       </section>
@@ -100,18 +104,20 @@ export default function DallasGaRoofingPage() {
               <h3>Roof Repair</h3>
               <p>Leaks, storm damage, flashing, vents, and shingle repair. We find the source and fix it right so a small problem stays small.</p>
               <Link href="/roof-repair-dallas-ga/" className="chip">Roof repair Dallas GA →</Link>
+              <Link href="/services/roof-repair/" className="chip">Roof repair service hub →</Link>
             </div>
             <div className="card">
               <h3>Roof Replacement</h3>
               <p>Full tear-off and re-roof with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, installed clean and built to last.</p>
               <Link href="/roof-replacement-dallas-ga/" className="chip">Roof replacement Dallas GA →</Link>
+              <Link href="/services/roof-replacement/" className="chip">Replacement service hub →</Link>
             </div>
             <div className="card">
               <h3>Storm &amp; Hail Damage</h3>
               <p>Free inspections, same-day emergency tarping when we can, and insurance documentation after Georgia storms.</p>
               <Link href="/storm-damage-roof-repair-dallas-ga/" className="chip">Storm damage roof repair Dallas →</Link>
-              <Link href="/emergency-roof-repair-dallas-ga/" className="chip">Emergency →</Link>
-              <Link href="/blog/wind-damage-roof-repair-dallas/" className="chip">Wind damage guide →</Link>
+              <Link href="/emergency-roof-repair-dallas-ga/" className="chip">Emergency roof repair Dallas →</Link>
+              <Link href="/blog/wind-damage-roof-repair-dallas/" className="chip">Wind damage roof repair →</Link>
             </div>
             <div className="card">
               <h3>Insurance claims</h3>
@@ -121,7 +127,14 @@ export default function DallasGaRoofingPage() {
             <div className="card">
               <h3>Gutters</h3>
               <p>Repair, realignment, and replacement of gutters and downspouts so water flows away from your home.</p>
-              <Link href="/gutter-repair-replacement-dallas-ga/" className="chip">Gutter services →</Link>
+              <Link href="/gutter-repair-replacement-dallas-ga/" className="chip">Gutter repair &amp; replacement Dallas →</Link>
+              <Link href="/services/gutter-repair-replacement/" className="chip">Gutter service hub →</Link>
+            </div>
+            <div className="card">
+              <h3>New Construction</h3>
+              <p>Dry-in on the builder&apos;s schedule with Owens Corning Preferred Contractor installs and Paulding County inspection coordination.</p>
+              <Link href="/new-construction-dallas-ga/" className="chip">New construction Dallas GA →</Link>
+              <Link href="/services/new-construction/" className="chip">New construction hub →</Link>
             </div>
             <div className="card">
               <h3>Nearby Hiram</h3>
@@ -182,8 +195,8 @@ export default function DallasGaRoofingPage() {
             <h2>Service area around Dallas, GA</h2>
           </div>
           <div className="chips" style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
-            {cities.slice(0, 8).map((c) => (
-              <Link key={c.slug} href={`/service-areas/${c.slug}/`} className="chip">
+            {cities.filter((c) => c.slug !== 'dallas-ga').slice(0, 8).map((c) => (
+              <Link key={c.slug} href={cityPath(c)} className="chip">
                 {c.name}, {c.state} →
               </Link>
             ))}
@@ -199,6 +212,25 @@ export default function DallasGaRoofingPage() {
           <div className="rv" style={{ maxWidth: 460, margin: '0 auto' }}>
             <QuoteForm variant="contact" id="dallas-ga-roofing-quote" source="Dallas GA Roofing Hub" />
           </div>
+        </div>
+      </section>
+
+      <section className="sec-pad" style={{ background: '#fff', paddingTop: 0 }}>
+        <div className="wrap">
+          <div className="sec-head rv">
+            <span className="eyebrow dark">Internal links</span>
+            <h2>Jump to the Dallas page you need</h2>
+          </div>
+          <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '.6rem 1.4rem', listStyle: 'none', padding: 0 }}>
+            <li><Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof repair Dallas GA →</Link></li>
+            <li><Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof replacement Dallas GA →</Link></li>
+            <li><Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Storm damage Dallas GA →</Link></li>
+            <li><Link href="/emergency-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Emergency repair Dallas GA →</Link></li>
+            <li><Link href="/gutter-repair-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Gutters Dallas GA →</Link></li>
+            <li><Link href="/new-construction-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>New construction Dallas GA →</Link></li>
+            <li><Link href="/service-areas/" style={{ color: 'var(--orange)', fontWeight: 700 }}>All service areas →</Link></li>
+            <li><Link href="/services/" style={{ color: 'var(--orange)', fontWeight: 700 }}>All services →</Link></li>
+          </ul>
         </div>
       </section>
 

@@ -37,7 +37,8 @@ const svcs = [
   { n: '04', title: 'Storm & Insurance Claims', tag: '24/7 response', img: '/assets/service-repair.jpg?v=3',
     href: '/storm-damage-roof-repair-dallas-ga/', cta: 'Storm damage roof repair Dallas',
     body: 'Hail and wind damage documented with photos and a written scope. We meet your adjuster on-site, supplement the claim when needed, and guide you through the paperwork so you are not fronting the cost.' },
-  { n: '05', title: 'Gutter Repair & Replacement', tag: 'Protection', img: '/assets/service-gutters-main.jpg?v=2', link: '/services/gutter-repair-replacement',
+  { n: '05', title: 'Gutter Repair & Replacement', tag: 'Protection', img: '/assets/service-gutters-main.jpg?v=2',
+    href: '/services/gutter-repair-replacement/', cta: 'Gutter repair & replacement',
     body: 'Clogged or failing gutters are the #1 cause of preventable roof and foundation damage. We clean, repair, and replace seamless gutters so water flows away from your home, not into it.' },
 ];
 
@@ -89,7 +90,7 @@ export default function HomePage() {
 
           <div className="hero-media">
             <div className="frame" aria-hidden="true"></div>
-            <img className="main" src="/assets/hero.webp?v=2" alt="iRoofer crew installing shingles on a Georgia home" loading="eager" decoding="async" />
+            <img className="main" src="/assets/hero.webp?v=3" alt="iRoofer crew installing architectural shingles on a Georgia home in Dallas" width={800} height={1000} loading="eager" decoding="async" fetchPriority="high" />
             <div className="badge" aria-hidden="true">
               <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs>
                 <text fill="#f3f5f4" fontFamily="Public Sans" fontSize="11.5" fontWeight="700" letterSpacing="2.4"><textPath href="#circ">FREE INSPECTIONS • STORM RESPONSE • </textPath></text>
@@ -131,26 +132,23 @@ export default function HomePage() {
             <div className="svc-list rv">
               {svcs.map((s, i) => (
                 <article className={`svc${i === 0 ? ' open' : ''}`} key={s.n}>
-                  {s.link ? (
-                    <Link className="svc-head" href={s.link} aria-label={`${s.n} ${s.title}`}>
-                      <span className="svc-num">{s.n}</span><span className="svc-title">{s.title}</span>
-                      <span className="svc-tag">{s.tag}</span><span className="svc-cta" aria-hidden="true">View service →</span>
-                    </Link>
-                  ) : (
-                    <button className="svc-head" aria-expanded={i === 0 ? 'true' : 'false'}>
-                      <span className="svc-num">{s.n}</span><span className="svc-title">{s.title}</span>
-                      <span className="svc-tag">{s.tag}</span><span className="svc-plus" aria-hidden="true" />
-                    </button>
-                  )}
-                  {!s.link && (
-                    <div className="svc-body"><div className="svc-inner"><div className="row">
-                      <div>
-                        <p>{s.body}</p>
-                        <Link className="svc-link" href={s.href || "/#contact"}>{s.cta || "Get an estimate"} →</Link>
-                      </div>
-                      <Pic src={s.img} alt={s.title} />
-                    </div></div></div>
-                  )}
+                  <button
+                    className="svc-head"
+                    aria-expanded={i === 0 ? 'true' : 'false'}
+                    aria-label={`${s.n} ${s.title} — ${s.tag}`}
+                  >
+                    <span className="svc-num">{`${s.n} `}</span>
+                    <span className="svc-title">{`${s.title} `}</span>
+                    <span className="svc-tag">{s.tag}</span>
+                    <span className="svc-plus" aria-hidden="true" />
+                  </button>
+                  <div className="svc-body"><div className="svc-inner"><div className="row">
+                    <div>
+                      <p>{s.body}</p>
+                      <Link className="svc-link" href={s.href || "/#contact"}>{s.cta || "Get an estimate"} →</Link>
+                    </div>
+                    <Pic src={s.img} alt={`${s.title} by iRoofer Contractors in Dallas, GA`} />
+                  </div></div></div>
                 </article>
               ))}
             </div>
@@ -210,8 +208,8 @@ export default function HomePage() {
 
           <div className="ba-wrap">
             <div className="ba rv" id="ba" style={{ '--pos': '52%' }}>
-              <img className="before" src="/assets/service-repair.webp?v=3" alt="Roof before: storm damage" loading="lazy" />
-              <img className="after" src="/assets/service-replacement.webp?v=2" alt="Roof after: full replacement" loading="lazy" />
+              <img className="before" src="/assets/service-repair.webp?v=4" alt="Before photo: storm-damaged roof on a Dallas, GA two-story home" loading="lazy" />
+              <img className="after" src="/assets/service-replacement.webp?v=3" alt="After photo: full roof replacement with new architectural shingles" loading="lazy" />
               <span className="tag t-before">Before — storm damage</span>
               <span className="tag t-after">After — full replacement</span>
               <div className="handle" aria-hidden="true"><span className="grip">◂</span></div>
@@ -221,11 +219,11 @@ export default function HomePage() {
 
             <div className="gallery rv">
               <div className="gcard">
-                <img loading="lazy" src="/assets/service-newconstruction.webp?v=2" alt="New construction roof" />
+                <img loading="lazy" src="/assets/service-newconstruction.webp?v=3" alt="New construction roof installation on a Paulding County home" />
                 <div className="cap"><span>Paulding County</span><b>New construction</b></div>
               </div>
               <div className="gcard">
-                <img loading="lazy" src="/assets/hero.webp?v=2" alt="Aerial view of finished roofs" />
+                <img loading="lazy" src="/assets/hero.webp?v=3" alt="Aerial view of a finished storm rebuild with multiple new roofs" />
                 <div className="cap"><span>Subdivision · 14 homes</span><b>Storm rebuild</b></div>
               </div>
             </div>

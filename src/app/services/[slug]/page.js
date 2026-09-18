@@ -17,9 +17,17 @@ export function generateStaticParams() {
 export function generateMetadata({ params }) {
   const service = getService(params.slug);
   if (!service) return {};
+  // Lock "roof repair Dallas GA" on /roof-repair-dallas-ga/ — hub stays metro-wide.
+  const isRepairHub = service.slug === 'roof-repair';
   return seo({
-    title: `${service.title} | Dallas, GA & Metro Atlanta`,
-    description: service.metaDesc || service.summary,
+    title: isRepairHub
+      ? `${service.title} | Metro Atlanta | iRoofer`
+      : `${service.title} | Dallas, GA & Metro Atlanta`,
+    description:
+      service.metaDesc ||
+      (isRepairHub
+        ? 'Roof leak, flashing, and shingle repair across Metro Atlanta. For Dallas, GA jobs see our local roof repair page. Free inspection.'
+        : service.summary),
     path: `/services/${service.slug}`,
   });
 }
@@ -30,6 +38,7 @@ export default function ServiceDetail({ params }) {
   const hub = serviceHubContent[service.slug];
   const related = services.filter((s) => s.slug !== service.slug);
   const cityList = comboCities();
+  const heroAlt = service.imageAlt || service.title;
 
   // Fallback: keep a minimal layout if a new service slug is added without hub copy
   if (!hub) {
@@ -53,7 +62,7 @@ export default function ServiceDetail({ params }) {
               <RelatedGuides slug={service.slug} />
             </div>
             <div className="rv">
-              <Pic src={service.image} alt={service.title} style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
+              <Pic src={service.image} alt={heroAlt} style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
               <div style={{ maxWidth: 460, margin: '32px auto 0' }}>
                 <QuoteForm variant="detail" id={`quote-${service.slug}`} />
               </div>
@@ -84,7 +93,7 @@ export default function ServiceDetail({ params }) {
             </p>
           </div>
           <div className="rv">
-            <Pic src={service.image} alt={service.title} style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
+            <Pic src={service.image} alt={heroAlt} style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
           </div>
         </div>
 
@@ -184,7 +193,7 @@ export default function ServiceDetail({ params }) {
         <div className="cards" style={{ marginTop: 24 }}>
           {related.map((s) => (
             <Link key={s.slug} href={`/services/${s.slug}/`} className="card" style={{ color: 'inherit', textDecoration: 'none' }}>
-              <img src={s.webp || s.image} alt={s.title} loading="lazy" />
+              <img src={s.webp || s.image} alt={s.imageAlt || s.title} loading="lazy" />
               <div className="body">
                 <h3>{s.title}</h3>
                 <p style={{ color: '#52606b' }}>{s.summary}</p>

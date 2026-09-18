@@ -40,9 +40,12 @@ export const services = [
   {
     slug: 'roof-repair',
     title: 'Roof Repair',
+    metaDesc:
+      'Roof leak, flashing, and shingle repair across Metro Atlanta. Dallas GA jobs: see /roof-repair-dallas-ga/. Free inspection.',
     tagline: 'Stop the leak before it spreads.',
-    image: '/assets/service-repair.jpg?v=3',
-    webp: '/assets/service-repair.webp?v=3',
+    image: '/assets/service-repair.jpg?v=4',
+    webp: '/assets/service-repair.webp?v=4',
+    imageAlt: 'Roof repair by iRoofer Contractors in Dallas, GA — leak, flashing, and shingle work',
     summary:
       'From storm damage to worn flashing, we find the source and fix it right — so a small problem stays small.',
     bullets: [
@@ -58,8 +61,9 @@ export const services = [
     metaDesc:
       'Full tear-off and replacement with architectural shingles, installed by an Owens Corning Preferred Contractor in Dallas, GA & Metro Atlanta.',
     tagline: 'A new roof that lasts decades.',
-    image: '/assets/service-replacement.jpg?v=2',
-    webp: '/assets/service-replacement.webp?v=2',
+    image: '/assets/service-replacement.jpg?v=3',
+    webp: '/assets/service-replacement.webp?v=3',
+    imageAlt: 'Full roof replacement with architectural shingles on a Dallas, GA home',
     summary:
       'Full tear-off and replacement with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, installed clean and built to last. Backed by the manufacturer’s warranty on the shingles.',
     bullets: [
@@ -73,8 +77,9 @@ export const services = [
     slug: 'new-construction',
     title: 'New Construction',
     tagline: 'Roofing done right from frame-up.',
-    image: '/assets/service-newconstruction.jpg?v=2',
-    webp: '/assets/service-newconstruction.webp?v=2',
+    image: '/assets/service-newconstruction.jpg?v=3',
+    webp: '/assets/service-newconstruction.webp?v=3',
+    imageAlt: 'New construction roof installation on a Paulding County home by iRoofer Contractors',
     summary:
       'We partner with builders and homeowners on new builds to install a roof that matches the design and the budget.',
     bullets: [
@@ -90,6 +95,7 @@ export const services = [
     tagline: 'Protect your roof, fascia, and foundation.',
     image: '/assets/service-gutters-main.jpg?v=2',
     webp: '/assets/service-gutters-main.webp?v=2',
+    imageAlt: 'Seamless gutter installation on a Dallas, GA home by iRoofer Contractors',
     summary:
       'Clogged or failing gutters are the #1 cause of preventable roof and foundation damage in Dallas, GA. We repair, realign, and replace gutters and downspouts so water flows away from your home.',
     bullets: [
@@ -107,6 +113,7 @@ export const services = [
     tagline: '24/7 storm response across west Metro Atlanta.',
     image: '/assets/storm-damage.jpg?v=2',
     webp: '/assets/storm-damage.webp?v=2',
+    imageAlt: 'Storm damage roof inspection and repair after hail and wind in west Metro Atlanta',
     summary:
       'Wind, hail, and fallen limbs do damage that is easy to miss from the ground. We inspect free, tarp the same day when a roof is open to the weather, and document everything you need for your claim.',
     bullets: [
@@ -126,13 +133,13 @@ export function getService(slug) {
 // Cherokee/north Fulton counties).
 //
 // IMPORTANT: every city listed here must also have its own page at
-// src/app/service-areas/<slug>/page.js. The generic [city] dynamic route was removed
-// because it collided with those dedicated pages and the static export picked the
-// winner unpredictably (some cities silently shipped the short generic template).
-// Adding a city here without creating its page means the service-areas index links
-// to a 404 — create the page in the same change, using components/CityAreaPage.jsx.
+// src/app/service-areas/<slug>/page.js — EXCEPT Dallas, which consolidates onto the
+// commercial hub /dallas-ga-roofing/ (see cityPath). The generic [city] dynamic route
+// was removed because it collided with dedicated pages and the static export picked
+// the winner unpredictably. Adding a city here without a page (or path override)
+// means the service-areas index links to a 404.
 export const cities = [
-  { slug: 'dallas-ga', name: 'Dallas', state: 'GA', county: 'Paulding County', blurb: 'our home base — same-day roof inspections across Dallas and across the county line.',
+  { slug: 'dallas-ga', name: 'Dallas', state: 'GA', county: 'Paulding County', path: '/dallas-ga-roofing/', blurb: 'our home base — same-day roof inspections across Dallas and across the county line.',
     localNote: 'As the town we call home, Dallas homeowners get priority scheduling and the crew chief on every job. From historic downtown to the new subdivisions off Hwy 92, we know the rooflines here.' },
   { slug: 'douglasville', name: 'Douglasville', state: 'GA', county: 'Douglas County', blurb: 'fast storm-response and full replacements for Douglasville homeowners.',
     localNote: 'Douglasville sees its share of spring straight-line winds off the ridge. We document hail and wind damage for your insurance claim and rebuild to manufacturer spec.' },
@@ -155,6 +162,13 @@ export const cities = [
   { slug: 'canton', name: 'Canton', state: 'GA', county: 'Cherokee County', combo: false, blurb: 'hail-belt inspections and full tear-offs for Canton and north Cherokee homes.',
     localNote: 'North Cherokee catches hail cores that miss Atlanta entirely. We inspect for soft metal dents and bruised mats \u2014 the evidence adjusters actually accept \u2014 before you file.' },
 ];
+
+/** Canonical path for a city card/link. Dallas consolidates to the roofing hub. */
+export function cityPath(cityOrSlug) {
+  const c = typeof cityOrSlug === 'string' ? getCity(cityOrSlug) : cityOrSlug;
+  if (!c) return '/service-areas/';
+  return c.path || `/service-areas/${c.slug}/`;
+}
 
 export function getCity(slug) {
   return cities.find((c) => c.slug === slug);

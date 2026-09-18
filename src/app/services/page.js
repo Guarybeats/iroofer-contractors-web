@@ -80,7 +80,7 @@ export default function ServicesPage() {
               return (
                 <div className="card" key={s.slug} style={{ color: 'inherit' }}>
                   <Link href={`/services/${s.slug}/`} style={{ color: 'inherit', textDecoration: 'none' }}>
-                    <Pic src={s.image} alt={s.title} />
+                    <Pic src={s.image} alt={s.imageAlt || s.title} />
                   </Link>
                   <div className="body">
                     <h2><Link href={`/services/${s.slug}/`} style={{ color: 'inherit', textDecoration: 'none' }}>{s.title}</Link></h2>
@@ -153,7 +153,7 @@ export default function ServicesPage() {
           </div>
 
           <div style={{ marginTop: 36, borderTop: '1px solid #e6e9ee', paddingTop: 20 }}>
-            <p style={{ fontSize: '.8rem', letterSpacing: '.04em', textTransform: 'uppercase', color: '#8ea2b4', marginBottom: 10 }}>Guides &amp; calculators</p>
+            <p style={{ fontSize: '.8rem', letterSpacing: '.04em', textTransform: 'uppercase', color: '#8ea2b4', marginBottom: 10 }}>Guides & calculators</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
               <Link href="/blog/roof-repair-cost-dallas-ga/" className="chip" style={{ textDecoration: 'none' }}>Roof repair cost Dallas GA</Link>
               <Link href="/blog/cost-of-new-roof-2026-dallas-ga/" className="chip" style={{ textDecoration: 'none' }}>New roof cost 2026</Link>
@@ -165,7 +165,7 @@ export default function ServicesPage() {
           <div style={{ marginTop: 36, borderTop: '1px solid #e6e9ee', paddingTop: 20 }}>
             <p style={{ fontSize: '.8rem', letterSpacing: '.04em', textTransform: 'uppercase', color: '#8ea2b4', marginBottom: 10 }}>Service areas</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
-              <Link href="/service-areas/dallas-ga/" className="chip" style={{ textDecoration: 'none' }}>Dallas, GA</Link>
+              <Link href="/dallas-ga-roofing/" className="chip" style={{ textDecoration: 'none' }}>Dallas, GA</Link>
               <Link href="/service-areas/douglasville/" className="chip" style={{ textDecoration: 'none' }}>Douglasville</Link>
               <Link href="/service-areas/hiram/" className="chip" style={{ textDecoration: 'none' }}>Hiram</Link>
               <Link href="/service-areas/powder-springs/" className="chip" style={{ textDecoration: 'none' }}>Powder Springs</Link>

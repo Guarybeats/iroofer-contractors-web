@@ -29,6 +29,19 @@
 /service-areas/canton-ga-usa  /service-areas/                               301
 /service-areas/rome-ga-usa    /service-areas/                               301
 
+# Dallas hub consolidation 2026-09-16 (GSC: keep commercial /dallas-ga-roofing/).
+# /service-areas/dallas-ga/ was mostly generic "roofer" noise @ ~pos 70.
+/service-areas/dallas-ga      /dallas-ga-roofing/                        301
+/service-areas/dallas-ga/     /dallas-ga-roofing/                        301
+
+# GSC 404 examples 2026-09-16 — towns without pages + bare /dallas (no -ga)
+/service-areas/villa-rica     /service-areas/                            301
+/service-areas/villa-rica/    /service-areas/                            301
+/service-areas/carrollton     /service-areas/                            301
+/service-areas/carrollton/    /service-areas/                            301
+/service-areas/dallas         /dallas-ga-roofing/                        301
+/service-areas/dallas/        /dallas-ga-roofing/                        301
+
 # Duplicate service+city pages consolidated 2026-08-30 (split ranking signals).
 # Keep the site-convention URL, 301 the twin.
 /roof-replacement-marietta-ga   /roof-replacement-marietta/            301
@@ -36,6 +49,10 @@
 
 # Trailing-slash twins (Next trailingSlash:true). Without these, /about-us/ 404s while /about-us 301s.
 /about-us/                    /about/                                       301
+/contact-us/                  /contact/                                     301
+/gutters-services/            /services/gutter-repair-replacement/          301
+/financing/                   /blog/roof-financing-options-dallas-ga/       301
+/reviews/                     /about/                                       301
 /roofing/                     /services/                                    301
 /privacy-policy/              /privacy/                                     301
 /terms-of-service             /terms/                                       301

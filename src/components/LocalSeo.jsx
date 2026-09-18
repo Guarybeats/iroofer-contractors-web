@@ -1,6 +1,6 @@
 'use client';
 
-import { brand, services, cities } from '@/lib/brand';
+import { brand, services } from '@/lib/brand';
 import { usePathname } from 'next/navigation';
 
 // Google Business Profile link — real GBP Maps short link (provided by owner).
@@ -13,8 +13,66 @@ export const GBP_URL = 'https://maps.app.goo.gl/oZg9a1cuNvUi3Ut99';
 export const REVIEW_URL = GBP_URL;
 
 // Drop in your real street address to unlock LocalBusiness + geo ranking signals.
-// Dallas, GA has no street number confirmed — leave empty to omit PostalAddress.
 export const STREET_ADDRESS = '152 Freedom Dr';
+
+const BBB_URL =
+  'https://www.bbb.org/us/ga/dallas/profile/roofing-contractors/iroofer-contractors-0443-91832627';
+const BIRDEYE_URL = 'https://reviews.birdeye.com/iroofer-contractors-175458550841887';
+
+/** Absolute URL with trailing slash (live site + sitemap convention). */
+function absUrl(pathname) {
+  const base = brand.url.replace(/\/$/, '');
+  if (!pathname || pathname === '/') return `${base}/`;
+  const clean = pathname.startsWith('/') ? pathname : `/${pathname}`;
+  return `${base}${clean.endsWith('/') ? clean : `${clean}/`}`;
+}
+
+/** Human breadcrumb label — never leave raw "Dallas Ga". */
+function titleCaseSlug(slug) {
+  return slug
+    .replace(/-/g, ' ')
+    .replace(/\b\w/g, (c) => c.toUpperCase())
+    .replace(/\bGa\b/g, 'GA');
+}
+
+function breadcrumbLabel(segment) {
+  const known = {
+    services: 'Services',
+    'service-areas': 'Service Areas',
+    blog: 'Blog',
+    about: 'About',
+    contact: 'Contact',
+    estimator: 'Estimator',
+    privacy: 'Privacy',
+    terms: 'Terms',
+    'dallas-ga': 'Dallas GA',
+    'dallas-ga-roofing': 'Dallas GA Roofing',
+    'roof-repair': 'Roof Repair',
+    'roof-replacement': 'Roof Replacement',
+    'new-construction': 'New Construction',
+    'gutter-repair-replacement': 'Gutter Repair & Replacement',
+    'storm-damage-roof-repair': 'Storm Damage Roof Repair',
+    'roof-insurance-claims': 'Roof Insurance Claims',
+    'emergency-roof-repair-dallas-ga': 'Emergency Roof Repair Dallas GA',
+    'roof-repair-dallas-ga': 'Roof Repair Dallas GA',
+    'roof-replacement-dallas-ga': 'Roof Replacement Dallas GA',
+    'storm-damage-roof-repair-dallas-ga': 'Storm Damage Roof Repair Dallas GA',
+    'gutter-repair-replacement-dallas-ga': 'Gutter Repair & Replacement Dallas GA',
+    'new-construction-dallas-ga': 'New Construction Dallas GA',
+  };
+  if (known[segment]) return known[segment];
+
+  // Combo pages: roof-repair-hiram → Roof Repair Hiram, etc.
+  const cityMatch = segment.match(
+    /^(roof-repair|roof-replacement|storm-damage-roof-repair|gutter-repair-replacement|new-construction)-(.+)$/
+  );
+  if (cityMatch) {
+    const serviceLabel = known[cityMatch[1]] || titleCaseSlug(cityMatch[1]);
+    return `${serviceLabel} ${titleCaseSlug(cityMatch[2])}`;
+  }
+
+  return titleCaseSlug(segment);
+}
 
 // Build the JSON-LD schema graph. Pure function so it can render in <head>.
 export function buildSeoGraph(path) {
@@ -35,6 +93,8 @@ export function buildSeoGraph(path) {
       'https://twitter.com/irooferc',
       'https://www.facebook.com/iroofercontractors',
       'https://www.instagram.com/iroofercontractors',
+      BBB_URL,
+      BIRDEYE_URL,
     ],
     areaServed: [
       ...brand.serviceArea.map((c) => ({
@@ -92,13 +152,9 @@ export function buildSeoGraph(path) {
     provider: { '@type': 'RoofingContractor', name: brand.name, '@id': `${brand.url}/#business` },
     areaServed: brand.serviceArea.map((c) => c.replace(', GA', '')),
     description: s.summary,
-    url: `${brand.url}/services/${s.slug}`,
+    url: absUrl(`/services/${s.slug}`),
   }));
 
-  // One Service node per city x service combo page — links each dedicated
-  // landing page (/<service-slug>-<city-slug>) into the schema graph.
-  // Cities flagged `combo: false` have no generated /<service>-<city> pages yet,
-  // so they are excluded here to avoid schema URLs that 404.
   // NOTE (2026-08-30): the per-city combo Service nodes were removed. 32 near-identical
   // Service objects on every page is schema bloat with no ranking benefit; the four core
   // Service nodes above already carry areaServed for the full service area, and each
@@ -109,14 +165,11 @@ export function buildSeoGraph(path) {
   const breadcrumb = (() => {
     const segs = (path || '').replace(/^\/+|\/+$/g, '').split('/').filter(Boolean);
     if (!segs.length) return null;
-    const trail = [{ name: 'Home', url: brand.url }];
+    const trail = [{ name: 'Home', url: absUrl('/') }];
     let acc = '';
     for (const s of segs) {
       acc += `/${s}`;
-      const label = s
-        .replace(/-/g, ' ')
-        .replace(/\b\w/g, (c) => c.toUpperCase());
-      trail.push({ name: label, url: `${brand.url}${acc}` });
+      trail.push({ name: breadcrumbLabel(s), url: absUrl(acc) });
     }
     return {
       '@type': 'BreadcrumbList',

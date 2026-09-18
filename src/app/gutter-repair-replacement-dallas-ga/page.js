@@ -18,6 +18,13 @@ export const metadata = seo({
 const copy = localCopy['gutter-repair-replacement']['dallas-ga'];
 const faqs = copy.faq;
 const review = reviews[4];
+const relatedLinks = [
+  { href: '/dallas-ga-roofing/', label: 'All Dallas GA roofing services' },
+  { href: '/services/gutter-repair-replacement/', label: 'Gutter repair & replacement hub' },
+  { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas GA' },
+  { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas GA' },
+
+];
 
 export default function Page() {
   return (
@@ -85,11 +92,27 @@ export default function Page() {
             ))}
           </div>
           <div style={{ marginTop: 28 }}>
-            <Link href="/service-areas/dallas-ga/" className="btn btn-ink">More about our Dallas service area <span className="arr">→</span></Link>
+            <Link href="/dallas-ga-roofing/" className="btn btn-ink">Dallas GA roofing hub <span className="arr">→</span></Link>
           </div>
         </div>
       </section>
 
+
+      <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <div className="sec-head rv">
+            <span className="eyebrow dark">Related pages</span>
+            <h2>Helpful links for homeowners</h2>
+          </div>
+          <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '.6rem 1.4rem', marginTop: 8, listStyle: 'none', padding: 0 }}>
+            {relatedLinks.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>{l.label} →</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="sec-head rv">

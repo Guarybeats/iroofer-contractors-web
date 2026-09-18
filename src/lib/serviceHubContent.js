@@ -30,10 +30,12 @@ export const serviceHubContent = {
       { q: 'Will the repair match my existing shingles?', a: 'We color-match architectural shingles as closely as current product lines allow. Slight color difference on older roofs is normal; we place patches where they blend best.' },
     ],
     featuredLinks: [
-      { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas, GA' },
+      { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas, GA (home base)' },
+      { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas GA' },
+      { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair in Dallas' },
+      { href: '/dallas-ga-roofing/', label: 'Dallas GA roofing hub' },
       { href: '/roof-repair-powder-springs/', label: 'Roofing contractor in Powder Springs' },
       { href: '/roof-repair-hiram/', label: 'Roofer in Hiram, GA' },
-      { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair in Dallas' },
     ],
     cityPrefix: 'roof-repair',
     cityLabel: 'Roof repair by city',
@@ -71,6 +73,8 @@ export const serviceHubContent = {
       { href: '/roof-replacement-hiram/', label: 'Roof replacement in Hiram' },
       { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas, GA' },
       { href: '/estimator/', label: 'Planning estimator (not a quote)' },
+      { href: '/new-construction-dallas-ga/', label: 'New construction roofing Dallas GA' },
+      { href: '/dallas-ga-roofing/', label: 'All Dallas GA roofing services' },
     ],
     deepenBlocks: [
       {
@@ -118,10 +122,12 @@ export const serviceHubContent = {
       { q: 'Can you tarp the same day?', a: 'Often yes when the deck is open or water is pouring and access is safe. Permanent repair follows a written scope.' },
     ],
     featuredLinks: [
-      { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair Dallas' },
-      { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas' },
+      { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair Dallas GA' },
+      { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas GA' },
       { href: '/services/roof-insurance-claims/', label: 'Roof insurance claims help' },
       { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas, GA' },
+      { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas, GA' },
+      { href: '/dallas-ga-roofing/', label: 'All Dallas GA roofing services' },
     ],
     deepenBlocks: [
       {
@@ -169,9 +175,11 @@ export const serviceHubContent = {
       { q: 'What about gutters on a new build?', a: 'We can hang seamless gutters after the roof so drip edge and fascia are done as one system. Ask for a combined quote — see our gutter approach sized to the roof that feeds them.' },
     ],
     featuredLinks: [
+      { href: '/new-construction-dallas-ga/', label: 'New construction roofing Dallas GA' },
       { href: '/services/roof-replacement/', label: 'Roof replacement service' },
-      { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement Dallas' },
+      { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas, GA' },
       { href: '/gutter-repair-replacement-dallas-ga/', label: 'Gutters Dallas' },
+      { href: '/dallas-ga-roofing/', label: 'All Dallas GA roofing services' },
       { href: '/contact/', label: 'Contact iRoofer' },
     ],
     deepenBlocks: [

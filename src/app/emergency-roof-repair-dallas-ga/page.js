@@ -85,8 +85,8 @@ export default function EmergencyPage() {
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
                 A roof failure doesn&apos;t wait for business hours. Whether a storm dropped a limb or a leak started after last night&apos;s rain,
-                iRoofer Contractors prioritizes active water intrusion in Dallas and Paulding County — tarp when needed, document what failed,
-                then permanent repair with a clear written scope.
+                iRoofer Contractors — shop at 152 Freedom Dr, Dallas, GA — prioritizes active water intrusion in Dallas and Paulding County.
+                Tarp when needed, document what failed, then permanent repair with a clear written scope.
               </p>
 
               <div className="cta" style={{ marginTop: 28 }}>
@@ -126,7 +126,7 @@ export default function EmergencyPage() {
               >
                 <strong style={{ color: '#0b3d16' }}>iRoofer Contractors</strong>
                 <div style={{ color: '#52606b', fontSize: '.9rem', marginTop: 4 }}>
-                  Family-owned in Dallas since 2019 · {brand.owner} · Licensed · Bonded · Insured · CertainTeed Storm Restoration Specialist (GA) when that path fits
+                  Family-owned in Dallas since 2019 · {brand.owner} · Licensed · Bonded · Insured · 152 Freedom Dr, Dallas, GA 30157 · CertainTeed Storm Restoration Specialist (GA) when that path fits
                 </div>
                 <div style={{ marginTop: 6 }}>
                   <a href={`tel:${brand.phone}`} style={{ color: 'var(--orange)', fontWeight: 700 }}>{brand.phone}</a>
@@ -223,6 +223,25 @@ export default function EmergencyPage() {
           </p>
         </div>
       </section>
+
+      <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <div className="sec-head rv">
+            <span className="eyebrow dark">Related pages</span>
+            <h2>Helpful links after a Dallas emergency</h2>
+          </div>
+          <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '.6rem 1.4rem', marginTop: 8, listStyle: 'none', padding: 0 }}>
+            <li><Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>Storm damage roof repair Dallas GA →</Link></li>
+            <li><Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>Roof repair in Dallas GA →</Link></li>
+            <li><Link href="/services/storm-damage-roof-repair/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>Storm &amp; insurance service hub →</Link></li>
+            <li><Link href="/dallas-ga-roofing/" style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>All Dallas GA roofing services →</Link></li>
+          </ul>
+          <div style={{ marginTop: 28 }}>
+            <Link href="/dallas-ga-roofing/" className="btn btn-ink">Dallas GA roofing hub <span className="arr">→</span></Link>
+          </div>
+        </div>
+      </section>
+
       <FaqSchema faq={emergencyFaqs} />
     </>
   );

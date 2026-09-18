@@ -9,13 +9,13 @@ export const metadata = {
   title: 'Roofing in Alpharetta, GA | Repair & Replacement | iRoofer',
   description:
     'Family-owned roofer serving Alpharetta, GA (Fulton County). HOA-compliant replacement, leak diagnostics and gutters. Free inspection: (470) 236-1410.',
-  alternates: { canonical: `${brand.url}/service-areas/alpharetta` },
+  alternates: { canonical: `${brand.url}/service-areas/alpharetta/` },
   openGraph: {
     type: 'website',
     siteName: 'iRoofer Contractors',
     locale: 'en_US',
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
-    url: `${brand.url}/service-areas/alpharetta`,
+    url: `${brand.url}/service-areas/alpharetta/`,
     title: 'Roofing in Alpharetta, GA — iRoofer Contractors',
     description:
       'Alpharetta roof replacement and repair from a family-owned crew based in Dallas, GA. HOA paperwork handled, free inspections, photo reports.',
