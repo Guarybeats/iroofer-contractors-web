@@ -133,6 +133,26 @@ export default function ServicesPage() {
           </div>
 
           <div className="rv" style={{ marginTop: 36, maxWidth: 760 }}>
+            <h2 style={{ fontSize: 'clamp(1.4rem,2.4vw,1.85rem)', fontWeight: 800 }}>What a service visit includes</h2>
+            <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
+              A free on-site look comes first. We walk the roof when it is safe, and document from the ground when it is not. We note flashing, boots, valleys, and interior clues — ceiling stains, attic daylight, or wet decking — so the recommendation matches the house.
+            </p>
+            <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
+              You leave with photos and a written scope in plain English. The note names the path: repair, tarp, replacement, or that you are fine for now.
+            </p>
+            <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
+              You approve before work starts. Nothing is torn off, tarped, or replaced until you say yes. Insurance documentation is written only when storm damage applies, and we do not guarantee claim approvals.
+            </p>
+            <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
+              Call or text{' '}
+              <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>
+              {' or send the address and what you are seeing at '}
+              <Link href="/contact/" style={{ fontWeight: 700, color: 'var(--orange)' }}>https://iroofercontractors.com/contact/</Link>
+              . If water is coming in now, say so on the first message so that visit is scheduled first.
+            </p>
+          </div>
+
+          <div className="rv" style={{ marginTop: 36, maxWidth: 760 }}>
             <h2 style={{ fontSize: 'clamp(1.3rem,2.2vw,1.7rem)', fontWeight: 800 }}>Why a services hub still matters</h2>
             <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
               Homeowners land here when they know they need &quot;a roofer&quot; but not which service page.
