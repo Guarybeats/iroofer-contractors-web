@@ -44,8 +44,11 @@
 
 # Duplicate service+city pages consolidated 2026-08-30 (split ranking signals).
 # Keep the site-convention URL, 301 the twin.
+# Trailing-slash twins required: GSC crawled /*-ga/ and those 404'd while bare /*-ga already 301'd.
 /roof-replacement-marietta-ga   /roof-replacement-marietta/            301
+/roof-replacement-marietta-ga/  /roof-replacement-marietta/            301
 /storm-damage-kennesaw-ga       /storm-damage-roof-repair-kennesaw/    301
+/storm-damage-kennesaw-ga/      /storm-damage-roof-repair-kennesaw/    301
 
 # Trailing-slash twins (Next trailingSlash:true). Without these, /about-us/ 404s while /about-us 301s.
 /about-us/                    /about/                                       301
