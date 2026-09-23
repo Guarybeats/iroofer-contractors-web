@@ -4,7 +4,7 @@ Use this skill when an agent needs accurate NAP, hours, credentials, or contact 
 
 ## Facts
 - Legal / brand name: iRoofer Contractors
-- Phone: (470) 236-1410 (24/7 emergency storm response)
+- Phone: (470) 236-1410 (shop hours Mon–Fri 9–7 / Sat 9–5; storm & active-leak priority as crews allow — not 24/7)
 - Email: iroofercontractors@gmail.com
 - Address: 152 Freedom Dr, Dallas, GA 30157
 - Website: https://iroofercontractors.com

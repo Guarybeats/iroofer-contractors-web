@@ -65,7 +65,7 @@ const seasons = [
       { t: 'Ice dam watch', d: 'Icicles = heat loss. Rake snow off lower 3 ft of roof after heavy falls (from ground with roof rake).', diy: true },
       { t: 'Interior leak scan', d: 'Check ceilings after freeze-thaw cycles. Stains = active leak. Call immediately.', diy: true },
       { t: 'Attic frost check', d: 'Frost on nails/sheathing = ventilation failure. Fix before spring melt.', diy: false },
-      { t: 'Emergency plan', d: 'Save our number: {brand.phone}. 24/7 tarp service if a tree limb comes through.', diy: true },
+      { t: 'Emergency plan', d: 'Save our number: {brand.phone}. Call for tarp help if a tree limb comes through — same-day when schedule allows during shop hours.', diy: true },
     ],
   },
 ];

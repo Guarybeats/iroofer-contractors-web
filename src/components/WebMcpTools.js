@@ -73,7 +73,7 @@ function buildTools() {
           website: ORIGIN,
           basedIn: brand.location,
           hours: brand.hours.full,
-          emergency: "24/7 emergency storm response",
+          emergency: "Storm / active-leak response during shop hours; same-day when schedule allows",
           credentials: [
             "Licensed, bonded and insured",
             "Owens Corning Preferred Contractor",
@@ -230,7 +230,7 @@ function buildTools() {
     {
       name: "call_iroofer",
       description:
-        "Get the phone number to reach iRoofer Contractors, including for 24/7 emergency storm response, and open the dialer on a mobile device.",
+        "Get the phone number to reach iRoofer Contractors for quotes or storm / active-leak help, and open the dialer on a mobile device.",
       inputSchema: {
         type: "object",
         properties: {
@@ -244,8 +244,8 @@ function buildTools() {
           dial: `tel:${tel}`,
           hours: brand.hours.full,
           emergency: input?.urgent
-            ? "Active leak or storm damage: call now — we run 24/7 emergency response and can tarp same day."
-            : "Standard hours above; emergency line is answered 24/7.",
+            ? "Active leak or storm damage: call now — we prioritize these as fast as crews allow and can often tarp same day when the schedule allows. Shop hours Mon–Fri 9–7 / Sat 9–5; not a 24/7 promise."
+            : "Standard hours above. For active leaks, call and we will prioritize as fast as crews allow — same-day when schedule allows.",
         });
       },
     },

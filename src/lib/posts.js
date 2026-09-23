@@ -125,7 +125,7 @@ export const posts = [
     slug: 'emergency-roof-tarping-dallas',
     title: 'Emergency Roof Tarping: What to Expect When We Come to Your Dallas Home',
     date: 'March 2026',
-    excerpt: "When a storm rips off shingles and rain is coming, emergency tarping is your only line of defense. Here's what our 24/7 crew does — and what it costs.",
+    excerpt: "When a storm rips off shingles and rain is coming, emergency tarping is your only line of defense. Here's what our emergency crew does — and what it costs.",
     readTime: '5 min read',
     category: 'Emergency',
   },

@@ -15,7 +15,7 @@ export const metadata = {
 
   title: 'Emergency Roof Tarping in Dallas, GA: What to Expect',
   description:
-    'When a storm rips off shingles and rain is coming, emergency roof tarping is your only line of defense. Learn what our 24/7 crew does and what it costs.',
+    'When a storm rips off shingles and rain is coming, emergency roof tarping is your only line of defense. Learn what our emergency crew does and what it costs.',
 };
 
 const post = {
@@ -49,7 +49,7 @@ export default function BlogPostPage() {
             <h2>Why Emergency Tarping Matters</h2>
             <p>One inch of standing water on your roof deck weighs over 5 pounds per square foot. That’s enough to sag your ceiling, rot your insulation, and turn a $500 shingle repair into a $5,000 insurance nightmare. Emergency tarping is not a “nice to have” — it’s the difference between a minor inconvenience and a flooded attic.</p>
 
-            <h2>Our 24/7 Emergency Protocol</h2>
+            <h2>Our Emergency Protocol</h2>
             <p>When you call our emergency line, here’s what happens:</p>
             <ol>
               <li><strong>Call received (60 seconds)</strong> — our dispatcher confirms your address, names the storm event, and sends the nearest crew.</li>
@@ -109,12 +109,12 @@ export default function BlogPostPage() {
               <p><strong>March 2025 — Hail + wind combo in Hiram</strong><br />Tree fell on a roof Saturday morning. Crew on-site in 45 minutes, tarped by 2 PM, replacement quote sent by 6 PM, rebuild started Monday.</p>
             </div>
 
-            <h2>24/7 Emergency Line: (470) 236-1410</h2>
-            <p>Staffed by real people, not an automated system. If we’re on another call, we’ll call back within 5 minutes. After-hours calls go directly to Cristian or our lead project manager.</p>
+            <h2>Emergency Line: (470) 236-1410</h2>
+            <p>Staffed by real people during shop hours (Mon–Fri 9–7 / Sat 9–5). If we’re on another call, we’ll call back as soon as we can. For active leaks, we prioritize as fast as crews allow — same-day when the schedule allows.</p>
             <p><strong>Text messages</strong> are answered faster than calls — send us a photo of the damage and we’ll have a crew moving before you hang up.</p>
 
             <h2>Don’t Wait for Morning</h2>
-            <p>Every hour your roof stays exposed is $500 in potential damage. Call now — we’re here 24/7.</p>
+            <p>Every hour your roof stays exposed is $500 in potential damage. Call (470) 236-1410 — we prioritize active leaks as fast as crews allow during shop hours (Mon–Fri 9–7 / Sat 9–5), same-day when the schedule allows.</p>
             <p><Link href="/emergency-roof-repair-dallas-ga/" className="btn btn-solid">Get Emergency Help Now →</Link></p>
           </div>
         </div>

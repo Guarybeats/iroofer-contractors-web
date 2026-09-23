@@ -19,7 +19,7 @@
     { "name": "list_service_areas", "description": "List the Georgia cities and counties served, with a page URL for each.", "readOnly": true },
     { "name": "find_service_page", "description": "Find the best page on the site for a given service and/or city.", "readOnly": true },
     { "name": "start_quote_request", "description": "Fill the free-quote form on the current page with the homeowner's details. Never submits — the human must press the button.", "readOnly": false },
-    { "name": "call_iroofer", "description": "Get the phone number to reach iRoofer Contractors, including 24/7 emergency storm response.", "readOnly": true }
+    { "name": "call_iroofer", "description": "Get the phone number to reach iRoofer Contractors for quotes or storm / active-leak help.", "readOnly": true }
   ],
   "llmsTxt": "https://iroofercontractors.com/llms.txt"
 }
