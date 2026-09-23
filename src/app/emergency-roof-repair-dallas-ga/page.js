@@ -30,7 +30,7 @@ const process = [
 const emergencyFaqs = [
   {
     q: 'Do you offer 24/7 emergency roof repair in Dallas, GA?',
-    a: 'We prioritize after-hours storm and active-leak calls as fast as crews allow. Call (470) 236-1410 and say if water is entering now.',
+    a: 'Shop hours are Mon–Fri 9–7 and Sat 9–5 (Sun closed). We prioritize active leaks and storm damage as fast as crews allow — same-day help when the schedule allows. We do not promise 24/7 coverage. Call (470) 236-1410 and say if water is entering now.',
   },
   {
     q: 'Can you tarp the same day?',

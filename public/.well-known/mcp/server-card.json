@@ -42,7 +42,7 @@
     },
     {
       "name": "call_iroofer",
-      "description": "Phone number including 24/7 storm response."
+      "description": "Phone number for quotes or storm / active-leak help."
     },
     {
       "name": "start_quote_request",

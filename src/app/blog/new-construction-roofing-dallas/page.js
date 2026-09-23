@@ -110,7 +110,7 @@ export default function BlogPostPage() {
               <li>Free estimate and material consultation before you commit.</li>
               <li>Priority scheduling — we block 2 days on your timeline.</li>
               <li>Direct billing to the builder; homeowner handles manufacturer registration.</li>
-              <li>Workmanship warranty in writing on every install, plus 24/7 emergency response.</li>
+              <li>Workmanship warranty in writing on every install, plus storm / leak response during shop hours when crews allow.</li>
             </ul>
 
             <h2>Working with Builders Across North Georgia</h2>

@@ -60,7 +60,7 @@ export default function BlogPostPage() {
                 </thead>
                 <tbody>
                   <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '4px 0' }}>6 AM – 10 PM</td><td style={{ padding: '4px 0' }}>Often within the hour</td><td style={{ padding: '4px 0' }}>About 1–3 hours</td></tr>
-                  <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '4px 0' }}>10 PM – 6 AM</td><td style={{ padding: '4px 0' }}>Same night when a crew is on call</td><td style={{ padding: '4px 0' }}>Often a few hours; can stretch overnight</td></tr>
+                  <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '4px 0' }}>After hours / Sunday</td><td style={{ padding: '4px 0' }}>Not a guaranteed night crew — leave a message or call at open</td><td style={{ padding: '4px 0' }}>We return calls at open and prioritize active leaks first thing</td></tr>
                   <tr><td style={{ padding: '4px 0' }}>Peak storm (72 hrs after)</td><td style={{ padding: '4px 0' }}>Expect longer queues</td><td style={{ padding: '4px 0' }}>Same day to 1–2 days is common</td></tr>
                 </tbody>
               </table>
@@ -118,7 +118,7 @@ export default function BlogPostPage() {
             </table>
 
             <h2>What “Emergency” Actually Means</h2>
-            <p>We reserve our 24/7 emergency line for situations where water is actively entering your home or structural safety is compromised:</p>
+            <p>We reserve emergency priority for situations where water is actively entering your home or structural safety is compromised:</p>
             <ul>
               <li>Missing shingles with active water stains on ceiling.</li>
               <li>Large hole in roof deck from storm damage.</li>
@@ -163,13 +163,13 @@ export default function BlogPostPage() {
               <li>If you booked a full replacement, we credit the tarping cost (usually $250–$750) 100%.</li>
             </ol>
 
-            <h2>24/7 Emergency Line: Know Who to Call</h2>
-            <p>Our emergency line is staffed by <strong>real people, not an automated system</strong>. When you call <a href={`tel:${brand.phone}`}>{brand.phone}</a>, you’ll get:</p>
+            <h2>Emergency Line: Know Who to Call</h2>
+            <p>Call <a href={`tel:${brand.phone}`}>{brand.phone}</a> during shop hours (Mon–Fri 9–7 / Sat 9–5; Sun closed). You’ll talk to a real person — not an automated system — and we’ll prioritize active leaks as fast as crews allow:</p>
             <ul>
-              <li>A dispatcher who knows the storm-affected areas by name.</li>
-              <li>Immediate GPS routing to the nearest available crew.</li>
+              <li>Someone who knows the storm-affected areas by name.</li>
+              <li>Same-day help when the schedule and access allow.</li>
               <li>SMS photo sharing for quick assessment.</li>
-              <li>A follow-up call within 30 minutes of crew arrival.</li>
+              <li>A clear ETA — we’ll be upfront if crews are stacked after a storm.</li>
             </ul>
 
             <h2>Don’t Wait — Every Hour Costs You</h2>

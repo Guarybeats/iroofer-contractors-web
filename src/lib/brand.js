@@ -110,7 +110,7 @@ export const services = [
     title: 'Storm Damage Roof Repair',
     metaDesc:
       'Wind, hail and limb damage is easy to miss from the ground. Free inspection, same-day tarping, and full documentation for your claim.',
-    tagline: '24/7 storm response across west Metro Atlanta.',
+    tagline: 'Storm response across west Metro Atlanta — same-day when schedule allows.',
     image: '/assets/storm-damage.jpg?v=2',
     webp: '/assets/storm-damage.webp?v=2',
     imageAlt: 'Storm damage roof inspection and repair after hail and wind in west Metro Atlanta',

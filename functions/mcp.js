@@ -36,7 +36,7 @@ const TOOLS = [
   },
   {
     name: "call_iroofer",
-    description: "Phone number including 24/7 emergency storm response.",
+    description: "Phone number for quotes or storm / active-leak help during shop hours.",
     inputSchema: { type: "object", properties: {} },
   },
 ];
@@ -90,7 +90,7 @@ function callTool(name, args = {}) {
         email: "iroofercontractors@gmail.com",
         website: ORIGIN,
         address: "152 Freedom Dr, Dallas, GA 30157",
-        hours: "Mon–Sat by appointment; 24/7 emergency storm response",
+        hours: "Mon–Fri 9–7, Sat 9–5, Sun closed; storm / active-leak priority as crews allow (not 24/7)",
         credentials: [
           "Licensed, bonded and insured",
           "Owens Corning Preferred Contractor",
@@ -152,7 +152,7 @@ function callTool(name, args = {}) {
       return textResult({
         phone: "(470) 236-1410",
         tel: "tel:+14702361410",
-        emergency: "24/7 emergency storm response",
+        emergency: "Prioritize active leaks/storm as fast as crews allow during shop hours; same-day when schedule allows — not 24/7",
       });
     default:
       return {
