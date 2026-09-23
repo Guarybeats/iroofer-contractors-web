@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /data/
+Disallow: /_next/
 Disallow: /admin/
 
 # AI content preferences (Content Signals) — Level 2 Bot-Aware / isitagentready
