@@ -1,6 +1,13 @@
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
 
+# Keep non-HTML assets out of the Google index (GSC: Crawled - currently not indexed)
+/data/*
+  X-Robots-Tag: noindex
+
+/_next/static/*
+  X-Robots-Tag: noindex
+
 /.well-known/webmcp.json
   Content-Type: application/json
   Cache-Control: public, max-age=3600
