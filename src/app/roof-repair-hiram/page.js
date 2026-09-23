@@ -7,8 +7,8 @@ import { localCopy } from '@/lib/localCopy';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: "Roofer Hiram GA | Roof Repair & Local Crew",
-  description: "Roof repair in Hiram, GA for leaks, flashing, and storm wear. Paulding County local crew\u2014licensed, bonded, insured. Call (470) 236-1410 today.",
+  title: "Roof Repair & Inspection Hiram GA | Local Paulding Crew | iRoofer",
+  description: "Roof inspection and repair in Hiram, GA for leaks and storm wear. Local Paulding crew — photos and written scope. (470) 236-1410 · https://iroofercontractors.com/contact/",
   path: '/roof-repair-hiram',
 });
 
@@ -37,7 +37,7 @@ export default function Page() {
               </Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>Hiram, GA</span>
               <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02, marginTop: 8 }}>
-                Roofer in Hiram, GA — Roof Repair
+                Roof Repair in Hiram, GA — Inspection, Leaks & Storm Wear
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
                 Looking for a roofer in Hiram, GA? iRoofer Contractors is the local roofing services crew neighbors call for leaks, storm wear, and flashing repairs in Paulding County. Call (470) 236-1410 for same-day help when scheduling allows.
@@ -47,7 +47,7 @@ export default function Page() {
               </p>
               <div className="cta" style={{ marginTop: 28 }}>
                 <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>{brand.phone}</a>
-                <Link className="btn btn-solid" href="/#contact" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Get a free quote <span className="arr">→</span></Link>
+                <Link className="btn btn-solid" href="/contact/" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Get a free quote <span className="arr">→</span></Link>
               </div>
             </div>
 

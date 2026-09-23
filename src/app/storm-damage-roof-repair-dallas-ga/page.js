@@ -7,8 +7,8 @@ import { localCopy } from '@/lib/localCopy';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: "Storm Damage Roof Repair Dallas GA | iRoofer",
-  description: "Storm damage roof repair in Dallas, GA. We inspect, document, tarp if needed, and guide insurance claims. Call (470) 236-1410 for same-day service.",
+  title: "Storm Damage Roof Repair Dallas GA | Hail & Wind | iRoofer",
+  description: "Storm damage roof repair in Dallas GA after wind or hail — photos, tarp if needed, clear scope, claim support. Call (470) 236-1410 or https://iroofercontractors.com/contact/",
   path: '/storm-damage-roof-repair-dallas-ga',
 });
 
@@ -46,7 +46,7 @@ export default function Page() {
               </p>
               <div className="cta" style={{ marginTop: 28 }}>
                 <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>{brand.phone}</a>
-                <Link className="btn btn-solid" href="/#contact" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Get a free quote <span className="arr">→</span></Link>
+                <Link className="btn btn-solid" href="/contact/" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Get a free quote <span className="arr">→</span></Link>
               </div>
             </div>
 

@@ -7,8 +7,8 @@ import { localCopy } from '@/lib/localCopy';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: "Roof Replacement Dallas GA | Owens Corning",
-  description: "Roof replacement in Dallas, GA when patches fail. Owens Corning Preferred & CertainTeed storm specialist. Licensed local crew. Call (470) 236-1410.",
+  title: "Roof Replacement Dallas GA | Owens Corning Preferred | iRoofer",
+  description: "Roof replacement in Dallas GA — full tear-off, deck check, Owens Corning Preferred systems when they fit. Family-owned since 2019. (470) 236-1410 · https://iroofercontractors.com/contact/",
   path: '/roof-replacement-dallas-ga',
 });
 
@@ -21,6 +21,8 @@ const relatedLinks = [
               { href: '/services/roof-replacement/', label: 'Roof replacement service hub' },
               { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas GA' },
               { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair Dallas GA' },
+              { href: '/blog/roof-replacement-cost-dallas-ga/', label: 'Roof replacement cost in Dallas GA (factors)' },
+              { href: '/services/roof-insurance-claims/', label: 'Roof insurance claims help' },
               { href: '/new-construction-dallas-ga/', label: 'New construction roofing Dallas GA' },
 
             ];
@@ -45,7 +47,7 @@ export default function Page() {
               </p>
               <div className="cta" style={{ marginTop: 28 }}>
                 <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>{brand.phone}</a>
-                <Link className="btn btn-solid" href="/#contact" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Get a free quote <span className="arr">→</span></Link>
+                <Link className="btn btn-solid" href="/contact/" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Get a free quote <span className="arr">→</span></Link>
               </div>
             </div>
 

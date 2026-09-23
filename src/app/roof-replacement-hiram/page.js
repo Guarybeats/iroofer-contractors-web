@@ -8,8 +8,8 @@ import { reviews } from '@/lib/reviews';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: "Roof Replacement in Hiram, GA | iRoofer Contractors",
-  description: 'Roof replacement in Hiram, GA by an Owens Corning Preferred Contractor. Tear-off, architectural shingles, clean site. Free inspection: (470) 236-1410.',
+  title: "Roof Replacement in Hiram, GA | Local Paulding Crew | iRoofer",
+  description: 'Roof replacement in Hiram, GA — tear-off to deck, honest scope, Owens Corning Preferred when it fits. Family-owned from nearby Dallas. (470) 236-1410 · https://iroofercontractors.com/contact/',
   path: '/roof-replacement-hiram',
 });
 
@@ -39,7 +39,7 @@ export default function Page() {
               </p>
               <div className="cta" style={{ marginTop: 28 }}>
                 <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>{brand.phone}</a>
-                <Link className="btn btn-solid" href="/#contact" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Get a free quote <span className="arr">→</span></Link>
+                <Link className="btn btn-solid" href="/contact/" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Get a free quote <span className="arr">→</span></Link>
               </div>
 
               <div style={{ marginTop: 32, padding: '1.3rem', background: '#fff', border: '1px solid rgba(22,29,37,.08)', borderRadius: 8 }}>
@@ -67,6 +67,17 @@ export default function Page() {
               <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, lineHeight: 1.75 }}>{sec.p}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <div className="rv" style={{ maxWidth: 780, marginBottom: 8 }}>
+            <p style={{ color: '#52606b', fontSize: '1.02rem', lineHeight: 1.75 }}>
+              Not sure if it&apos;s time to replace? Start with a{' '}
+              <Link href="/roof-repair-hiram/" style={{ color: 'var(--orange)', fontWeight: 700 }}>roof inspection / repair look in Hiram</Link>.
+            </p>
+          </div>
         </div>
       </section>
 

@@ -2,6 +2,14 @@
 // and the RelatedPosts component. Keep in sync with src/app/blog/<slug>/page.js.
 export const posts = [
   {
+    slug: 'roof-replacement-cost-dallas-ga',
+    title: 'Roof Replacement Cost in Dallas, GA: What Actually Changes the Price',
+    date: 'September 2026',
+    excerpt: 'What drives roof replacement cost in Dallas GA — squares, pitch, materials, decking, tear-off — with a clear not-a-quote disclaimer. No invented dollar table; written figures only after inspection.',
+    readTime: '7 min read',
+    category: 'Cost Guide',
+  },
+  {
     slug: 'solar-panels-roof-dallas-ga',
     title: 'Solar Panels on Your Dallas Roof: What Homeowners Need to Know Before Installing',
     date: 'August 2026',

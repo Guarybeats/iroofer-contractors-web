@@ -15,14 +15,15 @@ const revB = reviews.slice(Math.ceil(reviews.length / 2));
 
 const dallasLinks = [
   { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas, GA' },
-  { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas, GA' },
-  { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair Dallas' },
-  { href: '/blog/wind-damage-roof-repair-dallas/', label: 'Wind damage roof repair in Dallas' },
+  { href: '/roof-repair-dallas-ga/', label: 'Roof repair / leak repair in Dallas, GA' },
+  { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm & hail damage roof repair Dallas' },
+  { href: '/services/roof-insurance-claims/', label: 'Insurance claims help' },
+  { href: '/dallas-ga-roofing/', label: 'Dallas roofing company hub' },
   { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas' },
-  { href: '/roof-repair-hiram/', label: 'Roof repair in Hiram' },
   { href: '/gutter-repair-replacement-dallas-ga/', label: 'Gutter repair & replacement' },
-  { href: '/new-construction-dallas-ga/', label: 'New construction roofing' },
-  { href: '/dallas-ga-roofing/', label: 'All Dallas, GA roofing services' },
+  { href: '/roof-replacement-hiram/', label: 'Roof replacement in Hiram' },
+  { href: '/roof-repair-hiram/', label: 'Roof repair / inspection in Hiram' },
+  { href: '/blog/roof-replacement-cost-dallas-ga/', label: 'Roof replacement cost factors' },
 ];
 
 const svcs = [
@@ -44,10 +45,10 @@ const svcs = [
 
 
 const faqs = [
-  { q: 'How long does a full replacement take?', a: 'Most single-family homes in our area are torn off and rebuilt in one to two days, weather permitting. Larger or steep-pitch roofs may take three. We give you a firm schedule in writing before we start.' },
-  { q: 'Do you work with my insurance company?', a: 'Yes — it’s most of what we do. We document the damage, write the scope, meet the adjuster on-site, and handle supplements so you’re not chasing paperwork.' },
-  { q: 'How much does a new roof cost?', a: 'It depends on size, pitch and materials, but most replacements land in a predictable range we’ll quote to the dollar after a free inspection. We also offer financing for qualified homeowners.' },
-  { q: 'What warranty do I actually get?', a: 'The manufacturer’s warranty on the shingles, registered in your name and transferred if you sell. We stand behind every job we do — ask us for the details on your specific roof.' },
+  { q: 'Is the homepage the right page for roof replacement Dallas GA?', a: 'For ranking maybe — for the homeowner, the dedicated roof replacement page is clearer. We link Roof replacement in Dallas, GA first on purpose so you land on a money URL with scope, process, and next steps.' },
+  { q: 'Do you fix roof leaks the same week?', a: 'Often yes when scheduling allows — start at our Dallas roof repair page for leaks, flashing, and storm wear. Call (470) 236-1410 if water is active.' },
+  { q: 'Hail damage — do you help with the claim?', a: 'We document findings, meet your adjuster when scheduled, and support supplements when the scope falls short. Approvals depend on your policy — no guaranteed outcomes. See insurance claims help.' },
+  { q: 'How long does a full replacement take?', a: 'Most single-family homes in our area are torn off and rebuilt in one to two days once materials are on site, weather permitting. Larger or steep-pitch roofs may take longer. We give you a firm schedule in writing before we start.' },
   { q: 'Do I need to be home during the work?', a: 'Nope. Everything happens outside. We’ll text you photos at each milestone and do a final walkthrough whenever you’re free. We also run a magnet sweep so your kids and pets stay safe.' },
 ];
 
@@ -74,11 +75,11 @@ export default function HomePage() {
         <div className="wrap">
           <div className="hero-copy">
             <span className="eyebrow">Dallas, GA · Atlanta Metro</span>
-            <h1>Dallas GA Roof Repair <br />&amp; Replacement <br /><span className="stroke">done right.</span></h1>
-            <p className="lead">Family-owned and operated since 2019. We tear off, rebuild, and stand behind every roof with expert craftsmanship and honest service.</p>
+            <h1>Dallas GA Roof Replacement, Repair &amp; Storm Damage <br /><span className="stroke">— done local.</span></h1>
+            <p className="lead">Family-owned in Dallas since 2019. Whether you need a full roof replacement, a roof leak repair, or help after hail or storm damage — Cristian Mendez’s crew walks the roof, puts it in writing, and stands behind the work.</p>
             <div className="hero-cta">
-              <a className="btn btn-solid" href="/#contact">Get a Free Inspection <span className="arr">→</span></a>
-              <a className="btn btn-ghost" href="/#work">See Our Work</a>
+              <a className="btn btn-solid" href="/contact/">Get a free inspection <span className="arr">→</span></a>
+              <a className="btn btn-ghost" href={`tel:${brand.phone}`}>Call or text {brand.phone}</a>
             </div>
             <div className="stats">
               <div className="stat"><div className="num"><span className="cnt" data-count="2019" data-nogroup>2019</span></div><div className="lbl">Serving Dallas, GA since</div></div>
@@ -124,9 +125,9 @@ export default function HomePage() {
           <div className="svc-grid">
             <div className="svc-intro rv">
               <span className="eyebrow dark">What we do</span>
-              <h2>Every job on your roof, done by one crew.</h2>
-              <p>From a single missing shingle to a full tear-off after a storm — same team, same warranty, same phone number. Tap a service to see what’s included.</p>
-              <a className="btn btn-ink" href="/#contact">Start a project <span className="arr">→</span></a>
+              <h2>Every job on your roof, one local crew.</h2>
+              <p>From a single leak to a full tear-off after hail — same licensed, bonded, insured team. Owens Corning Preferred when that system fits. Tap a service to see what’s included.</p>
+              <a className="btn btn-ink" href="/contact/">Start a project <span className="arr">→</span></a>
             </div>
 
             <div className="svc-list rv">
@@ -178,11 +179,11 @@ export default function HomePage() {
         <div className="wrap">
           <div className="rv">
             <span className="pulse"><span className="dot" /> Crews in your area today</span>
-            <h2>Hail doesn’t wait. <br /><span className="ac">Neither do we.</span></h2>
-            <p>Georgia spring storms roll through fast. If a storm just hit your neighborhood, the damage is often invisible from the ground — and your insurance window is ticking. We tarp, document and file within 24 hours.</p>
+            <h2>After hail or a storm. <br /><span className="ac">Don’t climb.</span></h2>
+            <p>Photo from the ground. Call (470) 236-1410. We document, tarp when needed, and explain repair vs replacement — including hail bruising you often can’t see from the driveway.</p>
             <div className="cta">
               <a className="bigphone" href={`tel:${brand.phone}`}>{brand.phone}</a>
-              <a className="btn btn-solid" href="/storm-damage-roof-repair-dallas-ga/">Storm damage roof repair Dallas <span className="arr">→</span></a>
+              <a className="btn btn-solid" href="/storm-damage-roof-repair-dallas-ga/">Storm &amp; hail damage roof repair <span className="arr">→</span></a>
             </div>
           </div>
           <div className="steps rv">
@@ -308,6 +309,7 @@ export default function HomePage() {
           <div style={{ marginTop: 28, borderTop: '1px solid #e6e9ee', paddingTop: 20 }}>
             <p style={{ fontSize: '.8rem', letterSpacing: '.04em', textTransform: 'uppercase', color: '#8ea2b4', marginBottom: 10 }}>Popular guides</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
+              <Link href="/blog/roof-replacement-cost-dallas-ga/" className="chip" style={{ textDecoration: 'none' }}>Roof replacement cost factors</Link>
               <Link href="/blog/roof-repair-cost-dallas-ga/" className="chip" style={{ textDecoration: 'none' }}>Roof repair cost Dallas GA</Link>
               <Link href="/blog/when-to-replace-vs-repair-a-roof/" className="chip" style={{ textDecoration: 'none' }}>Replace vs. repair guide</Link>
               <Link href="/blog/dallas-ga-hail-storm-insurance-claims/" className="chip" style={{ textDecoration: 'none' }}>How to file an insurance claim</Link>
