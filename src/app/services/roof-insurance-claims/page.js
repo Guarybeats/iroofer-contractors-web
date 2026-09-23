@@ -8,8 +8,8 @@ import { FaqSchema } from '@/components/LocalSeo';
 function faqItem(open){ return 'faq-item' + (open ? ' open' : ''); }
 
 export const metadata = seo({
-  title: 'Roof Insurance Claim Help | Storm Documentation | iRoofer',
-  description: 'Roof insurance claim help — we document storm damage, meet your adjuster, and help with supplements. Dallas GA. (470) 236-1410 · https://iroofercontractors.com/contact/',
+  title: 'Roof Insurance Claim Help in Dallas, GA | Adjuster Support | iRoofer',
+  description: 'Roof insurance claim help in Dallas GA — we document storm damage, meet your adjuster, and help with supplements. Call (470) 236-1410 or https://iroofercontractors.com/contact/',
   path: '/services/roof-insurance-claims',
 });
 
@@ -59,15 +59,15 @@ export default function Page() {
               <Link href="/services/" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>← All services</Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>Dallas, GA &amp; Metro Atlanta</span>
               <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02, marginTop: 8 }}>
-                Roof Insurance Claims, Handled With You
+                Roof Insurance Claims in Dallas, GA — Documented and Walked With You
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
                 Storm damage is stressful enough without decoding a policy alone. We walk homeowners from inspection to finished roof
                 and speak the adjuster&apos;s language — without a hard sell.
               </p>
               <p style={{ color: '#52606b', fontSize: '.98rem', marginTop: 12, maxWidth: 680, borderLeft: '3px solid var(--orange)', paddingLeft: 12 }}>
-                Local note: West Metro Atlanta weather swings — spring storms, summer UV, wet winters — punish asphalt and flashing.
-                Documentation quality matters. We know how local adjusters scope a claim so your paperwork moves instead of stalling.
+                Local note: Paulding storms often leave hail and wind damage you can&apos;t see from the driveway.
+                We document the way adjusters expect so your paperwork moves instead of stalling.
                 <strong> No win-rates. No guaranteed approvals.</strong>
               </p>
               <div className="cta" style={{ marginTop: 28 }}>

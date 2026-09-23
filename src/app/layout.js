@@ -23,8 +23,8 @@ const bigShoulders = Big_Shoulders_Display({
 
 export const metadata = {
   metadataBase: new URL('https://iroofercontractors.com'),
-  title: `Dallas GA Roofing | Repair & Replacement | iRoofer`,
-  description: `Dallas GA roof repair, replacement & storm damage by a local crew since 2019. Owens Corning Preferred. Call (470) 236-1410 for same-day service.`,
+  title: `Dallas GA Roof Replacement, Repair & Storm Help | iRoofer`,
+  description: `Need roof replacement or roof leak repair in Dallas GA? Family-owned iRoofer since 2019 — storm & hail help, honest scope. Call (470) 236-1410 or https://iroofercontractors.com/contact/`,
   robots: { index: true, follow: true },
   icons: {
     icon: [
@@ -39,8 +39,8 @@ export const metadata = {
     type: 'website',
     url: 'https://iroofercontractors.com/',
     siteName: 'iRoofer Contractors',
-    title: `Dallas GA Roofing | Repair & Replacement | iRoofer`,
-    description: `Dallas GA roof repair, replacement & storm damage by a local crew since 2019. Owens Corning Preferred. Call (470) 236-1410 for same-day service.`,
+    title: `Dallas GA Roof Replacement, Repair & Storm Help | iRoofer`,
+    description: `Need roof replacement or roof leak repair in Dallas GA? Family-owned iRoofer since 2019 — storm & hail help, honest scope. Call (470) 236-1410 or https://iroofercontractors.com/contact/`,
     locale: 'en_US',
     images: [{ url: 'https://iroofercontractors.com/assets/hero.jpg', alt: 'iRoofer Contractors roofing a home in Dallas, GA', width: 1280, height: 960 }],
   },
@@ -48,8 +48,8 @@ export const metadata = {
     card: 'summary_large_image',
     site: '@irooferc',
     creator: '@irooferc',
-    title: `Dallas GA Roofing | Repair & Replacement | iRoofer`,
-    description: `Dallas GA roof repair, replacement & storm damage by a local crew since 2019. Owens Corning Preferred. Call (470) 236-1410 for same-day service.`,
+    title: `Dallas GA Roof Replacement, Repair & Storm Help | iRoofer`,
+    description: `Need roof replacement or roof leak repair in Dallas GA? Family-owned iRoofer since 2019 — storm & hail help, honest scope. Call (470) 236-1410 or https://iroofercontractors.com/contact/`,
     images: ['https://iroofercontractors.com/assets/hero.jpg'],
   },
 };

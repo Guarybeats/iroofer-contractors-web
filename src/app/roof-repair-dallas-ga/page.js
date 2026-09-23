@@ -7,8 +7,8 @@ import { localCopy } from '@/lib/localCopy';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: "Roof Repair Dallas GA | Local Crew | iRoofer",
-  description: "Need roof repair in Dallas, GA? We fix leaks, flashing, and storm-worn shingles\u2014same-day when available. Licensed local crew. Call (470) 236-1410.",
+  title: "Roof Repair Dallas GA | Leak & Storm Wear | iRoofer Contractors",
+  description: "Roof repair in Dallas GA for leaks, flashing, and storm wear. Local crew finds the source and fixes it right. Family-owned since 2019. (470) 236-1410 \u00b7 https://iroofercontractors.com/contact/",
   path: '/roof-repair-dallas-ga',
 });
 
@@ -39,14 +39,14 @@ export default function Page() {
               </Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>Dallas, GA</span>
               <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02, marginTop: 8 }}>
-                Roof Repair Dallas GA
+                Roof Repair in Dallas, GA — Leaks, Flashing & Storm Wear
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
                 {copy.intro}
               </p>
               <div className="cta" style={{ marginTop: 28 }}>
                 <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>{brand.phone}</a>
-                <Link className="btn btn-solid" href="/#contact" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Get a free quote <span className="arr">→</span></Link>
+                <Link className="btn btn-solid" href="/contact/" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Get a free inspection <span className="arr">→</span></Link>
               </div>
             </div>
 

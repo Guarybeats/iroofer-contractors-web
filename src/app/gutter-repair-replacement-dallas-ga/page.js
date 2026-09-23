@@ -8,8 +8,8 @@ import { reviews } from '@/lib/reviews';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: 'Gutter Repair & Replacement in Dallas, GA',
-  description: 'Gutter repair and replacement in Dallas, GA. We fix clogged, sagging and leaking gutters before they damage your roof. Free inspection: (470) 236-1410.',
+  title: 'Gutter Repair & Replacement in Dallas, GA | Sized to Your Roof | iRoofer',
+  description: 'Gutter repair and replacement in Dallas GA — capacity, fall, fascia, seamless runs sized to your roof. Family-owned since 2019. (470) 236-1410 · https://iroofercontractors.com/contact/',
   path: '/gutter-repair-replacement-dallas-ga',
 });
 
@@ -46,7 +46,7 @@ export default function Page() {
               </p>
               <div className="cta" style={{ marginTop: 28 }}>
                 <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>{brand.phone}</a>
-                <Link className="btn btn-solid" href="/#contact" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Get a free quote <span className="arr">→</span></Link>
+                <Link className="btn btn-solid" href="/contact/" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Get a free quote <span className="arr">→</span></Link>
               </div>
 
               <div style={{ marginTop: 32, padding: '1.3rem', background: '#fff', border: '1px solid rgba(22,29,37,.08)', borderRadius: 8 }}>
