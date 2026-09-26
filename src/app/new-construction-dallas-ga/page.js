@@ -8,8 +8,8 @@ import { reviews } from '@/lib/reviews';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: "New Construction in Dallas, GA | iRoofer Contractors",
-  description: 'New construction roofing in Dallas, GA. We work with builders and homeowners to match the design and the budget. Free consultation: (470) 236-1410.',
+  title: "New Construction Roofing in Dallas, GA | iRoofer Contractors",
+  description: 'New-construction roof installs in Dallas, GA from the local crew at 152 Freedom Dr. Clear scopes, clean sites. Call (470) 236-1410 or contact iRoofer online.',
   path: '/new-construction-dallas-ga',
 });
 
@@ -23,6 +23,9 @@ const relatedLinks = [
   { href: '/services/new-construction/', label: 'New construction roofing hub' },
   { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas GA' },
   { href: '/gutter-repair-replacement-dallas-ga/', label: 'Gutter repair & replacement Dallas GA' },
+  { href: '/contact/', label: 'Contact iRoofer' },
+  { href: '/about/', label: 'About iRoofer' },
+  { href: '/roof-repair-dallas-ga/', label: 'Roof repair Dallas GA' },
 
 ];
 
@@ -39,14 +42,14 @@ export default function Page() {
               </Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>Dallas, GA</span>
               <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02, marginTop: 8 }}>
-                New Construction in Dallas, GA
+                New Construction Roofing in Dallas, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
                 {copy.intro}
               </p>
               <div className="cta" style={{ marginTop: 28 }}>
                 <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>{brand.phone}</a>
-                <Link className="btn btn-solid" href="/#contact" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Get a free quote <span className="arr">→</span></Link>
+                <Link className="btn btn-solid" href="/contact/" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Get a free quote <span className="arr">→</span></Link>
               </div>
 
               <div style={{ marginTop: 32, padding: '1.3rem', background: '#fff', border: '1px solid rgba(22,29,37,.08)', borderRadius: 8 }}>
@@ -57,7 +60,7 @@ export default function Page() {
             </div>
 
             <div className="rv">
-              <img src="/assets/service-newconstruction.webp?v=2" alt="New Construction in Dallas, GA by iRoofer Contractors" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%', marginBottom: 24 }} />
+              <img src="/assets/service-newconstruction.webp?v=2" alt="New Construction Roofing in Dallas, GA by iRoofer Contractors" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%', marginBottom: 24 }} />
               <div style={{ maxWidth: 460, margin: 0 }}>
                 <QuoteForm variant="contact" id="new-construction-dallas-ga-quote" source="New Construction Dallas GA" />
               </div>

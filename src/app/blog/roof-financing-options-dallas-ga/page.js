@@ -7,22 +7,24 @@ import BlogPostingSchema from '@/components/BlogPostingSchema';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
-  alternates: { canonical: 'https://iroofercontractors.com/blog/roof-financing-options-dallas-ga' },
+  alternates: { canonical: 'https://iroofercontractors.com/blog/roof-financing-options-dallas-ga/' },
   openGraph: {
     type: 'website',
     siteName: 'iRoofer Contractors',
     locale: 'en_US',
-    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/roof-financing-options-dallas-ga' },
-
-  title: 'Roof Financing Options in Dallas, GA',
-  description: 'From insurance supplements to zero-interest plans — here are the real financing options Dallas homeowners use to afford a quality roof replacement.',
+    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
+    url: 'https://iroofercontractors.com/blog/roof-financing-options-dallas-ga/',
+  },
+  title: 'Roof Financing Options in Dallas, GA | How Homeowners Pay for a New Roof | iRoofer',
+  description:
+    'Qualitative guide to paying for a Dallas, GA roof — insurance paths, lender financing, and what to avoid. Talk options with iRoofer: (470) 236-1410 or contact us.',
 };
 
 const post = {
   slug: 'roof-financing-options-dallas-ga',
-  title: 'Roof Financing Options in Dallas GA: How to Pay for a New Roof Without Breaking the Bank',
+  title: 'Roof Financing Options in Dallas, GA — Practical Paths (No Rate Guesswork)',
   date: 'June 2026',
-  readTime: '7 min read',
+  readTime: '6 min read',
   category: 'Cost Guide',
 };
 
@@ -36,67 +38,83 @@ export default function BlogPostPage() {
           <div className="post-head rv">
             <span className="eyebrow dark">{post.category}</span>
             <h1>{post.title}</h1>
-            <p className="byline">
-              By iRoofer Contractors
-            </p>
+            <p className="byline">By iRoofer Contractors</p>
             <p className="meta">{post.date} · {post.readTime}</p>
             <PriceDisclaimer />
           </div>
 
           <div className="post-body rv">
-            <p>A new roof in Dallas runs $8,000–$30,000. Most homeowners don't have that sitting in savings. The good news: you have more options than a high-interest credit card. Here's what actually works for Georgia families.</p>
-
-            <h2>1. Insurance Claim + Supplement (The Most Common Path)</h2>
-            <p>If storm damage caused the need for replacement, your insurance pays Actual Cash Value (ACV) up front, then Replacement Cost Value (RCV) after completion. The gap between ACV and RCV is where many homeowners get stuck.</p>
-            <ul>
-              <li><strong>How it works:</strong> We file the claim, meet the adjuster, and if the scope is short, we submit a supplement with line-item pricing.</li>
-              <li><strong>Out-of-pocket:</strong> Just your deductible (typically $1,000–$2,500).</li>
-              <li><strong>Timeline:</strong> 2–6 weeks from claim filing to check in hand.</li>
-            </ul>
-            <p style={{ background: '#fff3cd', padding: '12px', borderRadius: 6, border: '1px solid #ffeaa7' }}>
-              <strong>Pro tip:</strong> Never sign a "full and final" release until the supplement is approved. We've recovered $3,000–$15,000 in supplements on Paulding County claims.
+            <p>
+              A roof replacement is a major home expense. Most Dallas-area families do not pay cash from a single checking account — and that is normal. This guide lists <strong>types of options</strong> homeowners use. It does <strong>not</strong> invent APR tables, monthly payment grids, or credit-score cutoffs.
+            </p>
+            <p>
+              Ready to talk about your roof? Visit{' '}
+              <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>https://iroofercontractors.com/contact/</Link>
+              {' '}or call <a href={`tel:${brand.phone}`}>{brand.phone}</a>.
             </p>
 
-            <h2>2. Zero-Interest Dealer Financing (12–60 Months)</h2>
-            <p>We partner with lenders offering 0% APR for qualified buyers. This is not a teaser rate — it's zero interest for the full term.</p>
-            <table style={{ width: '100%', borderCollapse: 'collapse', margin: '16px 0' }}>
-              <tbody>
-                <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '6px 0' }}><strong>Term</strong></td><td style={{ padding: '6px 0', textAlign: 'right' }}><strong>Monthly (on $15K)</strong></td></tr>
-                <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '6px 0' }}>12 months</td><td style={{ padding: '6px 0', textAlign: 'right' }}>$1,250</td></tr>
-                <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '6px 0' }}>24 months</td><td style={{ padding: '6px 0', textAlign: 'right' }}>$625</td></tr>
-                <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '6px 0' }}>36 months</td><td style={{ padding: '6px 0', textAlign: 'right' }}>$417</td></tr>
-                <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '6px 0' }}>60 months</td><td style={{ padding: '6px 0', textAlign: 'right' }}>$250</td></tr>
-              </tbody>
-            </table>
-            <p><strong>Requirements:</strong> 650+ credit score, debt-to-income under 45%. Soft pull only — no hit to your credit to check.</p>
+            <h2>1. Insurance when storm damage caused the need</h2>
+            <p>
+              If weather damage is why you need a roof, your homeowner’s policy may be part of the path. Actual processes vary by carrier and policy. We help with documentation and adjuster meetings when you want a contractor involved:{' '}
+              <Link href="/services/roof-insurance-claims/" style={{ color: 'var(--orange)', fontWeight: 700 }}>roof insurance claims</Link>
+              {' · '}
+              <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>storm damage roof repair Dallas</Link>.
+            </p>
+            <p>
+              We will not promise claim approval or invent “typical supplement” dollar recoveries in blog copy. CertainTeed Storm Restoration Specialist (GA) fits when the conversation is storm documentation — not as a financing gimmick.
+            </p>
 
-            <h2>3. Low-Interest Fixed-Rate Loans (5.99%–9.99% APR)</h2>
-            <p>For homeowners who prefer longer terms (7–15 years) or don't qualify for 0%. These are unsecured home improvement loans — no lien on your house.</p>
+            <h2>2. Dealer / lender financing (ask for current terms)</h2>
+            <p>
+              Many roofing companies partner with third-party lenders. Terms change. Credit decisions are the lender’s. What we <em>can</em> do: help you see whether financing is offered on your estimate and connect you to the current program paperwork — without publishing rates that will be wrong next month.
+            </p>
+
+            <h2>3. Personal loans or credit-union home-improvement loans</h2>
+            <p>
+              Some homeowners prefer their own bank or credit union. Compare total cost and fees yourself; we are roofers, not your lender.
+            </p>
+
+            <h2>4. Home equity products (HELOC / equity loan)</h2>
+            <p>
+              If you have equity, some owners use equity lines for home improvement. Tax treatment depends on your situation — talk to your tax professional. We do not give tax or lending advice.
+            </p>
+
+            <h2>5. Renovation mortgages when you are buying</h2>
+            <p>
+              Purchase-plus-renovation loan products exist for buyers whose new home needs a roof. Your mortgage professional owns that conversation.
+            </p>
+
+            <h2>What to be careful with</h2>
             <ul>
-              <li>Loan amounts: $5,000–$100,000</li>
-              <li>Terms: 84–180 months</li>
-              <li>No prepayment penalty</li>
-              <li>Funding in 1–3 business days</li>
+              <li>High-interest revolving credit carried long-term</li>
+              <li>“Financing” with no named lender and unclear contracts</li>
+              <li>Any pressure to sign before you understand the scope of work</li>
             </ul>
 
-            <h2>4. Home Equity Line of Credit (HELOC)</h2>
-            <p>If you have equity, a HELOC often beats dealer financing on rate (currently 7–9% variable). Interest may be tax-deductible if used for home improvement — consult your CPA.</p>
-            <p><strong>Best for:</strong> Homeowners doing multiple projects (roof + gutters + siding) who want one credit line.</p>
-
-            <h2>5. FHA 203(k) / Fannie Mae HomeStyle (Buying a Fixer-Upper)</h2>
-            <p>If you're purchasing a Dallas home that needs a roof, these renovation loans wrap the roof cost into your mortgage. One closing, one payment.</p>
-
-            <h2>What to Avoid</h2>
+            <h2>How iRoofer helps without inventing rates</h2>
+            <p>
+              We give a clear written roof scope first — repair vs replace — so you are not financing the wrong job. Then we discuss payment paths that are actually available on <em>your</em> estimate. Cristian Mendez’s crew is based at 152 Freedom Dr, Dallas, GA 30157 — family-owned since 2019, licensed, bonded, insured.
+            </p>
             <ul>
-              <li><strong>Credit cards:</strong> 24%+ APR turns a $15K roof into $30K+ if you carry a balance.</li>
-              <li><strong>Contractor "in-house" financing with no lender name:</strong> Often predatory terms hidden in fine print.</li>
-              <li><strong>Payday/title loans:</strong> Never. Period.</li>
+              <li><Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof replacement in Dallas, GA</Link></li>
+              <li><Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof repair in Dallas, GA</Link></li>
+              <li><Link href="/dallas-ga-roofing/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Dallas GA roofing hub</Link></li>
+              <li><Link href="/estimator/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Planning estimator (not a quote)</Link></li>
+              <li><Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Contact</Link></li>
             </ul>
 
-            <h2>How We Help</h2>
-            <p>Every estimate includes a financing review — we'll run soft pulls for 0% and low-rate options so you see real numbers before deciding. No obligation, no pressure.</p>
+            <h2>Common questions</h2>
+            <p><strong>Can you quote my APR in this article?</strong><br />No — rates change and depend on the lender and your credit. Ask for current options when you have an estimate.</p>
+            <p><strong>Do I need financing for a repair?</strong><br />Often repairs are smaller out-of-pocket jobs; every roof differs. We quote the repair honestly first.</p>
+            <p><strong>Do you require financing through you?</strong><br />No. Cash, insurance proceeds, and third-party lenders are all conversations we have had — whatever fits your situation lawfully and clearly.</p>
+            <p><strong>Who do I call?</strong><br />{brand.phone} or https://iroofercontractors.com/contact/</p>
+
+            <p>
+              <Link href="/contact/" className="btn btn-solid">Talk through payment paths on your estimate →</Link>
+              {' '}
+              <a className="btn btn-ghost" href={`tel:${brand.phone}`} style={{ marginLeft: 8 }}>{brand.phone}</a>
+            </p>
             <RelatedPosts slug="roof-financing-options-dallas-ga" />
-            <p><Link href="/estimator/" className="btn btn-solid">See Your Financing Options →</Link></p>
           </div>
         </div>
       </article>

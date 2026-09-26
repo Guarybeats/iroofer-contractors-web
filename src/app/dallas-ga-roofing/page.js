@@ -5,14 +5,27 @@ import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: 'Dallas GA Roofing Contractor & Local Roofing Company | iRoofer',
+  title: 'Dallas GA Roof Repair, Replacement & Storm Damage | iRoofer Contractors',
   description:
-    'Dallas GA roofing contractor — repair, replacement, storm & claims. Family-owned iRoofer since 2019. Call (470) 236-1410 or start at https://iroofercontractors.com/contact/',
+    'Dallas, GA roofing from the local shop at 152 Freedom Dr. Repair, replacement, storm damage, and insurance help. Call (470) 236-1410 or request a free inspection online.',
   path: '/dallas-ga-roofing',
 });
 
 // Qualitative FAQs — dollar ranges from prior live FAQ softened/cut (VERIFY-OR-CUT).
 const faqs = [
+  {
+    q: 'Are you based in Dallas, or just advertising here?',
+    a: 'Based here — 152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019.',
+  },
+  {
+    q: 'What’s the difference between this page and your repair/replace pages?',
+    a: 'This is the city hub (canonical for /service-areas/dallas-ga/ which 301s here). The money pages go deeper on scope, process, and next steps for each service.',
+  },
+  {
+    q: 'How do I get a quote?',
+    a: 'Contact form or phone — free photo-documented inspection, written estimate. https://iroofercontractors.com/contact/ or (470) 236-1410.',
+  },
+
   {
     q: 'What does a Dallas roofing contractor visit include?',
     a: 'On-roof look when safe, photos, and plain-English next steps — repair, monitor, or replace. We put a real figure in writing after inspection; this hub does not publish a fixed public price list.',
@@ -55,13 +68,11 @@ export default function DallasGaRoofingPage() {
           <div className="sec-head rv">
             <span className="eyebrow dark">Dallas, GA · Paulding County</span>
             <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02, marginTop: 8 }}>
-              Dallas, GA Roofing Contractor — Repair, Replacement, Storm Work
+              Dallas, GA Roof Repair, Replacement &amp; Storm Damage
             </h1>
             <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 720 }}>
-              iRoofer Contractors is a local, family-owned roofing company and roofing contractor at 152 Freedom Dr, Dallas, GA 30157.
-              Use this hub to jump to the right money page — repair, replacement, storm, claims, gutters, emergency, and new construction —
-              with free inspections and a real person on the phone at (470) 236-1410.
-              Need a leak fixed today? Start on the Roof repair Dallas GA page.
+              This is home base. iRoofer Contractors is family-owned in Dallas, GA since 2019 — Cristian Mendez and crew at 152 Freedom Dr, 30157. Licensed, bonded, and insured. If a broad “roofer” search dropped you here, skip the vanity label and go to what you actually need: repair, replacement, or storm documentation.
+              Free photo inspections and a real person on the phone at (470) 236-1410. Need a leak fixed today? Start on the Roof repair Dallas GA page.
             </p>
             <div className="cta" style={{ marginTop: 24 }}>
               <a className="bigphone" href="tel:(470) 236-1410" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }}>
