@@ -34,6 +34,7 @@ const svcs = [
     href: '/roof-replacement-dallas-ga/', cta: 'Roof replacement in Dallas, GA',
     body: 'Full tear-off to the deck, ice & water shield, synthetic underlayment and architectural shingles installed to manufacturer spec. Includes ridge venting, drip edge and a magnet-sweep cleanup of every nail.' },
   { n: '03', title: 'New Construction', tag: 'Builders', img: '/assets/service-newconstruction.jpg?v=2',
+    href: '/services/new-construction/', cta: 'Talk to a local roofer',
     body: 'We partner with builders and homeowners on new builds to install a roof that matches the design and the budget — code-compliant, inspected, and built to last.' },
   { n: '04', title: 'Storm & Insurance Claims', tag: 'Same-day when schedule allows', img: '/assets/service-repair.jpg?v=3',
     href: '/storm-damage-roof-repair-dallas-ga/', cta: 'Storm damage roof repair Dallas',
@@ -78,7 +79,7 @@ export default function HomePage() {
             <h1>Dallas GA Roof Replacement, Repair &amp; Storm Damage <br /><span className="stroke">— done local.</span></h1>
             <p className="lead">Family-owned in Dallas since 2019. Whether you need a full roof replacement, a roof leak repair, or help after hail or storm damage — Cristian Mendez’s crew walks the roof, puts it in writing, and stands behind the work.</p>
             <div className="hero-cta">
-              <a className="btn btn-solid" href="/contact/">Get a free inspection <span className="arr">→</span></a>
+              <a className="btn btn-solid" href="/contact/">Get a Free Roof Inspection <span className="arr">→</span></a>
               <a className="btn btn-ghost" href={`tel:${brand.phone}`}>Call or text {brand.phone}</a>
             </div>
             <div className="stats">
@@ -146,7 +147,7 @@ export default function HomePage() {
                   <div className="svc-body"><div className="svc-inner"><div className="row">
                     <div>
                       <p>{s.body}</p>
-                      <Link className="svc-link" href={s.href || "/#contact"}>{s.cta || "Get an estimate"} →</Link>
+                      <Link className="svc-link" href={s.href || "/contact/"}>{s.cta || "Get an estimate"} →</Link>
                     </div>
                     <Pic src={s.img} alt={`${s.title} by iRoofer Contractors in Dallas, GA`} />
                   </div></div></div>

@@ -19,12 +19,17 @@ export function generateMetadata({ params }) {
   if (!service) return {};
   // Lock "roof repair Dallas GA" on /roof-repair-dallas-ga/ — hub stays metro-wide.
   const isRepairHub = service.slug === 'roof-repair';
+  const isNc = service.slug === 'new-construction';
   return seo({
-    title: isRepairHub
+    title: isNc
+      ? 'New Construction Roofing in Dallas, GA & West Metro | iRoofer Contractors'
+      : isRepairHub
       ? `${service.title} | Metro Atlanta | iRoofer`
       : `${service.title} | Dallas, GA & Metro Atlanta`,
     description:
-      service.metaDesc ||
+      isNc
+        ? 'Builder and homeowner new-construction roofing from iRoofer in Dallas, GA. Clean installs, clear schedules, Owens Corning Preferred when specified. Call (470) 236-1410.'
+        : service.metaDesc ||
       (isRepairHub
         ? 'Roof leak, flashing, and shingle repair across Metro Atlanta. For Dallas, GA jobs see our local roof repair page. Free inspection.'
         : service.summary),
@@ -88,7 +93,12 @@ export default function ServiceDetail({ params }) {
               {hub.bullets.map((b) => <li key={b}>{b}</li>)}
             </ul>
             <p style={{ marginTop: 20 }}>
-              <a className="btn btn-ink" href={`#quote-${service.slug}`}>Get a free {service.title.toLowerCase()} quote <span className="arr">→</span></a>
+              <a className="btn btn-ink" href="/contact/">Get a free roof inspection <span className="arr">→</span></a>
+              {' '}
+              <a className="btn btn-ghost" href={`tel:${brand.phone}`} style={{ marginLeft: 8 }}>{brand.phone}</a>
+            </p>
+            <p style={{ marginTop: 12 }}>
+              <a className="btn btn-ghost" href={`#quote-${service.slug}`}>Or use the on-page quote form →</a>
               <RelatedGuides slug={service.slug} />
             </p>
           </div>

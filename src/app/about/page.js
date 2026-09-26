@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: 'About iRoofer Contractors | Dallas, GA Family Roofers',
+  title: 'About iRoofer Contractors | Family-Owned Roofing in Dallas, GA Since 2019',
   description:
-    'About iRoofer Contractors — family-owned in Dallas GA since 2019 by Cristian Mendez. Licensed, bonded, insured. Owens Corning Preferred. Call (470) 236-1410',
+    'Meet Cristian Mendez and the iRoofer crew — family-owned in Dallas, GA since 2019. Licensed, bonded, insured. Call (470) 236-1410 or visit our contact page.',
   path: '/about',
 });
 
@@ -17,13 +17,13 @@ const values = [
   { t: 'Honest Pricing', d: 'Clear, upfront estimates. No pressure, no surprise change orders for work we already scoped.' },
 ];
 
-// VERIFY-OR-CUT: 150+ roofs / 5.0 / 54+ — reused from live patterns only; confirm GBP before publish.
+// VERIFY-OR-CUT: specific review totals / star claims softened pending live GBP confirmation.
 const credentials = [
   { t: 'Owens Corning Preferred Contractor', d: 'Trained crews and manufacturer-backed shingle systems installed to spec when that system is selected.' },
   { t: 'Licensed · Bonded · Insured', d: 'Fully covered for residential roofing across our west-metro service area.' },
   { t: 'CertainTeed Storm Restoration Specialist (GA)', d: 'When the storm restoration path applies — documentation and repair that match the damage.' },
-  { t: '150+ roofs since 2019', d: 'Repairs, full replacements, storm claims, and new construction for homeowners and builders.' },
-  { t: '5.0 on Google (54+ reviews)', d: 'Neighbors in Dallas, Hiram, Douglasville, and nearby towns — read them on our Google Business Profile.' },
+  { t: 'Family-owned since 2019', d: 'Repairs, full replacements, storm claims, and new construction for homeowners and builders across the west metro.' },
+  { t: 'Strong Google reviews', d: 'Neighbors in Dallas, Hiram, Douglasville, and nearby towns — read them on our Google Business Profile rather than trusting a marketing number here.' },
 ];
 
 const process = [
@@ -38,16 +38,24 @@ const process = [
 
 const faqs = [
   {
+    q: 'Who owns iRoofer?',
+    a: 'Cristian Mendez. Family-owned since 2019.',
+  },
+  {
+    q: 'Where are you located?',
+    a: '152 Freedom Dr, Dallas, GA 30157. Phone (470) 236-1410.',
+  },
+  {
+    q: 'Are you licensed and insured?',
+    a: 'Yes — licensed, bonded, and insured.',
+  },
+  {
+    q: 'Do you only work Dallas?',
+    a: 'Dallas is home base; we regularly serve the cities listed on our service-areas hub.',
+  },
+  {
     q: 'Are you a storm-chaser outfit?',
     a: 'No. We’re based in Dallas year-round.',
-  },
-  {
-    q: 'Who shows up for the estimate?',
-    a: 'Typically Cristian or someone on his direct crew — ask when you book.',
-  },
-  {
-    q: 'Do you do commercial?',
-    a: 'Ask on the call — residential west-metro homes and builder work are the core; some commercial is handled case by case.',
   },
 ];
 
@@ -60,19 +68,15 @@ export default function AboutPage() {
           <div className="faq-grid" style={{ alignItems: 'center' }}>
             <div className="rv">
               <span className="eyebrow dark">About us</span>
-              <h1 style={{ fontSize: 'clamp(2.2rem,4.4vw,3.4rem)', fontWeight: 900 }}>About iRoofer Contractors</h1>
+              <h1 style={{ fontSize: 'clamp(2.2rem,4.4vw,3.4rem)', fontWeight: 900 }}>About iRoofer Contractors — Local Roofing from Dallas, GA</h1>
               <p style={{ color: '#52606b', fontSize: '1.05rem', marginTop: 16 }}>
-                iRoofer Contractors was founded in 2019 by {brand.owner}, a Dallas, GA roofer who
-                built the company on a simple idea: show up on time, do the work right, and stand behind it.
-                No high-pressure sales theater. No mystery change orders for work we already scoped.
-                Honest roofing from people who live and work in the same west-metro neighborhoods you do.
+                iRoofer Contractors is a family-owned roofing company based at 152 Freedom Dr, Dallas, GA 30157. Owner {brand.owner} started the business in 2019 to give west-metro homeowners a local crew that shows up, documents the roof honestly, and stands behind the work. We are licensed, bonded, and insured. We install as an Owens Corning Preferred Contractor when that product line is the right fit for the job.
               </p>
               <p style={{ color: '#52606b', marginTop: 12 }}>
-                Since then we&apos;ve completed {brand.roofsCompleted}+ roofs across Dallas, Douglasville, Hiram and the west metro —
-                with drone documentation, clear insurance scopes, and a crew that cleans up with magnets as part of how we work, not extras.
+                You already found the About page — the next useful step is a conversation about <em>your</em> roof. Free, photo-documented inspections; written scopes; clean job sites with magnetic nail sweeps; same-crew accountability.
               </p>
               <p style={{ marginTop: 20 }}>
-                <a className="btn btn-ink" href="/contact/">Talk to Cristian’s crew <span className="arr">→</span></a>
+                <a className="btn btn-ink" href="/contact/">Get your free inspection <span className="arr">→</span></a>
                 {' '}
                 <a className="btn btn-ghost" href={`tel:${brand.phone}`} style={{ marginLeft: 8 }}>{brand.phone}</a>
                 {' '}
@@ -138,7 +142,22 @@ export default function AboutPage() {
                 Service area: {brand.serviceArea.join(' · ')}.
               </p>
               <p style={{ marginTop: 16 }}>
+                <Link href="/roof-repair-dallas-ga/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Roof repair Dallas →</Link>
+              </p>
+              <p style={{ marginTop: 8 }}>
+                <Link href="/roof-replacement-dallas-ga/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Roof replacement Dallas →</Link>
+              </p>
+              <p style={{ marginTop: 8 }}>
+                <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Storm damage Dallas →</Link>
+              </p>
+              <p style={{ marginTop: 8 }}>
+                <Link href="/emergency-roof-repair-dallas-ga/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Emergency roof repair →</Link>
+              </p>
+              <p style={{ marginTop: 8 }}>
                 <Link href="/dallas-ga-roofing/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Dallas, GA roofing hub →</Link>
+              </p>
+              <p style={{ marginTop: 8 }}>
+                <Link href="/service-areas/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Service areas →</Link>
               </p>
               <p style={{ marginTop: 8 }}>
                 <Link href="/services/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Services →</Link>

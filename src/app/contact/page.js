@@ -14,8 +14,21 @@ export const metadata = seo({
 
 const faqs = [
   {
+    q: 'Is the contact form the only way to reach you?',
+    a: 'No — call (470) 236-1410. Form is best when you can share address and photos.',
+  },
+  {
+    q: 'What should I include in the form?',
+    a: 'Address, city, what you are seeing (leak, missing shingles, storm date), and photos if you have them.',
+  },
+  {
+    q: 'Where are you located?',
+    a: '152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019 by Cristian Mendez.',
+  },
+
+  {
     q: 'How fast do you reply?',
-    a: 'We aim for within one business hour during posted hours; urgent leak calls get prioritized when crews allow.',
+    a: 'We prioritize active leaks. For standard estimates, expect a prompt follow-up during business hours — no invented minute guarantees.',
   },
   {
     q: 'Do I need to be home for the inspection?',
@@ -67,6 +80,31 @@ export default function ContactPage() {
           </div>
           <div className="rv">
             <QuoteForm variant="contact" id="quote-contact" />
+          </div>
+
+          <div className="rv" style={{ marginTop: 28, maxWidth: 820, background: '#fff', border: '1px solid rgba(22,29,37,.08)', borderRadius: 8, padding: '1.4rem 1.6rem' }}>
+            <h2 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: 8 }}>You’re contacting a real Dallas shop</h2>
+            <p style={{ color: '#52606b', lineHeight: 1.75, margin: 0 }}>
+              iRoofer Contractors is family-owned since 2019 by Cristian Mendez, based at 152 Freedom Dr, Dallas, GA 30157. Licensed, bonded, and insured. Tell us whether you need roof repair, full replacement, storm documentation, or an emergency tarp — we’ll follow up with clear next steps. Prefer the phone? Call{' '}
+              <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>.
+              {' '}Owens Corning Preferred when that system fits; CertainTeed Storm Restoration Specialist (GA) when storm work is the natural fit.
+            </p>
+            <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.7 }}>
+              Helpful paths:{' '}
+              <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>repair</Link>
+              {' · '}
+              <Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>replacement</Link>
+              {' · '}
+              <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>storm</Link>
+              {' · '}
+              <Link href="/emergency-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>emergency</Link>
+              {' · '}
+              <Link href="/services/" style={{ color: 'var(--orange)', fontWeight: 700 }}>services</Link>
+              {' · '}
+              <Link href="/service-areas/" style={{ color: 'var(--orange)', fontWeight: 700 }}>service areas</Link>
+              {' · '}
+              <Link href="/about/" style={{ color: 'var(--orange)', fontWeight: 700 }}>about</Link>
+            </p>
           </div>
 
           <div style={{ marginTop: 28, textAlign: 'center' }}>
