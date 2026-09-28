@@ -6,9 +6,9 @@ const city = getCity('kennesaw');
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
-  title: 'Roofing in Kennesaw, GA | Repair & Replacement | iRoofer',
+  title: 'Kennesaw GA Roof Repair & Replacement | Storm Damage | iRoofer',
   description:
-    'Family-owned roofer serving Kennesaw, GA (Cobb County). Roof repair, full replacement and HOA-neighborhood roofing. Free inspection: (470) 236-1410.',
+    'Kennesaw roof repair, replacement, and storm help from iRoofer Contractors (Dallas, GA). Call (470) 236-1410 or book via our contact page.',
   alternates: { canonical: `${brand.url}/service-areas/kennesaw/` },
   openGraph: {
     type: 'website',
@@ -16,80 +16,96 @@ export const metadata = {
     locale: 'en_US',
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: `${brand.url}/service-areas/kennesaw/`,
-    title: 'Roofing in Kennesaw, GA — iRoofer Contractors',
+    title: 'Kennesaw GA Roof Repair & Replacement | Storm Damage | iRoofer',
     description:
-      'Kennesaw roof repair and replacement from a family-owned crew based in Dallas, GA. Free inspections, photo reports, honest answers.',
+      'Kennesaw roof repair, replacement, and storm help from iRoofer Contractors in Dallas, GA. Call (470) 236-1410.',
   },
 };
 
 const intro = [
-  'Kennesaw is one of our closest markets — a short run east from our Dallas, GA shop, which is why we can usually get someone on a Kennesaw roof quickly when water is coming in. The town is mostly 1990s and 2000s subdivision housing with HOAs, plus small commercial and retail buildings along Cobb Parkway and around Kennesaw State.',
-  'We handle roof repair, full replacement, new-construction roofing, gutters, and storm and insurance claim documentation for both homes and small business properties. Inspections are free and come back as dated photos with plain notes.',
+  'Kennesaw interest is climbing — meet that with clear repair / replace / storm paths, not a thin “we roof Kennesaw” stub. iRoofer Contractors is family-owned in Dallas since 2019: Cristian Mendez, licensed, bonded, insured. Regular Cobb County work from 152 Freedom Dr.',
+  'Ready to talk about your roof? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
 ];
 
 const sections = [
   {
-    h2: 'Subdivision roofs aging out on the same schedule',
+    h2: 'Roof repair in Kennesaw',
     paras: [
-      'Because so much of Kennesaw was built in a compressed period, entire streets reach shingle end-of-life together. If several neighbors replaced last season, yours is likely in the same window. The signs to watch are granule accumulation in gutters and at downspout outlets, curling on the south and west slopes, exposed fastener heads on ridge caps, and streaking that returns after cleaning.',
-      'HOA covenants apply in most of these neighborhoods. We put manufacturer, product line, and exact color in the written scope so your architectural request has real specifics, hold the material order until you have approval, and agree dumpster placement and crew parking before day one.',
+      'Localized leaks, wind tabs, and flashing failures — inspected and fixed with photos in the file. City money page: /roof-repair-kennesaw/. Fallback: /roof-repair-dallas-ga/. Emergency tarping when open to weather: /emergency-roof-repair-dallas-ga/.',
     ],
   },
   {
-    h2: 'Small business and light commercial roofs',
+    h2: 'Roof replacement in Kennesaw',
     paras: [
-      'Kennesaw has a lot of owner-operated buildings — shops, offices, and service bays along Cobb Parkway and the side streets off it. Those roofs are usually a mix of steep-slope shingle on the street-facing section and low-slope membrane behind it, and the failures almost always start where the two meet, or at rooftop HVAC curbs and drains.',
-      'For commercial work we schedule around your open hours where we can, keep entrances and parking clear, and document conditions for your property insurer. We will tell you honestly whether a section can be repaired or whether it is time to plan a replacement, and we do not quote a full tear-off for a problem that is confined to one detail.',
+      'Full tear-off and architectural systems; Owens Corning Preferred when that line is selected. See /roof-replacement-kennesaw/ and /roof-replacement-dallas-ga/. We flag decking issues, ventilation gaps, and cut-up roof details at inspection so the written scope matches the real house — not a surprise mid-job.',
     ],
   },
   {
-    h2: 'Storm response and honest claim advice',
+    h2: 'Storm damage',
     paras: [
-      'When a cell tracks over Cobb County, Kennesaw fills up with out-of-town crews knocking doors within days. Our position is simple: before you sign anything, get a dated photo report from a local company with a real address, and read any contingency agreement carefully — those often bind you to one contractor no matter how the claim turns out.',
-      'When we inspect after a storm we test soft metals for impact, mark bruised or torn mats on a roof diagram, photograph everything with dates, and write a scope of work an adjuster can verify. If the damage will not support a claim, we say so and quote the repair directly rather than pushing you into a filing that ends in a denial.',
+      'North Cobb cells: document, tarp, repair or replace as the roof deserves. CertainTeed Storm Restoration Specialist (GA) on storm work. Paths: /storm-damage-roof-repair-kennesaw/, /storm-damage-roof-repair-dallas-ga/, /services/roof-insurance-claims/. If damage will not support a claim, we say so and quote the repair.',
     ],
   },
   {
-    h2: 'Ventilation, gutters and roof lifespan in Georgia heat',
+    h2: 'Neighborhoods and roof types around Kennesaw',
     paras: [
-      'The single most common problem we find on Kennesaw replacements is attic ventilation that was built to the minimum and never balanced. Too little intake at the eaves with ridge vent above it starves airflow, superheats the deck through July and August, shortens shingle life, and raises cooling bills. It is inexpensive to correct during a replacement and expensive to ignore.',
-      'Gutters are the other quiet culprit. Overflowing or back-pitched gutters rot fascia and soak the ground at the foundation. We check drainage on every inspection and include gutter and downspout correction in the scope when the roof work would otherwise leave the real problem in place.',
+      'Kennesaw stock ranges from older ranch homes to steeper two-stories and newer subdivisions near the mountain and major corridors. Steeper pitches and cut-up roofs need careful flashing at walls, chimneys, and dormers. Older decks may hide prior nail-overs. We call those out at inspection so your estimate reflects the real teardown.',
+      'Shoppers often compare Cobb cities — /service-areas/marietta/, /service-areas/acworth/, hub /service-areas/. Services overview: /services/. Keep this page on repair / replacement / storm with strong CTAs to /contact/ — not a bare-“roofer” vanity dump.',
     ],
   },
 ];
 
 const neighborhoods = [
-  'Downtown Kennesaw / Main Street',
-  'Legacy Park',
-  'Barrett Parkway corridor',
-  'Kennesaw State area',
-  'Stilesboro & Old 41',
-  'Brookstone side',
+  'Downtown Kennesaw',
+  'Kennesaw Mountain side',
+  'Frey Road / Barrett Parkway edge',
+  'Jiles Road corridor',
+  'North Main / Old Highway 41',
+  'Woodstock / Acworth edges',
 ];
 
 const faq = [
   {
-    q: 'How fast can you get to Kennesaw for a leak?',
-    a: 'Kennesaw is close to our Dallas, GA base, so active leaks are usually same-day or next-morning calls. We stop the water first with emergency tarping, then schedule the permanent repair once the roof is dry enough to see the full picture.',
+    q: 'Are the Kennesaw repair/replace URLs live?',
+    a: 'Yes — /roof-repair-kennesaw/ and /roof-replacement-kennesaw/. Dallas money URLs remain useful deepen pages.',
   },
   {
-    q: 'My neighborhood has an HOA. Does that slow the job down?',
-    a: 'It adds a step, not a delay, if it is handled early. We give you the manufacturer, product line, and exact color for your architectural request, hold the material order until you have approval, and plan dumpster placement and parking to fit the covenants.',
+    q: 'Do you chase storm leads only?',
+    a: 'No — repair and planned replacement are core work; storm is one path.',
   },
   {
-    q: 'Do you work on small commercial buildings in Kennesaw?',
-    a: 'Yes — shops, offices, and service buildings with steep-slope shingle, low-slope membrane, or a combination of both. We schedule around your open hours where possible and document conditions for your property insurer.',
+    q: 'How do I schedule?',
+    a: 'https://iroofercontractors.com/contact/ or (470) 236-1410.',
   },
   {
-    q: 'A storm crew knocked on my door. Should I let them inspect?',
-    a: 'Get a second opinion from a local company with a verifiable address before you sign anything, and read contingency agreements closely. We will give you a free dated photo report of your own roof either way.',
-  },
-  {
-    q: 'Does my roof need replacing, or can it be repaired?',
-    a: 'That depends on shingle condition, flashing and valley integrity, deck condition, and ventilation — all of which we check at the free inspection. If a repair is the right answer we quote the repair. We do not sell replacements to roofs that do not need one.',
+    q: 'Where is the shop?',
+    a: '152 Freedom Dr, Dallas, GA 30157 — family-owned since 2019.',
   },
 ];
 
+const relatedLinks = [
+  { href: '/roof-repair-kennesaw/', label: 'Roof repair in Kennesaw' },
+  { href: '/roof-replacement-kennesaw/', label: 'Roof replacement in Kennesaw' },
+  { href: '/storm-damage-roof-repair-kennesaw/', label: 'Storm damage Kennesaw' },
+  { href: '/roof-repair-dallas-ga/', label: 'Roof repair Dallas GA' },
+  { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement Dallas GA' },
+  { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage Dallas GA' },
+  { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair' },
+  { href: '/services/roof-insurance-claims/', label: 'Insurance claims help' },
+  { href: '/service-areas/marietta/', label: 'Marietta service area' },
+  { href: '/contact/', label: 'Contact iRoofer' },
+];
+
 export default function KennesawPage() {
-  return <CityAreaPage city={city} intro={intro} sections={sections} neighborhoods={neighborhoods} faq={faq} />;
+  return (
+    <CityAreaPage
+      city={city}
+      h1="Roof Repair, Replacement & Storm Damage in Kennesaw, GA"
+      intro={intro}
+      sections={sections}
+      neighborhoods={neighborhoods}
+      faq={faq}
+      relatedLinks={relatedLinks}
+    />
+  );
 }

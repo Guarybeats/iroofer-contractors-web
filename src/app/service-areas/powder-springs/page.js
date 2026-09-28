@@ -6,9 +6,9 @@ const city = getCity('powder-springs');
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
-  title: 'Roofing in Powder Springs, GA | Repair & Replacement | iRoofer',
+  title: 'Powder Springs GA Roof Repair & Replacement | Storm Damage | iRoofer',
   description:
-    'Family-owned roofer serving Powder Springs, GA (Cobb County). Ranch and two-story replacements, limb damage repair, gutters. Free inspection: (470) 236-1410.',
+    'Powder Springs roofing from iRoofer Contractors in Dallas, GA — repair, replacement, storm help. Call (470) 236-1410 or visit our contact page.',
   alternates: { canonical: `${brand.url}/service-areas/powder-springs/` },
   openGraph: {
     type: 'website',
@@ -16,80 +16,95 @@ export const metadata = {
     locale: 'en_US',
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: `${brand.url}/service-areas/powder-springs/`,
-    title: 'Roofing in Powder Springs, GA — iRoofer Contractors',
+    title: 'Powder Springs GA Roof Repair & Replacement | Storm Damage | iRoofer',
     description:
-      'Powder Springs roof repair, replacement and limb-damage response from a family-owned crew based in Dallas, GA. Free photo reports.',
+      'Powder Springs roofing from iRoofer Contractors in Dallas, GA — repair, replacement, storm help. Call (470) 236-1410.',
   },
 };
 
 const intro = [
-  'iRoofer Contractors serves Powder Springs from our shop in Dallas, GA. Powder Springs is a mature Cobb County town — a lot of 1970s and 1980s ranches and split-levels alongside newer two-story subdivisions, and a heavy tree canopy over most of it.',
-  'We handle roof repair, full replacement, new-construction roofing, gutters, and storm and insurance claim documentation. Inspections are free and come back as dated photos with plain notes on what needs doing now and what can wait a season.',
+  'Powder Springs is on our regular west-metro map from Dallas. iRoofer Contractors — family-owned since 2019 by Cristian Mendez — handles repair, full replacement, and storm documentation. Licensed, bonded, insured. Shop: 152 Freedom Dr, Dallas, GA 30157.',
+  'Ready to talk about your roof? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
 ];
 
 const sections = [
   {
-    h2: 'Trees: the biggest single risk to a Powder Springs roof',
+    h2: 'Roof repair in Powder Springs',
     paras: [
-      'The tree canopy that makes these neighborhoods pleasant is also the main thing that damages their roofs. We see three patterns repeatedly: abrasion where limbs rub shingles in the wind and scrub the granules off in a stripe, impact damage from falling limbs during summer storms, and constant leaf litter packing valleys and gutters so water backs up under the shingles instead of shedding.',
-      'Limb strikes need care because the visible dent is not always the extent of the damage — decking can be cracked under an intact-looking shingle. When we inspect after a limb comes down we check the deck from the attic side where we can get access, not just the surface, and we photograph everything for your claim.',
+      'Leaks at penetrations, aging flashing, and wind-lifted tabs are the usual suspects. We photograph the failure and repair it so you are not repainting ceilings every season. City money page: /roof-repair-powder-springs/. Dallas fallback: /roof-repair-dallas-ga/.',
     ],
   },
   {
-    h2: 'Ranches, split-levels and steep two-stories',
+    h2: 'Roof replacement',
     paras: [
-      'Powder Springs housing spans a wide range of roof geometry, and the right approach differs across it. Single-slope ranch roofs are straightforward but often have low-slope porch or carport sections tied into them, which need a different detail than the main field — a place where sealant gets used as a shortcut and fails.',
-      'Split-levels bring their own weak point: the tie-in where the upper roof meets the lower wall, which is where a large share of local leaks originate. On the newer two-story subdivisions the challenges are pitch and access rather than detailing. We quote the actual geometry of your house instead of pricing by square footage alone, and steep-slope staging is in the number from the start.',
+      'End-of-life roofs get a full tear-off and architectural install. Owens Corning Preferred when that line is the install. See /roof-replacement-powder-springs/ and /roof-replacement-dallas-ga/.',
     ],
   },
   {
-    h2: 'Older roofs, previous layers and deck condition',
+    h2: 'Storm damage',
     paras: [
-      'On homes of this age we frequently find a previous shingle layer left in place under the current one, plank decking rather than plywood, missing or undersized drip edge, and chimney flashing that was sealed with caulk instead of stepped in properly. All of it affects how a new roof fastens and how long it lasts.',
-      'We look for these signs at the estimate and tell you what we expect to find, so the price reflects the real job. Once the deck is exposed we photograph it — if sheathing or rot repair is needed, you see the reason before you approve it.',
+      'After Cobb/Paulding-edge cells, we inspect for uplift and impact, tarp if needed, and document for insurance when appropriate. CertainTeed Storm Restoration Specialist (GA) on storm scopes. Paths: /storm-damage-roof-repair-powder-springs/, /storm-damage-roof-repair-dallas-ga/, /services/roof-insurance-claims/, /emergency-roof-repair-dallas-ga/.',
     ],
   },
   {
-    h2: 'Ventilation, gutters and cooling bills',
+    h2: 'What Powder Springs roofs tend to need',
     paras: [
-      'Attic ventilation on homes of this era was usually built to the minimum, and decades of added insulation have often blocked what intake there was. The result is a superheated attic in July, shingles aging from underneath, and an HVAC system fighting the roof all afternoon.',
-      'We balance intake and exhaust during replacements, which is inexpensive at that point and awkward to retrofit later. We also check gutter pitch and downspout discharge on every inspection — under a heavy canopy, gutters clog faster than owners expect, and overflow rots fascia and soaks the foundation.',
+      'Many Powder Springs homes sit in wooded lots where leaf load, shade, and limb risk matter as much as shingle age. Gutters clog, valleys hold debris, and soft spots show up where water sat too long. When we inspect, we look at the roof system — shingles, flashing, ventilation, and drainage — not just the color of the granules from the street.',
+      'If gutters are part of the problem, see /gutter-repair-replacement-powder-springs/ or /gutter-repair-replacement-dallas-ga/. Nearby cities: Dallas, Hiram, Marietta, Austell, Douglasville — /service-areas/. Use the contact form with your address and a few photos, or call (470) 236-1410. No invented pricing tables — the written estimate after we see the roof is the number that matters.',
     ],
   },
 ];
 
 const neighborhoods = [
   'Downtown Powder Springs',
-  'Silver Comet Trail corridor',
-  'Macland Road area',
+  'Macland Road corridor',
+  'C.H. James Parkway area',
   'Lost Mountain side',
-  'Florence Road',
-  'Hiram–Powder Springs Road',
+  'Dallas Highway edge',
+  'Brownsville Road',
 ];
 
 const faq = [
   {
-    q: 'A limb fell on my roof. Do I need a full replacement?',
-    a: 'Not usually, but it needs a proper look. The visible damage can hide cracked decking underneath, so we inspect the surface and the deck from the attic side where access allows, photograph everything for your claim, and quote the repair if a repair will do.',
+    q: 'How far is Powder Springs from your shop?',
+    a: 'Short drive from Dallas — we schedule Powder Springs regularly.',
   },
   {
-    q: 'Branches are touching my roof. Does that really matter?',
-    a: 'Yes. Limbs rubbing in the wind scrub granules off the shingles in a stripe, which shortens roof life in that area significantly. Trimming back overhanging limbs is one of the cheapest things you can do for your roof.',
+    q: 'Do you have a Powder Springs repair URL?',
+    a: 'Yes — /roof-repair-powder-springs/. Dallas money URLs also work as deeper process pages.',
   },
   {
-    q: 'I have a carport with a flat roof tied into my shingles. Can you do both?',
-    a: 'Yes — and that transition is exactly where shortcuts fail. Low-slope sections need a different detail than the steep field above them, not sealant over the seam.',
+    q: 'Emergency leak?',
+    a: 'Call (470) 236-1410 — tarping priority when the roof is open.',
   },
   {
-    q: 'My house was built in the 1970s. What should I expect?',
-    a: 'Commonly a previous shingle layer left in place, plank decking, missing drip edge, or caulked chimney flashing. We flag what we expect at the estimate and photograph the deck once it is open, so any additional work is visible rather than asserted.',
-  },
-  {
-    q: 'Why is my upstairs so hot even with good insulation?',
-    a: 'Usually blocked or undersized attic intake ventilation, often insulation packed over the soffit vents. We check intake and exhaust balance on every inspection and correct it during a replacement.',
+    q: 'Licensed?',
+    a: 'Licensed, bonded, and insured. Family-owned since 2019.',
   },
 ];
 
+const relatedLinks = [
+  { href: '/roof-repair-powder-springs/', label: 'Roof repair in Powder Springs' },
+  { href: '/roof-replacement-powder-springs/', label: 'Roof replacement in Powder Springs' },
+  { href: '/storm-damage-roof-repair-powder-springs/', label: 'Storm damage Powder Springs' },
+  { href: '/roof-repair-dallas-ga/', label: 'Roof repair Dallas GA' },
+  { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement Dallas GA' },
+  { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage Dallas GA' },
+  { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair' },
+  { href: '/services/roof-insurance-claims/', label: 'Insurance claims help' },
+  { href: '/contact/', label: 'Contact iRoofer' },
+];
+
 export default function PowderSpringsPage() {
-  return <CityAreaPage city={city} intro={intro} sections={sections} neighborhoods={neighborhoods} faq={faq} />;
+  return (
+    <CityAreaPage
+      city={city}
+      h1="Roof Repair, Replacement & Storm Damage in Powder Springs, GA"
+      intro={intro}
+      sections={sections}
+      neighborhoods={neighborhoods}
+      faq={faq}
+      relatedLinks={relatedLinks}
+    />
+  );
 }

@@ -15,7 +15,8 @@ import { brand, services, cities, cityPath } from '@/lib/brand';
 
 const MUTED = '#52606b';
 
-export default function CityAreaPage({ city, intro, sections = [], neighborhoods = [], faq = [], relatedLinks = [] }) {
+export default function CityAreaPage({ city, intro, sections = [], neighborhoods = [], faq = [], relatedLinks = [], h1, showLocalNote = true }) {
+  const heading = h1 || `Roofing in ${city.name}, ${city.state}`;
   return (
     <section className="sec-light sec-pad">
       <div className="tex" aria-hidden="true" />
@@ -31,16 +32,23 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
         <div style={{ marginTop: 18 }}>
           <span className="eyebrow dark">Service area · {city.county}</span>
           <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02 }}>
-            Roofing in {city.name}, {city.state}
+            {heading}
           </h1>
           {intro.map((p, i) => (
             <p key={i} style={{ color: MUTED, fontSize: i === 0 ? '1.1rem' : '1.02rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
               {p}
             </p>
           ))}
+          <p style={{ marginTop: 18, maxWidth: 680 }}>
+            <a className="btn btn-ink" href="/contact/">Get a free roof inspection <span className="arr">→</span></a>
+            {' '}
+            <a className="btn btn-ghost" href={`tel:${brand.phone}`} style={{ marginLeft: 8 }}>{brand.phone}</a>
+          </p>
+          {showLocalNote && city.localNote ? (
           <p style={{ color: MUTED, fontSize: '1.02rem', marginTop: 16, maxWidth: 680, borderLeft: '3px solid var(--orange)', paddingLeft: 14, lineHeight: 1.7 }}>
             {city.localNote}
           </p>
+          ) : null}
         </div>
 
         <CityMap city={city.name} state={city.state} />
@@ -88,7 +96,7 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
               <li>Honest upfront pricing — no surprise line items.</li>
               <li>Storm &amp; insurance claim help, including adjuster meetings.</li>
               <li>Daily cleanup and magnetic nail sweeps on every job.</li>
-              <li>5★ rated on Google with {brand.reviewCount} verified reviews.</li>
+              <li>Strong Google reviews from west-metro neighbors — family-owned accountability since {brand.founded}.</li>
             </ul>
             {neighborhoods.length > 0 && (
               <p style={{ marginTop: 18, color: MUTED }}>
@@ -97,9 +105,14 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
               </p>
             )}
             <p style={{ marginTop: 18 }}>
-              <a className="btn btn-ink" href="/estimator/">
-                Get an instant roof estimate <span className="arr">→</span>
+              <a className="btn btn-ink" href="/contact/">
+                Talk about your roof <span className="arr">→</span>
               </a>
+              {' '}
+              <a className="btn btn-ghost" href={`tel:${brand.phone}`} style={{ marginLeft: 8 }}>{brand.phone}</a>
+            </p>
+            <p style={{ marginTop: 14 }}>
+              <a className="btn btn-ghost" href="/estimator/">Planning estimator (not a quote) →</a>
             </p>
             <p style={{ marginTop: 14, color: MUTED }}>
               Other nearby areas:{' '}

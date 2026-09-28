@@ -116,7 +116,7 @@ export default function RootLayout({ children }) {
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11 11 0 0 0 .56 3.5 1 1 0 0 1-.25 1Z"/></svg>
                 {brand.phone}
               </a>
-              <a className="btn btn-solid" href="/#contact">Free Estimate <span className="arr">→</span></a>
+              <a className="btn btn-solid" href="/contact/">Free Estimate <span className="arr">→</span></a>
               <button className="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
             </div>
           </div>
@@ -133,7 +133,7 @@ export default function RootLayout({ children }) {
           <a href="/#reviews">Reviews</a>
           <a href="/blog/">Blog</a>
           <a href="/#faq">FAQ</a>
-          <a href="/#contact">Contact</a>
+          <a href="/contact/">Contact</a>
           <a className="mphone" href={`tel:${brand.phone}`}>{brand.phone}</a>
         </nav>
 
@@ -173,7 +173,7 @@ export default function RootLayout({ children }) {
                 <a href="/blog/">Blog</a>
                 <a href="/privacy/">Privacy Policy</a>
                 <a href="/terms/">Terms of Service</a>
-                <a href="/#contact">Contact</a>
+                <a href="/contact/">Contact</a>
               </div>
               <div className="foot-col">
                 <h2>Service Areas</h2>
@@ -199,7 +199,7 @@ export default function RootLayout({ children }) {
                 <h2>Get in touch</h2>
                 <a href={`tel:${brand.phone}`}>{brand.phone}</a>
                 <a href={`mailto:${brand.email}`}>{brand.email}</a>
-                <a href="/#contact">152 Freedom Dr<br />Dallas, GA 30157</a>
+                <a href="/contact/">152 Freedom Dr<br />Dallas, GA 30157</a>
                 <p className="lic foot-hours">
                   {brand.hours.weekdays}<br />
                   {brand.hours.saturday}<br />

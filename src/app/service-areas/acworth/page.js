@@ -6,9 +6,9 @@ const city = getCity('acworth');
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
-  title: 'Roofing in Acworth, GA | Repair & Replacement | iRoofer',
+  title: 'Acworth GA Roof Repair, Replacement & Emergency Help | iRoofer',
   description:
-    'Family-owned roofer serving Acworth, GA (Cobb County). Leak tracing, tear-offs, ventilation, gutters and storm claim help. Free inspection: (470) 236-1410.',
+    'Acworth roof repair, replacement, storm damage, and emergency tarping from iRoofer in Dallas, GA. Call (470) 236-1410 or contact us online.',
   alternates: { canonical: `${brand.url}/service-areas/acworth/` },
   openGraph: {
     type: 'website',
@@ -16,80 +16,95 @@ export const metadata = {
     locale: 'en_US',
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: `${brand.url}/service-areas/acworth/`,
-    title: 'Roofing in Acworth, GA — iRoofer Contractors',
+    title: 'Acworth GA Roof Repair, Replacement & Emergency Help | iRoofer',
     description:
-      'Acworth roof repair, replacement and leak detection from a family-owned crew based in Dallas, GA. Free photo-documented inspections.',
+      'Acworth roof repair, replacement, storm damage, and emergency tarping from iRoofer in Dallas, GA. Call (470) 236-1410.',
   },
 };
 
 const intro = [
-  'iRoofer Contractors works Acworth from our shop in Dallas, GA, a short run west. Acworth is a lake town with two very different sides to it: the older cottages and in-town streets near the historic depot, and the lakefront and near-lake homes around Lake Acworth and Lake Allatoona, many of them heavily shaded by mature hardwoods.',
-  'We handle roof repair, full replacement, new-construction roofing, gutters, and storm and insurance claim documentation. Every Acworth inspection is free and comes back as dated photos with plain notes, so you can see the roof for yourself instead of taking a salesman at his word.',
+  'Acworth searches often mix “roof repair near me” with emergency intent — active leaks, overnight wind, a tree limb. iRoofer Contractors answers from Dallas, GA (152 Freedom Dr): family-owned since 2019, licensed, bonded, insured. We tarp when the roof is open, then schedule the permanent fix.',
+  'Ready to talk about your roof? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
 ];
 
 const sections = [
   {
-    h2: 'Shade, moisture and lake-adjacent roofs',
+    h2: 'Emergency and urgent leaks in Acworth',
     paras: [
-      'Heavy tree cover is the defining feature of roofing near the lakes. Shaded north-facing slopes stay damp long after the rest of the roof dries, which encourages algae streaking and moss along shingle edges, and constant leaf litter in valleys holds water where it should be shedding. None of that is cosmetic — a valley packed with debris backs water under the shingles.',
-      'When we inspect an Acworth roof we look specifically at valley cleanliness, the condition of shingle edges on shaded slopes, and whether overhanging limbs are abrading the surface every time the wind blows. Trimming back branches and keeping valleys clear buys years of roof life for almost nothing, and we will tell you that even when it means we do not sell you a roof this year.',
+      'If water is coming in now, call (470) 236-1410. Priority is stop the water — tarping and temporary protection — then a dry-weather inspection for the permanent repair. Process page: /emergency-roof-repair-dallas-ga/.',
+      'We do not invent minute-by-minute response guarantees in copy. We do prioritize open roofs and active leaks, and we will tell you honestly what we can do the same day.',
     ],
   },
   {
-    h2: 'Leak tracing on complicated older rooflines',
+    h2: 'Standard roof repair',
     paras: [
-      'In-town Acworth homes have often been added onto more than once, and each addition creates a tie-in where a lower roof meets a wall. In our experience that flashing — not the field of the roof — is where most Acworth leaks start, along with chimney counter-flashing that was sealed with caulk rather than properly stepped in.',
-      'A stain on a ceiling is rarely directly under the entry point, so we trace the actual water path from the attic side where we can, rather than patching the nearest visible spot and hoping. That is slower on the day and cheaper over the life of the roof.',
+      'Flashing, boots, and localized shingle failure still make up plenty of Acworth calls that are not true emergencies. See /roof-repair-acworth/ and /roof-repair-dallas-ga/ for how we find the source and fix it so a small problem stays small.',
     ],
   },
   {
-    h2: 'Clean tear-offs on tight and sloped lots',
+    h2: 'Replacement & storm',
     paras: [
-      'Lake-area lots are frequently narrow, sloped, or landscaped right up to the drip edge, and driveways are often shared or steep. We plan staging before the truck arrives: tarps and plywood over beds and walkways, protection around A/C units and boat trailers, materials placed where they will not block access, and rolling magnets across the whole perimeter at the end of every day — twice on the final day.',
-      'Docks, decks, and lawns near the water get the same care. Debris that ends up in the lake is not something a magnet fixes later.',
+      'End-of-life roofs: /roof-replacement-acworth/ and /roof-replacement-dallas-ga/. Owens Corning Preferred on qualifying installs. Storm cells across north Cobb: /storm-damage-roof-repair-acworth/, /storm-damage-roof-repair-dallas-ga/, and /services/roof-insurance-claims/. CertainTeed Storm Restoration Specialist (GA) on storm scopes — dated photos, roof diagram, adjuster meeting on request.',
     ],
   },
   {
-    h2: 'Ventilation upgrades that actually change the numbers',
+    h2: 'Nearby and why a Dallas shop covers Acworth',
     paras: [
-      'Most Acworth homes we open have unbalanced attic ventilation — a ridge vent installed above soffits that were never opened up enough to feed it. The result is a superheated attic in a Georgia summer, shingles cooking from underneath, and an HVAC system working against the roof.',
-      'We correct intake and exhaust together during a replacement, which is inexpensive at that stage and impossible to retrofit cheaply afterwards. We also check that gutters and downspouts discharge well away from the foundation, since a lake-country lot with poor drainage will find its way into a crawlspace eventually.',
+      'Kennesaw, Marietta, Canton edges, and the Dallas hub — /service-areas/kennesaw/, /service-areas/marietta/, /service-areas/, /dallas-ga-roofing/. Cristian Mendez’s crew runs the same cleanup standards (magnetic nail sweeps, daily tidy) whether the job is five minutes or a longer drive from 152 Freedom Dr.',
     ],
   },
 ];
 
 const neighborhoods = [
-  'Historic downtown & the depot',
-  'Lake Acworth',
-  'Lake Allatoona shoreline',
-  'Cobb Parkway / Old 41',
-  'Baker Road area',
-  'Brookstone side',
+  'Downtown Acworth / Main Street',
+  'Lake Acworth area',
+  'Highway 92 corridor',
+  'Baker Road / Cowan Road',
+  'North Acworth',
+  'Allatoona edge',
 ];
 
 const faq = [
   {
-    q: 'Why does the shaded side of my Acworth roof look so much worse?',
-    a: 'Shaded slopes stay wet longer, which encourages algae, moss and debris buildup along shingle edges and in valleys. It often looks like failure when it is really a moisture and maintenance issue — an inspection will tell you which one you have.',
+    q: 'Do you handle after-hours emergencies?',
+    a: 'Call the main number — active leaks and open roofs are prioritized. We will tell you what we can do same day.',
   },
   {
-    q: 'Should I have trees trimmed back before a new roof?',
-    a: 'Yes, wherever limbs touch or overhang the roof. Branches abrade shingles in the wind and drop the debris that clogs valleys and gutters. Trimming before a replacement protects the new roof from day one.',
+    q: 'Is Acworth in your regular area?',
+    a: 'Yes.',
   },
   {
-    q: 'My ceiling stain is in the middle of the room. Can you find the leak?',
-    a: 'That is normal — water travels along decking and framing before it shows. We trace the path from the attic side where access allows, so the repair addresses the entry point rather than the stain.',
+    q: 'Insurance after a storm?',
+    a: 'We document and can meet adjusters; we also say when a claim will not hold.',
   },
   {
-    q: 'How do you protect landscaping and the lawn on a tear-off?',
-    a: 'Tarps and plywood over beds and walkways, protection around A/C units and anything parked nearby, staged material placement, and rolling magnet sweeps across the perimeter at the end of each day.',
-  },
-  {
-    q: 'Do you handle storm claims in Cobb County?',
-    a: 'Yes. We document damage with dated photos and a roof diagram, test soft metals for impact, write the scope of work, and meet your adjuster on site. If the damage will not support a claim, we tell you and quote the repair instead.',
+    q: 'Licensed and insured?',
+    a: 'Yes — licensed, bonded, and insured. Family-owned since 2019.',
   },
 ];
 
+const relatedLinks = [
+  { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas GA' },
+  { href: '/roof-repair-acworth/', label: 'Roof repair in Acworth' },
+  { href: '/roof-replacement-acworth/', label: 'Roof replacement in Acworth' },
+  { href: '/storm-damage-roof-repair-acworth/', label: 'Storm damage Acworth' },
+  { href: '/roof-repair-dallas-ga/', label: 'Roof repair Dallas GA' },
+  { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage Dallas GA' },
+  { href: '/services/roof-insurance-claims/', label: 'Insurance claims help' },
+  { href: '/service-areas/kennesaw/', label: 'Kennesaw service area' },
+  { href: '/contact/', label: 'Contact iRoofer' },
+];
+
 export default function AcworthPage() {
-  return <CityAreaPage city={city} intro={intro} sections={sections} neighborhoods={neighborhoods} faq={faq} />;
+  return (
+    <CityAreaPage
+      city={city}
+      h1="Roof Repair, Replacement & Storm Damage in Acworth, GA"
+      intro={intro}
+      sections={sections}
+      neighborhoods={neighborhoods}
+      faq={faq}
+      relatedLinks={relatedLinks}
+    />
+  );
 }

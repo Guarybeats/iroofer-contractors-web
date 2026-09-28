@@ -5,9 +5,9 @@ import { notFound } from 'next/navigation';
 import { seo } from '@/lib/seo';
 
 export const metadata = seo({
-  title: 'New Construction Roofing — iRoofer Contractors Dallas, GA',
+  title: 'New Construction Roofing in Dallas, GA & West Metro | iRoofer Contractors',
   description:
-    'Building in North Georgia? Complete new-construction roofing — design-matched shingles, code-compliant installation, builder coordination.',
+    'Builder and homeowner new-construction roofing from iRoofer in Dallas, GA. Clean installs, clear schedules. Call (470) 236-1410 or contact us.',
   path: '/new-construction',
 });
 
@@ -73,7 +73,7 @@ export default function NewConstructionPage() {
                 </a>
                 <Link
                   className="btn btn-solid"
-                  href="/#contact"
+                  href="/contact/"
                   style={{ marginLeft: 16, verticalAlign: 'middle' }}
                 >
                   Request a consultation <span className="arr">→</span>

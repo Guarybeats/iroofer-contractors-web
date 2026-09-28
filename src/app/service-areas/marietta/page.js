@@ -6,9 +6,9 @@ const city = getCity('marietta');
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
-  title: 'Roofing in Marietta, GA | Repair & Replacement | iRoofer',
+  title: 'Roof Repair & Replacement in Marietta, GA | Storm Damage | iRoofer',
   description:
-    'Family-owned roofer serving Marietta, GA (Cobb County). Older-home repairs, full replacements, new construction, storm claims. Free inspection: (470) 236-1410.',
+    'Local Marietta roof repair, full replacement, and storm damage help from iRoofer Contractors in Dallas, GA. Free photo inspection. Call (470) 236-1410 or contact us online.',
   alternates: { canonical: `${brand.url}/service-areas/marietta/` },
   openGraph: {
     type: 'website',
@@ -16,44 +16,44 @@ export const metadata = {
     locale: 'en_US',
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: `${brand.url}/service-areas/marietta/`,
-    title: 'Roofing in Marietta, GA — iRoofer Contractors',
+    title: 'Roof Repair & Replacement in Marietta, GA | Storm Damage | iRoofer',
     description:
       'Marietta roof repair, replacement and storm claim help from a family-owned crew based in Dallas, GA. Free inspections with photo reports.',
   },
 };
 
 const intro = [
-  'iRoofer Contractors has worked Marietta for years out of our Dallas, GA shop. No other city on our map has this much variety: 1920s and 1950s homes in and around the Marietta Square, mid-century ranches off Roswell Road and Powers Ferry, and new infill construction on the same streets. A scope that fits one of those roofs is wrong for the other two.',
-  'We handle roof repair, full replacement, new-construction roofing, gutters, and storm and insurance claim documentation. Inspections are free, photo-documented, and honest about what the roof actually needs — including when the answer is that it needs nothing yet.',
+  'Marietta homeowners searching for a “roofer” usually need something more specific: a leak fixed this week, a worn roof replaced before the next cell, or storm damage documented for insurance. iRoofer Contractors — family-owned in Dallas, GA since 2019 — works Marietta regularly from our shop at 152 Freedom Dr. We are licensed, bonded, and insured, and we install as an Owens Corning Preferred Contractor when architectural shingles are the right fit.',
+  'If you landed here from a broad “roofer” search, use the paths below. Repair, replacement, and storm are the jobs we actually schedule — not a generic listing. Ready to talk? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
 ];
 
 const sections = [
   {
-    h2: 'Older Marietta homes: what we find under the shingles',
+    h2: 'Roof repair in Marietta (keep a small problem small)',
     paras: [
-      'On pre-1970s Marietta houses the shingles are rarely the whole story. We regularly open roofs to find plank decking rather than plywood, layers from a previous nail-over, undersized or missing drip edge, and chimney flashing that was sealed instead of stepped. Any of those change the job, so we look for them at the inspection and put the likely findings in the estimate rather than surprising you mid-tear-off.',
-      'Plank decking in particular matters: gaps between boards affect how shingles fasten and may require sheathing over the planks. We tell you before we start whether we expect that cost, and we photograph the deck once it is exposed so you can see exactly what you are paying for.',
+      'Active leaks, lifted ridge caps, failed step flashing at walls and chimneys, and worn valleys are the calls we take most often east of our Dallas shop. On older Square-area and mid-century Cobb County homes, the leak source is often flashing or a tie-in — not the whole shingle field. We inspect free, photograph what we find, and quote the repair in writing before anyone climbs with a nail gun.',
+      'For open roofs or active water, we prioritize tarping first, then schedule the permanent fix once conditions are dry enough to see the full picture. City money page: /roof-repair-marietta/. Emergency path: /emergency-roof-repair-dallas-ga/. Dallas deepen: /roof-repair-dallas-ga/.',
     ],
   },
   {
-    h2: 'Marietta Square, historic character and matching a roof to the house',
+    h2: 'Full roof replacement in Marietta',
     paras: [
-      'Around the Square and in the older neighborhoods nearby, a roof is part of the architecture. Color and shingle profile matter, and on some properties exterior changes come with local review or neighborhood expectations. We bring shingle boards to the inspection, spec the exact product and color in writing, and pick options that suit the period of the house instead of defaulting to the same builder-grade shingle on every job.',
-      'Steep, cut-up rooflines are common in this part of town — dormers, porch roofs, and low-slope rear additions tied into steep main roofs. Those tie-ins need the right detail for each slope, not one product stretched across both.',
+      'When the roof is at end of life — widespread granule loss, multiple prior repairs, soft decking, or insurance settling a full replace — we tear off, inspect the deck, and install architectural asphalt with details that match the house. Historic and older Marietta stock often means plank decking, nail-over layers, or steep cut-up roofs with dormers; we flag those at inspection so the estimate reflects the real job.',
+      'Manufacturer warranty on the shingles plus our written workmanship coverage comes with the install. Owens Corning Preferred status applies when we install that line. Deepen: /roof-replacement-marietta/ and /roof-replacement-dallas-ga/.',
     ],
   },
   {
-    h2: 'Cobb County storms and insurance claim documentation',
+    h2: 'Storm damage & insurance documentation (Cobb County)',
     paras: [
-      'Marietta sits in the path of the spring and summer cells that track across Cobb County, and wind damage here is often partial: a few slopes stripped, ridge caps lifted, or fasteners backed out while the rest of the roof looks untouched. That is exactly the kind of loss that gets underpaid when it is poorly documented.',
-      'We photograph with dates, mark damage on a roof diagram, test soft metals for impact, write a scope of work an adjuster can verify, and meet the adjuster on site. If the damage does not support a claim, we say so and quote the repair directly — a denied claim costs you time and gets your roof no closer to fixed.',
+      'Spring and summer cells track across Cobb County often enough that partial wind damage is common: a few slopes stripped, ridge caps lifted, soft metals dinged while the rest looks fine from the street. That is exactly the loss that gets underpaid when photos and scopes are thin.',
+      'We photograph with dates, mark damage on a roof diagram, write a scope an adjuster can verify, and meet the adjuster on site when you want us there. If the damage will not support a claim, we say so and quote the repair directly. CertainTeed Storm Restoration Specialist (GA) credentials apply when storm work is the natural fit. Related: /storm-damage-roof-repair-marietta/, /storm-damage-roof-repair-dallas-ga/, and /services/roof-insurance-claims/.',
     ],
   },
   {
-    h2: 'Ventilation and the leaks that are not shingle failures',
+    h2: 'Neighborhoods & roof types we see in Marietta',
     paras: [
-      'Two Marietta patterns come up again and again in our repair calls. The first is bonus rooms and additions where a lower roof meets a wall — the tie-in flashing there fails long before the shingles do. The second is attic ventilation that was never sized correctly, which bakes the underside of the deck through Georgia summers, shortens shingle life, and drives up cooling costs.',
-      'We correct intake and exhaust ventilation as part of every replacement, rebuild tie-in and step flashing instead of caulking it, and confirm gutters and downspouts move water away from the foundation. Repairing the roof and leaving the airflow and drainage broken just books the next repair.',
+      'Marietta Square & historic corridors — period-sensitive color/profile choices; steep, cut-up roofs. East Cobb / Roswell Road / Powers Ferry — mid-century and later ranch and two-story stock. Whitlock Avenue corridor & west Marietta. Kennesaw Mountain side neighborhoods.',
+      'Older homes: expect plank decking and sealed chimney flashing conversations at inspection. Newer builds: ventilation and gutter discharge matter as much as the shingle brand. Gutters: /gutter-repair-replacement-marietta/ or /gutter-repair-replacement-dallas-ga/. We are Cristian Mendez’s family-owned crew — same cleanup standards and magnetic nail sweeps whether the job is in Marietta or five minutes from our Dallas shop.',
     ],
   },
 ];
@@ -69,27 +69,45 @@ const neighborhoods = [
 
 const faq = [
   {
-    q: 'My Marietta home was built in the 1950s. Does that complicate a roof replacement?',
-    a: 'Sometimes, and it is better to know up front. Older Marietta roofs often have plank decking, previous nail-over layers, missing drip edge, or sealed chimney flashing. We check for all of that at the free inspection and tell you what we expect to find, so the estimate reflects the real job.',
+    q: 'Do you chase bare “roofer” leads, or do you actually work Marietta jobs?',
+    a: 'We work Marietta regularly — repair, replacement, storm, gutters, and new-construction roofs. Broad search terms often land here; we redirect you to the service that matches your roof.',
   },
   {
-    q: 'Can you match a shingle to an older or historic Marietta home?',
-    a: 'Yes. We bring shingle boards to the inspection, discuss profile and color against the age and style of the house, and put the exact product and color in the written scope — useful if your property is subject to local review or neighborhood expectations.',
+    q: 'How fast can you get to a Marietta leak?',
+    a: 'Active leaks are priority. We tarp when the roof is open to weather, then schedule the permanent repair once we can inspect dry.',
   },
   {
-    q: 'Do you handle storm and insurance claims in Cobb County?',
-    a: 'Yes. We document damage with dated photos and a roof diagram, write the scope of work, meet your adjuster on site, and handle supplements. If the damage will not support a claim, we tell you and quote the repair instead.',
+    q: 'Do you help with Cobb County insurance claims?',
+    a: 'Yes — dated photos, roof diagram, written scope, adjuster meeting on request. If it will not support a claim, we tell you and quote repair.',
   },
   {
-    q: 'How quickly can you get to a Marietta leak?',
-    a: 'Active leaks are our priority calls — we respond for emergency tarping and get the water stopped first, then schedule the permanent repair once we can see the full picture in dry conditions.',
-  },
-  {
-    q: 'Are you local, or do you just advertise in Marietta?',
-    a: 'We are based in Dallas, GA — a real shop about 25 miles west — and Marietta has been part of our regular service area for years. You can see our Google reviews and reach the same crew chief through the whole job.',
+    q: 'Are you local?',
+    a: 'Yes. Shop at 152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019. Licensed, bonded, insured.',
   },
 ];
 
+const relatedLinks = [
+  { href: '/roof-repair-marietta/', label: 'Roof repair in Marietta' },
+  { href: '/roof-replacement-marietta/', label: 'Roof replacement in Marietta' },
+  { href: '/storm-damage-roof-repair-marietta/', label: 'Storm damage roof repair Marietta' },
+  { href: '/roof-repair-dallas-ga/', label: 'Roof repair Dallas GA' },
+  { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement Dallas GA' },
+  { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage Dallas GA' },
+  { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair' },
+  { href: '/services/roof-insurance-claims/', label: 'Insurance claims help' },
+  { href: '/contact/', label: 'Contact iRoofer' },
+];
+
 export default function MariettaPage() {
-  return <CityAreaPage city={city} intro={intro} sections={sections} neighborhoods={neighborhoods} faq={faq} />;
+  return (
+    <CityAreaPage
+      city={city}
+      h1="Roof Repair, Replacement & Storm Damage in Marietta, GA"
+      intro={intro}
+      sections={sections}
+      neighborhoods={neighborhoods}
+      faq={faq}
+      relatedLinks={relatedLinks}
+    />
+  );
 }

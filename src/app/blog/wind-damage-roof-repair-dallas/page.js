@@ -3,24 +3,26 @@ import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 import BlogPostingSchema from '@/components/BlogPostingSchema';
+import { brand } from '@/lib/brand';
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
-  alternates: { canonical: 'https://iroofercontractors.com/blog/wind-damage-roof-repair-dallas' },
+  alternates: { canonical: 'https://iroofercontractors.com/blog/wind-damage-roof-repair-dallas/' },
   openGraph: {
     type: 'website',
     siteName: 'iRoofer Contractors',
     locale: 'en_US',
-    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/wind-damage-roof-repair-dallas' },
-
-  title: 'Wind Damage Roof Repair Dallas GA | iRoofer',
+    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
+    url: 'https://iroofercontractors.com/blog/wind-damage-roof-repair-dallas/',
+  },
+  title: 'Wind Damage Roof Repair in Dallas, GA | What to Check After a Storm | iRoofer',
   description:
-    'Spot wind damage on your Dallas GA roof—lifted shingles, bruises, leaks. Free inspection & repair options. Call (470) 236-1410.',
+    'What wind does to Dallas-area roofs, what to check safely from the ground, and when to call for repair or documentation. iRoofer: (470) 236-1410 · contact page.',
 };
 
 const post = {
   slug: 'wind-damage-roof-repair-dallas',
-  title: 'Wind Damage Roof Repair in Dallas, GA',
+  title: 'Wind Damage Roof Repair in Dallas, GA — What Homeowners Should Do Next',
   date: 'March 2026',
   readTime: '6 min read',
   category: 'Storm Damage',
@@ -36,99 +38,84 @@ export default function BlogPostPage() {
           <div className="post-head rv">
             <span className="eyebrow dark">{post.category}</span>
             <h1>{post.title}</h1>
-            <p className="byline">
-              By iRoofer Contractors
-            </p>
+            <p className="byline">By iRoofer Contractors</p>
             <p className="meta">{post.date} · {post.readTime}</p>
             <PriceDisclaimer />
           </div>
 
           <div className="post-body rv">
-            <p>Georgia doesn’t just get hail — wind is the bigger roof killer. Spring and fall wind events in North Georgia regularly hit 60–80 mph. That’s enough to lift shingles, expose your roof deck, and leave you with hidden leaks that get worse with every rain. Here’s how to catch wind damage before the next storm hits.</p>
-
-            <h2>How Wind Damages Your Roof</h2>
-            <p>When wind hits your roof, it does three things:</p>
-            <ul>
-              <li><strong>Lifts shingles</strong> — wind gets under the edge, peels the shingle up, and tears the seal strip.</li>
-              <li><strong>Creases shingles</strong> — the shingle flaps back down, creating a crease that water will follow.</li>
-              <li><strong>Damages flashing</strong> — wind can pull step flashing, ridge caps, or vent boots loose.</li>
-            </ul>
-            <p>A single lifted shingle is not an emergency — it’s a warning sign that 5–10 more are ready to follow.</p>
-
-            <h2>Signs of Wind Damage You Can See From the Ground</h2>
-            <p><strong>Visual inspection (use binoculars or your phone camera zoom):</strong></p>
-            <ul>
-              <li><strong>Curling or cupping shingles</strong> — edges lifting up like a potato chip.</li>
-              <li><strong>Missing shingles</strong> — bare patches showing black roof deck or white underlayment.</li>
-              <li><strong>Creased shingles</strong> — visible ridges or folds in the shingle surface.</li>
-              <li><strong>Exposed nail pops</strong> — small metal dots where nail heads have worked loose.</li>
-              <li><strong>Displaced ridge caps</strong> — the cap shingles along your roof ridge are askew or missing.</li>
-            </ul>
-            <p><strong>After the storm — look around your yard:</strong></p>
-            <ul>
-              <li>Shingle granules in gutters or downspouts (like coarse black sand).</li>
-              <li>Individual shingles scattered in the street or on your lawn.</li>
-              <li>Dented or broken vents, flashings, or gutter sections.</li>
-            </ul>
-
-            <h2>Signs of Wind Damage Inside Your Home</h2>
-            <p>If wind lifted shingles enough to get water underneath, look for:</p>
-            <ul>
-              <li>Water stains on ceilings — often brown rings in a circular pattern.</li>
-              <li>Peeling paint or wallpaper near rooflines (especially dormers or skylights).</li>
-              <li>Damp or musty smell in the attic.</li>
-              <li>Black streaks on ceilings (mold/mildew from moisture).</li>
-            </ul>
-            <p><strong>Act fast:</strong> water damage escalates quickly. A small leak today can rot your ceiling drywall, your attic insulation, and your roof deck — turning a small shingle repair into a much larger interior repair.</p>
-
-            <h2>How to Inspect Your Own Roof (Safely)</h2>
-            <p><strong>Never walk on a wet or wind-damaged roof.</strong> Instead:</p>
-            <ol>
-              <li><strong>Use a drone</strong> — most newer phones have excellent cameras. Fly over your roof and look for lifted edges or missing sections.</li>
-              <li><strong>Binoculars from the ground</strong> — check the ridge line and corners where wind hits hardest.</li>
-              <li><strong>Check the attic</strong> — look for daylight coming through the roof deck (means missing shingles above).</li>
-              <li><strong>Inspect gutters</strong> — granule buildup means shingles are aging. Visible shingle pieces mean active damage.</li>
-            </ol>
-            <p>After Georgia wind events, we recommend a professional inspection within 48 hours — before the next storm rolls through.</p>
-
-            <h2>Types of Wind Damage</h2>
-            <ul>
-              <li><strong>Lifted shingle</strong> — edge curled up, seal strip exposed. Often a patch-level fix if caught early.</li>
-              <li><strong>Creased shingle</strong> — visible fold or ridge line where wind flipped the tab. Usually needs those shingles replaced.</li>
-              <li><strong>Missing shingle (small area)</strong> — bare spot with deck or underlayment showing. Needs a prompt patch before the next rain.</li>
-              <li><strong>Widespread missing or lifted shingles</strong> — damage across multiple slopes or large sections. May call for a partial or full replacement rather than scattered patches.</li>
-            </ul>
-            <p>A free inspection is the only reliable way to size the repair — scope depends on how many slopes are affected and whether decking is compromised.</p>
-
-            <h2>Insurance Claims for Wind Damage</h2>
-            <p>In Georgia, wind damage is covered under your dwelling policy — but only if you document it:</p>
-            <ul>
-              <li>Take photos within 48 hours of the storm (ground-level is fine).</li>
-              <li>Get a written scope of loss from your roofer before the adjuster visits.</li>
-              <li>Meet the adjuster on-site — point out the damage.</li>
-              <li>File within 1 year (Georgia statute of limitations for property claims).</li>
-            </ul>
-            <p><Link href="/blog/dallas-ga-hail-storm-insurance-claims/" style={{ color: 'var(--orange)' }}>Read: How to File an Insurance Claim After Storm Damage →</Link></p>
-
-            <h2>iRoofer’s Wind Damage Protocol</h2>
-            <p>After any wind event in Dallas or the North Georgia metro, we:</p>
-            <ul>
-              <li><strong>Respond within 24 hours</strong> with a free, no-pressure inspection.</li>
-              <li><strong>Document every damaged shingle</strong> with photos + written scope.</li>
-              <li><strong>Coordinate with your insurance adjuster</strong> — we meet them in person.</li>
-              <li><strong>Patch or replace</strong> — same-day tarping for emergencies, 2-day full repairs for larger damage.</li>
-            </ul>
-
-            <h2>Don’t Wait for the Next Storm</h2>            <p>After a wind event, many homeowners assume the damage is minor — until water starts leaking. Catching lifted or missing shingles early is far easier than dealing with interior water damage later.</p>
-            <p style={{ marginTop: 20 }}>
-              Related: <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Storm damage roof repair in Dallas</Link>
-              {' · '}
-              <Link href="/emergency-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Emergency roof repair Dallas GA</Link>
+            <p>
+              After a windy night in Dallas or west metro Atlanta, homeowners usually want two answers: Is the roof still protecting the house? And do I need a repair — or a claim? iRoofer Contractors is the local crew at 152 Freedom Dr: family-owned since 2019, licensed, bonded, insured. CertainTeed Storm Restoration Specialist (GA) when storm work is the natural fit.
             </p>
-            <p><Link href="/emergency-roof-repair-dallas-ga/" className="btn btn-solid">Schedule Free Wind Damage Inspection →</Link></p>
+            <p>
+              Ready to talk about your roof? Visit{' '}
+              <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>https://iroofercontractors.com/contact/</Link>
+              {' '}or call <a href={`tel:${brand.phone}`}>{brand.phone}</a>.
+            </p>
+
+            <h2>What wind actually does to asphalt roofs here</h2>
+            <p>Wind rarely “peels the whole house” in one neat sheet. More often we see:</p>
+            <ul>
+              <li>Lifted or missing tabs on the windward slopes</li>
+              <li>Ridge cap that has started to open</li>
+              <li>Flashing edges that worked loose at chimneys, walls, and skylights</li>
+              <li>Creased shingles that still look attached from the street but will leak on the next rain</li>
+            </ul>
+            <p>
+              Limb strikes and soft-metal dings (vents, caps) often travel with the same cell. Hail is a different inspection conversation — do not assume every storm is “hail damage” from the driveway.
+            </p>
+
+            <h2>Safe checks from the ground (before anyone climbs)</h2>
+            <ol>
+              <li>Walk the exterior and photograph missing or flipped shingles.</li>
+              <li>Look in the attic (if safe) for daylight, wet sheathing, or new drips.</li>
+              <li>Check ceilings and upper-floor corners after the next rain.</li>
+              <li>Note gutters full of granules or shingle pieces.</li>
+            </ol>
+            <p>Do not walk a wet or steep roof yourself. Call a licensed crew for the ladder work.</p>
+
+            <h2>Repair vs replace after wind</h2>
+            <p>
+              A few tabs and a ridge section is usually a repair. Widespread uplift across multiple slopes, repeated prior repairs, or a roof already near end of life can push the honest recommendation toward replacement. We say which one — and why — after a photo-documented inspection.
+            </p>
+            <ul>
+              <li><Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Storm damage roof repair in Dallas</Link></li>
+              <li><Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof repair in Dallas, GA</Link></li>
+              <li><Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof replacement in Dallas, GA</Link></li>
+              <li><Link href="/emergency-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Emergency roof repair Dallas GA</Link></li>
+              <li><Link href="/services/roof-insurance-claims/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof insurance claims help</Link></li>
+            </ul>
+
+            <h2>Insurance documentation without the hard sell</h2>
+            <p>
+              If you file a claim, dated photos, a roof diagram, and a written scope help the adjuster see what you see. We meet adjusters on site when you want us there. If the damage will not support a claim, we tell you and quote the repair — a denied claim should not leave you without a dry house.
+            </p>
+
+            <h2>What we deliberately do not invent here</h2>
+            <p>
+              No mph threshold tables, no “X% of roofs fail at Y,” no dollar repair grids. Those belong only if verified from manufacturer literature or your own job data — and even then, label as examples, not quotes. This update is qualitative guidance plus clear next steps.
+            </p>
+
+            <h2>Common questions</h2>
+            <p><strong>Should I call after every windy night?</strong><br />Call if you see missing shingles, have a leak, or heard impact. A free inspection beats guessing.</p>
+            <p><strong>Can you tarp the same day?</strong><br />When the roof is open to weather, tarping is the priority — then permanent repair when conditions allow.</p>
+            <p><strong>Is wind damage the same as hail damage?</strong><br />Not always. We inspect for both; documentation differs. Be honest with your carrier about what you observed.</p>
+            <p><strong>Who owns iRoofer?</strong><br />Cristian Mendez — family-owned in Dallas since 2019.</p>
+
+            <p style={{ marginTop: 24 }}>
+              Related:{' '}
+              <Link href="/dallas-ga-roofing/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Dallas GA roofing hub</Link>
+              {' · '}
+              <Link href="/service-areas/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Service areas</Link>
+            </p>
+            <p>
+              <Link href="/contact/" className="btn btn-solid">Get a free wind-damage inspection →</Link>
+              {' '}
+              <a className="btn btn-ghost" href={`tel:${brand.phone}`} style={{ marginLeft: 8 }}>{brand.phone}</a>
+            </p>
+            <RelatedPosts slug="wind-damage-roof-repair-dallas" />
           </div>
         </div>
-            <RelatedPosts slug="wind-damage-roof-repair-dallas" />
       </article>
     </>
   );

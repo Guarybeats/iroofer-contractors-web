@@ -148,10 +148,10 @@ export const serviceHubContent = {
   },
   'new-construction': {
     eyebrow: 'New construction',
-    h1Before: 'Roofing done right from ',
-    h1Accent: 'frame-up.',
+    h1Before: 'New Construction Roofing — Built Clean for Dallas & ',
+    h1Accent: 'West Metro Builds',
     lead:
-      'New builds need the roof done on schedule and to plan — not as an afterthought. iRoofer Contractors installs new-construction roofing for homeowners and builders across Dallas, GA and the west metro. Family-owned since 2019. Cristian Mendez. Licensed, bonded, insured. Owens Corning Preferred when that system is specified.',
+      'Ranking well does not help if the page does not ask for the next step. iRoofer Contractors installs new-construction roofs for builders and homeowners across Dallas, GA and our service map. Family-owned since 2019. Licensed, bonded, insured. Owens Corning Preferred when the spec calls for that line. Call (470) 236-1410 or https://iroofercontractors.com/contact/. Builders: request a partner intro on the contact form.',
     bullets: [
       'Custom and production builders who need a reliable roofing partner',
       'Homeowners building or finishing a home who want one accountable crew',
@@ -168,6 +168,9 @@ export const serviceHubContent = {
       { n: '04', title: 'Closeout', body: 'Punch list with the builder or homeowner, warranty registration when the product line allows, and photo package for the file.' },
     ],
     faqs: [
+      { q: 'Do you work with builders or only homeowners?', a: 'Both — builders on schedule, homeowners on new builds and additions.' },
+      { q: 'Where do you take new-construction jobs?', a: 'Dallas home base; regular areas listed on /service-areas/.' },
+      { q: 'How do we start?', a: 'Call (470) 236-1410 or use the contact page with plans / address / timeline.' },
       { q: 'Can you match builder schedules?', a: 'We plan around the build calendar and weather — talk to us early so material lead times do not stall dry-in.' },
       { q: 'Do you only use one shingle brand?', a: 'Owens Corning systems when specified/preferred; other architectural lines when the plan calls for them — ask on the estimate.' },
       { q: 'Homeowner vs builder billing?', a: 'We’ll set expectations in writing before start.' },
@@ -181,6 +184,9 @@ export const serviceHubContent = {
       { href: '/gutter-repair-replacement-dallas-ga/', label: 'Gutters Dallas' },
       { href: '/dallas-ga-roofing/', label: 'All Dallas GA roofing services' },
       { href: '/contact/', label: 'Contact iRoofer' },
+      { href: '/about/', label: 'About iRoofer' },
+      { href: '/service-areas/', label: 'Service areas' },
+      { href: '/estimator/', label: 'Planning estimator' },
     ],
     deepenBlocks: [
       {
