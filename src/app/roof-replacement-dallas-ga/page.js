@@ -7,8 +7,8 @@ import { localCopy } from '@/lib/localCopy';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: "Roof Replacement Dallas GA | Owens Corning Preferred | iRoofer",
-  description: "Roof replacement in Dallas GA — full tear-off, deck check, Owens Corning Preferred systems when they fit. Family-owned since 2019. (470) 236-1410 · https://iroofercontractors.com/contact/",
+  title: "Roof Replacement Dallas GA | Tear-Off & Architectural Shingles | iRoofer",
+  description: "Roof replacement in Dallas, GA — full tear-off, deck inspection, architectural shingles. Family-owned since 2019. Call (470) 236-1410 for a free inspection.",
   path: '/roof-replacement-dallas-ga',
 });
 

@@ -6,7 +6,7 @@ import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: 'Contact iRoofer Contractors | Free Roof Inspection Dallas GA',
+  title: 'Contact iRoofer Contractors | Dallas, GA Roofing Quotes & Inspections',
   description:
     'Talk to a real Dallas GA roofer — call (470) 236-1410 or use the form. Free inspections, clear estimates, zero pressure. Family-owned since 2019.',
   path: '/contact',
@@ -51,7 +51,7 @@ export default function ContactPage() {
         <div className="wrap">
           <div className="rv">
             <span className="eyebrow">Let&apos;s talk</span>
-            <h1>Talk to a <span className="ac">real roofer.</span></h1>
+            <h1>Contact iRoofer Contractors</h1>
             <p className="lead">
               Tell us what&apos;s going on with the roof and we&apos;ll get back within one business hour — usually faster.
               Free inspections, free estimates, zero pressure. You&apos;re reaching iRoofer Contractors in Dallas, GA —

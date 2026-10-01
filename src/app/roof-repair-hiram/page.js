@@ -7,8 +7,8 @@ import { localCopy } from '@/lib/localCopy';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: "Roof Repair & Inspection Hiram GA | Local Paulding Crew | iRoofer",
-  description: "Roof inspection and repair in Hiram, GA for leaks and storm wear. Local Paulding crew — photos and written scope. (470) 236-1410 · https://iroofercontractors.com/contact/",
+  title: "Roof Repair Hiram GA | Leaks & Inspections | iRoofer",
+  description: "Roof repair and leak help in Hiram, GA. Same Dallas crew since 2019. Call (470) 236-1410.",
   path: '/roof-repair-hiram',
 });
 
@@ -37,7 +37,7 @@ export default function Page() {
               </Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>Hiram, GA</span>
               <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02, marginTop: 8 }}>
-                Roof Repair in Hiram, GA — Inspection, Leaks & Storm Wear
+                Roof Repair in Hiram, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
                 Looking for a roofer in Hiram, GA? iRoofer Contractors is the local roofing services crew neighbors call for leaks, storm wear, and flashing repairs in Paulding County. Call (470) 236-1410 for same-day help when scheduling allows.

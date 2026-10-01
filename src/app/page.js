@@ -40,17 +40,19 @@ const svcs = [
     href: '/storm-damage-roof-repair-dallas-ga/', cta: 'Storm damage roof repair Dallas',
     body: 'Hail and wind damage documented with photos and a written scope. We meet your adjuster on-site, supplement the claim when needed, and guide you through the paperwork so you are not fronting the cost.' },
   { n: '05', title: 'Gutter Repair & Replacement', tag: 'Protection', img: '/assets/service-gutters-main.jpg?v=2',
-    href: '/services/gutter-repair-replacement/', cta: 'Gutter repair & replacement',
+    href: '/gutter-repair-replacement-dallas-ga/', cta: 'Gutter repair & replacement Dallas',
     body: 'Clogged or failing gutters are the #1 cause of preventable roof and foundation damage. We clean, repair, and replace seamless gutters so water flows away from your home, not into it.' },
 ];
 
 
 const faqs = [
-  { q: 'Is the homepage the right page for roof replacement Dallas GA?', a: 'For ranking maybe — for the homeowner, the dedicated roof replacement page is clearer. We link Roof replacement in Dallas, GA first on purpose so you land on a money URL with scope, process, and next steps.' },
-  { q: 'Do you fix roof leaks the same week?', a: 'Often yes when scheduling allows — start at our Dallas roof repair page for leaks, flashing, and storm wear. Call (470) 236-1410 if water is active.' },
-  { q: 'Hail damage — do you help with the claim?', a: 'We document findings, meet your adjuster when scheduled, and support supplements when the scope falls short. Approvals depend on your policy — no guaranteed outcomes. See insurance claims help.' },
-  { q: 'How long does a full replacement take?', a: 'Most single-family homes in our area are torn off and rebuilt in one to two days once materials are on site, weather permitting. Larger or steep-pitch roofs may take longer. We give you a firm schedule in writing before we start.' },
-  { q: 'Do I need to be home during the work?', a: 'Nope. Everything happens outside. We’ll text you photos at each milestone and do a final walkthrough whenever you’re free. We also run a magnet sweep so your kids and pets stay safe.' },
+  { q: 'Is the homepage the right page for roof repair Dallas GA?', a: 'For ranking maybe — for the homeowner, the dedicated repair page is clearer. Start at /roof-repair-dallas-ga/ for leaks, flashing, and storm wear.' },
+  { q: 'What about roof replacement Dallas GA?', a: 'Use /roof-replacement-dallas-ga/ for scope, process, and next steps. We link it early on purpose.' },
+  { q: 'Hail or wind after a Dallas storm?', a: 'See /storm-damage-roof-repair-dallas-ga/ and /services/roof-insurance-claims/. We document; approvals depend on your policy — no guaranteed outcomes.' },
+  { q: 'Need Hiram help?', a: 'Start at /roof-repair-hiram/ or /roof-replacement-hiram/ — same Dallas-based crew. Call (470) 236-1410.' },
+  { q: 'Looking for a Dallas roofing contractor?', a: 'Start with the service you need — repair, replacement, or storm — or the hub at /dallas-ga-roofing/. Or call (470) 236-1410 / use /contact/.' },
+  { q: 'How long does a full replacement take?', a: 'Most single-family homes finish in one to two days once materials are on site, weather permitting. We give a realistic schedule in writing before we start.' },
+  { q: 'Do I need to be home during the work?', a: 'Nope. Everything happens outside. We’ll text photos at each milestone and walk through whenever you’re free. Magnet sweep included on tear-offs.' },
 ];
 
 export default function HomePage() {
@@ -76,17 +78,17 @@ export default function HomePage() {
         <div className="wrap">
           <div className="hero-copy">
             <span className="eyebrow">Dallas, GA · Atlanta Metro</span>
-            <h1>Dallas GA Roof Replacement, Repair &amp; Storm Damage <br /><span className="stroke">— done local.</span></h1>
-            <p className="lead">Family-owned in Dallas since 2019. Whether you need a full roof replacement, a roof leak repair, or help after hail or storm damage — Cristian Mendez’s crew walks the roof, puts it in writing, and stands behind the work.</p>
+            <h1>Dallas GA Roof Repair, Replacement &amp; Storm Damage <br /><span className="stroke">— done local.</span></h1>
+            <p className="lead">Family-owned in Dallas since 2019. Whether you need a roof leak repair this week, a full roof replacement, or help after hail or wind — Cristian Mendez’s crew walks the roof, puts it in writing, and stands behind the work. Licensed, bonded, insured. Owens Corning Preferred when that system fits.</p>
             <div className="hero-cta">
               <a className="btn btn-solid" href="/contact/">Get a Free Roof Inspection <span className="arr">→</span></a>
               <a className="btn btn-ghost" href={`tel:${brand.phone}`}>Call or text {brand.phone}</a>
             </div>
             <div className="stats">
-              <div className="stat"><div className="num"><span className="cnt" data-count="2019" data-nogroup>2019</span></div><div className="lbl">Serving Dallas, GA since</div></div>
-              <div className="stat"><div className="num"><span className="cnt" data-count="150">150</span><span className="suf">+</span></div><div className="lbl">Roofs completed</div></div>
-              <div className="stat"><div className="num">{brand.rating}</div><div className="lbl">{brand.reviewCount} Google reviews</div></div>
-              <div className="stat"><div className="num"><span className="cnt" data-count="24">24</span><span className="suf">hr</span></div><div className="lbl">Storm response</div></div>
+              <div className="stat"><div className="num"><span className="cnt" data-count="2019" data-nogroup>2019</span></div><div className="lbl">Family-owned in Dallas since</div></div>
+              <div className="stat"><div className="num">LBI</div><div className="lbl">Licensed · Bonded · Insured</div></div>
+              <div className="stat"><div className="num">Local</div><div className="lbl">Owens Corning Preferred</div></div>
+              <div className="stat"><div className="num">Real</div><div className="lbl">Crew — not a call center</div></div>
             </div>
           </div>
 
@@ -105,16 +107,34 @@ export default function HomePage() {
         </div>
       </section>
 
+
+      {/* ATF INTENT CARDS — pull money QP off homepage */}
+      <section className="sec-light" style={{ padding: '28px 0 8px' }} aria-label="Start with the service you need">
+        <div className="wrap">
+          <p style={{ color: '#52606b', marginBottom: 14, maxWidth: 720 }}>
+            Looking for a Dallas roofing contractor? Start with the service you need — then call (470) 236-1410 or use{' '}
+            <a href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>https://iroofercontractors.com/contact/</a>.
+          </p>
+          <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '.55rem 1.2rem', listStyle: 'none', padding: 0, margin: 0 }}>
+            {dallasLinks.map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} style={{ color: 'var(--orange)', fontWeight: 700, fontSize: '.95rem' }}>{l.label} →</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
       {/* CERT MARQUEE */}
       <div className="certs" aria-label="Credentials">
         <div className="track">
           <div className="set">
             <div className="c">Owens Corning Preferred</div>
-            <div className="c">Licensed · Bonded · Insured</div><div className="c">Local & Family-Owned</div><div className="c">5-Star Rated</div>
+            <div className="c">Licensed · Bonded · Insured</div><div className="c">Local & Family-Owned</div><div className="c">Real Google Reviews</div>
           </div>
           <div className="set" aria-hidden="true">
             <div className="c">Owens Corning Preferred</div>
-            <div className="c">Licensed · Bonded · Insured</div><div className="c">Local & Family-Owned</div><div className="c">5-Star Rated</div>
+            <div className="c">Licensed · Bonded · Insured</div><div className="c">Local & Family-Owned</div><div className="c">Real Google Reviews</div>
           </div>
         </div>
       </div>
@@ -260,7 +280,7 @@ export default function HomePage() {
             </div>
             <div className="rating-big">
               <div className="sc">{brand.rating}</div>
-              <div><div className="stars">★★★★★</div><div className="meta">{brand.reviewCount} verified reviews &middot; Google</div></div>
+              <div><div className="stars">★★★★★</div><div className="meta">Neighbors on Google · read live reviews on our Business Profile</div></div>
             </div>
           </div>
         </div>

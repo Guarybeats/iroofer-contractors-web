@@ -7,8 +7,8 @@ import { localCopy } from '@/lib/localCopy';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: "Roof Repair Dallas GA | Leak & Storm Wear | iRoofer Contractors",
-  description: "Roof repair in Dallas GA for leaks, flashing, and storm wear. Local crew finds the source and fixes it right. Family-owned since 2019. (470) 236-1410 \u00b7 https://iroofercontractors.com/contact/",
+  title: "Roof Repair Dallas GA | Leak, Flashing & Storm Wear | iRoofer",
+  description: "Roof repair in Dallas, GA — leaks, flashing, pipe boots, and storm wear. Family-owned since 2019. Free inspection. Call (470) 236-1410 or book online.",
   path: '/roof-repair-dallas-ga',
 });
 

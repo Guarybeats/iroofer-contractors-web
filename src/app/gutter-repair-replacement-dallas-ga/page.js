@@ -8,8 +8,8 @@ import { reviews } from '@/lib/reviews';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: 'Gutter Repair & Replacement in Dallas, GA | Sized to Your Roof | iRoofer',
-  description: 'Gutter repair and replacement in Dallas GA — capacity, fall, fascia, seamless runs sized to your roof. Family-owned since 2019. (470) 236-1410 · https://iroofercontractors.com/contact/',
+  title: 'Gutter Repair & Replacement Dallas GA | Seamless & Downspouts | iRoofer',
+  description: 'Gutter repair and replacement in Dallas, GA — clogs, sagging runs, and seamless installs that move water away from your roof and foundation. Call (470) 236-1410.',
   path: '/gutter-repair-replacement-dallas-ga',
 });
 

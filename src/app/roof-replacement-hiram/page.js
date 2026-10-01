@@ -9,7 +9,7 @@ import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
   title: "Roof Replacement in Hiram, GA | Local Paulding Crew | iRoofer",
-  description: 'Roof replacement in Hiram, GA — tear-off to deck, honest scope, Owens Corning Preferred when it fits. Family-owned from nearby Dallas. (470) 236-1410 · https://iroofercontractors.com/contact/',
+  description: 'Roof replacement in Hiram, GA from iRoofer\'s Dallas-based crew — tear-off to deck, architectural shingles, written scope. Call (470) 236-1410.',
   path: '/roof-replacement-hiram',
 });
 

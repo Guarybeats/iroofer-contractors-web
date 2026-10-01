@@ -78,7 +78,7 @@ function buildTools() {
             "Licensed, bonded and insured",
             "Owens Corning Preferred Contractor",
             `Family-owned since ${brand.founded}`,
-            `${brand.reviewCount} Google reviews, ${brand.rating} average`,
+            `Google reviews on our Business Profile · family-owned since ${brand.founded}`,
           ],
           freeInspections: true,
           serviceArea: brand.serviceArea,

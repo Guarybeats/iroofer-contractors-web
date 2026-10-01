@@ -17,7 +17,7 @@ export const metadata = {
   },
   title: 'Roof Replacement Cost in Dallas, GA | What Actually Changes the Price | iRoofer',
   description:
-    'What drives roof replacement cost in Dallas GA — squares, pitch, materials, decking, tear-off — with a clear not-a-quote disclaimer. Call (470) 236-1410 or https://iroofercontractors.com/contact/',
+    'Roof replacement cost factors in Dallas, GA — squares, pitch, layers, decking, materials. Not a quote. Free inspection: (470) 236-1410.',
 };
 
 const post = {
@@ -101,16 +101,26 @@ export default function BlogPostPage() {
               <li>No pressure to sign same day</li>
             </ol>
 
+            <h2>Paulding / Dallas context (no dollars)</h2>
+            <p>
+              Early-2000s builder roofs along common Dallas corridors often hit end-of-life together — layer count and
+              ventilation upgrades matter more than a national average blog number. We tear off to the deck as standard
+              so we can see what you’re paying for.
+            </p>
+
             <h2>FAQ</h2>
             <p><strong>Can you quote over the phone?</strong><br />No — not accurately.</p>
             <p><strong>Do you finance?</strong><br />Ask about current options when you call; availability can change (no invented APR on this page).</p>
             <p><strong>Why don&apos;t you list prices here?</strong><br />Because a blog table becomes wrong fast and misleads neighbors. Factors + a written inspection beat a fake chart.</p>
+            <p><strong>Is storm damage priced differently?</strong><br />Scope still follows the roof. Insurance may apply; we document — we don’t invent payouts.</p>
 
             <h2>Related Dallas pages</h2>
             <ul>
               <li><Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)' }}>Roof replacement Dallas GA</Link></li>
               <li><Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)' }}>Roof repair Dallas GA</Link></li>
               <li><Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)' }}>Storm damage roof repair Dallas</Link></li>
+              <li><Link href="/blog/roof-repair-cost-dallas-ga/" style={{ color: 'var(--orange)' }}>Roof repair cost factors</Link></li>
+              <li><Link href="/services/roof-insurance-claims/" style={{ color: 'var(--orange)' }}>Roof insurance claims help</Link></li>
               <li><Link href="/dallas-ga-roofing/" style={{ color: 'var(--orange)' }}>Dallas GA roofing hub</Link></li>
               <li><Link href="/contact/" style={{ color: 'var(--orange)' }}>Contact / free inspection</Link></li>
             </ul>
