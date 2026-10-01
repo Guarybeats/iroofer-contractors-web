@@ -8,8 +8,8 @@ import { FaqSchema } from '@/components/LocalSeo';
 function faqItem(open){ return 'faq-item' + (open ? ' open' : ''); }
 
 export const metadata = seo({
-  title: 'Roof Insurance Claim Help in Dallas, GA | Adjuster Support | iRoofer',
-  description: 'Roof insurance claim help in Dallas GA — we document storm damage, meet your adjuster, and help with supplements. Call (470) 236-1410 or https://iroofercontractors.com/contact/',
+  title: 'Roof Insurance Claims Help Dallas GA | Storm Documentation | iRoofer',
+  description: 'Roof insurance claims help in Dallas, GA — photo documentation, written scopes, and adjuster meetings when scheduled. Call (470) 236-1410. No guaranteed claim outcomes.',
   path: '/services/roof-insurance-claims',
 });
 
@@ -59,11 +59,10 @@ export default function Page() {
               <Link href="/services/" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>← All services</Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>Dallas, GA &amp; Metro Atlanta</span>
               <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02, marginTop: 8 }}>
-                Roof Insurance Claims in Dallas, GA — Documented and Walked With You
+                Roof Insurance Claims Help in Dallas, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
-                Storm damage is stressful enough without decoding a policy alone. We walk homeowners from inspection to finished roof
-                and speak the adjuster&apos;s language — without a hard sell.
+                After hail or wind, the paperwork can feel heavier than the storm. iRoofer Contractors — family-owned in Dallas since 2019 — documents what we find on the roof, puts a clear scope in writing, and can meet your adjuster on-site when scheduled. Owner Cristian Mendez. Licensed, bonded, insured. CertainTeed Storm Restoration Specialist (GA) when the visit is storm-related. Owens Corning Preferred when that system is the install path.
               </p>
               <p style={{ color: '#52606b', fontSize: '.98rem', marginTop: 12, maxWidth: 680, borderLeft: '3px solid var(--orange)', paddingLeft: 12 }}>
                 Local note: Paulding storms often leave hail and wind damage you can&apos;t see from the driveway.
@@ -103,6 +102,21 @@ export default function Page() {
         </div>
       </section>
 
+
+      <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <div className="rv" style={{ maxWidth: 780 }}>
+            <h2 style={{ fontSize: 'clamp(1.35rem,2.2vw,1.75rem)', fontWeight: 800 }}>Hail claims: documentation without promises</h2>
+            <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
+              Dated photos of bruising vs wear; adjuster meetings when scheduled; supplements when scope falls short.
+              Approvals depend on your policy. Start the storm path at{' '}
+              <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>storm damage roof repair Dallas</Link>.
+              Call {brand.phone} or{' '}
+              <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>https://iroofercontractors.com/contact/</Link>.
+            </p>
+          </div>
+        </div>
+      </section>
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="sec-head rv">

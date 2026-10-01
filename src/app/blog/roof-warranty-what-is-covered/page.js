@@ -1,5 +1,4 @@
 import { OG_IMAGE } from '@/lib/seo';
-import PriceDisclaimer from '@/components/PriceDisclaimer';
 import Link from 'next/link';
 import RelatedPosts from '@/components/RelatedPosts';
 import { brand } from '@/lib/brand';
@@ -15,7 +14,7 @@ export const metadata = {
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: 'https://iroofercontractors.com/blog/roof-warranty-what-is-covered/',
   },
-  title: 'Roof Warranty Explained: What’s Covered vs Workmanship | Dallas GA | iRoofer',
+  title: 'Roof Warranty Explained: Manufacturer vs Workmanship | Dallas GA | iRoofer',
   description:
     'Manufacturer vs workmanship roof warranties — what they cover, what they don’t, and how to get help in Dallas, GA. Call iRoofer at (470) 236-1410 or contact us.',
 };
@@ -40,7 +39,9 @@ export default function BlogPostPage() {
             <h1>{post.title}</h1>
             <p className="byline">By iRoofer Contractors</p>
             <p className="meta">{post.date} · {post.readTime}</p>
-            <PriceDisclaimer />
+            <p style={{ fontSize: '.9rem', color: '#5d6b7a', background: '#fff8f0', borderLeft: '3px solid var(--orange)', padding: '10px 14px', borderRadius: 4, margin: '12px 0 0' }}>
+              <strong>Educational only.</strong> This post is not a warranty document and not a quote. Terms live in your manufacturer packet and your written contract.
+            </p>
           </div>
 
           <div className="post-body rv">

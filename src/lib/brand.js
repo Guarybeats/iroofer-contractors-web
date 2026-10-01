@@ -29,10 +29,11 @@ export const brand = {
   fonts: {
     import: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap'
   },
+  // VERIFY-OR-CUT: review totals / 150+ roofs / 24hr not confirmed vs live GBP — prefer qualitative trust.
   trust: [
-    { num: '54', lbl: '5-Star Google Reviews' },
-    { num: '5★', lbl: 'Average Rating' },
-    { num: '100%', lbl: 'Local & Family-Owned' }
+    { num: '2019', lbl: 'Family-Owned Since' },
+    { num: 'LBI', lbl: 'Licensed · Bonded · Insured' },
+    { num: '100%', lbl: 'Local Dallas Crew' }
   ]
 };
 

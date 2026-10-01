@@ -6,9 +6,9 @@ const city = getCity('hiram');
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
-  title: 'Hiram GA Roof Repair & Replacement | Storm Damage | iRoofer Contractors',
+  title: 'Hiram GA Roofing | Repair, Replacement & Storm | iRoofer',
   description:
-    'Hiram roof repair, replacement, and storm help from iRoofer in nearby Dallas, GA. Free inspection. Call (470) 236-1410 or contact us online.',
+    'Hiram GA roof repair and replacement from iRoofer\'s Dallas-based crew. Call (470) 236-1410.',
   alternates: { canonical: `${brand.url}/service-areas/hiram/` },
   openGraph: {
     type: 'website',
@@ -16,7 +16,7 @@ export const metadata = {
     locale: 'en_US',
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: `${brand.url}/service-areas/hiram/`,
-    title: 'Hiram GA Roof Repair & Replacement | Storm Damage | iRoofer Contractors',
+    title: 'Hiram GA Roofing | Repair, Replacement & Storm | iRoofer',
     description:
       'Hiram roof repair, replacement, and storm help from iRoofer in nearby Dallas, GA. Free inspection. Call (470) 236-1410.',
   },
@@ -68,6 +68,10 @@ const neighborhoods = [
 
 const faq = [
   {
+    q: 'Are you based in Hiram?',
+    a: 'We’re based in Dallas (152 Freedom Dr) and serve Hiram regularly — same crew, same standards.',
+  },
+  {
     q: 'Do you have Hiram-specific repair and replace pages?',
     a: 'Yes — /roof-repair-hiram/ and /roof-replacement-hiram/ for deeper scopes; this SA page is the city overview.',
   },
@@ -101,7 +105,7 @@ export default function HiramPage() {
   return (
     <CityAreaPage
       city={city}
-      h1="Roof Repair, Replacement & Storm Damage in Hiram, GA"
+      h1="Roofing in Hiram, GA — Repair, Replacement & Local Crew"
       intro={intro}
       sections={sections}
       neighborhoods={neighborhoods}

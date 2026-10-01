@@ -6,7 +6,7 @@ import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: 'Roof Estimate Dallas GA | How Much Is My New Roof? | iRoofer',
+  title: 'Roof Estimate | Dallas GA | iRoofer Contractors',
   description:
     'Curious what a new roof might run in Dallas GA? See what drives cost, how our estimate works, then lock a real number with a free inspection. (470) 236-1410',
   path: '/estimator',
@@ -50,7 +50,7 @@ export default function EstimatorPage() {
           <div className="rv" style={{ textAlign: 'center', marginBottom: '2.4rem' }}>
             <span className="eyebrow">Free planning estimate</span>
             <h1 style={{ fontSize: 'clamp(2.4rem,5vw,3.8rem)', fontWeight: 900, marginTop: 12 }}>
-              How much is my <span className="stroke">new roof?</span>
+              Get a Roof Estimate
             </h1>
             <p className="lead" style={{ maxWidth: '42rem', margin: '1rem auto 0' }}>
               Slide a few details for a planning range — then lock a real figure with a free on-site inspection.
@@ -84,7 +84,7 @@ export default function EstimatorPage() {
               Qualitative factors — not a price table. More depth on our{' '}
               <Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>roof replacement Dallas</Link>
               {' '}money page and{' '}
-              <Link href="/blog/cost-of-new-roof-2026-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>cost guide</Link>.
+              <Link href="/blog/roof-replacement-cost-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>replacement cost factors guide</Link> (not a quote).
             </p>
           </div>
           <div className="cards" style={{ marginTop: 24 }}>

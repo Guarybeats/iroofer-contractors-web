@@ -5,9 +5,9 @@ import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
-  title: 'Emergency Roof Repair Dallas GA | Active Leaks & Storm Response | iRoofer',
+  title: 'Emergency Roof Repair Dallas GA | Tarping & Active Leaks | iRoofer',
   description:
-    'Emergency roof repair in Dallas GA — active leaks, storm openings, same-day tarp when we can. Call (470) 236-1410 or https://iroofercontractors.com/contact/',
+    'Active roof leak in Dallas, GA? Tarping and urgent sealing when scheduling allows. Call (470) 236-1410.',
   path: '/emergency-roof-repair-dallas-ga',
 });
 
@@ -28,6 +28,14 @@ const process = [
 ];
 
 const emergencyFaqs = [
+  {
+    q: 'Do you guarantee same-hour arrival?',
+    a: 'We move as fast as schedule and weather allow — no invented SLA minutes on this page.',
+  },
+  {
+    q: 'Is tarping the final fix?',
+    a: 'No — tarp protects; permanent repair or replacement follows with a written scope on /roof-repair-dallas-ga/ or /roof-replacement-dallas-ga/.',
+  },
   {
     q: 'Do you offer 24/7 emergency roof repair in Dallas, GA?',
     a: 'Shop hours are Mon–Fri 9–7 and Sat 9–5 (Sun closed). We prioritize active leaks and storm damage as fast as crews allow — same-day help when the schedule allows. We do not promise 24/7 coverage. Call (470) 236-1410 and say if water is entering now.',
@@ -84,9 +92,13 @@ export default function EmergencyPage() {
                 Emergency Roof Repair in Dallas, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
-                A roof failure doesn&apos;t wait for business hours. Whether a storm dropped a limb or a leak started after last night&apos;s rain,
-                iRoofer Contractors — shop at 152 Freedom Dr, Dallas, GA — prioritizes active water intrusion in Dallas and Paulding County.
-                Tarp when needed, document what failed, then permanent repair with a clear written scope.
+                When water is coming in, stop the weather first. iRoofer Contractors — family-owned in Dallas since 2019 — prioritizes active leaks with temporary tarping when needed, then moves into permanent repair on{' '}
+                <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>/roof-repair-dallas-ga/</Link>
+                {' '}or storm documentation on{' '}
+                <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>/storm-damage-roof-repair-dallas-ga/</Link>.
+                Call <strong>(470) 236-1410</strong> now or use{' '}
+                <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>https://iroofercontractors.com/contact/</Link>.
+                No invented minute-SLA guarantees — we move as fast as schedule and weather allow.
               </p>
 
               <div className="cta" style={{ marginTop: 28 }}>

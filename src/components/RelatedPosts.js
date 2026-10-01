@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import { posts } from '@/lib/posts';
 
+// Pack 21: do not leave invent-dollar equity to these related cards.
+const INVENT_EQUITY_EXCLUDE = new Set([
+  'cost-of-new-roof-2026-dallas-ga',
+]);
+
 const STOP = new Set([
   'your', 'with', 'what', 'when', 'how', 'from', 'that', 'this', 'they', 'into',
   'will', 'have', 'are', 'for', 'the', 'and', 'dallas', 'ga', 'roof', 'roofs',
@@ -15,7 +20,7 @@ export default function RelatedPosts({ slug }) {
     (current.title + ' ' + current.excerpt).toLowerCase().match(/[a-z]{4,}/g) || [];
 
   const scored = posts
-    .filter((p) => p.slug !== slug)
+    .filter((p) => p.slug !== slug && !INVENT_EQUITY_EXCLUDE.has(p.slug))
     .map((p) => {
       let score = p.category === current.category ? 3 : 0;
       const hay = (p.title + ' ' + p.excerpt).toLowerCase();
@@ -26,7 +31,10 @@ export default function RelatedPosts({ slug }) {
     })
     .sort((a, b) => b.score - a.score);
 
-  const related = scored.slice(0, 3).map((s) => s.p);
+  const related = scored
+    .filter((s) => !/\$[\d,]\s*[Kk]?\s*[–-]/.test(s.p.title) && !/\$[\d,]+/.test(s.p.title))
+    .slice(0, 3)
+    .map((s) => s.p);
 
   return (
     <section style={{ marginTop: 48 }}>
