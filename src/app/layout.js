@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${publicSans.variable} ${bigShoulders.variable}`}>
       <head>
-        <link rel="preload" as="image" href="/assets/hero.webp?v=3" type="image/webp" fetchPriority="high" />
+        {/* Hero image preload lives on the homepage only (its <img fetchPriority="high"> is auto-preloaded); a global preload here wasted bandwidth on every other page. */}
         <LocalSeo />
         {/* Google Analytics 4 (Measurement ID: G-EC6HCLKMEN) */}
         <Script

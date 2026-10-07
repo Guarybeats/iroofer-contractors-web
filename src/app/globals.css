@@ -383,7 +383,7 @@ a.svc-head{text-decoration:none;color:var(--ink)}
 .form-status-ok{color:var(--green);font-weight:600;margin-top:.75rem;font-size:.9rem}
 .form-status-error{color:#d83a3a;font-weight:600;margin-top:.75rem;font-size:.9rem}
 /* Turnstile widget spacing on lead forms */
-.turnstile-wrap{margin:0.6rem 0 0.9rem;min-height:65px}
+.turnstile-wrap{margin:0.6rem 0 0.9rem;min-height:65px;line-height:0;font-size:0} /* lazy widget: reserved 65px slot; line-height/font-size 0 removes the inline-iframe gap (was 72.6px -> layout shift) */
 .hform .turnstile-wrap{margin:0.4rem 0 0.8rem}
 .quote-card .grid2,.cform .grid2{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
 
