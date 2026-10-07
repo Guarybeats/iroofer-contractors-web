@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const intro = [
-  'Acworth searches often mix “roof repair near me” with emergency intent — active leaks, overnight wind, a tree limb. iRoofer Contractors answers from Dallas, GA (152 Freedom Dr): family-owned since 2019, licensed, bonded, insured. We tarp when the roof is open, then schedule the permanent fix.',
+  'Acworth searches often mix “roof repair near me” with emergency intent — active leaks, overnight wind, a tree limb. iRoofer Contractors answers from Dallas, GA (152 Freedom Dr): family-owned since 2019. We tarp when the roof is open, then schedule the permanent fix.',
   'Ready to talk about your roof? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
 ];
 
@@ -44,7 +44,7 @@ const sections = [
   {
     h2: 'Replacement & storm',
     paras: [
-      'End-of-life roofs: /roof-replacement-acworth/ and /roof-replacement-dallas-ga/. Owens Corning Preferred on qualifying installs. Storm cells across north Cobb: /storm-damage-roof-repair-acworth/, /storm-damage-roof-repair-dallas-ga/, and /services/roof-insurance-claims/. CertainTeed Storm Restoration Specialist (GA) on storm scopes — dated photos, roof diagram, adjuster meeting on request.',
+      'End-of-life roofs: /roof-replacement-acworth/ and /roof-replacement-dallas-ga/. Owens Corning Preferred on qualifying installs. Storm cells across north Cobb: /storm-damage-roof-repair-acworth/, /storm-damage-roof-repair-dallas-ga/, and /services/roof-insurance-claims/. Storm scopes get dated photos, roof diagram, adjuster meeting on request.',
     ],
   },
   {
@@ -76,10 +76,6 @@ const faq = [
   {
     q: 'Insurance after a storm?',
     a: 'We document and can meet adjusters; we also say when a claim will not hold.',
-  },
-  {
-    q: 'Licensed and insured?',
-    a: 'Yes — licensed, bonded, and insured. Family-owned since 2019.',
   },
 ];
 

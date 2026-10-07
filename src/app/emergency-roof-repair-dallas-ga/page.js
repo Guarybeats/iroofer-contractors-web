@@ -23,7 +23,7 @@ const process = [
   { n: '02', t: 'Stabilize', d: 'Tarp / temporary protection when materials and access are safe.' },
   { n: '03', t: 'Document', d: 'Photos for your records and insurer if storm-related.' },
   { n: '04', t: 'Written scope', d: 'Permanent repair vs larger section vs replacement talk.' },
-  { n: '05', t: 'Complete the repair', d: 'Licensed, bonded, insured crew; Owens Corning Preferred details when that system applies to permanent work.' },
+  { n: '05', t: 'Complete the repair', d: 'Our own crew; Owens Corning Preferred details when that system applies to permanent work.' },
   { n: '06', t: 'Follow-up', d: 'What to watch for on the next rain.' },
 ];
 
@@ -138,7 +138,7 @@ export default function EmergencyPage() {
               >
                 <strong style={{ color: '#0b3d16' }}>iRoofer Contractors</strong>
                 <div style={{ color: '#52606b', fontSize: '.9rem', marginTop: 4 }}>
-                  Family-owned in Dallas since 2019 · {brand.owner} · Licensed · Bonded · Insured · 152 Freedom Dr, Dallas, GA 30157 · CertainTeed Storm Restoration Specialist (GA) when that path fits
+                  Family-owned in Dallas since 2019 · {brand.owner} · 152 Freedom Dr, Dallas, GA 30157
                 </div>
                 <div style={{ marginTop: 6 }}>
                   <a href={`tel:${brand.phone}`} style={{ color: 'var(--orange)', fontWeight: 700 }}>{brand.phone}</a>

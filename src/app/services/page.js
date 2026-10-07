@@ -65,7 +65,7 @@ export default function ServicesPage() {
             <h1>Roofing services for your home</h1>
             <p>
               From a quick repair to a full replacement, every job is done by the same local crew — same standards, same phone number.
-              iRoofer Contractors is family-owned in Dallas, GA since 2019. Owner {brand.owner}. Licensed, bonded, and insured.
+              iRoofer Contractors is family-owned in Dallas, GA since 2019. Owner {brand.owner}.
               Owens Corning Preferred when that system fits.
             </p>
             <p style={{ marginTop: 12 }}>
@@ -159,8 +159,8 @@ export default function ServicesPage() {
               Clear cards plus money URLs keep them from bouncing to a thin dead end. Every card above should stay clickable on mobile.
             </p>
             <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
-              <strong>Credentials:</strong> Family-owned since 2019 · {brand.owner} · Licensed, bonded, insured ·
-              Owens Corning Preferred when that system fits · CertainTeed Storm Restoration Specialist (GA) on storm restoration work when applicable.
+              <strong>Credentials:</strong> Family-owned since 2019 · {brand.owner} ·
+              Owens Corning Preferred when that system fits.
             </p>
             <p style={{ marginTop: 16 }}>
               Local money hubs:{' '}

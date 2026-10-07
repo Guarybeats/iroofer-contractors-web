@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const intro = [
-  'Hiram sits close to our Dallas shop — short drive from 152 Freedom Dr for inspections and installs. iRoofer Contractors is family-owned since 2019: licensed, bonded, insured. Whether you need a leak fixed, a full replace, or storm documentation, we write scopes you can actually read.',
+  'Hiram sits close to our Dallas shop — short drive from 152 Freedom Dr for inspections and installs. iRoofer Contractors is family-owned since 2019. Whether you need a leak fixed, a full replace, or storm documentation, we write scopes you can actually read.',
   'Ready to talk about your roof? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410 — Cristian and the iRoofer crew will get you a clear next step.',
 ];
 
@@ -45,7 +45,7 @@ const sections = [
   {
     h2: 'Storm damage in Hiram',
     paras: [
-      'After a cell moves through Paulding County, we check for uplift, missing tabs, and soft-metal impact you cannot see from the yard. CertainTeed Storm Restoration Specialist (GA) applies on storm scopes. Documentation for claims: /storm-damage-roof-repair-hiram/, /storm-damage-roof-repair-dallas-ga/, and /services/roof-insurance-claims/.',
+      'After a cell moves through Paulding County, we check for uplift, missing tabs, and soft-metal impact you cannot see from the yard. Documentation for claims: /storm-damage-roof-repair-hiram/, /storm-damage-roof-repair-dallas-ga/, and /services/roof-insurance-claims/.',
       'If the damage will not support a claim, we say so and quote the repair — a denied claim should not leave you without a dry house.',
     ],
   },
@@ -82,10 +82,6 @@ const faq = [
   {
     q: 'Do you help with insurance after storm damage?',
     a: 'Yes — photos, diagram, scope, adjuster meeting on request.',
-  },
-  {
-    q: 'Are you licensed?',
-    a: 'Licensed, bonded, and insured. Family-owned since 2019.',
   },
 ];
 

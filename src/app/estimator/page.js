@@ -57,7 +57,7 @@ export default function EstimatorPage() {
               Instant tools are for orientation. Your Dallas roof&apos;s pitch, layers, decking, and access decide the real number.
             </p>
             <p style={{ color: '#52606b', maxWidth: '40rem', margin: '0.85rem auto 0', fontSize: '.98rem' }}>
-              iRoofer Contractors is family-owned here since 2019. {brand.owner}&apos;s licensed, bonded, insured crew
+              iRoofer Contractors is family-owned here since 2019. {brand.owner}&apos;s local crew
               measures what you actually have — then puts it in writing.
             </p>
             <p style={{ marginTop: 14 }}>

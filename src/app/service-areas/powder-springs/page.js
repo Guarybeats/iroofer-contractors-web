@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const intro = [
-  'Powder Springs is on our regular west-metro map from Dallas. iRoofer Contractors — family-owned since 2019 by Cristian Mendez — handles repair, full replacement, and storm documentation. Licensed, bonded, insured. Shop: 152 Freedom Dr, Dallas, GA 30157.',
+  'Powder Springs is on our regular west-metro map from Dallas. iRoofer Contractors — family-owned since 2019 by Cristian Mendez — handles repair, full replacement, and storm documentation. Shop: 152 Freedom Dr, Dallas, GA 30157.',
   'Ready to talk about your roof? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
 ];
 
@@ -43,7 +43,7 @@ const sections = [
   {
     h2: 'Storm damage',
     paras: [
-      'After Cobb/Paulding-edge cells, we inspect for uplift and impact, tarp if needed, and document for insurance when appropriate. CertainTeed Storm Restoration Specialist (GA) on storm scopes. Paths: /storm-damage-roof-repair-powder-springs/, /storm-damage-roof-repair-dallas-ga/, /services/roof-insurance-claims/, /emergency-roof-repair-dallas-ga/.',
+      'After Cobb/Paulding-edge cells, we inspect for uplift and impact, tarp if needed, and document for insurance when appropriate. Paths: /storm-damage-roof-repair-powder-springs/, /storm-damage-roof-repair-dallas-ga/, /services/roof-insurance-claims/, /emergency-roof-repair-dallas-ga/.',
     ],
   },
   {
@@ -76,10 +76,6 @@ const faq = [
   {
     q: 'Emergency leak?',
     a: 'Call (470) 236-1410 — tarping priority when the roof is open.',
-  },
-  {
-    q: 'Licensed?',
-    a: 'Licensed, bonded, and insured. Family-owned since 2019.',
   },
 ];
 

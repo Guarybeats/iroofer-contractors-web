@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const intro = [
-  'Kennesaw interest is climbing — meet that with clear repair / replace / storm paths, not a thin “we roof Kennesaw” stub. iRoofer Contractors is family-owned in Dallas since 2019: Cristian Mendez, licensed, bonded, insured. Regular Cobb County work from 152 Freedom Dr.',
+  'Kennesaw interest is climbing — meet that with clear repair / replace / storm paths, not a thin “we roof Kennesaw” stub. iRoofer Contractors is family-owned in Dallas since 2019: Cristian Mendez. Regular Cobb County work from 152 Freedom Dr.',
   'Ready to talk about your roof? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
 ];
 
@@ -43,7 +43,7 @@ const sections = [
   {
     h2: 'Storm damage',
     paras: [
-      'North Cobb cells: document, tarp, repair or replace as the roof deserves. CertainTeed Storm Restoration Specialist (GA) on storm work. Paths: /storm-damage-roof-repair-kennesaw/, /storm-damage-roof-repair-dallas-ga/, /services/roof-insurance-claims/. If damage will not support a claim, we say so and quote the repair.',
+      'North Cobb cells: document, tarp, repair or replace as the roof deserves. Paths: /storm-damage-roof-repair-kennesaw/, /storm-damage-roof-repair-dallas-ga/, /services/roof-insurance-claims/. If damage will not support a claim, we say so and quote the repair.',
     ],
   },
   {

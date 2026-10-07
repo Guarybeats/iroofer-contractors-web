@@ -75,7 +75,6 @@ function buildTools() {
           hours: brand.hours.full,
           emergency: "Storm / active-leak response during shop hours; same-day when schedule allows",
           credentials: [
-            "Licensed, bonded and insured",
             "Owens Corning Preferred Contractor",
             `Family-owned since ${brand.founded}`,
             `Google reviews on our Business Profile · family-owned since ${brand.founded}`,

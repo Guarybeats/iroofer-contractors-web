@@ -100,7 +100,7 @@ export default function NewConstructionPage() {
               >
                 <strong style={{ color: '#0b3d16' }}>iRoofer Contractors</strong>
                 <div style={{ color: '#52606b', fontSize: '.9rem', marginTop: 4 }}>
-                  Licensed · Bonded · Insured | Dallas, GA since 2019
+                  Family-owned | Dallas, GA since 2019
                 </div>
                 <div style={{ marginTop: 6 }}>
                   <a

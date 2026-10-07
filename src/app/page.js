@@ -79,14 +79,14 @@ export default function HomePage() {
           <div className="hero-copy">
             <span className="eyebrow">Dallas, GA · Atlanta Metro</span>
             <h1>Dallas GA Roof Repair, Replacement &amp; Storm Damage <br /><span className="stroke">— done local.</span></h1>
-            <p className="lead">Family-owned in Dallas since 2019. Whether you need a roof leak repair this week, a full roof replacement, or help after hail or wind — Cristian Mendez’s crew walks the roof, puts it in writing, and stands behind the work. Licensed, bonded, insured. Owens Corning Preferred when that system fits.</p>
+            <p className="lead">Family-owned in Dallas since 2019. Whether you need a roof leak repair this week, a full roof replacement, or help after hail or wind — Cristian Mendez’s crew walks the roof, puts it in writing, and stands behind the work. Owens Corning Preferred when that system fits.</p>
             <div className="hero-cta">
               <a className="btn btn-solid" href="/contact/">Get a Free Roof Inspection <span className="arr">→</span></a>
               <a className="btn btn-ghost" href={`tel:${brand.phone}`}>Call or text {brand.phone}</a>
             </div>
             <div className="stats">
               <div className="stat"><div className="num"><span className="cnt" data-count="2019" data-nogroup>2019</span></div><div className="lbl">Family-owned in Dallas since</div></div>
-              <div className="stat"><div className="num">LBI</div><div className="lbl">Licensed · Bonded · Insured</div></div>
+              <div className="stat"><div className="num">{brand.rating}</div><div className="lbl">{brand.reviewCount} Google Reviews</div></div>
               <div className="stat"><div className="num">Local</div><div className="lbl">Owens Corning Preferred</div></div>
               <div className="stat"><div className="num">Real</div><div className="lbl">Crew — not a call center</div></div>
             </div>
@@ -130,11 +130,11 @@ export default function HomePage() {
         <div className="track">
           <div className="set">
             <div className="c">Owens Corning Preferred</div>
-            <div className="c">Licensed · Bonded · Insured</div><div className="c">Local & Family-Owned</div><div className="c">Real Google Reviews</div>
+            <div className="c">Serving Paulding County Since 2019</div><div className="c">Local & Family-Owned</div><div className="c">Real Google Reviews</div>
           </div>
           <div className="set" aria-hidden="true">
             <div className="c">Owens Corning Preferred</div>
-            <div className="c">Licensed · Bonded · Insured</div><div className="c">Local & Family-Owned</div><div className="c">Real Google Reviews</div>
+            <div className="c">Serving Paulding County Since 2019</div><div className="c">Local & Family-Owned</div><div className="c">Real Google Reviews</div>
           </div>
         </div>
       </div>
@@ -147,7 +147,7 @@ export default function HomePage() {
             <div className="svc-intro rv">
               <span className="eyebrow dark">What we do</span>
               <h2>Every job on your roof, one local crew.</h2>
-              <p>From a single leak to a full tear-off after hail — same licensed, bonded, insured team. Owens Corning Preferred when that system fits. Tap a service to see what’s included.</p>
+              <p>From a single leak to a full tear-off after hail — same local team. Owens Corning Preferred when that system fits. Tap a service to see what’s included.</p>
               <a className="btn btn-ink" href="/contact/">Start a project <span className="arr">→</span></a>
             </div>
 

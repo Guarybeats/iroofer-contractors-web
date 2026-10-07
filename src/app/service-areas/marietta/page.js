@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const intro = [
-  'Marietta homeowners searching for a “roofer” usually need something more specific: a leak fixed this week, a worn roof replaced before the next cell, or storm damage documented for insurance. iRoofer Contractors — family-owned in Dallas, GA since 2019 — works Marietta regularly from our shop at 152 Freedom Dr. We are licensed, bonded, and insured, and we install as an Owens Corning Preferred Contractor when architectural shingles are the right fit.',
+  'Marietta homeowners searching for a “roofer” usually need something more specific: a leak fixed this week, a worn roof replaced before the next cell, or storm damage documented for insurance. iRoofer Contractors — family-owned in Dallas, GA since 2019 — works Marietta regularly from our shop at 152 Freedom Dr. We install as an Owens Corning Preferred Contractor when architectural shingles are the right fit.',
   'If you landed here from a broad “roofer” search, use the paths below. Repair, replacement, and storm are the jobs we actually schedule — not a generic listing. Ready to talk? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
 ];
 
@@ -46,7 +46,7 @@ const sections = [
     h2: 'Storm damage & insurance documentation (Cobb County)',
     paras: [
       'Spring and summer cells track across Cobb County often enough that partial wind damage is common: a few slopes stripped, ridge caps lifted, soft metals dinged while the rest looks fine from the street. That is exactly the loss that gets underpaid when photos and scopes are thin.',
-      'We photograph with dates, mark damage on a roof diagram, write a scope an adjuster can verify, and meet the adjuster on site when you want us there. If the damage will not support a claim, we say so and quote the repair directly. CertainTeed Storm Restoration Specialist (GA) credentials apply when storm work is the natural fit. Related: /storm-damage-roof-repair-marietta/, /storm-damage-roof-repair-dallas-ga/, and /services/roof-insurance-claims/.',
+      'We photograph with dates, mark damage on a roof diagram, write a scope an adjuster can verify, and meet the adjuster on site when you want us there. If the damage will not support a claim, we say so and quote the repair directly. Related: /storm-damage-roof-repair-marietta/, /storm-damage-roof-repair-dallas-ga/, and /services/roof-insurance-claims/.',
     ],
   },
   {
@@ -82,7 +82,7 @@ const faq = [
   },
   {
     q: 'Are you local?',
-    a: 'Yes. Shop at 152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019. Licensed, bonded, insured.',
+    a: 'Yes. Shop at 152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019.',
   },
 ];
 

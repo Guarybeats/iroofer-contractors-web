@@ -62,7 +62,7 @@ export default function Page() {
                 Roof Insurance Claims Help in Dallas, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
-                After hail or wind, the paperwork can feel heavier than the storm. iRoofer Contractors — family-owned in Dallas since 2019 — documents what we find on the roof, puts a clear scope in writing, and can meet your adjuster on-site when scheduled. Owner Cristian Mendez. Licensed, bonded, insured. CertainTeed Storm Restoration Specialist (GA) when the visit is storm-related. Owens Corning Preferred when that system is the install path.
+                After hail or wind, the paperwork can feel heavier than the storm. iRoofer Contractors — family-owned in Dallas since 2019 — documents what we find on the roof, puts a clear scope in writing, and can meet your adjuster on-site when scheduled. Owner Cristian Mendez. Owens Corning Preferred when that system is the install path.
               </p>
               <p style={{ color: '#52606b', fontSize: '.98rem', marginTop: 12, maxWidth: 680, borderLeft: '3px solid var(--orange)', paddingLeft: 12 }}>
                 Local note: Paulding storms often leave hail and wind damage you can&apos;t see from the driveway.
@@ -195,8 +195,8 @@ export default function Page() {
           </div>
           <div style={{ marginTop: 28 }}>
             <p style={{ color: '#52606b', marginBottom: 12 }}>
-              Family-owned in Dallas since 2019. {brand.owner}&apos;s crew documents and repairs — licensed, bonded, insured.
-              Owens Corning Preferred on permanent systems when selected. CertainTeed Storm Restoration Specialist (GA) when storm restoration details apply.
+              Family-owned in Dallas since 2019. {brand.owner}&apos;s crew documents and repairs.
+              Owens Corning Preferred on permanent systems when selected.
             </p>
             <Link href="/storm-damage-roof-repair-dallas-ga/" className="btn btn-ink">Storm damage roof repair in Dallas, GA <span className="arr">→</span></Link>
             <Link href="/emergency-roof-repair-dallas-ga/" className="btn btn-ink" style={{ marginLeft: 12 }}>Emergency Dallas <span className="arr">→</span></Link>

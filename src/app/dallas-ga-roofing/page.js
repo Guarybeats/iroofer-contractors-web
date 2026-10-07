@@ -50,10 +50,6 @@ const faqs = [
     q: 'Which areas do you serve around Dallas, GA?',
     a: 'Dallas, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, Austell, Roswell, Alpharetta, Canton, plus greater west Metro Atlanta (Paulding, Douglas, and Cobb counties).',
   },
-  {
-    q: 'Are you licensed and insured?',
-    a: 'Yes — fully licensed, bonded, and insured. Owens Corning Preferred when that system is selected. We pull local permits when required and leave you with clear paperwork.',
-  },
 ];
 
 function faqItem(open) {
@@ -71,7 +67,7 @@ export default function DallasGaRoofingPage() {
               Dallas, GA Roofing — Repair, Replacement &amp; Storm Damage
             </h1>
             <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 720 }}>
-              This is home base. iRoofer Contractors is family-owned in Dallas, GA since 2019 — Cristian Mendez and crew at 152 Freedom Dr, 30157. Licensed, bonded, and insured. If a broad “roofer” search dropped you here, skip the vanity label and go to what you actually need: repair, replacement, or storm documentation.
+              This is home base. iRoofer Contractors is family-owned in Dallas, GA since 2019 — Cristian Mendez and crew at 152 Freedom Dr, 30157. If a broad “roofer” search dropped you here, skip the vanity label and go to what you actually need: repair, replacement, or storm documentation.
               Free photo inspections and a real person on the phone at (470) 236-1410. Need a leak fixed today? Start on the Roof repair Dallas GA page.
             </p>
             <div className="cta" style={{ marginTop: 24 }}>
@@ -165,7 +161,7 @@ export default function DallasGaRoofingPage() {
               <h2>Year-round local accountability</h2>
               <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
                 iRoofer Contractors — {brand.owner}, family-owned since 2019, shop at 152 Freedom Dr, Dallas, GA 30157.
-                Licensed, bonded, insured. Owens Corning Preferred when selected. We work Paulding and nearby west-metro cities every week — not as a one-week storm blitz.
+                Owens Corning Preferred when selected. We work Paulding and nearby west-metro cities every week — not as a one-week storm blitz.
               </p>
               <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
                 Dallas and Paulding roofs see tree cover, humidity, and fast-moving storms. That mix ages flashing and asphalt faster than a brochure timeline.

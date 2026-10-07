@@ -45,7 +45,7 @@ export default function BlogPostPage() {
 
           <div className="post-body rv">
             <p>
-              After a windy night in Dallas or west metro Atlanta, homeowners usually want two answers: Is the roof still protecting the house? And do I need a repair — or a claim? iRoofer Contractors is the local crew at 152 Freedom Dr: family-owned since 2019, licensed, bonded, insured. CertainTeed Storm Restoration Specialist (GA) when storm work is the natural fit.
+              After a windy night in Dallas or west metro Atlanta, homeowners usually want two answers: Is the roof still protecting the house? And do I need a repair — or a claim? iRoofer Contractors is the local crew at 152 Freedom Dr: family-owned since 2019.
             </p>
             <p>
               Ready to talk about your roof? Visit{' '}
@@ -72,7 +72,7 @@ export default function BlogPostPage() {
               <li>Check ceilings and upper-floor corners after the next rain.</li>
               <li>Note gutters full of granules or shingle pieces.</li>
             </ol>
-            <p>Do not walk a wet or steep roof yourself. Call a licensed crew for the ladder work.</p>
+            <p>Do not walk a wet or steep roof yourself. Call a roofing crew for the ladder work.</p>
 
             <h2>Repair vs replace after wind</h2>
             <p>
