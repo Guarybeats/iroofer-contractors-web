@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const intro = [
-  'Hiram sits close to our Dallas shop — short drive from 152 Freedom Dr for inspections and installs. iRoofer Contractors is family-owned since 2019: licensed, bonded, insured. Whether you need a leak fixed, a full replace, or storm documentation, we write scopes you can actually read.',
+  'Hiram sits close to our Dallas shop — short drive from 152 Freedom Dr for inspections and installs. We take roof jobs across Hiram\'s 30141 ZIP code. iRoofer Contractors is family-owned since 2019: licensed, bonded, insured. Whether you need a leak fixed, a full replace, or storm documentation, we write scopes you can actually read.',
   'Ready to talk about your roof? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410 — Cristian and the iRoofer crew will get you a clear next step.',
 ];
 

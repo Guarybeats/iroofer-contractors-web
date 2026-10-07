@@ -3,6 +3,7 @@ import QuoteForm from '@/components/QuoteForm';
 import { brand, cities, cityPath } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
+import ShopMap from '@/components/ShopMap';
 
 export const metadata = seo({
   title: 'Dallas GA Roofing Contractor | Repair, Replace & Storm | iRoofer',
@@ -203,7 +204,7 @@ export default function DallasGaRoofingPage() {
         <div className="wrap">
           <div className="sec-head rv">
             <span className="eyebrow dark">Where we work</span>
-            <h2>Service area around Dallas, GA</h2>
+            <h2>Our shop and service area around Dallas, GA</h2>
           </div>
           <div className="chips" style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
             {cities.filter((c) => c.slug !== 'dallas-ga').slice(0, 8).map((c) => (
@@ -213,8 +214,11 @@ export default function DallasGaRoofingPage() {
             ))}
           </div>
           <p style={{ color: '#52606b', marginTop: 16, maxWidth: 680 }}>
-            Plus greater west Metro Atlanta — Paulding, Douglas, and Cobb counties. Not sure if you&apos;re in range? Call (470) 236-1410.
+            We work both Dallas ZIP codes, 30132 and 30157, from our shop at 152 Freedom Dr.
+            {' '}Plus greater west Metro Atlanta — Paulding, Douglas, and Cobb counties. Not sure if you&apos;re in range? Call (470) 236-1410.
           </p>
+          {/* Shop map — below the fold, no inner h2 (section h2 above covers it). Lazy iframe, reserved box. */}
+          <ShopMap className="rv" showHeading={false} style={{ marginTop: 28 }} />
         </div>
       </section>
 

@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const intro = [
-  'Douglasville homeowners call us from just west/southwest of our Dallas shop when wind, age, or a stubborn leak shows up. iRoofer Contractors — Cristian Mendez, family-owned since 2019 — is licensed, bonded, and insured. Storm work is a natural fit here: CertainTeed Storm Restoration Specialist (GA) when we are documenting and repairing weather damage.',
+  'Douglasville homeowners call us from just west/southwest of our Dallas shop when wind, age, or a stubborn leak shows up. iRoofer Contractors — Cristian Mendez, family-owned since 2019 — is licensed, bonded, and insured. Storm work is a natural fit here: CertainTeed Storm Restoration Specialist (GA) when we are documenting and repairing weather damage. We take roof jobs across Douglasville\'s 30134 and 30135 ZIP codes.',
   'Ready to talk about your roof? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
 ];
 

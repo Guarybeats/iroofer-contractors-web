@@ -49,7 +49,7 @@ const sections = [
   {
     h2: 'Neighborhoods and roof types around Kennesaw',
     paras: [
-      'Kennesaw stock ranges from older ranch homes to steeper two-stories and newer subdivisions near the mountain and major corridors. Steeper pitches and cut-up roofs need careful flashing at walls, chimneys, and dormers. Older decks may hide prior nail-overs. We call those out at inspection so your estimate reflects the real teardown.',
+      'Kennesaw stock ranges from older ranch homes to steeper two-stories and newer subdivisions near the mountain and major corridors. We cover Kennesaw\'s 30144 and 30152 ZIP codes. Steeper pitches and cut-up roofs need careful flashing at walls, chimneys, and dormers. Older decks may hide prior nail-overs. We call those out at inspection so your estimate reflects the real teardown.',
       'Shoppers often compare Cobb cities — /service-areas/marietta/, /service-areas/acworth/, hub /service-areas/. Services overview: /services/. Keep this page on repair / replacement / storm with strong CTAs to /contact/ — not a bare-“roofer” vanity dump.',
     ],
   },

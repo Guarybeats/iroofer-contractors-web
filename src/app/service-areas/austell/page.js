@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const intro = [
-  'iRoofer Contractors serves Austell from our base in Dallas, GA. Austell sits along the Cobb and Douglas county line in the Sweetwater Creek basin, and water is the theme of roofing here — not just what comes through the roof, but where it goes once it leaves the gutters.',
+  'iRoofer Contractors serves Austell from our base in Dallas, GA. Austell sits along the Cobb and Douglas county line in the Sweetwater Creek basin, and water is the theme of roofing here — not just what comes through the roof, but where it goes once it leaves the gutters. We work in Austell\'s 30106 and 30168 ZIP codes.',
   'We handle emergency tarping, roof repair, full replacement, new-construction roofing, gutter and downspout work, and storm and insurance claim documentation. Inspections are free and come back as dated photos with plain notes on what needs doing now versus what can wait.',
 ];
 
