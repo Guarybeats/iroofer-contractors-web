@@ -92,7 +92,6 @@ function callTool(name, args = {}) {
         address: "152 Freedom Dr, Dallas, GA 30157",
         hours: "Mon–Fri 9–7, Sat 9–5, Sun closed; storm / active-leak priority as crews allow (not 24/7)",
         credentials: [
-          "Licensed, bonded and insured",
           "Owens Corning Preferred Contractor",
           "Family-owned since 2019",
         ],

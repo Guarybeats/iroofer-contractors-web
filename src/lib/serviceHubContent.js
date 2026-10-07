@@ -98,7 +98,7 @@ export const serviceHubContent = {
     h1Before: 'Hail doesn’t wait. ',
     h1Accent: 'Neither do we.',
     lead:
-      'Wind, hail, and fallen limbs do damage that’s easy to miss from the ground. iRoofer inspects, tarps when a roof is open to weather, and documents what we find so you can decide on repair — and insurance steps if they apply. Family-owned in Dallas since 2019. Licensed, bonded, insured. CertainTeed Storm Restoration Specialist (GA) when that path fits. Owens Corning Preferred on permanent systems when selected.',
+      'Wind, hail, and fallen limbs do damage that’s easy to miss from the ground. iRoofer inspects, tarps when a roof is open to weather, and documents what we find so you can decide on repair — and insurance steps if they apply. Family-owned in Dallas since 2019. Owens Corning Preferred on permanent systems when selected.',
     bullets: [
       'Free post-storm inspection with photo documentation',
       'Same-day emergency tarping for open roofs when access is safe',
@@ -151,7 +151,7 @@ export const serviceHubContent = {
     h1Before: 'New Construction Roofing — Built Clean for Dallas & ',
     h1Accent: 'West Metro Builds',
     lead:
-      'Ranking well does not help if the page does not ask for the next step. iRoofer Contractors installs new-construction roofs for builders and homeowners across Dallas, GA and our service map. Family-owned since 2019. Licensed, bonded, insured. Owens Corning Preferred when the spec calls for that line. Call (470) 236-1410 or https://iroofercontractors.com/contact/. Builders: request a partner intro on the contact form.',
+      'Ranking well does not help if the page does not ask for the next step. iRoofer Contractors installs new-construction roofs for builders and homeowners across Dallas, GA and our service map. Family-owned since 2019. Owens Corning Preferred when the spec calls for that line. Call (470) 236-1410 or https://iroofercontractors.com/contact/. Builders: request a partner intro on the contact form.',
     bullets: [
       'Custom and production builders who need a reliable roofing partner',
       'Homeowners building or finishing a home who want one accountable crew',
@@ -199,7 +199,7 @@ export const serviceHubContent = {
       },
       {
         title: 'Why local matters on new construction',
-        body: 'Storm-chaser crews disappear when the subdivision moves on. We’re based in Dallas year-round — same phone number for the builder’s warranty callback and the homeowner’s first heavy rain. Family-owned since 2019 under Cristian Mendez. Licensed, bonded, and insured. Start a conversation: (470) 236-1410 · https://iroofercontractors.com/contact/.',
+        body: 'Storm-chaser crews disappear when the subdivision moves on. We’re based in Dallas year-round — same phone number for the builder’s warranty callback and the homeowner’s first heavy rain. Family-owned since 2019 under Cristian Mendez. Start a conversation: (470) 236-1410 · https://iroofercontractors.com/contact/.',
       },
     ],
     cityPrefix: 'new-construction',

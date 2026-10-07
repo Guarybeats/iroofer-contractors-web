@@ -59,9 +59,9 @@ export default function BlogPostPage() {
 
             <h2>5 Questions Every Dallas Homeowner Should Ask</h2>
             <ol>
-              <li><strong>"Are you licensed and insured in Georgia? Can I see the certificates?"</strong> Verify at <a href="https://sos.ga.gov" target="_blank" rel="noopener noreferrer">sos.ga.gov</a> (search "roofing contractor").</li>
+              <li><strong>"Can I see your Georgia license and a current certificate of insurance?"</strong> Verify at <a href="https://sos.ga.gov" target="_blank" rel="noopener noreferrer">sos.ga.gov</a> (search "roofing contractor").</li>
               <li><strong>"Who is my project manager, and will they be on-site daily?"</strong> You want a name and phone number, not a call center.</li>
-              <li><strong>"What manufacturer certifications do your installers hold?"</strong> GAF Master Elite, CertainTeed SELECT ShingleMaster, Owens Corning Preferred — these mean trained, warrantied installs.</li>
+              <li><strong>"What manufacturer certifications do your installers hold?"</strong> GAF Master Elite, Owens Corning Preferred, and similar manufacturer programs — these mean trained, warrantied installs.</li>
               <li><strong>"What's your workmanship warranty, and is it transferable?"</strong> Get the term in writing and ask whether it transfers — we put ours in the contract. Many offer 1–2 years, non-transferable.</li>
               <li><strong>"Can you provide a written scope of work with line-item pricing?"</strong> Vague "roof replacement — $X" quotes hide change orders. Demand detail.</li>
             </ol>
@@ -71,7 +71,7 @@ export default function BlogPostPage() {
               <li>✅ Georgia Secretary of State license lookup</li>
               <li>✅ BBB profile — look for A+ and 3+ years</li>
               <li>✅ Google reviews — 50+, 4.7+, recent</li>
-              <li>✅ Manufacturer cert verification (GAF, CertainTeed, OC websites)</li>
+              <li>✅ Manufacturer cert verification (check the manufacturer’s own contractor locator)</li>
               <li>✅ Ask for Certificate of Insurance (COI) — general liability $1M+, workers' comp</li>
             </ul>
 

@@ -61,7 +61,7 @@ export default function BlogPostPage() {
               <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>storm damage roof repair Dallas</Link>.
             </p>
             <p>
-              We will not promise claim approval or invent “typical supplement” dollar recoveries in blog copy. CertainTeed Storm Restoration Specialist (GA) fits when the conversation is storm documentation — not as a financing gimmick.
+              We will not promise claim approval or invent “typical supplement” dollar recoveries in blog copy.
             </p>
 
             <h2>2. Dealer / lender financing (ask for current terms)</h2>
@@ -93,7 +93,7 @@ export default function BlogPostPage() {
 
             <h2>How iRoofer helps without inventing rates</h2>
             <p>
-              We give a clear written roof scope first — repair vs replace — so you are not financing the wrong job. Then we discuss payment paths that are actually available on <em>your</em> estimate. Cristian Mendez’s crew is based at 152 Freedom Dr, Dallas, GA 30157 — family-owned since 2019, licensed, bonded, insured.
+              We give a clear written roof scope first — repair vs replace — so you are not financing the wrong job. Then we discuss payment paths that are actually available on <em>your</em> estimate. Cristian Mendez’s crew is based at 152 Freedom Dr, Dallas, GA 30157 — family-owned since 2019.
             </p>
             <ul>
               <li><Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof replacement in Dallas, GA</Link></li>

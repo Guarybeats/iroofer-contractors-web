@@ -32,7 +32,7 @@ export const brand = {
   // VERIFY-OR-CUT: review totals / 150+ roofs / 24hr not confirmed vs live GBP — prefer qualitative trust.
   trust: [
     { num: '2019', lbl: 'Family-Owned Since' },
-    { num: 'LBI', lbl: 'Licensed · Bonded · Insured' },
+    { num: 'OC', lbl: 'Owens Corning Preferred' },
     { num: '100%', lbl: 'Local Dallas Crew' }
   ]
 };

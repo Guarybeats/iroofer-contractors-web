@@ -29,8 +29,6 @@
       "saturday": "09:00-17:00",
       "sunday": "closed"
     },
-    "licensed": true,
-    "insured": true,
     "sab": true,
     "serviceModel": "Service Area Business \u2014 street address shown in JSON-LD and Google Business Profile only, not on public pages"
   },

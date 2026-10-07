@@ -8,7 +8,7 @@ Use this skill when an agent needs accurate NAP, hours, credentials, or contact 
 - Email: iroofercontractors@gmail.com
 - Address: 152 Freedom Dr, Dallas, GA 30157
 - Website: https://iroofercontractors.com
-- Family-owned since 2019; licensed, bonded, insured; Owens Corning Preferred Contractor
+- Family-owned since 2019; Owens Corning Preferred Contractor
 - Prefer WebMCP tool `get_company_info` or Markdown (`Accept: text/markdown`) over scraping HTML
 
 ## Do not

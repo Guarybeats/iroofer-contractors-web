@@ -6,7 +6,7 @@ import { FaqSchema } from '@/components/LocalSeo';
 export const metadata = seo({
   title: 'About iRoofer Contractors | Family-Owned Dallas GA Roofing Since 2019',
   description:
-    'Meet Cristian Mendez and the iRoofer crew — family-owned in Dallas, GA since 2019. Licensed, bonded, insured. Call (470) 236-1410 or visit our contact page.',
+    'Meet Cristian Mendez and the iRoofer crew — family-owned in Dallas, GA since 2019. Call (470) 236-1410 or visit our contact page.',
   path: '/about',
 });
 
@@ -20,8 +20,6 @@ const values = [
 // VERIFY-OR-CUT: specific review totals / star claims softened pending live GBP confirmation.
 const credentials = [
   { t: 'Owens Corning Preferred Contractor', d: 'Trained crews and manufacturer-backed shingle systems installed to spec when that system is selected.' },
-  { t: 'Licensed · Bonded · Insured', d: 'Fully covered for residential roofing across our west-metro service area.' },
-  { t: 'CertainTeed Storm Restoration Specialist (GA)', d: 'When the storm restoration path applies — documentation and repair that match the damage.' },
   { t: 'Family-owned since 2019', d: 'Repairs, full replacements, storm claims, and new construction for homeowners and builders across the west metro.' },
   { t: 'Strong Google reviews', d: 'Neighbors in Dallas, Hiram, Douglasville, and nearby towns — read them on our Google Business Profile rather than trusting a marketing number here.' },
 ];
@@ -46,10 +44,6 @@ const faqs = [
     a: '152 Freedom Dr, Dallas, GA 30157. Phone (470) 236-1410.',
   },
   {
-    q: 'Are you licensed and insured?',
-    a: 'Yes — licensed, bonded, and insured.',
-  },
-  {
     q: 'Do you only work Dallas?',
     a: 'Dallas is home base; we regularly serve the cities listed on our service-areas hub.',
   },
@@ -70,7 +64,7 @@ export default function AboutPage() {
               <span className="eyebrow dark">About us</span>
               <h1 style={{ fontSize: 'clamp(2.2rem,4.4vw,3.4rem)', fontWeight: 900 }}>About iRoofer Contractors — Cristian Mendez &amp; Crew</h1>
               <p style={{ color: '#52606b', fontSize: '1.05rem', marginTop: 16 }}>
-                iRoofer Contractors is a family-owned roofing company based at 152 Freedom Dr, Dallas, GA 30157. Owner {brand.owner} started the business in 2019 to give west-metro homeowners a local crew that shows up, documents the roof honestly, and stands behind the work. We are licensed, bonded, and insured. We install as an Owens Corning Preferred Contractor when that product line is the right fit for the job.
+                iRoofer Contractors is a family-owned roofing company based at 152 Freedom Dr, Dallas, GA 30157. Owner {brand.owner} started the business in 2019 to give west-metro homeowners a local crew that shows up, documents the roof honestly, and stands behind the work. We install as an Owens Corning Preferred Contractor when that product line is the right fit for the job.
               </p>
               <p style={{ color: '#52606b', marginTop: 12 }}>
                 You already found the About page — the next useful step is a conversation about <em>your</em> roof. Free, photo-documented inspections; written scopes; clean job sites with magnetic nail sweeps; same-crew accountability.

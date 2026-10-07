@@ -78,14 +78,14 @@ export default function RootLayout({ children }) {
           <div className="track">
             <div className="set">
               <div className="item"><b>{brand.rating}</b> {brand.reviewCount} Reviews</div>
-              <div className="item">Licensed · Bonded · Insured</div>
+              <div className="item">Owens Corning Preferred</div>
               <div className="item">Emergency / Storm Response</div>
               <div className="item">Free No-Pressure Roof Inspections</div>
               <div className="item">Family-Owned &amp; Operated Since 2019</div>
             </div>
             <div className="set" aria-hidden="true">
               <div className="item"><b>{brand.rating}</b> {brand.reviewCount} Reviews</div>
-              <div className="item">Licensed · Bonded · Insured</div>
+              <div className="item">Owens Corning Preferred</div>
               <div className="item">Emergency / Storm Response</div>
               <div className="item">Free No-Pressure Roof Inspections</div>
               <div className="item">Family-Owned &amp; Operated Since 2019</div>
@@ -205,12 +205,12 @@ export default function RootLayout({ children }) {
                   {brand.hours.saturday}<br />
                   {brand.hours.sunday}
                 </p>
-                <p className="lic">Fully licensed · bonded · insured<br />© {new Date().getFullYear()} {brand.name}</p>
+                <p className="lic">Owens Corning Preferred<br />© {new Date().getFullYear()} {brand.name}</p>
               </div>
             </div>
             <div className="foot-bottom">
               <span>Built tough in Dallas, GA.</span>
-              <span>Licensed, bonded &amp; insured · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/contact/">Contact</a></span>
+              <span>Family-owned since 2019 · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/contact/">Contact</a></span>
             </div>
           </div>
         </footer>

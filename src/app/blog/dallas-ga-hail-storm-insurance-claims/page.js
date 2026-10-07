@@ -61,7 +61,7 @@ export default function BlogPostPage() {
             <p>Do not walk on the roof. Hail-damaged shingles are unstable and can puncture your foot.</p>
 
             <h2>Step 2: Call a Local Roofer — Before the Adjuster</h2>
-            <p>We recommend calling a local, Georgia-licensed roofer within 24 hours of the storm. A good roofer will:</p>
+            <p>We recommend calling a local roofer within 24 hours of the storm. A good roofer will:</p>
             <ul>
               <li>Do a free, no-pressure inspection.</li>
               <li>Write a detailed scope of loss with photos and measurements.</li>

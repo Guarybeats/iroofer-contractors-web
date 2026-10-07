@@ -9,7 +9,7 @@ import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
   title: "Roofing Contractor Powder Springs GA | iRoofer",
-  description: 'Need a roofing contractor in Powder Springs, GA? Licensed local crew for leaks, boots, and storm-worn shingles. Call (470) 236-1410.',
+  description: 'Need a roofing contractor in Powder Springs, GA? Local crew for leaks, boots, and storm-worn shingles. Call (470) 236-1410.',
   path: '/roof-repair-powder-springs',
 });
 
@@ -35,7 +35,7 @@ export default function Page() {
                 Roofing Contractor in Powder Springs, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
-                Need a roofing contractor in Powder Springs, GA? iRoofer’s licensed, bonded, and insured team handles roof repair for Powder Springs homes—leaks, bad boots, and storm-worn shingles. Call (470) 236-1410.
+                Need a roofing contractor in Powder Springs, GA? iRoofer’s local team handles roof repair for Powder Springs homes—leaks, bad boots, and storm-worn shingles. Call (470) 236-1410.
               </p>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
                 {copy.intro}
