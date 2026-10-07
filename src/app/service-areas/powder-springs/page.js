@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const intro = [
-  'Powder Springs is on our regular west-metro map from Dallas. iRoofer Contractors — family-owned since 2019 by Cristian Mendez — handles repair, full replacement, and storm documentation. Licensed, bonded, insured. Shop: 152 Freedom Dr, Dallas, GA 30157.',
+  'Powder Springs is on our regular west-metro map from Dallas. We work throughout Powder Springs\' 30127 ZIP. iRoofer Contractors — family-owned since 2019 by Cristian Mendez — handles repair, full replacement, and storm documentation. Licensed, bonded, insured. Shop: 152 Freedom Dr, Dallas, GA 30157.',
   'Ready to talk about your roof? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
 ];
 

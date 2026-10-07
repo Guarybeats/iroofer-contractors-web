@@ -4,6 +4,7 @@ import { brand } from '@/lib/brand';
 import ReviewButton from '@/components/ReviewButton';
 import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
+import ShopMap from '@/components/ShopMap';
 
 export const metadata = seo({
   title: 'Contact iRoofer Contractors | Dallas, GA Roofing Quotes & Inspections',
@@ -150,6 +151,9 @@ export default function ContactPage() {
               </ul>
             </div>
           </div>
+
+          {/* Shop map — below the fold, after "Who you're contacting". Lazy iframe, reserved box. */}
+          <ShopMap className="rv" style={{ marginTop: 48 }} />
 
           <div className="rv" style={{ marginTop: 48, maxWidth: 820 }}>
             <h2 style={{ fontSize: 'clamp(1.4rem,2.4vw,1.85rem)', fontWeight: 800 }}>Common reasons people contact us</h2>
