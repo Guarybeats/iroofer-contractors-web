@@ -16,6 +16,8 @@ export default function HeroForm({ source = "hero" }) {
   const formRef = useRef(null);
   const [turnstileToken, setTurnstileToken] = useState("");
   const [resetSignal, setResetSignal] = useState(0);
+  const [verifying, setVerifying] = useState(false);
+  const widgetRef = useRef(null);
 
   const validate = useCallback((fd, extras = {}) => {
     const errs = {};
@@ -52,7 +54,19 @@ export default function HeroForm({ source = "hero" }) {
 
   async function onSubmit(e) {
     e.preventDefault();
-    const ok = await submit(new FormData(e.currentTarget), { turnstileToken });
+    const form = e.currentTarget;
+    let token = turnstileToken;
+    // Turnstile loads lazily on first interaction. If the visitor submits before
+    // a token exists, load/render it now and wait for the token, then submit.
+    if (turnstileConfigured() && widgetRef.current) {
+      if (!token) setVerifying(true);
+      try {
+        token = await widgetRef.current.getToken();
+      } finally {
+        setVerifying(false);
+      }
+    }
+    const ok = await submit(new FormData(form), { turnstileToken: token });
     if (ok && formRef.current) {
       formRef.current.reset();
       setTurnstileToken("");
@@ -150,15 +164,18 @@ export default function HeroForm({ source = "hero" }) {
           aria-hidden="true"
         />
         <TurnstileWidget
+          ref={widgetRef}
           onToken={setTurnstileToken}
           resetSignal={resetSignal}
         />
         <button
           className="btn btn-solid"
           type="submit"
-          disabled={status === "sending"}
+          disabled={status === "sending" || verifying}
         >
-          {status === "sending"
+          {verifying
+            ? "Verifying…"
+            : status === "sending"
             ? "Sending…"
             : (
                 <>

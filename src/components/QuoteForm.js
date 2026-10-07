@@ -25,6 +25,8 @@ export default function QuoteForm({
     variant === "contact" || variant === "detail" ? "cform" : "quote-card";
   const [turnstileToken, setTurnstileToken] = useState("");
   const [resetSignal, setResetSignal] = useState(0);
+  const [verifying, setVerifying] = useState(false);
+  const widgetRef = useRef(null);
 
   const validate = useCallback((fd, extras = {}) => {
     const errs = {};
@@ -75,7 +77,19 @@ export default function QuoteForm({
 
   async function onSubmit(e) {
     e.preventDefault();
-    const ok = await submit(new FormData(e.currentTarget), { turnstileToken });
+    const form = e.currentTarget;
+    let token = turnstileToken;
+    // Turnstile loads lazily on first interaction. If the visitor submits before
+    // a token exists, load/render it now and wait for the token, then submit.
+    if (turnstileConfigured() && widgetRef.current) {
+      if (!token) setVerifying(true);
+      try {
+        token = await widgetRef.current.getToken();
+      } finally {
+        setVerifying(false);
+      }
+    }
+    const ok = await submit(new FormData(form), { turnstileToken: token });
     if (ok && formRef.current) {
       formRef.current.reset();
       setTurnstileToken("");
@@ -292,15 +306,16 @@ export default function QuoteForm({
         aria-hidden="true"
       />
       <TurnstileWidget
+        ref={widgetRef}
         onToken={setTurnstileToken}
         resetSignal={resetSignal}
       />
       <button
         className="btn btn-block"
         type="submit"
-        disabled={status === "sending"}
+        disabled={status === "sending" || verifying}
       >
-        {status === "sending" ? "Sending…" : "Get My Free Quote"}
+        {verifying ? "Verifying…" : status === "sending" ? "Sending…" : "Get My Free Quote"}
       </button>
       <div aria-live="polite">
         {status === "ok" && <p className="form-status-ok">{msg}</p>}
