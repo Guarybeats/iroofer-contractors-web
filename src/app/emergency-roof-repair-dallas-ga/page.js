@@ -23,7 +23,7 @@ const process = [
   { n: '02', t: 'Stabilize', d: 'Tarp / temporary protection when materials and access are safe.' },
   { n: '03', t: 'Document', d: 'Photos for your records and insurer if storm-related.' },
   { n: '04', t: 'Written scope', d: 'Permanent repair vs larger section vs replacement talk.' },
-  { n: '05', t: 'Complete the repair', d: 'Our own crew; Owens Corning Preferred details when that system applies to permanent work.' },
+  { n: '05', t: 'Complete the repair', d: 'Our own crew; Owens Corning installation specs when that system applies to permanent work.' },
   { n: '06', t: 'Follow-up', d: 'What to watch for on the next rain.' },
 ];
 

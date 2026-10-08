@@ -20,7 +20,7 @@ const cardExtras = {
     ],
   },
   'roof-replacement': {
-    more: 'Full tear-off and re-roof with architectural asphalt systems installed clean and built for Georgia weather. Owens Corning Preferred contractor installs when that line fits.',
+    more: 'Full tear-off and re-roof with architectural asphalt systems installed clean and built for Georgia weather. Owens Corning shingles installed by an Owens Corning Contractor Rewards member when that line fits.',
     money: [
       { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement Dallas' },
       { href: '/roof-replacement-hiram/', label: 'Hiram replacement' },
@@ -66,7 +66,7 @@ export default function ServicesPage() {
             <p>
               From a quick repair to a full replacement, every job is done by the same local crew — same standards, same phone number.
               iRoofer Contractors is family-owned in Dallas, GA since 2019. Owner {brand.owner}.
-              Owens Corning Preferred when that system fits.
+              We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system fits.
             </p>
             <p style={{ marginTop: 12 }}>
               <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>
@@ -160,7 +160,7 @@ export default function ServicesPage() {
             </p>
             <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
               <strong>Credentials:</strong> Family-owned since 2019 · {brand.owner} ·
-              Owens Corning Preferred when that system fits.
+              We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system fits.
             </p>
             <p style={{ marginTop: 16 }}>
               Local money hubs:{' '}

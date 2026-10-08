@@ -37,7 +37,7 @@ const sections = [
   {
     h2: 'Roof replacement in Kennesaw',
     paras: [
-      'Full tear-off and architectural systems; Owens Corning Preferred when that line is selected. See /roof-replacement-kennesaw/ and /roof-replacement-dallas-ga/. We flag decking issues, ventilation gaps, and cut-up roof details at inspection so the written scope matches the real house — not a surprise mid-job.',
+      'Full tear-off and architectural systems; we install Owens Corning shingles as an Owens Corning Contractor Rewards member when that line is selected. See /roof-replacement-kennesaw/ and /roof-replacement-dallas-ga/. We flag decking issues, ventilation gaps, and cut-up roof details at inspection so the written scope matches the real house — not a surprise mid-job.',
     ],
   },
   {

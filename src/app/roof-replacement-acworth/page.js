@@ -9,7 +9,7 @@ import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
   title: "Roof Replacement in Acworth, GA | iRoofer Contractors",
-  description: 'Roof replacement in Acworth, GA by an Owens Corning Preferred Contractor. Tear-off, architectural shingles, clean site. Free inspection: (470) 236-1410.',
+  description: 'Roof replacement in Acworth, GA by an Owens Corning Contractor Rewards member. Tear-off, architectural shingles, clean site. Free inspection: (470) 236-1410.',
   path: '/roof-replacement-acworth',
 });
 

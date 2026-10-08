@@ -32,7 +32,7 @@ export const brand = {
   // VERIFY-OR-CUT: review totals / 150+ roofs / 24hr not confirmed vs live GBP — prefer qualitative trust.
   trust: [
     { num: '2019', lbl: 'Family-Owned Since' },
-    { num: 'OC', lbl: 'Owens Corning Preferred' },
+    { num: 'OC', lbl: 'Owens Corning Contractor Rewards Member' },
     { num: '100%', lbl: 'Local Dallas Crew' }
   ]
 };
@@ -60,13 +60,13 @@ export const services = [
     slug: 'roof-replacement',
     title: 'Roof Replacement',
     metaDesc:
-      'Full tear-off and replacement with architectural shingles, installed by an Owens Corning Preferred Contractor in Dallas, GA & Metro Atlanta.',
+      'Full tear-off and replacement with architectural shingles, installed by an Owens Corning Contractor Rewards member in Dallas, GA & Metro Atlanta.',
     tagline: 'A new roof that lasts decades.',
     image: '/assets/service-replacement.jpg?v=3',
     webp: '/assets/service-replacement.webp?v=3',
     imageAlt: 'Full roof replacement with architectural shingles on a Dallas, GA home',
     summary:
-      'Full tear-off and replacement with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, installed clean and built to last. Backed by the manufacturer’s warranty on the shingles.',
+      'Full tear-off and replacement with architectural asphalt shingles installed by an Owens Corning Contractor Rewards member, clean and built to last. Backed by the manufacturer’s standard warranty on the shingles.',
     bullets: [
       'Complete tear-off & deck inspection',
       'Architectural & premium shingle options',

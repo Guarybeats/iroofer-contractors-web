@@ -28,7 +28,7 @@ export function generateMetadata({ params }) {
       : `${service.title} | Dallas, GA & Metro Atlanta`,
     description:
       isNc
-        ? 'Builder and homeowner new-construction roofing from iRoofer in Dallas, GA. Clean installs, clear schedules, Owens Corning Preferred when specified. Call (470) 236-1410.'
+        ? 'Builder and homeowner new-construction roofing from iRoofer in Dallas, GA. Clean installs, clear schedules; Owens Corning Contractor Rewards member. Call (470) 236-1410.'
         : service.metaDesc ||
       (isRepairHub
         ? 'Roof leak, flashing, and shingle repair across Metro Atlanta. For Dallas, GA jobs see our local roof repair page. Free inspection.'

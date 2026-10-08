@@ -19,7 +19,7 @@ const values = [
 
 // VERIFY-OR-CUT: specific review totals / star claims softened pending live GBP confirmation.
 const credentials = [
-  { t: 'Owens Corning Preferred Contractor', d: 'Trained crews and manufacturer-backed shingle systems installed to spec when that system is selected.' },
+  { t: 'Owens Corning Contractor Rewards Member', d: 'Owens Corning shingle systems installed to the manufacturer’s specifications when that system is selected.' },
   { t: 'Family-owned since 2019', d: 'Repairs, full replacements, storm claims, and new construction for homeowners and builders across the west metro.' },
   { t: 'Strong Google reviews', d: 'Neighbors in Dallas, Hiram, Douglasville, and nearby towns — read them on our Google Business Profile rather than trusting a marketing number here.' },
 ];
@@ -64,7 +64,7 @@ export default function AboutPage() {
               <span className="eyebrow dark">About us</span>
               <h1 style={{ fontSize: 'clamp(2.2rem,4.4vw,3.4rem)', fontWeight: 900 }}>About iRoofer Contractors — Cristian Mendez &amp; Crew</h1>
               <p style={{ color: '#52606b', fontSize: '1.05rem', marginTop: 16 }}>
-                iRoofer Contractors is a family-owned roofing company based at 152 Freedom Dr, Dallas, GA 30157. Owner {brand.owner} started the business in 2019 to give west-metro homeowners a local crew that shows up, documents the roof honestly, and stands behind the work. We install as an Owens Corning Preferred Contractor when that product line is the right fit for the job.
+                iRoofer Contractors is a family-owned roofing company based at 152 Freedom Dr, Dallas, GA 30157. Owner {brand.owner} started the business in 2019 to give west-metro homeowners a local crew that shows up, documents the roof honestly, and stands behind the work. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that product line is the right fit for the job.
               </p>
               <p style={{ color: '#52606b', marginTop: 12 }}>
                 You already found the About page — the next useful step is a conversation about <em>your</em> roof. Free, photo-documented inspections; written scopes; clean job sites with magnetic nail sweeps; same-crew accountability.

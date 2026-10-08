@@ -38,7 +38,7 @@ const sections = [
   {
     h2: 'Roof replacement in Hiram',
     paras: [
-      'When repairs no longer make sense — age, multiple slopes failing, soft decking — we tear off and install architectural shingles as an Owens Corning Preferred Contractor when that line is selected. Written estimate before tear-off. Money pages: /roof-replacement-hiram/ and /roof-replacement-dallas-ga/.',
+      'When repairs no longer make sense — age, multiple slopes failing, soft decking — we tear off and install architectural shingles as an Owens Corning Contractor Rewards member when that line is selected. Written estimate before tear-off. Money pages: /roof-replacement-hiram/ and /roof-replacement-dallas-ga/.',
       'Most Hiram homes are a one- to two-day job once materials are staged. We bring shingle boards so color and profile match the street, and we register manufacturer warranty paperwork when the product line allows.',
     ],
   },

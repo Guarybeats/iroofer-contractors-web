@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const intro = [
-  'Marietta homeowners searching for a “roofer” usually need something more specific: a leak fixed this week, a worn roof replaced before the next cell, or storm damage documented for insurance. iRoofer Contractors — family-owned in Dallas, GA since 2019 — works Marietta regularly from our shop at 152 Freedom Dr. We install as an Owens Corning Preferred Contractor when architectural shingles are the right fit.',
+  'Marietta homeowners searching for a “roofer” usually need something more specific: a leak fixed this week, a worn roof replaced before the next cell, or storm damage documented for insurance. iRoofer Contractors — family-owned in Dallas, GA since 2019 — works Marietta regularly from our shop at 152 Freedom Dr. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when architectural shingles are the right fit.',
   'If you landed here from a broad “roofer” search, use the paths below. Repair, replacement, and storm are the jobs we actually schedule — not a generic listing. Ready to talk? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
 ];
 
@@ -39,7 +39,7 @@ const sections = [
     h2: 'Full roof replacement in Marietta',
     paras: [
       'When the roof is at end of life — widespread granule loss, multiple prior repairs, soft decking, or insurance settling a full replace — we tear off, inspect the deck, and install architectural asphalt with details that match the house. Historic and older Marietta stock often means plank decking, nail-over layers, or steep cut-up roofs with dormers; we flag those at inspection so the estimate reflects the real job.',
-      'Manufacturer warranty on the shingles plus our written workmanship coverage comes with the install. Owens Corning Preferred status applies when we install that line. Deepen: /roof-replacement-marietta/ and /roof-replacement-dallas-ga/.',
+      'The manufacturer’s standard warranty on the shingles plus our written workmanship coverage comes with the install. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that line is selected. Deepen: /roof-replacement-marietta/ and /roof-replacement-dallas-ga/.',
     ],
   },
   {
