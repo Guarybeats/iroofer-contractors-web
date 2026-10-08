@@ -4,6 +4,7 @@ import RelatedGuides from '@/components/RelatedGuides';
 import PriceDisclaimer from '@/components/PriceDisclaimer';
 import { services, brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
+import { renderInline } from '@/components/InlineText';
 
 export const metadata = seo({
   title: 'Gutter Repair & Replacement | Dallas, GA Roofers',
@@ -22,7 +23,7 @@ const servicesList = [
   { n: '01', title: 'Gutter Cleaning', body: 'Scooped and flushed to the downspouts, with clogs cleared and water flow verified. We can also identify damage while we’re up there — sagging runs, open seams, or missing end caps that will fail later.' },
   { n: '02', title: 'Repair & Realignment', body: 'Sagging gutters, popped seams, leaking joints, and gutters pulling away from the fascia — we re-hang, re-seal, and true the slope so water drains instead of pooling.' },
   { n: '03', title: 'Full Seamless Replacement', body: 'Old, undersized, or dented gutters come down and new seamless aluminum goes up — custom-cut to your roofline with correct fall, downspouts, and hangers. No splice seams to leak.' },
-  { n: '04', title: 'Downspout & Drainage', body: 'Extensions that dump against the foundation are a fixable cause of basement and crawlspace moisture. We reroute or extend downspouts so water lands away from your home.' },
+  { n: '04', title: 'Downspout & Drainage', body: 'Extensions that empty against the foundation are a fixable cause of basement and crawlspace moisture. We reroute or extend downspouts so water lands away from your home.' },
   { n: '05', title: 'Leaf Guard & Gutter Covers', body: 'Dallas is full of pines and oaks. Gutter guards cut cleaning frequency dramatically — we carry several styles and match the right one to your tree coverage and roof slope.' },
   { n: '06', title: 'Fascia & Soffit Repair', body: 'Rotting fascia behind failing gutters gets replaced before new gutters go up, so the new run has something solid to fasten to. Done together, it’s one trip, one crew.' },
 ];
@@ -101,7 +102,7 @@ export default function GutterPage() {
 
 
         <div className="rv" style={{ marginTop: 56 }}>
-          <span className="eyebrow dark">Dallas money pages</span>
+          <span className="eyebrow dark">Dallas, GA</span>
           <h2 style={{ fontSize: 'clamp(1.4rem,2.4vw,1.8rem)', fontWeight: 800, marginTop: 8 }}>Gutter work tied to your Dallas roof</h2>
           <p style={{ color: '#52606b', marginTop: 8, maxWidth: 640 }}>
             Same local crew from 152 Freedom Dr — gutters, drip edge, and roofing handled together when that is the smarter scope.
@@ -116,18 +117,18 @@ export default function GutterPage() {
 
         {/* WHAT IT COSTS */}
         <div className="sec-head rv" style={{ marginTop: 64 }}>
-          <span className="eyebrow dark">Ballpark pricing</span>
+          <span className="eyebrow dark">Pricing</span>
           <h2 style={{ fontSize: 'clamp(1.8rem,3.6vw,2.6rem)', fontWeight: 900 }}>What gutter work costs in Dallas, GA</h2>
-          <p style={{ color: '#52606b', marginTop: 12, maxWidth: 640 }}>Rough ranges for Paulding and Cobb counties — your exact quote comes after a free inspection, no obligation.</p>
+          <p style={{ color: '#52606b', marginTop: 12, maxWidth: 640 }}>We don’t publish prices online. Run length, height, downspouts, fascia condition and guard style all change the number — your written quote comes after a free inspection, no obligation.</p>
         </div>
         <PriceDisclaimer />
         <div className="cards" style={{ marginTop: 24 }}>
-          <div className="card"><div className="body"><h3>Gutter Cleaning</h3><p style={{ color: '#52606b' }}>Per-run cleaning with flush-through, clog removal, and a quick damage check.</p><span className="more">$1.50–$3.00 per linear ft</span></div></div>
-          <div className="card"><div className="body"><h3>Repair & Realignment</h3><p style={{ color: '#52606b' }}>Sagging runs, popped seams, and leaking joints re-hung and re-sealed.</p><span className="more">$150–$400 per repair</span></div></div>
-          <div className="card"><div className="body"><h3>Seamless Replacement</h3><p style={{ color: '#52606b' }}>New seamless aluminum, custom-cut, with downspouts, hangers, and fall set right.</p><span className="more">$6–$9 per linear ft installed</span></div></div>
-          <div className="card"><div className="body"><h3>Leaf Guard / Gutter Covers</h3><p style={{ color: '#52606b' }}>Guard styles matched to your tree cover, installed on new or existing gutters.</p><span className="more">$4–$8 per linear ft</span></div></div>
-          <div className="card"><div className="body"><h3>Downspout Reroute</h3><p style={{ color: '#52606b' }}>Extensions and reroutes that stop water from pooling against the foundation.</p><span className="more">$75–$200 per downspout</span></div></div>
-          <div className="card"><div className="body"><h3>Fascia Repair</h3><p style={{ color: '#52606b' }}>Rotted fascia replaced before new gutters hang, so the fasteners bite into solid wood.</p><span className="more">$6–$10 per linear ft</span></div></div>
+          <div className="card"><div className="body"><h3>Gutter Cleaning</h3><p style={{ color: '#52606b' }}>Per-run cleaning with flush-through, clog removal, and a quick damage check.</p></div></div>
+          <div className="card"><div className="body"><h3>Repair & Realignment</h3><p style={{ color: '#52606b' }}>Sagging runs, popped seams, and leaking joints re-hung and re-sealed.</p></div></div>
+          <div className="card"><div className="body"><h3>Seamless Replacement</h3><p style={{ color: '#52606b' }}>New seamless aluminum, custom-cut, with downspouts, hangers, and fall set right.</p></div></div>
+          <div className="card"><div className="body"><h3>Leaf Guard / Gutter Covers</h3><p style={{ color: '#52606b' }}>Guard styles matched to your tree cover, installed on new or existing gutters.</p></div></div>
+          <div className="card"><div className="body"><h3>Downspout Reroute</h3><p style={{ color: '#52606b' }}>Extensions and reroutes that stop water from pooling against the foundation.</p></div></div>
+          <div className="card"><div className="body"><h3>Fascia Repair</h3><p style={{ color: '#52606b' }}>Rotted fascia replaced before new gutters hang, so the fasteners bite into solid wood.</p></div></div>
         </div>
 
         {/* FAQ */}
@@ -147,7 +148,7 @@ export default function GutterPage() {
             {faqs.map((f, i) => (
               <div className={`faq-item${i === 0 ? ' open' : ''}`} key={i}>
                 <button className="faq-q" aria-expanded={i === 0 ? 'true' : 'false'}>{f.q}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{f.a}</p></div></div>
+                <div className="faq-a"><div><p>{renderInline(f.a)}</p></div></div>
               </div>
             ))}
           </div>

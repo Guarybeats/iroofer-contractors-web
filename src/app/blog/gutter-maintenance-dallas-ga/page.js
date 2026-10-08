@@ -15,7 +15,7 @@ export const metadata = {
 
   title: 'Gutter Maintenance in Dallas, GA: Clean or Replace?',
   description:
-    'Clogged gutters cause 30% of the basement leaks and foundation issues we see in Paulding County. Cleaning schedule and replacement timing.',
+    'Clogged gutters send water into fascia, roof edges and foundations. How often to clean them in North Georgia, and when to repair vs. replace.',
 };
 
 const post = {
@@ -44,7 +44,7 @@ export default function BlogPostPage() {
           </div>
 
           <div className="post-body rv">
-            <p>Your gutters aren’t just decorative trim — they’re the first line of defense against water damage to your roof, fascia, and foundation. In Dallas GA, where spring storms drop 2–4 inches of rain in an hour, neglected gutters become a $10,000 problem overnight. Here’s how to keep them working.</p>
+            <p>Your gutters aren’t just decorative trim — they’re the first line of defense against water damage to your roof, fascia, and foundation. In Dallas, GA, where spring storms can drop heavy rain fast, neglected gutters turn into roof, fascia and foundation problems. Here’s how to keep them working.</p>
 
             <h2>How Often to Clean Your Gutters in North Georgia</h2>
             <p>Twice a year, minimum. Here’s why:</p>
@@ -52,7 +52,7 @@ export default function BlogPostPage() {
               <li><strong>Spring (March–April)</strong> — oak and pine trees drop the most debris after winter. Clean before the April–May storm season hits.</li>
               <li><strong>Fall (October–November)</strong> — leaves, acorns, and pine straw clog gutters fast. Clean before winter freezes — ice dams start here.</li>
             </ul>
-            <p><strong>Exception:</strong> If you have large oak trees near your roof, inspect monthly during leaf-drop season. A single 20 mph wind gust can unload 20 pounds of leaves onto your gutters in seconds.</p>
+            <p><strong>Exception:</strong> If you have large oak trees near your roof, inspect monthly during leaf-drop season.</p>
 
             <h2>Signs Your Gutters Need Cleaning — Right Now</h2>
             <p>Don’t wait for the twice-a-year schedule. Clean immediately if you see:</p>
@@ -64,14 +64,14 @@ export default function BlogPostPage() {
             </ul>
 
             <h2>How Gutter Problems Damage Your Roof</h2>
-            <p>When gutters clog, water has nowhere to go. It pools on your roof edge, seeps under the first few rows of shingles, and rots the fascia board — the wooden beam that holds your gutter system and supports your roof deck. Repairing rotting fascia + gutter replacement costs $3,000–$8,000. Preventing it costs $200–$400 per year.</p>
+            <p>When gutters clog, water has nowhere to go. It pools on your roof edge, seeps under the first few rows of shingles, and rots the fascia board — the wooden beam that holds your gutter system and supports your roof deck. Repairing rotted fascia and replacing gutters costs far more than keeping them clean.</p>
 
             <h2>Replacement vs. Repair: When to Tear Out vs. Fix</h2>
             <table style={{ width: '100%', borderCollapse: 'collapse', margin: '16px 0' }}>
               <tbody>
                 <tr>
-                  <td style={{ padding: '6px 0', borderBottom: '1px solid #eee' }}><strong>Sagging &gt; 2 inches</strong></td>
-                  <td style={{ padding: '6px 0', borderBottom: '1px solid #eee' }}>Replace — fascia is likely rotting</td>
+                  <td style={{ padding: '6px 0', borderBottom: '1px solid #eee' }}><strong>Long sagging runs</strong></td>
+                  <td style={{ padding: '6px 0', borderBottom: '1px solid #eee' }}>Check the fascia — rot behind the gutter often means replacing both</td>
                 </tr>
                 <tr>
                   <td style={{ padding: '6px 0', borderBottom: '1px solid #eee' }}><strong>Visible rust/pinhole leaks</strong></td>
@@ -87,22 +87,20 @@ export default function BlogPostPage() {
                 </tr>
               </tbody>
             </table>
-            <p style={{ fontSize: '.85rem', color: '#8ea2b4', marginTop: 8 }}>Average gutter replacement in Dallas GA: $1,200–$3,500 for a typical single-family home.</p>
 
             <h2>What We Recommend to Dallas Homeowners</h2>
-            <p>At iRoofer, we install seamless aluminum gutters (K-5 or K-6 profile) with hidden hangers spaced every 24 inches. We integrate them with new roof installations and replace fascia proactively — not reactively. Every gutter job includes:</p>
+            <p>At iRoofer, we install seamless aluminum gutters with hidden hangers and coordinate them with the roof edge, so drip edge, fascia and gutters work together. A gutter job typically includes:</p>
             <ul>
               <li>Full fascia inspection and rot replacement if needed.</li>
-              <li>Proper slope adjustment (1/4 inch per 10 feet).</li>
-              <li>Downspout extensions to move water 5 feet from your foundation.</li>
-              <li>Workmanship warranty in writing on every gutter install.</li>
+              <li>Setting the slope so water runs to the downspouts.</li>
+              <li>Downspouts and extensions that carry water away from your foundation.</li>
             </ul>
 
             <h2>DIY or Not?</h2>
-            <p>Ladder work on a wet roof in Georgia weather is dangerous. Our crews carry harnesses, gutter vacuums, and same-day scheduling for emergency clogs. If you smell mildew, see water pooling, or your gutters are pulling away from the house — call us before it becomes a $15,000 repair.</p>
+            <p>Ladder work is one of the most common ways homeowners get hurt. If your gutters are high, the roof is steep, or the gutters are pulling away from the house, call a pro. If you smell mildew, see water pooling, or see gutters pulling loose, call us before it turns into a bigger repair.</p>
 
             <h2>Need Gutter Service in Dallas GA?</h2>
-            <p>Schedule a free gutter + roof inspection — we’ll check your gutters, fascia, and roof edge all at once. No pressure, no upsell.</p>
+            <p>Schedule a free gutter and roof inspection — we’ll check your gutters, fascia and roof edge all at once. No pressure. See <Link href="/gutter-repair-replacement-dallas-ga/">gutter repair &amp; replacement in Dallas, GA</Link> or call (470) 236-1410.</p>
             <p><Link href="/contact/" className="btn btn-solid">Request Free Gutter Inspection →</Link></p>
           </div>
         </div>

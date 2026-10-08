@@ -35,7 +35,7 @@ const seasons = [
       { t: 'Visual roof scan', d: 'From ground with binoculars: look for missing, curled, or granule-bald shingles.', diy: true },
       { t: 'Attic check', d: 'Daylight through deck? Water stains on rafters? Mold smell? These mean leaks.', diy: true },
       { t: 'Flashing inspection', d: 'Chimney, vents, skylights — sealant cracked? Gaps? Re-caulk with polyurethane.', diy: false },
-      { t: 'Trim overhanging branches', d: '6+ ft clearance. Branches scrape granules; falling limbs puncture decks.', diy: false },
+      { t: 'Trim overhanging branches', d: 'Keep branches well clear of the roof. Branches scrape granules; falling limbs puncture decks.', diy: false },
     ],
   },
   {
@@ -53,9 +53,9 @@ const seasons = [
     emoji: '🍂',
     tasks: [
       { t: 'Full gutter clean', d: 'Critical — leaf dams cause ice dams in January. Install guards if trees overhang.', diy: true },
-      { t: 'Pre-winter roof inspection', d: 'Pro inspection now beats emergency tarp in January. We check 30+ points.', diy: false },
-      { t: 'Seal pipe boots', d: 'Rubber boots around vent pipes dry-rot in 5–7 years. $15 part, $200 labor if ignored.', diy: false },
-      { t: 'Chimney cricket check', d: 'Wide chimney needs a cricket (diverter) to shed water. Missing = guaranteed leak.', diy: false },
+      { t: 'Pre-winter roof inspection', d: 'A pro inspection in the fall beats an emergency tarp in January.', diy: false },
+      { t: 'Seal pipe boots', d: 'Rubber boots around vent pipes crack and dry-rot over time — a cheap fix before it leaks, an expensive one after.', diy: false },
+      { t: 'Chimney cricket check', d: 'Wide chimney needs a cricket (diverter) to shed water. Missing one is a common leak source.', diy: false },
     ],
   },
   {
@@ -65,7 +65,7 @@ const seasons = [
       { t: 'Ice dam watch', d: 'Icicles = heat loss. Rake snow off lower 3 ft of roof after heavy falls (from ground with roof rake).', diy: true },
       { t: 'Interior leak scan', d: 'Check ceilings after freeze-thaw cycles. Stains = active leak. Call immediately.', diy: true },
       { t: 'Attic frost check', d: 'Frost on nails/sheathing = ventilation failure. Fix before spring melt.', diy: false },
-      { t: 'Emergency plan', d: 'Save our number: {brand.phone}. Call for tarp help if a tree limb comes through — same-day when schedule allows during shop hours.', diy: true },
+      { t: 'Emergency plan', d: 'Save our number: (470) 236-1410. Call for tarp help if a tree limb comes through — same-day when the schedule allows during shop hours.', diy: true },
     ],
   },
 ];
@@ -88,10 +88,10 @@ export default function BlogPostPage() {
           </div>
 
           <div className="post-body rv">
-            <p>Georgia weather doesn't take a season off. Spring hail, summer UV, fall leaves, winter ice — each attacks your roof differently. A quarterly routine catches the small stuff before it turns into a $15,000 replacement. Here's your calendar.</p>
+            <p>Georgia weather doesn't take a season off. Spring hail, summer UV, fall leaves, winter ice — each attacks your roof differently. A seasonal routine catches the small stuff before it turns into a big repair or an early replacement. Here's your calendar.</p>
 
             <p style={{ background: '#e8f5e9', padding: '16px', borderRadius: 6, border: '1px solid #c8e6c9', marginBottom: '24px' }}>
-              <strong>Golden rule:</strong> Never walk a steep or wet roof. Binoculars from the ground + attic check = 80% of what you need. Call a pro for the rest.
+              <strong>Golden rule:</strong> Never walk a steep or wet roof. Binoculars from the ground plus an attic check cover a lot. Call a pro for the rest.
             </p>
 
             {seasons.map((season) => (
@@ -129,14 +129,13 @@ export default function BlogPostPage() {
 
             <h2>Annual Pro Inspection: What We Check (That You Can't)</h2>
             <ul>
-              <li>Shingle adhesion pull-test (wind uplift resistance)</li>
+              <li>Shingle seal and wind damage</li>
               <li>Flashing integrity at every penetration</li>
-              <li>Attic ventilation balance (intake vs. exhaust CFM)</li>
-              <li>Deck moisture meter readings</li>
+              <li>Attic ventilation balance (intake vs. exhaust)</li>
+              <li>Signs of moisture in the deck</li>
               <li>Fastener pattern & corrosion check</li>
-              <li>Warranty compliance verification</li>
-            </ul>
-            <p>We provide a 12-page photo report with priority ratings. $199 — waived if you hire us for any repair.</p>
+                          </ul>
+            <p>Our roof inspection is free and comes with photos and plain-English next steps.</p>
 
             <h2>Quick-Reference: When to Call Immediately</h2>
             <ul>
@@ -148,9 +147,9 @@ export default function BlogPostPage() {
             </ul>
 
             <h2>Stay Ahead of the Weather</h2>
-            <p>Join our seasonal reminder list — we'll text you when it's time for each quarterly check, plus storm alerts for Dallas GA.</p>
+            <p>Book a free roof inspection at <Link href="/contact/">https://iroofercontractors.com/contact/</Link> or call (470) 236-1410. Related: <Link href="/blog/georgia-winter-roof-inspection/">our winter roof checklist</Link>.</p>
             <RelatedPosts slug="roof-maintenance-calendar-dallas-ga" />
-            <p><Link href="/estimator/" className="btn btn-solid">Schedule Annual Inspection →</Link></p>
+            <p><Link href="/contact/" className="btn btn-solid">Schedule an inspection →</Link></p>
           </div>
         </div>
       </article>

@@ -3,11 +3,12 @@ import QuoteForm from '@/components/QuoteForm';
 import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
+import { renderInline } from '@/components/InlineText';
 
 export const metadata = seo({
-  title: 'Emergency Roof Repair Dallas GA | Tarping & Active Leaks | iRoofer',
+  title: 'Emergency Roof Repair in Dallas, GA & West Metro | iRoofer',
   description:
-    'Active roof leak in Dallas, GA? Tarping and urgent sealing when scheduling allows. Call (470) 236-1410.',
+    'Water coming in? Call (470) 236-1410. Our Dallas crew tarps active leaks and storm openings when the schedule allows, then fixes the roof for good.',
   path: '/emergency-roof-repair-dallas-ga',
 });
 
@@ -30,7 +31,7 @@ const process = [
 const emergencyFaqs = [
   {
     q: 'Do you guarantee same-hour arrival?',
-    a: 'We move as fast as schedule and weather allow — no invented SLA minutes on this page.',
+    a: 'We move as fast as schedule and weather allow, and we give you a realistic ETA when you call.',
   },
   {
     q: 'Is tarping the final fix?',
@@ -53,8 +54,8 @@ const emergencyFaqs = [
     a: 'Sudden wind or storm damage is often claim-eligible, subject to your policy and deductible. We document findings and can support the adjuster path. We do not guarantee claim approval or payout amounts.',
   },
   {
-    q: 'What if I’m in Hiram or Powder Springs?',
-    a: 'Same crew priority for active leaks in our listed service cities — call and confirm.',
+    q: 'Do you cover emergencies outside Dallas?',
+    a: 'Yes, across our listed service cities: Hiram, Douglasville, Powder Springs, Marietta, Kennesaw, Acworth, Austell and more. Call (470) 236-1410 and give us the address. Active leaks get priority wherever they are in our area.',
   },
 ];
 
@@ -79,7 +80,7 @@ export default function EmergencyPage() {
                 ← All services
               </Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>
-                Emergency response
+                Emergency response · Dallas &amp; west metro
               </span>
               <h1
                 style={{
@@ -92,13 +93,13 @@ export default function EmergencyPage() {
                 Emergency Roof Repair in Dallas, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
-                When water is coming in, stop the weather first. iRoofer Contractors — family-owned in Dallas since 2019 — prioritizes active leaks with temporary tarping when needed, then moves into permanent repair on{' '}
-                <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>/roof-repair-dallas-ga/</Link>
-                {' '}or storm documentation on{' '}
-                <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>/storm-damage-roof-repair-dallas-ga/</Link>.
+                When water is coming in, stop the weather first. iRoofer Contractors — family-owned in Dallas since 2019 — prioritizes active leaks with temporary tarping when needed, then moves into{' '}
+                <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>permanent roof repair</Link>
+                {' '}or{' '}
+                <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>storm damage documentation</Link>.
                 Call <strong>(470) 236-1410</strong> now or use{' '}
                 <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>https://iroofercontractors.com/contact/</Link>.
-                No invented minute-SLA guarantees — we move as fast as schedule and weather allow.
+                We won’t promise a minute count we can’t keep. We’ll give you an honest window and get a tarp on as soon as it’s safe.
               </p>
 
               <div className="cta" style={{ marginTop: 28 }}>
@@ -107,7 +108,7 @@ export default function EmergencyPage() {
                   style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }}
                   href={`tel:${brand.phone}`}
                 >
-                  {brand.phone}
+                  Water coming in? Call {brand.phone}
                 </a>
                 <Link
                   className="btn btn-solid"
@@ -116,6 +117,9 @@ export default function EmergencyPage() {
                 >
                   Request emergency help <span className="arr">→</span>
                 </Link>
+                <p style={{ color: '#52606b', fontSize: '.92rem', marginTop: 12 }}>
+                  Mon–Fri 9–7 · Sat 9–5. Active leaks and open roofs go ahead of routine work.
+                </p>
               </div>
 
               <h2 style={{ marginTop: 40, fontSize: '1.1rem' }}>
@@ -180,6 +184,23 @@ export default function EmergencyPage() {
             <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, lineHeight: 1.75 }}>
               Same-day emergency roof repair when schedule and safe access allow. If we can&apos;t arrive the same day, you get a real window and tarping guidance — not silence. Call {brand.phone} as early as you can after the storm.
             </p>
+            <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, lineHeight: 1.75 }}>
+              <strong>Outside Dallas?</strong> We cover the same west-metro cities from our shop at 152 Freedom Dr. Storm and emergency details for nearby cities:{' '}
+              {[
+                ['/storm-damage-roof-repair-kennesaw/', 'Kennesaw'],
+                ['/storm-damage-roof-repair-douglasville/', 'Douglasville'],
+                ['/storm-damage-roof-repair-marietta/', 'Marietta'],
+                ['/storm-damage-roof-repair-hiram/', 'Hiram'],
+                ['/storm-damage-roof-repair-acworth/', 'Acworth'],
+                ['/storm-damage-roof-repair-powder-springs/', 'Powder Springs'],
+              ].map(([href, label], i, arr) => (
+                <span key={href}>
+                  <Link href={href} style={{ color: 'var(--orange)', fontWeight: 700 }}>{label}</Link>
+                  {i < arr.length - 1 ? ' · ' : ''}
+                </span>
+              ))}
+              . Same phone: {brand.phone}.
+            </p>
           </div>
 
           <div className="sec-head rv" style={{ marginTop: 48 }}>
@@ -224,14 +245,14 @@ export default function EmergencyPage() {
             {emergencyFaqs.map((f, i) => (
               <div key={f.q} className={'faq-item' + (i === 0 ? ' open' : '')}>
                 <button className="faq-q" aria-expanded={i === 0}>{f.q}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{f.a}</p></div></div>
+                <div className="faq-a"><div><p>{renderInline(f.a)}</p></div></div>
               </div>
             ))}
           </div>
-          <p style={{ marginTop: 24 }}>
-            <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>
-            {' · '}
-            <Link href="/contact/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Contact</Link>
+          <p style={{ marginTop: 24, color: '#52606b' }}>
+            <strong>Roof open or leaking right now?</strong> Call{' '}
+            <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>. Not urgent? Book a free inspection at{' '}
+            <Link href="/contact/" style={{ fontWeight: 700, color: 'var(--orange)' }}>https://iroofercontractors.com/contact/</Link>.
           </p>
         </div>
       </section>

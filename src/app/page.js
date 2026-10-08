@@ -4,14 +4,11 @@ import HeroForm from '@/components/HeroForm';
 import ReviewButton from '@/components/ReviewButton';
 import { brand, services } from '@/lib/brand';
 import { posts } from '@/lib/posts';
-import { reviews } from '@/lib/reviews';
 import Pic from '@/components/Pic';
+import { renderInline } from '@/components/InlineText';
+import { plainText } from '@/lib/inlineLinks';
+import { GBP_URL } from '@/components/LocalSeo';
 
-// Marquee rows: split the review set in half so no quote is rendered more than
-// twice (once per row track). Each track repeats the *other* half to keep the
-// scroll seamless without triplicating review text in the HTML.
-const revA = reviews.slice(0, Math.ceil(reviews.length / 2));
-const revB = reviews.slice(Math.ceil(reviews.length / 2));
 
 const dallasLinks = [
   { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas, GA' },
@@ -27,7 +24,7 @@ const dallasLinks = [
 ];
 
 const svcs = [
-  { n: '01', title: 'Roof Repair', tag: 'Same week', img: '/assets/service-repair.jpg?v=3',
+  { n: '01', title: 'Roof Repair', tag: 'Leaks & flashing', img: '/assets/service-repair.jpg?v=3',
     href: '/roof-repair-dallas-ga/', cta: 'Roof repair in Dallas, GA',
     body: 'Water stains, lifted flashing, cracked boots and mystery leaks. We trace the source — not just the symptom — then patch, re-seal and color-match so the fix disappears into your roofline.' },
   { n: '02', title: 'Roof Replacement', tag: 'Most popular', img: '/assets/service-replacement.jpg?v=2',
@@ -38,20 +35,20 @@ const svcs = [
     body: 'We partner with builders and homeowners on new builds to install a roof that matches the design and the budget — code-compliant, inspected, and built to last.' },
   { n: '04', title: 'Storm & Insurance Claims', tag: 'Same-day when schedule allows', img: '/assets/service-repair.jpg?v=3',
     href: '/storm-damage-roof-repair-dallas-ga/', cta: 'Storm damage roof repair Dallas',
-    body: 'Hail and wind damage documented with photos and a written scope. We meet your adjuster on-site, supplement the claim when needed, and guide you through the paperwork so you are not fronting the cost.' },
+    body: 'Hail and wind damage documented with photos and a written scope. We can meet your adjuster on-site and help you document damage for your insurance claim. What gets approved depends on your policy.' },
   { n: '05', title: 'Gutter Repair & Replacement', tag: 'Protection', img: '/assets/service-gutters-main.jpg?v=2',
     href: '/gutter-repair-replacement-dallas-ga/', cta: 'Gutter repair & replacement Dallas',
-    body: 'Clogged or failing gutters are the #1 cause of preventable roof and foundation damage. We clean, repair, and replace seamless gutters so water flows away from your home, not into it.' },
+    body: 'Clogged or failing gutters are a common cause of preventable roof and foundation damage. We clean, repair, and replace seamless gutters so water flows away from your home, not into it.' },
 ];
 
 
 const faqs = [
-  { q: 'Is the homepage the right page for roof repair Dallas GA?', a: 'For ranking maybe — for the homeowner, the dedicated repair page is clearer. Start at /roof-repair-dallas-ga/ for leaks, flashing, and storm wear.' },
-  { q: 'What about roof replacement Dallas GA?', a: 'Use /roof-replacement-dallas-ga/ for scope, process, and next steps. We link it early on purpose.' },
-  { q: 'Hail or wind after a Dallas storm?', a: 'See /storm-damage-roof-repair-dallas-ga/ and /services/roof-insurance-claims/. We document; approvals depend on your policy — no guaranteed outcomes.' },
-  { q: 'Need Hiram help?', a: 'Start at /roof-repair-hiram/ or /roof-replacement-hiram/ — same Dallas-based crew. Call (470) 236-1410.' },
-  { q: 'Looking for a Dallas roofing contractor?', a: 'Start with the service you need — repair, replacement, or storm — or the hub at /dallas-ga-roofing/. Or call (470) 236-1410 / use /contact/.' },
-  { q: 'How long does a full replacement take?', a: 'Most single-family homes finish in one to two days once materials are on site, weather permitting. We give a realistic schedule in writing before we start.' },
+  { q: 'Do you do roof repair in Dallas, GA?', a: 'Yes. Leaks, flashing, pipe boots and storm wear are everyday work for us. Start at [roof repair in Dallas, GA](/roof-repair-dallas-ga/) or call (470) 236-1410.' },
+  { q: 'Do you replace roofs in Dallas, GA?', a: 'Yes. Full tear-off replacements are a big part of what we do. See [roof replacement in Dallas, GA](/roof-replacement-dallas-ga/) for scope, process and next steps.' },
+  { q: 'Hail or wind after a Dallas storm?', a: 'See [storm damage roof repair in Dallas](/storm-damage-roof-repair-dallas-ga/) and [roof insurance claims help](/services/roof-insurance-claims/). We document the damage; approvals depend on your policy — no guaranteed outcomes.' },
+  { q: 'Need Hiram help?', a: 'Start at [roof repair in Hiram](/roof-repair-hiram/) or [roof replacement in Hiram](/roof-replacement-hiram/) — same Dallas-based crew. Call (470) 236-1410.' },
+  { q: 'Looking for a Dallas roofing contractor?', a: 'Start with the service you need — repair, replacement, or storm — or our [Dallas roofing company hub](/dallas-ga-roofing/). Or call (470) 236-1410 / use https://iroofercontractors.com/contact/.' },
+  { q: 'How long does a full replacement take?', a: 'It depends on the size and pitch of the roof, the number of layers coming off, decking repairs and weather. We give you a realistic schedule in writing before we start.' },
   { q: 'Do I need to be home during the work?', a: 'Nope. Everything happens outside. We’ll text photos at each milestone and walk through whenever you’re free. Magnet sweep included on tear-offs.' },
 ];
 
@@ -62,7 +59,7 @@ export default function HomePage() {
     mainEntity: faqs.map((f) => ({
       '@type': 'Question',
       name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
+      acceptedAnswer: { '@type': 'Answer', text: plainText(f.a) },
     })),
   };
 
@@ -86,7 +83,7 @@ export default function HomePage() {
             </div>
             <div className="stats">
               <div className="stat"><div className="num"><span className="cnt" data-count="2019" data-nogroup>2019</span></div><div className="lbl">Family-owned in Dallas since</div></div>
-              <div className="stat"><div className="num">{brand.rating}</div><div className="lbl">{brand.reviewCount} Google Reviews</div></div>
+              <div className="stat"><div className="num">Free</div><div className="lbl">No-pressure roof inspections</div></div>
               <div className="stat"><div className="num">Local</div><div className="lbl">Owens Corning Preferred</div></div>
               <div className="stat"><div className="num">Real</div><div className="lbl">Crew — not a call center</div></div>
             </div>
@@ -108,7 +105,7 @@ export default function HomePage() {
       </section>
 
 
-      {/* ATF INTENT CARDS — pull money QP off homepage */}
+      {/* ATF INTENT CARDS — service links */}
       <section className="sec-light" style={{ padding: '28px 0 8px' }} aria-label="Start with the service you need">
         <div className="wrap">
           <p style={{ color: '#52606b', marginBottom: 14, maxWidth: 720 }}>
@@ -176,9 +173,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Dallas, GA service links — gives the city/service pages an internal link
-              from the strongest page on the site. See skills note: Google was serving
-              the homepage for "roof replacement dallas ga" while these pages sat unlinked. */}
+          {/* Dallas, GA service links */}
           <div className="rv" style={{ marginTop: 46, borderTop: '1px solid rgba(22,29,37,.12)', paddingTop: 22 }}>
             <span className="eyebrow dark">Roofing in Dallas, GA</span>
             <p style={{ color: '#52606b', marginTop: 8, maxWidth: 640 }}>
@@ -199,7 +194,7 @@ export default function HomePage() {
       <section className="storm" id="storm">
         <div className="wrap">
           <div className="rv">
-            <span className="pulse"><span className="dot" /> Crews in your area today</span>
+            <span className="pulse"><span className="dot" /> Storm response</span>
             <h2>After hail or a storm. <br /><span className="ac">Don’t climb.</span></h2>
             <p>Photo from the ground. Call (470) 236-1410. We document, tarp when needed, and explain repair vs replacement — including hail bruising you often can’t see from the driveway.</p>
             <div className="cta">
@@ -212,7 +207,7 @@ export default function HomePage() {
             <ol>
               <li>Don’t climb up. Snap ground-level photos of debris, dents on gutters and any interior stains.</li>
               <li>Call us for a free damage inspection and a temporary tarp if you’re leaking.</li>
-              <li>We write the scope, meet your adjuster, and you sign off before a single shingle moves.</li>
+              <li>We write the scope, can meet your adjuster, and you sign off before a single shingle moves.</li>
             </ol>
           </div>
         </div>
@@ -225,7 +220,7 @@ export default function HomePage() {
           <div className="sec-head rv">
             <span className="eyebrow dark">Proof, not promises</span>
             <h2>Drag to see the <span className="ac">difference.</span></h2>
-            <p>A storm-battered roof on a Dallas two-story, fully torn off and rebuilt in two days. Slide the handle — then scroll the recent ridgelines on the right.</p>
+            <p>A storm-battered roof on a Dallas two-story, fully torn off and rebuilt. Slide the handle — then scroll the recent ridgelines on the right.</p>
           </div>
 
           <div className="ba-wrap">
@@ -246,7 +241,7 @@ export default function HomePage() {
               </div>
               <div className="gcard">
                 <img loading="lazy" src="/assets/hero.webp?v=3" alt="Aerial view of a finished storm rebuild with multiple new roofs" />
-                <div className="cap"><span>Subdivision · 14 homes</span><b>Storm rebuild</b></div>
+                <div className="cap"><span>West metro Atlanta</span><b>Storm rebuild</b></div>
               </div>
             </div>
           </div>
@@ -262,45 +257,26 @@ export default function HomePage() {
             <p>Four steps, no surprises, no pressure. You’ll know exactly what’s happening on your roof and why.</p>
           </div>
           <div className="steps-grid">
-            <div className="step rv"><div className="n">01</div><h3>Inspect &amp; document</h3><p>Free on-roof inspection with photos and a plain-English written report — usually same week.</p><span className="arrow" aria-hidden="true">→</span></div>
-            <div className="step rv"><div className="n">02</div><h3>Estimate &amp; insurance</h3><p>Transparent pricing or full claim support. We handle the adjuster and the supplements.</p><span className="arrow" aria-hidden="true">→</span></div>
-            <div className="step rv"><div className="n">03</div><h3>Install &amp; clean up</h3><p>Crew arrives at 7am, roof on by dusk. Magnet sweep, dumpster hauled, lawn left spotless.</p><span className="arrow" aria-hidden="true">→</span></div>
+            <div className="step rv"><div className="n">01</div><h3>Inspect &amp; document</h3><p>Free on-roof inspection with photos and a plain-English written report.</p><span className="arrow" aria-hidden="true">→</span></div>
+            <div className="step rv"><div className="n">02</div><h3>Estimate &amp; insurance</h3><p>A written estimate, or help documenting damage for your insurance claim. We can meet your adjuster.</p><span className="arrow" aria-hidden="true">→</span></div>
+            <div className="step rv"><div className="n">03</div><h3>Install &amp; clean up</h3><p>Crew shows up when we say. Magnet sweep, dumpster hauled, yard left clean.</p><span className="arrow" aria-hidden="true">→</span></div>
             <div className="step rv"><div className="n">04</div><h3>Walkthrough + warranty</h3><p>We walk the roof with you, register the manufacturer warranty, and stand behind the work.</p></div>
           </div>
         </div>
       </section>
 
-      {/* REVIEWS */}
+      {/* REVIEWS — no quotes or ratings on-site; send people to the live Google Business Profile */}
       <section className="reviews sec-pad" id="reviews">
         <div className="wrap">
           <div className="head-row rv">
             <div className="sec-head" style={{ maxWidth: '34rem' }}>
               <span className="eyebrow">Word travels fast</span>
-              <h2>Neighbors trust us with their roofs.</h2>
+              <h2>See what neighbors say.</h2>
+              <p>Read our reviews directly on our Google Business Profile.</p>
             </div>
-            <div className="rating-big">
-              <div className="sc">{brand.rating}</div>
-              <div><div className="stars">★★★★★</div><div className="meta">Neighbors on Google · read live reviews on our Business Profile</div></div>
+            <div>
+              <a className="btn btn-solid" href={GBP_URL} target="_blank" rel="noopener noreferrer">Read our Google reviews <span className="arr">→</span></a>
             </div>
-          </div>
-        </div>
-
-        <div className="rev-row r1" aria-label="Customer reviews">
-          <div className="rev-track">
-            {revA.map((r, i) => (
-              <div className="rcard" key={`a${i}`}><div className="stars">★★★★★</div><p className="q">{r.q}</p><div className="who"><span className="av">{r.who.charAt(0)}</span><div><b>{r.who}</b><span>{r.where}</span></div></div></div>
-            ))}
-            {revB.map((r, i) => (
-              <div className="rcard" key={`b${i}`}><div className="stars">★★★★★</div><p className="q">{r.q}</p><div className="who"><span className="av">{r.who.charAt(0)}</span><div><b>{r.who}</b><span>{r.where}</span></div></div></div>
-            ))}
-          </div>
-        </div>
-
-        <div className="rev-row r2" aria-hidden="true">
-          <div className="rev-track">
-            {[...revB, ...revA].map((r, i) => (
-              <div className="rcard" key={`c${i}`}><div className="stars">★★★★★</div><p className="q">{r.q}</p><div className="who"><span className="av">{r.who.charAt(0)}</span><div><b>{r.who}</b><span>{r.where}</span></div></div></div>
-            ))}
           </div>
         </div>
       </section>
@@ -360,7 +336,7 @@ export default function HomePage() {
               {faqs.map((f, i) => (
                 <div className={`faq-item${i === 0 ? ' open' : ''}`} key={i}>
                   <button className="faq-q" aria-expanded={i === 0 ? 'true' : 'false'}>{f.q}<span className="pm" aria-hidden="true" /></button>
-                  <div className="faq-a"><div><p>{f.a}</p></div></div>
+                  <div className="faq-a"><div><p>{renderInline(f.a)}</p></div></div>
                 </div>
               ))}
             </div>
@@ -374,7 +350,7 @@ export default function HomePage() {
           <div className="rv">
             <span className="eyebrow">Let’s talk</span>
             <h2>Talk to a <span className="ac">real roofer.</span></h2>
-            <p className="lead">Tell us what’s going on and we’ll get back within one business hour — usually much faster. Free inspections, free estimates, zero pressure.</p>
+            <p className="lead">Tell us what’s going on and we’ll get back to you. Free inspections, free estimates, zero pressure.</p>
             <div className="cinfo">
               <div className="row">
                 <span className="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11 11 0 0 0 .56 3.5 1 1 0 0 1-.25 1Z" /></svg></span>

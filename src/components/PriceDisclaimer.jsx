@@ -12,10 +12,9 @@ export default function PriceDisclaimer() {
         margin: '18px 0',
       }}
     >
-      <strong>Estimates only.</strong> Any dollar figures below are general ranges for the Dallas, GA
-      area, published to help you plan. Every roof is different — pitch, access, decking condition,
-      material choice and current material pricing all move the number. They are not a quote or an
-      offer. For an accurate figure, book a free on-site inspection and we&rsquo;ll put it in writing.
+      <strong>No prices published.</strong> Every roof is different — size, pitch, access, decking
+      condition and material all move the number. For a real figure, book a free on-site inspection
+      and we&rsquo;ll put it in writing.
     </p>
   );
 }

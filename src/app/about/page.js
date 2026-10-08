@@ -2,9 +2,10 @@ import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
 import { FaqSchema } from '@/components/LocalSeo';
+import { renderInline } from '@/components/InlineText';
 
 export const metadata = seo({
-  title: 'About iRoofer Contractors | Family-Owned Dallas GA Roofing Since 2019',
+  title: 'About iRoofer | Family-Owned Dallas GA Roofing Since 2019',
   description:
     'Meet Cristian Mendez and the iRoofer crew — family-owned in Dallas, GA since 2019. Call (470) 236-1410 or visit our contact page.',
   path: '/about',
@@ -21,7 +22,7 @@ const values = [
 const credentials = [
   { t: 'Owens Corning Preferred Contractor', d: 'Trained crews and manufacturer-backed shingle systems installed to spec when that system is selected.' },
   { t: 'Family-owned since 2019', d: 'Repairs, full replacements, storm claims, and new construction for homeowners and builders across the west metro.' },
-  { t: 'Strong Google reviews', d: 'Neighbors in Dallas, Hiram, Douglasville, and nearby towns — read them on our Google Business Profile rather than trusting a marketing number here.' },
+  { t: 'Google reviews you can read', d: 'Neighbors in Dallas, Hiram, Douglasville, and nearby towns — read them on our Google Business Profile rather than trusting a marketing number here.' },
 ];
 
 const process = [
@@ -129,7 +130,7 @@ export default function AboutPage() {
               <ul style={{ color: '#52606b', lineHeight: 1.9, marginTop: 12 }}>
                 <li>Scare you into a full replacement over a fixable boot</li>
                 <li>Promise insurance outcomes we don’t control</li>
-                <li>Invent &quot;#1 roofer in Atlanta&quot; lines</li>
+                <li>Make &quot;#1 roofer in Atlanta&quot; claims</li>
                 <li>Disappear after the dumpster leaves</li>
               </ul>
               <p style={{ color: '#52606b', marginTop: 20 }}>
@@ -177,7 +178,7 @@ export default function AboutPage() {
             {faqs.map((f, i) => (
               <div key={f.q} className={'faq-item' + (i === 0 ? ' open' : '')}>
                 <button className="faq-q" aria-expanded={i === 0}>{f.q}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{f.a}</p></div></div>
+                <div className="faq-a"><div><p>{renderInline(f.a)}</p></div></div>
               </div>
             ))}
           </div>

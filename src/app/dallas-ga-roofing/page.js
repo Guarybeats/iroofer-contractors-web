@@ -3,15 +3,16 @@ import QuoteForm from '@/components/QuoteForm';
 import { brand, cities, cityPath } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
+import { renderInline } from '@/components/InlineText';
 
 export const metadata = seo({
-  title: 'Dallas GA Roofing Contractor | Repair, Replace & Storm | iRoofer',
+  title: 'Dallas, GA Roofing Contractor: Repair, Replace & Storm',
   description:
-    'Dallas, GA roofing from the local shop at 152 Freedom Dr. Repair, replacement, storm damage, and insurance help. Call (470) 236-1410 or request a free inspection online.',
+    'Dallas, GA roofing from the local shop at 152 Freedom Dr. Repair, replacement, storm damage and insurance help. Free inspection: (470) 236-1410.',
   path: '/dallas-ga-roofing',
 });
 
-// Qualitative FAQs — dollar ranges from prior live FAQ softened/cut (VERIFY-OR-CUT).
+// Qualitative FAQs — no published prices.
 const faqs = [
   {
     q: 'Are you based in Dallas, or just advertising here?',
@@ -19,7 +20,7 @@ const faqs = [
   },
   {
     q: 'What’s the difference between this page and your repair/replace pages?',
-    a: 'This is the city hub (canonical for /service-areas/dallas-ga/ which 301s here). The money pages go deeper on scope, process, and next steps for each service.',
+    a: 'This page is the overview of everything we do in Dallas. The service pages — [roof repair in Dallas, GA](/roof-repair-dallas-ga/), [roof replacement in Dallas, GA](/roof-replacement-dallas-ga/) and [storm damage roof repair in Dallas](/storm-damage-roof-repair-dallas-ga/) — go deeper on scope, process, and next steps.',
   },
   {
     q: 'How do I get a quote?',
@@ -28,19 +29,19 @@ const faqs = [
 
   {
     q: 'What does a Dallas roofing contractor visit include?',
-    a: 'On-roof look when safe, photos, and plain-English next steps — repair, monitor, or replace. We put a real figure in writing after inspection; this hub does not publish a fixed public price list.',
+    a: 'On-roof look when safe, photos, and plain-English next steps — repair, monitor, or replace. We put a real figure in writing after inspection; we don’t publish a price list.',
   },
   {
     q: 'Do you publish prices here?',
-    a: 'No fixed public price list on this hub. Planning factors live on the estimator and cost content labeled not-a-quote; real numbers after an on-site inspection.',
+    a: 'No. Every roof is different, so we give you a real number in writing after a free on-site inspection. Request one at https://iroofercontractors.com/contact/ or call (470) 236-1410.',
   },
   {
     q: 'Repair or replace?',
     a: 'Isolated failures repair; widespread wear or repeated leaks often replace. We’ll say which after we see the roof.',
   },
   {
-    q: 'Do you handle insurance claims for storm damage?',
-    a: 'You file; we document with photos, meet your adjuster on-site, and help with supplements when the scope falls short. Approvals depend on your policy — we don’t guarantee claim outcomes.',
+    q: 'Can you help with an insurance claim for storm damage?',
+    a: 'You file the claim; we help you document damage for your insurance claim with photos and a written scope, and can meet your adjuster on-site. Approvals depend on your policy — we don’t guarantee claim outcomes.',
   },
   {
     q: 'What do Georgia storms do to roofs here?',
@@ -67,8 +68,8 @@ export default function DallasGaRoofingPage() {
               Dallas, GA Roofing — Repair, Replacement &amp; Storm Damage
             </h1>
             <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 720 }}>
-              This is home base. iRoofer Contractors is family-owned in Dallas, GA since 2019 — Cristian Mendez and crew at 152 Freedom Dr, 30157. If a broad “roofer” search dropped you here, skip the vanity label and go to what you actually need: repair, replacement, or storm documentation.
-              Free photo inspections and a real person on the phone at (470) 236-1410. Need a leak fixed today? Start on the Roof repair Dallas GA page.
+              This is home base. iRoofer Contractors is family-owned in Dallas, GA since 2019 — Cristian Mendez and crew at 152 Freedom Dr, 30157. Pick what you need below: repair, replacement, or storm documentation.
+              Free photo inspections and a real person on the phone at (470) 236-1410. Need a leak fixed? Start with roof repair in Dallas, GA.
             </p>
             <div className="cta" style={{ marginTop: 24 }}>
               <a className="bigphone" href="tel:(470) 236-1410" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }}>
@@ -79,7 +80,7 @@ export default function DallasGaRoofingPage() {
               </Link>
             </div>
             <p style={{ marginTop: 16 }}>
-              <Link href="/roof-repair-dallas-ga/" className="chip">Roof repair Dallas GA (money page) →</Link>
+              <Link href="/roof-repair-dallas-ga/" className="chip">Roof repair in Dallas, GA →</Link>
             </p>
           </div>
         </div>
@@ -88,18 +89,15 @@ export default function DallasGaRoofingPage() {
       <section className="sec-light sec-pad">
         <div className="wrap">
           <div className="sec-head rv">
-            <span className="eyebrow dark">How to use this hub</span>
-            <h2>Pick the money URL that matches your problem</h2>
-            <p style={{ color: '#52606b', maxWidth: 720 }}>
-              Search &quot;Dallas GA roofing company&quot; should land somewhere that routes clearly — not thin duplicate paragraphs on every URL.
-            </p>
+            <span className="eyebrow dark">Start here</span>
+            <h2>Pick the service that matches your problem</h2>
           </div>
           <ul style={{ color: '#52606b', lineHeight: 1.9, maxWidth: 720 }}>
-            <li>Leaking or stained ceilings → repair money page</li>
-            <li>Full tear-off curiosity → replacement money page</li>
-            <li>After a storm → storm / emergency / claims</li>
-            <li>Overflowing eaves → gutters</li>
-            <li>Who are these people → about</li>
+            <li>Leaking or stained ceilings → <Link href="/roof-repair-dallas-ga/">roof repair in Dallas, GA</Link></li>
+            <li>Worn-out roof → <Link href="/roof-replacement-dallas-ga/">roof replacement in Dallas, GA</Link></li>
+            <li>After a storm → <Link href="/storm-damage-roof-repair-dallas-ga/">storm damage</Link>, <Link href="/emergency-roof-repair-dallas-ga/">emergency repair</Link> or <Link href="/services/roof-insurance-claims/">insurance claims help</Link></li>
+            <li>Overflowing eaves → <Link href="/gutter-repair-replacement-dallas-ga/">gutter repair &amp; replacement</Link></li>
+            <li>Who we are → <Link href="/about/">about iRoofer</Link></li>
           </ul>
 
           <div className="sec-head rv" style={{ marginTop: 48 }}>
@@ -128,7 +126,7 @@ export default function DallasGaRoofingPage() {
             </div>
             <div className="card">
               <h3>Insurance claims</h3>
-              <p>You file; we document, meet the adjuster, and help with supplements — no guaranteed approvals.</p>
+              <p>You file; we help you document damage for your insurance claim and can meet the adjuster — no guaranteed approvals.</p>
               <Link href="/services/roof-insurance-claims/" className="chip">Claims help →</Link>
             </div>
             <div className="card">
@@ -161,14 +159,14 @@ export default function DallasGaRoofingPage() {
               <h2>Year-round local accountability</h2>
               <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
                 iRoofer Contractors — {brand.owner}, family-owned since 2019, shop at 152 Freedom Dr, Dallas, GA 30157.
-                Owens Corning Preferred when selected. We work Paulding and nearby west-metro cities every week — not as a one-week storm blitz.
+                Owens Corning Preferred when selected. We work Paulding and nearby west-metro cities year-round — not as a one-week storm blitz.
               </p>
               <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
                 Dallas and Paulding roofs see tree cover, humidity, and fast-moving storms. That mix ages flashing and asphalt faster than a brochure timeline.
                 A local roofing company that answers the phone after the job matters as much as the shingle brand on the invoice.
               </p>
               <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
-                Read live Google reviews on the Business Profile. We don&apos;t invent testimonials on this hub.
+                Read live Google reviews on the Business Profile.
               </p>
               <p style={{ marginTop: 16 }}>
                 <Link href="/about/" style={{ fontWeight: 700, color: 'var(--orange)' }}>About iRoofer →</Link>
@@ -225,7 +223,7 @@ export default function DallasGaRoofingPage() {
       <section className="sec-pad" style={{ background: '#fff', paddingTop: 0 }}>
         <div className="wrap">
           <div className="sec-head rv">
-            <span className="eyebrow dark">Internal links</span>
+            <span className="eyebrow dark">Dallas pages</span>
             <h2>Jump to the Dallas page you need</h2>
           </div>
           <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '.6rem 1.4rem', listStyle: 'none', padding: 0 }}>
@@ -251,12 +249,12 @@ export default function DallasGaRoofingPage() {
             {faqs.map((f, i) => (
               <div className={faqItem(i === 0)} key={f.q}>
                 <button className="faq-q" aria-expanded={i === 0}>{f.q}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{f.a}</p></div></div>
+                <div className="faq-a"><div><p>{renderInline(f.a)}</p></div></div>
               </div>
             ))}
           </div>
           <p style={{ marginTop: 24, color: '#52606b' }}>
-            Pick the money URL that matches your problem, or call (470) 236-1410 and describe it in one sentence — leak, storm, replace, or gutters.{' '}
+            Pick the service that matches your problem, or call (470) 236-1410 and describe it in one sentence — leak, storm, replace, or gutters.{' '}
             <Link href="/contact/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Contact</Link>
           </p>
         </div>

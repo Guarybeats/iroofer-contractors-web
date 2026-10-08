@@ -15,7 +15,7 @@ export const metadata = {
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: 'https://iroofercontractors.com/blog/roof-replacement-cost-dallas-ga',
   },
-  title: 'Roof Replacement Cost in Dallas, GA | What Actually Changes the Price | iRoofer',
+  title: 'Roof Replacement Cost in Dallas, GA: Price Factors | iRoofer',
   description:
     'Roof replacement cost factors in Dallas, GA — squares, pitch, layers, decking, materials. Not a quote. Free inspection: (470) 236-1410.',
 };
@@ -101,18 +101,18 @@ export default function BlogPostPage() {
               <li>No pressure to sign same day</li>
             </ol>
 
-            <h2>Paulding / Dallas context (no dollars)</h2>
+            <h2>Paulding / Dallas context</h2>
             <p>
               Early-2000s builder roofs along common Dallas corridors often hit end-of-life together — layer count and
-              ventilation upgrades matter more than a national average blog number. We tear off to the deck as standard
+              ventilation upgrades matter more than a national average. We tear off to the deck as standard
               so we can see what you’re paying for.
             </p>
 
             <h2>FAQ</h2>
             <p><strong>Can you quote over the phone?</strong><br />No — not accurately.</p>
-            <p><strong>Do you finance?</strong><br />Ask about current options when you call; availability can change (no invented APR on this page).</p>
-            <p><strong>Why don&apos;t you list prices here?</strong><br />Because a blog table becomes wrong fast and misleads neighbors. Factors + a written inspection beat a fake chart.</p>
-            <p><strong>Is storm damage priced differently?</strong><br />Scope still follows the roof. Insurance may apply; we document — we don’t invent payouts.</p>
+            <p><strong>Do you finance?</strong><br />Ask about current options when you call; availability can change.</p>
+            <p><strong>Why don&apos;t you list prices here?</strong><br />Because every roof is different and prices change. A written figure after an inspection is the number you can rely on.</p>
+            <p><strong>Is storm damage priced differently?</strong><br />Scope still follows the roof. Insurance may apply; we help you document damage for your insurance claim, and your policy decides the outcome.</p>
 
             <h2>Related Dallas pages</h2>
             <ul>

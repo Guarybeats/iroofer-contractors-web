@@ -15,9 +15,9 @@ export const metadata = {
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: 'https://iroofercontractors.com/blog/wind-damage-roof-repair-dallas/',
   },
-  title: 'Wind Damage Roof Repair in Dallas, GA | What to Check After a Storm | iRoofer',
+  title: 'Wind Damage Roof Repair in Dallas, GA | iRoofer',
   description:
-    'What wind does to Dallas-area roofs, what to check safely from the ground, and when to call for repair or documentation. iRoofer: (470) 236-1410 · contact page.',
+    'What wind does to Dallas-area roofs, what to check safely from the ground, and when to call for repair or documentation. iRoofer: (470) 236-1410.',
 };
 
 const post = {
@@ -91,9 +91,9 @@ export default function BlogPostPage() {
               If you file a claim, dated photos, a roof diagram, and a written scope help the adjuster see what you see. We meet adjusters on site when you want us there. If the damage will not support a claim, we tell you and quote the repair — a denied claim should not leave you without a dry house.
             </p>
 
-            <h2>What we deliberately do not invent here</h2>
+            <h2>Why we don’t give a number over the phone</h2>
             <p>
-              No mph threshold tables, no “X% of roofs fail at Y,” no dollar repair grids. Those belong only if verified from manufacturer literature or your own job data — and even then, label as examples, not quotes. This update is qualitative guidance plus clear next steps.
+              Every roof and every storm is different. Shingle age, how the shingles were fastened, and which slopes took the wind all change what needs fixing. A free photo-documented inspection gives you a real answer and a written price.
             </p>
 
             <h2>Common questions</h2>
