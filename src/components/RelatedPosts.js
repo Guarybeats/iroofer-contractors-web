@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { posts } from '@/lib/posts';
 
-// Pack 21: do not leave invent-dollar equity to these related cards.
+// Posts excluded from related-post cards.
 const INVENT_EQUITY_EXCLUDE = new Set([
   'cost-of-new-roof-2026-dallas-ga',
 ]);

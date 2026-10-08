@@ -1,21 +1,21 @@
 import Link from 'next/link';
-import RoofEstimator from '@/components/RoofEstimator';
-import PriceDisclaimer from '@/components/PriceDisclaimer';
+import QuoteForm from '@/components/QuoteForm';
 import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
+import { renderInline } from '@/components/InlineText';
 
 export const metadata = seo({
   title: 'Roof Estimate | Dallas GA | iRoofer Contractors',
   description:
-    'Curious what a new roof might run in Dallas GA? See what drives cost, how our estimate works, then lock a real number with a free inspection. (470) 236-1410',
+    'Curious what a new roof might run in Dallas GA? See what drives cost, how our estimate works, then get a real number from a free inspection. (470) 236-1410',
   path: '/estimator',
 });
 
 const faqs = [
   {
-    q: 'Is the online range a contract price?',
-    a: 'No. It is planning-only until we inspect and write a proposal.',
+    q: 'Do you publish prices online?',
+    a: 'No. Every roof is different, so we price after a free inspection and put the number in writing.',
   },
   {
     q: 'Why won’t you quote over the phone?',
@@ -48,13 +48,13 @@ export default function EstimatorPage() {
       <section className="estimator-page sec-pad">
         <div className="wrap">
           <div className="rv" style={{ textAlign: 'center', marginBottom: '2.4rem' }}>
-            <span className="eyebrow">Free planning estimate</span>
+            <span className="eyebrow">Free roof estimate</span>
             <h1 style={{ fontSize: 'clamp(2.4rem,5vw,3.8rem)', fontWeight: 900, marginTop: 12 }}>
               Get a Roof Estimate
             </h1>
             <p className="lead" style={{ maxWidth: '42rem', margin: '1rem auto 0' }}>
-              Slide a few details for a planning range — then lock a real figure with a free on-site inspection.
-              Instant tools are for orientation. Your Dallas roof&apos;s pitch, layers, decking, and access decide the real number.
+              Request a free estimate and we&apos;ll come out, inspect and measure the roof, and put a real number in writing.
+              Your Dallas roof&apos;s pitch, layers, decking, and access decide the price, so we don&apos;t guess over the phone or online.
             </p>
             <p style={{ color: '#52606b', maxWidth: '40rem', margin: '0.85rem auto 0', fontSize: '.98rem' }}>
               iRoofer Contractors is family-owned here since 2019. {brand.owner}&apos;s local crew
@@ -66,12 +66,16 @@ export default function EstimatorPage() {
               <Link href="/contact/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Contact form</Link>
             </p>
           </div>
-          <PriceDisclaimer />
-          <p style={{ textAlign: 'center', fontSize: '.9rem', color: '#5d6b7a', margin: '0 0 1.2rem' }}>
-            <strong>Planning only — not a quote.</strong> Per-square tiers in the tool are for orientation.
-            Confirm ranges with us before treating any figure as a contract price.
-          </p>
-          <RoofEstimator />
+          <div style={{ maxWidth: '42rem', margin: '0 auto 1.6rem', padding: '1rem 1.2rem', background: '#fff4ec', border: '1px solid rgba(232,93,4,.25)', borderRadius: 8, textAlign: 'center', color: '#3b4752' }}>
+            <strong>Leaking right now?</strong> Skip the form. Call{' '}
+            <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>
+            {' '}or see{' '}
+            <Link href="/emergency-roof-repair-dallas-ga/" style={{ fontWeight: 700, color: 'var(--orange)' }}>emergency roof repair</Link>.
+            {' '}This form is for estimates, not for active water.
+          </div>
+          <div style={{ maxWidth: 520, margin: '0 auto' }}>
+            <QuoteForm variant="contact" id="quote-estimator" source="Estimator Page" title="Request a Free Roof Estimate" />
+          </div>
         </div>
       </section>
 
@@ -83,7 +87,7 @@ export default function EstimatorPage() {
             <p style={{ color: '#52606b', maxWidth: 680 }}>
               Qualitative factors — not a price table. More depth on our{' '}
               <Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>roof replacement Dallas</Link>
-              {' '}money page and{' '}
+              {' '}page and our{' '}
               <Link href="/blog/roof-replacement-cost-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>replacement cost factors guide</Link> (not a quote).
             </p>
           </div>
@@ -103,7 +107,8 @@ export default function EstimatorPage() {
                 <li>You get a <strong>written</strong> proposal — tear-off, decking assumptions, materials, flashings</li>
                 <li>You decide — no same-day hard sell</li>
               </ol>
-              <p style={{ color: '#52606b', marginTop: 12 }}>The on-page slider is a conversation starter. The inspection is the quote.</p>
+              <p style={{ color: '#52606b', marginTop: 12 }}>The inspection is the quote. Request one at{' '}
+                <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>https://iroofercontractors.com/contact/</Link> or call {brand.phone}.</p>
             </div>
             <div className="rv">
               <h2 style={{ fontSize: 'clamp(1.5rem,2.6vw,2rem)', fontWeight: 800 }}>Repair vs replace</h2>
@@ -127,20 +132,22 @@ export default function EstimatorPage() {
         <div className="wrap">
           <div className="sec-head rv">
             <span className="eyebrow dark">Estimator FAQ</span>
-            <h2>Before you treat the slider as a contract</h2>
+            <h2>Questions about estimates</h2>
           </div>
           <div className="faq-list rv">
             {faqs.map((f, i) => (
               <div key={f.q} className={'faq-item' + (i === 0 ? ' open' : '')}>
                 <button className="faq-q" aria-expanded={i === 0}>{f.q}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{f.a}</p></div></div>
+                <div className="faq-a"><div><p>{renderInline(f.a)}</p></div></div>
               </div>
             ))}
           </div>
           <p style={{ marginTop: 28 }}>
             <a className="btn btn-ink" href={`tel:${brand.phone}`}>Lock a real number: {brand.phone}</a>
             {' '}
-            <Link className="btn btn-ghost" href="/contact/" style={{ marginLeft: 8 }}>Contact</Link>
+            <Link className="btn btn-ghost" href="/contact/" style={{ marginLeft: 8 }}>Book a free inspection →</Link>
+            {' '}
+            <Link className="btn btn-ghost" href="/emergency-roof-repair-dallas-ga/" style={{ marginLeft: 8 }}>Emergency? →</Link>
             {' '}
             <Link className="btn btn-ghost" href="/roof-replacement-dallas-ga/" style={{ marginLeft: 8 }}>Replacement Dallas</Link>
             {' '}

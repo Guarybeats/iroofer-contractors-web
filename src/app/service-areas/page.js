@@ -3,8 +3,8 @@ import { cities, brand, cityPath } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 
 export const metadata = seo({
-  title: 'Roofing Service Areas Near Dallas, GA | Repair, Replacement & Storm | iRoofer',
-  description: `iRoofer Contractors serves Dallas, Douglasville, Hiram, Powder Springs, Marietta, Acworth, Kennesaw, and more. Local repair, replacement, storm help. Call ${brand.phone}.`,
+  title: 'Where We Roof: Dallas, GA & West Metro Cities | iRoofer',
+  description: 'Family-owned Dallas, GA roofer since 2019. Repair, replacement & storm help in Hiram, Douglasville, Powder Springs, Marietta & Kennesaw. (470) 236-1410',
   path: '/service-areas',
 });
 
@@ -18,13 +18,13 @@ const needLinks = [
 ];
 
 const cityHints = {
-  'dallas-ga': 'Home base — repair, replacement, storm, gutters, new construction',
-  douglasville: 'Storm interest rising; repair & replace from the same Dallas crew',
-  hiram: 'Link city repair/replace money pages — short drive from the shop',
-  'powder-springs': 'Local SA + Dallas money URLs',
-  marietta: 'Counter vanity “roofer” dump with repair/replace/storm framing',
-  acworth: 'Also appears in emergency near-me query patterns',
-  kennesaw: 'Climbing interest — repair/replace/storm paths',
+  'dallas-ga': 'Home base: repair, replacement, storm, gutters, new construction',
+  douglasville: 'Repair, replacement & storm help in Douglas County',
+  hiram: 'Repair, inspections, replacement & gutters, minutes from our shop',
+  'powder-springs': 'Repair & replacement to Powder Springs’ own permit rules',
+  marietta: 'Repair, replacement & storm help, city or Cobb permits',
+  acworth: 'Leak repair, tear-offs & limb-strike tarping',
+  kennesaw: 'Repair, replacement & storm help in north Cobb',
 };
 
 export default function ServiceAreas() {
@@ -47,7 +47,7 @@ export default function ServiceAreas() {
 
         <div style={{ marginTop: 36, maxWidth: 880 }}>
           <h2 style={{ fontSize: 'clamp(1.3rem,2.6vw,1.6rem)', fontWeight: 800, marginBottom: 12 }}>Need-based shortcuts</h2>
-          <p style={{ color: '#52606b', marginBottom: 12 }}>If you know the problem, jump to a Dallas money URL or the services hub:</p>
+          <p style={{ color: '#52606b', marginBottom: 12 }}>If you know the problem, jump straight to the service:</p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem 1rem' }}>
             {needLinks.map((l) => (
               <Link key={l.href} href={l.href} className="chip" style={{ fontWeight: 700 }}>{l.label} →</Link>

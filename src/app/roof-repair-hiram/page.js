@@ -5,10 +5,12 @@ import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { localCopy } from '@/lib/localCopy';
 import { FaqSchema } from '@/components/LocalSeo';
+import { renderInline } from '@/components/InlineText';
+import CopySection from '@/components/CopySection';
 
 export const metadata = seo({
   title: "Roof Repair Hiram GA | Leaks & Inspections | iRoofer",
-  description: "Roof repair and leak help in Hiram, GA. Same Dallas crew since 2019. Call (470) 236-1410.",
+  description: "Roof repair & inspections in Hiram, GA: leaks, flashing, storm wear. Photos and a written scope from a family-owned Dallas crew. Call (470) 236-1410.",
   path: '/roof-repair-hiram',
 });
 
@@ -21,6 +23,8 @@ const relatedLinks = [
               { href: '/services/roof-repair/', label: 'roof repair services' },
               { href: '/roof-repair-dallas-ga/', label: 'roof repair near Dallas' },
               { href: '/roof-replacement-hiram/', label: 'roof replacement in Hiram' },
+              { href: '/gutter-repair-replacement-hiram/', label: 'gutter repair in Hiram' },
+              { href: '/blog/when-to-replace-vs-repair-a-roof/', label: 'repair vs. replace guide' },
               { href: '/', label: 'iRoofer Contractors home' }
             ];
 
@@ -43,7 +47,7 @@ export default function Page() {
                 Looking for a roofer in Hiram, GA? iRoofer Contractors is the local roofing services crew neighbors call for leaks, storm wear, and flashing repairs in Paulding County. Call (470) 236-1410 for same-day help when scheduling allows.
               </p>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
-                {copy.intro}
+                {renderInline(copy.intro)}
               </p>
               <div className="cta" style={{ marginTop: 28 }}>
                 <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>{brand.phone}</a>
@@ -64,10 +68,7 @@ export default function Page() {
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
           {copy.sections.map((sec) => (
-            <div key={sec.h} className="rv" style={{ maxWidth: 780, marginBottom: 34 }}>
-              <h2 style={{ fontSize: 'clamp(1.5rem,2.6vw,2rem)', fontWeight: 800, lineHeight: 1.15 }}>{sec.h}</h2>
-              <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, lineHeight: 1.75 }}>{sec.p}</p>
-            </div>
+            <CopySection key={sec.h} sec={sec} />
           ))}
         </div>
       </section>
@@ -82,7 +83,7 @@ export default function Page() {
             {faqs.map((f, i) => (
               <div key={f.q} className={'faq-item' + (i === 0 ? ' open' : '')}>
                 <button className="faq-q" aria-expanded={i === 0}>{f.q}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{f.a}</p></div></div>
+                <div className="faq-a"><div><p>{renderInline(f.a)}</p></div></div>
               </div>
             ))}
           </div>

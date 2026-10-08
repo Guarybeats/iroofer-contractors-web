@@ -2,6 +2,7 @@
 
 import { brand, services } from '@/lib/brand';
 import { usePathname } from 'next/navigation';
+import { plainText } from '@/lib/inlineLinks';
 
 // Google Business Profile link — real GBP Maps short link (provided by owner).
 // Verified to resolve to Iroofer Contractors (Dallas, GA).
@@ -199,7 +200,7 @@ export function FaqSchema({ faq }) {
     mainEntity: faq.map((f) => ({
       '@type': 'Question',
       name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
+      acceptedAnswer: { '@type': 'Answer', text: plainText(f.a) },
     })),
   };
   return (
@@ -220,7 +221,7 @@ export default function LocalSeo({ faq = null }) {
         mainEntity: faq.map((f) => ({
           '@type': 'Question',
           name: f.q,
-          acceptedAnswer: { '@type': 'Answer', text: f.a },
+          acceptedAnswer: { '@type': 'Answer', text: plainText(f.a) },
         })),
       }
     : null;

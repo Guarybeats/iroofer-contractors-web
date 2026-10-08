@@ -15,14 +15,14 @@ export const metadata = {
 
   title: 'Hail Damage Insurance Claims | Dallas, GA Roofing',
   description:
-    'Hail is the #1 cause of denied roofing claims in North Georgia. How to document damage, meet the adjuster and handle a lowballed claim.',
+    'After hail in Dallas, GA: how to document roof damage, meet the adjuster, understand your deductible and what to do if the estimate looks short.',
 };
 
 const post = {
   slug: 'dallas-ga-hail-storm-insurance-claims',
-  title: 'Dallas GA Hail Storm: How to File an Insurance Claim That Actually Gets Paid',
+  title: 'Dallas, GA Hail Damage: How to Document and File a Roof Insurance Claim',
   date: 'December 2025',
-  readTime: '10 min read',
+  readTime: '7 min read',
   category: 'Storm Damage',
 };
 
@@ -44,68 +44,63 @@ export default function BlogPostPage() {
           </div>
 
           <div className="post-body rv">
-            <p>North Georgia averages 8–12 hail days per year, and Dallas sits right in the bull’s-eye. When a quarter-sized hailstorm rolls through your neighborhood, your roof takes a beating — and your insurance company takes a call. But 60% of hail claims in Paulding County get denied or lowballed on the first offer. Here’s how to fight back.</p>
+            <p>Dallas and Paulding County get their share of spring and summer hail. When a storm rolls through, your roof takes a beating, and a lot of homeowners are filing an insurance claim for the first time. Here’s how to document damage, work with the adjuster, and what to do if the first offer looks short. Your policy decides what’s covered; this guide is about giving it the best information to work with.</p>
 
-            <h2>Why Hail Claims Get Denied</h2>
-            <p>The #1 reason insurers deny hail claims: <strong>insufficient documentation</strong>. Adjusters look for three things: impact marks on shingles, granule loss, and hail strikes on soft metals (vents, gutters, siding). If you don't have clear, timestamped photos within 48 hours of the storm, adjusters will say “pre-existing damage” or “normal wear.”</p>
+            <h2>Why claims get disputed</h2>
+            <p>The most common problem is <strong>weak documentation</strong>. Adjusters look for hail impacts on shingles, granule loss, and dents on soft metals like vents, gutters and downspouts. Without clear photos taken soon after the storm, it’s easier for damage to be called “pre-existing” or “normal wear.”</p>
 
-            <h2>Step 1: Document Within 48 Hours</h2>
-            <p>Take at least these photos before you do anything else:</p>
+            <h2>Step 1: Document soon after the storm</h2>
+            <p>From the ground and inside, before anything is repaired:</p>
             <ol>
-              <li><strong>Roof overview from the ground</strong> — capture every slope you can safely see.</li>
-              <li><strong>Close-ups of damaged shingles</strong> — look for dark spots (bruising), missing granules, or dents along the ridgeline.</li>
-              <li><strong>Gutters and downspouts</strong> — hail leaves distinctive dents in aluminum.</li>
-              <li><strong>Siding and fence</strong> — hail marks here prove the storm hit your property.</li>
-              <li><strong>Date/time stamp visible</strong> — use your phone's camera and keep GPS on.</li>
+              <li><strong>Every side of the roof you can safely see.</strong></li>
+              <li><strong>Gutters, downspouts and vents</strong>, where hail leaves visible dents.</li>
+              <li><strong>Siding, fences, screens and cars</strong>, which show the storm hit your property.</li>
+              <li><strong>Hail on the ground</strong>, with something for scale, if it’s still there.</li>
+              <li><strong>Any interior leaks or stains.</strong></li>
             </ol>
-            <p>Do not walk on the roof. Hail-damaged shingles are unstable and can puncture your foot.</p>
+            <p>Don’t walk on the roof. Let a roofer get up there.</p>
 
-            <h2>Step 2: Call a Local Roofer — Before the Adjuster</h2>
-            <p>We recommend calling a local roofer within 24 hours of the storm. A good roofer will:</p>
+            <h2>Step 2: Get a roof inspection</h2>
+            <p>A local roofer can inspect the roof, photograph damage slope by slope, and tell you whether it looks like hail damage worth a claim, or wear that isn’t. A good roofer will:</p>
             <ul>
-              <li>Do a free, no-pressure inspection.</li>
-              <li>Write a detailed scope of loss with photos and measurements.</li>
-              <li>Explain whether your damage exceeds your deductible (most GA homeowners have a 2% wind/hail deductible).</li>
-              <li>Be present when the adjuster arrives — but <em>never let them pressure you into a contract before the claim is settled</em>.</li>
+              <li>Inspect for free and without pressure.</li>
+              <li>Give you photos and a written scope.</li>
+              <li>Help you think through whether the damage is likely to exceed your deductible.</li>
+              <li>Never pressure you into signing before you understand your claim.</li>
             </ul>
 
-            <h2>Step 3: Meet the Adjuster On-Site</h2>
-            <p>Georgia law requires insurers to send an adjuster within 15 business days of your claim. The average inspection takes 10–15 minutes, but storms in Dallas mean adjusters are backlogged. Be there. Point out:</p>
+            <h2>Step 3: File and meet the adjuster</h2>
+            <p>You file the claim with your insurance company. Check your policy for its deadlines and notice requirements, and file promptly. When the adjuster comes out, be there if you can, or have your roofer there. Point out:</p>
             <ul>
-              <li>Hail hits on shingles (look for concentric rings or dark bruising).</li>
-              <li>Granule loss in gutters or downspouts.</li>
-              <li>Dents in soft metal flashing, vents, or siding.</li>
-              <li>Any areas the inspector skipped — insist they check every slope.</li>
+              <li>Hail hits on shingles (dark bruises or spots where granules are knocked off).</li>
+              <li>Granules in the gutters and at downspout outlets.</li>
+              <li>Dents in vents, flashing, gutters and siding.</li>
+              <li>Any slopes the adjuster didn’t look at.</li>
             </ul>
 
-            <h2>Step 4: What If They Lowball You?</h2>
-            <p>If the offer is less than your repair cost:</p>
+            <h2>Step 4: If the estimate looks short</h2>
             <ol>
-              <li><strong>Request a re-inspection</strong> in writing within 15 days of receiving the estimate.</li>
-              <li><strong>Submit a supplement</strong> — have your roofer write exactly what’s missing and send it with photos.</li>
-              <li><strong>Hire a public adjuster</strong> if the gap is more than $3,000 — they work for you (30% contingency fee), not the insurance company.</li>
-              <li><strong>Appeal to your state rep</strong> — Georgia’s Department of Insurance handles complaint resolution at no cost to you.</li>
+              <li><strong>Ask questions in writing.</strong> Ask what was included, what wasn’t, and why.</li>
+              <li><strong>Request a re-inspection</strong> if damage was missed.</li>
+              <li><strong>Send supporting documentation:</strong> your photos and the roofer’s written scope of what’s missing.</li>
+              <li><strong>Know your options.</strong> Some homeowners hire a licensed public adjuster (they charge a fee), and the Georgia Office of Insurance and Safety Fire Commissioner takes consumer complaints.</li>
             </ol>
 
-            <h2>What About the Deductible?</h2>
-            <p>In Georgia, wind/hail deductibles are almost always written as a percentage of your home’s value (typically 2%). If your home is valued at $400,000, your deductible is $8,000. If the damage is below that, filing a claim won’t pay off — and it will raise your premiums for 3 years.</p>
+            <h2>About the deductible</h2>
+            <p>Many Georgia policies have a separate wind/hail deductible, sometimes written as a percentage of the home’s insured value rather than a flat amount. Check your declarations page. If the damage is below your deductible, a claim may not pay anything, so it’s worth knowing your number before you file.</p>
 
-            <h2>iRoofer’s Process After a Storm</h2>
-            <p>After any hail event in Dallas, Douglasville, Hiram, or surrounding areas, we:</p>
+            <h2>How we help after a storm</h2>
             <ul>
-              <li>Respond within 24 hours with a free inspection.</li>
-              <li>Document every damaged surface with drone + ground photos.</li>
-              <li>Write a written scope of loss (what needs to come off, what can stay).</li>
-              <li>Meet your adjuster and present the supplement if needed.</li>
-              <li>Schedule the work the moment you accept the settlement — no waiting lists.</li>
+              <li>Free roof inspection with photos of every damaged surface we find.</li>
+              <li>A written scope of what needs to be repaired or replaced.</li>
+              <li>We help you document damage for your insurance claim and can meet your adjuster on-site.</li>
+              <li>We schedule the work once you’re ready.</li>
             </ul>
+            <p>We don’t promise claim outcomes. Your policy and your insurer decide that. See <Link href="/services/roof-insurance-claims/">roof insurance claims help</Link>, <Link href="/storm-damage-roof-repair-dallas-ga/">storm damage roof repair in Dallas</Link>, and our <Link href="/blog/georgia-hail-storm-roof-checklist/">hail damage roof checklist</Link>.</p>
 
-            <h2>Need Help After a Storm?</h2>
-            <p>If you’re in Dallas, GA and your roof took a hit from hail, we’re here to help — no pressure, no upsell. We document the damage, explain your options, and handle the insurance paperwork from start to finish.</p>
-
-            <h2>Still Unsure Whether You Have a Valid Claim?</h2>
-            <p>Every free inspection from iRoofer includes a detailed written report with photos. No pressure, no obligation. If we find damage, we’ll help you file — and fight for the full payout.</p>
-            <p><Link href={`/contact/`} className="btn btn-solid">Schedule Free Storm-Damage Inspection →</Link></p>
+            <h2>Not sure whether you have damage?</h2>
+            <p>Book a free storm-damage inspection at <Link href="/contact/">https://iroofercontractors.com/contact/</Link> or call (470) 236-1410. You’ll get photos and a written report, with no pressure and no obligation.</p>
+            <p><Link href="/contact/" className="btn btn-solid">Schedule a free storm-damage inspection →</Link></p>
           </div>
         </div>
             <RelatedPosts slug="dallas-ga-hail-storm-insurance-claims" />

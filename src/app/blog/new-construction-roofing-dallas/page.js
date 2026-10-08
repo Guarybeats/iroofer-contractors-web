@@ -22,7 +22,7 @@ const post = {
   slug: 'new-construction-roofing-dallas',
   title: 'New Construction Roofing in Dallas GA: What Builders Need to Know',
   date: 'January 2026',
-  readTime: '9 min read',
+  readTime: '5 min read',
   category: 'New Construction',
 };
 
@@ -44,81 +44,44 @@ export default function BlogPostPage() {
           </div>
 
           <div className="post-body rv">
-            <p>Installing a roof on new construction is different from replacing an old one. You’re working with a blank canvas, but also with deadlines, inspections, and a builder’s reputation on the line. This checklist covers everything we do differently when partnering with Dallas-area builders on new homes.</p>
+            <p>Roofing a new home is different from replacing an old roof. You start with a clean deck, but you’re also working inside a builder’s schedule, the inspection sequence, and a homeowner’s expectations. Here’s what we pay attention to when we roof new construction around Dallas.</p>
 
-            <h2>Permit Requirements in Paulding and Cobb Counties</h2>
-            <p>You need two separate permits for a new roof in Dallas GA:</p>
-            <ol>
-              <li><strong>Building permit</strong> — required for any new roof structure. Covers framing, sheathing, and deck inspection.</li>
-              <li><strong> roofing permit</strong> — required for shingle installation. Covers underlayment, flashing, and final inspection.</li>
-            </ol>
-            <p>Both are issued through <a href="https://www.paulding.gov" target="_blank">Paulding County Building Services</a> (or <a href="https://www.cobbcounty.org" target="_blank">Cobb County</a> if you're in the northern sections). Fees are $150–$300 per permit. We handle permit pull and scheduling for our builder partners.</p>
+            <h2>Permits and inspections</h2>
+            <p>New-construction roofing is covered under the home’s building permit, and inspections follow the local jurisdiction’s sequence. Requirements and fees differ between Paulding County, Cobb County and the cities inside them, so confirm with the jurisdiction issuing the permit. We coordinate our work around the builder’s inspection schedule.</p>
 
-            <h2>Roof Deck Inspection: What the Inspector Looks For</h2>
-            <p>Before you can start shingles, the inspector checks:</p>
+            <h2>Before shingles go on</h2>
             <ul>
-              <li><strong>Sheathing support</strong> — 7/16" OSB minimum, installed right-side out with 1/8" gaps between panels.</li>
-              <li><strong>Rafters/Roof trusses</strong> — 16" or 24" on center, properly braced per engineer specs.</li>
-              <li><strong>Drip edge & ice/water shield</strong> — must extend 2 inches past fascia, 6 feet up eave edge in ice-prone zones.</li>
-              <li><strong>Eave overhang</strong> — 12–18 inches minimum for proper water shedding.</li>
-            </ul>
-            <p><strong>Tip:</strong> Schedule the deck inspection before HVAC installs. After HVAC, you might need to patch and re-inspect.</p>
-
-            <h2>Shingle Selection: What We Install on New Homes</h2>
-            <p>We keep three materials on the spec sheet for Dallas new construction:</p>
-            <ul>
-              <li><strong>Architectural shingles (Owens Corning)</strong> — $3.50–$5.50/sq ft. Our default for 70% of builds. Class 3 impact rating, 50-year warranty.</li>
-              <li><strong>Premium/laminated shingles</strong> — $5.50–$7.50/sq ft. Color blends that match high-end homes. Class 4 impact rating.</li>
-              <li><strong> Metal roofing (26-gauge standing seam)</strong> — $7–$12/sq ft. For modern, southwestern, or wildfire-prone builds.</li>
-            </ul>
-            <p>We always install with ice & water shield at eaves, synthetic underlayment, and ridge vent — not just for warranty, but because Dallas weather rewards it.</p>
-
-            <h2>Warranty Coordination: Who Covers What</h2>
-            <p>In Georgia, new home roofing warranties come from three sources:</p>
-            <div style={{ background: '#f8f9fa', padding: '16px', borderRadius: 6, margin: '16px 0' }}>
-              <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-                <tbody>
-                  <tr><td style={{ padding: '4px 0' }}><strong>Manufacturer warranty</strong></td><td style={{ padding: '4px 0' }}>50-year on shingles, 30-year on underlayment. Registered by us, transferable at sale.</td></tr>
-                  <tr><td style={{ padding: '4px 0' }}><strong>Workmanship warranty</strong></td><td style={{ padding: '4px 0' }}>In writing from us (covers leaks from improper installation) — ask for the current term.</td></tr>
-                  <tr><td style={{ padding: '4px 0' }}><strong>Home builder warranty</strong></td><td style={{ padding: '4px 0' }}>1-year on workmanship, 2–10 years on major defects (per GA law).</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <p>We coordinate warranty registration so the homeowner gets all three — no gaps.</p>
-
-            <h2>Timeline: How Long a New Roof Takes</h2>
-            <p>On a typical single-family home (2,000–3,000 sqft roof):</p>
-            <ul>
-              <li><strong>Day 1</strong> — Deck inspection, ice/water shield, underlayment (3–4 workers, 4–6 hours).</li>
-              <li><strong>Day 2</strong> — Shingles, ridge vent, flashing, cleanup (4–6 workers, 6–8 hours).</li>
-              <li><strong>Day 3</strong> — Final inspection, punch list, warranty paperwork.</li>
-            </ul>
-            <p>Weather permitting, the whole job is done in 2 days. Add 1 day for inspection backlog during peak season (May–September).</p>
-
-            <h2>What Builders Tell Us They Want</h2>
-            <p>From 85 builder partnerships across Dallas, Hiram, and Douglasville, we’ve learned:</p>
-            <ul>
-              <li><strong>Accurate schedules</strong> — we commit to a time window and stick to it.</li>
-              <li><strong>Clean job sites</strong> — we run magnets after every job and bag all debris.</li>
-              <li><strong>Quality reports</strong> — we send photos at each milestone (deck complete, underlayment done, shingles done).</li>
-              <li><strong>Pricing that scales</strong> — volume discounts for 5+ homes, fixed-price contracts.</li>
+              <li><strong>Deck:</strong> sheathing installed to spec with proper spacing and fastening, no damaged or wet panels left in place.</li>
+              <li><strong>Edges:</strong> drip edge at eaves and rakes, installed in the right order with the underlayment.</li>
+              <li><strong>Underlayment:</strong> synthetic underlayment over the field, ice and water shield at valleys, penetrations and other vulnerable areas as the manufacturer and code require.</li>
+              <li><strong>Ventilation:</strong> enough soffit intake and ridge exhaust for the attic. Getting this right on day one is much easier than fixing it later.</li>
             </ul>
 
-            <h2>Our Builder Partnership Program</h2>
-            <p>When you partner with iRoofer for new construction roofing:</p>
+            <h2>Shingle selection</h2>
+            <p>Architectural asphalt shingles are the usual choice on new homes around Dallas. As an Owens Corning Preferred contractor, we install Owens Corning systems when that line fits the build. Color and line are usually set by the builder’s spec or the homeowner’s selections. See <Link href="/blog/architectural-vs-3-tab-shingles/">architectural vs. 3-tab shingles</Link>.</p>
+
+            <h2>Warranties: who covers what</h2>
             <ul>
-              <li>Free estimate and material consultation before you commit.</li>
-              <li>Priority scheduling — we block 2 days on your timeline.</li>
-              <li>Direct billing to the builder; homeowner handles manufacturer registration.</li>
-              <li>Workmanship warranty in writing on every install, plus storm / leak response during shop hours when crews allow.</li>
+              <li><strong>Manufacturer warranty:</strong> covers the shingles and system components per the manufacturer’s terms. Registration requirements vary by product line.</li>
+              <li><strong>Contractor workmanship:</strong> covers installation. Ask for the terms in writing.</li>
+              <li><strong>Builder warranty:</strong> whatever the builder provides to the homeowner.</li>
+            </ul>
+            <p>Make sure everyone knows who registers the manufacturer warranty and who the homeowner calls if there’s a problem.</p>
+
+            <h2>Scheduling</h2>
+            <p>How long a new roof takes depends on the size and complexity of the roof, crew size, weather and inspection timing. We give the builder a realistic window in writing and keep them updated if weather moves it.</p>
+
+            <h2>What builders tell us matters</h2>
+            <ul>
+              <li><strong>Showing up when we say.</strong></li>
+              <li><strong>Clean sites:</strong> magnet sweeps and debris hauled off.</li>
+              <li><strong>Photos at milestones</strong>, so the builder knows the work is done right even when they’re not on site.</li>
+              <li><strong>One point of contact</strong> who answers the phone.</li>
             </ul>
 
-            <h2>Working with Builders Across North Georgia</h2>
-            <p>Since 2019, we’ve roofed 150+ new homes in Dallas, Douglasville, Hiram, Powder Springs, Marietta, Acworth, and Kennesaw. We work with both custom home builders and production builders (30+ homes/year). Every project manager is OSHA-certified, and we carry $2M general liability + workers’ comp.</p>
-
-            <h2>Ready to Partner on Your Next Build?</h2>
-            <p>Schedule a free consultation — we’ll review your specs, provide exact pricing, and coordinate with your timeline. No call center, no middleman.</p>
-            <p><Link href="/new-construction/" className="btn btn-solid">Talk to a Builder Specialist →</Link></p>
+            <h2>Talk to us about your next build</h2>
+            <p>iRoofer Contractors is family-owned in Dallas, GA since 2019. Send us your plans and schedule, and we’ll put pricing in writing. See <Link href="/new-construction-dallas-ga/">new construction roofing in Dallas, GA</Link>, request a quote at <Link href="/contact/">https://iroofercontractors.com/contact/</Link>, or call (470) 236-1410.</p>
+            <p><Link href="/new-construction-dallas-ga/" className="btn btn-solid">New construction roofing →</Link></p>
           </div>
         </div>
             <RelatedPosts slug="new-construction-roofing-dallas" />

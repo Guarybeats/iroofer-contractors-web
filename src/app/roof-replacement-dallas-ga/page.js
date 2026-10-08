@@ -5,10 +5,12 @@ import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { localCopy } from '@/lib/localCopy';
 import { FaqSchema } from '@/components/LocalSeo';
+import { renderInline } from '@/components/InlineText';
+import CopySection from '@/components/CopySection';
 
 export const metadata = seo({
-  title: "Roof Replacement Dallas GA | Tear-Off & Architectural Shingles | iRoofer",
-  description: "Roof replacement in Dallas, GA — full tear-off, deck inspection, architectural shingles. Family-owned since 2019. Call (470) 236-1410 for a free inspection.",
+  title: "Roof Replacement Dallas GA | Tear-Off & Shingles | iRoofer",
+  description: "Roof replacement in Dallas, GA — full tear-off, deck inspection, architectural shingles. Family-owned since 2019. Call (470) 236-1410 for a free inspection",
   path: '/roof-replacement-dallas-ga',
 });
 
@@ -43,7 +45,7 @@ export default function Page() {
                 Roof Replacement in Dallas, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
-                {copy.intro}
+                {renderInline(copy.intro)}
               </p>
               <div className="cta" style={{ marginTop: 28 }}>
                 <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>{brand.phone}</a>
@@ -64,10 +66,7 @@ export default function Page() {
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
           {copy.sections.map((sec) => (
-            <div key={sec.h} className="rv" style={{ maxWidth: 780, marginBottom: 34 }}>
-              <h2 style={{ fontSize: 'clamp(1.5rem,2.6vw,2rem)', fontWeight: 800, lineHeight: 1.15 }}>{sec.h}</h2>
-              <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, lineHeight: 1.75 }}>{sec.p}</p>
-            </div>
+            <CopySection key={sec.h} sec={sec} />
           ))}
         </div>
       </section>
@@ -82,7 +81,7 @@ export default function Page() {
             {faqs.map((f, i) => (
               <div key={f.q} className={'faq-item' + (i === 0 ? ' open' : '')}>
                 <button className="faq-q" aria-expanded={i === 0}>{f.q}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{f.a}</p></div></div>
+                <div className="faq-a"><div><p>{renderInline(f.a)}</p></div></div>
               </div>
             ))}
           </div>

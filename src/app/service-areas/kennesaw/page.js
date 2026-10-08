@@ -6,9 +6,9 @@ const city = getCity('kennesaw');
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
-  title: 'Kennesaw GA Roof Repair & Replacement | Storm Damage | iRoofer',
+  title: 'Roof Replacement & Repair in Kennesaw, GA | iRoofer',
   description:
-    'Kennesaw roof repair, replacement, and storm help from iRoofer Contractors (Dallas, GA). Call (470) 236-1410 or book via our contact page.',
+    'Replacing or repairing a roof in Kennesaw? Free inspection, written scope, and Kennesaw permits handled. Family-owned Dallas, GA crew. (470) 236-1410',
   alternates: { canonical: `${brand.url}/service-areas/kennesaw/` },
   openGraph: {
     type: 'website',
@@ -16,41 +16,47 @@ export const metadata = {
     locale: 'en_US',
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: `${brand.url}/service-areas/kennesaw/`,
-    title: 'Kennesaw GA Roof Repair & Replacement | Storm Damage | iRoofer',
+    title: 'Roof Replacement & Repair in Kennesaw, GA | iRoofer',
     description:
-      'Kennesaw roof repair, replacement, and storm help from iRoofer Contractors in Dallas, GA. Call (470) 236-1410.',
+      'Replacing or repairing a roof in Kennesaw? Free inspection, written scope, and Kennesaw permits handled. Family-owned Dallas, GA crew. (470) 236-1410',
   },
 };
 
 const intro = [
-  'Kennesaw interest is climbing — meet that with clear repair / replace / storm paths, not a thin “we roof Kennesaw” stub. iRoofer Contractors is family-owned in Dallas since 2019: Cristian Mendez. Regular Cobb County work from 152 Freedom Dr.',
-  'Ready to talk about your roof? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
+  'Whether your Kennesaw roof needs a full replacement, a repair, or a look after the last storm, it starts the same way: a free inspection, photos of what we find, and a written scope you can actually read. iRoofer Contractors is family-owned in Dallas, GA since 2019, and we work across north Cobb from our shop at 152 Freedom Dr.',
+  'Ready to talk about your roof? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410. Cristian and the crew will give you a straight answer.',
 ];
 
 const sections = [
   {
-    h2: 'Roof repair in Kennesaw',
-    paras: [
-      'Localized leaks, wind tabs, and flashing failures — inspected and fixed with photos in the file. City money page: /roof-repair-kennesaw/. Fallback: /roof-repair-dallas-ga/. Emergency tarping when open to weather: /emergency-roof-repair-dallas-ga/.',
-    ],
-  },
-  {
     h2: 'Roof replacement in Kennesaw',
     paras: [
-      'Full tear-off and architectural systems; Owens Corning Preferred when that line is selected. See /roof-replacement-kennesaw/ and /roof-replacement-dallas-ga/. We flag decking issues, ventilation gaps, and cut-up roof details at inspection so the written scope matches the real house — not a surprise mid-job.',
+      'When a roof is at the end of its life (wear across several slopes, leaks in more than one place, soft decking, or storm damage everywhere), patching just moves the next leak. A Kennesaw replacement with us means a full tear-off to the deck, decking repairs as found (with photos), underlayment and ice-and-water membrane where water actually gets in, new flashing at every wall, chimney and pipe, balanced ventilation, and shingles installed to the manufacturer’s specification. We’re an Owens Corning Preferred Contractor when that system fits the house. Daily cleanup and a magnetic nail sweep, then a walkthrough and warranty registration at the end.',
+      'Kennesaw homes range from older ranches to steeper two-stories and newer subdivisions. On steep, cut-up roofs, dormers and wall tie-ins are where a replacement is won or lost, and on older decks we often find prior nail-overs. We call those out at inspection so the price reflects the real job, not a surprise change order. Full details: [roof replacement in Kennesaw](/roof-replacement-kennesaw/).',
     ],
   },
   {
-    h2: 'Storm damage',
+    h2: 'Kennesaw permits and the historic district',
     paras: [
-      'North Cobb cells: document, tarp, repair or replace as the roof deserves. Paths: /storm-damage-roof-repair-kennesaw/, /storm-damage-roof-repair-dallas-ga/, /services/roof-insurance-claims/. If damage will not support a claim, we say so and quote the repair.',
+      'The City of Kennesaw runs its own Building Services department and takes permit applications online only. If your home is in the historic district, the Certificate of Appropriateness has to be approved before the building permit application, and it covers exterior work like a roof. We check which rules apply to your address at inspection, so the schedule doesn’t stall at the permit counter.',
     ],
   },
   {
-    h2: 'Neighborhoods and roof types around Kennesaw',
+    h2: 'Roof repair in Kennesaw',
     paras: [
-      'Kennesaw stock ranges from older ranch homes to steeper two-stories and newer subdivisions near the mountain and major corridors. Steeper pitches and cut-up roofs need careful flashing at walls, chimneys, and dormers. Older decks may hide prior nail-overs. We call those out at inspection so your estimate reflects the real teardown.',
-      'Shoppers often compare Cobb cities — /service-areas/marietta/, /service-areas/acworth/, hub /service-areas/. Services overview: /services/. Keep this page on repair / replacement / storm with strong CTAs to /contact/ — not a bare-“roofer” vanity dump.',
+      'Not every roof needs replacing. Localized leaks, a cracked pipe boot, failed flashing at a wall, or wind-lifted tabs on an otherwise sound roof are repairs. We find the actual entry point (often not right above the stain), photograph it, and quote the fix in writing. More: [roof repair in Kennesaw](/roof-repair-kennesaw/).',
+    ],
+  },
+  {
+    h2: 'Storm damage and emergency roof repair in Kennesaw',
+    paras: [
+      'Roof open after a storm, or water coming in? Call (470) 236-1410 and say it’s active. We tarp the same day when the schedule and safe access allow, then document the damage slope by slope for your adjuster. If the damage won’t support a claim, we’ll tell you and quote the repair. Full process: [storm and emergency roof repair in Kennesaw](/storm-damage-roof-repair-kennesaw/).',
+    ],
+  },
+  {
+    h2: 'Where we work around Kennesaw',
+    paras: [
+      'Downtown Kennesaw, the Kennesaw Mountain side, Frey Road and Barrett Parkway, the Jiles Road corridor, North Main and Old Highway 41, out to the Acworth and Woodstock edges. Comparing nearby Cobb cities? See our [Marietta](/service-areas/marietta/) and [Acworth](/service-areas/acworth/) pages, or every city on the [service areas](/service-areas/) hub.',
     ],
   },
 ];
@@ -66,33 +72,36 @@ const neighborhoods = [
 
 const faq = [
   {
-    q: 'Are the Kennesaw repair/replace URLs live?',
-    a: 'Yes — /roof-repair-kennesaw/ and /roof-replacement-kennesaw/. Dallas money URLs remain useful deepen pages.',
+    q: 'Do you do full roof replacements in Kennesaw?',
+    a: 'Yes. Full tear-off to the deck, decking repairs as found, new underlayment, flashing and ventilation, and shingles installed to spec. Free measured inspection and a written proposal first.',
   },
   {
-    q: 'Do you chase storm leads only?',
-    a: 'No — repair and planned replacement are core work; storm is one path.',
+    q: 'How much does a roof replacement cost in Kennesaw?',
+    a: 'It depends on size, pitch, how many layers come off, decking condition and the shingle you choose. We don’t quote over the phone. We measure, inspect, and put the number in writing for free.',
   },
   {
-    q: 'How do I schedule?',
-    a: 'https://iroofercontractors.com/contact/ or (470) 236-1410.',
+    q: 'Who issues roofing permits in Kennesaw?',
+    a: 'The City of Kennesaw’s Building Services, online only. In the historic district, the Certificate of Appropriateness must be approved before the permit application. We handle it.',
   },
   {
-    q: 'Where is the shop?',
-    a: '152 Freedom Dr, Dallas, GA 30157 — family-owned since 2019.',
+    q: 'Can you help with an emergency leak in Kennesaw?',
+    a: 'Yes. Call (470) 236-1410 and say water is coming in. Active leaks go ahead of routine work, and we tarp the same day when the schedule and safe access allow.',
+  },
+  {
+    q: 'Where is your shop?',
+    a: '152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019.',
   },
 ];
 
 const relatedLinks = [
+  { href: '/roof-replacement-kennesaw/', label: 'Roof replacement in Kennesaw, GA' },
   { href: '/roof-repair-kennesaw/', label: 'Roof repair in Kennesaw' },
-  { href: '/roof-replacement-kennesaw/', label: 'Roof replacement in Kennesaw' },
-  { href: '/storm-damage-roof-repair-kennesaw/', label: 'Storm damage Kennesaw' },
-  { href: '/roof-repair-dallas-ga/', label: 'Roof repair Dallas GA' },
-  { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement Dallas GA' },
-  { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage Dallas GA' },
-  { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair' },
+  { href: '/storm-damage-roof-repair-kennesaw/', label: 'Storm & emergency roof repair in Kennesaw' },
+  { href: '/gutter-repair-replacement-kennesaw/', label: 'Gutter repair in Kennesaw' },
   { href: '/services/roof-insurance-claims/', label: 'Insurance claims help' },
+  { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair (Dallas & west metro)' },
   { href: '/service-areas/marietta/', label: 'Marietta service area' },
+  { href: '/service-areas/acworth/', label: 'Acworth service area' },
   { href: '/contact/', label: 'Contact iRoofer' },
 ];
 
@@ -100,7 +109,7 @@ export default function KennesawPage() {
   return (
     <CityAreaPage
       city={city}
-      h1="Roof Repair, Replacement & Storm Damage in Kennesaw, GA"
+      h1="Roof Replacement, Repair & Storm Help in Kennesaw, GA"
       intro={intro}
       sections={sections}
       neighborhoods={neighborhoods}

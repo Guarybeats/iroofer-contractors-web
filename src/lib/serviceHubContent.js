@@ -9,14 +9,14 @@ export const serviceHubContent = {
     lead:
       'Most Dallas, GA roof leaks start small — a cracked boot, lifted flashing, or a few missing shingles after a spring storm. We find the source (not just the stain), patch it to manufacturer spec, and tell you straight if repair is still the right call versus replacement.',
     bullets: [
-      'Same-week leak detection with photos and a plain-English report',
+      'Leak detection with photos and a plain-English report',
       'Emergency tarping when the roof is open to weather',
       'Flashing, vent, pipe boot, and shingle repairs color-matched to your roof',
       'Honest fix-it-first advice — no pressure to replace a roof that still has life',
     ],
     processTitle: 'How a repair visit works',
     processIntro:
-      'One local crew, clear scope, written price before tools come out. Most single-issue repairs finish the same day.',
+      'One local crew, clear scope, written price before tools come out.',
     steps: [
       { n: '01', title: 'Inspect & document', body: 'On-roof inspection with photos of the failure point, attic stains if accessible, and nearby wear that could fail next season.' },
       { n: '02', title: 'Scope & price', body: 'Written repair scope with materials and labor. If replacement is smarter long-term, we say so with the numbers side by side.' },
@@ -45,7 +45,7 @@ export const serviceHubContent = {
     h1Before: 'A new roof that lasts ',
     h1Accent: 'decades.',
     lead:
-      'Full tear-off and replacement with architectural asphalt systems installed clean and built to last. iRoofer Contractors — family-owned in Dallas since 2019 — installs as an Owens Corning Preferred contractor when that line fits the house. Written quote after inspection only; on-page estimator tools are planning-only.',
+      'Full tear-off and replacement with architectural asphalt systems installed clean and built to last. iRoofer Contractors — family-owned in Dallas since 2019 — installs as an Owens Corning Preferred contractor when that line fits the house. Written quote after a free inspection; we don’t publish prices online.',
     bullets: [
       'Complete tear-off and deck inspection (replace soft plywood, not cover it)',
       'Owens Corning Preferred Contractor materials & workmanship standards when selected',
@@ -54,7 +54,7 @@ export const serviceHubContent = {
     ],
     processTitle: 'From estimate to final walkthrough',
     processIntro:
-      'Inspection & written proposal → material guidance → tear-off to deck as scoped → decking repairs → underlayment/flashings → shingles/ridge/vents → magnet cleanup → walkthrough + warranty paperwork. Most single-family homes in Paulding and Cobb finish in one to two days, weather permitting.',
+      'Inspection & written proposal → material guidance → tear-off to deck as scoped → decking repairs → underlayment/flashings → shingles/ridge/vents → magnet cleanup → walkthrough + warranty paperwork. We give you a realistic schedule in writing before we start; size, pitch, decking repairs and weather all affect it.',
     steps: [
       { n: '01', title: 'Measure & specify', body: 'Drone or on-roof measure, shingle options, ventilation check, and a line-item estimate — including any decking contingency.' },
       { n: '02', title: 'Tear-off & deck', body: 'Old layers come off. Soft decking is replaced, not skinned over. Ice & water at eaves and valleys, then synthetic underlayment.' },
@@ -62,9 +62,9 @@ export const serviceHubContent = {
       { n: '04', title: 'Cleanup & warranty', body: 'Magnet sweep, dumpster out, final walkthrough with photos. Manufacturer warranty registered in your name when the product line allows.' },
     ],
     faqs: [
-      { q: 'How long does a full replacement take?', a: 'Most homes we re-roof in Dallas and nearby towns are one to two days. Steep, large, or multi-layer tear-offs can take three. Weather pauses are built into the schedule we give you.' },
+      { q: 'How long does a full replacement take?', a: 'It depends on size, pitch, the number of layers coming off, decking repairs and weather. We give you a realistic schedule in writing before we start.' },
       { q: 'What shingles do you install?', a: 'Primarily Owens Corning architectural lines as an Owens Corning Preferred Contractor when that system fits. We can discuss other architectural options and color once we see the home and HOA rules if any.' },
-      { q: 'Do you offer financing?', a: 'Ask on the call for current options for qualified homeowners — we don’t invent APR claims on this page. We also support insurance documentation when storm damage is the reason for replacement.' },
+      { q: 'Do you offer financing?', a: 'Ask on the call for current options for qualified homeowners. We also support insurance documentation when storm damage is the reason for replacement.' },
       { q: 'What warranty do I get?', a: 'Manufacturer warranty on the shingles (registered to you when allowed) plus our workmanship commitment. Ask for the exact terms on your product choice before we start.' },
       { q: 'Partial vs full replacement?', a: 'Sometimes a slope can be rebuilt; often matching and long-term performance push toward a full system. We’ll say which after inspection — no scare tactics over a fixable boot.' },
     ],
@@ -72,7 +72,7 @@ export const serviceHubContent = {
       { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas, GA' },
       { href: '/roof-replacement-hiram/', label: 'Roof replacement in Hiram' },
       { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas, GA' },
-      { href: '/estimator/', label: 'Planning estimator (not a quote)' },
+      { href: '/estimator/', label: 'Request a free estimate' },
       { href: '/new-construction-dallas-ga/', label: 'New construction roofing Dallas GA' },
       { href: '/dallas-ga-roofing/', label: 'All Dallas GA roofing services' },
     ],
@@ -83,7 +83,7 @@ export const serviceHubContent = {
       },
       {
         title: 'Repair path still matters',
-        body: 'If you’re here because of one leak, start with an honest repair inspection first via our Dallas or Hiram repair money pages. Replacement is the right tool when the system is worn out, not when a boot failed. Storm-related replacements may include documentation and adjuster coordination — we still won’t promise claim results.',
+        body: 'If you’re here because of one leak, start with an honest repair inspection first: [roof repair in Dallas, GA](/roof-repair-dallas-ga/) or [roof repair in Hiram](/roof-repair-hiram/). Replacement is the right tool when the system is worn out, not when a boot failed. Storm-related replacements may include documentation and adjuster coordination — we still won’t promise claim results.',
       },
       {
         title: 'After the install',
@@ -115,8 +115,8 @@ export const serviceHubContent = {
       { n: '04', title: 'Repair or replace', body: 'Once the scope is clear, the same crew that documented the storm installs the fix — not a random sub who never saw the damage.' },
     ],
     faqs: [
-      { q: 'How soon after a storm should I call?', a: 'Soon. Evidence weathers off, and some policies have timing expectations. Same-week inspections are typical after a local storm cell. Call (470) 236-1410.' },
-      { q: 'Will filing a claim raise my rates?', a: 'Carriers vary. We document facts; you decide whether to file. We never file without your go-ahead and we don’t invent rate predictions.' },
+      { q: 'How soon after a storm should I call?', a: 'Soon. Evidence weathers off, and some policies have timing expectations. Call (470) 236-1410 for a free inspection.' },
+      { q: 'Will filing a claim raise my rates?', a: 'Carriers vary. We document facts; you decide whether to file. We never file without your go-ahead, and we can’t predict how your carrier will respond.' },
       { q: 'What if the adjuster only approves a small repair?', a: 'That is common. We review the estimate line by line and supplement for missed damage, code-required items, and matching when justified — without promising outcomes.' },
       { q: 'Do you charge for the inspection?', a: 'Storm inspections for homeowners in our service area are free. Tarping for active leaks is quoted clearly if needed.' },
       { q: 'Can you tarp the same day?', a: 'Often yes when the deck is open or water is pouring and access is safe. Permanent repair follows a written scope.' },
@@ -132,7 +132,7 @@ export const serviceHubContent = {
     deepenBlocks: [
       {
         title: 'What we look for after wind and hail',
-        body: 'Lifted or creased shingles, bruised mats, missing tabs, ridge caps out of line, punctures from limbs, and flashing that pulled at chimneys, walls, and boots. Interior clues — new ceiling rings, damp insulation — help confirm the path. We photograph what we find so you’re not relying on memory when the adjuster arrives. We don’t invent storm frequency charts.',
+        body: 'Lifted or creased shingles, bruised mats, missing tabs, ridge caps out of line, punctures from limbs, and flashing that pulled at chimneys, walls, and boots. Interior clues — new ceiling rings, damp insulation — help confirm the path. We photograph what we find so you’re not relying on memory when the adjuster arrives.',
       },
       {
         title: 'Temporary protection vs permanent repair',
@@ -151,7 +151,7 @@ export const serviceHubContent = {
     h1Before: 'New Construction Roofing — Built Clean for Dallas & ',
     h1Accent: 'West Metro Builds',
     lead:
-      'Ranking well does not help if the page does not ask for the next step. iRoofer Contractors installs new-construction roofs for builders and homeowners across Dallas, GA and our service map. Family-owned since 2019. Owens Corning Preferred when the spec calls for that line. Call (470) 236-1410 or https://iroofercontractors.com/contact/. Builders: request a partner intro on the contact form.',
+      'iRoofer Contractors installs new-construction roofs for builders and homeowners across Dallas, GA and our service map. Family-owned since 2019. Owens Corning Preferred when the spec calls for that line. Call (470) 236-1410 or https://iroofercontractors.com/contact/. Builders: request a partner intro on the contact form.',
     bullets: [
       'Custom and production builders who need a reliable roofing partner',
       'Homeowners building or finishing a home who want one accountable crew',
@@ -186,7 +186,7 @@ export const serviceHubContent = {
       { href: '/contact/', label: 'Contact iRoofer' },
       { href: '/about/', label: 'About iRoofer' },
       { href: '/service-areas/', label: 'Service areas' },
-      { href: '/estimator/', label: 'Planning estimator' },
+      { href: '/estimator/', label: 'Request a free estimate' },
     ],
     deepenBlocks: [
       {

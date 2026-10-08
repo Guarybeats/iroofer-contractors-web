@@ -4,12 +4,13 @@ import QuoteForm from '@/components/QuoteForm';
 import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { localCopy } from '@/lib/localCopy';
-import { reviews } from '@/lib/reviews';
 import { FaqSchema } from '@/components/LocalSeo';
+import { renderInline } from '@/components/InlineText';
+import CopySection from '@/components/CopySection';
 
 export const metadata = seo({
-  title: 'Storm Damage Roof Repair in Kennesaw, GA | iRoofer',
-  description: 'Storm damage roof repair in Kennesaw, GA. We inspect hail and wind damage, document it, and handle your insurance claim. Free inspection: (470) 236-1410.',
+  title: 'Storm & Emergency Roof Repair in Kennesaw, GA | iRoofer',
+  description: 'Roof opened up by a storm in Kennesaw? We tarp active leaks, document hail and wind damage for your adjuster, and repair it right. Call (470) 236-1410.',
   path: '/storm-damage-roof-repair-kennesaw',
 });
 
@@ -17,7 +18,6 @@ export const metadata = seo({
 // Do not inline generic template text here; see the header of that file for why.
 const copy = localCopy['storm-damage-roof-repair']['kennesaw'];
 const faqs = copy.faq;
-const review = reviews[7];
 
 export default function Page() {
   return (
@@ -32,21 +32,16 @@ export default function Page() {
               </Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>Kennesaw, GA</span>
               <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02, marginTop: 8 }}>
-                Storm Damage Roof Repair in Kennesaw, GA
+                Storm Damage &amp; Emergency Roof Repair in Kennesaw, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
-                {copy.intro}
+                {renderInline(copy.intro)}
               </p>
               <div className="cta" style={{ marginTop: 28 }}>
-                <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>{brand.phone}</a>
-                <Link className="btn btn-solid" href="/contact/" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Get a free quote <span className="arr">→</span></Link>
+                <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>Water coming in? Call {brand.phone}</a>
+                <Link className="btn btn-solid" href="/contact/" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Request storm or emergency help <span className="arr">→</span></Link>
               </div>
 
-              <div style={{ marginTop: 32, padding: '1.3rem', background: '#fff', border: '1px solid rgba(22,29,37,.08)', borderRadius: 8 }}>
-                <strong style={{ color: '#0b3d16' }}>From our Google reviews</strong>
-                <p style={{ color: '#52606b', fontSize: '.95rem', marginTop: 8, fontStyle: 'italic' }}>{review.q}</p>
-                <div style={{ color: '#8ea2b4', fontSize: '.85rem', marginTop: 4 }}>— {review.who}, {review.where}</div>
-              </div>
             </div>
 
             <div className="rv">
@@ -62,10 +57,7 @@ export default function Page() {
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
           {copy.sections.map((sec) => (
-            <div key={sec.h} className="rv" style={{ maxWidth: 780, marginBottom: 34 }}>
-              <h2 style={{ fontSize: 'clamp(1.5rem,2.6vw,2rem)', fontWeight: 800, lineHeight: 1.15 }}>{sec.h}</h2>
-              <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, lineHeight: 1.75 }}>{sec.p}</p>
-            </div>
+            <CopySection key={sec.h} sec={sec} />
           ))}
         </div>
       </section>
@@ -80,10 +72,13 @@ export default function Page() {
             {faqs.map((f, i) => (
               <div key={f.q} className={'faq-item' + (i === 0 ? ' open' : '')}>
                 <button className="faq-q" aria-expanded={i === 0}>{f.q}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{f.a}</p></div></div>
+                <div className="faq-a"><div><p>{renderInline(f.a)}</p></div></div>
               </div>
             ))}
           </div>
+          <p style={{ marginTop: 20, color: '#52606b' }}>
+            Closer to Dallas or Paulding County? See <Link href="/emergency-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>emergency roof repair in Dallas, GA</Link>.
+          </p>
           <div style={{ marginTop: 28 }}>
             <Link href="/service-areas/kennesaw/" className="btn btn-ink">More about our Kennesaw service area <span className="arr">→</span></Link>
           </div>

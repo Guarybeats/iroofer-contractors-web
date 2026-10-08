@@ -4,7 +4,6 @@ export const brand = {
   shortName: 'iRoofer',
   owner: 'Cristian Mendez',
   founded: 2019,
-  roofsCompleted: 150,
   tagline: 'Local, family-owned roofing you can trust',
   location: 'Dallas, GA',
   phone: '(470) 236-1410',
@@ -24,12 +23,10 @@ export const brand = {
   pitch:
     'iRoofer Contractors is a local, family-owned roofing company serving Dallas, GA and the greater Atlanta metro. ' +
     'Roof repair, full replacement, and new-construction roofing with honest pricing, clean job sites, and work we stand behind.',
-  rating: '5★',
-  reviewCount: '54',
   fonts: {
     import: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap'
   },
-  // VERIFY-OR-CUT: review totals / 150+ roofs / 24hr not confirmed vs live GBP — prefer qualitative trust.
+  // Qualitative trust only — no review totals, star ratings or job counts.
   trust: [
     { num: '2019', lbl: 'Family-Owned Since' },
     { num: 'OC', lbl: 'Owens Corning Preferred' },
@@ -145,15 +142,15 @@ export const cities = [
   { slug: 'douglasville', name: 'Douglasville', state: 'GA', county: 'Douglas County', blurb: 'fast storm-response and full replacements for Douglasville homeowners.',
     localNote: 'Douglasville sees its share of spring straight-line winds off the ridge. We document hail and wind damage for your insurance claim and rebuild to manufacturer spec.' },
   { slug: 'hiram', name: 'Hiram', state: 'GA', county: 'Paulding County', blurb: 'roof repair and replacement crews working Hiram neighborhoods weekly.',
-    localNote: 'Hiram families trust us for architectural shingle replacements that match the neighborhood and hold up to Georgia summers. Most jobs done in one to two days.' },
+    localNote: 'Hiram families trust us for architectural shingle replacements that match the neighborhood and hold up to Georgia summers.' },
   { slug: 'powder-springs', name: 'Powder Springs', state: 'GA', county: 'Cobb County', blurb: 'architectural shingle replacements and storm claims help in Powder Springs.',
     localNote: 'In Powder Springs we handle everything from single-slope ranch reroofs to steep two-story tear-offs, plus ridge-vent and attic ventilation upgrades that cut cooling bills.' },
   { slug: 'marietta', name: 'Marietta', state: 'GA', county: 'Cobb County', blurb: 'insurance-backed roof rebuilds and new construction roofing in Marietta.',
     localNote: 'Marietta’s mix of historic homes and new builds means we tailor every scope — from gentle repairs on older roofs to full code-compliant installs on new construction.' },
   { slug: 'acworth', name: 'Acworth', state: 'GA', county: 'Cobb County', blurb: 'leak repair, ventilation upgrades and full tear-offs across Acworth.',
     localNote: 'Acworth lakefront and in-town homes alike call us for fast leak tracing and clean tear-offs — we protect your landscaping and run a daily magnet nail-sweep.' },
-  { slug: 'kennesaw', name: 'Kennesaw', state: 'GA', county: 'Cobb County', blurb: 'local, family-owned roofing for Kennesaw homes and small businesses.',
-    localNote: 'Kennesaw homeowners and small businesses rely on us for honest pricing and a real person on the phone — no call center, no surprise line items.' },
+  { slug: 'kennesaw', name: 'Kennesaw', state: 'GA', county: 'Cobb County', blurb: 'local, family-owned roofing for Kennesaw homes.',
+    localNote: 'Kennesaw homeowners rely on us for honest pricing and a real person on the phone — no call center, no surprise line items.' },
   { slug: 'austell', name: 'Austell', state: 'GA', county: 'Cobb County', blurb: 'emergency tarping and honest estimates for Austell property owners.',
     localNote: 'When a storm hits Austell we tarp the same day and meet your adjuster on-site, so your claim is documented before the next rain.' },
   { slug: 'roswell', name: 'Roswell', state: 'GA', county: 'Fulton County', combo: false, blurb: 'steep-slope replacements, historic-district repairs and storm claims in Roswell.',

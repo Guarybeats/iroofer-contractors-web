@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 import { seo } from '@/lib/seo';
 
 export const metadata = seo({
-  title: 'New Construction Roofing in Dallas, GA & West Metro | iRoofer Contractors',
+  title: 'New Construction Roofing in Dallas, GA & West Metro',
   description:
     'Builder and homeowner new-construction roofing from iRoofer in Dallas, GA. Clean installs, clear schedules. Call (470) 236-1410 or contact us.',
   path: '/new-construction',

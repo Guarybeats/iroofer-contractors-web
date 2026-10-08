@@ -6,6 +6,7 @@ import Pic from '@/components/Pic';
 import { getService, services, brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { serviceHubContent, comboCities } from '@/lib/serviceHubContent';
+import { renderInline } from '@/components/InlineText';
 
 export function generateStaticParams() {
   return services
@@ -22,13 +23,13 @@ export function generateMetadata({ params }) {
   const isNc = service.slug === 'new-construction';
   return seo({
     title: isNc
-      ? 'New Construction Roofing in Dallas, GA & West Metro | iRoofer Contractors'
+      ? 'New Construction Roofing for Builders & Owners | iRoofer'
       : isRepairHub
       ? `${service.title} | Metro Atlanta | iRoofer`
       : `${service.title} | Dallas, GA & Metro Atlanta`,
     description:
       isNc
-        ? 'Builder and homeowner new-construction roofing from iRoofer in Dallas, GA. Clean installs, clear schedules, Owens Corning Preferred when specified. Call (470) 236-1410.'
+        ? 'Dry-in on the build schedule, installs to spec, clean sites. Family-owned Dallas, GA roofer for west metro builders and homeowners. (470) 236-1410'
         : service.metaDesc ||
       (isRepairHub
         ? 'Roof leak, flashing, and shingle repair across Metro Atlanta. For Dallas, GA jobs see our local roof repair page. Free inspection.'
@@ -120,7 +121,7 @@ export default function ServiceDetail({ params }) {
                   <span className="svc-num">{s.n}</span><span className="svc-title">{s.title}</span>
                   <span className="svc-plus" aria-hidden="true" />
                 </button>
-                <div className="svc-body"><div className="svc-inner"><p>{s.body}</p></div></div>
+                <div className="svc-body"><div className="svc-inner"><p>{renderInline(s.body)}</p></div></div>
               </article>
             ))}
           </div>
@@ -132,7 +133,7 @@ export default function ServiceDetail({ params }) {
             {hub.deepenBlocks.map((b) => (
               <div key={b.title} style={{ marginTop: 24 }}>
                 <h2 style={{ fontSize: 'clamp(1.35rem,2.4vw,1.85rem)', fontWeight: 800 }}>{b.title}</h2>
-                <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>{b.body}</p>
+                <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>{renderInline(b.body)}</p>
               </div>
             ))}
             <p style={{ marginTop: 20 }}>
@@ -186,7 +187,7 @@ export default function ServiceDetail({ params }) {
             {hub.faqs.map((f, i) => (
               <div className={`faq-item${i === 0 ? ' open' : ''}`} key={f.q}>
                 <button className="faq-q" aria-expanded={i === 0 ? 'true' : 'false'}>{f.q}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{f.a}</p></div></div>
+                <div className="faq-a"><div><p>{renderInline(f.a)}</p></div></div>
               </div>
             ))}
           </div>
