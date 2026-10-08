@@ -71,7 +71,7 @@ export default function ServiceAreas() {
         </div>
 
         <p style={{ color: '#52606b', marginTop: 36, maxWidth: 720, lineHeight: 1.7, borderLeft: '3px solid var(--orange)', paddingLeft: 14 }}>
-          Family-owned since 2019 · Owens Corning Preferred · Based in Dallas, GA · Owner Cristian Mendez
+          Family-owned since 2019 · Owens Corning Contractor Rewards Member · Based in Dallas, GA · Owner Cristian Mendez
         </p>
         <p style={{ marginTop: 20, color: '#52606b' }}>
           Ready to talk about your roof? Visit{' '}

@@ -9,7 +9,7 @@ import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
   title: "Roof Replacement in Powder Springs, GA | iRoofer Contractors",
-  description: 'Roof replacement in Powder Springs, GA by an Owens Corning Preferred Contractor. Tear-off, architectural shingles, clean site. Free inspection: (470) 236-1410.',
+  description: 'Roof replacement in Powder Springs, GA by an Owens Corning Contractor Rewards member. Tear-off, architectural shingles, clean site. Free inspection: (470) 236-1410.',
   path: '/roof-replacement-powder-springs',
 });
 

@@ -78,7 +78,7 @@ export default function BlogPostPage() {
             <h2>What Makes iRoofer Different</h2>
             <ul>
               <li>Local since 2019 — Dallas, GA based, not a storm-chaser satellite office</li>
-              <li>Owens Corning Preferred Contractor</li>
+              <li>Owens Corning Contractor Rewards member — we install Owens Corning shingles</li>
               <li>Workmanship warranty in writing on every job</li>
               <li>Project manager on-site every day, direct cell number</li>
               <li>150+ roofs in Paulding, Cobb, Douglas counties — references on request</li>

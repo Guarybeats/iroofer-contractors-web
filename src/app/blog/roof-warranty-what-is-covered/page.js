@@ -73,12 +73,12 @@ export default function BlogPostPage() {
 
             <h2>What manufacturer warranties usually require</h2>
             <ul>
-              <li>Installation by an eligible contractor (Preferred / certified programs often matter)</li>
+              <li>Installation to the manufacturer’s specifications (some enhanced system warranties also require a contractor in a specific manufacturer program — check the packet)</li>
               <li>Registration within the manufacturer’s window</li>
               <li>Use of the specified underlayment / system components when the enhanced warranty requires them</li>
             </ul>
             <p>
-              We install as an <strong>Owens Corning Preferred Contractor</strong> when that product line is on the job — useful for registration and system eligibility, not a blank promise that “everything is covered forever.”
+              We install Owens Corning shingles as an <strong>Owens Corning Contractor Rewards member</strong> when that product line is on the job, and we register the manufacturer’s standard warranty when the product line allows — not a blank promise that “everything is covered forever.”
             </p>
 
             <h2>What workmanship coverage is (and is not)</h2>

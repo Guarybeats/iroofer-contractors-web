@@ -45,10 +45,10 @@ export const serviceHubContent = {
     h1Before: 'A new roof that lasts ',
     h1Accent: 'decades.',
     lead:
-      'Full tear-off and replacement with architectural asphalt systems installed clean and built to last. iRoofer Contractors — family-owned in Dallas since 2019 — installs as an Owens Corning Preferred contractor when that line fits the house. Written quote after inspection only; on-page estimator tools are planning-only.',
+      'Full tear-off and replacement with architectural asphalt systems installed clean and built to last. iRoofer Contractors — family-owned in Dallas since 2019 — installs Owens Corning shingles as an Owens Corning Contractor Rewards member when that line fits the house. Written quote after inspection only; on-page estimator tools are planning-only.',
     bullets: [
       'Complete tear-off and deck inspection (replace soft plywood, not cover it)',
-      'Owens Corning Preferred Contractor materials & workmanship standards when selected',
+      'Owens Corning shingles installed to manufacturer specifications by an Owens Corning Contractor Rewards member, when selected',
       'Ice & water shield, synthetic underlayment, ridge vents, drip edge',
       'Daily magnet sweeps and dumpster haul — lawn left clean',
     ],
@@ -63,7 +63,7 @@ export const serviceHubContent = {
     ],
     faqs: [
       { q: 'How long does a full replacement take?', a: 'Most homes we re-roof in Dallas and nearby towns are one to two days. Steep, large, or multi-layer tear-offs can take three. Weather pauses are built into the schedule we give you.' },
-      { q: 'What shingles do you install?', a: 'Primarily Owens Corning architectural lines as an Owens Corning Preferred Contractor when that system fits. We can discuss other architectural options and color once we see the home and HOA rules if any.' },
+      { q: 'What shingles do you install?', a: 'Primarily Owens Corning architectural lines installed as an Owens Corning Contractor Rewards member, when that system fits. We can discuss other architectural options and color once we see the home and HOA rules if any.' },
       { q: 'Do you offer financing?', a: 'Ask on the call for current options for qualified homeowners — we don’t invent APR claims on this page. We also support insurance documentation when storm damage is the reason for replacement.' },
       { q: 'What warranty do I get?', a: 'Manufacturer warranty on the shingles (registered to you when allowed) plus our workmanship commitment. Ask for the exact terms on your product choice before we start.' },
       { q: 'Partial vs full replacement?', a: 'Sometimes a slope can be rebuilt; often matching and long-term performance push toward a full system. We’ll say which after inspection — no scare tactics over a fixable boot.' },
@@ -98,7 +98,7 @@ export const serviceHubContent = {
     h1Before: 'Hail doesn’t wait. ',
     h1Accent: 'Neither do we.',
     lead:
-      'Wind, hail, and fallen limbs do damage that’s easy to miss from the ground. iRoofer inspects, tarps when a roof is open to weather, and documents what we find so you can decide on repair — and insurance steps if they apply. Family-owned in Dallas since 2019. Owens Corning Preferred on permanent systems when selected.',
+      'Wind, hail, and fallen limbs do damage that’s easy to miss from the ground. iRoofer inspects, tarps when a roof is open to weather, and documents what we find so you can decide on repair — and insurance steps if they apply. Family-owned in Dallas since 2019. Owens Corning Contractor Rewards member; Owens Corning shingles on permanent systems when selected.',
     bullets: [
       'Free post-storm inspection with photo documentation',
       'Same-day emergency tarping for open roofs when access is safe',
@@ -151,7 +151,7 @@ export const serviceHubContent = {
     h1Before: 'New Construction Roofing — Built Clean for Dallas & ',
     h1Accent: 'West Metro Builds',
     lead:
-      'Ranking well does not help if the page does not ask for the next step. iRoofer Contractors installs new-construction roofs for builders and homeowners across Dallas, GA and our service map. Family-owned since 2019. Owens Corning Preferred when the spec calls for that line. Call (470) 236-1410 or https://iroofercontractors.com/contact/. Builders: request a partner intro on the contact form.',
+      'Ranking well does not help if the page does not ask for the next step. iRoofer Contractors installs new-construction roofs for builders and homeowners across Dallas, GA and our service map. Family-owned since 2019. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when the spec calls for that line. Call (470) 236-1410 or https://iroofercontractors.com/contact/. Builders: request a partner intro on the contact form.',
     bullets: [
       'Custom and production builders who need a reliable roofing partner',
       'Homeowners building or finishing a home who want one accountable crew',
@@ -172,7 +172,7 @@ export const serviceHubContent = {
       { q: 'Where do you take new-construction jobs?', a: 'Dallas home base; regular areas listed on /service-areas/.' },
       { q: 'How do we start?', a: 'Call (470) 236-1410 or use the contact page with plans / address / timeline.' },
       { q: 'Can you match builder schedules?', a: 'We plan around the build calendar and weather — talk to us early so material lead times do not stall dry-in.' },
-      { q: 'Do you only use one shingle brand?', a: 'Owens Corning systems when specified/preferred; other architectural lines when the plan calls for them — ask on the estimate.' },
+      { q: 'Do you only use one shingle brand?', a: 'Owens Corning systems when specified or requested; other architectural lines when the plan calls for them — ask on the estimate.' },
       { q: 'Homeowner vs builder billing?', a: 'We’ll set expectations in writing before start.' },
       { q: 'Are you familiar with local inspection requirements?', a: 'We install to current Georgia residential code expectations for underlayment, ice barriers where required, and ventilation — and we show up for re-inspection if the county asks.' },
       { q: 'What about gutters on a new build?', a: 'We can hang seamless gutters after the roof so drip edge and fascia are done as one system. Ask for a combined quote — see our gutter approach sized to the roof that feeds them.' },

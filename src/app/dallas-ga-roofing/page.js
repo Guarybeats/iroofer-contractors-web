@@ -115,7 +115,7 @@ export default function DallasGaRoofingPage() {
             </div>
             <div className="card">
               <h3>Roof Replacement</h3>
-              <p>Full tear-off and re-roof with architectural asphalt shingles installed by an Owens Corning Preferred Contractor, installed clean and built to last.</p>
+              <p>Full tear-off and re-roof with architectural asphalt shingles installed by an Owens Corning Contractor Rewards member, clean and built to last.</p>
               <Link href="/roof-replacement-dallas-ga/" className="chip">Roof replacement Dallas GA →</Link>
               <Link href="/services/roof-replacement/" className="chip">Replacement service hub →</Link>
             </div>
@@ -139,7 +139,7 @@ export default function DallasGaRoofingPage() {
             </div>
             <div className="card">
               <h3>New Construction</h3>
-              <p>Dry-in on the builder&apos;s schedule with Owens Corning Preferred Contractor installs and Paulding County inspection coordination.</p>
+              <p>Dry-in on the builder&apos;s schedule with Owens Corning shingle installs (we&apos;re an Owens Corning Contractor Rewards member) and Paulding County inspection coordination.</p>
               <Link href="/new-construction-dallas-ga/" className="chip">New construction Dallas GA →</Link>
               <Link href="/services/new-construction/" className="chip">New construction hub →</Link>
             </div>
@@ -161,7 +161,7 @@ export default function DallasGaRoofingPage() {
               <h2>Year-round local accountability</h2>
               <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
                 iRoofer Contractors — {brand.owner}, family-owned since 2019, shop at 152 Freedom Dr, Dallas, GA 30157.
-                Owens Corning Preferred when selected. We work Paulding and nearby west-metro cities every week — not as a one-week storm blitz.
+                We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that line is selected. We work Paulding and nearby west-metro cities every week — not as a one-week storm blitz.
               </p>
               <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
                 Dallas and Paulding roofs see tree cover, humidity, and fast-moving storms. That mix ages flashing and asphalt faster than a brochure timeline.

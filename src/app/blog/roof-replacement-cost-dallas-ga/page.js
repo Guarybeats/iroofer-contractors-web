@@ -64,7 +64,7 @@ export default function BlogPostPage() {
               and material choice — plus access and disposal.
             </p>
             <p>
-              iRoofer Contractors is family-owned in Dallas since 2019. Owens Corning Preferred when that system fits.
+              iRoofer Contractors is family-owned in Dallas since 2019. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system fits.
               We&apos;ll walk the roof and write the number — not guess it on the phone.
               Call <a href={`tel:${brand.phone}`}>{brand.phone}</a> or{' '}
               <Link href="/contact/" style={{ color: 'var(--orange)' }}>https://iroofercontractors.com/contact/</Link>.
