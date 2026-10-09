@@ -52,6 +52,7 @@ export default function ServiceAreas() {
             {needLinks.map((l) => (
               <Link key={l.href} href={l.href} className="chip" style={{ fontWeight: 700 }}>{l.label} →</Link>
             ))}
+            <Link href="/paulding-county-roofing/" className="chip" style={{ fontWeight: 700 }}>Paulding County roofing →</Link>
             <Link href="/services/" className="chip" style={{ fontWeight: 700 }}>All services →</Link>
           </div>
         </div>
