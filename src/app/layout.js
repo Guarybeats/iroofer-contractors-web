@@ -162,6 +162,7 @@ export default function RootLayout({ children }) {
                 <a href="/services/new-construction/">New Construction</a>
                 <a href="/emergency-roof-repair-dallas-ga/">Emergency Roof Repair</a>
                 <a href="/storm-damage-roof-repair-dallas-ga/">Storm &amp; Insurance</a>
+                <a href="/hail-damage-roof-repair-dallas-ga/">Hail Damage Roof Repair</a>
                 <a href="/#faq">FAQ</a>
               </div>
               <div className="foot-col">
@@ -193,6 +194,7 @@ export default function RootLayout({ children }) {
                 <a href="/roof-replacement-marietta/">Roof Replacement Marietta, GA</a>
                 <a href="/storm-damage-roof-repair-kennesaw/">Storm Damage Kennesaw, GA</a>
                 <a href="/storm-damage-roof-repair-dallas-ga/">Storm Damage Dallas, GA</a>
+                <a href="/hail-damage-roof-repair-dallas-ga/">Hail Damage Roof Inspection Dallas, GA</a>
                 <a href="/emergency-roof-repair-dallas-ga/">Emergency Repair Dallas, GA</a>
               </div>
               <div className="foot-col">
