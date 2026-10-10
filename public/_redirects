@@ -50,6 +50,12 @@
 /storm-damage-kennesaw-ga       /storm-damage-roof-repair-kennesaw/    301
 /storm-damage-kennesaw-ga/      /storm-damage-roof-repair-kennesaw/    301
 
+# Duplicate new-construction page consolidated 2026-10-10. /new-construction/ carried the
+# same title/description as /services/new-construction/, which is the URL linked from the
+# nav, homepage, service-areas and MCP. Page removed from src/app; 301 the twin + slash twin.
+/new-construction             /services/new-construction/                301
+/new-construction/            /services/new-construction/                301
+
 # Trailing-slash twins (Next trailingSlash:true). Without these, /about-us/ 404s while /about-us 301s.
 /about-us/                    /about/                                       301
 /contact-us/                  /contact/                                     301
