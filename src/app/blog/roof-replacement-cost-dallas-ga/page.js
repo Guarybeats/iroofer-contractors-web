@@ -15,7 +15,7 @@ export const metadata = {
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: 'https://iroofercontractors.com/blog/roof-replacement-cost-dallas-ga',
   },
-  title: 'Roof Replacement Cost in Dallas, GA | What Actually Changes the Price | iRoofer',
+  title: 'Roof Replacement Cost in Dallas, GA (2026) | iRoofer',
   description:
     'Roof replacement cost factors in Dallas, GA — squares, pitch, layers, decking, materials. Not a quote. Free inspection: (470) 236-1410.',
 };

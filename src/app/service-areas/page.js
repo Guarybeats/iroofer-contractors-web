@@ -3,7 +3,7 @@ import { cities, brand, cityPath } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 
 export const metadata = seo({
-  title: 'Roofing Service Areas Near Dallas, GA | Repair, Replacement & Storm | iRoofer',
+  title: 'Roofing Service Areas Near Dallas, GA | iRoofer',
   description: `iRoofer Contractors serves Dallas, Douglasville, Hiram, Powder Springs, Marietta, Acworth, Kennesaw, and more. Local repair, replacement, storm help. Call ${brand.phone}.`,
   path: '/service-areas',
 });
@@ -53,6 +53,7 @@ export default function ServiceAreas() {
             {needLinks.map((l) => (
               <Link key={l.href} href={l.href} className="chip" style={{ fontWeight: 700 }}>{l.label} →</Link>
             ))}
+            <Link href="/paulding-county-roofing/" className="chip" style={{ fontWeight: 700 }}>Paulding County roofing →</Link>
             <Link href="/services/" className="chip" style={{ fontWeight: 700 }}>All services →</Link>
           </div>
         </div>
