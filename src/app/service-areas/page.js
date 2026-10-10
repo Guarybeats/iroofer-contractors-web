@@ -12,6 +12,7 @@ const needLinks = [
   { href: '/roof-repair-dallas-ga/', label: 'Roof repair' },
   { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement' },
   { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage' },
+  { href: '/hail-damage-roof-repair-dallas-ga/', label: 'Hail damage' },
   { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency' },
   { href: '/services/roof-insurance-claims/', label: 'Insurance claims' },
   { href: '/services/new-construction/', label: 'New construction' },
