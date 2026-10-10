@@ -19,6 +19,7 @@ const faqs = copy.faq;
 const relatedLinks = [
               { href: '/dallas-ga-roofing/', label: 'All Dallas GA roofing services' },
               { href: '/services/storm-damage-roof-repair/', label: 'Storm damage roof repair hub' },
+              { href: '/hail-damage-roof-repair-dallas-ga/', label: 'Hail damage roof repair in Dallas GA' },
               { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas GA' },
               { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas GA' },
               { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas GA' },
