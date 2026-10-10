@@ -15,7 +15,7 @@ export const metadata = {
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: 'https://iroofercontractors.com/blog/roof-financing-options-dallas-ga/',
   },
-  title: 'Roof Financing Options in Dallas, GA | How Homeowners Pay for a New Roof | iRoofer',
+  title: 'Roof Financing Options in Dallas, GA | iRoofer',
   description:
     'Qualitative guide to paying for a Dallas, GA roof — insurance paths, lender financing, and what to avoid. Talk options with iRoofer: (470) 236-1410 or contact us.',
 };

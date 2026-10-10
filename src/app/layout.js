@@ -23,8 +23,8 @@ const bigShoulders = Big_Shoulders_Display({
 
 export const metadata = {
   metadataBase: new URL('https://iroofercontractors.com'),
-  title: `Dallas GA Roof Repair, Replacement & Storm Damage | iRoofer Contractors`,
-  description: `Family-owned Dallas, GA roofing since 2019. Roof repair, full replacement, storm & hail help, and insurance documentation. Call (470) 236-1410 or request a free inspection.`,
+  title: `Roof Repair & Replacement in Dallas, GA | iRoofer`,
+  description: `Family-owned Dallas, GA roofer since 2019: roof repair, replacement, and storm and hail damage with insurance photos. Free inspection. Call (470) 236-1410.`,
   robots: { index: true, follow: true },
   icons: {
     icon: [
@@ -39,8 +39,8 @@ export const metadata = {
     type: 'website',
     url: 'https://iroofercontractors.com/',
     siteName: 'iRoofer Contractors',
-    title: `Dallas GA Roof Repair, Replacement & Storm Damage | iRoofer Contractors`,
-    description: `Family-owned Dallas, GA roofing since 2019. Roof repair, full replacement, storm & hail help, and insurance documentation. Call (470) 236-1410 or request a free inspection.`,
+    title: `Roof Repair & Replacement in Dallas, GA | iRoofer`,
+    description: `Family-owned Dallas, GA roofer since 2019: roof repair, replacement, and storm and hail damage with insurance photos. Free inspection. Call (470) 236-1410.`,
     locale: 'en_US',
     images: [{ url: 'https://iroofercontractors.com/assets/hero.jpg', alt: 'iRoofer Contractors roofing a home in Dallas, GA', width: 1280, height: 960 }],
   },
@@ -48,8 +48,8 @@ export const metadata = {
     card: 'summary_large_image',
     site: '@irooferc',
     creator: '@irooferc',
-    title: `Dallas GA Roof Repair, Replacement & Storm Damage | iRoofer Contractors`,
-    description: `Family-owned Dallas, GA roofing since 2019. Roof repair, full replacement, storm & hail help, and insurance documentation. Call (470) 236-1410 or request a free inspection.`,
+    title: `Roof Repair & Replacement in Dallas, GA | iRoofer`,
+    description: `Family-owned Dallas, GA roofer since 2019: roof repair, replacement, and storm and hail damage with insurance photos. Free inspection. Call (470) 236-1410.`,
     images: ['https://iroofercontractors.com/assets/hero.jpg'],
   },
 };

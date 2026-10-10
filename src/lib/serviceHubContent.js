@@ -3,9 +3,9 @@ import { cities } from '@/lib/brand';
 /** Deep hub copy for /services/[slug] — keep gutters on its dedicated page. */
 export const serviceHubContent = {
   'roof-repair': {
-    eyebrow: 'Roof repair',
-    h1Before: 'Stop the leak before it ',
-    h1Accent: 'spreads.',
+    eyebrow: 'Stop the leak before it spreads',
+    h1Before: 'Roof Repair in Dallas, GA & ',
+    h1Accent: 'West Metro Atlanta',
     lead:
       'Most Dallas, GA roof leaks start small — a cracked boot, lifted flashing, or a few missing shingles after a spring storm. We find the source (not just the stain), patch it to manufacturer spec, and tell you straight if repair is still the right call versus replacement.',
     bullets: [
@@ -41,9 +41,9 @@ export const serviceHubContent = {
     cityLabel: 'Roof repair by city',
   },
   'roof-replacement': {
-    eyebrow: 'Roof replacement',
-    h1Before: 'A new roof that lasts ',
-    h1Accent: 'decades.',
+    eyebrow: 'A new roof that lasts decades',
+    h1Before: 'Roof Replacement in Dallas, GA & ',
+    h1Accent: 'West Metro Atlanta',
     lead:
       'Full tear-off and replacement with architectural asphalt systems installed clean and built to last. iRoofer Contractors — family-owned in Dallas since 2019 — installs Owens Corning shingles as an Owens Corning Contractor Rewards member when that line fits the house. Written quote after inspection only; on-page estimator tools are planning-only.',
     bullets: [
@@ -94,9 +94,9 @@ export const serviceHubContent = {
     cityLabel: 'Roof replacement by city',
   },
   'storm-damage-roof-repair': {
-    eyebrow: 'Storm & insurance',
-    h1Before: 'Hail doesn’t wait. ',
-    h1Accent: 'Neither do we.',
+    eyebrow: 'Hail doesn’t wait. Neither do we.',
+    h1Before: 'Storm Damage Roof Repair in Dallas, GA & ',
+    h1Accent: 'West Metro Atlanta',
     lead:
       'Wind, hail, and fallen limbs do damage that’s easy to miss from the ground. iRoofer inspects, tarps when a roof is open to weather, and documents what we find so you can decide on repair — and insurance steps if they apply. Family-owned in Dallas since 2019. Owens Corning Contractor Rewards member; Owens Corning shingles on permanent systems when selected.',
     bullets: [
@@ -151,7 +151,7 @@ export const serviceHubContent = {
     h1Before: 'New Construction Roofing — Built Clean for Dallas & ',
     h1Accent: 'West Metro Builds',
     lead:
-      'Ranking well does not help if the page does not ask for the next step. iRoofer Contractors installs new-construction roofs for builders and homeowners across Dallas, GA and our service map. Family-owned since 2019. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when the spec calls for that line. Call (470) 236-1410 or https://iroofercontractors.com/contact/. Builders: request a partner intro on the contact form.',
+      'iRoofer Contractors installs new-construction roofs for builders and homeowners across Dallas, GA and our service map. Family-owned since 2019. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when the spec calls for that line. Call (470) 236-1410 or use our contact page. Builders: request a partner intro on the contact form.',
     bullets: [
       'Custom and production builders who need a reliable roofing partner',
       'Homeowners building or finishing a home who want one accountable crew',
