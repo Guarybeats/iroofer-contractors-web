@@ -113,6 +113,10 @@ export default function Page() {
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Gutter Repair & Replacement in Hiram</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
+            <Link key="hail-damage" href="/hail-damage-roof-repair-dallas-ga/" className="svc-card">
+              <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Hail Damage Inspection (Dallas &amp; Paulding County)</h3>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+            </Link>
           </div>
         </div>
       </section>
