@@ -39,10 +39,15 @@
       }
     ]
   },
-  "/new-construction/": {
-    "priority": "0.8",
+  "/hail-damage-roof-repair-dallas-ga/": {
+    "priority": "0.9",
     "changefreq": "monthly",
-    "images": []
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/storm-damage.webp",
+        "title": "Hail damage roof inspection on a Dallas, GA home by iRoofer Contractors"
+      }
+    ]
   },
   "/estimator/": {
     "priority": "0.8",
@@ -80,7 +85,7 @@
     "images": []
   },
   "/services/new-construction/": {
-    "priority": "0.7",
+    "priority": "0.8",
     "changefreq": "monthly",
     "images": []
   },
