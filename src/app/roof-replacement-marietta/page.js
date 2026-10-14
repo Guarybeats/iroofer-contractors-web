@@ -10,7 +10,7 @@ import CopySection from '@/components/CopySection';
 
 export const metadata = seo({
   title: "Roof Replacement in Marietta, GA | Full Tear-Off | iRoofer",
-  description: 'Full tear-off roof replacement in Marietta, GA. We sort city vs. Cobb permits and historic review first. Owens Corning Preferred. Call (470) 236-1410.',
+  description: 'Full tear-off roof replacement in Marietta, GA. We sort city vs. Cobb permits and historic review first. Owens Corning shingles. Call (470) 236-1410.',
   path: '/roof-replacement-marietta',
 });
 

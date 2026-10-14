@@ -44,7 +44,7 @@ const sections = [
   {
     h2: 'Full replacement',
     paras: [
-      'When the roof is past honest repair, we replace — architectural shingles, deck checked, Owens Corning Preferred when that product is selected. See /roof-replacement-douglasville/ and /roof-replacement-dallas-ga/.',
+      'When the roof is past honest repair, we replace — architectural shingles, deck checked, and Owens Corning shingles installed by an Owens Corning Contractor Rewards member when that product is selected. See /roof-replacement-douglasville/ and /roof-replacement-dallas-ga/.',
     ],
   },
   {

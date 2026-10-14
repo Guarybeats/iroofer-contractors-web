@@ -23,8 +23,8 @@ const bigShoulders = Big_Shoulders_Display({
 
 export const metadata = {
   metadataBase: new URL('https://iroofercontractors.com'),
-  title: `Dallas GA Roof Repair, Replacement & Storm Damage | iRoofer`,
-  description: `Family-owned Dallas, GA roofing since 2019. Roof repair, replacement, storm & hail help and insurance documentation. Free inspection: (470) 236-1410.`,
+  title: `Roof Repair & Replacement in Dallas, GA | iRoofer`,
+  description: `Family-owned Dallas, GA roofer since 2019: roof repair, replacement, and storm and hail damage with insurance photos. Free inspection. Call (470) 236-1410.`,
   robots: { index: true, follow: true },
   icons: {
     icon: [
@@ -39,8 +39,8 @@ export const metadata = {
     type: 'website',
     url: 'https://iroofercontractors.com/',
     siteName: 'iRoofer Contractors',
-    title: `Dallas GA Roof Repair, Replacement & Storm Damage | iRoofer`,
-    description: `Family-owned Dallas, GA roofing since 2019. Roof repair, replacement, storm & hail help and insurance documentation. Free inspection: (470) 236-1410.`,
+    title: `Roof Repair & Replacement in Dallas, GA | iRoofer`,
+    description: `Family-owned Dallas, GA roofer since 2019: roof repair, replacement, and storm and hail damage with insurance photos. Free inspection. Call (470) 236-1410.`,
     locale: 'en_US',
     images: [{ url: 'https://iroofercontractors.com/assets/hero.jpg', alt: 'iRoofer Contractors roofing a home in Dallas, GA', width: 1280, height: 960 }],
   },
@@ -48,8 +48,8 @@ export const metadata = {
     card: 'summary_large_image',
     site: '@irooferc',
     creator: '@irooferc',
-    title: `Dallas GA Roof Repair, Replacement & Storm Damage | iRoofer`,
-    description: `Family-owned Dallas, GA roofing since 2019. Roof repair, replacement, storm & hail help and insurance documentation. Free inspection: (470) 236-1410.`,
+    title: `Roof Repair & Replacement in Dallas, GA | iRoofer`,
+    description: `Family-owned Dallas, GA roofer since 2019: roof repair, replacement, and storm and hail damage with insurance photos. Free inspection. Call (470) 236-1410.`,
     images: ['https://iroofercontractors.com/assets/hero.jpg'],
   },
 };
@@ -77,13 +77,13 @@ export default function RootLayout({ children }) {
         <div className="topbar" aria-hidden="true">
           <div className="track">
             <div className="set">
-              <div className="item">Owens Corning Preferred</div>
+              <div className="item">Owens Corning Contractor Rewards Member</div>
               <div className="item">Emergency / Storm Response</div>
               <div className="item">Free No-Pressure Roof Inspections</div>
               <div className="item">Family-Owned &amp; Operated Since 2019</div>
             </div>
             <div className="set" aria-hidden="true">
-              <div className="item">Owens Corning Preferred</div>
+              <div className="item">Owens Corning Contractor Rewards Member</div>
               <div className="item">Emergency / Storm Response</div>
               <div className="item">Free No-Pressure Roof Inspections</div>
               <div className="item">Family-Owned &amp; Operated Since 2019</div>
@@ -100,7 +100,7 @@ export default function RootLayout({ children }) {
             <nav className="menu" aria-label="Primary">
               <a className="lnk" href="/services/">Services</a>
               <a className="lnk" href="/service-areas/">Service Areas</a>
-              <a className="lnk" href="/estimator/">Free Estimate</a>
+              <a className="lnk" href="/estimator/">Instant Quote</a>
               <a className="lnk" href="/emergency-roof-repair-dallas-ga/">Emergency</a>
               <a className="lnk" href="/storm-damage-roof-repair-dallas-ga/">Storm Damage</a>
               <a className="lnk" href="/#work">Our Work</a>
@@ -123,7 +123,7 @@ export default function RootLayout({ children }) {
         {/* MOBILE NAV */}
         <nav className="mnav" id="mnav" aria-label="Mobile">
           <a href="/services/">Services</a>
-          <a href="/estimator/">Free Estimate</a>
+          <a href="/estimator/">Instant Quote</a>
           <a href="/emergency-roof-repair-dallas-ga/">Emergency</a>
           <a href="/storm-damage-roof-repair-dallas-ga/">Storm Damage</a>
           <a href="/#work">Our Work</a>
@@ -160,6 +160,7 @@ export default function RootLayout({ children }) {
                 <a href="/services/new-construction/">New Construction</a>
                 <a href="/emergency-roof-repair-dallas-ga/">Emergency Roof Repair</a>
                 <a href="/storm-damage-roof-repair-dallas-ga/">Storm &amp; Insurance</a>
+                <a href="/hail-damage-roof-repair-dallas-ga/">Hail Damage Roof Repair</a>
                 <a href="/#faq">FAQ</a>
               </div>
               <div className="foot-col">
@@ -191,6 +192,7 @@ export default function RootLayout({ children }) {
                 <a href="/roof-replacement-marietta/">Roof Replacement Marietta, GA</a>
                 <a href="/storm-damage-roof-repair-kennesaw/">Storm Damage Kennesaw, GA</a>
                 <a href="/storm-damage-roof-repair-dallas-ga/">Storm Damage Dallas, GA</a>
+                <a href="/hail-damage-roof-repair-dallas-ga/">Hail Damage Roof Inspection Dallas, GA</a>
                 <a href="/emergency-roof-repair-dallas-ga/">Emergency Repair Dallas, GA</a>
               </div>
               <div className="foot-col">
@@ -203,7 +205,7 @@ export default function RootLayout({ children }) {
                   {brand.hours.saturday}<br />
                   {brand.hours.sunday}
                 </p>
-                <p className="lic">Owens Corning Preferred<br />© {new Date().getFullYear()} {brand.name}</p>
+                <p className="lic">Owens Corning Contractor Rewards Member<br />© {new Date().getFullYear()} {brand.name}</p>
               </div>
             </div>
             <div className="foot-bottom">

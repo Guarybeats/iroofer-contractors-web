@@ -165,7 +165,7 @@ export default function BlogStormChecklist() {
         <div className="rv" style={{ marginTop: 40, maxWidth: 820 }}>
           <h2 style={{ fontSize: '1.5rem', fontWeight: 800 }}>Hail damage help near you</h2>
           <p style={{ color: MUTED, marginTop: 10, lineHeight: 1.7 }}>
-            We document and repair hail damage across Dallas, Paulding and nearby Cobb and Douglas County cities, and we install Owens Corning systems as a Preferred Contractor when that’s the right fit. Local storm pages:{' '}
+            We document and repair hail damage across Dallas, Paulding and nearby Cobb and Douglas County cities, and we install Owens Corning systems as an Owens Corning Contractor Rewards member when that’s the right fit. Local storm pages:{' '}
             {stormPages.map(([href, label], i) => (
               <span key={href}>
                 <Link href={href} style={A}>{label}</Link>

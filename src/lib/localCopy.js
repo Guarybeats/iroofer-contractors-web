@@ -13,7 +13,7 @@
 // 2. Only verifiable facts. Permit rules below are sourced from the jurisdictions
 //    themselves (see cityFacts). No invented job counts, dates, addresses or projects.
 // 3. Keep claims about iRoofer's own work to things Cristian has confirmed: founded 2019,
-//    Owens Corning Preferred Contractor, free inspections, same-day tarping, drone
+//    Owens Corning Contractor Rewards member, free inspections, same-day tarping, drone
 //    documentation, daily nail sweep.
 //
 // SOURCES (checked 2026-08-31)
@@ -57,7 +57,7 @@ localCopy['roof-repair'] = {
     intro: "A small drip in a Dallas attic rarely stays small. Ceiling stains and soft spots often trace to worn flashing, cracked pipe boots, missing shingles, or a tired valley. iRoofer Contractors — family-owned in Dallas since 2019 — finds the source and handles the roof repair the right way. Owner Cristian Mendez.",
     sections: [
       { h: "Why local roof repair in Dallas",
-        p: "Dallas and Paulding roofs deal with humidity, sudden storms, and plenty of tree cover—conditions that age flashing and asphalt faster than many homeowners expect. We're not a national call center; we're a local crew that shows up, walks the roof, and tells you what we see. Family-owned in Dallas since 2019, with owner Cristian Mendez on the line when decisions get complicated. As an Owens Corning Preferred contractor, we repair to manufacturer standards and document damage when insurance may apply. You'll get honest scope: patch when a patch makes sense, recommend replacement when repairs would only buy a season. Call (470) 236-1410 or start at https://iroofercontractors.com/contact/." },
+        p: "Dallas and Paulding roofs deal with humidity, sudden storms, and plenty of tree cover—conditions that age flashing and asphalt faster than many homeowners expect. We're not a national call center; we're a local crew that shows up, walks the roof, and tells you what we see. Family-owned in Dallas since 2019, with owner Cristian Mendez on the line when decisions get complicated. We install Owens Corning shingles as an Owens Corning Contractor Rewards member, repair to manufacturer standards, and document damage when insurance may apply. You'll get honest scope: patch when a patch makes sense, recommend replacement when repairs would only buy a season. Call (470) 236-1410 or start at https://iroofercontractors.com/contact/." },
       { h: "How our Dallas roof repair process works",
         p: "Inspect — We check shingles, ridges, valleys, chimneys, step and wall flashing, vents, and pipe boots. Inside, we look for staining, soft decking signs, and attic moisture clues that point to the true leak path. Photo documentation — Problem areas are photographed so you (and your insurer, if relevant) can see the issue. Temporary protection — Active leaks can get tarped when needed. Written scope — materials, areas affected, and whether a targeted fix or larger work is smarter. Repair work — shingle replacement, flashing rebuilds, boot swaps, ridge repairs, sealing failed penetrations. Repair vs. replace — if patches keep failing, we'll say so and point you to /roof-replacement-dallas-ga/." },
       { h: "Roof leak repair in Dallas, GA",
@@ -144,7 +144,7 @@ localCopy['roof-repair'] = {
       },
       {
         "h": "Why Hiram homeowners call iRoofer",
-        "p": "Hiram and broader Paulding neighborhoods often sit under mature tree cover. That shade is nice; the leaf debris, falling limbs, and storm-driven branches are harder on valleys, gutters, and asphalt. We're a local crew based in nearby Dallas since 2019—not a rotating franchise van—led by owner Cristian Mendez. Owens Corning Preferred, so repairs follow manufacturer details when it matters for warranties and longevity. For storm-related damage, we photograph findings and can support the insurance adjuster path when a claim applies. We can’t promise what your insurer will approve. We can give you an honest scope and a phone number answered by people who know Paulding: (470) 236-1410."
+        "p": "Hiram and broader Paulding neighborhoods often sit under mature tree cover. That shade is nice; the leaf debris, falling limbs, and storm-driven branches are harder on valleys, gutters, and asphalt. We're a local crew based in nearby Dallas since 2019—not a rotating franchise van—led by owner Cristian Mendez. We install Owens Corning shingles as an Owens Corning Contractor Rewards member, so repairs follow manufacturer details when it matters for warranties and longevity. For storm-related damage, we photograph findings and can support the insurance adjuster path when a claim applies. We can’t promise what your insurer will approve. We can give you an honest scope and a phone number answered by people who know Paulding: (470) 236-1410."
       },
       {
         "h": "Book a Hiram roof repair",
@@ -345,7 +345,7 @@ localCopy['roof-replacement'] = {
     intro: "When patches stop making sense — third leak in a year, widespread wear, soft decking — it's time for roof replacement in Dallas, GA. iRoofer Contractors is family-owned here since 2019. Cristian Mendez's local team helps you decide, then installs for Paulding County weather.",
     sections: [
       { h: "Why iRoofer for replacement",
-        p: "Dallas-based (not storm-chasers). Family-owned since 2019 under Cristian Mendez. Owens Corning Preferred. Proper underlayment, flashing, ventilation — not just new shingles over old problems. If insurance is part of the conversation after storm damage, we document thoroughly and support the adjuster path when it applies—without promising claim results. Call (470) 236-1410 or https://iroofercontractors.com/contact/." },
+        p: "Dallas-based (not storm-chasers). Family-owned since 2019 under Cristian Mendez. Owens Corning Contractor Rewards member. Proper underlayment, flashing, ventilation — not just new shingles over old problems. If insurance is part of the conversation after storm damage, we document thoroughly and support the adjuster path when it applies—without promising claim results. Call (470) 236-1410 or https://iroofercontractors.com/contact/." },
       { h: "How replacement works",
         p: "When it makes sense → inspection & written proposal → materials → tear-off to deck as scoped → decking repairs → underlayment / ice & water as needed → flashings → shingles / ridge / vents → magnet cleanup → walkthrough + warranty paperwork. Timing depends on size, pitch, decking repairs, and weather; we give you the schedule in writing before we start." },
       { h: "What a roof replacement costs",
@@ -431,7 +431,7 @@ localCopy['roof-replacement'] = {
               "Underlayment and ice-and-water membrane at valleys, eaves and penetrations, where Georgia rain actually gets in.",
               "New flashing at walls, chimneys, skylights and pipe boots, not old metal caulked back into place.",
               "Ventilation balanced between intake and exhaust, because a hot, wet attic shortens shingle life from the inside.",
-              "Shingles, ridge and accessories to the manufacturer’s specification. We’re an Owens Corning Preferred Contractor when that system fits the house.",
+              "Shingles, ridge and accessories to the manufacturer’s specification. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system fits the house.",
               "Cleanup with magnetic nail sweeps, a final walkthrough, and manufacturer warranty registration in your name when the product line allows."
             ]
           }
@@ -551,7 +551,7 @@ localCopy['storm-damage-roof-repair'] = {
     intro: "After a Georgia storm, Dallas roofs often hide bruised shingles, lifted tabs, and quiet leaks that show up days later. iRoofer Contractors — family-owned since 2019 — walks the roof, photographs what we find, and explains repair versus replacement in plain English.",
     sections: [
       { h: "Why local storm repair",
-        p: "Owens Corning Preferred. We document the way adjusters expect — no promised claim outcomes. Owner Cristian Mendez and our Dallas-based crew treat storm calls like emergencies—not sales appointments. Call (470) 236-1410 or https://iroofercontractors.com/contact/." },
+        p: "Owens Corning Contractor Rewards member. We document the way adjusters expect — no promised claim outcomes. Owner Cristian Mendez and our Dallas-based crew treat storm calls like emergencies—not sales appointments. Call (470) 236-1410 or https://iroofercontractors.com/contact/." },
       { h: "Our storm damage process in Dallas, GA",
         p: "Inspect → photos → tarp if needed → written scope → repair vs replace → complete + cleanup. Interior stains and attic moisture get noted too. Isolated missing shingles or flashing failures often repair cleanly; widespread bruising or an older roof near end of life may point to replacement. For urgent leaks, ask about emergency tarping in Dallas." },
       { h: "Hail damage roof repair in Dallas, GA",
@@ -613,7 +613,7 @@ localCopy['storm-damage-roof-repair'] = {
       },
       {
         "h": "Why a local crew for Douglas County storm work",
-        "p": "After a big storm, out-of-area crews show up with yard signs and a deposit form. We’re 152 Freedom Dr in Dallas, family-owned since 2019, and the same phone number answers the warranty call years from now. Owens Corning Preferred when that system goes back on the roof. Douglas County runs its own building permit department and inspection line. When structural work is in scope, we pull the permit and schedule the inspections."
+        "p": "After a big storm, out-of-area crews show up with yard signs and a deposit form. We’re 152 Freedom Dr in Dallas, family-owned since 2019, and the same phone number answers the warranty call years from now. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system goes back on the roof. Douglas County runs its own building permit department and inspection line. When structural work is in scope, we pull the permit and schedule the inspections."
       }
     ],
     faq: [
@@ -936,7 +936,7 @@ localCopy['new-construction'] = {
     intro: "New Dallas builds deserve a roof crew that treats the site like a neighbor’s house — because it is. iRoofer Contractors installs new-construction roofs from our shop at 152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019. See [new construction roofing services](/services/new-construction/) for the service overview. Ready to talk? https://iroofercontractors.com/contact/ or (470) 236-1410.",
     sections: [
       { h: "Dallas new builds — what we care about on site",
-        p: "Schedule coordination with framing and weather. Deck condition and fastener patterns that match the shingle system. Ice/water shield and flashing details at valleys, eaves, chimneys, and walls. Ventilation that matches the attic design — not an afterthought. Daily cleanup so other trades can work. Owens Corning Preferred applies when that product is specified or selected. We work with Paulding County Building & Permitting on Constitution Blvd so dry-in windows stay tight." },
+        p: "Schedule coordination with framing and weather. Deck condition and fastener patterns that match the shingle system. Ice/water shield and flashing details at valleys, eaves, chimneys, and walls. Ventilation that matches the attic design — not an afterthought. Daily cleanup so other trades can work. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that product is specified or selected. We work with Paulding County Building & Permitting on Constitution Blvd so dry-in windows stay tight." },
       { h: "Homeowners finishing a build",
         p: "If you are the owner on a custom Dallas home or addition, we walk the plan, confirm material and color in writing, and give you one point of contact through install. Every square count, pitch, and access path changes the number. We put the real number in a written estimate after we see the job." },
       { h: "Builders in Paulding / west metro",

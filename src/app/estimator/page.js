@@ -26,8 +26,8 @@ const faqs = [
     a: 'This page leans replacement curiosity. For leaks and stains, start with repair or contact us.',
   },
   {
-    q: 'Are you an Owens Corning Preferred contractor?',
-    a: 'Yes — when that system fits your house and the job.',
+    q: 'Do you install Owens Corning shingles?',
+    a: 'Yes. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system fits your house and the job.',
   },
 ];
 

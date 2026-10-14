@@ -10,7 +10,7 @@ import CopySection from '@/components/CopySection';
 
 export const metadata = seo({
   title: "New Construction Roofer in Dallas, GA | iRoofer",
-  description: 'Building in Dallas or Paulding County? Our crew at 152 Freedom Dr dries in on schedule and installs to spec. Owens Corning Preferred. Call (470) 236-1410.',
+  description: 'Building in Dallas or Paulding County? Our crew at 152 Freedom Dr dries in on schedule and installs to spec. Owens Corning shingles. Call (470) 236-1410.',
   path: '/new-construction-dallas-ga',
 });
 

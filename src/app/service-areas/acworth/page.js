@@ -44,7 +44,7 @@ const sections = [
   {
     h2: 'Replacement & storm',
     paras: [
-      'End-of-life roofs: /roof-replacement-acworth/ and /roof-replacement-dallas-ga/. Owens Corning Preferred on qualifying installs. Storm cells across north Cobb: /storm-damage-roof-repair-acworth/, /storm-damage-roof-repair-dallas-ga/, and /services/roof-insurance-claims/. Storm scopes get dated photos, roof diagram, adjuster meeting on request.',
+      'End-of-life roofs: /roof-replacement-acworth/ and /roof-replacement-dallas-ga/. Owens Corning shingles installed by an Owens Corning Contractor Rewards member when that line is selected. Storm cells across north Cobb: /storm-damage-roof-repair-acworth/, /storm-damage-roof-repair-dallas-ga/, and /services/roof-insurance-claims/. Storm scopes get dated photos, roof diagram, adjuster meeting on request.',
     ],
   },
   {

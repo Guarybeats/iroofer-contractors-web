@@ -10,7 +10,7 @@ import CopySection from '@/components/CopySection';
 
 export const metadata = seo({
   title: "Roof Replacement in Powder Springs, GA | iRoofer",
-  description: 'Roof replacement in Powder Springs, GA: full tear-off, extra ice & water on low slopes, city permit rules checked. Owens Corning Preferred. (470) 236-1410.',
+  description: 'Roof replacement in Powder Springs, GA: full tear-off, extra ice & water on low slopes, city permit rules checked. Owens Corning shingles. (470) 236-1410.',
   path: '/roof-replacement-powder-springs',
 });
 

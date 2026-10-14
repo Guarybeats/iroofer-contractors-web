@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const intro = [
-  'Leak that showed up after the last storm? Roof that’s simply worn out? Hail or wind damage you need documented for insurance? iRoofer Contractors handles all three across Marietta, from homes near the Square to East Cobb two-stories. We’re family-owned in Dallas, GA since 2019, and we install as an Owens Corning Preferred Contractor when that system fits the house.',
+  'Leak that showed up after the last storm? Roof that’s simply worn out? Hail or wind damage you need documented for insurance? iRoofer Contractors handles all three across Marietta, from homes near the Square to East Cobb two-stories. We’re family-owned in Dallas, GA since 2019, and we install as an Owens Corning Contractor Rewards member when that system fits the house.',
   'Every job starts with a free inspection, photos of what we find, and a written scope. Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
 ];
 

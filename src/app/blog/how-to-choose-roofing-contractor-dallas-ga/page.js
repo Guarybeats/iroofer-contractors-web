@@ -61,7 +61,7 @@ export default function BlogPostPage() {
             <ol>
               <li><strong>"Can I see your Georgia license and a current certificate of insurance?"</strong> Ask what license they hold and look it up with the Georgia Secretary of State’s licensing verification at <a href="https://sos.ga.gov" target="_blank" rel="noopener noreferrer">sos.ga.gov</a>.</li>
               <li><strong>"Who is my project manager, and will they be on-site daily?"</strong> You want a name and phone number, not a call center.</li>
-              <li><strong>"What manufacturer certifications do your installers hold?"</strong> GAF Master Elite, Owens Corning Preferred, and similar manufacturer programs — these mean trained, warrantied installs.</li>
+              <li><strong>"What manufacturer certifications do your installers hold?"</strong> GAF Master Elite, Owens Corning's contractor programs, and similar manufacturer programs — these mean trained, warrantied installs.</li>
               <li><strong>"What's your workmanship warranty, and is it transferable?"</strong> Get the terms in writing and ask whether they transfer if you sell.</li>
               <li><strong>"Can you provide a written scope of work with line-item pricing?"</strong> A single lump-sum "roof replacement" line hides change orders. Demand detail.</li>
             </ol>
@@ -78,7 +78,7 @@ export default function BlogPostPage() {
             <h2>What Makes iRoofer Different</h2>
             <ul>
               <li>Local since 2019 — Dallas, GA based, not a storm-chaser satellite office</li>
-              <li>Owens Corning Preferred Contractor</li>
+              <li>Owens Corning Contractor Rewards member — we install Owens Corning shingles</li>
               <li>Family-owned, led by owner Cristian Mendez — you talk to a real person at (470) 236-1410</li>
               <li>Written scope and pricing after a free inspection</li>
             </ul>

@@ -10,7 +10,7 @@ import CopySection from '@/components/CopySection';
 
 export const metadata = seo({
   title: "Roof Repair Hiram GA | Leaks & Inspections | iRoofer",
-  description: "Roof repair & inspections in Hiram, GA: leaks, flashing, storm wear. Photos and a written scope from a family-owned Dallas crew. Call (470) 236-1410.",
+  description: "Roof repair in Hiram, GA: leaks, flashing, pipe boots, and storm-damaged shingles fixed by the same Dallas crew since 2019. Call (470) 236-1410.",
   path: '/roof-repair-hiram',
 });
 

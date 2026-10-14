@@ -3,7 +3,7 @@ import { cities, brand, cityPath } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 
 export const metadata = seo({
-  title: 'Where We Roof: Dallas, GA & West Metro Cities | iRoofer',
+  title: 'Roofing Service Areas Near Dallas, GA | iRoofer',
   description: 'Family-owned Dallas, GA roofer since 2019. Repair, replacement & storm help in Hiram, Douglasville, Powder Springs, Marietta & Kennesaw. (470) 236-1410',
   path: '/service-areas',
 });
@@ -12,6 +12,7 @@ const needLinks = [
   { href: '/roof-repair-dallas-ga/', label: 'Roof repair' },
   { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement' },
   { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage' },
+  { href: '/hail-damage-roof-repair-dallas-ga/', label: 'Hail damage' },
   { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency' },
   { href: '/services/roof-insurance-claims/', label: 'Insurance claims' },
   { href: '/services/new-construction/', label: 'New construction' },
@@ -52,6 +53,7 @@ export default function ServiceAreas() {
             {needLinks.map((l) => (
               <Link key={l.href} href={l.href} className="chip" style={{ fontWeight: 700 }}>{l.label} →</Link>
             ))}
+            <Link href="/paulding-county-roofing/" className="chip" style={{ fontWeight: 700 }}>Paulding County roofing →</Link>
             <Link href="/services/" className="chip" style={{ fontWeight: 700 }}>All services →</Link>
           </div>
         </div>
@@ -71,7 +73,7 @@ export default function ServiceAreas() {
         </div>
 
         <p style={{ color: '#52606b', marginTop: 36, maxWidth: 720, lineHeight: 1.7, borderLeft: '3px solid var(--orange)', paddingLeft: 14 }}>
-          Family-owned since 2019 · Owens Corning Preferred · Based in Dallas, GA · Owner Cristian Mendez
+          Family-owned since 2019 · Owens Corning Contractor Rewards Member · Based in Dallas, GA · Owner Cristian Mendez
         </p>
         <p style={{ marginTop: 20, color: '#52606b' }}>
           Ready to talk about your roof? Visit{' '}

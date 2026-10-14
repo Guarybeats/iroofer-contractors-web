@@ -58,7 +58,7 @@ export default function BlogPostPage() {
             </ul>
 
             <h2>Shingle selection</h2>
-            <p>Architectural asphalt shingles are the usual choice on new homes around Dallas. As an Owens Corning Preferred contractor, we install Owens Corning systems when that line fits the build. Color and line are usually set by the builder’s spec or the homeowner’s selections. See <Link href="/blog/architectural-vs-3-tab-shingles/">architectural vs. 3-tab shingles</Link>.</p>
+            <p>Architectural asphalt shingles are the usual choice on new homes around Dallas. As an Owens Corning Contractor Rewards member, we install Owens Corning systems when that line fits the build. Color and line are usually set by the builder’s spec or the homeowner’s selections. See <Link href="/blog/architectural-vs-3-tab-shingles/">architectural vs. 3-tab shingles</Link>.</p>
 
             <h2>Warranties: who covers what</h2>
             <ul>

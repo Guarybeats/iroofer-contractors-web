@@ -6,7 +6,13 @@
  *
  * Source of truth for URLs .... every out/**\/index.html produced by `next build`
  * Source of truth for metadata  sitemap.meta.json (priority, changefreq, images)
- * lastmod .................... last git commit date of the page's source file
+ * lastmod .................... last git commit date of the page's source file;
+ *                              today's date if that file has uncommitted changes
+ *                              (new or edited page in the working tree), so a PR's
+ *                              regenerated sitemap carries the real change date.
+ *                              On a shallow clone every file would report the same
+ *                              commit date, so lastmod is copied from the existing
+ *                              public/sitemap.xml instead of being flattened.
  *
  * Usage:  npm run build && node scripts/gen-sitemap.mjs
  *         node scripts/gen-sitemap.mjs --check   (CI: fail if out of sync)
@@ -44,11 +50,39 @@ function sourceFileFor(route) {
   return null;
 }
 
+const git = (args) => execFileSync('git', args, { cwd: ROOT, stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim();
+
+let SHALLOW = false;
+try { SHALLOW = git(['rev-parse', '--is-shallow-repository']) === 'true'; } catch { /* not a git checkout */ }
+
+// Local calendar date (YYYY-MM-DD), matching git's %cs for commits made today.
+function today() {
+  const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+}
+
+// lastmod values already published, keyed by route — used on shallow clones.
+function existingLastmods() {
+  const target = join(ROOT, 'public/sitemap.xml');
+  const map = {};
+  if (!existsSync(target)) return map;
+  const xml = readFileSync(target, 'utf8');
+  for (const m of xml.matchAll(/<loc>([^<]+)<\/loc><lastmod>([^<]+)<\/lastmod>/g)) {
+    map[m[1].replace(BASE, '')] = m[2];
+  }
+  return map;
+}
+const PUBLISHED = SHALLOW ? existingLastmods() : {};
+if (SHALLOW) console.warn('warn: shallow git clone — keeping lastmod values from the existing sitemap.xml');
+
 function lastmod(route) {
+  if (SHALLOW) return PUBLISHED[route] || null;
   const file = sourceFileFor(route);
   if (!file) return null;
   try {
-    return execFileSync('git', ['log', '-1', '--format=%cs', '--', file], { cwd: ROOT }).toString().trim() || null;
+    // Uncommitted (new or modified) source file: the change is happening today.
+    if (git(['status', '--porcelain', '--', file])) return today();
+    return git(['log', '-1', '--format=%cs', '--', file]) || null;
   } catch {
     return null;
   }
@@ -105,7 +139,9 @@ async function main() {
   }
 
   writeFileSync(target, xml);
-  console.log(`wrote public/sitemap.xml — ${routes.length} URLs`);
+  // Keep the already-built export in step so a local `out/` deploy serves the same file.
+  writeFileSync(join(outDir, 'sitemap.xml'), xml);
+  console.log(`wrote public/sitemap.xml (and out/sitemap.xml) — ${routes.length} URLs`);
 }
 
 main();
