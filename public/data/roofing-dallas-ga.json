@@ -15,11 +15,6 @@
     "phone": "(470) 236-1410",
     "email": "iroofercontractors@gmail.com",
     "founded": 2019,
-    "rating": {
-      "value": 5.0,
-      "reviewCount": 54,
-      "max": 5
-    },
     "hours": {
       "monday": "09:00-19:00",
       "tuesday": "09:00-19:00",
@@ -73,19 +68,16 @@
       "lifted flashing",
       "hidden leaks appearing weeks later"
     ],
-    "insurance": "Most hail and wind damage above deductible is covered by Paulding/Cobb/Douglas County policies. We document with photos, meet the adjuster on-site, and handle supplements.",
-    "typicalCosts": {
-      "repairRange": "$250\u2013$3,500",
-      "replacementRange": "$8,000\u2013$30,000"
-    },
-    "proof": "54 Google reviews at 5.0 stars. Free inspections. No-pressure written quotes.",
-    "responseTime": "Emergency same-day tarping available after storms; most repairs scheduled within 24\u201372 hours."
+    "insurance": "Whether hail or wind damage is covered depends on your policy and deductible. We document with photos, can meet the adjuster on-site, and help you document damage for your insurance claim.",
+    "proof": "Reviews are on our Google Business Profile: https://maps.app.goo.gl/oZg9a1cuNvUi3Ut99. Free inspections. No-pressure written quotes.",
+    "responseTime": "Emergency tarping after storms when the schedule allows; call (470) 236-1410.",
+    "pricing": "No prices published. A free on-site inspection gives a written figure; pricing varies by size, pitch, layers, decking and material."
   },
   "canonicalPages": {
     "hub": "https://iroofercontractors.com/dallas-ga-roofing",
     "llms": "https://iroofercontractors.com/llms.txt",
-    "contact": "https://iroofercontractors.com/#contact",
+    "contact": "https://iroofercontractors.com/contact/",
     "cityServicePages": "https://iroofercontractors.com/roof-repair-dallas-ga (pattern: /<service>-<city>-ga)"
   },
-  "lastUpdated": "2026-09-05"
+  "lastUpdated": "2026-10-08"
 }

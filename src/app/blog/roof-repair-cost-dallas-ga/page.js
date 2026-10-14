@@ -14,9 +14,9 @@ export const metadata = {
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: 'https://iroofercontractors.com/blog/roof-repair-cost-dallas-ga/',
   },
-  title: 'Roof Repair Cost in Dallas, GA: What Changes the Price (Not a Quote) | iRoofer',
+  title: 'Roof Repair Cost in Dallas, GA: What Changes It | iRoofer',
   description:
-    'What changes roof repair cost in Dallas, GA — leak source, access, materials, and storm path. Planning factors only. Call (470) 236-1410 for a written inspection.',
+    'What changes roof repair cost in Dallas, GA — leak source, access, materials and storm path. Call (470) 236-1410 for a free inspection and written price.',
 };
 
 const post = {
@@ -50,7 +50,7 @@ export default function BlogPostPage() {
                 margin: '12px 0 0',
               }}
             >
-              <strong>Not a quote.</strong> No invented dollar table on this page. iRoofer puts a real figure in writing
+              <strong>No prices published.</strong> iRoofer puts a real figure in writing
               only after an on-site inspection.
             </p>
           </div>
@@ -131,7 +131,7 @@ export default function BlogPostPage() {
               </li>
               <li>
                 <Link href="/blog/roof-warranty-what-is-covered/" style={{ color: 'var(--orange)' }}>
-                  Roof warranty explained (qualitative)
+                  Roof warranty explained
                 </Link>
               </li>
               <li>
@@ -149,7 +149,7 @@ export default function BlogPostPage() {
             </p>
             <p>
               <strong>Why don’t you list prices here?</strong>
-              <br />A blog table goes stale and misleads neighbors. Factors + a written inspection beat a fake chart.
+              <br />Every repair is different and prices change. A written figure after an inspection is the number you can rely on.
             </p>
             <p>
               <strong>Is emergency tarping separate?</strong>
@@ -163,7 +163,7 @@ export default function BlogPostPage() {
             <p>
               <strong>Do you finance repairs?</strong>
               <br />
-              Ask about current options when you call — availability can change. No invented APR on this page.
+              Ask about current options when you call — availability can change.
             </p>
 
             <RelatedPosts slug="roof-repair-cost-dallas-ga" />

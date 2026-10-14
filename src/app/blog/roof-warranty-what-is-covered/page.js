@@ -14,9 +14,9 @@ export const metadata = {
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: 'https://iroofercontractors.com/blog/roof-warranty-what-is-covered/',
   },
-  title: 'Roof Warranty Explained: Manufacturer vs Workmanship | Dallas GA | iRoofer',
+  title: 'Roof Warranty Explained: Manufacturer vs Workmanship',
   description:
-    'Manufacturer vs workmanship roof warranties — what they cover, what they don’t, and how to get help in Dallas, GA. Call iRoofer at (470) 236-1410 or contact us.',
+    'Manufacturer vs workmanship roof warranties — what they cover, what they don’t, and how to get help in Dallas, GA. Call iRoofer at (470) 236-1410.',
 };
 
 const post = {
@@ -54,7 +54,7 @@ export default function BlogPostPage() {
               {' '}or call <a href={`tel:${brand.phone}`}>{brand.phone}</a>.
             </p>
 
-            <h2>The two layers (keep this scannable)</h2>
+            <h2>The two layers</h2>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', margin: '24px 0' }}>
               <div style={{ border: '1px solid #e2e8f0', borderRadius: 8, padding: '16px' }}>
                 <h3 style={{ marginTop: 0, color: 'var(--orange)' }}>Manufacturer</h3>
@@ -83,7 +83,7 @@ export default function BlogPostPage() {
 
             <h2>What workmanship coverage is (and is not)</h2>
             <p>
-              Workmanship covers how the roof was put on — not every future weather event. Terms, length, and transfer rules should be in your written agreement. We explain ours at estimate and at completion. We do <strong>not</strong> invent decade-long guarantees in marketing copy that are not in the contract.
+              Workmanship covers how the roof was put on — not every future weather event. Terms, length, and transfer rules should be in your written agreement. We explain ours at estimate and at completion.
             </p>
 
             <h2>How to get help if you already have a roof</h2>

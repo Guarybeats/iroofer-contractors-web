@@ -4,12 +4,13 @@ import RelatedGuides from '@/components/RelatedGuides';
 import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
+import { renderInline } from '@/components/InlineText';
 
 function faqItem(open){ return 'faq-item' + (open ? ' open' : ''); }
 
 export const metadata = seo({
-  title: 'Roof Insurance Claims Help Dallas GA | Storm Documentation | iRoofer',
-  description: 'Roof insurance claims help in Dallas, GA — photo documentation, written scopes, and adjuster meetings when scheduled. Call (470) 236-1410. No guaranteed claim outcomes.',
+  title: 'Roof Insurance Claims Help in Dallas, GA | iRoofer',
+  description: 'Roof insurance claims help in Dallas, GA — photo documentation, written scopes, and adjuster meetings. Call (470) 236-1410. No guaranteed claim outcomes.',
   path: '/services/roof-insurance-claims',
 });
 
@@ -24,7 +25,7 @@ const faqs = [
   },
   {
     q: "How long do I have to file a roof claim after a storm?",
-    a: "Most Georgia policies require the claim within one year of the date of loss, and some are stricter. Check your policy. If you think a past storm damaged your roof, get it inspected now rather than waiting for a leak."
+    a: "Your policy sets the deadline for reporting a claim, and some are strict. Check your policy. If you think a past storm damaged your roof, get it inspected now rather than waiting for a leak."
   },
   {
     q: "My roof claim was denied. Is that final?",
@@ -32,7 +33,7 @@ const faqs = [
   },
   {
     q: "Will filing a claim raise my rates?",
-    a: "Carriers vary. Storm and hail claims are often treated differently from liability claims, but we never invent rate predictions. We will tell you honestly if the damage may not be worth filing on."
+    a: "Carriers vary. Storm and hail claims are often treated differently from liability claims, and we can’t predict how your carrier will respond. We will tell you honestly if the damage may not be worth filing on."
   },
   {
     q: "What does the inspection cost?",
@@ -156,7 +157,7 @@ export default function Page() {
             <ul style={{ color: '#52606b', lineHeight: 1.85, marginTop: 8 }}>
               <li>We don&apos;t file the claim for you (you own the policy relationship)</li>
               <li>We don&apos;t guarantee approvals, timelines, or ACV/RCV outcomes</li>
-              <li>We don&apos;t invent &quot;we win X% of claims&quot; marketing</li>
+              <li>We don&apos;t claim a &quot;win rate&quot; on claims</li>
               <li>We do show up with evidence and a repair plan that matches the damage</li>
             </ul>
             <h3 style={{ marginTop: 24, fontSize: '1.15rem', fontWeight: 800 }}>Homeowner checklist before you call the carrier</h3>
@@ -189,7 +190,7 @@ export default function Page() {
             {faqs.map((f, i) => (
               <div key={f.q} className={faqItem(i === 0)}>
                 <button className="faq-q" aria-expanded={i === 0}>{f.q}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{f.a}</p></div></div>
+                <div className="faq-a"><div><p>{renderInline(f.a)}</p></div></div>
               </div>
             ))}
           </div>

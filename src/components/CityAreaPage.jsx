@@ -11,6 +11,7 @@ import CityMap from '@/components/CityMap';
 import CitySchema from '@/components/CitySchema';
 import QuoteForm from '@/components/QuoteForm';
 import ReviewButton from '@/components/ReviewButton';
+import { renderInline } from '@/components/InlineText';
 import { brand, services, cities, cityPath } from '@/lib/brand';
 
 const MUTED = '#52606b';
@@ -36,7 +37,7 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
           </h1>
           {intro.map((p, i) => (
             <p key={i} style={{ color: MUTED, fontSize: i === 0 ? '1.1rem' : '1.02rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
-              {p}
+              {renderInline(p)}
             </p>
           ))}
           <p style={{ marginTop: 18, maxWidth: 680 }}>
@@ -75,13 +76,22 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
         </div>
 
         {sections.map((sec, i) => (
-          <div key={i} style={{ marginTop: 44, maxWidth: 880 }}>
+          <div key={i} id={sec.id} style={{ marginTop: 44, maxWidth: 880, scrollMarginTop: 120 }}>
             <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 14 }}>{sec.h2}</h2>
-            {sec.paras.map((p, j) => (
-              <p key={j} style={{ color: MUTED, fontSize: '1.02rem', lineHeight: 1.75, marginBottom: 14 }}>
-                {p}
-              </p>
-            ))}
+            {(sec.paras || []).map((p, j) =>
+              typeof p === 'string' ? (
+                <p key={j} style={{ color: MUTED, fontSize: '1.02rem', lineHeight: 1.75, marginBottom: 14 }}>
+                  {renderInline(p)}
+                </p>
+              ) : (
+                <div key={j} style={{ marginBottom: 14 }}>
+                  {p.title ? <h3 style={{ fontSize: '1.08rem', fontWeight: 700, color: 'var(--ink)', marginBottom: 6 }}>{p.title}</h3> : null}
+                  <ul style={{ color: MUTED, fontSize: '1.02rem', lineHeight: 1.75, paddingLeft: 22, margin: 0 }}>
+                    {p.items.map((it, k) => <li key={k}>{renderInline(it)}</li>)}
+                  </ul>
+                </div>
+              )
+            )}
           </div>
         ))}
 
@@ -112,7 +122,7 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
               <a className="btn btn-ghost" href={`tel:${brand.phone}`} style={{ marginLeft: 8 }}>{brand.phone}</a>
             </p>
             <p style={{ marginTop: 14 }}>
-              <a className="btn btn-ghost" href="/estimator/">Planning estimator (not a quote) →</a>
+              <a className="btn btn-ghost" href="/contact/">Request a free estimate →</a>
             </p>
             <p style={{ marginTop: 14, color: MUTED }}>
               Other nearby areas:{' '}
@@ -164,7 +174,7 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
               {faq.map((f, i) => (
                 <div key={i}>
                   <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: 6, color: 'var(--ink)' }}>{f.q}</h3>
-                  <p style={{ margin: 0, color: MUTED, lineHeight: 1.7 }}>{f.a}</p>
+                  <p style={{ margin: 0, color: MUTED, lineHeight: 1.7 }}>{renderInline(f.a)}</p>
                 </div>
               ))}
             </div>

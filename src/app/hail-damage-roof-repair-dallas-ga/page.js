@@ -173,7 +173,7 @@ export default function HailDamagePage() {
                 Hail Damage Roof Repair in Dallas, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
-                Book a free hail damage roof inspection in Dallas, GA (30157 and 30132) and across Paulding County, including Hiram. iRoofer Contractors is a family-owned roofer based at 152 Freedom Dr in Dallas, Georgia, rated 5.0 on Google. After a storm we inspect your roof, photograph exactly what we find, and tell you plainly whether it looks like an insurance claim, a simple hail damage roof repair, or nothing to worry about.
+                Book a free hail damage roof inspection in Dallas, GA (30157 and 30132) and across Paulding County, including Hiram. iRoofer Contractors is a family-owned roofer based at 152 Freedom Dr in Dallas, Georgia. After a storm we inspect your roof, photograph exactly what we find, and tell you plainly whether it looks like an insurance claim, a simple hail damage roof repair, or nothing to worry about.
               </p>
               <div className="cta" style={{ marginTop: 28 }}>
                 <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>{brand.phone}</a>
