@@ -23,6 +23,7 @@ const relatedLinks = [
               { href: '/dallas-ga-roofing/', label: 'All Dallas GA roofing services' },
               { href: '/services/roof-repair/', label: 'Metro Atlanta roof repair hub' },
               { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair in Dallas GA' },
+              { href: '/roof-leak-repair-dallas-ga/', label: 'Roof leak repair in Dallas GA' },
               { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas GA' },
               { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas GA' },
 
