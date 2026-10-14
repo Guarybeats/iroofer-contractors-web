@@ -43,6 +43,7 @@ function breadcrumbLabel(segment) {
     about: 'About',
     contact: 'Contact',
     estimator: 'Estimator',
+    'free-roof-check': 'Free Roof Check',
     privacy: 'Privacy',
     terms: 'Terms',
     'dallas-ga': 'Dallas GA',

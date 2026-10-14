@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
+import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
 import RelatedGuides from '@/components/RelatedGuides';
 import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
@@ -16,36 +17,36 @@ export const metadata = seo({
 const faqs = [
   {
     q: "Do you help with the roof insurance claim itself?",
-    a: "Yes. We inspect and document the damage, give you the details you need to file, meet your adjuster on the roof, and handle supplements when their scope misses something. You file the claim — we make sure it is scoped correctly. We do not guarantee approvals."
+    a: "Yes. We check the roof and take photos of the damage. We give you the details you need to file. We meet your adjuster on the roof. If they miss something, we ask them to add it. You file the claim. We can’t promise it will be approved."
   },
   {
     q: "What roof damage does homeowners insurance usually cover in Georgia?",
-    a: "Sudden, storm-related damage: hail impact, wind-lifted or missing shingles, and damage from fallen trees or debris. Normal age, wear, and deferred maintenance are generally not covered. Always subject to your policy."
+    a: "Sudden storm damage: hail hits, shingles lifted or blown off by wind, and damage from fallen trees. Old age, normal wear, and skipped upkeep are usually not covered. It always depends on your policy."
   },
   {
     q: "How long do I have to file a roof claim after a storm?",
-    a: "Most Georgia policies require the claim within one year of the date of loss, and some are stricter. Check your policy. If you think a past storm damaged your roof, get it inspected now rather than waiting for a leak."
+    a: "Many policies have a time limit, and some are short. Check your policy. If you think a past storm hurt your roof, get it checked now. Don’t wait for a leak."
   },
   {
     q: "My roof claim was denied. Is that final?",
-    a: "Not always. Denials often come down to what the first adjuster documented. We re-inspect, photograph what was missed, and help you request a re-inspection with that evidence."
+    a: "Not always. A denial often comes down to what the first adjuster wrote down. We check the roof again and take photos of what they missed. Then we help you ask for a second look."
   },
   {
     q: "Will filing a claim raise my rates?",
-    a: "Carriers vary. Storm and hail claims are often treated differently from liability claims, but we never invent rate predictions. We will tell you honestly if the damage may not be worth filing on."
+    a: "It depends on your insurance company. We won’t guess about your rates. We will tell you honestly if the damage may not be worth a claim."
   },
   {
     q: "What does the inspection cost?",
-    a: "Nothing. The roof inspection and the written damage report are free, with no obligation to file or to hire us."
+    a: "Nothing. The roof check and the written damage report are free. You don’t have to file or hire us."
   }
 ];
 
 const steps = [
-  ['1. Free inspection', 'We walk the roof and fly the drone when useful, then document hail bruising, wind creasing, and collateral damage with dated photos.'],
-  ['2. You file, we arm you', 'You call your carrier. We give you the date of loss and the damage details so the claim starts on solid ground.'],
-  ['3. We meet your adjuster', 'We are on the roof with them so valid damage is not scoped out from the driveway.'],
-  ['4. Scope review & supplements', 'We compare their estimate line by line against what the job actually requires and supplement where it falls short.'],
-  ['5. We build the roof', 'Manufacturer-minded installation, then help with the paperwork path for recoverable depreciation when it applies — still subject to your policy.'],
+  ['1. Free inspection', 'We walk the roof, and fly a drone when it helps. We take dated photos of hail hits, wind creases, and damage to vents, gutters, and siding.'],
+  ['2. You file, we back you up', 'You call your insurance company. We give you the storm date and the damage details, so your claim starts strong.'],
+  ['3. We meet your adjuster', 'We get on the roof with them, so real damage isn’t missed from the driveway.'],
+  ['4. We check their estimate', 'We go over their estimate line by line. If it leaves out work the job needs, we ask them to add it.'],
+  ['5. We build the roof', 'We install the roof the way the shingle maker says to. Then we help with the last paperwork to get any held-back money, when your policy allows it.'],
 ];
 
 export default function Page() {
@@ -62,11 +63,11 @@ export default function Page() {
                 Roof Insurance Claims Help in Dallas, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
-                After hail or wind, the paperwork can feel heavier than the storm. iRoofer Contractors — family-owned in Dallas since 2019 — documents what we find on the roof, puts a clear scope in writing, and can meet your adjuster on-site when scheduled. Owner Cristian Mendez. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system is the install path.
+                After hail or wind, the paperwork can feel worse than the storm. iRoofer Contractors is family-owned in Dallas since 2019. We take photos of what we find on the roof and write a clear plan. We can meet your adjuster at your home. The owner is Cristian Mendez. We install Owens Corning shingles as an Owens Corning Contractor Rewards member.
               </p>
               <p style={{ color: '#52606b', fontSize: '.98rem', marginTop: 12, maxWidth: 680, borderLeft: '3px solid var(--orange)', paddingLeft: 12 }}>
-                Local note: Paulding storms often leave hail and wind damage you can&apos;t see from the driveway.
-                We document the way adjusters expect so your paperwork moves instead of stalling.
+                Paulding storms often leave hail and wind damage you can&apos;t see from the driveway.
+                We take the kind of photos and notes adjusters look for, so your claim keeps moving.
                 <strong> No win-rates. No guaranteed approvals.</strong>
               </p>
               <div className="cta" style={{ marginTop: 28 }}>
@@ -77,6 +78,7 @@ export default function Page() {
 
             <div className="rv">
               <img src="/assets/storm-damage.webp?v=2" alt="Hail-damaged roof documented for an insurance claim in Dallas, GA" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%', marginBottom: 24 }} />
+              <FreeRoofCheckCta />
               <div style={{ maxWidth: 460, margin: 0 }}>
                 <QuoteForm variant="contact" id="roof-insurance-claims-quote" source="Roof Insurance Claims" />
               </div>
@@ -106,10 +108,10 @@ export default function Page() {
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="rv" style={{ maxWidth: 780 }}>
-            <h2 style={{ fontSize: 'clamp(1.35rem,2.2vw,1.75rem)', fontWeight: 800 }}>Hail claims: documentation without promises</h2>
+            <h2 style={{ fontSize: 'clamp(1.35rem,2.2vw,1.75rem)', fontWeight: 800 }}>Hail claims: photos, not promises</h2>
             <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
-              Dated photos of bruising vs wear; adjuster meetings when scheduled; supplements when scope falls short.
-              Approvals depend on your policy. Start the storm path at{' '}
+              We take dated photos that show hail hits, not just wear. We meet your adjuster. We ask for missed items.
+              What gets approved depends on your policy. Start at{' '}
               <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>storm damage roof repair Dallas</Link>.
               Call {brand.phone} or{' '}
               <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>https://iroofercontractors.com/contact/</Link>.
@@ -136,39 +138,39 @@ export default function Page() {
             <div>
               <strong style={{ color: '#0b3d16' }}>Usually not covered</strong>
               <ul style={{ lineHeight: 2, marginTop: 8, color: '#52606b' }}>
-                <li>Age and normal granule loss</li>
-                <li>Deferred maintenance and old, unrepaired leaks</li>
-                <li>Poor original installation</li>
+                <li>Old age and normal loss of shingle grit</li>
+                <li>Skipped upkeep and old leaks that were never fixed</li>
+                <li>A roof that was put on wrong</li>
               </ul>
               <p style={{ color: '#52606b', fontSize: '.95rem', marginTop: 12 }}>
-                Not sure which one you have? That is exactly what the free inspection answers — in writing.
+                Not sure which one you have? A free roof check tells you, in writing.
               </p>
             </div>
           </div>
 
           <div className="rv" style={{ marginTop: 40, maxWidth: 780 }}>
-            <h2 style={{ fontSize: 'clamp(1.35rem,2.2vw,1.75rem)', fontWeight: 800 }}>Why documentation quality matters</h2>
+            <h2 style={{ fontSize: 'clamp(1.35rem,2.2vw,1.75rem)', fontWeight: 800 }}>Why good photos matter</h2>
             <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
-              Adjusters scope what they can see and what you can show. Date-stamped photos, clear notes on wind crease versus impact bruising,
-              and a line-by-line read of the carrier estimate are how supplements get grounded in the roof — not in argument.
+              Adjusters pay for what they can see and what you can show. Dated photos, clear notes on wind versus hail damage,
+              and a line-by-line check of their estimate let us ask for missed items based on facts, not arguments.
             </p>
             <h3 style={{ marginTop: 24, fontSize: '1.15rem', fontWeight: 800 }}>What we don&apos;t do</h3>
             <ul style={{ color: '#52606b', lineHeight: 1.85, marginTop: 8 }}>
-              <li>We don&apos;t file the claim for you (you own the policy relationship)</li>
+              <li>We don&apos;t file the claim for you (it’s your policy)</li>
               <li>We don&apos;t guarantee approvals, timelines, or ACV/RCV outcomes</li>
               <li>We don&apos;t invent &quot;we win X% of claims&quot; marketing</li>
-              <li>We do show up with evidence and a repair plan that matches the damage</li>
+              <li>We do show up with photos and a repair plan that matches the damage</li>
             </ul>
             <h3 style={{ marginTop: 24, fontSize: '1.15rem', fontWeight: 800 }}>Homeowner checklist before you call the carrier</h3>
             <ol style={{ color: '#52606b', lineHeight: 1.85, marginTop: 8 }}>
               <li>Photos from the ground</li>
               <li>Note the storm date if you know it</li>
-              <li>Don&apos;t authorize random door-knockers without a written scope</li>
-              <li>Call {brand.phone} for an inspection if you want local documentation first</li>
+              <li>Don&apos;t sign with door-knockers who give you no written plan</li>
+              <li>Call {brand.phone} if you want a local roofer to take photos first</li>
             </ol>
             <p style={{ color: '#52606b', marginTop: 16, lineHeight: 1.75 }}>
-              After the check clears, recoverable depreciation and final paperwork still need attention on many policies.
-              Document promptly after a storm when it&apos;s safe. Quiet leaks that show up weeks later still deserve photos and an inspection.
+              On many policies, some money is held back until the work is done. That last paperwork still matters after the first check comes.
+              Take photos soon after a storm, when it&apos;s safe. Leaks that show up weeks later still need photos and a roof check.
             </p>
           </div>
 
@@ -195,8 +197,8 @@ export default function Page() {
           </div>
           <div style={{ marginTop: 28 }}>
             <p style={{ color: '#52606b', marginBottom: 12 }}>
-              Family-owned in Dallas since 2019. {brand.owner}&apos;s crew documents and repairs.
-              Owens Corning Contractor Rewards member; Owens Corning shingles on permanent systems when selected.
+              Family-owned in Dallas since 2019. {brand.owner}&apos;s crew takes the photos and does the repairs.
+              Owens Corning Contractor Rewards member.
             </p>
             <Link href="/storm-damage-roof-repair-dallas-ga/" className="btn btn-ink">Storm damage roof repair in Dallas, GA <span className="arr">→</span></Link>
             <Link href="/emergency-roof-repair-dallas-ga/" className="btn btn-ink" style={{ marginLeft: 12 }}>Emergency Dallas <span className="arr">→</span></Link>

@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
+import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
 import RelatedGuides from '@/components/RelatedGuides';
 import Pic from '@/components/Pic';
 import { getService, services, brand } from '@/lib/brand';
@@ -68,6 +69,7 @@ export default function ServiceDetail({ params }) {
             </div>
             <div className="rv">
               <Pic src={service.image} alt={heroAlt} style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
+              <FreeRoofCheckCta />
               <div style={{ maxWidth: 460, margin: '32px auto 0' }}>
                 <QuoteForm variant="detail" id={`quote-${service.slug}`} />
               </div>
@@ -192,6 +194,7 @@ export default function ServiceDetail({ params }) {
           </div>
         </div>
 
+        <FreeRoofCheckCta />
         <div style={{ maxWidth: 560, margin: '64px auto 0' }} id={`quote-${service.slug}`}>
           <QuoteForm variant="detail" id={`quote-form-${service.slug}`} source={`${service.title} Hub`} title={`Get Your Free ${service.title} Quote`} />
         </div>

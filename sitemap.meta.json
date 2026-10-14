@@ -653,5 +653,10 @@
         "title": "Storm damage roof repair in Dallas, GA and Metro Atlanta"
       }
     ]
+  },
+  "/free-roof-check/": {
+    "priority": "0.9",
+    "changefreq": "monthly",
+    "images": []
   }
 }

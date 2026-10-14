@@ -10,6 +10,7 @@ import Link from 'next/link';
 import CityMap from '@/components/CityMap';
 import CitySchema from '@/components/CitySchema';
 import QuoteForm from '@/components/QuoteForm';
+import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
 import ReviewButton from '@/components/ReviewButton';
 import { brand, services, cities, cityPath } from '@/lib/brand';
 
@@ -136,6 +137,7 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
                 style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }}
               />
             </picture>
+            <FreeRoofCheckCta />
             <div style={{ maxWidth: 460, margin: '32px auto 0' }}>
               <QuoteForm variant="detail" id={`quote-${city.slug}`} source={`Service Area: ${city.name}`} />
             </div>

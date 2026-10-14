@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { services, brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import Pic from '@/components/Pic';
+import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
 import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
@@ -13,32 +14,32 @@ export const metadata = seo({
 
 const cardExtras = {
   'roof-repair': {
-    more: 'Leaks, worn flashing, cracked boots, and storm-worn shingles. We find the source and fix it so a small problem stays small.',
+    more: 'Leaks, worn metal flashing, cracked pipe boots, and storm-worn shingles. We find where the water gets in and fix it, so a small problem stays small.',
     money: [
       { href: '/roof-repair-dallas-ga/', label: 'Roof repair Dallas GA' },
       { href: '/roof-repair-hiram/', label: 'Hiram repair' },
     ],
   },
   'roof-replacement': {
-    more: 'Full tear-off and re-roof with architectural asphalt systems installed clean and built for Georgia weather. Owens Corning shingles installed by an Owens Corning Contractor Rewards member when that line fits.',
+    more: 'We take the old roof off and put on a new one, built for Georgia weather. We keep the job clean. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when they fit.',
     money: [
       { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement Dallas' },
       { href: '/roof-replacement-hiram/', label: 'Hiram replacement' },
     ],
   },
   'storm-damage-roof-repair': {
-    more: 'Wind, hail, and fallen limbs leave damage that is easy to miss from the ground. We inspect, tarp when the roof is open, and document findings.',
+    more: 'Wind, hail, and fallen limbs can hurt a roof in ways you can’t see from the ground. We check it, tarp it if it’s open, and take photos.',
     money: [
       { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage Dallas' },
       { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency Dallas' },
     ],
   },
   'gutter-repair-replacement': {
-    more: 'Sized to the roof that feeds them — capacity, fall, fascia, seamless runs.',
+    more: 'Gutters sized to fit your roof, sloped to drain, and hung tight on seamless runs.',
     money: [{ href: '/gutter-repair-replacement-dallas-ga/', label: 'Gutters Dallas' }],
   },
   'new-construction': {
-    more: 'Builders and homeowners — roof installed to plan and schedule.',
+    more: 'For builders and homeowners. We put the roof on to plan and on schedule.',
     money: [{ href: '/services/new-construction/', label: 'New construction hub' }],
   },
 };
@@ -46,11 +47,11 @@ const cardExtras = {
 const faqs = [
   {
     q: 'One crew for every service?',
-    a: 'Yes — same local team standards whether it is a boot swap or a full tear-off.',
+    a: 'Yes. The same local team does it all, from a small pipe boot fix to a full new roof.',
   },
   {
     q: 'Do you only serve Dallas?',
-    a: 'No — Dallas is home base; Hiram, Powder Springs, Douglasville, and listed cities are regular work.',
+    a: 'No. Dallas is home. We also work in Hiram, Powder Springs, Douglasville, and the other towns listed here every week.',
   },
 ];
 
@@ -64,9 +65,9 @@ export default function ServicesPage() {
             <span className="eyebrow dark">What we do</span>
             <h1>Roofing services for your home</h1>
             <p>
-              From a quick repair to a full replacement, every job is done by the same local crew — same standards, same phone number.
-              iRoofer Contractors is family-owned in Dallas, GA since 2019. Owner {brand.owner}.
-              We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system fits.
+              From a quick fix to a new roof, the same local crew does every job. Same care, same phone number.
+              iRoofer Contractors is family-owned in Dallas, GA since 2019. The owner is {brand.owner}.
+              We install Owens Corning shingles as an Owens Corning Contractor Rewards member when they fit.
             </p>
             <p style={{ marginTop: 12 }}>
               <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>
@@ -103,7 +104,7 @@ export default function ServicesPage() {
             <div className="card" style={{ color: 'inherit' }}>
               <div className="body">
                 <h2><Link href="/emergency-roof-repair-dallas-ga/" style={{ color: 'inherit', textDecoration: 'none' }}>Emergency roof repair</Link></h2>
-                <p>Active leaks and storm openings — prioritize tarp and documentation.</p>
+                <p>Leaking now, or a storm opened your roof? We tarp it first and take photos.</p>
                 <p style={{ marginTop: 8, fontSize: '.9rem' }}>
                   <Link href="/emergency-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Emergency Dallas</Link>
                   {' · '}
@@ -115,55 +116,57 @@ export default function ServicesPage() {
             <div className="card" style={{ color: 'inherit' }}>
               <div className="body">
                 <h2><Link href="/services/roof-insurance-claims/" style={{ color: 'inherit', textDecoration: 'none' }}>Roof insurance claims</Link></h2>
-                <p>You file; we document, meet the adjuster, and help with supplements when the scope falls short — no guaranteed approvals.</p>
+                <p>You file the claim. We take photos, meet the adjuster, and ask for missed items. We can’t promise what gets approved.</p>
                 <Link href="/services/roof-insurance-claims/" className="more">Learn more →</Link>
               </div>
             </div>
           </div>
 
+          <FreeRoofCheckCta />
+
           <div className="rv" style={{ marginTop: 48, maxWidth: 760 }}>
             <h2 style={{ fontSize: 'clamp(1.4rem,2.4vw,1.85rem)', fontWeight: 800 }}>How to choose a starting point</h2>
             <ul style={{ color: '#52606b', lineHeight: 1.9, marginTop: 12 }}>
-              <li>Water indoors or open deck → emergency / storm</li>
-              <li>Stain after rain, no active pour → repair</li>
-              <li>Third leak this year / widespread wear → replacement</li>
-              <li>Adjuster visit coming → claims + storm</li>
-              <li>Overflow at the eaves → gutters (+ roof check)</li>
+              <li>Water coming inside, or a hole in the roof → emergency or storm</li>
+              <li>A stain after rain, but no water pouring in → repair</li>
+              <li>Third leak this year, or wear all over → new roof</li>
+              <li>Insurance adjuster coming soon → claims and storm</li>
+              <li>Gutters spilling over → gutters (and a roof check)</li>
             </ul>
           </div>
 
           <div className="rv" style={{ marginTop: 36, maxWidth: 760 }}>
             <h2 style={{ fontSize: 'clamp(1.4rem,2.4vw,1.85rem)', fontWeight: 800 }}>What a service visit includes</h2>
             <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
-              A free on-site look comes first. We walk the roof when it is safe, and document from the ground when it is not. We note flashing, boots, valleys, and interior clues — ceiling stains, attic daylight, or wet decking — so the recommendation matches the house.
+              First, we come out and look for free. We walk the roof when it is safe. When it is not, we check from the ground. We look at the metal flashing, pipe boots, and valleys. We look inside too, for ceiling stains, daylight in the attic, or wet wood. That way our advice fits your house.
             </p>
             <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
-              You leave with photos and a written scope in plain English. The note names the path: repair, tarp, replacement, or that you are fine for now.
+              You get photos and a written plan in plain words. It tells you what to do: repair, tarp, new roof, or nothing for now.
             </p>
             <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
-              You approve before work starts. Nothing is torn off, tarped, or replaced until you say yes. Insurance documentation is written only when storm damage applies, and we do not guarantee claim approvals.
+              Nothing starts until you say yes. We only write up insurance papers when there is real storm damage. We can’t promise a claim will be approved.
             </p>
             <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
               Call or text{' '}
               <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>
               {' or send the address and what you are seeing at '}
               <Link href="/contact/" style={{ fontWeight: 700, color: 'var(--orange)' }}>https://iroofercontractors.com/contact/</Link>
-              . If water is coming in now, say so on the first message so that visit is scheduled first.
+              . If water is coming in now, tell us first thing so we come to you first.
             </p>
           </div>
 
           <div className="rv" style={{ marginTop: 36, maxWidth: 760 }}>
-            <h2 style={{ fontSize: 'clamp(1.3rem,2.2vw,1.7rem)', fontWeight: 800 }}>Why a services hub still matters</h2>
+            <h2 style={{ fontSize: 'clamp(1.3rem,2.2vw,1.7rem)', fontWeight: 800 }}>Not sure where to start?</h2>
             <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
-              Homeowners land here when they know they need &quot;a roofer&quot; but not which service page.
-              Clear cards plus money URLs keep them from bouncing to a thin dead end. Every card above should stay clickable on mobile.
+              That’s OK. Book a <Link href="/free-roof-check/" style={{ color: 'var(--orange)', fontWeight: 700 }}>free roof check</Link> and we will tell you what your roof needs.
+              No pressure. You get photos and a short written summary.
             </p>
             <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
-              <strong>Credentials:</strong> Family-owned since 2019 · {brand.owner} ·
-              We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system fits.
+              <strong>About us:</strong> Family-owned since 2019 · {brand.owner} ·
+              We install Owens Corning shingles as an Owens Corning Contractor Rewards member when they fit.
             </p>
             <p style={{ marginTop: 16 }}>
-              Local money hubs:{' '}
+              Learn more:{' '}
               <Link href="/dallas-ga-roofing/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Dallas GA roofing company</Link>
               {' · '}
               <Link href="/about/" style={{ color: 'var(--orange)', fontWeight: 700 }}>About</Link>
