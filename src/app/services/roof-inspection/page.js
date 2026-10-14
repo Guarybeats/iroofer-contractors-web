@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import RelatedGuides from '@/components/RelatedGuides';
 import QuoteForm from '@/components/QuoteForm';
+import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
 import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
@@ -105,6 +106,7 @@ export default function Page() {
 
             <div className="rv">
               <img src="/assets/service-repair.webp?v=3" alt="Roof inspection by iRoofer Contractors in Dallas, GA" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%', marginBottom: 24 }} />
+              <FreeRoofCheckCta />
               <div style={{ maxWidth: 460, margin: 0 }}>
                 <QuoteForm variant="contact" id="roof-inspection-quote" source="Roof Inspection" />
               </div>

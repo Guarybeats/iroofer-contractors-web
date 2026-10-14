@@ -16,7 +16,7 @@ export const metadata = seo({
 const faqs = [
   {
     q: 'Is the contact form the only way to reach you?',
-    a: 'No — call (470) 236-1410. Form is best when you can share address and photos.',
+    a: 'No. You can call (470) 236-1410. The form is best when you can share your address and photos.',
   },
   {
     q: 'What should I include in the form?',
@@ -29,19 +29,19 @@ const faqs = [
 
   {
     q: 'How fast do you reply?',
-    a: 'We prioritize active leaks. For standard estimates, expect a prompt follow-up during business hours.',
+    a: 'Active leaks come first. For other quotes, we get back to you during business hours.',
   },
   {
     q: 'Do I need to be home for the inspection?',
-    a: 'For most exterior roof inspections, not always — we will confirm access. Final walkthroughs can be scheduled when you are free.',
+    a: 'Not always. Most roof checks are outside. We will confirm we can get to the roof. We can set the final walk-through for when you are free.',
   },
   {
     q: 'Is the inspection really free?',
-    a: 'Yes — inspection and clear findings with no obligation to hire us for the work.',
+    a: 'Yes. We check your roof and tell you what we found. You don’t have to hire us.',
   },
   {
     q: 'Can I text photos?',
-    a: 'Yes. Text (470) 236-1410 with ceiling stains, missing shingles, or ground-level storm debris — it helps us prep.',
+    a: 'Yes. Text (470) 236-1410 with photos of ceiling stains, missing shingles, or storm debris. It helps us get ready.',
   },
 ];
 
@@ -54,7 +54,7 @@ export default function ContactPage() {
             <span className="eyebrow">Let&apos;s talk</span>
             <h1>Contact iRoofer Contractors</h1>
             <p className="lead">
-              Tell us what&apos;s going on with the roof and we&apos;ll get back to you as soon as we can during business hours.
+              Tell us what&apos;s going on with your roof and we&apos;ll get back to you during business hours.
               Free inspections, free estimates, zero pressure. You&apos;re reaching iRoofer Contractors in Dallas, GA —
               owner {brand.owner}&apos;s crew, not a national call center.
             </p>
@@ -86,9 +86,9 @@ export default function ContactPage() {
           <div className="rv" style={{ marginTop: 28, maxWidth: 820, background: '#fff', border: '1px solid rgba(22,29,37,.08)', borderRadius: 8, padding: '1.4rem 1.6rem' }}>
             <h2 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: 8 }}>You’re contacting a real Dallas shop</h2>
             <p style={{ color: '#52606b', lineHeight: 1.75, margin: 0 }}>
-              iRoofer Contractors is family-owned since 2019 by Cristian Mendez, based at 152 Freedom Dr, Dallas, GA 30157. Tell us whether you need roof repair, full replacement, storm documentation, or an emergency tarp — we’ll follow up with clear next steps. Prefer the phone? Call{' '}
+              iRoofer Contractors is family-owned since 2019 by Cristian Mendez, based at 152 Freedom Dr, Dallas, GA 30157. Tell us if you need a roof repair, a new roof, storm photos, or an emergency tarp. We’ll call you back with clear next steps. Prefer the phone? Call{' '}
               <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>.
-              {' '}We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system fits.
+              {' '}We install Owens Corning shingles as an Owens Corning Contractor Rewards member.
             </p>
             <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.7 }}>
               Helpful paths:{' '}
@@ -119,11 +119,11 @@ export default function ContactPage() {
           <div className="rv" style={{ maxWidth: 780 }}>
             <h2 style={{ fontSize: 'clamp(1.5rem,2.6vw,2rem)', fontWeight: 800 }}>What happens after you reach out</h2>
             <ol style={{ color: '#52606b', lineHeight: 1.8, marginTop: 12 }}>
-              <li><strong>We read what you sent</strong> — leak, storm, replacement curiosity, gutters, or &quot;not sure yet.&quot;</li>
-              <li><strong>A real person follows up</strong> — usually phone or text to confirm address, urgency, and whether water is actively entering.</li>
-              <li><strong>Inspection scheduled</strong> — on-roof look with photos when we visit; attic clues when accessible.</li>
-              <li><strong>Written scope</strong> — repair, tarp, replacement, or &quot;you&apos;re fine for now.&quot; No surprise pressure.</li>
-              <li><strong>If insurance may apply</strong> — we explain documentation and adjuster meetups without promising claim approval. See{' '}
+              <li><strong>We read what you sent.</strong> A leak, a storm, a new roof, gutters, or &quot;not sure yet.&quot;</li>
+              <li><strong>A real person calls or texts you.</strong> We check your address, how urgent it is, and if water is coming in.</li>
+              <li><strong>We set a time to visit.</strong> We look at the roof and take photos. We check the attic if we can.</li>
+              <li><strong>You get a written plan.</strong> Repair, tarp, new roof, or &quot;you&apos;re fine for now.&quot; No pressure.</li>
+              <li><strong>If insurance may help,</strong> we explain the photos and the adjuster visit. We can’t promise a claim will be approved. See{' '}
                 <Link href="/services/roof-insurance-claims/" style={{ color: 'var(--orange)', fontWeight: 700 }}>roof insurance claims</Link>.
               </li>
             </ol>
@@ -134,20 +134,20 @@ export default function ContactPage() {
               <h2 style={{ fontSize: 'clamp(1.4rem,2.4vw,1.85rem)', fontWeight: 800 }}>Who you&apos;re contacting</h2>
               <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
                 iRoofer Contractors is family-owned in Dallas since 2019.
-                We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system fits the job.
+                We install Owens Corning shingles as an Owens Corning Contractor Rewards member.
               </p>
               <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
-                When neighbors call about a drip in Dallas, a storm in Hiram, or a full tear-off in Powder Springs, the same local crew shows up.
-                Cristian runs estimates, storm documentation (drone when it helps), and scheduling.
+                A drip in Dallas, a storm in Hiram, or a new roof in Powder Springs: the same local crew shows up.
+                Cristian does the estimates, the storm photos (by drone when it helps), and the schedule.
               </p>
             </div>
             <div className="rv">
               <h2 style={{ fontSize: 'clamp(1.4rem,2.4vw,1.85rem)', fontWeight: 800 }}>When to call vs. use the form</h2>
               <ul style={{ color: '#52606b', lineHeight: 1.85, marginTop: 12 }}>
-                <li><strong>Call/text now</strong> if water is dripping indoors, a tree opened the deck, or you need same-day tarp guidance — also see{' '}
+                <li><strong>Call or text now</strong> if water is dripping inside, a tree made a hole in the roof, or you need a tarp today. Also see{' '}
                   <Link href="/emergency-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>emergency roof repair Dallas</Link>.</li>
-                <li><strong>Form is fine</strong> for planning a replacement, a non-urgent repair, gutters, or a general inspection.</li>
-                <li><strong>Either path</strong> gets you to a human — use whichever is easier.</li>
+                <li><strong>The form is fine</strong> for a new roof, a repair that can wait, gutters, or a roof check.</li>
+                <li><strong>Either way</strong> you reach a real person. Use whichever is easier.</li>
               </ul>
             </div>
           </div>
@@ -156,11 +156,11 @@ export default function ContactPage() {
             <h2 style={{ fontSize: 'clamp(1.4rem,2.4vw,1.85rem)', fontWeight: 800 }}>Common reasons people contact us</h2>
             <ul style={{ color: '#52606b', lineHeight: 1.9, marginTop: 12 }}>
               <li>Ceiling stains or active leaks → <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>roof repair Dallas</Link></li>
-              <li>Full roof replacement questions → <Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>roof replacement Dallas</Link></li>
+              <li>Thinking about a new roof → <Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>roof replacement Dallas</Link></li>
               <li>Wind, hail, or storm damage → <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>storm damage</Link></li>
-              <li>Gutters overflowing or pulling away → <Link href="/gutter-repair-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>gutter repair &amp; replacement</Link></li>
+              <li>Gutters spilling over or pulling loose → <Link href="/gutter-repair-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>gutter repair &amp; replacement</Link></li>
               <li>New build roofing → <Link href="/services/new-construction/" style={{ color: 'var(--orange)', fontWeight: 700 }}>new construction</Link></li>
-              <li>Hiram jobs → <Link href="/roof-repair-hiram/" style={{ color: 'var(--orange)', fontWeight: 700 }}>repair</Link> · <Link href="/roof-replacement-hiram/" style={{ color: 'var(--orange)', fontWeight: 700 }}>replacement</Link></li>
+              <li>In Hiram → <Link href="/roof-repair-hiram/" style={{ color: 'var(--orange)', fontWeight: 700 }}>repair</Link> · <Link href="/roof-replacement-hiram/" style={{ color: 'var(--orange)', fontWeight: 700 }}>replacement</Link></li>
             </ul>
           </div>
 
@@ -168,9 +168,9 @@ export default function ContactPage() {
             <h2 style={{ fontSize: 'clamp(1.3rem,2.2vw,1.7rem)', fontWeight: 800 }}>Trust notes</h2>
             <ul style={{ color: '#52606b', lineHeight: 1.85, marginTop: 10 }}>
               <li>Local owner on the line</li>
-              <li>Written scopes before work</li>
-              <li>Clean job sites / magnet sweeps on installs</li>
-              <li>No &quot;#1 in Atlanta&quot; claims — read neighbors on Google</li>
+              <li>A written plan before we start</li>
+              <li>Clean job sites and magnet nail sweeps</li>
+              <li>No &quot;#1 in Atlanta&quot; hype. Read our reviews on Google</li>
             </ul>
             <p style={{ marginTop: 20 }}>
               <a className="btn btn-ink" href={`tel:${brand.phone}`}>Call {brand.phone} <span className="arr">→</span></a>

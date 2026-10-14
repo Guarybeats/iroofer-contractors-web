@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import RelatedGuides from '@/components/RelatedGuides';
 import QuoteForm from '@/components/QuoteForm';
+import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
 import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { localCopy } from '@/lib/localCopy';
@@ -55,6 +56,7 @@ export default function Page() {
 
             <div className="rv">
               <img src="/assets/service-replacement.webp?v=2" alt="Roof Replacement in Dallas, GA by iRoofer Contractors" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%', marginBottom: 24 }} />
+              <FreeRoofCheckCta />
               <div style={{ maxWidth: 460, margin: 0 }}>
                 <QuoteForm variant="contact" id="roof-replacement-dallas-ga-quote" source="Roof Replacement Dallas GA" />
               </div>

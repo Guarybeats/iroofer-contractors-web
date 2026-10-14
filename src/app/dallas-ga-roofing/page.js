@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
+import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
 import { brand, cities, cityPath } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
@@ -16,36 +17,36 @@ export const metadata = seo({
 const faqs = [
   {
     q: 'Are you based in Dallas, or just advertising here?',
-    a: 'Based here — 152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019.',
+    a: 'We are based here, at 152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019.',
   },
   {
-    q: 'What’s the difference between this page and your repair/replace pages?',
-    a: 'This page is the overview of everything we do in Dallas. The service pages — [roof repair in Dallas, GA](/roof-repair-dallas-ga/), [roof replacement in Dallas, GA](/roof-replacement-dallas-ga/) and [storm damage roof repair in Dallas](/storm-damage-roof-repair-dallas-ga/) — go deeper on scope, process, and next steps.',
+    q: 'How is this page different from your repair and replacement pages?',
+    a: 'This page covers everything we do in Dallas. The pages for [roof repair in Dallas, GA](/roof-repair-dallas-ga/), [roof replacement in Dallas, GA](/roof-replacement-dallas-ga/) and [storm damage roof repair in Dallas](/storm-damage-roof-repair-dallas-ga/) go deeper on what we do, how it works, and what comes next.',
   },
   {
     q: 'How do I get a quote?',
-    a: 'Contact form or phone — free photo-documented inspection, written estimate. https://iroofercontractors.com/contact/ or (470) 236-1410.',
+    a: 'Use the contact form or call. We check your roof for free, take photos, and give you a written price. https://iroofercontractors.com/contact/ or (470) 236-1410. Or book a free roof check at /free-roof-check/.',
   },
 
   {
     q: 'What does a Dallas roofing contractor visit include?',
-    a: 'On-roof look when safe, photos, and plain-English next steps — repair, monitor, or replace. We put a real figure in writing after inspection; we don’t publish a price list.',
+    a: 'We look at the roof when it is safe and take photos. Then we tell you the next step in plain words: repair, wait and watch, or replace. You get a real price in writing after we look.',
   },
   {
     q: 'Do you publish prices here?',
-    a: 'No. Every roof is different, so we give you a real number in writing after a free on-site inspection. Request one at https://iroofercontractors.com/contact/ or call (470) 236-1410.',
+    a: 'No. Every roof is different. You get a real price in writing after a free roof check. Ask for one at https://iroofercontractors.com/contact/ or call (470) 236-1410.',
   },
   {
     q: 'Repair or replace?',
-    a: 'Isolated failures repair; widespread wear or repeated leaks often replace. We’ll say which after we see the roof.',
+    a: 'One problem spot can usually be fixed. Wear all over, or leak after leak, often means a new roof. We’ll tell you which after we see it.',
   },
   {
-    q: 'Can you help with an insurance claim for storm damage?',
-    a: 'You file the claim; we help you document damage for your insurance claim with photos and a written scope, and can meet your adjuster on-site. Approvals depend on your policy — we don’t guarantee claim outcomes.',
+    q: 'Do you handle insurance claims for storm damage?',
+    a: 'You file the claim. We take photos, meet your adjuster at your home, and ask for missed items. What gets approved depends on your policy. We can’t promise a result.',
   },
   {
     q: 'What do Georgia storms do to roofs here?',
-    a: 'Spring and summer bring hail, straight-line winds, and falling limbs. Common results: dented shingles, granule loss, lifted flashing, and hidden leaks that show up weeks later. We catch them early with a free inspection.',
+    a: 'Spring and summer bring hail, strong winds, and falling limbs. That can mean dented shingles, lost shingle grit, loose flashing, and hidden leaks that show up weeks later. A free roof check catches them early.',
   },
   {
     q: 'Which areas do you serve around Dallas, GA?',
@@ -89,15 +90,18 @@ export default function DallasGaRoofingPage() {
       <section className="sec-light sec-pad">
         <div className="wrap">
           <div className="sec-head rv">
-            <span className="eyebrow dark">Start here</span>
-            <h2>Pick the service that matches your problem</h2>
+            <span className="eyebrow dark">Where to start</span>
+            <h2>Pick the page that fits your problem</h2>
+            <p style={{ color: '#52606b', maxWidth: 720 }}>
+              Tell us what’s going on and we’ll point you the right way. Not sure? Book a <Link href="/free-roof-check/" style={{ color: 'var(--orange)', fontWeight: 700 }}>free roof check</Link>.
+            </p>
           </div>
           <ul style={{ color: '#52606b', lineHeight: 1.9, maxWidth: 720 }}>
-            <li>Leaking or stained ceilings → <Link href="/roof-repair-dallas-ga/">roof repair in Dallas, GA</Link></li>
-            <li>Worn-out roof → <Link href="/roof-replacement-dallas-ga/">roof replacement in Dallas, GA</Link></li>
+            <li>Leaks or stained ceilings → <Link href="/roof-repair-dallas-ga/">roof repair in Dallas, GA</Link></li>
+            <li>Thinking about a new roof → <Link href="/roof-replacement-dallas-ga/">roof replacement in Dallas, GA</Link></li>
             <li>After a storm → <Link href="/storm-damage-roof-repair-dallas-ga/">storm damage</Link>, <Link href="/emergency-roof-repair-dallas-ga/">emergency repair</Link> or <Link href="/services/roof-insurance-claims/">insurance claims help</Link></li>
-            <li>Overflowing eaves → <Link href="/gutter-repair-replacement-dallas-ga/">gutter repair &amp; replacement</Link></li>
-            <li>Who we are → <Link href="/about/">about iRoofer</Link></li>
+            <li>Gutters spilling over → <Link href="/gutter-repair-replacement-dallas-ga/">gutter repair &amp; replacement</Link></li>
+            <li>Want to know who we are → <Link href="/about/">about iRoofer</Link></li>
           </ul>
 
           <div className="sec-head rv" style={{ marginTop: 48 }}>
@@ -107,43 +111,43 @@ export default function DallasGaRoofingPage() {
           <div className="cards">
             <div className="card">
               <h3>Roof Repair</h3>
-              <p>Leaks, storm damage, flashing, vents, and shingle repair. We find the source and fix it right so a small problem stays small.</p>
+              <p>Leaks, storm damage, flashing, vents, and shingles. We find where the water gets in and fix it, so a small problem stays small.</p>
               <Link href="/roof-repair-dallas-ga/" className="chip">Roof repair Dallas GA →</Link>
               <Link href="/services/roof-repair/" className="chip">Roof repair service hub →</Link>
             </div>
             <div className="card">
               <h3>Roof Replacement</h3>
-              <p>Full tear-off and re-roof with architectural asphalt shingles installed by an Owens Corning Contractor Rewards member, clean and built to last.</p>
+              <p>We take off the old roof and put on a new one. Installed by an Owens Corning Contractor Rewards member, clean and built to last.</p>
               <Link href="/roof-replacement-dallas-ga/" className="chip">Roof replacement Dallas GA →</Link>
               <Link href="/services/roof-replacement/" className="chip">Replacement service hub →</Link>
             </div>
             <div className="card">
               <h3>Storm &amp; Hail Damage</h3>
-              <p>Free inspections, same-day emergency tarping when we can, and insurance documentation after Georgia storms.</p>
+              <p>Free roof checks, a same-day tarp when we can, and photos for your insurance after a storm.</p>
               <Link href="/storm-damage-roof-repair-dallas-ga/" className="chip">Storm damage roof repair Dallas →</Link>
               <Link href="/emergency-roof-repair-dallas-ga/" className="chip">Emergency roof repair Dallas →</Link>
               <Link href="/blog/wind-damage-roof-repair-dallas/" className="chip">Wind damage roof repair →</Link>
             </div>
             <div className="card">
               <h3>Insurance claims</h3>
-              <p>You file; we help you document damage for your insurance claim and can meet the adjuster — no guaranteed approvals.</p>
+              <p>You file. We take photos, meet the adjuster, and ask for missed items. No promises on approval.</p>
               <Link href="/services/roof-insurance-claims/" className="chip">Claims help →</Link>
             </div>
             <div className="card">
               <h3>Gutters</h3>
-              <p>Repair, realignment, and replacement of gutters and downspouts so water flows away from your home.</p>
+              <p>We fix, re-hang, and replace gutters and downspouts so water flows away from your home.</p>
               <Link href="/gutter-repair-replacement-dallas-ga/" className="chip">Gutter repair &amp; replacement Dallas →</Link>
               <Link href="/services/gutter-repair-replacement/" className="chip">Gutter service hub →</Link>
             </div>
             <div className="card">
               <h3>New Construction</h3>
-              <p>Dry-in on the builder&apos;s schedule with Owens Corning shingle installs (we&apos;re an Owens Corning Contractor Rewards member) and Paulding County inspection coordination.</p>
+              <p>We get the roof on to fit the builder&apos;s schedule. We install Owens Corning shingles as a Contractor Rewards member and work with Paulding County inspectors.</p>
               <Link href="/new-construction-dallas-ga/" className="chip">New construction Dallas GA →</Link>
               <Link href="/services/new-construction/" className="chip">New construction hub →</Link>
             </div>
             <div className="card">
               <h3>Nearby Hiram</h3>
-              <p>Same crew standards across the county line.</p>
+              <p>The same crew and the same care, across the county line.</p>
               <Link href="/roof-repair-hiram/" className="chip">Hiram repair →</Link>
               <Link href="/roof-replacement-hiram/" className="chip">Hiram replacement →</Link>
             </div>
@@ -156,37 +160,37 @@ export default function DallasGaRoofingPage() {
           <div className="faq-grid" style={{ alignItems: 'start' }}>
             <div className="rv">
               <span className="eyebrow dark">Why a Dallas-based contractor</span>
-              <h2>Year-round local accountability</h2>
+              <h2>Here all year, not just storm season</h2>
               <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
-                iRoofer Contractors — {brand.owner}, family-owned since 2019, shop at 152 Freedom Dr, Dallas, GA 30157.
-                We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that line is selected. We work Paulding and nearby west-metro cities year-round — not as a one-week storm blitz.
+                iRoofer Contractors is run by {brand.owner}. We are family-owned since 2019, with our shop at 152 Freedom Dr, Dallas, GA 30157.
+                We install Owens Corning shingles as an Owens Corning Contractor Rewards member. We work in Paulding and nearby towns every week, not just after a big storm.
               </p>
               <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
-                Dallas and Paulding roofs see tree cover, humidity, and fast-moving storms. That mix ages flashing and asphalt faster than a brochure timeline.
-                A local roofing company that answers the phone after the job matters as much as the shingle brand on the invoice.
+                Roofs here deal with lots of trees, humid air, and fast storms. That wears out shingles and flashing faster than you might think.
+                A local roofer who still picks up the phone after the job matters as much as the shingle brand.
               </p>
               <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
-                Read live Google reviews on the Business Profile.
+                Read our real reviews on Google.
               </p>
               <p style={{ marginTop: 16 }}>
                 <Link href="/about/" style={{ fontWeight: 700, color: 'var(--orange)' }}>About iRoofer →</Link>
                 {' · '}
-                <Link href="/services/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Services hub →</Link>
+                <Link href="/services/" style={{ fontWeight: 700, color: 'var(--orange)' }}>All services →</Link>
               </p>
             </div>
             <div className="rv">
-              <span className="eyebrow dark">Process in one breath</span>
-              <h2>Inspect → scope → schedule → clean up</h2>
+              <span className="eyebrow dark">How it works</span>
+              <h2>Look → plan → schedule → clean up</h2>
               <ol style={{ lineHeight: 1.8, color: '#52606b', marginTop: 12 }}>
-                <li>Inspect and photograph</li>
-                <li>Written scope</li>
-                <li>Schedule the crew</li>
-                <li>Repair or replace</li>
-                <li>Cleanup and walkthrough</li>
+                <li>We look at the roof and take photos</li>
+                <li>You get a written plan</li>
+                <li>We set a date</li>
+                <li>We repair or replace</li>
+                <li>We clean up and walk the job with you</li>
               </ol>
               <p style={{ color: '#52606b', marginTop: 12 }}>
-                Storm jobs add documentation and adjuster coordination when you choose that path:
-                photos → inspection → adjuster meetup → written scope → install.
+                For storm jobs, we can also take photos for insurance and meet your adjuster, if you choose.
+                Then you get a written plan, and we do the work.
               </p>
             </div>
           </div>
@@ -214,6 +218,7 @@ export default function DallasGaRoofingPage() {
 
       <section className="sec-pad" style={{ background: '#fff' }}>
         <div className="wrap">
+          <FreeRoofCheckCta />
           <div className="rv" style={{ maxWidth: 460, margin: '0 auto' }}>
             <QuoteForm variant="contact" id="dallas-ga-roofing-quote" source="Dallas GA Roofing Hub" />
           </div>
@@ -254,7 +259,7 @@ export default function DallasGaRoofingPage() {
             ))}
           </div>
           <p style={{ marginTop: 24, color: '#52606b' }}>
-            Pick the service that matches your problem, or call (470) 236-1410 and describe it in one sentence — leak, storm, replace, or gutters.{' '}
+            Pick the page that fits your problem. Or call (470) 236-1410 and tell us in one sentence: leak, storm, new roof, or gutters.{' '}
             <Link href="/contact/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Contact</Link>
           </p>
         </div>

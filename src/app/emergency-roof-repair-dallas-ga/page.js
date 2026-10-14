@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
+import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
 import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
@@ -13,49 +14,49 @@ export const metadata = seo({
 });
 
 const steps = [
-  'Do NOT climb onto a damaged roof — storm damage is often invisible from the ground.',
-  'Snap ground-level photos of debris, dented gutters, and any interior water stains.',
-  'Call us for a free damage inspection and a temporary tarp if you are actively leaking.',
-  'We document the damage, write the scope, and meet your insurance adjuster when a claim applies — you only sign off before a single shingle moves.',
+  'Do NOT climb on a damaged roof. Storm damage is often hard to see from the ground.',
+  'Take photos from the ground of debris, dented gutters, and any water stains inside.',
+  'Call us for a free damage check, and a tarp if water is coming in.',
+  'We take photos, write up the plan, and meet your insurance adjuster if you file a claim. Nothing starts until you say yes.',
 ];
 
 const process = [
-  { n: '01', t: 'Triage on the phone', d: 'Is water entering now?' },
-  { n: '02', t: 'Stabilize', d: 'Tarp / temporary protection when materials and access are safe.' },
-  { n: '03', t: 'Document', d: 'Photos for your records and insurer if storm-related.' },
-  { n: '04', t: 'Written scope', d: 'Permanent repair vs larger section vs replacement talk.' },
-  { n: '05', t: 'Complete the repair', d: 'Our own crew; Owens Corning installation specs when that system applies to permanent work.' },
-  { n: '06', t: 'Follow-up', d: 'What to watch for on the next rain.' },
+  { n: '01', t: 'Quick call', d: 'Is water entering now?' },
+  { n: '02', t: 'Cover it', d: 'We put on a tarp or other cover when it is safe.' },
+  { n: '03', t: 'Take photos', d: 'Photos for you, and for your insurance if a storm did it.' },
+  { n: '04', t: 'Written scope', d: 'A written plan: a small repair, a bigger section, or a new roof.' },
+  { n: '05', t: 'Complete the repair', d: 'Our own crew does the work, the way the shingle maker says to.' },
+  { n: '06', t: 'Follow-up', d: 'We tell you what to watch for the next time it rains.' },
 ];
 
 const emergencyFaqs = [
   {
-    q: 'Do you guarantee same-hour arrival?',
-    a: 'We move as fast as schedule and weather allow, and we give you a realistic ETA when you call.',
+    q: 'Can you promise to be here within the hour?',
+    a: 'No. We come as fast as our schedule and the weather allow, and we give you an honest arrival time when you call.',
   },
   {
     q: 'Is tarping the final fix?',
-    a: 'No — tarp protects; permanent repair or replacement follows with a written scope on /roof-repair-dallas-ga/ or /roof-replacement-dallas-ga/.',
+    a: 'No. A tarp just protects the roof for now. The real fix comes next, with a written plan. See /roof-repair-dallas-ga/ or /roof-replacement-dallas-ga/.',
   },
   {
-    q: 'Do you offer 24/7 emergency roof repair in Dallas, GA?',
-    a: 'Shop hours are Mon–Fri 9–7 and Sat 9–5 (Sun closed). We prioritize active leaks and storm damage as fast as crews allow — same-day help when the schedule allows. We do not promise 24/7 coverage. Call (470) 236-1410 and say if water is entering now.',
+    q: 'What are your hours for emergency roof repair in Dallas, GA?',
+    a: 'Our hours are Mon–Fri 9–7 and Sat 9–5. We are closed Sunday. Active leaks and storm damage go to the front of the line. We help the same day when our schedule allows. Call (470) 236-1410 and tell us if water is coming in now.',
   },
   {
     q: 'Can you tarp the same day?',
-    a: 'Often yes for open decking or active leaks when access is safe. Permanent repairs may follow once the scope is clear.',
+    a: 'Often, yes, if the roof is open or leaking and it is safe to get up. The full fix comes once the plan is clear.',
   },
   {
     q: 'Is emergency work always a full roof replacement?',
-    a: 'No. Many emergencies are tarp + targeted repair. Replacement only when the roof’s condition says so.',
+    a: 'No. Many emergencies just need a tarp and a small repair. We only suggest a new roof when the roof truly needs it.',
   },
   {
     q: 'Will insurance cover emergency roof repairs?',
-    a: 'Sudden wind or storm damage is often claim-eligible, subject to your policy and deductible. We document findings and can support the adjuster path. We do not guarantee claim approval or payout amounts.',
+    a: 'Sudden wind or storm damage is often covered. It depends on your policy and deductible. We take photos and can work with your adjuster. We can’t promise a claim will be approved or how much it will pay.',
   },
   {
     q: 'Do you cover emergencies outside Dallas?',
-    a: 'Yes, across our listed service cities: Hiram, Douglasville, Powder Springs, Marietta, Kennesaw, Acworth, Austell and more. Call (470) 236-1410 and give us the address. Active leaks get priority wherever they are in our area.',
+    a: 'Yes, in the towns we serve: Hiram, Douglasville, Powder Springs, Marietta, Kennesaw, Acworth, Austell and more. Call (470) 236-1410 and give us the address. Active leaks come first.',
   },
 ];
 
@@ -93,13 +94,13 @@ export default function EmergencyPage() {
                 Emergency Roof Repair in Dallas, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
-                When water is coming in, stop the weather first. iRoofer Contractors — family-owned in Dallas since 2019 — prioritizes active leaks with temporary tarping when needed, then moves into{' '}
+                When water is coming in, stop the rain first. iRoofer Contractors is family-owned in Dallas since 2019. We put active leaks first and tarp them when needed. Then we move to{' '}
                 <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>permanent roof repair</Link>
                 {' '}or{' '}
-                <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>storm damage documentation</Link>.
+                <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>storm damage photos and paperwork</Link>.
                 Call <strong>(470) 236-1410</strong> now or use{' '}
                 <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>https://iroofercontractors.com/contact/</Link>.
-                We won’t promise a minute count we can’t keep. We’ll give you an honest window and get a tarp on as soon as it’s safe.
+                We won’t make up a time we can’t keep. We give you an honest window and get a tarp on as soon as it’s safe.
               </p>
 
               <div className="cta" style={{ marginTop: 28 }}>
@@ -164,6 +165,7 @@ export default function EmergencyPage() {
                   marginBottom: 24,
                 }}
               />
+              <FreeRoofCheckCta />
               <div style={{ maxWidth: 460, margin: 0 }}>
                 <QuoteForm variant="emergency" id="emergency-quote" source="Emergency Page" />
               </div>
@@ -179,10 +181,10 @@ export default function EmergencyPage() {
               What counts as an emergency roof repair in Dallas
             </h2>
             <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, lineHeight: 1.75 }}>
-              Call it an emergency when water is actively entering the house, a tree or limb has opened the deck, shingles are peeled back across a slope after high wind, or a ceiling is staining and spreading during a storm. In Dallas and Paulding County, pop-up storms can turn a small lift into a soak-through attic in one afternoon.
+              It’s an emergency when water is coming into the house. It’s also an emergency when a tree or limb has punched a hole in the roof, wind has peeled back a row of shingles, or a ceiling stain is growing during a storm. In Dallas and Paulding County, a quick storm can turn one loose shingle into a wet attic in one afternoon.
             </p>
             <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, lineHeight: 1.75 }}>
-              Same-day emergency roof repair when schedule and safe access allow. If we can&apos;t arrive the same day, you get a real window and tarping guidance — not silence. Call {brand.phone} as early as you can after the storm.
+              We offer same-day emergency roof repair when our schedule allows and it is safe. If we can&apos;t come the same day, we give you a real time and tips to protect your home. Call {brand.phone} as soon as you can after the storm.
             </p>
             <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, lineHeight: 1.75 }}>
               <strong>Outside Dallas?</strong> We cover the same west-metro cities from our shop at 152 Freedom Dr. Storm and emergency details for nearby cities:{' '}
@@ -205,7 +207,7 @@ export default function EmergencyPage() {
 
           <div className="sec-head rv" style={{ marginTop: 48 }}>
             <span className="eyebrow dark">Our emergency process</span>
-            <h2>Stabilize first, then permanent repair</h2>
+            <h2>Cover it first, then fix it for good</h2>
           </div>
           <div className="cards" style={{ marginTop: 20 }}>
             {process.map((p) => (
@@ -214,10 +216,10 @@ export default function EmergencyPage() {
           </div>
 
           <div className="rv" style={{ marginTop: 48, maxWidth: 780 }}>
-            <h2 style={{ fontSize: 'clamp(1.4rem,2.4vw,1.85rem)', fontWeight: 800 }}>Insurance notes (honest)</h2>
+            <h2 style={{ fontSize: 'clamp(1.4rem,2.4vw,1.85rem)', fontWeight: 800 }}>Straight talk on insurance</h2>
             <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 12 }}>
-              Sudden wind or storm damage is often claim-eligible subject to your policy and deductible.
-              We document findings and can support the adjuster path. <strong>We do not guarantee claim approval or payout amounts.</strong>
+              Sudden wind or storm damage is often covered. It depends on your policy and deductible.
+              We take photos and can work with your adjuster. <strong>We can’t promise a claim will be approved or how much it will pay.</strong>
               {' '}More:{' '}
               <Link href="/services/roof-insurance-claims/" style={{ color: 'var(--orange)', fontWeight: 700 }}>roof insurance claims</Link>
               {' · '}
@@ -229,7 +231,7 @@ export default function EmergencyPage() {
               {' · '}
               <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Contact</Link>
               {' · '}
-              <Link href="/services/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Services hub</Link>
+              <Link href="/services/" style={{ color: 'var(--orange)', fontWeight: 700 }}>All services</Link>
             </p>
           </div>
         </div>

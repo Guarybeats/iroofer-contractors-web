@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
+import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
 import RelatedGuides from '@/components/RelatedGuides';
 import { brand } from '@/lib/brand';
 import { seo, absoluteUrl } from '@/lib/seo';
@@ -183,6 +184,7 @@ export default function HailDamagePage() {
 
             <div className="rv">
               <img src="/assets/storm-damage.webp?v=2" alt="Hail damage roof inspection on a Dallas, GA home by iRoofer Contractors" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%', marginBottom: 24 }} />
+              <FreeRoofCheckCta />
               <div style={{ maxWidth: 460, margin: 0 }}>
                 <QuoteForm variant="contact" id="hail-damage-roof-repair-dallas-ga-quote" source="Hail Damage Roof Repair Dallas GA" />
               </div>

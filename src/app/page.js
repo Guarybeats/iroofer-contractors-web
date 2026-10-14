@@ -5,6 +5,7 @@ import ReviewButton from '@/components/ReviewButton';
 import { brand, services } from '@/lib/brand';
 import { posts } from '@/lib/posts';
 import Pic from '@/components/Pic';
+import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
 import { renderInline } from '@/components/InlineText';
 import { plainText } from '@/lib/inlineLinks';
 import { GBP_URL } from '@/components/LocalSeo';
@@ -26,30 +27,30 @@ const dallasLinks = [
 const svcs = [
   { n: '01', title: 'Roof Repair', tag: 'Leaks & flashing', img: '/assets/service-repair.jpg?v=3',
     href: '/roof-repair-dallas-ga/', cta: 'Roof repair in Dallas, GA',
-    body: 'Water stains, lifted flashing, cracked boots and mystery leaks. We trace the source — not just the symptom — then patch, re-seal and color-match so the fix disappears into your roofline.' },
+    body: 'Water stains, loose flashing, cracked pipe boots, and leaks you can’t find. We track down where the water gets in. Then we fix it, seal it, and match the color so the repair blends in.' },
   { n: '02', title: 'Roof Replacement', tag: 'Most popular', img: '/assets/service-replacement.jpg?v=2',
     href: '/roof-replacement-dallas-ga/', cta: 'Roof replacement in Dallas, GA',
-    body: 'Full tear-off to the deck, ice & water shield, synthetic underlayment and architectural shingles installed to manufacturer spec. Includes ridge venting, drip edge and a magnet-sweep cleanup of every nail.' },
+    body: 'We take the old roof off down to the wood. We add a leak barrier, a water-proof layer, and new shingles, put on the way the maker says to. You also get a vent at the peak, metal drip edge, and a magnet sweep for every nail.' },
   { n: '03', title: 'New Construction', tag: 'Builders', img: '/assets/service-newconstruction.jpg?v=2',
     href: '/services/new-construction/', cta: 'Talk to a local roofer',
-    body: 'We partner with builders and homeowners on new builds to install a roof that matches the design and the budget — code-compliant, inspected, and built to last.' },
+    body: 'We work with builders and homeowners on new homes. We put on a roof that fits the design and the budget. It meets code, gets inspected, and is built to last.' },
   { n: '04', title: 'Storm & Insurance Claims', tag: 'Same-day when schedule allows', img: '/assets/service-repair.jpg?v=3',
     href: '/storm-damage-roof-repair-dallas-ga/', cta: 'Storm damage roof repair Dallas',
-    body: 'Hail and wind damage documented with photos and a written scope. We can meet your adjuster on-site and help you document damage for your insurance claim. What gets approved depends on your policy.' },
+    body: 'We take photos of hail and wind damage and write up what needs fixing. We meet your insurance adjuster at the house. If they miss items, we ask them to add them. We help with the paperwork, so you don’t pay up front for what the claim should cover.' },
   { n: '05', title: 'Gutter Repair & Replacement', tag: 'Protection', img: '/assets/service-gutters-main.jpg?v=2',
     href: '/gutter-repair-replacement-dallas-ga/', cta: 'Gutter repair & replacement Dallas',
-    body: 'Clogged or failing gutters are a common cause of preventable roof and foundation damage. We clean, repair, and replace seamless gutters so water flows away from your home, not into it.' },
+    body: 'Clogged or broken gutters can send water back under your shingles and against your home. We clean, fix, and replace seamless gutters so water flows away from your home, not into it.' },
 ];
 
 
 const faqs = [
-  { q: 'Do you do roof repair in Dallas, GA?', a: 'Yes. Leaks, flashing, pipe boots and storm wear are everyday work for us. Start at [roof repair in Dallas, GA](/roof-repair-dallas-ga/) or call (470) 236-1410.' },
-  { q: 'Do you replace roofs in Dallas, GA?', a: 'Yes. Full tear-off replacements are a big part of what we do. See [roof replacement in Dallas, GA](/roof-replacement-dallas-ga/) for scope, process and next steps.' },
-  { q: 'Hail or wind after a Dallas storm?', a: 'See [storm damage roof repair in Dallas](/storm-damage-roof-repair-dallas-ga/) and [roof insurance claims help](/services/roof-insurance-claims/). We document the damage; approvals depend on your policy — no guaranteed outcomes.' },
-  { q: 'Need Hiram help?', a: 'Start at [roof repair in Hiram](/roof-repair-hiram/) or [roof replacement in Hiram](/roof-replacement-hiram/) — same Dallas-based crew. Call (470) 236-1410.' },
-  { q: 'Looking for a Dallas roofing contractor?', a: 'Start with the service you need — repair, replacement, or storm — or our [Dallas roofing company hub](/dallas-ga-roofing/). Or call (470) 236-1410 / use https://iroofercontractors.com/contact/.' },
-  { q: 'How long does a full replacement take?', a: 'It depends on the size and pitch of the roof, the number of layers coming off, decking repairs and weather. We give you a realistic schedule in writing before we start.' },
-  { q: 'Do I need to be home during the work?', a: 'Nope. Everything happens outside. We’ll text photos at each milestone and walk through whenever you’re free. Magnet sweep included on tear-offs.' },
+  { q: 'Do you do roof repair in Dallas, GA?', a: 'Yes. Leaks, loose flashing, pipe boots, and storm wear are everyday work for us. Start at [roof repair in Dallas, GA](/roof-repair-dallas-ga/). Not sure what you need? Book a [free roof check](/free-roof-check/).' },
+  { q: 'Do you replace roofs in Dallas, GA?', a: 'Yes. See [roof replacement in Dallas, GA](/roof-replacement-dallas-ga/). It shows what we do, how it works, and what comes next.' },
+  { q: 'Hail or wind after a Dallas storm?', a: 'See [storm damage roof repair in Dallas](/storm-damage-roof-repair-dallas-ga/) and [roof insurance claims help](/services/roof-insurance-claims/). We take photos of the damage. What insurance approves depends on your policy, so we can’t promise a result.' },
+  { q: 'Need Hiram help?', a: 'Go to [roof repair in Hiram](/roof-repair-hiram/) or [roof replacement in Hiram](/roof-replacement-hiram/). It’s the same crew from Dallas. Call (470) 236-1410.' },
+  { q: 'Looking for a Dallas roofing contractor?', a: 'Pick the service you need: repair, new roof, or storm. Or see all of it on our [Dallas roofing company hub](/dallas-ga-roofing/). You can also call (470) 236-1410 or use https://iroofercontractors.com/contact/.' },
+  { q: 'How long does a full replacement take?', a: 'It depends on the size and steepness of the roof, how many old layers come off, wood repairs, and weather. We give you a real schedule in writing before we start.' },
+  { q: 'Do I need to be home during the work?', a: 'No. All the work is outside. We text you photos as we go and walk the job with you when you’re free. We sweep for nails with a magnet on every new roof.' },
 ];
 
 export default function HomePage() {
@@ -76,9 +77,9 @@ export default function HomePage() {
           <div className="hero-copy">
             <span className="eyebrow">Dallas, GA · Atlanta Metro</span>
             <h1>Dallas GA Roof Repair, Replacement &amp; Storm Damage <br /><span className="stroke">— done local.</span></h1>
-            <p className="lead">Family-owned in Dallas since 2019. Whether you need a roof leak repair this week, a full roof replacement, or help after hail or wind — Cristian Mendez’s crew walks the roof, puts it in writing, and stands behind the work. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system fits.</p>
+            <p className="lead">Family-owned in Dallas since 2019. Need a leak fixed this week? A new roof? Help after hail or wind? Cristian Mendez’s crew checks your roof, puts the plan in writing, and stands behind the work. We install Owens Corning shingles as an Owens Corning Contractor Rewards member.</p>
             <div className="hero-cta">
-              <a className="btn btn-solid" href="/contact/">Get a Free Roof Inspection <span className="arr">→</span></a>
+              <a className="btn btn-solid" href="/free-roof-check/">Get a Free Roof Check <span className="arr">→</span></a>
               <a className="btn btn-ghost" href={`tel:${brand.phone}`}>Call or text {brand.phone}</a>
             </div>
             <div className="stats">
@@ -109,7 +110,7 @@ export default function HomePage() {
       <section className="sec-light" style={{ padding: '28px 0 8px' }} aria-label="Start with the service you need">
         <div className="wrap">
           <p style={{ color: '#52606b', marginBottom: 14, maxWidth: 720 }}>
-            Looking for a Dallas roofing contractor? Start with the service you need — then call (470) 236-1410 or use{' '}
+            Looking for a roofer in Dallas? Pick the service you need. Then call (470) 236-1410 or use{' '}
             <a href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>https://iroofercontractors.com/contact/</a>.
           </p>
           <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '.55rem 1.2rem', listStyle: 'none', padding: 0, margin: 0 }}>
@@ -119,6 +120,7 @@ export default function HomePage() {
               </li>
             ))}
           </ul>
+          <FreeRoofCheckCta style={{ margin: '24px 0 16px' }} />
         </div>
       </section>
 
@@ -144,7 +146,7 @@ export default function HomePage() {
             <div className="svc-intro rv">
               <span className="eyebrow dark">What we do</span>
               <h2>Every job on your roof, one local crew.</h2>
-              <p>From a single leak to a full tear-off after hail — same local team. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system fits. Tap a service to see what’s included.</p>
+              <p>From one leak to a whole new roof after hail, the same local team does it. We install Owens Corning shingles as an Owens Corning Contractor Rewards member. Tap a service to see what you get.</p>
               <a className="btn btn-ink" href="/contact/">Start a project <span className="arr">→</span></a>
             </div>
 
@@ -196,7 +198,7 @@ export default function HomePage() {
           <div className="rv">
             <span className="pulse"><span className="dot" /> Storm response</span>
             <h2>After hail or a storm. <br /><span className="ac">Don’t climb.</span></h2>
-            <p>Photo from the ground. Call (470) 236-1410. We document, tarp when needed, and explain repair vs replacement — including hail bruising you often can’t see from the driveway.</p>
+            <p>Take photos from the ground. Call (470) 236-1410. We take photos up top, tarp if needed, and tell you if it’s a repair or a new roof. Hail can leave marks you can’t see from the driveway.</p>
             <div className="cta">
               <a className="bigphone" href={`tel:${brand.phone}`}>{brand.phone}</a>
               <a className="btn btn-solid" href="/storm-damage-roof-repair-dallas-ga/">Storm &amp; hail damage roof repair <span className="arr">→</span></a>
@@ -205,9 +207,9 @@ export default function HomePage() {
           <div className="steps rv">
             <h2>After a storm — do this</h2>
             <ol>
-              <li>Don’t climb up. Snap ground-level photos of debris, dents on gutters and any interior stains.</li>
-              <li>Call us for a free damage inspection and a temporary tarp if you’re leaking.</li>
-              <li>We write the scope, can meet your adjuster, and you sign off before a single shingle moves.</li>
+              <li>Don’t climb up. Take photos from the ground of debris, dents in gutters, and any stains inside.</li>
+              <li>Call us for a free damage check, and a tarp if you’re leaking.</li>
+              <li>We write up the plan and meet your adjuster. Nothing starts until you say yes.</li>
             </ol>
           </div>
         </div>
@@ -220,7 +222,7 @@ export default function HomePage() {
           <div className="sec-head rv">
             <span className="eyebrow dark">Proof, not promises</span>
             <h2>Drag to see the <span className="ac">difference.</span></h2>
-            <p>A storm-battered roof on a Dallas two-story, fully torn off and rebuilt. Slide the handle — then scroll the recent ridgelines on the right.</p>
+            <p>A storm-hit roof on a two-story home in Dallas. We tore it all off and rebuilt it. Slide the handle to see the change, then scroll the recent roofs on the right.</p>
           </div>
 
           <div className="ba-wrap">
@@ -254,13 +256,13 @@ export default function HomePage() {
           <div className="sec-head rv">
             <span className="eyebrow">How it works</span>
             <h2>From first call to final nail.</h2>
-            <p>Four steps, no surprises, no pressure. You’ll know exactly what’s happening on your roof and why.</p>
+            <p>Four steps. No surprises, no pressure. You’ll know what we’re doing on your roof and why.</p>
           </div>
           <div className="steps-grid">
-            <div className="step rv"><div className="n">01</div><h3>Inspect &amp; document</h3><p>Free on-roof inspection with photos and a plain-English written report.</p><span className="arrow" aria-hidden="true">→</span></div>
-            <div className="step rv"><div className="n">02</div><h3>Estimate &amp; insurance</h3><p>A written estimate, or help documenting damage for your insurance claim. We can meet your adjuster.</p><span className="arrow" aria-hidden="true">→</span></div>
-            <div className="step rv"><div className="n">03</div><h3>Install &amp; clean up</h3><p>Crew shows up when we say. Magnet sweep, dumpster hauled, yard left clean.</p><span className="arrow" aria-hidden="true">→</span></div>
-            <div className="step rv"><div className="n">04</div><h3>Walkthrough + warranty</h3><p>We walk the roof with you, register the manufacturer warranty, and stand behind the work.</p></div>
+            <div className="step rv"><div className="n">01</div><h3>Inspect &amp; document</h3><p>Free roof check with photos and a short written report in plain words.</p><span className="arrow" aria-hidden="true">→</span></div>
+            <div className="step rv"><div className="n">02</div><h3>Estimate &amp; insurance</h3><p>A written price, or help with photos for your insurance claim. We can meet your adjuster.</p><span className="arrow" aria-hidden="true">→</span></div>
+            <div className="step rv"><div className="n">03</div><h3>Install &amp; clean up</h3><p>The crew shows up when we say. We sweep for nails, haul the dumpster, and leave your lawn clean.</p><span className="arrow" aria-hidden="true">→</span></div>
+            <div className="step rv"><div className="n">04</div><h3>Walkthrough + warranty</h3><p>We walk the job with you and sign you up for the shingle warranty. We stand behind our work.</p></div>
           </div>
         </div>
       </section>
@@ -288,7 +290,7 @@ export default function HomePage() {
           <div className="sec-head rv">
             <span className="eyebrow dark">From the roof</span>
             <h2>Roof tips &amp; storm advice.</h2>
-            <p>Checklists, insurance-claim walkthroughs, and maintenance advice written by a local Dallas, GA roofer — not a content farm.</p>
+            <p>Checklists, insurance claim tips, and roof care advice. Written by a local roofer in Dallas, GA.</p>
           </div>
           <div className="blog-grid rv">
             {posts.slice(0, 3).map((p) => (
@@ -325,7 +327,7 @@ export default function HomePage() {
             <div className="faq-side rv">
               <span className="eyebrow dark">Good to know</span>
               <h2>Questions we hear every week.</h2>
-              <p>Still unsure about something? A real person — not a call center — will answer the phone.</p>
+              <p>Still not sure? Call us. A real person answers, not a call center.</p>
               <div className="faq-call">
                 <div className="lbl">Talk to a roofer</div>
                 <a href={`tel:${brand.phone}`}>{brand.phone}</a>
@@ -350,7 +352,7 @@ export default function HomePage() {
           <div className="rv">
             <span className="eyebrow">Let’s talk</span>
             <h2>Talk to a <span className="ac">real roofer.</span></h2>
-            <p className="lead">Tell us what’s going on and we’ll get back to you. Free inspections, free estimates, zero pressure.</p>
+            <p className="lead">Tell us what’s going on and we’ll get back to you. Free roof checks, free quotes, no pressure.</p>
             <div className="cinfo">
               <div className="row">
                 <span className="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.5.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11 11 0 0 0 .56 3.5 1 1 0 0 1-.25 1Z" /></svg></span>

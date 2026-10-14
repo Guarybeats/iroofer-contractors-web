@@ -45,7 +45,7 @@ export const services = [
     webp: '/assets/service-repair.webp?v=4',
     imageAlt: 'Roof repair by iRoofer Contractors in Dallas, GA — leak, flashing, and shingle work',
     summary:
-      'From storm damage to worn flashing, we find the source and fix it right — so a small problem stays small.',
+      'From storm damage to worn flashing, we find where the water gets in and fix it, so a small problem stays small.',
     bullets: [
       'Emergency leak detection & tarping',
       'Shingle, flashing & vent repairs',
@@ -63,7 +63,7 @@ export const services = [
     webp: '/assets/service-replacement.webp?v=3',
     imageAlt: 'Full roof replacement with architectural shingles on a Dallas, GA home',
     summary:
-      'Full tear-off and replacement with architectural asphalt shingles installed by an Owens Corning Contractor Rewards member, clean and built to last. Backed by the manufacturer’s standard warranty on the shingles.',
+      'We take off the old roof and put on a new one, installed by an Owens Corning Contractor Rewards member. Clean and built to last, with the shingle maker’s standard warranty.',
     bullets: [
       'Complete tear-off & deck inspection',
       'Architectural & premium shingle options',
@@ -95,7 +95,7 @@ export const services = [
     webp: '/assets/service-gutters-main.webp?v=2',
     imageAlt: 'Seamless gutter installation on a Dallas, GA home by iRoofer Contractors',
     summary:
-      'Clogged or failing gutters are the #1 cause of preventable roof and foundation damage in Dallas, GA. We repair, realign, and replace gutters and downspouts so water flows away from your home.',
+      'Clogged or broken gutters can send water under your shingles and against your foundation. We fix, re-hang, and replace gutters and downspouts so water flows away from your home.',
     bullets: [
       'Gutter cleaning, repair & realignment',
       'Full seamless gutter replacement',
