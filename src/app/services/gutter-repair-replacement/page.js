@@ -5,6 +5,7 @@ import RelatedGuides from '@/components/RelatedGuides';
 import PriceDisclaimer from '@/components/PriceDisclaimer';
 import { services, brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
+import { renderInline } from '@/components/InlineText';
 
 export const metadata = seo({
   title: 'Gutter Repair & Replacement | Dallas, GA Roofers',
@@ -117,18 +118,18 @@ export default function GutterPage() {
 
         {/* WHAT IT COSTS */}
         <div className="sec-head rv" style={{ marginTop: 64 }}>
-          <span className="eyebrow dark">Ballpark pricing</span>
+          <span className="eyebrow dark">Pricing</span>
           <h2 style={{ fontSize: 'clamp(1.8rem,3.6vw,2.6rem)', fontWeight: 900 }}>What gutter work costs in Dallas, GA</h2>
-          <p style={{ color: '#52606b', marginTop: 12, maxWidth: 640 }}>Rough prices for Paulding and Cobb counties. Your exact price comes after a free check. No obligation.</p>
+          <p style={{ color: '#52606b', marginTop: 12, maxWidth: 640 }}>We don’t post prices online. Length, height, downspouts, the wood behind the gutters, and guard style all change the price. You get a written quote after a free check. No obligation.</p>
         </div>
         <PriceDisclaimer />
         <div className="cards" style={{ marginTop: 24 }}>
-          <div className="card"><div className="body"><h3>Gutter Cleaning</h3><p style={{ color: '#52606b' }}>We clean each run, flush it, clear clogs, and check for damage.</p><span className="more">$1.50–$3.00 per linear ft</span></div></div>
-          <div className="card"><div className="body"><h3>Repair & Realignment</h3><p style={{ color: '#52606b' }}>We re-hang sagging runs and re-seal leaky seams.</p><span className="more">$150–$400 per repair</span></div></div>
-          <div className="card"><div className="body"><h3>Seamless Replacement</h3><p style={{ color: '#52606b' }}>New seamless aluminum, cut to fit, with downspouts and hangers set right.</p><span className="more">$6–$9 per linear ft installed</span></div></div>
-          <div className="card"><div className="body"><h3>Leaf Guard / Gutter Covers</h3><p style={{ color: '#52606b' }}>Guards picked for your trees, put on new or old gutters.</p><span className="more">$4–$8 per linear ft</span></div></div>
-          <div className="card"><div className="body"><h3>Downspout Reroute</h3><p style={{ color: '#52606b' }}>We extend or move downspouts so water doesn’t pool by your foundation.</p><span className="more">$75–$200 per downspout</span></div></div>
-          <div className="card"><div className="body"><h3>Fascia Repair</h3><p style={{ color: '#52606b' }}>We replace rotten fascia before new gutters go up, so they hold tight.</p><span className="more">$6–$10 per linear ft</span></div></div>
+          <div className="card"><div className="body"><h3>Gutter Cleaning</h3><p style={{ color: '#52606b' }}>We clean each run, flush it, clear clogs, and check for damage.</p></div></div>
+          <div className="card"><div className="body"><h3>Repair & Realignment</h3><p style={{ color: '#52606b' }}>We re-hang sagging runs and re-seal leaky seams.</p></div></div>
+          <div className="card"><div className="body"><h3>Seamless Replacement</h3><p style={{ color: '#52606b' }}>New seamless aluminum, cut to fit, with downspouts and hangers set right.</p></div></div>
+          <div className="card"><div className="body"><h3>Leaf Guard / Gutter Covers</h3><p style={{ color: '#52606b' }}>Guards picked for your trees, put on new or old gutters.</p></div></div>
+          <div className="card"><div className="body"><h3>Downspout Reroute</h3><p style={{ color: '#52606b' }}>We extend or move downspouts so water doesn’t pool by your foundation.</p></div></div>
+          <div className="card"><div className="body"><h3>Fascia Repair</h3><p style={{ color: '#52606b' }}>We replace rotten fascia before new gutters go up, so they hold tight.</p></div></div>
         </div>
 
         {/* FAQ */}
@@ -148,7 +149,7 @@ export default function GutterPage() {
             {faqs.map((f, i) => (
               <div className={`faq-item${i === 0 ? ' open' : ''}`} key={i}>
                 <button className="faq-q" aria-expanded={i === 0 ? 'true' : 'false'}>{f.q}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{f.a}</p></div></div>
+                <div className="faq-a"><div><p>{renderInline(f.a)}</p></div></div>
               </div>
             ))}
           </div>

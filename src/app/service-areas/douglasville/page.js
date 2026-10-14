@@ -6,7 +6,7 @@ const city = getCity('douglasville');
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
-  title: 'Douglasville GA Roof Repair, Replacement & Storm Damage | iRoofer',
+  title: 'Douglasville GA Roof Repair, Replacement & Storm | iRoofer',
   description:
     'Douglasville roof repair, replacement, and storm documentation from iRoofer Contractors in Dallas, GA. Call (470) 236-1410 or request an inspection online.',
   alternates: { canonical: `${brand.url}/service-areas/douglasville/` },
@@ -16,7 +16,7 @@ export const metadata = {
     locale: 'en_US',
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: `${brand.url}/service-areas/douglasville/`,
-    title: 'Douglasville GA Roof Repair, Replacement & Storm Damage | iRoofer',
+    title: 'Douglasville GA Roof Repair, Replacement & Storm | iRoofer',
     description:
       'Douglasville storm damage documentation, roof repair and replacement from a family-owned crew based in Dallas, GA.',
   },
@@ -32,7 +32,7 @@ const sections = [
     h2: 'Storm damage roof repair in Douglasville',
     paras: [
       'Cells that track across Douglas County leave the same patterns we see in Paulding and Cobb: partial uplift, ridge issues, and debris strikes that look minor until the next rain. We inspect free, tarp when the roof is open, and document for insurance when a claim makes sense.',
-      'Deep process: /storm-damage-roof-repair-douglasville/, /storm-damage-roof-repair-dallas-ga/, /services/roof-insurance-claims/, and /emergency-roof-repair-dallas-ga/. We do not invent storm approval rates — we document honestly and tell you when a claim will not hold.',
+      '[Storm damage roof repair in Douglasville](/storm-damage-roof-repair-douglasville/) has its own page with our full storm, emergency tarping and claim process. Dallas storm work, insurance claims help and emergency roof repair are linked below. We document honestly and tell you when a claim will not hold.',
     ],
   },
   {
@@ -79,13 +79,13 @@ const faq = [
     a: '(470) 236-1410 or https://iroofercontractors.com/contact/',
   },
   {
-    q: 'Do you invent storm approval rates in marketing?',
-    a: 'No — we document honestly and tell you when a claim will not hold.',
+    q: 'Can you promise my storm claim will be approved?',
+    a: 'No — your policy and your insurer decide that. We document honestly and tell you when a claim may not hold.',
   },
 ];
 
 const relatedLinks = [
-  { href: '/storm-damage-roof-repair-douglasville/', label: 'Storm damage roof repair Douglasville' },
+  { href: '/storm-damage-roof-repair-douglasville/', label: 'Storm damage roof repair in Douglasville, GA' },
   { href: '/roof-repair-douglasville/', label: 'Roof repair in Douglasville' },
   { href: '/roof-replacement-douglasville/', label: 'Roof replacement in Douglasville' },
   { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage Dallas GA' },

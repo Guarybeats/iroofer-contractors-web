@@ -4,15 +4,16 @@ import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
 import { brand, cities, cityPath } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
+import { renderInline } from '@/components/InlineText';
 
 export const metadata = seo({
-  title: 'Dallas GA Roofing Contractor | Repair, Replace & Storm | iRoofer',
+  title: 'Dallas, GA Roofing Contractor: Repair, Replace & Storm',
   description:
-    'Dallas, GA roofing from the local shop at 152 Freedom Dr. Repair, replacement, storm damage, and insurance help. Call (470) 236-1410 or request a free inspection online.',
+    'Dallas, GA roofing from the local shop at 152 Freedom Dr. Repair, replacement, storm damage and insurance help. Free inspection: (470) 236-1410.',
   path: '/dallas-ga-roofing',
 });
 
-// Qualitative FAQs — dollar ranges from prior live FAQ softened/cut (VERIFY-OR-CUT).
+// Qualitative FAQs — no published prices.
 const faqs = [
   {
     q: 'Are you based in Dallas, or just advertising here?',
@@ -20,7 +21,7 @@ const faqs = [
   },
   {
     q: 'How is this page different from your repair and replacement pages?',
-    a: 'This page covers everything we do in Dallas. The repair and replacement pages go deeper on what we do, how it works, and what comes next.',
+    a: 'This page covers everything we do in Dallas. The pages for [roof repair in Dallas, GA](/roof-repair-dallas-ga/), [roof replacement in Dallas, GA](/roof-replacement-dallas-ga/) and [storm damage roof repair in Dallas](/storm-damage-roof-repair-dallas-ga/) go deeper on what we do, how it works, and what comes next.',
   },
   {
     q: 'How do I get a quote?',
@@ -33,7 +34,7 @@ const faqs = [
   },
   {
     q: 'Do you publish prices here?',
-    a: 'No. For a rough planning range, try our estimator. It is not a quote. Real prices come after we see your roof.',
+    a: 'No. Every roof is different. You get a real price in writing after a free roof check. Ask for one at https://iroofercontractors.com/contact/ or call (470) 236-1410.',
   },
   {
     q: 'Repair or replace?',
@@ -68,8 +69,8 @@ export default function DallasGaRoofingPage() {
               Dallas, GA Roofing — Repair, Replacement &amp; Storm Damage
             </h1>
             <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 720 }}>
-              This is home base. iRoofer Contractors is family-owned in Dallas, GA since 2019 — Cristian Mendez and crew at 152 Freedom Dr, 30157. If a broad “roofer” search dropped you here, skip the vanity label and go to what you actually need: repair, replacement, or storm documentation.
-              Free photo inspections and a real person on the phone at (470) 236-1410. Need a leak fixed today? Start on the Roof repair Dallas GA page.
+              This is home base. iRoofer Contractors is family-owned in Dallas, GA since 2019 — Cristian Mendez and crew at 152 Freedom Dr, 30157. Pick what you need below: repair, replacement, or storm documentation.
+              Free photo inspections and a real person on the phone at (470) 236-1410. Need a leak fixed? Start with roof repair in Dallas, GA.
             </p>
             <div className="cta" style={{ marginTop: 24 }}>
               <a className="bigphone" href="tel:(470) 236-1410" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }}>
@@ -80,7 +81,7 @@ export default function DallasGaRoofingPage() {
               </Link>
             </div>
             <p style={{ marginTop: 16 }}>
-              <Link href="/roof-repair-dallas-ga/" className="chip">Roof repair Dallas GA (money page) →</Link>
+              <Link href="/roof-repair-dallas-ga/" className="chip">Roof repair in Dallas, GA →</Link>
             </p>
           </div>
         </div>
@@ -96,11 +97,11 @@ export default function DallasGaRoofingPage() {
             </p>
           </div>
           <ul style={{ color: '#52606b', lineHeight: 1.9, maxWidth: 720 }}>
-            <li>Leaks or stained ceilings → roof repair</li>
-            <li>Thinking about a new roof → roof replacement</li>
-            <li>After a storm → storm, emergency, or claims</li>
-            <li>Gutters spilling over → gutters</li>
-            <li>Want to know who we are → about us</li>
+            <li>Leaks or stained ceilings → <Link href="/roof-repair-dallas-ga/">roof repair in Dallas, GA</Link></li>
+            <li>Thinking about a new roof → <Link href="/roof-replacement-dallas-ga/">roof replacement in Dallas, GA</Link></li>
+            <li>After a storm → <Link href="/storm-damage-roof-repair-dallas-ga/">storm damage</Link>, <Link href="/emergency-roof-repair-dallas-ga/">emergency repair</Link> or <Link href="/services/roof-insurance-claims/">insurance claims help</Link></li>
+            <li>Gutters spilling over → <Link href="/gutter-repair-replacement-dallas-ga/">gutter repair &amp; replacement</Link></li>
+            <li>Want to know who we are → <Link href="/about/">about iRoofer</Link></li>
           </ul>
 
           <div className="sec-head rv" style={{ marginTop: 48 }}>
@@ -227,7 +228,7 @@ export default function DallasGaRoofingPage() {
       <section className="sec-pad" style={{ background: '#fff', paddingTop: 0 }}>
         <div className="wrap">
           <div className="sec-head rv">
-            <span className="eyebrow dark">Internal links</span>
+            <span className="eyebrow dark">Dallas pages</span>
             <h2>Jump to the Dallas page you need</h2>
           </div>
           <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '.6rem 1.4rem', listStyle: 'none', padding: 0 }}>
@@ -253,7 +254,7 @@ export default function DallasGaRoofingPage() {
             {faqs.map((f, i) => (
               <div className={faqItem(i === 0)} key={f.q}>
                 <button className="faq-q" aria-expanded={i === 0}>{f.q}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{f.a}</p></div></div>
+                <div className="faq-a"><div><p>{renderInline(f.a)}</p></div></div>
               </div>
             ))}
           </div>

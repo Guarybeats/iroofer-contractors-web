@@ -2,9 +2,10 @@ import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import Link from 'next/link';
 import { FaqSchema } from '@/components/LocalSeo';
+import { renderInline } from '@/components/InlineText';
 
 export const metadata = seo({
-  title: 'About iRoofer Contractors | Family-Owned Dallas GA Roofing Since 2019',
+  title: 'About iRoofer | Family-Owned Dallas GA Roofing Since 2019',
   description:
     'Meet Cristian Mendez and the iRoofer crew — family-owned in Dallas, GA since 2019. Call (470) 236-1410 or visit our contact page.',
   path: '/about',
@@ -21,7 +22,7 @@ const values = [
 const credentials = [
   { t: 'Owens Corning Contractor Rewards Member', d: 'We install Owens Corning shingles the way Owens Corning says to.' },
   { t: 'Family-owned since 2019', d: 'Repairs, new roofs, storm claims, and new homes, for homeowners and builders west of Atlanta.' },
-  { t: 'Strong Google reviews', d: 'From neighbors in Dallas, Hiram, Douglasville, and nearby towns. Read them yourself on Google.' },
+  { t: 'Google reviews you can read', d: 'From neighbors in Dallas, Hiram, Douglasville, and nearby towns. Read them yourself on Google.' },
 ];
 
 const process = [
@@ -177,7 +178,7 @@ export default function AboutPage() {
             {faqs.map((f, i) => (
               <div key={f.q} className={'faq-item' + (i === 0 ? ' open' : '')}>
                 <button className="faq-q" aria-expanded={i === 0}>{f.q}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{f.a}</p></div></div>
+                <div className="faq-a"><div><p>{renderInline(f.a)}</p></div></div>
               </div>
             ))}
           </div>

@@ -5,12 +5,13 @@ import RelatedGuides from '@/components/RelatedGuides';
 import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
+import { renderInline } from '@/components/InlineText';
 
 function faqItem(open){ return 'faq-item' + (open ? ' open' : ''); }
 
 export const metadata = seo({
-  title: 'Roof Insurance Claims Help Dallas GA | Storm Documentation | iRoofer',
-  description: 'Roof insurance claims help in Dallas, GA — photo documentation, written scopes, and adjuster meetings when scheduled. Call (470) 236-1410. No guaranteed claim outcomes.',
+  title: 'Roof Insurance Claims Help in Dallas, GA | iRoofer',
+  description: 'Roof insurance claims help in Dallas, GA — photo documentation, written scopes, and adjuster meetings. Call (470) 236-1410. No guaranteed claim outcomes.',
   path: '/services/roof-insurance-claims',
 });
 
@@ -191,7 +192,7 @@ export default function Page() {
             {faqs.map((f, i) => (
               <div key={f.q} className={faqItem(i === 0)}>
                 <button className="faq-q" aria-expanded={i === 0}>{f.q}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{f.a}</p></div></div>
+                <div className="faq-a"><div><p>{renderInline(f.a)}</p></div></div>
               </div>
             ))}
           </div>

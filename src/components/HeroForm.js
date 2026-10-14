@@ -81,7 +81,7 @@ export default function HeroForm({ source = "hero" }) {
     <form ref={formRef} className="hform" id="hform" onSubmit={onSubmit}>
       <div className="bar" />
       <div className="pad">
-        <h2>Free estimate in 60 seconds</h2>
+        <h2>Request a free estimate</h2>
         <p className="sub">No spam. A real roofer calls you back.</p>
         <div className="field">
           <label htmlFor="hn">Your name</label>

@@ -31,12 +31,12 @@ const sections = [
   {
     h2: 'Drainage matters more here than almost anywhere we work',
     paras: [
-      'Austell has a long history with high water in the creek bottoms, and while a roofer cannot change a floodplain, we can make sure your roof is not adding to the problem. Overflowing or back-pitched gutters dump hundreds of gallons at the foundation during a single Georgia thunderstorm, right where you least want it on a low-lying lot.',
+      'Austell has a long history with high water in the creek bottoms, and while a roofer cannot change a floodplain, we can make sure your roof is not adding to the problem. Overflowing or back-pitched gutters send a lot of water to the foundation during a single Georgia thunderstorm, right where you least want it on a low-lying lot.',
       'On every Austell inspection we check gutter pitch, downspout capacity, and where the water actually discharges — not just whether the shingles are intact. Correcting drainage is usually the cheapest part of the job and the part that protects the most house.',
     ],
   },
   {
-    h2: 'Emergency tarping and same-week repairs',
+    h2: 'Emergency tarping and prompt repairs',
     paras: [
       'When a storm opens a roof, the priority is stopping water before the next band arrives — drywall, insulation, and framing all get expensive fast. We tarp properly, fastened and lapped to shed water rather than draped and weighted, and we photograph the damage before it is covered so your claim is documented before the repair changes the evidence.',
       'Once the roof is dry we come back and do the permanent repair with a clear scope, so you are not living under a blue tarp for a month waiting on a contractor who has moved on to the next neighborhood.',

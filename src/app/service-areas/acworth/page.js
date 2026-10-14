@@ -6,7 +6,7 @@ const city = getCity('acworth');
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
-  title: 'Acworth GA Roof Repair, Replacement & Emergency Help | iRoofer',
+  title: 'Acworth GA Roof Repair, Replacement & Emergency | iRoofer',
   description:
     'Acworth roof repair, replacement, storm damage, and emergency tarping from iRoofer in Dallas, GA. Call (470) 236-1410 or contact us online.',
   alternates: { canonical: `${brand.url}/service-areas/acworth/` },
@@ -16,14 +16,14 @@ export const metadata = {
     locale: 'en_US',
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: `${brand.url}/service-areas/acworth/`,
-    title: 'Acworth GA Roof Repair, Replacement & Emergency Help | iRoofer',
+    title: 'Acworth GA Roof Repair, Replacement & Emergency | iRoofer',
     description:
       'Acworth roof repair, replacement, storm damage, and emergency tarping from iRoofer in Dallas, GA. Call (470) 236-1410.',
   },
 };
 
 const intro = [
-  'Acworth searches often mix “roof repair near me” with emergency intent — active leaks, overnight wind, a tree limb. iRoofer Contractors answers from Dallas, GA (152 Freedom Dr): family-owned since 2019. We tarp when the roof is open, then schedule the permanent fix.',
+  'Acworth roof calls are often urgent — active leaks, overnight wind, a tree limb. iRoofer Contractors answers from Dallas, GA (152 Freedom Dr): family-owned since 2019. We tarp when the roof is open, then schedule the permanent fix.',
   'Ready to talk about your roof? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
 ];
 
@@ -31,8 +31,8 @@ const sections = [
   {
     h2: 'Emergency and urgent leaks in Acworth',
     paras: [
-      'If water is coming in now, call (470) 236-1410. Priority is stop the water — tarping and temporary protection — then a dry-weather inspection for the permanent repair. Process page: /emergency-roof-repair-dallas-ga/.',
-      'We do not invent minute-by-minute response guarantees in copy. We do prioritize open roofs and active leaks, and we will tell you honestly what we can do the same day.',
+      'If water is coming in now, call (470) 236-1410. Priority is stop the water — tarping and temporary protection — then a dry-weather inspection for the permanent repair. More: [emergency roof repair](/emergency-roof-repair-dallas-ga/).',
+      'We prioritize open roofs and active leaks, and we will tell you honestly what we can do the same day.',
     ],
   },
   {

@@ -86,7 +86,7 @@ const faq = [
   },
   {
     q: 'How long will my roof replacement take?',
-    a: 'Most Alpharetta homes are one to two days. Steeper pitches, heavy valley footage, or deck repairs found at tear-off can extend it. You get the expected window at the estimate and a same-day call if anything under the shingles changes it.',
+    a: 'It depends on size, pitch, valley footage and any deck repairs found at tear-off. You get the expected window at the estimate, and a call if anything under the shingles changes it.',
   },
 ];
 

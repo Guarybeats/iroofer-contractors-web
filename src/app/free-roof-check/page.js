@@ -6,7 +6,7 @@ import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 
 export const metadata = seo({
-  title: 'Free Roof Check in Dallas, GA | No Pressure | iRoofer Contractors',
+  title: 'Free Roof Check in Dallas, GA | iRoofer Contractors',
   description:
     'Book a free, no-pressure roof check in Dallas, GA and nearby towns. We take photos and give you a short written summary. Call (470) 236-1410.',
   path: '/free-roof-check',
@@ -25,7 +25,7 @@ const faqs = [
   { q: 'Is the roof check really free?', a: 'Yes. The roof check is free for homes in our service area. There is no cost and no pressure to hire us.' },
   { q: 'What do I get?', a: 'Photos of your roof and a short written summary. It says what we found and what we suggest: repair, new roof, or nothing for now.' },
   { q: 'Do I need to be home?', a: 'It helps if you are, so we can look at ceilings or the attic. If you can’t be there, we can check the outside and send you the photos.' },
-  { q: 'Will you tell me the price?', a: 'If work is needed, we give you a written price after the check. For a rough idea first, try our estimator. It is for planning only, not a quote.' },
+  { q: 'Will you tell me the price?', a: 'If work is needed, we give you a written price after the check. We don’t post prices online, because every roof is different.' },
   { q: 'What towns do you cover?', a: 'Dallas, GA and nearby towns like Hiram, Douglasville, Powder Springs, Marietta, Acworth, Kennesaw, and Austell.' },
 ];
 
@@ -102,14 +102,14 @@ export default function FreeRoofCheckPage() {
           </div>
 
           <div className="rv" id="price-range" style={{ marginTop: 56, maxWidth: 780, scrollMarginTop: 90 }}>
-            <span className="eyebrow dark">Planning tool</span>
-            <h2 style={{ fontSize: 'clamp(1.8rem,3.6vw,2.6rem)', fontWeight: 900 }}>See your price range in 60 seconds</h2>
+            <span className="eyebrow dark">Free estimate</span>
+            <h2 style={{ fontSize: 'clamp(1.8rem,3.6vw,2.6rem)', fontWeight: 900 }}>Want a written price?</h2>
             <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
-              Want a rough idea first? Our estimator asks about the size of your roof, how steep it is, and the shingle you want.
-              It shows a planning range. It is not a quote. Your real price comes in writing after the free roof check.
+              We don’t post prices online. Every roof is different. Send a free estimate request and we come out,
+              look at the roof, measure it, and give you a real price in writing. No cost and no pressure.
             </p>
             <p style={{ marginTop: 16 }}>
-              <Link className="btn btn-ink" href="/estimator/">Open the estimator <span className="arr">→</span></Link>
+              <Link className="btn btn-ink" href="/estimator/">Request a free estimate <span className="arr">→</span></Link>
             </p>
           </div>
 

@@ -4,9 +4,10 @@ import { brand } from '@/lib/brand';
 import ReviewButton from '@/components/ReviewButton';
 import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
+import { renderInline } from '@/components/InlineText';
 
 export const metadata = seo({
-  title: 'Contact iRoofer Contractors | Dallas, GA Roofing Quotes & Inspections',
+  title: 'Contact iRoofer | Dallas, GA Roofing Quotes & Inspections',
   description:
     'Talk to a real Dallas GA roofer — call (470) 236-1410 or use the form. Free inspections, clear estimates, zero pressure. Family-owned since 2019.',
   path: '/contact',
@@ -28,7 +29,7 @@ const faqs = [
 
   {
     q: 'How fast do you reply?',
-    a: 'Active leaks come first. For other quotes, we get back to you quickly during business hours.',
+    a: 'Active leaks come first. For other quotes, we get back to you during business hours.',
   },
   {
     q: 'Do I need to be home for the inspection?',
@@ -53,7 +54,7 @@ export default function ContactPage() {
             <span className="eyebrow">Let&apos;s talk</span>
             <h1>Contact iRoofer Contractors</h1>
             <p className="lead">
-              Tell us what&apos;s going on with your roof and we&apos;ll get back to you fast.
+              Tell us what&apos;s going on with your roof and we&apos;ll get back to you during business hours.
               Free inspections, free estimates, zero pressure. You&apos;re reaching iRoofer Contractors in Dallas, GA —
               owner {brand.owner}&apos;s crew, not a national call center.
             </p>
@@ -192,7 +193,7 @@ export default function ContactPage() {
             {faqs.map((f, i) => (
               <div key={f.q} className={'faq-item' + (i === 0 ? ' open' : '')}>
                 <button className="faq-q" aria-expanded={i === 0}>{f.q}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{f.a}</p></div></div>
+                <div className="faq-a"><div><p>{renderInline(f.a)}</p></div></div>
               </div>
             ))}
           </div>

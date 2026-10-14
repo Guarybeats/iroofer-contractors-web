@@ -4,11 +4,12 @@ import { seo } from '@/lib/seo';
 import Pic from '@/components/Pic';
 import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
 import { FaqSchema } from '@/components/LocalSeo';
+import { renderInline } from '@/components/InlineText';
 
 export const metadata = seo({
-  title: 'Roofing Services in Dallas, GA | Repair, Replace, Storm & More | iRoofer',
+  title: 'Roofing Services in Dallas, GA: Repair, Replace & Storm',
   description:
-    'Roofing services for your home in Dallas GA — repair, replacement, storm, claims, gutters, new construction, emergency. Local crew since 2019. (470) 236-1410',
+    'Roofing services for your home in Dallas GA — repair, replacement, storm, claims, gutters, new construction, emergency. Local since 2019. (470) 236-1410',
   path: '/services',
 });
 
@@ -211,7 +212,7 @@ export default function ServicesPage() {
             {faqs.map((f, i) => (
               <div key={f.q} className={'faq-item' + (i === 0 ? ' open' : '')}>
                 <button className="faq-q" aria-expanded={i === 0}>{f.q}<span className="pm" aria-hidden="true" /></button>
-                <div className="faq-a"><div><p>{f.a}</p></div></div>
+                <div className="faq-a"><div><p>{renderInline(f.a)}</p></div></div>
               </div>
             ))}
           </div>

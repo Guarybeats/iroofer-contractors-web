@@ -77,14 +77,12 @@ export default function RootLayout({ children }) {
         <div className="topbar" aria-hidden="true">
           <div className="track">
             <div className="set">
-              <div className="item"><b>{brand.rating}</b> {brand.reviewCount} Reviews</div>
               <div className="item">Owens Corning Contractor Rewards Member</div>
               <div className="item">Emergency / Storm Response</div>
               <div className="item">Free No-Pressure Roof Inspections</div>
               <div className="item">Family-Owned &amp; Operated Since 2019</div>
             </div>
             <div className="set" aria-hidden="true">
-              <div className="item"><b>{brand.rating}</b> {brand.reviewCount} Reviews</div>
               <div className="item">Owens Corning Contractor Rewards Member</div>
               <div className="item">Emergency / Storm Response</div>
               <div className="item">Free No-Pressure Roof Inspections</div>

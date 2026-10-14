@@ -21,7 +21,7 @@ export const metadata = {
 
 const post = {
   slug: 'emergency-roof-response-time-dallas',
-  title: 'Emergency Roof Response: How Long It Takes & When to Expect a Crew',
+  title: 'Emergency Roof Response: What Affects How Fast a Crew Arrives',
   date: 'May 2026',
   readTime: '5 min read',
   category: 'Emergency',
@@ -45,136 +45,42 @@ export default function BlogPostPage() {
           </div>
 
           <div className="post-body rv">
-            <p>We get it — after a Georgia storm rolls through Dallas, you’re standing in your backyard looking at a hole in your roof thinking, “I need someone here now.” But how now? How soon can a roofer actually arrive, and what affects the timeline?</p>
+            <p>After a Georgia storm rolls through Dallas and you’re looking at damage on your roof, the first question is how soon someone can get there. The honest answer: it depends on the weather, how many calls are already in line, and where you are. Here’s what affects the timeline and how to help us get to you faster.</p>
 
-            <h2>iRoofer’s Emergency Response Targets</h2>
-            <p>Response speed depends on crew availability, storm volume, and where you are. Here’s what we typically aim for when a crew is free — these are on-site targets, not guaranteed averages:</p>
-            <div style={{ background: '#f8f9fa', padding: '16px', borderRadius: 6, margin: '16px 0' }}>
-              <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '.9rem' }}>
-                <thead>
-                  <tr style={{ borderBottom: '2px solid #e2e8f0' }}>
-                    <th align="left" style={{ padding: '6px 0' }}>Request Time</th>
-                    <th align="left" style={{ padding: '6px 0' }}>Typical first contact / dispatch target</th>
-                    <th align="left" style={{ padding: '6px 0' }}>Typical on-site window (when available)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '4px 0' }}>6 AM – 10 PM</td><td style={{ padding: '4px 0' }}>Often within the hour</td><td style={{ padding: '4px 0' }}>About 1–3 hours</td></tr>
-                  <tr style={{ borderBottom: '1px solid #eee' }}><td style={{ padding: '4px 0' }}>After hours / Sunday</td><td style={{ padding: '4px 0' }}>Not a guaranteed night crew — leave a message or call at open</td><td style={{ padding: '4px 0' }}>We return calls at open and prioritize active leaks first thing</td></tr>
-                  <tr><td style={{ padding: '4px 0' }}>Peak storm (72 hrs after)</td><td style={{ padding: '4px 0' }}>Expect longer queues</td><td style={{ padding: '4px 0' }}>Same day to 1–2 days is common</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <p style={{ fontSize: '.85rem', color: '#64748b' }}>Times vary with weather, traffic, and how many emergencies are already queued. We’ll give you a realistic ETA when you call.</p>
+            <h2>When we answer</h2>
+            <p>Call <a href={`tel:${brand.phone}`}>{brand.phone}</a> during shop hours (Mon–Fri 9–7 / Sat 9–5; Sun closed). You’ll talk to a real person. Active leaks are prioritized, and we come out the same day when the schedule, weather and access allow. If you call outside hours, leave a message and we call back at open. When you call, we give you a realistic ETA rather than a promise we can’t keep.</p>
 
-            <h2>What Affects Emergency Response Time</h2>
-            <p>We can’t control the weather — but we can control preparation. Here’s what impacts how fast a crew gets to you:</p>
+            <h2>What affects response time</h2>
+            <h3>Storm size</h3>
+            <p>After a widespread storm, every roofer’s phone rings at once. Calls stack up, and later calls wait longer. Active leaks still go first.</p>
+            <h3>Your location</h3>
+            <p>We’re based in Dallas, GA. Homes in Dallas, Hiram and nearby Paulding and Douglas County towns are closest; farther parts of our service area take longer to reach.</p>
+            <h3>Weather and safety</h3>
+            <p>We won’t put a crew on a roof in lightning, strong gusts or icy conditions. If it’s not safe, we wait for a window, then move.</p>
+            <h3>Access</h3>
+            <p>Steep pitches, tall two-stories, pools, or power lines near the roof can need extra setup before anyone goes up.</p>
 
-            <h3>1. Storm Severity and Size</h3>
-            <p>After the March 2022 windstorm that hit 28 counties in Georgia, we received 42 calls in 4 hours. Our closest available crew was dispatched to each address in rotation. The last crew arrived 6 hours after the initial request — and all jobs were secured by 8 PM the same day.</p>
-            <p><strong>Key insight:</strong> The first 2–4 hours after a storm are when response is fastest. After that, crews are committed to earlier calls and wait lists begin.</p>
-
-            <h3>2. Your Location</h3>
-            <p>We station crews in three hubs: Dallas (covers Paulding County), Douglasville (covers Douglas County), and Hiram (covers northern Paulding). Approximate drive times from Dallas (traffic and weather can add more):</p>
+            <h2>Emergency, urgent or routine?</h2>
             <ul>
-              <li><strong>Within Dallas city limits</strong> — roughly 10–20 minutes.</li>
-              <li><strong>Hiram, Powder Springs, Austell</strong> — roughly 15–30 minutes.</li>
-              <li><strong>Marietta, Kennesaw, Acworth</strong> — roughly 20–35 minutes.</li>
-              <li><strong>Outlying areas (Cartersville, Canton)</strong> — roughly 45–60 minutes.</li>
+              <li><strong>Emergency:</strong> water actively coming in, a hole in the roof, a limb through the deck, or a sagging roof line. Call and say so.</li>
+              <li><strong>Urgent:</strong> visible damage (missing shingles, lifted flashing) but no leak yet. It needs a look soon, before the next rain.</li>
+              <li><strong>Routine:</strong> inspections, small repairs and maintenance, scheduled at a convenient time.</li>
             </ul>
 
-            <h3>3. Roof Accessibility</h3>
-            <p>If the crew can’t park a truck within 100 feet of your roof access, they need a separate lift trailer — which adds 30–60 minutes. Similarly, if your roof requires rigging (over a pool, near power lines), we may need to send our largest crew with specialized equipment (1–2 additional hours).</p>
-
-            <h3>4. Weather Conditions</h3>
-            <p>We won’t send crews onto a roof during active wind gusts over 40 mph — safety protocols require it. Rain, ice, or fog also delays access. If the weather clears within 24 hours, crews mobilize immediately.</p>
-
-            <h2>Emergency vs. Urgent vs. Routine: Know the Difference</h2>
-            <table style={{ width: '100%', borderCollapse: 'collapse', margin: '16px 0' }}>
-              <thead>
-                <tr style={{ borderBottom: '2px solid #eee' }}>
-                  <th align="left" style={{ padding: '8px 0' }}>Category</th>
-                  <th align="left" style={{ padding: '8px 0' }}>Response Time</th>
-                  <th align="left" style={{ padding: '8px 0' }}>What It Means</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style={{ borderBottom: '1px solid #eee' }}>
-                  <td style={{ padding: '6px 0' }}><strong>Emergency</strong></td>
-                  <td style={{ padding: '6px 0' }}>2–24 hours</td>
-                  <td style={{ padding: '6px 0' }}>Active leak, structural damage, missing shingles, tarp needed NOW.</td>
-                </tr>
-                <tr style={{ borderBottom: '1px solid #eee' }}>
-                  <td style={{ padding: '6px 0' }}><strong>Urgent</strong></td>
-                  <td style={{ padding: '6px 0' }}>24–72 hours</td>
-                  <td style={{ padding: '6px 0' }}>Visible damage but no active leak — needs assessment and repair scheduling.</td>
-                </tr>
-                <tr>
-                  <td style={{ padding: '6px 0' }}><strong>Routine</strong></td>
-                  <td style={{ padding: '6px 0' }}>3–10 days</td>
-                  <td style={{ padding: '6px 0' }}>Annual inspection, minor repair, or maintenance request.</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <h2>What “Emergency” Actually Means</h2>
-            <p>We reserve emergency priority for situations where water is actively entering your home or structural safety is compromised:</p>
+            <h2>How to help us get to you faster</h2>
             <ul>
-              <li>Missing shingles with active water stains on ceiling.</li>
-              <li>Large hole in roof deck from storm damage.</li>
-              <li>Sagging roof line (structural failure).</li>
-              <li>Debris (tree branches) puncturing the roof and threatening to fall further.</li>
-            </ul>
-            <p>If your roof is damaged but <em>not leaking</em> and the weather is clear — that’s urgent, not emergency. We’ll get you a same-day or next-day slot, but we’ll also let you know if it can wait 72 hours without damage.</p>
-
-            <h2>How to Get Faster Emergency Response</h2>
-            <p>After 200+ emergency calls, we’ve learned what helps and what hurts:</p>
-            <ul>
-              <li><strong>Call, don’t text</strong> — our phone system routes emergencies to the dispatcher immediately. Texts go to a queue.</li>
-              <li><strong>Have your address ready</strong> — “I’m near the Walmart” doesn’t help GPS.</li>
-              <li><strong>Send a photo via text</strong> — a quick shot of the damage helps the dispatcher assess urgency.</li>
-              <li><strong>Don’t call 3 roofers at once</strong> — if you’re a regular customer, we give you priority. If you’re calling 5 companies, you’re at the back of every queue.</li>
-              <li><strong>Be honest about urgency</strong> — if you say “it’s leaking” but it’s actually just dented, that affects resource allocation.</li>
+              <li><strong>Call and say “water is coming in”</strong> if it is.</li>
+              <li><strong>Have your full address ready.</strong></li>
+              <li><strong>Text a photo</strong> of the damage from the ground or inside. It helps us judge urgency and bring the right materials.</li>
+              <li><strong>Stay off the roof.</strong> Move valuables, set out buckets, and wait for the crew.</li>
             </ul>
 
-            <h2>Our Emergency Crew Setup</h2>
-            <p>We maintain 3 fully stocked emergency response trucks in Dallas, Douglasville, and Hiram. Each carries:</p>
-            <ul>
-              <li>18×20 ft synthetic tarps (rated to 100 mph wind).</li>
-              <li>Ice & water shield, synthetic underlayment, emergency ridge vent.</li>
-              <li>2×6 framing lumber for tarp edge battens.</li>
-              <li>OSHA-certified harnesses and safety gear.</li>
-              <li>Drone for damage assessment and photo documentation.</li>
-              <li>Generator and LED work lights for after-dark emergency work.</li>
-            </ul>
-            <p>Every truck is pre-staged — no waiting for materials. When an after-hours crew is available, we aim to get someone on the road quickly and often on-site within about an hour in our core Dallas / Hiram / Douglasville area. During busy storm nights, it can take longer — we’ll be upfront about the ETA when you call.</p>
+            <h2>After the emergency</h2>
+            <p>Once the roof is secured, we photograph the damage, write up the permanent repair, and schedule it with you. If insurance is involved, we help you document damage for your insurance claim. For what to do while you wait, see <Link href="/blog/emergency-roof-tarping-dallas/">our emergency tarping guide</Link>.</p>
 
-            <h2>Real Emergency Stories: When Minutes Mattered</h2>
-            <div style={{ background: '#f0fdf4', padding: '16px', borderRadius: 6, border: '1px solid #86efac', marginBottom: '24px' }}>
-              <p style={{ margin: 0 }}><strong>July 2026 Derecho — Call at 11:47 PM. Crew on-site at 12:35 AM. Roof tarped by 2:15 AM. Total damage: 12 square feet. Total cost to secure: $390 (credited to the full replacement they booked 3 days later).</strong></p>
-            </div>
-
-            <h2>After the Emergency: Transition to Repair</h2>
-            <p>Once your roof is secured, we automatically schedule the permanent repair. Our process:</p>
-            <ol>
-              <li>We email you the damage photos and written assessment within 24 hours.</li>
-              <li>If insurance is involved, we coordinate the claim documentation.</li>
-              <li>We schedule the repair on your timeline — most jobs start within 2–5 days of tarping.</li>
-              <li>If you booked a full replacement, we credit the tarping cost (usually $250–$750) 100%.</li>
-            </ol>
-
-            <h2>Emergency Line: Know Who to Call</h2>
-            <p>Call <a href={`tel:${brand.phone}`}>{brand.phone}</a> during shop hours (Mon–Fri 9–7 / Sat 9–5; Sun closed). You’ll talk to a real person — not an automated system — and we’ll prioritize active leaks as fast as crews allow:</p>
-            <ul>
-              <li>Someone who knows the storm-affected areas by name.</li>
-              <li>Same-day help when the schedule and access allow.</li>
-              <li>SMS photo sharing for quick assessment.</li>
-              <li>A clear ETA — we’ll be upfront if crews are stacked after a storm.</li>
-            </ul>
-
-            <h2>Don’t Wait — Every Hour Costs You</h2>
-            <p>If your roof is compromised, every hour delays makes the damage worse. Water damage escalates, insurance claims get complicated, and prices go up when crews are stretched thin.</p>
-            <p><Link href="/emergency-roof-repair-dallas-ga/" className="btn btn-solid">Emergency Roof Help →</Link></p>
+            <h2>Need help now?</h2>
+            <p>Call <a href={`tel:${brand.phone}`}>{brand.phone}</a> or see <Link href="/emergency-roof-repair-dallas-ga/">emergency roof repair in Dallas, GA</Link>. You can also send details at <Link href="/contact/">https://iroofercontractors.com/contact/</Link>.</p>
+            <p><Link href="/emergency-roof-repair-dallas-ga/" className="btn btn-solid">Emergency roof help →</Link></p>
           </div>
         </div>
             <RelatedPosts slug="emergency-roof-response-time-dallas" />

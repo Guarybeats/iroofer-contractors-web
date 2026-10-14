@@ -9,14 +9,14 @@ export const serviceHubContent = {
     lead:
       'Most roof leaks in Dallas, GA start small. It might be a cracked pipe boot, loose metal flashing, or a few shingles blown off in a spring storm. We find where the water gets in, not just the stain. We fix it the way the shingle maker says to. And we tell you straight if a repair still makes sense or if it is time for a new roof.',
     bullets: [
-      'Leak check this week, with photos and a short report in plain words',
+      'Leak check with photos and a short report in plain words',
       'A tarp right away if rain can get in',
       'We fix flashing, vents, pipe boots, and shingles, matched to your roof color',
       'Honest advice: fix it first. No push to replace a roof that still has years left',
     ],
     processTitle: 'How a repair visit works',
     processIntro:
-      'One local crew. A clear plan. A written price before we start. Most small repairs are done the same day.',
+      'One local crew. A clear plan. A written price before we start.',
     steps: [
       { n: '01', title: 'Inspect & document', body: 'We get on the roof and take photos of the problem. We check the attic for stains if we can. We also point out worn spots that could fail next.' },
       { n: '02', title: 'Scope & price', body: 'You get a written plan and price. If a new roof is the better deal over time, we show you both prices side by side.' },
@@ -45,7 +45,7 @@ export const serviceHubContent = {
     h1Before: 'Roof Replacement in Dallas, GA & ',
     h1Accent: 'West Metro Atlanta',
     lead:
-      'We take the old roof all the way off and put on a new one with thick, layered (architectural) shingles. We keep the job clean and build it to last. iRoofer Contractors is family-owned in Dallas since 2019. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when they fit your house. You get a written price after we look at your roof. Our online estimator is only for planning.',
+      'We take the old roof all the way off and put on a new one with thick, layered (architectural) shingles. We keep the job clean and build it to last. iRoofer Contractors is family-owned in Dallas since 2019. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when they fit your house. You get a written price after a free roof check. We don’t post prices online.',
     bullets: [
       'We strip the roof down to the wood and check it. Soft wood gets replaced, not covered up',
       'Owens Corning shingles, put on the way Owens Corning says to, by a Contractor Rewards member (when you pick them)',
@@ -54,7 +54,7 @@ export const serviceHubContent = {
     ],
     processTitle: 'From estimate to final walkthrough',
     processIntro:
-      'We look at the roof and give you a written price. We help you pick shingles. Then we strip the old roof, fix bad wood, and lay the new layers, metal, shingles, and vents. We clean up with a magnet and walk the job with you. Most homes in Paulding and Cobb take one to two days, if the weather is good.',
+      'We look at the roof and give you a written price. We help you pick shingles. Then we strip the old roof, fix bad wood, and lay the new layers, metal, shingles, and vents. We clean up with a magnet and walk the job with you. You get a real schedule in writing before we start. Roof size, steepness, wood repairs, and weather all change it.',
     steps: [
       { n: '01', title: 'Measure & specify', body: 'We measure by drone or on the roof. We show you shingle choices and check your attic vents. You get an itemized price, plus what bad wood would cost if we find it.' },
       { n: '02', title: 'Tear-off & deck', body: 'The old layers come off. Soft wood gets replaced, not covered. We add a leak barrier at the edges and valleys, then a water-proof layer over the whole roof.' },
@@ -62,7 +62,7 @@ export const serviceHubContent = {
       { n: '04', title: 'Cleanup & warranty', body: 'We sweep for nails and haul off the dumpster. We walk the job with you and share photos. We sign you up for the shingle maker’s warranty when that product allows it.' },
     ],
     faqs: [
-      { q: 'How long does a full replacement take?', a: 'Most homes in Dallas and nearby towns take one to two days. Steep or large roofs, or roofs with more than one old layer, can take three. The schedule we give you allows for rain days.' },
+      { q: 'How long does a full replacement take?', a: 'It depends on the size and steepness of the roof, how many old layers come off, wood repairs, and weather. We give you a real schedule in writing before we start.' },
       { q: 'What shingles do you install?', a: 'Mostly Owens Corning shingles. We install them as an Owens Corning Contractor Rewards member when they fit the house. Once we see your home and any HOA rules, we can talk about other options and colors.' },
       { q: 'What warranty do I get?', a: 'The shingle maker’s standard warranty, signed up in your name when allowed. Ask us for the exact terms on the shingle you pick before we start.' },
       { q: 'Partial vs full replacement?', a: 'Sometimes we can redo just one side. Often a full roof makes more sense, so it matches and lasts. We tell you which after we look. No scare talk over a pipe boot we can fix.' },
@@ -71,7 +71,7 @@ export const serviceHubContent = {
       { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas, GA' },
       { href: '/roof-replacement-hiram/', label: 'Roof replacement in Hiram' },
       { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas, GA' },
-      { href: '/estimator/', label: 'Planning estimator (not a quote)' },
+      { href: '/estimator/', label: 'Request a free estimate' },
       { href: '/new-construction-dallas-ga/', label: 'New construction roofing Dallas GA' },
       { href: '/dallas-ga-roofing/', label: 'All Dallas GA roofing services' },
     ],
@@ -82,7 +82,7 @@ export const serviceHubContent = {
       },
       {
         title: 'Repair path still matters',
-        body: 'If you have just one leak, start with an honest repair check on our Dallas or Hiram repair pages. A new roof makes sense when the whole roof is worn out, not when one pipe boot failed. After a storm, we can take photos and work with your adjuster. We still won’t promise what insurance will pay.',
+        body: 'If you have just one leak, start with an honest repair check: [roof repair in Dallas, GA](/roof-repair-dallas-ga/) or [roof repair in Hiram](/roof-repair-hiram/). A new roof makes sense when the whole roof is worn out, not when one pipe boot failed. After a storm, we can take photos and work with your adjuster. We still won’t promise what insurance will pay.',
       },
       {
         title: 'After the install',
@@ -114,7 +114,7 @@ export const serviceHubContent = {
       { n: '04', title: 'Repair or replace', body: 'Once the plan is set, the same crew that took the photos does the work. Not a stranger who never saw the damage.' },
     ],
     faqs: [
-      { q: 'How soon after a storm should I call?', a: 'Soon. Storm marks fade over time, and some policies have time limits. We usually check roofs the same week after a local storm. Call (470) 236-1410.' },
+      { q: 'How soon after a storm should I call?', a: 'Soon. Storm marks fade over time, and some policies have time limits. Call (470) 236-1410 for a free roof check.' },
       { q: 'Will filing a claim raise my rates?', a: 'It depends on your insurance company. We take photos of the facts. You decide if you want to file. We never file without your OK, and we won’t guess about your rates.' },
       { q: 'What if the adjuster only approves a small repair?', a: 'That happens a lot. We go over their estimate line by line. We ask them to add missed damage, items the building code requires, and matching when it is fair. We can’t promise the result.' },
       { q: 'Do you charge for the inspection?', a: 'Storm roof checks are free for homeowners in our area. If you need a tarp, we tell you the price first.' },
@@ -150,7 +150,7 @@ export const serviceHubContent = {
     h1Before: 'New Construction Roofing — Built Clean for Dallas & ',
     h1Accent: 'West Metro Builds',
     lead:
-      'iRoofer Contractors installs new-construction roofs for builders and homeowners across Dallas, GA and our service map. Family-owned since 2019. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when the spec calls for that line. Call (470) 236-1410 or use our contact page. Builders: request a partner intro on the contact form.',
+      'iRoofer Contractors installs new-construction roofs for builders and homeowners across Dallas, GA and our service map. Family-owned since 2019. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when the spec calls for that line. Call (470) 236-1410 or https://iroofercontractors.com/contact/. Builders: request a partner intro on the contact form.',
     bullets: [
       'Custom and production builders who need a reliable roofing partner',
       'Homeowners building or finishing a home who want one accountable crew',
@@ -185,7 +185,7 @@ export const serviceHubContent = {
       { href: '/contact/', label: 'Contact iRoofer' },
       { href: '/about/', label: 'About iRoofer' },
       { href: '/service-areas/', label: 'Service areas' },
-      { href: '/estimator/', label: 'Planning estimator' },
+      { href: '/estimator/', label: 'Request a free estimate' },
     ],
     deepenBlocks: [
       {

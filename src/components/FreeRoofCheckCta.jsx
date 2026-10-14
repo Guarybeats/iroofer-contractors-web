@@ -31,7 +31,7 @@ export default function FreeRoofCheckCta({ style }) {
       </div>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
         <Link className="btn btn-solid" href="/free-roof-check/">Book a free roof check <span className="arr">→</span></Link>
-        <Link className="btn btn-ghost" href="/free-roof-check/#price-range" style={{ color: '#f3f5f4' }}>See your price range in 60 seconds</Link>
+        <Link className="btn btn-ghost" href="/free-roof-check/#price-range" style={{ color: '#f3f5f4' }}>Request a free estimate</Link>
       </div>
     </aside>
   );
