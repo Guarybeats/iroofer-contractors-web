@@ -15,6 +15,9 @@
 //   RESEND_API_KEY           — enables email delivery
 //   LEAD_FROM                — verified sender, e.g. "iRoofer Leads <leads@iroofercontractors.com>"
 //   LEAD_TO                  — override recipient (defaults below)
+//   LEAD_REPLY_TO            — Reply-To on the customer auto-reply (defaults to LEAD_TO / office inbox)
+//   Customer auto-reply: sent ONLY when RESEND_API_KEY and LEAD_FROM are both set
+//   and the lead gave an email. LEAD_FROM must be on a domain verified in Resend.
 //   TURNSTILE_SECRET_KEY     — Cloudflare Turnstile secret (server verify)
 //   TURNSTILE_OPTIONAL       — set "1" to allow missing Turnstile in production (not recommended)
 // OPTIONAL KV binding:
@@ -146,7 +149,7 @@ async function persistLead(env, payload, text) {
   }
 }
 
-async function sendViaResend(env, { subject, text, replyTo }) {
+async function sendViaResend(env, { subject, text, replyTo, to }) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), SEND_TIMEOUT_MS);
   try {
@@ -158,7 +161,7 @@ async function sendViaResend(env, { subject, text, replyTo }) {
       },
       body: JSON.stringify({
         from: env.LEAD_FROM || DEFAULT_LEAD_FROM,
-        to: [env.LEAD_TO || DEFAULT_LEAD_TO],
+        to: [to || env.LEAD_TO || DEFAULT_LEAD_TO],
         reply_to: replyTo || undefined,
         subject,
         text,
@@ -175,6 +178,83 @@ async function sendViaResend(env, { subject, text, replyTo }) {
     return false;
   } finally {
     clearTimeout(timer);
+  }
+}
+
+function firstNameOf(fullName) {
+  const first = String(fullName || "").trim().split(/\s+/)[0] || "";
+  return first.replace(/[^\p{L}\p{M}'\-]/gu, "").slice(0, 40);
+}
+
+function isPlausibleEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(email || "").trim());
+}
+
+function formatCustomerReply(p) {
+  const first = firstNameOf(p.fullName);
+  const service = String(p.service || "").trim();
+  const address = [p.address, p.city].map((v) => String(v || "").trim()).filter(Boolean).join(", ");
+  let requestLine = "We got your request";
+  if (service) requestLine += ` for ${service}`;
+  if (address) requestLine += ` at ${address}`;
+  requestLine += ".";
+  const subject = first
+    ? `Got it, ${first}! Your iRoofer roof request is in`
+    : "Got it! Your iRoofer roof request is in";
+  const text = [
+    first ? `Hi ${first},` : "Hi,",
+    "",
+    `Thanks for reaching out to iRoofer Contractors. ${requestLine}`,
+    "",
+    "Here's what happens next:",
+    "1. Cristian will call or text you from (470) 236-1410, usually the same business day.",
+    "2. We'll set a time for your free drone roof check.",
+    "3. You'll get the photos and a straight answer: fix it, replace it, or leave it.",
+    "",
+    "Need us sooner? Call or text (470) 236-1410.",
+    "",
+    "Thanks,",
+    "Cristian Mendez",
+    "iRoofer Contractors · 152 Freedom Dr, Dallas, GA 30157",
+    "iroofercontractors.com",
+  ].join("\n");
+  return { subject, text };
+}
+
+// Customer auto-reply. Off unless RESEND_API_KEY and LEAD_FROM are set and the
+// lead has an email. Capped at one per address per day when the LEADS KV is bound.
+// Never throws and never affects the owner notification.
+async function sendCustomerAutoReply(env, payload) {
+  try {
+    if (!env.RESEND_API_KEY || !env.LEAD_FROM) return false;
+    const to = String(payload.email || "").trim();
+    if (!isPlausibleEmail(to)) return false;
+
+    const day = new Date().toISOString().slice(0, 10);
+    const capKey = `autoreply:${day}:${to.toLowerCase()}`;
+    const hasKv = env.LEADS && typeof env.LEADS.get === "function";
+    if (hasKv) {
+      try {
+        if (await env.LEADS.get(capKey)) return false;
+      } catch (_) { /* ignore cap errors */ }
+    }
+
+    const { subject, text } = formatCustomerReply(payload);
+    const ok = await sendViaResend(env, {
+      subject,
+      text,
+      to,
+      replyTo: env.LEAD_REPLY_TO || env.LEAD_TO || DEFAULT_LEAD_TO,
+    });
+    if (ok && hasKv) {
+      try {
+        await env.LEADS.put(capKey, "1", { expirationTtl: 60 * 60 * 26 });
+      } catch (_) { /* ignore */ }
+    }
+    return ok;
+  } catch (err) {
+    console.error("[LEAD] auto-reply failed:", err && err.message);
+    return false;
   }
 }
 
@@ -392,6 +472,9 @@ export async function onRequest({ request, env }) {
     // Loud, greppable log so a lead is recoverable from Pages logs.
     console.error(`[LEAD][UNDELIVERED] persisted=${persisted}\n${text}`);
   }
+
+  // 4. Customer auto-reply (separate from the owner notification above).
+  await sendCustomerAutoReply(env, payload);
 
   // The visitor always sees success; their submission is recorded either way.
   return Response.json({ status: "received" }, { status: 201 });
