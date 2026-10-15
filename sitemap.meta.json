@@ -134,6 +134,11 @@
     "changefreq": "monthly",
     "images": []
   },
+  "/roof-leak-repair-dallas-ga/": {
+    "priority": "0.9",
+    "changefreq": "weekly",
+    "images": []
+  },
   "/roof-repair-dallas-ga/": {
     "priority": "0.9",
     "changefreq": "weekly",

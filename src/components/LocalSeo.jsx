@@ -62,6 +62,7 @@ function breadcrumbLabel(segment) {
     'gutter-repair-replacement-dallas-ga': 'Gutter Repair & Replacement Dallas GA',
     'new-construction-dallas-ga': 'New Construction Dallas GA',
     'hail-damage-roof-repair-dallas-ga': 'Hail Damage Roof Repair Dallas GA',
+    'roof-leak-repair-dallas-ga': 'Roof Leak Repair Dallas GA',
   };
   if (known[segment]) return known[segment];
 
