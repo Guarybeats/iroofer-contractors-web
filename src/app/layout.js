@@ -101,7 +101,7 @@ export default function RootLayout({ children }) {
               <a className="lnk" href="/services/">Services</a>
               <a className="lnk" href="/service-areas/">Service Areas</a>
               <a className="lnk" href="/free-roof-check/">Free Roof Check</a>
-              <a className="lnk" href="/estimator/">Instant Quote</a>
+              <a className="lnk" href="/estimator/">Free Estimate</a>
               <a className="lnk" href="/emergency-roof-repair-dallas-ga/">Emergency</a>
               <a className="lnk" href="/storm-damage-roof-repair-dallas-ga/">Storm Damage</a>
               <a className="lnk" href="/#work">Our Work</a>
@@ -125,7 +125,7 @@ export default function RootLayout({ children }) {
         <nav className="mnav" id="mnav" aria-label="Mobile">
           <a href="/services/">Services</a>
           <a href="/free-roof-check/">Free Roof Check</a>
-          <a href="/estimator/">Instant Quote</a>
+          <a href="/estimator/">Free Estimate</a>
           <a href="/emergency-roof-repair-dallas-ga/">Emergency</a>
           <a href="/storm-damage-roof-repair-dallas-ga/">Storm Damage</a>
           <a href="/#work">Our Work</a>
