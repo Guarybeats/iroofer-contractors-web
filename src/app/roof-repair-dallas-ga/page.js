@@ -10,8 +10,8 @@ import { renderInline } from '@/components/InlineText';
 import CopySection from '@/components/CopySection';
 
 export const metadata = seo({
-  title: "Roof Repair Dallas GA | Leak, Flashing & Storm | iRoofer",
-  description: "Roof repair in Dallas, GA — leaks, flashing, pipe boots, and storm wear. Family-owned since 2019. Free inspection. Call (470) 236-1410 or book online.",
+  title: "Roof Repair Dallas GA | Local Leak & Flashing Fixes",
+  description: "Roof repair in Dallas, GA from a family-owned Paulding County crew. Leaks, flashing, pipe boots, storm wear. Free inspection: (470) 236-1410.",
   path: '/roof-repair-dallas-ga',
 });
 
@@ -43,7 +43,7 @@ export default function Page() {
               </Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>Dallas, GA</span>
               <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02, marginTop: 8 }}>
-                Roof Repair in Dallas, GA — Leaks, Flashing & Storm Wear
+                Roof Repair in Dallas, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
                 {renderInline(copy.intro)}

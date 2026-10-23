@@ -144,7 +144,7 @@ export const cities = [
   { slug: 'hiram', name: 'Hiram', state: 'GA', county: 'Paulding County', blurb: 'roof repair and replacement crews working Hiram neighborhoods weekly.',
     localNote: 'Hiram families trust us for architectural shingle replacements that match the neighborhood and hold up to Georgia summers.' },
   { slug: 'powder-springs', name: 'Powder Springs', state: 'GA', county: 'Cobb County', blurb: 'architectural shingle replacements and storm claims help in Powder Springs.',
-    localNote: 'In Powder Springs we handle everything from single-slope ranch reroofs to steep two-story tear-offs, plus ridge-vent and attic ventilation upgrades that cut cooling bills.' },
+    localNote: 'In Powder Springs we handle everything from single-slope ranch reroofs to steep two-story tear-offs, plus ridge-vent and attic ventilation upgrades that help the attic move heat and moisture out.' },
   { slug: 'marietta', name: 'Marietta', state: 'GA', county: 'Cobb County', blurb: 'insurance-backed roof rebuilds and new construction roofing in Marietta.',
     localNote: 'Marietta’s mix of historic homes and new builds means we tailor every scope — from gentle repairs on older roofs to full code-compliant installs on new construction.' },
   { slug: 'acworth', name: 'Acworth', state: 'GA', county: 'Cobb County', blurb: 'leak repair, ventilation upgrades and full tear-offs across Acworth.',
