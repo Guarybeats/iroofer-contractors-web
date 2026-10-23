@@ -6,9 +6,9 @@ const city = getCity('powder-springs');
 
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
-  title: 'Powder Springs GA Roof Repair & Replacement | iRoofer',
+  title: 'Residential Roofing in Powder Springs, GA | iRoofer',
   description:
-    'Powder Springs roofing from iRoofer Contractors in Dallas, GA — repair, replacement, storm help. Call (470) 236-1410 or visit our contact page.',
+    'Residential roofing for Powder Springs, GA homes: roof repair, replacement and storm inspections from a family-owned Dallas crew. Call (470) 236-1410.',
   alternates: { canonical: `${brand.url}/service-areas/powder-springs/` },
   openGraph: {
     type: 'website',
@@ -16,15 +16,15 @@ export const metadata = {
     locale: 'en_US',
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: `${brand.url}/service-areas/powder-springs/`,
-    title: 'Powder Springs GA Roof Repair & Replacement | iRoofer',
+    title: 'Residential Roofing in Powder Springs, GA | iRoofer',
     description:
-      'Powder Springs roofing from iRoofer Contractors in Dallas, GA — repair, replacement, storm help. Call (470) 236-1410.',
+    'Residential roofing for Powder Springs, GA homes: roof repair, replacement and storm inspections from a family-owned Dallas crew. Call (470) 236-1410.',
   },
 };
 
 const intro = [
-  'Powder Springs is on our regular west-metro map from Dallas. iRoofer Contractors — family-owned since 2019 by Cristian Mendez — handles repair, full replacement, and storm documentation. Shop: 152 Freedom Dr, Dallas, GA 30157.',
-  'Ready to talk about your roof? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
+  'We roof houses in Powder Springs: ranches off Macland Road, two-stories toward Lost Mountain, and the wooded lots where limbs and leaves wear a roof down early. iRoofer Contractors is a family-owned residential crew from 152 Freedom Dr, Dallas, GA 30157, run by Cristian Mendez since 2019. We handle [roof repair](/roof-repair-powder-springs/), [full replacement](/roof-replacement-powder-springs/) and storm inspections on homes.',
+  'Gutters or fascia the real problem? Head to [gutter repair & replacement in Powder Springs](/gutter-repair-replacement-powder-springs/). For your roof, use [https://iroofercontractors.com/contact/](/contact/) or call (470) 236-1410.',
 ];
 
 const sections = [
@@ -95,7 +95,7 @@ export default function PowderSpringsPage() {
   return (
     <CityAreaPage
       city={city}
-      h1="Roof Repair, Replacement & Storm Damage in Powder Springs, GA"
+      h1="Residential Roofing in Powder Springs, GA"
       intro={intro}
       sections={sections}
       neighborhoods={neighborhoods}

@@ -16,7 +16,7 @@ export const metadata = {
   },
   title: 'Roof Repair Cost in Dallas, GA: What Changes It | iRoofer',
   description:
-    'What changes roof repair cost in Dallas, GA — leak source, access, materials and storm path. Call (470) 236-1410 for a free inspection and written price.',
+    'What drives roof repair cost around Dallas, GA: leak source, access, decking, materials. No price lists. Free inspection, written figure: (470) 236-1410.',
 };
 
 const post = {
@@ -57,9 +57,10 @@ export default function BlogPostPage() {
 
           <div className="post-body rv">
             <p>
-              Homeowners searching roof repair cost in Dallas, GA usually want a ballpark before they call. Fair. The
-              honest answer: the number moves with what failed, how hard it is to reach, whether decking is soft, and
-              whether you’re fixing one penetration or a whole slope.
+              Most people want a rough idea of what a repair will cost before they call. Fair enough. The honest
+              answer: the number moves with what failed, how hard it is to reach, whether the decking is soft, and
+              whether you’re fixing one pipe boot or a whole slope. This guide covers the cost factors. If you already
+              know you need work done, skip to the service pages linked below.
             </p>
             <p>
               iRoofer Contractors is family-owned in Dallas since 2019. Call{' '}
@@ -98,24 +99,37 @@ export default function BlogPostPage() {
               </li>
             </ul>
 
-            <h2>Repair vs replace (cost mindset)</h2>
+            <h2>When a repair is the smart spend</h2>
             <p>
-              Sometimes a targeted{' '}
+              A single failed spot, like a cracked boot, loose step flashing or a few wind-lifted shingles, usually
+              costs far less to fix than people fear, and fixing it now keeps the damage from spreading. What we check,
+              what we fix and how we work on local roofs is on our{' '}
               <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)' }}>
-                roof repair in Dallas
+                roof repair in Dallas, GA
               </Link>{' '}
-              is the smart spend. Sometimes stacking patches costs more than a clean{' '}
+              page. Book there or call {brand.phone}.
+            </p>
+
+            <h2>When replacement costs less over time</h2>
+            <p>
+              If you’re paying for the same leak twice, or wear shows on every slope, stacking patches can end up
+              costing more than a new roof. Our{' '}
               <Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)' }}>
-                roof replacement in Dallas
+                roof replacement in Dallas, GA
+              </Link>{' '}
+              page explains when replacement makes sense and how the job goes. The cost factors (size, pitch, layers,
+              decking, material) are in the{' '}
+              <Link href="/blog/roof-replacement-cost-dallas-ga/" style={{ color: 'var(--orange)' }}>
+                roof replacement cost guide
               </Link>
-              . We’ll say which after we see the roof.
+              .
             </p>
 
             <h2>How to get a real number</h2>
             <ol>
               <li>
-                Book an inspection — <Link href="/contact/" style={{ color: 'var(--orange)' }}>contact form</Link> or
-                call {brand.phone}
+                Book a free inspection at{' '}
+                <Link href="/contact/" style={{ color: 'var(--orange)' }}>https://iroofercontractors.com/contact/</Link> or call {brand.phone}
               </li>
               <li>We find the source and photograph it</li>
               <li>You get a written scope</li>
@@ -159,11 +173,6 @@ export default function BlogPostPage() {
                 emergency roof repair Dallas
               </Link>
               .
-            </p>
-            <p>
-              <strong>Do you finance repairs?</strong>
-              <br />
-              Ask about current options when you call — availability can change.
             </p>
 
             <RelatedPosts slug="roof-repair-cost-dallas-ga" />

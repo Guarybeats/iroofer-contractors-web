@@ -10,8 +10,8 @@ import { renderInline } from '@/components/InlineText';
 import CopySection from '@/components/CopySection';
 
 export const metadata = seo({
-  title: "Roof Replacement Dallas GA | Tear-Off & Shingles | iRoofer",
-  description: "Roof replacement in Dallas, GA — full tear-off, deck inspection, architectural shingles. Family-owned since 2019. Call (470) 236-1410 for a free inspection",
+  title: "Roof Replacement Dallas GA | Full Tear-Off | iRoofer",
+  description: "Roof replacement in Dallas, GA by a family-owned local crew. Tear-off to the deck, new underlayment and shingles. Free inspection: (470) 236-1410.",
   path: '/roof-replacement-dallas-ga',
 });
 
@@ -27,6 +27,7 @@ const relatedLinks = [
               { href: '/blog/roof-replacement-cost-dallas-ga/', label: 'Roof replacement cost in Dallas GA (factors)' },
               { href: '/services/roof-insurance-claims/', label: 'Roof insurance claims help' },
               { href: '/new-construction-dallas-ga/', label: 'New construction roofing Dallas GA' },
+              { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair in Dallas, GA' },
 
             ];
 

@@ -10,8 +10,8 @@ import { renderInline } from '@/components/InlineText';
 import CopySection from '@/components/CopySection';
 
 export const metadata = seo({
-  title: "Roof Replacement in Hiram, GA | Paulding Crew | iRoofer",
-  description: 'Roof replacement in Hiram, GA from iRoofer\'s Dallas-based crew — tear-off to deck, architectural shingles, written scope. Call (470) 236-1410.',
+  title: "Home Roof Replacement in Hiram, GA | iRoofer Contractors",
+  description: 'Residential roof replacement for Hiram, GA homes. Full tear-off, architectural shingles, written scope from a Dallas family crew. Call (470) 236-1410.',
   path: '/roof-replacement-hiram',
 });
 
@@ -33,7 +33,7 @@ export default function Page() {
               </Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>Hiram, GA</span>
               <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02, marginTop: 8 }}>
-                Roof Replacement in Hiram, GA
+                Residential Roof Replacement in Hiram, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
                 {renderInline(copy.intro)}
