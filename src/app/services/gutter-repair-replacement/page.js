@@ -6,6 +6,7 @@ import PriceDisclaimer from '@/components/PriceDisclaimer';
 import { services, brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { renderInline } from '@/components/InlineText';
+import { FaqSchema } from '@/components/LocalSeo';
 
 export const metadata = seo({
   title: 'Gutter Repair & Replacement | Dallas, GA Roofers',
@@ -49,7 +50,8 @@ export default function GutterPage() {
         <div className="faq-grid" style={{ marginTop: 18, alignItems: 'center' }}>
           <div className="rv">
             <span className="eyebrow dark">Gutter repair & replacement</span>
-            <h1 style={{ fontSize: 'clamp(2.2rem,4.6vw,3.6rem)', fontWeight: 900, lineHeight: 1.04 }}>Protect your roof, fascia & <span className="ac">foundation.</span></h1>
+            <h1 style={{ fontSize: 'clamp(2.2rem,4.6vw,3.6rem)', fontWeight: 900, lineHeight: 1.04 }}>Gutter Repair &amp; Replacement in <span className="ac">Dallas, GA</span></h1>
+            <p style={{ fontSize: 'clamp(1.2rem,2.2vw,1.6rem)', fontWeight: 800, lineHeight: 1.2, marginTop: 10 }}>Protect your roof, fascia &amp; foundation.</p>
             <p style={{ color: '#52606b', fontSize: '1.05rem', marginTop: 14, maxWidth: 640 }}>
               When gutters clog or fail in Dallas, GA, water has nowhere to go. It backs up under your shingles and pools by your foundation. We fix, re-hang, and replace gutters and downspouts so water flows <strong>away</strong> from your home, not into it.
             </p>
@@ -179,6 +181,7 @@ export default function GutterPage() {
           ))}
         </div>
       </div>
+      <FaqSchema faq={faqs} />
     </section>
   );
 }

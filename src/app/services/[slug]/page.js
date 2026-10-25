@@ -8,6 +8,7 @@ import { getService, services, brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { serviceHubContent, comboCities } from '@/lib/serviceHubContent';
 import { renderInline } from '@/components/InlineText';
+import { FaqSchema } from '@/components/LocalSeo';
 
 export function generateStaticParams() {
   return services
@@ -26,7 +27,7 @@ export function generateMetadata({ params }) {
     title: isNc
       ? 'New Construction Roofing for Builders & Owners | iRoofer'
       : isRepairHub
-      ? `${service.title} | Metro Atlanta | iRoofer`
+      ? 'Roof Repair in Dallas, GA & Metro Atlanta | iRoofer'
       : `${service.title} | Dallas, GA & Metro Atlanta`,
     description:
       isNc
@@ -217,6 +218,7 @@ export default function ServiceDetail({ params }) {
           ))}
         </div>
       </div>
+      <FaqSchema faq={hub.faqs} />
     </section>
   );
 }
