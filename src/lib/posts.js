@@ -50,14 +50,6 @@ export const posts = [
     category: 'Homeowner Guide',
   },
   {
-    slug: 'roof-financing-options-dallas-ga',
-    title: 'Roof Financing Options in Dallas GA: How to Pay for a New Roof Without Breaking the Bank',
-    date: 'June 2026',
-    excerpt: 'Most homeowners don’t have a full replacement sitting in savings. Insurance paths, lender financing, personal loans and HELOCs — ask for current terms on your estimate.',
-    readTime: '7 min read',
-    category: 'Cost Guide',
-  },
-  {
     slug: 'georgia-hail-storm-roof-checklist',
     title: 'Hail Damage on Your Georgia Roof: What It Looks Like and What to Do (6 Steps)',
     date: 'October 2025',

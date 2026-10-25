@@ -52,7 +52,7 @@ const sections = [
   {
     h2: 'Ventilation, gutters and the things that cause the next leak',
     paras: [
-      'Plenty of Roswell leaks are not shingle failures at all. Older additions and bonus rooms over garages are common local weak points — the tie-in flashing where a lower roof meets a wall is where water usually finds its way in. Undersized attic ventilation is the other recurring issue, and it quietly shortens shingle life through Georgia summers while pushing cooling bills up.',
+      'Plenty of Roswell leaks are not shingle failures at all. Older additions and bonus rooms over garages are common local weak points — the tie-in flashing where a lower roof meets a wall is where water usually finds its way in. Undersized attic ventilation is the other recurring issue, and it quietly shortens shingle life through Georgia summers.',
       'When we replace a Roswell roof we correct intake and exhaust ventilation as part of the job, re-flash tie-ins properly rather than caulking over them, and check that gutters and downspouts actually carry water away from the foundation. Fixing the roof and leaving the drainage broken just schedules the next repair.',
     ],
   },

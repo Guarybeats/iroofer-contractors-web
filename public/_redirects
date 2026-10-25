@@ -7,7 +7,7 @@
 /contact-us-roofing-services-near-you-iroofer-contractors /contact/         301
 /roofing                      /services/                                    301
 /gutters-services             /services/gutter-repair-replacement/          301
-/financing                    /blog/roof-financing-options-dallas-ga/       301
+/financing                    /blog/cost-of-new-roof-2026-dallas-ga/       301
 /reviews                      /about/                                       301
 /privacy-policy               /privacy/                                     301
 
@@ -16,7 +16,7 @@
 /blog/a-homeowners-guide-to-navigating-atlantas-hoa-roofing-rules         /blog/                                          301
 /blog/a-homeowners-guide-to-navigating-roof-insurance-claims-after-an-atlanta-hailstorm  /blog/dallas-ga-hail-storm-insurance-claims/  301
 /blog/beyond-the-missing-shingles-signs-your-atlanta-roof-has-hidden-storm-damage        /blog/georgia-hail-storm-roof-checklist/      301
-/blog/dont-let-cost-keep-you-from-a-safe-roof-a-guide-to-financing-your-atlanta-roof-replacement  /blog/roof-financing-options-dallas-ga/ 301
+/blog/dont-let-cost-keep-you-from-a-safe-roof-a-guide-to-financing-your-atlanta-roof-replacement  /blog/cost-of-new-roof-2026-dallas-ga/ 301
 /blog/love-the-trees-protect-the-roof-a-homeowners-guide-to-managing-atlantas-tree-canopy  /blog/gutter-maintenance-dallas-ga/  301
 /blog/love-the-trees-protect-the-roof-a-homeowners-guide-to-gutter-maintenance-in-atlanta  /blog/gutter-maintenance-dallas-ga/  301
 /blog/love-the-trees-protect-the-roof-a-homeowners-guide-to-atlantas-tree-canopy           /blog/gutter-maintenance-dallas-ga/  301
@@ -60,7 +60,7 @@
 /about-us/                    /about/                                       301
 /contact-us/                  /contact/                                     301
 /gutters-services/            /services/gutter-repair-replacement/          301
-/financing/                   /blog/roof-financing-options-dallas-ga/       301
+/financing/                   /blog/cost-of-new-roof-2026-dallas-ga/       301
 /reviews/                     /about/                                       301
 /roofing/                     /services/                                    301
 /privacy-policy/              /privacy/                                     301
@@ -72,3 +72,7 @@
 # Agent API docs
 /docs/api                      /docs/api.md                                 200
 /docs/api/                     /docs/api.md                                 200
+
+# Financing post retired 2026-10-25 (no financing offered)
+/blog/roof-financing-options-dallas-ga/   /blog/cost-of-new-roof-2026-dallas-ga/   301
+/blog/roof-financing-options-dallas-ga    /blog/cost-of-new-roof-2026-dallas-ga/   301
