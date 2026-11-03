@@ -160,7 +160,7 @@ export default function ContactPage() {
               <li>Wind, hail, or storm damage → <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>storm damage</Link></li>
               <li>Gutters spilling over or pulling loose → <Link href="/gutter-repair-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>gutter repair &amp; replacement</Link></li>
               <li>New build roofing → <Link href="/services/new-construction/" style={{ color: 'var(--orange)', fontWeight: 700 }}>new construction</Link></li>
-              <li>In Hiram → <Link href="/roof-repair-hiram/" style={{ color: 'var(--orange)', fontWeight: 700 }}>repair</Link> · <Link href="/roof-replacement-hiram/" style={{ color: 'var(--orange)', fontWeight: 700 }}>replacement</Link></li>
+              <li>In Hiram → <Link href="/service-areas/hiram/#roof-repair" style={{ color: 'var(--orange)', fontWeight: 700 }}>repair</Link> · <Link href="/roof-replacement-hiram/" style={{ color: 'var(--orange)', fontWeight: 700 }}>replacement</Link></li>
             </ul>
           </div>
 
@@ -177,7 +177,7 @@ export default function ContactPage() {
               {' '}
               <Link className="btn btn-ghost" href="/about/" style={{ marginLeft: 8 }}>About iRoofer</Link>
               {' '}
-              <Link className="btn btn-ghost" href="/dallas-ga-roofing/" style={{ marginLeft: 8 }}>Dallas roofing hub</Link>
+              <Link className="btn btn-ghost" href="/" style={{ marginLeft: 8 }}>Dallas roofing hub</Link>
             </p>
           </div>
         </div>

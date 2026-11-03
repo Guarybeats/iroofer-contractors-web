@@ -77,7 +77,7 @@ localCopy['roof-repair'] = {
       { q: "Should I repair or replace my roof?", a: "Isolated leaks, a bad boot or loose flashing usually repair well. Wear on every slope or repeat leaks in different spots usually point to replacement. We'll show you photos and give you a straight answer." },
       { q: "Can you help if water is coming in now?", a: "Yes. Call (470) 236-1410. Active leaks get priority and a tarp when needed, often the same day, then we schedule the permanent repair. See [emergency roof repair in Dallas, GA](/emergency-roof-repair-dallas-ga/)." },
       { q: "Ceiling stain but no drip. Is it still worth a look?", a: "If the stain grows after rain, yes. We trace it from the attic and the roof so you're not just painting over it." },
-      { q: "Do you work outside Dallas?", a: "Yes. Dallas is home base, and we also cover Hiram, Powder Springs, Douglasville and nearby towns. Hiram homeowners can start at [roof repair in Hiram](/roof-repair-hiram/)." },
+      { q: "Do you work outside Dallas?", a: "Yes. Dallas is home base, and we also cover Hiram, Powder Springs, Douglasville and nearby towns. Hiram homeowners can start at [roof repair in Hiram](/service-areas/hiram/#roof-repair)." },
     ],
   },
   'hiram': {
@@ -378,7 +378,7 @@ localCopy['roof-replacement'] = {
       { h: "The layer count decides the job",
         p: "Under the residential code a roof already carrying three layers has to come off to the deck rather than be covered again — and we take everything to the deck as standard regardless, because you cannot inspect what you cannot see. On Hiram homes that have been re-covered once already, the tear-off is heavier and the quote reflects it honestly rather than being discovered as a change order. Paulding County permitting comes into play if sheathing or framing has to be replaced; we pull it through the county's Building & Permitting Division and hand you the sign-off. No overlays." },
       { h: "How a Hiram replacement works",
-        p: "Inspect/measure → written proposal → tear-off → decking → underlayment/flashings → shingles/ridge → cleanup → walkthrough + warranty registration. Prefer a repair instead? See [roof repair in Hiram](/roof-repair-hiram/). Wondering what drives the price? See [roof replacement cost factors](/blog/roof-replacement-cost-dallas-ga/). More about the area: [our Hiram service area](/service-areas/hiram/). Call (470) 236-1410 or https://iroofercontractors.com/contact/." },
+        p: "Inspect/measure → written proposal → tear-off → decking → underlayment/flashings → shingles/ridge → cleanup → walkthrough + warranty registration. Prefer a repair instead? See [roof repair in Hiram](/service-areas/hiram/#roof-repair). Wondering what drives the price? See [roof replacement cost factors](/blog/roof-replacement-cost-dallas-ga/). More about the area: [our Hiram service area](/service-areas/hiram/). Call (470) 236-1410 or https://iroofercontractors.com/contact/." },
       { h: "Storm / insurance cross-link",
         p: "If hail or wind started this conversation, document first: /storm-damage-roof-repair-dallas-ga/ and /services/roof-insurance-claims/. No guaranteed claim outcomes." },
     ],
@@ -466,7 +466,7 @@ localCopy['roof-replacement'] = {
         "h": "How replacement week goes",
         "p": "Before we start, you get the schedule and the scope in writing. On the day, we protect landscaping and the driveway, tear off, and walk the deck. If we find decking that needs replacing, we show you before we replace it. Then underlayment, flashing, shingles and ridge go on, and the yard gets a magnetic sweep before we leave. At the end we walk the job with you and register the warranty. How long it takes depends on size, layers, decking and weather, and we’ll tell you up front rather than guess here.",
         "blocks": [
-          "Not sure you need a full replacement? A lot of Marietta calls turn out to be repairs: [roof repair in Marietta](/roof-repair-marietta/). Book a free inspection at https://iroofercontractors.com/contact/ or call (470) 236-1410."
+          "Not sure you need a full replacement? A lot of Marietta calls turn out to be repairs: [roof repair in Marietta](/service-areas/marietta/#roof-repair). Book a free inspection at https://iroofercontractors.com/contact/ or call (470) 236-1410."
         ]
       }
     ],
@@ -618,7 +618,7 @@ localCopy['storm-damage-roof-repair'] = {
       },
       {
         "h": "Repair or replace after the storm",
-        "p": "Plenty of Douglasville storm calls end with a targeted repair: a few creased tabs, a ridge run, a pipe boot, a section of flashing. When the damage covers multiple slopes, or the roof was already near the end of its life, a patchwork repair just moves the next leak somewhere else. We’ll tell you which one you’re looking at and why, in writing. Localized fixes: [roof repair in Douglasville](/roof-repair-douglasville/). Full tear-off: [roof replacement in Douglasville](/roof-replacement-douglasville/). Gutters and fascia hit by the same storm: [gutter repair in Douglasville](/gutter-repair-replacement-douglasville/)."
+        "p": "Plenty of Douglasville storm calls end with a targeted repair: a few creased tabs, a ridge run, a pipe boot, a section of flashing. When the damage covers multiple slopes, or the roof was already near the end of its life, a patchwork repair just moves the next leak somewhere else. We’ll tell you which one you’re looking at and why, in writing. Localized fixes: [roof repair in Douglasville](/service-areas/douglasville/#roof-repair). Full tear-off: [roof replacement in Douglasville](/roof-replacement-douglasville/). Gutters and fascia hit by the same storm: [gutter repair in Douglasville](/gutter-repair-replacement-douglasville/)."
       },
       {
         "h": "Why a local crew for Douglas County storm work",
@@ -730,7 +730,7 @@ localCopy['storm-damage-roof-repair'] = {
         "h": "Tarp now, permanent repair once it’s dry",
         "p": "A tarp is temporary protection, not a fix. We fasten it so it survives the next blow without making new holes in good decking. Then we come back when the roof is dry enough to see the whole picture: what’s broken, what’s only bruised, and whether the right answer is a targeted repair or a bigger conversation. Prompt mitigation also matters for your claim, because insurers can reduce a settlement for damage that got worse after the storm.",
         "blocks": [
-          "Permanent work after a storm usually lands on one of two pages: [roof repair in Kennesaw](/roof-repair-kennesaw/) when the damage is localized, or [roof replacement in Kennesaw](/roof-replacement-kennesaw/) when it’s widespread or the roof was near the end of its life anyway."
+          "Permanent work after a storm usually lands on one of two pages: [roof repair in Kennesaw](/service-areas/kennesaw/#roof-repair) when the damage is localized, or [roof replacement in Kennesaw](/roof-replacement-kennesaw/) when it’s widespread or the roof was near the end of its life anyway."
         ]
       },
       {

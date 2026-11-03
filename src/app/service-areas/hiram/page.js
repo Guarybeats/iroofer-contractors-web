@@ -31,13 +31,13 @@ const sections = [
   {
     h2: 'Roof repair in Hiram',
     paras: [
-      'Leaks, cracked pipe boots, worn valleys under tree cover, flashing at walls and chimneys, wind-lifted shingles. We find the real entry point, photograph it, and fix that. See [roof repair in Hiram](/roof-repair-hiram/).',
+      'Leaks, cracked pipe boots, worn valleys under tree cover, flashing at walls and chimneys, wind-lifted shingles. We find the real entry point, photograph it, and fix that. See [roof repair in Hiram](/service-areas/hiram/#roof-repair).',
     ],
   },
   {
     h2: 'Roof inspection in Hiram',
     paras: [
-      'After a storm, when a stain is growing, or when you just want to know where your roof stands: a free inspection with photos and a written finding (repair it, watch it, or plan a replacement). See [roof inspection in Hiram](/roof-repair-hiram/#roof-inspection).',
+      'After a storm, when a stain is growing, or when you just want to know where your roof stands: a free inspection with photos and a written finding (repair it, watch it, or plan a replacement). See [roof inspection in Hiram](/service-areas/hiram/#roof-inspection).',
     ],
   },
   {
@@ -95,8 +95,8 @@ const faq = [
 ];
 
 const relatedLinks = [
-  { href: '/roof-repair-hiram/', label: 'Roof repair in Hiram' },
-  { href: '/roof-repair-hiram/#roof-inspection', label: 'Roof inspection in Hiram' },
+  { href: '/service-areas/hiram/#roof-repair', label: 'Roof repair in Hiram' },
+  { href: '/service-areas/hiram/#roof-inspection', label: 'Roof inspection in Hiram' },
   { href: '/roof-replacement-hiram/', label: 'Roof replacement in Hiram' },
   { href: '/storm-damage-roof-repair-hiram/', label: 'Storm damage roof repair in Hiram' },
   { href: '/gutter-repair-replacement-hiram/', label: 'Gutter repair & replacement in Hiram' },

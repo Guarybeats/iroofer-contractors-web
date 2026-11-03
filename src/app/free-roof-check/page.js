@@ -135,10 +135,10 @@ export default function FreeRoofCheckPage() {
               {brand.name} · 152 Freedom Dr, Dallas, GA 30157 · <a href={`tel:${brand.phone}`} style={{ color: 'var(--orange)', fontWeight: 700 }}>{brand.phone}</a>
             </p>
             <p style={{ marginTop: 12, fontSize: '.95rem' }}>
-              More help: <Link href="/services/roof-repair/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof repair</Link>
-              {' · '}<Link href="/services/roof-replacement/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof replacement</Link>
-              {' · '}<Link href="/services/storm-damage-roof-repair/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Storm damage</Link>
-              {' · '}<Link href="/dallas-ga-roofing/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Dallas GA roofing</Link>
+              More help: <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof repair</Link>
+              {' · '}<Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof replacement</Link>
+              {' · '}<Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Storm damage</Link>
+              {' · '}<Link href="/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Dallas GA roofing</Link>
             </p>
           </div>
 

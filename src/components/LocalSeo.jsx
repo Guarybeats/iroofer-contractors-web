@@ -1,6 +1,6 @@
 'use client';
 
-import { brand, services } from '@/lib/brand';
+import { brand, services, servicePath } from '@/lib/brand';
 import { usePathname } from 'next/navigation';
 import { plainText } from '@/lib/inlineLinks';
 
@@ -156,7 +156,7 @@ export function buildSeoGraph(path) {
     provider: { '@type': 'RoofingContractor', name: brand.name, '@id': `${brand.url}/#business` },
     areaServed: brand.serviceArea.map((c) => c.replace(', GA', '')),
     description: s.summary,
-    url: absUrl(`/services/${s.slug}`),
+    url: absUrl(servicePath(s.slug)),
   }));
 
   // NOTE (2026-08-30): the per-city combo Service nodes were removed. 32 near-identical

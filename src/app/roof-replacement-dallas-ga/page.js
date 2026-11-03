@@ -8,6 +8,7 @@ import { localCopy } from '@/lib/localCopy';
 import { FaqSchema } from '@/components/LocalSeo';
 import { renderInline } from '@/components/InlineText';
 import CopySection from '@/components/CopySection';
+import ServiceProcess from '@/components/ServiceProcess';
 
 export const metadata = seo({
   title: "Roof Replacement Dallas GA | Full Tear-Off | iRoofer",
@@ -20,13 +21,13 @@ export const metadata = seo({
 const copy = localCopy['roof-replacement']['dallas-ga'];
 const faqs = copy.faq;
 const relatedLinks = [
-              { href: '/dallas-ga-roofing/', label: 'All Dallas GA roofing services' },
-              { href: '/services/roof-replacement/', label: 'Roof replacement service hub' },
+              { href: '/', label: 'All Dallas GA roofing services' },
+              { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement service hub' },
               { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas GA' },
               { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair Dallas GA' },
               { href: '/blog/roof-replacement-cost-dallas-ga/', label: 'Roof replacement cost in Dallas GA (factors)' },
               { href: '/services/roof-insurance-claims/', label: 'Roof insurance claims help' },
-              { href: '/new-construction-dallas-ga/', label: 'New construction roofing Dallas GA' },
+              { href: '/services/new-construction/', label: 'New construction roofing Dallas GA' },
               { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair in Dallas, GA' },
 
             ];
@@ -39,7 +40,7 @@ export default function Page() {
         <div className="wrap" style={{ position: 'relative' }}>
           <div className="faq-grid" style={{ alignItems: 'start' }}>
             <div className="rv">
-              <Link href="/services/roof-replacement/" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>
+              <Link href="/roof-replacement-dallas-ga/" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>
                 ← Roof Replacement
               </Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>Dallas, GA</span>
@@ -89,7 +90,7 @@ export default function Page() {
             ))}
           </div>
           <div style={{ marginTop: 28 }}>
-            <Link href="/dallas-ga-roofing/" className="btn btn-ink">Dallas GA roofing hub <span className="arr">→</span></Link>
+            <Link href="/" className="btn btn-ink">Dallas GA roofing hub <span className="arr">→</span></Link>
           </div>
         </div>
       </section>
@@ -121,7 +122,7 @@ export default function Page() {
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Repair in Dallas</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
-            <Link key="new-construction" href="/new-construction-dallas-ga/" className="svc-card">
+            <Link key="new-construction" href="/services/new-construction/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>New Construction in Dallas</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
@@ -141,6 +142,7 @@ export default function Page() {
           <RelatedGuides slug="roof-replacement" heading="Local roofing guides" />
         </div>
       </section>
+      <ServiceProcess slug="roof-replacement" />
       <FaqSchema faq={faqs} />
     </>
   );

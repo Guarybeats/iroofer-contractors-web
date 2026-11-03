@@ -109,8 +109,8 @@ const faqs = [
 
 const relatedLinks = [
   { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair in Dallas GA' },
-  { href: '/services/storm-damage-roof-repair/', label: 'Storm damage roof repair hub' },
-  { href: '/services/roof-repair/', label: 'Roof repair across Metro Atlanta' },
+  { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair hub' },
+  { href: '/roof-repair-dallas-ga/', label: 'Roof repair across Metro Atlanta' },
   { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas GA' },
   { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair and tarping' },
   { href: '/services/roof-insurance-claims/', label: 'Roof insurance claims help' },
@@ -294,7 +294,7 @@ export default function HailDamagePage() {
               Our shop is in Dallas, GA, so homes across Paulding County, including Hiram, are close by, and we also work in nearby Powder Springs and Acworth. Unlike roofing companies that follow hail storms from state to state, you deal with the same family-owned local hail damage roofers for the inspection, the repair and any follow-up.
             </p>
             <p style={p}>
-              If we find wear rather than hail, we quote a <Link href="/services/roof-repair/" style={a}>roof repair</Link> directly instead of steering you into a claim. For wind or fallen-limb damage, see our broader <Link href="/storm-damage-roof-repair-dallas-ga/" style={a}>storm damage roof repair</Link> page.
+              If we find wear rather than hail, we quote a <Link href="/roof-repair-dallas-ga/" style={a}>roof repair</Link> directly instead of steering you into a claim. For wind or fallen-limb damage, see our broader <Link href="/storm-damage-roof-repair-dallas-ga/" style={a}>storm damage roof repair</Link> page.
             </p>
           </div>
         </div>

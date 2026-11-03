@@ -8,6 +8,7 @@ import { localCopy } from '@/lib/localCopy';
 import { FaqSchema } from '@/components/LocalSeo';
 import { renderInline } from '@/components/InlineText';
 import CopySection from '@/components/CopySection';
+import ServiceProcess from '@/components/ServiceProcess';
 
 export const metadata = seo({
   title: "Storm Damage Roof Repair Dallas GA | Hail & Wind | iRoofer",
@@ -20,8 +21,8 @@ export const metadata = seo({
 const copy = localCopy['storm-damage-roof-repair']['dallas-ga'];
 const faqs = copy.faq;
 const relatedLinks = [
-              { href: '/dallas-ga-roofing/', label: 'All Dallas GA roofing services' },
-              { href: '/services/storm-damage-roof-repair/', label: 'Storm damage roof repair hub' },
+              { href: '/', label: 'All Dallas GA roofing services' },
+              { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair hub' },
               { href: '/hail-damage-roof-repair-dallas-ga/', label: 'Hail damage roof repair in Dallas GA' },
               { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas GA' },
               { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas GA' },
@@ -38,7 +39,7 @@ export default function Page() {
         <div className="wrap" style={{ position: 'relative' }}>
           <div className="faq-grid" style={{ alignItems: 'start' }}>
             <div className="rv">
-              <Link href="/services/storm-damage-roof-repair/" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>
+              <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>
                 ← Storm Damage Roof Repair
               </Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>Dallas, GA</span>
@@ -88,7 +89,7 @@ export default function Page() {
             ))}
           </div>
           <div style={{ marginTop: 28 }}>
-            <Link href="/dallas-ga-roofing/" className="btn btn-ink">Dallas GA roofing hub <span className="arr">→</span></Link>
+            <Link href="/" className="btn btn-ink">Dallas GA roofing hub <span className="arr">→</span></Link>
           </div>
         </div>
       </section>
@@ -124,7 +125,7 @@ export default function Page() {
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Dallas</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
-            <Link key="new-construction" href="/new-construction-dallas-ga/" className="svc-card">
+            <Link key="new-construction" href="/services/new-construction/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>New Construction in Dallas</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
@@ -140,6 +141,7 @@ export default function Page() {
           <RelatedGuides slug="storm-damage-roof-repair" heading="Local roofing guides" />
         </div>
       </section>
+      <ServiceProcess slug="storm-damage-roof-repair" />
       <FaqSchema faq={faqs} />
     </>
   );

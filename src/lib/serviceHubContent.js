@@ -33,9 +33,9 @@ export const serviceHubContent = {
       { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas, GA (home base)' },
       { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas GA' },
       { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair in Dallas' },
-      { href: '/dallas-ga-roofing/', label: 'Dallas GA roofing hub' },
-      { href: '/roof-repair-powder-springs/', label: 'Roofing contractor in Powder Springs' },
-      { href: '/roof-repair-hiram/', label: 'Roofer in Hiram, GA' },
+      { href: '/', label: 'Dallas GA roofing hub' },
+      { href: '/service-areas/powder-springs/#roof-repair', label: 'Roofing contractor in Powder Springs' },
+      { href: '/service-areas/hiram/#roof-repair', label: 'Roofer in Hiram, GA' },
     ],
     cityPrefix: 'roof-repair',
     cityLabel: 'Roof repair by city',
@@ -72,8 +72,8 @@ export const serviceHubContent = {
       { href: '/roof-replacement-hiram/', label: 'Roof replacement in Hiram' },
       { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas, GA' },
       { href: '/estimator/', label: 'Request a free estimate' },
-      { href: '/new-construction-dallas-ga/', label: 'New construction roofing Dallas GA' },
-      { href: '/dallas-ga-roofing/', label: 'All Dallas GA roofing services' },
+      { href: '/services/new-construction/', label: 'New construction roofing Dallas GA' },
+      { href: '/', label: 'All Dallas GA roofing services' },
     ],
     deepenBlocks: [
       {
@@ -82,7 +82,7 @@ export const serviceHubContent = {
       },
       {
         title: 'Repair path still matters',
-        body: 'If you have just one leak, start with an honest repair check: [roof repair in Dallas, GA](/roof-repair-dallas-ga/) or [roof repair in Hiram](/roof-repair-hiram/). A new roof makes sense when the whole roof is worn out, not when one pipe boot failed. After a storm, we can take photos and work with your adjuster. We still won’t promise what insurance will pay.',
+        body: 'If you have just one leak, start with an honest repair check: [roof repair in Dallas, GA](/roof-repair-dallas-ga/) or [roof repair in Hiram](/service-areas/hiram/#roof-repair). A new roof makes sense when the whole roof is worn out, not when one pipe boot failed. After a storm, we can take photos and work with your adjuster. We still won’t promise what insurance will pay.',
       },
       {
         title: 'After the install',
@@ -126,7 +126,7 @@ export const serviceHubContent = {
       { href: '/services/roof-insurance-claims/', label: 'Roof insurance claims help' },
       { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas, GA' },
       { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas, GA' },
-      { href: '/dallas-ga-roofing/', label: 'All Dallas GA roofing services' },
+      { href: '/', label: 'All Dallas GA roofing services' },
     ],
     deepenBlocks: [
       {
@@ -177,11 +177,11 @@ export const serviceHubContent = {
       { q: 'What about gutters on a new build?', a: 'We can hang seamless gutters after the roof so drip edge and fascia are done as one system. Ask for a combined quote — see our gutter approach sized to the roof that feeds them.' },
     ],
     featuredLinks: [
-      { href: '/new-construction-dallas-ga/', label: 'New construction roofing Dallas GA' },
-      { href: '/services/roof-replacement/', label: 'Roof replacement service' },
+      { href: '/services/new-construction/', label: 'New construction roofing Dallas GA' },
+      { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement service' },
       { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas, GA' },
       { href: '/gutter-repair-replacement-dallas-ga/', label: 'Gutters Dallas' },
-      { href: '/dallas-ga-roofing/', label: 'All Dallas GA roofing services' },
+      { href: '/', label: 'All Dallas GA roofing services' },
       { href: '/contact/', label: 'Contact iRoofer' },
       { href: '/about/', label: 'About iRoofer' },
       { href: '/service-areas/', label: 'Service areas' },

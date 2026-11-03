@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { services, brand } from '@/lib/brand';
+import { services, brand, servicePath } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import Pic from '@/components/Pic';
 import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
@@ -18,7 +18,7 @@ const cardExtras = {
     more: 'Leaks, worn metal flashing, cracked pipe boots, and storm-worn shingles. We find where the water gets in and fix it, so a small problem stays small.',
     money: [
       { href: '/roof-repair-dallas-ga/', label: 'Roof repair Dallas GA' },
-      { href: '/roof-repair-hiram/', label: 'Hiram repair' },
+      { href: '/service-areas/hiram/#roof-repair', label: 'Hiram repair' },
     ],
   },
   'roof-replacement': {
@@ -81,11 +81,11 @@ export default function ServicesPage() {
               const extra = cardExtras[s.slug];
               return (
                 <div className="card" key={s.slug} style={{ color: 'inherit' }}>
-                  <Link href={`/services/${s.slug}/`} style={{ color: 'inherit', textDecoration: 'none' }}>
+                  <Link href={servicePath(s.slug)} style={{ color: 'inherit', textDecoration: 'none' }}>
                     <Pic src={s.image} alt={s.imageAlt || s.title} />
                   </Link>
                   <div className="body">
-                    <h2><Link href={`/services/${s.slug}/`} style={{ color: 'inherit', textDecoration: 'none' }}>{s.title}</Link></h2>
+                    <h2><Link href={servicePath(s.slug)} style={{ color: 'inherit', textDecoration: 'none' }}>{s.title}</Link></h2>
                     <p>{extra?.more || s.summary}</p>
                     {extra?.money?.length > 0 && (
                       <p style={{ marginTop: 8, fontSize: '.9rem' }}>
@@ -97,7 +97,7 @@ export default function ServicesPage() {
                         ))}
                       </p>
                     )}
-                    <Link href={`/services/${s.slug}/`} className="more">Learn more →</Link>
+                    <Link href={servicePath(s.slug)} className="more">Learn more →</Link>
                   </div>
                 </div>
               );
@@ -168,7 +168,7 @@ export default function ServicesPage() {
             </p>
             <p style={{ marginTop: 16 }}>
               Learn more:{' '}
-              <Link href="/dallas-ga-roofing/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Dallas GA roofing company</Link>
+              <Link href="/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Dallas GA roofing company</Link>
               {' · '}
               <Link href="/about/" style={{ color: 'var(--orange)', fontWeight: 700 }}>About</Link>
               {' · '}
@@ -189,7 +189,7 @@ export default function ServicesPage() {
           <div style={{ marginTop: 36, borderTop: '1px solid #e6e9ee', paddingTop: 20 }}>
             <p style={{ fontSize: '.8rem', letterSpacing: '.04em', textTransform: 'uppercase', color: '#8ea2b4', marginBottom: 10 }}>Service areas</p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
-              <Link href="/dallas-ga-roofing/" className="chip" style={{ textDecoration: 'none' }}>Dallas, GA</Link>
+              <Link href="/" className="chip" style={{ textDecoration: 'none' }}>Dallas, GA</Link>
               <Link href="/service-areas/douglasville/" className="chip" style={{ textDecoration: 'none' }}>Douglasville</Link>
               <Link href="/service-areas/hiram/" className="chip" style={{ textDecoration: 'none' }}>Hiram</Link>
               <Link href="/service-areas/powder-springs/" className="chip" style={{ textDecoration: 'none' }}>Powder Springs</Link>

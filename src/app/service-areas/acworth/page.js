@@ -38,7 +38,7 @@ const sections = [
   {
     h2: 'Standard roof repair',
     paras: [
-      'Flashing, boots, and localized shingle failure still make up plenty of Acworth calls that are not true emergencies. See /roof-repair-acworth/ and /roof-repair-dallas-ga/ for how we find the source and fix it so a small problem stays small.',
+      'Flashing, boots, and localized shingle failure still make up plenty of Acworth calls that are not true emergencies. See the roof repair section below and /roof-repair-dallas-ga/ for how we find the source and fix it so a small problem stays small.',
     ],
   },
   {
@@ -50,7 +50,7 @@ const sections = [
   {
     h2: 'Nearby and why a Dallas shop covers Acworth',
     paras: [
-      'Kennesaw, Marietta, Canton edges, and the Dallas hub — /service-areas/kennesaw/, /service-areas/marietta/, /service-areas/, /dallas-ga-roofing/. Cristian Mendez’s crew runs the same cleanup standards (magnetic nail sweeps, daily tidy) whether the job is five minutes or a longer drive from 152 Freedom Dr.',
+      'Kennesaw, Marietta, Canton edges, and the Dallas hub — /service-areas/kennesaw/, /service-areas/marietta/, /service-areas/, /. Cristian Mendez’s crew runs the same cleanup standards (magnetic nail sweeps, daily tidy) whether the job is five minutes or a longer drive from 152 Freedom Dr.',
     ],
   },
 ];
@@ -81,7 +81,7 @@ const faq = [
 
 const relatedLinks = [
   { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas GA' },
-  { href: '/roof-repair-acworth/', label: 'Roof repair in Acworth' },
+  { href: '/service-areas/acworth/#roof-repair', label: 'Roof repair in Acworth' },
   { href: '/roof-replacement-acworth/', label: 'Roof replacement in Acworth' },
   { href: '/storm-damage-roof-repair-acworth/', label: 'Storm damage Acworth' },
   { href: '/roof-repair-dallas-ga/', label: 'Roof repair Dallas GA' },

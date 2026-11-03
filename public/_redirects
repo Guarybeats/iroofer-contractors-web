@@ -6,7 +6,7 @@
 /contact-us                   /contact/                                     301
 /contact-us-roofing-services-near-you-iroofer-contractors /contact/         301
 /roofing                      /services/                                    301
-/gutters-services             /services/gutter-repair-replacement/          301
+/gutters-services             /gutter-repair-replacement-dallas-ga/          301
 /financing                    /blog/cost-of-new-roof-2026-dallas-ga/       301
 /reviews                      /about/                                       301
 /privacy-policy               /privacy/                                     301
@@ -20,8 +20,8 @@
 /blog/love-the-trees-protect-the-roof-a-homeowners-guide-to-managing-atlantas-tree-canopy  /blog/gutter-maintenance-dallas-ga/  301
 /blog/love-the-trees-protect-the-roof-a-homeowners-guide-to-gutter-maintenance-in-atlanta  /blog/gutter-maintenance-dallas-ga/  301
 /blog/love-the-trees-protect-the-roof-a-homeowners-guide-to-atlantas-tree-canopy           /blog/gutter-maintenance-dallas-ga/  301
-/blog/atlanta-roof-repair-diy-or-call-i-roofer                            /services/roof-repair/                          301
-/diy-roof-patch-in-atlanta-know-when-to-call-the-pros                     /services/roof-repair/                          301
+/blog/atlanta-roof-repair-diy-or-call-i-roofer                            /roof-repair-dallas-ga/                          301
+/diy-roof-patch-in-atlanta-know-when-to-call-the-pros                     /roof-repair-dallas-ga/                          301
 /blog/warning-roof-needs-attention-iroofer-contractors                    /blog/when-to-replace-vs-repair-a-roof/          301
 /blog/roofing-underlayment-the-hidden-hero-of-your-dallas-roof            /blog/choosing-roofing-materials-dallas-ga/      301
 
@@ -29,18 +29,18 @@
 /service-areas/canton-ga-usa  /service-areas/                               301
 /service-areas/rome-ga-usa    /service-areas/                               301
 
-# Dallas hub consolidation 2026-09-16 (GSC: keep commercial /dallas-ga-roofing/).
+# Dallas hub consolidation 2026-09-16; 2026-11-03 /dallas-ga-roofing/ itself folded into / (homepage).
 # /service-areas/dallas-ga/ was mostly generic "roofer" noise @ ~pos 70.
-/service-areas/dallas-ga      /dallas-ga-roofing/                        301
-/service-areas/dallas-ga/     /dallas-ga-roofing/                        301
+/service-areas/dallas-ga      /                        301
+/service-areas/dallas-ga/     /                        301
 
 # GSC 404 examples 2026-09-16 — towns without pages + bare /dallas (no -ga)
 /service-areas/villa-rica     /service-areas/                            301
 /service-areas/villa-rica/    /service-areas/                            301
 /service-areas/carrollton     /service-areas/                            301
 /service-areas/carrollton/    /service-areas/                            301
-/service-areas/dallas         /dallas-ga-roofing/                        301
-/service-areas/dallas/        /dallas-ga-roofing/                        301
+/service-areas/dallas         /                        301
+/service-areas/dallas/        /                        301
 
 # Duplicate service+city pages consolidated 2026-08-30 (split ranking signals).
 # Keep the site-convention URL, 301 the twin.
@@ -59,7 +59,7 @@
 # Trailing-slash twins (Next trailingSlash:true). Without these, /about-us/ 404s while /about-us 301s.
 /about-us/                    /about/                                       301
 /contact-us/                  /contact/                                     301
-/gutters-services/            /services/gutter-repair-replacement/          301
+/gutters-services/            /gutter-repair-replacement-dallas-ga/          301
 /financing/                   /blog/cost-of-new-roof-2026-dallas-ga/       301
 /reviews/                     /about/                                       301
 /roofing/                     /services/                                    301
@@ -76,3 +76,31 @@
 # Financing post retired 2026-10-25 (no financing offered)
 /blog/roof-financing-options-dallas-ga/   /blog/cost-of-new-roof-2026-dallas-ga/   301
 /blog/roof-financing-options-dallas-ga    /blog/cost-of-new-roof-2026-dallas-ga/   301
+
+# 2026-11-03 duplicate city/service page consolidation (GSC 90d: keep higher-impression URL).
+/dallas-ga-roofing                            /                                             301
+/dallas-ga-roofing/                           /                                             301
+/services/roof-repair                         /roof-repair-dallas-ga/                       301
+/services/roof-repair/                        /roof-repair-dallas-ga/                       301
+/services/roof-replacement                    /roof-replacement-dallas-ga/                  301
+/services/roof-replacement/                   /roof-replacement-dallas-ga/                  301
+/services/storm-damage-roof-repair            /storm-damage-roof-repair-dallas-ga/          301
+/services/storm-damage-roof-repair/           /storm-damage-roof-repair-dallas-ga/          301
+/services/gutter-repair-replacement           /gutter-repair-replacement-dallas-ga/         301
+/services/gutter-repair-replacement/          /gutter-repair-replacement-dallas-ga/         301
+/new-construction-dallas-ga                   /services/new-construction/                   301
+/new-construction-dallas-ga/                  /services/new-construction/                   301
+/roof-repair-hiram                            /service-areas/hiram/                         301
+/roof-repair-hiram/                           /service-areas/hiram/                         301
+/roof-repair-acworth                          /service-areas/acworth/                       301
+/roof-repair-acworth/                         /service-areas/acworth/                       301
+/roof-repair-austell                          /service-areas/austell/                       301
+/roof-repair-austell/                         /service-areas/austell/                       301
+/roof-repair-douglasville                     /service-areas/douglasville/                  301
+/roof-repair-douglasville/                    /service-areas/douglasville/                  301
+/roof-repair-kennesaw                         /service-areas/kennesaw/                      301
+/roof-repair-kennesaw/                        /service-areas/kennesaw/                      301
+/roof-repair-marietta                         /service-areas/marietta/                      301
+/roof-repair-marietta/                        /service-areas/marietta/                      301
+/roof-repair-powder-springs                   /service-areas/powder-springs/                301
+/roof-repair-powder-springs/                  /service-areas/powder-springs/                301
