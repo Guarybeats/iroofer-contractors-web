@@ -19,6 +19,7 @@ const dallasLinks = [
   { href: '/dallas-ga-roofing/', label: 'Dallas roofing company hub' },
   { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas' },
   { href: '/gutter-repair-replacement-dallas-ga/', label: 'Gutter repair & replacement' },
+  { href: '/metal-roofing-dallas-ga/', label: 'Metal roofing in Dallas, GA' },
   { href: '/roof-replacement-hiram/', label: 'Roof replacement in Hiram' },
   { href: '/roof-repair-hiram/', label: 'Roof repair / inspection in Hiram' },
   { href: '/blog/roof-replacement-cost-dallas-ga/', label: 'Roof replacement cost factors' },

@@ -2,6 +2,30 @@
 // and the RelatedPosts component. Keep in sync with src/app/blog/<slug>/page.js.
 export const posts = [
   {
+    slug: 'how-to-choose-storm-damage-roofer',
+    title: "How to Choose a Storm Damage Roofer After a Georgia Storm",
+    date: 'November 2026',
+    excerpt: "After hail or wind, door knockers show up fast. Here is how to pick a storm damage roofer you can actually call back next year \u2014 questions, red flags, and what to get in writing.",
+    readTime: '6 min read',
+    category: 'Storm Damage',
+  },
+  {
+    slug: 'hail-damage-repair-or-replace-georgia',
+    title: "Hail Damage in Georgia: Repair or Replace Your Roof?",
+    date: 'November 2026',
+    excerpt: "Not every hail storm means a new roof. Here is how we decide between a repair and a replacement after hail in Dallas, GA \u2014 and what the photos should show.",
+    readTime: '6 min read',
+    category: 'Storm Damage',
+  },
+  {
+    slug: 'water-stain-on-ceiling-roof-leak',
+    title: "Water Stain on Your Ceiling: Is It a Roof Leak?",
+    date: 'November 2026',
+    excerpt: "A brown ring on the ceiling can be the roof, a pipe, or attic condensation. Here is how to narrow it down and what to do before it spreads.",
+    readTime: '5 min read',
+    category: 'Leaks',
+  },
+  {
     slug: 'roof-replacement-cost-dallas-ga',
     title: 'Roof Replacement Cost in Dallas, GA: Planning Factors (Not a Quote)',
     date: 'September 2026',

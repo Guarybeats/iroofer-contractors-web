@@ -98,7 +98,7 @@ export default function BlogPostPage() {
 
             <h2>Common questions</h2>
             <p><strong>Should I call after every windy night?</strong><br />Call if you see missing shingles, have a leak, or heard impact. A free inspection beats guessing.</p>
-            <p><strong>Can you tarp the same day?</strong><br />When the roof is open to weather, tarping is the priority — then permanent repair when conditions allow.</p>
+            <p><strong>Can you tarp my roof quickly after storm damage?</strong><br />Active leaks get priority. We schedule a tarp as soon as a crew is available, then make the permanent repair when conditions allow. Call <a href={`tel:${brand.phone}`}>{brand.phone}</a>.</p>
             <p><strong>Is wind damage the same as hail damage?</strong><br />Not always. We inspect for both; documentation differs. Be honest with your carrier about what you observed.</p>
             <p><strong>Who owns iRoofer?</strong><br />Cristian Mendez — family-owned in Dallas since 2019.</p>
 
