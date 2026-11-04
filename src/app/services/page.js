@@ -116,6 +116,13 @@ export default function ServicesPage() {
             </div>
             <div className="card" style={{ color: 'inherit' }}>
               <div className="body">
+                <h2><Link href="/metal-roofing-dallas-ga/" style={{ color: 'inherit', textDecoration: 'none' }}>Metal roofing</Link></h2>
+                <p>Standing-seam metal roofs for commercial buildings and homes. Free inspection and a written scope.</p>
+                <Link href="/metal-roofing-dallas-ga/" className="more">Learn more →</Link>
+              </div>
+            </div>
+            <div className="card" style={{ color: 'inherit' }}>
+              <div className="body">
                 <h2><Link href="/services/roof-insurance-claims/" style={{ color: 'inherit', textDecoration: 'none' }}>Roof insurance claims</Link></h2>
                 <p>You file the claim. We take photos, meet the adjuster, and ask for missed items. We can’t promise what gets approved.</p>
                 <Link href="/services/roof-insurance-claims/" className="more">Learn more →</Link>

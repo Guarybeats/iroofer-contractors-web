@@ -214,11 +214,6 @@
     "changefreq": "monthly",
     "images": []
   },
-  "/blog/roof-financing-options-dallas-ga/": {
-    "priority": "0.6",
-    "changefreq": "monthly",
-    "images": []
-  },
   "/blog/roof-maintenance-calendar-dallas-ga/": {
     "priority": "0.6",
     "changefreq": "monthly",
@@ -675,5 +670,23 @@
   "/blog/water-stain-on-ceiling-roof-leak/": {
     "priority": "0.6",
     "changefreq": "monthly"
+  },
+  "/metal-roofing-dallas-ga/": {
+    "priority": "0.8",
+    "changefreq": "monthly",
+    "images": [
+      {
+        "loc": "https://iroofercontractors.com/assets/metal-roof-commercial-1.webp",
+        "title": "Standing-seam metal hip roof on a commercial storefront"
+      },
+      {
+        "loc": "https://iroofercontractors.com/assets/metal-roof-commercial-2.webp",
+        "title": "Standing-seam metal roof on a brick commercial building"
+      },
+      {
+        "loc": "https://iroofercontractors.com/assets/metal-roof-commercial-3.webp",
+        "title": "Standing-seam metal roof on a shopping center"
+      }
+    ]
   }
 }
