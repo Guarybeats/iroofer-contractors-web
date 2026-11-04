@@ -663,5 +663,17 @@
     "priority": "0.9",
     "changefreq": "monthly",
     "images": []
+  },
+  "/blog/how-to-choose-storm-damage-roofer/": {
+    "priority": "0.6",
+    "changefreq": "monthly"
+  },
+  "/blog/hail-damage-repair-or-replace-georgia/": {
+    "priority": "0.6",
+    "changefreq": "monthly"
+  },
+  "/blog/water-stain-on-ceiling-roof-leak/": {
+    "priority": "0.6",
+    "changefreq": "monthly"
   }
 }
