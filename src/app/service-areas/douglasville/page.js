@@ -38,7 +38,7 @@ const sections = [
   {
     h2: 'Everyday roof repair',
     paras: [
-      'Not every Douglasville call is a storm. Pipe boots, step flashing, and valley wear fail on their own schedule. /roof-repair-douglasville/ and /roof-repair-dallas-ga/ explain how we scope repairs; the same crew runs Douglasville jobs.',
+      'Not every Douglasville call is a storm. Pipe boots, step flashing, and valley wear fail on their own schedule. The roof repair section below and /roof-repair-dallas-ga/ explain how we scope repairs; the same crew runs Douglasville jobs.',
     ],
   },
   {
@@ -86,7 +86,7 @@ const faq = [
 
 const relatedLinks = [
   { href: '/storm-damage-roof-repair-douglasville/', label: 'Storm damage roof repair in Douglasville, GA' },
-  { href: '/roof-repair-douglasville/', label: 'Roof repair in Douglasville' },
+  { href: '/service-areas/douglasville/#roof-repair', label: 'Roof repair in Douglasville' },
   { href: '/roof-replacement-douglasville/', label: 'Roof replacement in Douglasville' },
   { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage Dallas GA' },
   { href: '/roof-repair-dallas-ga/', label: 'Roof repair Dallas GA' },

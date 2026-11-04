@@ -80,14 +80,14 @@ const faqs = [
 
 const relatedLinks = [
   { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas GA' },
-  { href: '/services/roof-repair/', label: 'Roof repair across Metro Atlanta' },
+  { href: '/roof-repair-dallas-ga/', label: 'Roof repair across Metro Atlanta' },
   { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair and tarping' },
   { href: '/services/roof-inspection/', label: 'Roof inspection' },
   { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair' },
   { href: '/hail-damage-roof-repair-dallas-ga/', label: 'Hail damage roof repair' },
   { href: '/blog/skylight-leak-repair-dallas-ga/', label: 'Skylight leak repair guide' },
-  { href: '/roof-repair-hiram/', label: 'Roof repair in Hiram' },
-  { href: '/roof-repair-powder-springs/', label: 'Roof repair in Powder Springs' },
+  { href: '/service-areas/hiram/#roof-repair', label: 'Roof repair in Hiram' },
+  { href: '/service-areas/powder-springs/#roof-repair', label: 'Roof repair in Powder Springs' },
   { href: '/contact/', label: 'Book a free roof inspection' },
 ];
 

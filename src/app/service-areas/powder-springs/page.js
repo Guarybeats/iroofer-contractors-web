@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const intro = [
-  'We roof houses in Powder Springs: ranches off Macland Road, two-stories toward Lost Mountain, and the wooded lots where limbs and leaves wear a roof down early. iRoofer Contractors is a family-owned residential crew from 152 Freedom Dr, Dallas, GA 30157, run by Cristian Mendez since 2019. We handle [roof repair](/roof-repair-powder-springs/), [full replacement](/roof-replacement-powder-springs/) and storm inspections on homes.',
+  'We roof houses in Powder Springs: ranches off Macland Road, two-stories toward Lost Mountain, and the wooded lots where limbs and leaves wear a roof down early. iRoofer Contractors is a family-owned residential crew from 152 Freedom Dr, Dallas, GA 30157, run by Cristian Mendez since 2019. We handle [roof repair](/service-areas/powder-springs/#roof-repair), [full replacement](/roof-replacement-powder-springs/) and storm inspections on homes.',
   'Gutters or fascia the real problem? Head to [gutter repair & replacement in Powder Springs](/gutter-repair-replacement-powder-springs/). For your roof, use [https://iroofercontractors.com/contact/](/contact/) or call (470) 236-1410.',
 ];
 
@@ -31,7 +31,7 @@ const sections = [
   {
     h2: 'Roof repair in Powder Springs',
     paras: [
-      'Leaks at penetrations, aging flashing, and wind-lifted tabs are the usual suspects. We photograph the failure and repair it so you are not repainting ceilings every season. See [roof repair in Powder Springs](/roof-repair-powder-springs/), or [roof repair in Dallas, GA](/roof-repair-dallas-ga/) for the full process.',
+      'Leaks at penetrations, aging flashing, and wind-lifted tabs are the usual suspects. We photograph the failure and repair it so you are not repainting ceilings every season. See [roof repair in Powder Springs](/service-areas/powder-springs/#roof-repair), or [roof repair in Dallas, GA](/roof-repair-dallas-ga/) for the full process.',
     ],
   },
   {
@@ -71,7 +71,7 @@ const faq = [
   },
   {
     q: 'Do you have a Powder Springs repair URL?',
-    a: 'Yes — see [roof repair in Powder Springs](/roof-repair-powder-springs/). Our Dallas service pages go deeper on process.',
+    a: 'Yes — see [roof repair in Powder Springs](/service-areas/powder-springs/#roof-repair). Our Dallas service pages go deeper on process.',
   },
   {
     q: 'Emergency leak?',
@@ -80,7 +80,7 @@ const faq = [
 ];
 
 const relatedLinks = [
-  { href: '/roof-repair-powder-springs/', label: 'Roof repair contractor in Powder Springs' },
+  { href: '/service-areas/powder-springs/#roof-repair', label: 'Roof repair contractor in Powder Springs' },
   { href: '/roof-replacement-powder-springs/', label: 'Roof replacement in Powder Springs, GA' },
   { href: '/storm-damage-roof-repair-powder-springs/', label: 'Storm damage Powder Springs' },
   { href: '/roof-repair-dallas-ga/', label: 'Roof repair Dallas GA' },

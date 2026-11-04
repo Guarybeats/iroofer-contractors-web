@@ -104,7 +104,7 @@ export default function BlogPostPage() {
 
             <p style={{ marginTop: 24 }}>
               Related:{' '}
-              <Link href="/dallas-ga-roofing/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Dallas GA roofing hub</Link>
+              <Link href="/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Dallas GA roofing hub</Link>
               {' · '}
               <Link href="/service-areas/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Service areas</Link>
             </p>

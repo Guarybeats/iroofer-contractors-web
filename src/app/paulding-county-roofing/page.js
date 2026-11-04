@@ -59,7 +59,7 @@ const faqs = [
 ];
 const relatedLinks = [
   {
-    "href": "/dallas-ga-roofing/",
+    "href": "/",
     "label": "Dallas GA roofing"
   },
   {
@@ -154,7 +154,7 @@ export default function Page() {
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Repair in Dallas</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
-            <Link key="/roof-repair-hiram/" href="/roof-repair-hiram/" className="svc-card">
+            <Link key="/service-areas/hiram/#roof-repair" href="/service-areas/hiram/#roof-repair" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Repair in Hiram</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
@@ -174,7 +174,7 @@ export default function Page() {
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Storm Damage in Hiram</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
-            <Link key="/new-construction-dallas-ga/" href="/new-construction-dallas-ga/" className="svc-card">
+            <Link key="/services/new-construction/" href="/services/new-construction/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>New Construction in Dallas</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>

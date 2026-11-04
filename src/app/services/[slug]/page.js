@@ -4,7 +4,7 @@ import QuoteForm from '@/components/QuoteForm';
 import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
 import RelatedGuides from '@/components/RelatedGuides';
 import Pic from '@/components/Pic';
-import { getService, services, brand } from '@/lib/brand';
+import { getService, services, brand, servicePath, serviceCityPath } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { serviceHubContent, comboCities } from '@/lib/serviceHubContent';
 import { renderInline } from '@/components/InlineText';
@@ -12,7 +12,7 @@ import { FaqSchema } from '@/components/LocalSeo';
 
 export function generateStaticParams() {
   return services
-    .filter((s) => s.slug !== 'gutter-repair-replacement')
+    .filter((s) => s.slug === 'new-construction') // other hubs 301 to their Dallas pages (Nov 2026 dedupe)
     .filter((s) => serviceHubContent[s.slug] || true)
     .map((s) => ({ slug: s.slug }));
 }
@@ -168,7 +168,7 @@ export default function ServiceDetail({ params }) {
             <span className="eyebrow dark">{hub.cityLabel}</span>
             <div className="chips" style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginTop: 12 }}>
               {cityList.map((c) => (
-                <Link key={c.slug} href={`/${hub.cityPrefix}-${c.slug}/`} className="chip">
+                <Link key={c.slug} href={serviceCityPath(hub.cityPrefix, c.slug)} className="chip">
                   {c.name}, {c.state} →
                 </Link>
               ))}
@@ -207,7 +207,7 @@ export default function ServiceDetail({ params }) {
         </div>
         <div className="cards" style={{ marginTop: 24 }}>
           {related.map((s) => (
-            <Link key={s.slug} href={`/services/${s.slug}/`} className="card" style={{ color: 'inherit', textDecoration: 'none' }}>
+            <Link key={s.slug} href={servicePath(s.slug)} className="card" style={{ color: 'inherit', textDecoration: 'none' }}>
               <img src={s.webp || s.image} alt={s.imageAlt || s.title} loading="lazy" />
               <div className="body">
                 <h3>{s.title}</h3>

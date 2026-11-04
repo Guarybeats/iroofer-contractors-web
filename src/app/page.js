@@ -16,12 +16,12 @@ const dallasLinks = [
   { href: '/roof-repair-dallas-ga/', label: 'Roof repair / leak repair in Dallas, GA' },
   { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm & hail damage roof repair Dallas' },
   { href: '/services/roof-insurance-claims/', label: 'Insurance claims help' },
-  { href: '/dallas-ga-roofing/', label: 'Dallas roofing company hub' },
+  { href: '/', label: 'Dallas roofing company hub' },
   { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas' },
   { href: '/gutter-repair-replacement-dallas-ga/', label: 'Gutter repair & replacement' },
   { href: '/metal-roofing-dallas-ga/', label: 'Metal roofing in Dallas, GA' },
   { href: '/roof-replacement-hiram/', label: 'Roof replacement in Hiram' },
-  { href: '/roof-repair-hiram/', label: 'Roof repair / inspection in Hiram' },
+  { href: '/service-areas/hiram/#roof-repair', label: 'Roof repair / inspection in Hiram' },
   { href: '/blog/roof-replacement-cost-dallas-ga/', label: 'Roof replacement cost factors' },
 ];
 
@@ -48,10 +48,14 @@ const faqs = [
   { q: 'Do you do roof repair in Dallas, GA?', a: 'Yes. Leaks, loose flashing, pipe boots, and storm wear are everyday work for us. Start at [roof repair in Dallas, GA](/roof-repair-dallas-ga/). Not sure what you need? Book a [free roof check](/free-roof-check/).' },
   { q: 'Do you replace roofs in Dallas, GA?', a: 'Yes. See [roof replacement in Dallas, GA](/roof-replacement-dallas-ga/). It shows what we do, how it works, and what comes next.' },
   { q: 'Hail or wind after a Dallas storm?', a: 'See [storm damage roof repair in Dallas](/storm-damage-roof-repair-dallas-ga/) and [roof insurance claims help](/services/roof-insurance-claims/). We take photos of the damage. What insurance approves depends on your policy, so we can’t promise a result.' },
-  { q: 'Need Hiram help?', a: 'Go to [roof repair in Hiram](/roof-repair-hiram/) or [roof replacement in Hiram](/roof-replacement-hiram/). It’s the same crew from Dallas. Call (470) 236-1410.' },
-  { q: 'Looking for a Dallas roofing contractor?', a: 'Pick the service you need: repair, new roof, or storm. Or see all of it on our [Dallas roofing company hub](/dallas-ga-roofing/). You can also call (470) 236-1410 or use https://iroofercontractors.com/contact/.' },
+  { q: 'Need Hiram help?', a: 'Go to [roof repair in Hiram](/service-areas/hiram/#roof-repair) or [roof replacement in Hiram](/roof-replacement-hiram/). It’s the same crew from Dallas. Call (470) 236-1410.' },
+  { q: 'Looking for a Dallas roofing contractor?', a: 'Pick the service you need: repair, new roof, or storm. You can also call (470) 236-1410 or use https://iroofercontractors.com/contact/.' },
   { q: 'How long does a full replacement take?', a: 'It depends on the size and steepness of the roof, how many old layers come off, wood repairs, and weather. We give you a real schedule in writing before we start.' },
   { q: 'Do I need to be home during the work?', a: 'No. All the work is outside. We text you photos as we go and walk the job with you when you’re free. We sweep for nails with a magnet on every new roof.' },
+  { q: 'Are you based in Dallas, or just advertising here?', a: 'We are based here, at 152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019.' },
+  { q: 'Do you publish prices here?', a: 'No. Every roof is different. You get a real price in writing after a free roof check. Ask for one at https://iroofercontractors.com/contact/ or call (470) 236-1410.' },
+  { q: 'What do Georgia storms do to roofs here?', a: 'Spring and summer bring hail, strong winds, and falling limbs. That can mean dented shingles, lost shingle grit, loose flashing, and hidden leaks that show up weeks later. A free roof check catches them early.' },
+  { q: 'Which areas do you serve around Dallas, GA?', a: 'Dallas, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, Austell, Roswell, Alpharetta, Canton, plus greater west Metro Atlanta (Paulding, Douglas, and Cobb counties).' },
 ];
 
 export default function HomePage() {

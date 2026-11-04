@@ -132,12 +132,12 @@ export function getService(slug) {
 //
 // IMPORTANT: every city listed here must also have its own page at
 // src/app/service-areas/<slug>/page.js — EXCEPT Dallas, which consolidates onto the
-// commercial hub /dallas-ga-roofing/ (see cityPath). The generic [city] dynamic route
+// homepage / (was /dallas-ga-roofing/ until 2026-11-03; see cityPath). The generic [city] dynamic route
 // was removed because it collided with dedicated pages and the static export picked
 // the winner unpredictably. Adding a city here without a page (or path override)
 // means the service-areas index links to a 404.
 export const cities = [
-  { slug: 'dallas-ga', name: 'Dallas', state: 'GA', county: 'Paulding County', path: '/dallas-ga-roofing/', blurb: 'our home base — same-day roof inspections across Dallas and across the county line.',
+  { slug: 'dallas-ga', name: 'Dallas', state: 'GA', county: 'Paulding County', path: '/', blurb: 'our home base — same-day roof inspections across Dallas and across the county line.',
     localNote: 'As the town we call home, Dallas homeowners get priority scheduling and the crew chief on every job. From historic downtown to the new subdivisions off Hwy 92, we know the rooflines here.' },
   { slug: 'douglasville', name: 'Douglasville', state: 'GA', county: 'Douglas County', blurb: 'fast storm-response and full replacements for Douglasville homeowners.',
     localNote: 'Douglasville sees its share of spring straight-line winds off the ridge. We document hail and wind damage for your insurance claim and rebuild to manufacturer spec.' },
@@ -160,6 +160,24 @@ export const cities = [
   { slug: 'canton', name: 'Canton', state: 'GA', county: 'Cherokee County', combo: false, blurb: 'hail-belt inspections and full tear-offs for Canton and north Cherokee homes.',
     localNote: 'North Cherokee catches hail cores that miss Atlanta entirely. We inspect for soft metal dents and bruised mats \u2014 the evidence adjusters actually accept \u2014 before you file.' },
 ];
+
+/** Canonical URL for a service (consolidated Nov 2026: Dallas pages are canonical for most services). */
+const SERVICE_CANONICAL = {
+  'roof-repair': '/roof-repair-dallas-ga/',
+  'roof-replacement': '/roof-replacement-dallas-ga/',
+  'storm-damage-roof-repair': '/storm-damage-roof-repair-dallas-ga/',
+  'gutter-repair-replacement': '/gutter-repair-replacement-dallas-ga/',
+  'new-construction': '/services/new-construction/',
+};
+export function servicePath(slug) {
+  return SERVICE_CANONICAL[slug] || `/services/${slug}/`;
+}
+/** Canonical URL for a service in a city. City roof-repair pages folded into the city hub. */
+export function serviceCityPath(slug, citySlug) {
+  if (citySlug === 'dallas-ga' || citySlug === 'dallas') return servicePath(slug);
+  if (slug === 'roof-repair') return `/service-areas/${citySlug}/#roof-repair`;
+  return `/${slug}-${citySlug}/`;
+}
 
 /** Canonical path for a city card/link. Dallas consolidates to the roofing hub. */
 export function cityPath(cityOrSlug) {

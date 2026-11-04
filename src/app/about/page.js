@@ -149,7 +149,7 @@ export default function AboutPage() {
                 <Link href="/emergency-roof-repair-dallas-ga/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Emergency roof repair →</Link>
               </p>
               <p style={{ marginTop: 8 }}>
-                <Link href="/dallas-ga-roofing/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Dallas, GA roofing hub →</Link>
+                <Link href="/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Dallas, GA roofing hub →</Link>
               </p>
               <p style={{ marginTop: 8 }}>
                 <Link href="/service-areas/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Service areas →</Link>

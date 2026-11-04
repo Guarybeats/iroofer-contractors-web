@@ -2,7 +2,7 @@
 //
 // Section shape: { h, p?, id?, blocks? }
 //   p       — opening paragraph (string). May contain [anchor](/path/) links.
-//   id      — optional anchor id (e.g. 'roof-inspection' → /roof-repair-hiram/#roof-inspection)
+//   id      — optional anchor id (e.g. 'roof-inspection' → /service-areas/hiram/#roof-inspection)
 //   blocks  — optional extra content rendered after p, in order. Each block is either
 //             a string (another paragraph) or { title?, items: [string], ordered? } (a list).
 import { renderInline } from '@/components/InlineText';

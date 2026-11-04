@@ -106,7 +106,7 @@ export default function BlogPostPage() {
 
             <h2>Get a straight answer</h2>
             <p>iRoofer Contractors is a family-owned roofing crew based in Dallas, GA since 2019, led by owner Cristian Mendez. We’d rather do a good repair today and earn your replacement years from now than sell you a roof you don’t need. Book a free inspection at <Link href="/contact/">https://iroofercontractors.com/contact/</Link> or call <a href={`tel:${brand.phone}`}>{brand.phone}</a>.</p>
-            <p>Local pages: <Link href="/roof-repair-dallas-ga/">roof repair in Dallas, GA</Link> · <Link href="/roof-replacement-dallas-ga/">roof replacement in Dallas, GA</Link> · <Link href="/roof-repair-hiram/">roof repair in Hiram</Link></p>
+            <p>Local pages: <Link href="/roof-repair-dallas-ga/">roof repair in Dallas, GA</Link> · <Link href="/roof-replacement-dallas-ga/">roof replacement in Dallas, GA</Link> · <Link href="/service-areas/hiram/#roof-repair">roof repair in Hiram</Link></p>
 
             <h2>Repair vs. replace: common questions</h2>
             {faqs.map((f) => (
