@@ -50,6 +50,10 @@ export default function Page() {
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
                 {renderInline(copy.intro)}
               </p>
+              <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
+                If the roof is past patching, see our page on{' '}
+                <Link href="/roof-replacement-hiram/" style={{ color: 'var(--orange)', fontWeight: 700 }}>roof replacement in Hiram, GA</Link>.
+              </p>
               <div className="cta" style={{ marginTop: 28 }}>
                 <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>{brand.phone}</a>
                 <Link className="btn btn-solid" href="/contact/" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Get a free quote <span className="arr">→</span></Link>

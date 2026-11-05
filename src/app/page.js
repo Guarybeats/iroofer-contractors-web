@@ -111,7 +111,9 @@ export default function HomePage() {
       <section className="sec-light" style={{ padding: '28px 0 8px' }} aria-label="Start with the service you need">
         <div className="wrap">
           <p style={{ color: '#52606b', marginBottom: 14, maxWidth: 720 }}>
-            Looking for a roofer in Dallas? Pick the service you need. Then call (470) 236-1410 or use{' '}
+            Looking for a roofer in Dallas? Leaks and storm wear start with{' '}
+            <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>roof repair in Dallas, GA</Link>; worn-out roofs go to{' '}
+            <Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>roof replacement in Dallas, GA</Link>. Or pick the service you need below. Then call (470) 236-1410 or use{' '}
             <a href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>https://iroofercontractors.com/contact/</a>.
           </p>
           <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '.55rem 1.2rem', listStyle: 'none', padding: 0, margin: 0 }}>
