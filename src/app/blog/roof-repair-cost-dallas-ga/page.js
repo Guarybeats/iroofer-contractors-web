@@ -60,7 +60,9 @@ export default function BlogPostPage() {
               Most people want a rough idea of what a repair will cost before they call. Fair enough. The honest
               answer: the number moves with what failed, how hard it is to reach, whether the decking is soft, and
               whether you’re fixing one pipe boot or a whole slope. This guide covers the cost factors. If you already
-              know you need work done, skip to the service pages linked below.
+              know you need work done, go straight to{' '}
+              <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)' }}>roof repair in Dallas, GA</Link> or{' '}
+              <Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)' }}>roof replacement in Dallas, GA</Link>.
             </p>
             <p>
               iRoofer Contractors is family-owned in Dallas since 2019. Call{' '}

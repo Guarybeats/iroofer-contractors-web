@@ -87,9 +87,9 @@ export default function BlogPostPage() {
             <h2>Repair vs replace (cost mindset)</h2>
             <p>
               Sometimes a targeted{' '}
-              <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)' }}>roof repair in Dallas</Link>
+              <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)' }}>roof repair in Dallas, GA</Link>
               {' '}is the smart spend. Sometimes stacking patches costs more than a clean{' '}
-              <Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)' }}>roof replacement in Dallas</Link>.
+              <Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)' }}>roof replacement in Dallas, GA</Link>.
               We&apos;ll say which after we see the roof.
             </p>
 
