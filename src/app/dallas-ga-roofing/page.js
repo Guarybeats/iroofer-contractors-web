@@ -61,7 +61,7 @@ function faqItem(open) {
 export default function DallasGaRoofingPage() {
   return (
     <main>
-      <section className="sec-pad" style={{ paddingTop: 96, background: 'linear-gradient(180deg,#fff, #f4f7fa)' }}>
+      <section className="sec-light sec-pad" style={{ paddingTop: 96, background: 'linear-gradient(180deg,#fff, #f4f7fa)' }}>
         <div className="wrap">
           <div className="sec-head rv">
             <span className="eyebrow dark">Dallas, GA · Paulding County</span>

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { cities, brand, cityPath } from '@/lib/brand';
 import { seo } from '@/lib/seo';
+import QuoteForm from '@/components/QuoteForm';
 
 export const metadata = seo({
   title: 'Roofing Service Areas Near Dallas, GA | iRoofer',
@@ -55,6 +56,8 @@ export default function ServiceAreas() {
               <Link key={l.href} href={l.href} className="chip" style={{ fontWeight: 700 }}>{l.label} →</Link>
             ))}
             <Link href="/paulding-county-roofing/" className="chip" style={{ fontWeight: 700 }}>Paulding County roofing →</Link>
+            <Link href="/services/siding/" className="chip" style={{ fontWeight: 700 }}>Siding →</Link>
+            <Link href="/services/exterior-painting/" className="chip" style={{ fontWeight: 700 }}>Exterior painting →</Link>
             <Link href="/services/" className="chip" style={{ fontWeight: 700 }}>All services →</Link>
           </div>
         </div>
@@ -73,7 +76,41 @@ export default function ServiceAreas() {
           ))}
         </div>
 
-        <p style={{ color: '#52606b', marginTop: 36, maxWidth: 720, lineHeight: 1.7, borderLeft: '3px solid var(--orange)', paddingLeft: 14 }}>
+        <div className="rv" style={{ marginTop: 48, maxWidth: 820 }}>
+          <h2 style={{ fontSize: 'clamp(1.5rem,2.8vw,2rem)', fontWeight: 800 }}>Town by town</h2>
+          <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
+            We work from a real shop in Dallas, not a call center that farms jobs out. The notes below are the same local details we publish on each city page — Paulding, Cobb, Douglas, Cherokee, and north Fulton. If your town is next door and not listed, call (470) 236-1410 and ask. If we can get there and do the work right, we will tell you.
+          </p>
+          {cities.map((c) => (
+            <article key={c.slug} style={{ marginTop: 28 }}>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 800 }}>
+                <Link href={cityPath(c)} style={{ color: 'var(--ink)' }}>{c.name}, {c.state}</Link>
+                <span style={{ fontWeight: 600, color: '#52606b' }}> · {c.county}</span>
+              </h3>
+              <p style={{ color: '#52606b', marginTop: 8, lineHeight: 1.75 }}>{c.localNote || c.blurb}</p>
+              <p style={{ marginTop: 8 }}>
+                <Link href={cityPath(c)} style={{ color: 'var(--orange)', fontWeight: 700 }}>{c.name} roofing page →</Link>
+              </p>
+            </article>
+          ))}
+        </div>
+
+        <div className="rv" style={{ marginTop: 48, maxWidth: 820 }}>
+          <h2 style={{ fontSize: 'clamp(1.5rem,2.8vw,2rem)', fontWeight: 800 }}>What we do in these cities</h2>
+          <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
+            Roof repair, roof replacement, storm-damage inspections, new-construction roofing, gutter repair and replacement, siding repair and replacement, and exterior painting and staining. Emergency tarping is available when the roof is open and it is safe to get on it — we do not promise 24/7 coverage. Insurance documentation is available after a storm; what a policy pays is up to the carrier, not us.
+          </p>
+          <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
+            Dallas is home base: 152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019 by Cristian Mendez. Hours are {brand.hours.full}. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when they fit the house.
+          </p>
+        </div>
+
+        <div style={{ maxWidth: 460, marginTop: 48 }}>
+          <h2 style={{ fontSize: '1.5rem', fontWeight: 800, marginBottom: 12 }}>Ask about your address</h2>
+          <QuoteForm variant="contact" id="service-areas-quote" source="Service areas" />
+        </div>
+
+                <p style={{ color: '#52606b', marginTop: 36, maxWidth: 720, lineHeight: 1.7, borderLeft: '3px solid var(--orange)', paddingLeft: 14 }}>
           Family-owned since 2019 · Owens Corning Contractor Rewards Member · Based in Dallas, GA · Owner Cristian Mendez
         </p>
         <p style={{ marginTop: 20, color: '#52606b' }}>

@@ -59,9 +59,9 @@ export const services = [
     metaDesc:
       'Full tear-off and replacement with architectural shingles, installed by an Owens Corning Contractor Rewards member in Dallas, GA & Metro Atlanta.',
     tagline: 'A new roof that lasts decades.',
-    image: '/assets/service-replacement.jpg?v=3',
-    webp: '/assets/service-replacement.webp?v=3',
-    imageAlt: 'Full roof replacement with architectural shingles on a Dallas, GA home',
+    image: '/assets/cc-dallas-replacement-shingles.jpg?v=1',
+    webp: '/assets/cc-dallas-replacement-shingles.webp?v=1',
+    imageAlt: 'Finished architectural shingles, pipe boot, and ridge on a Dallas, GA roof replacement by iRoofer Contractors',
     summary:
       'We take off the old roof and put on a new one, installed by an Owens Corning Contractor Rewards member. Clean and built to last, with the shingle maker’s standard warranty.',
     bullets: [
@@ -119,6 +119,42 @@ export const services = [
       'Same-day emergency tarping',
       'Hail and wind damage documentation for your claim',
       'Full repair or replacement once the claim is settled'
+    ]
+  },
+  {
+    slug: 'siding',
+    title: 'Siding Repair & Replacement',
+    metaDesc:
+      'Siding repair and replacement in Dallas, GA and west Metro Atlanta. Same local crew as our roofing work. Free visit. Call (470) 236-1410.',
+    tagline: 'Walls that shed water like the roof does.',
+    image: '',
+    webp: '',
+    imageAlt: '',
+    summary:
+      'We repair and replace siding, and we pay attention to where the wall meets the roof. A torn panel or open corner is often how water gets behind the house.',
+    bullets: [
+      'Panel, corner, and trim repair',
+      'Partial or full siding replacement',
+      'Flashing where siding meets the roof and windows',
+      'Written scope after we see the house — no online prices'
+    ]
+  },
+  {
+    slug: 'exterior-painting',
+    title: 'Exterior Painting & Staining',
+    metaDesc:
+      'Exterior painting and staining in Dallas, GA and west Metro Atlanta. Prep first, then a written finish plan. Call (470) 236-1410.',
+    tagline: 'Paint that starts with honest prep.',
+    image: '',
+    webp: '',
+    imageAlt: '',
+    summary:
+      'We paint and stain the exterior after we check for moisture, failing wood, and leaks at the roof edge. We will not roll over a problem the paint cannot fix.',
+    bullets: [
+      'Washing, scraping, and priming where the finish has failed',
+      'Exterior paint and stain for siding and trim',
+      'Color samples on the house in daylight',
+      'Written plan after a visit — no published prices'
     ]
   }
 ];

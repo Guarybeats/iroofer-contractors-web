@@ -221,7 +221,16 @@ export async function onRequest(context) {
   }
 
   const wantsMd = prefersMarkdown(request.headers.get("accept") || "");
-  const res = await next();
+  let res = await next();
+  if (path === "/admin" || path.startsWith("/admin/") || res.status === 404) {
+    const headers = new Headers(res.headers);
+    headers.set("X-Robots-Tag", "noindex, nofollow");
+    res = new Response(res.body, {
+      status: res.status,
+      statusText: res.statusText,
+      headers,
+    });
+  }
   const ct = (res.headers.get("content-type") || "").toLowerCase();
 
   // Agent discovery Link headers on HTML document responses (RFC 8288 / 9727).

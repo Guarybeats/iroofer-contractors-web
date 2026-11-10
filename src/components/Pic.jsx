@@ -5,6 +5,7 @@
 const NO_WEBP = [];
 
 export default function Pic({ src, alt, className, style, loading = 'lazy', decoding = 'async', ...rest }) {
+  if (!src) return null;
   const [path, query] = src.split('?');
   const webp = path.replace(/\.(jpe?g|png)$/i, '.webp') + (query ? `?${query}` : '');
   const hasWebp = webp !== src && !NO_WEBP.includes(path);
