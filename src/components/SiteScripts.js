@@ -55,6 +55,7 @@ export default function SiteScripts() {
       return val.toLocaleString('en-US', { minimumFractionDigits: dec, maximumFractionDigits: dec });
     }
     function animateCount(el) {
+      if (el.getAttribute('data-static') === 'true') return;
       const target = parseFloat(el.getAttribute('data-count'));
       const dur = 1500, t0 = performance.now();
       function step(t) {
@@ -121,7 +122,20 @@ export default function SiteScripts() {
       window.addEventListener('pointerup', () => { dragging = false; });
     }
 
-    return () => window.removeEventListener('scroll', onScroll);
+    const fab = document.querySelector('.fab');
+    const heroTel = document.querySelector('.hero-cta a[href^="tel"]');
+    let ioFab;
+    if (fab && heroTel && 'IntersectionObserver' in window) {
+      ioFab = new IntersectionObserver((entries) => {
+        fab.classList.toggle('fab-hidden', entries.some((e) => e.isIntersecting));
+      }, { threshold: 0.15 });
+      ioFab.observe(heroTel);
+    }
+
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      if (ioFab) ioFab.disconnect();
+    };
   }, []);
 
   return (

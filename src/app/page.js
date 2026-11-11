@@ -9,7 +9,13 @@ import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
 import { renderInline } from '@/components/InlineText';
 import { plainText } from '@/lib/inlineLinks';
 import { GBP_URL } from '@/components/LocalSeo';
+import { seo } from '@/lib/seo';
 
+export const metadata = seo({
+  title: 'Roof Repair & Replacement in Dallas, GA | iRoofer',
+  description: 'Family-owned Dallas, GA roofer since 2019: roof repair, replacement, and storm and hail damage with insurance photos. Free inspection. Call (470) 236-1410.',
+  path: '/',
+});
 
 const dallasLinks = [
   { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas, GA' },
@@ -41,6 +47,12 @@ const svcs = [
   { n: '05', title: 'Gutter Repair & Replacement', tag: 'Protection', img: '/assets/service-gutters-main.jpg?v=2',
     href: '/gutter-repair-replacement-dallas-ga/', cta: 'Gutter repair & replacement Dallas',
     body: 'Clogged or broken gutters can send water back under your shingles and against your home. We clean, fix, and replace seamless gutters so water flows away from your home, not into it.' },
+  { n: '06', title: 'Siding Repair & Replacement', tag: 'Walls', img: '',
+    href: '/services/siding/', cta: 'Siding repair & replacement',
+    body: 'Torn panels, open corners, and water at the roof-to-wall joint. We repair or replace siding with the same local crew that does the roof.' },
+  { n: '07', title: 'Exterior Painting & Staining', tag: 'Finish', img: '',
+    href: '/services/exterior-painting/', cta: 'Exterior painting & staining',
+    body: 'We paint and stain exteriors after honest prep. If the roof edge or trim is still taking on water, we tell you before anyone opens a bucket.' },
 ];
 
 
@@ -77,34 +89,34 @@ export default function HomePage() {
         <div className="wrap">
           <div className="hero-copy">
             <span className="eyebrow">Dallas, GA · Atlanta Metro</span>
-            <h1>Dallas GA Roof Repair, Replacement &amp; Storm Damage <br /><span className="stroke">— done local.</span></h1>
-            <p className="lead">Family-owned in Dallas since 2019. Need a leak fixed this week? A new roof? Help after hail or wind? Cristian Mendez’s crew checks your roof, puts the plan in writing, and stands behind the work. We install Owens Corning shingles as an Owens Corning Contractor Rewards member.</p>
+            <h1>Dallas GA Roof Repair, Replacement &amp; Storm Damage <span className="stroke">— done local.</span></h1>
+            <p className="hero-tagline">Strong Roofs. Smarter Homes.</p>
+            <p className="lead">Family-owned in Dallas since 2019. Cristian Mendez’s crew checks your roof, puts the plan in writing, and stands behind the work — leak repair, a new roof, or help after hail or wind.</p>
             <div className="hero-cta">
               <a className="btn btn-solid" href="/free-roof-check/">Get a Free Roof Check <span className="arr">→</span></a>
               <a className="btn btn-ghost" href={`tel:${brand.phone}`}>Call or text {brand.phone}</a>
             </div>
-            <div className="stats">
-              <div className="stat"><div className="num"><span className="cnt" data-count="2019" data-nogroup>2019</span></div><div className="lbl">Family-owned in Dallas since</div></div>
-              <div className="stat"><div className="num">Free</div><div className="lbl">No-pressure roof inspections</div></div>
-              <div className="stat"><div className="num">Local</div><div className="lbl">Owens Corning Contractor Rewards Member</div></div>
-              <div className="stat"><div className="num">Real</div><div className="lbl">Crew — not a call center</div></div>
-            </div>
+          </div>
+
+          <div className="hero-form-col">
+            <HeroForm />
           </div>
 
           <div className="hero-media">
-            <div className="frame" aria-hidden="true"></div>
-            <img className="main" src="/assets/hero.webp?v=3" alt="iRoofer crew installing architectural shingles on a Georgia home in Dallas" width={800} height={1000} loading="eager" decoding="async" fetchPriority="high" />
-            <div className="badge" aria-hidden="true">
-              <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" /></defs>
-                <text fill="#f3f5f4" fontFamily="Public Sans" fontSize="11.5" fontWeight="700" letterSpacing="2.4"><textPath href="#circ">FREE INSPECTIONS • STORM RESPONSE • </textPath></text>
-              </svg>
-              <span className="star">★</span>
-            </div>
-
-            <HeroForm />
+            <img className="main" src="/assets/hero.webp?v=3" alt="iRoofer crew installing architectural shingles on a Georgia home in Dallas" width={800} height={600} loading="eager" decoding="async" fetchPriority="high" />
           </div>
         </div>
       </section>
+      <div className="trust-row" aria-label="About this company">
+        <div className="wrap">
+          <div className="stats">
+            <div className="stat"><div className="num">2019</div><div className="lbl">Family-owned in Dallas since</div></div>
+            <div className="stat"><div className="num">Free</div><div className="lbl">No-pressure roof inspections</div></div>
+            <div className="stat"><div className="num">Local</div><div className="lbl">Owens Corning Contractor Rewards Member</div></div>
+            <div className="stat"><div className="num">Real</div><div className="lbl">Crew — not a call center</div></div>
+          </div>
+        </div>
+      </div>
 
 
       {/* ATF INTENT CARDS — service links */}
@@ -171,7 +183,7 @@ export default function HomePage() {
                       <p>{s.body}</p>
                       <Link className="svc-link" href={s.href || "/contact/"}>{s.cta || "Get an estimate"} →</Link>
                     </div>
-                    <Pic src={s.img} alt={`${s.title} by iRoofer Contractors in Dallas, GA`} />
+                    {s.img ? <Pic src={s.img} alt={`${s.title} by iRoofer Contractors in Dallas, GA`} /> : null}
                   </div></div></div>
                 </article>
               ))}
@@ -224,29 +236,23 @@ export default function HomePage() {
         <div className="wrap" style={{ position: 'relative' }}>
           <div className="sec-head rv">
             <span className="eyebrow dark">Proof, not promises</span>
-            <h2>Drag to see the <span className="ac">difference.</span></h2>
-            <p>A storm-hit roof on a two-story home in Dallas. We tore it all off and rebuilt it. Slide the handle to see the change, then scroll the recent roofs on the right.</p>
+            <h2>Recent work in <span className="ac">Dallas, GA.</span></h2>
+            <p>Finished architectural shingles from a Dallas replacement we completed. These are real job photos — not stock — from a home we re-roofed.</p>
           </div>
 
           <div className="ba-wrap">
-            <div className="ba rv" id="ba" style={{ '--pos': '52%' }}>
-              <img className="before" src="/assets/service-repair.webp?v=4" alt="Before photo: storm-damaged roof on a Dallas, GA two-story home" loading="lazy" />
-              <img className="after" src="/assets/service-replacement.webp?v=3" alt="After photo: full roof replacement with new architectural shingles" loading="lazy" />
-              <span className="tag t-before">Before — storm damage</span>
-              <span className="tag t-after">After — full replacement</span>
-              <div className="handle" aria-hidden="true"><span className="grip">◂</span></div>
-              <span className="hint">Drag to compare</span>
-              <input className="range" type="range" min="0" max="100" defaultValue="52" aria-label="Reveal the after photo" />
+            <div className="rv">
+              <img src="/assets/cc-dallas-replacement-ridge.webp?v=1" width={1280} height={720} alt="Finished architectural shingle roof and ridge on a Dallas, GA home after an iRoofer replacement" loading="lazy" style={{ width: '100%', height: 'auto', borderRadius: 8 }} />
             </div>
 
             <div className="gallery rv">
               <div className="gcard">
-                <img loading="lazy" src="/assets/service-newconstruction.webp?v=3" alt="New construction roof installation on a Paulding County home" />
-                <div className="cap"><span>Paulding County</span><b>New construction</b></div>
+                <img loading="lazy" src="/assets/cc-dallas-replacement-shingles.webp?v=1" width={1280} height={720} alt="Close-up of new architectural shingles, pipe boot, and ridge vent on a Dallas, GA roof" />
+                <div className="cap"><span>Dallas, GA</span><b>Replacement details</b></div>
               </div>
               <div className="gcard">
-                <img loading="lazy" src="/assets/hero.webp?v=3" alt="Aerial view of a finished storm rebuild with multiple new roofs" />
-                <div className="cap"><span>West metro Atlanta</span><b>Storm rebuild</b></div>
+                <img loading="lazy" src="/assets/hero.webp?v=3" alt="iRoofer crew installing architectural shingles on a Georgia home" />
+                <div className="cap"><span>West metro Atlanta</span><b>On the roof</b></div>
               </div>
             </div>
           </div>

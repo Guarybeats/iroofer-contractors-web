@@ -20,13 +20,15 @@ export function seo({
   description,
   path = '',
   noIndex = false,
+  canonicalPath,
 }) {
   const url = absoluteUrl(path);
+  const canonical = absoluteUrl(canonicalPath || path);
   return {
     title,
     description,
     metadataBase: new URL(BASE),
-    alternates: { canonical: url },
+    alternates: { canonical },
     robots: noIndex
       ? { index: false, follow: false }
       : { index: true, follow: true },

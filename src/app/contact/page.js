@@ -50,7 +50,7 @@ export default function ContactPage() {
     <>
       <section className="contact sec-pad">
         <div className="wrap">
-          <div className="rv">
+          <div className="rv contact-lead">
             <span className="eyebrow">Let&apos;s talk</span>
             <h1>Contact iRoofer Contractors</h1>
             <p className="lead">
@@ -72,17 +72,18 @@ export default function ContactPage() {
                 <div><div className="lbl">Shop &amp; office</div><span className="val">{brand.location} — 152 Freedom Dr, Dallas, GA 30157 (by appointment)</span></div>
               </div>
             </div>
-            <div className="towns">
+          </div>
+          <div className="rv contact-form">
+            <QuoteForm variant="contact" id="quote-contact" />
+          </div>
+
+          <div className="contact-more">
+            <div className="towns" style={{ marginTop: 8 }}>
               <div className="lbl">Proudly serving</div>
               <div className="chips">
                 {brand.serviceArea.map((a) => <span className="chip" key={a}>{a}</span>)}
               </div>
             </div>
-          </div>
-          <div className="rv">
-            <QuoteForm variant="contact" id="quote-contact" />
-          </div>
-
           <div className="rv" style={{ marginTop: 28, maxWidth: 820, background: '#fff', border: '1px solid rgba(22,29,37,.08)', borderRadius: 8, padding: '1.4rem 1.6rem' }}>
             <h2 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: 8 }}>You’re contacting a real Dallas shop</h2>
             <p style={{ color: '#52606b', lineHeight: 1.75, margin: 0 }}>
@@ -110,6 +111,7 @@ export default function ContactPage() {
 
           <div style={{ marginTop: 28, textAlign: 'center' }}>
             <ReviewButton variant="orange" label="Leave us a Google review" />
+          </div>
           </div>
         </div>
       </section>

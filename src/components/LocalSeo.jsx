@@ -3,6 +3,7 @@
 import { brand, services } from '@/lib/brand';
 import { usePathname } from 'next/navigation';
 import { plainText } from '@/lib/inlineLinks';
+import { aggregateRatingNode } from '@/lib/reviewsConfig';
 
 // Google Business Profile link — real GBP Maps short link (provided by owner).
 // Verified to resolve to Iroofer Contractors (Dallas, GA).
@@ -55,6 +56,8 @@ function breadcrumbLabel(segment) {
     'gutter-repair-replacement': 'Gutter Repair & Replacement',
     'storm-damage-roof-repair': 'Storm Damage Roof Repair',
     'roof-insurance-claims': 'Roof Insurance Claims',
+    siding: 'Siding',
+    'exterior-painting': 'Exterior Painting',
     'emergency-roof-repair-dallas-ga': 'Emergency Roof Repair Dallas GA',
     'roof-repair-dallas-ga': 'Roof Repair Dallas GA',
     'roof-replacement-dallas-ga': 'Roof Replacement Dallas GA',
@@ -68,7 +71,7 @@ function breadcrumbLabel(segment) {
 
   // Combo pages: roof-repair-hiram → Roof Repair Hiram, etc.
   const cityMatch = segment.match(
-    /^(roof-repair|roof-replacement|storm-damage-roof-repair|gutter-repair-replacement|new-construction)-(.+)$/
+    /^(roof-repair|roof-replacement|storm-damage-roof-repair|gutter-repair-replacement|new-construction|siding|exterior-painting)-(.+)$/
   );
   if (cityMatch) {
     const serviceLabel = known[cityMatch[1]] || titleCaseSlug(cityMatch[1]);
@@ -139,7 +142,10 @@ export function buildSeoGraph(path) {
     // Self-hosted review markup (aggregateRating + embedded reviews) is ignored by
     // Google for LocalBusiness since 2019 and reads as self-serving to quality checks.
     // Ratings live on the Google Business Profile, linked in sameAs above.
+    // aggregateRatingNode() stays null until a verified ratingValue/reviewCount is set.
   };
+  const rating = aggregateRatingNode();
+  if (rating) localBusiness.aggregateRating = rating;
 
   const webSite = {
     '@type': 'WebSite',
@@ -213,6 +219,10 @@ export function FaqSchema({ faq }) {
 
 export default function LocalSeo({ faq = null }) {
   const pathname = usePathname();
+  const path = (pathname || '').replace(/\/+$/, '') || '/';
+  if (path.startsWith('/admin') || path === '/_not-found' || path === '/404') {
+    return null;
+  }
   const graph = buildSeoGraph(pathname || '/');
 
   // Optional FAQPage schema (rich-result eligible). Pass `faq` from a page that

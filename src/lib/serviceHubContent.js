@@ -204,7 +204,110 @@ export const serviceHubContent = {
     cityPrefix: 'new-construction',
     cityLabel: 'New construction by city',
   },
+  siding: {
+    eyebrow: 'Siding repair & replacement',
+    h1Before: 'Siding Repair & Replacement in Dallas, GA & ',
+    h1Accent: 'West Metro Atlanta',
+    lead:
+      'iRoofer Contractors repairs and replaces siding on the same homes we roof. Family-owned in Dallas since 2019. We look at panels, corners, trim, and the flashing where the wall meets the roof, then we write the plan before we order material.',
+    bullets: [
+      'Repair torn, cracked, or loose panels and corners',
+      'Replace a wall or the whole house when repair no longer makes sense',
+      'Flash the roof-to-wall joint so a new panel does not hide a leak',
+      'Written price after we see the house — we do not publish ranges',
+    ],
+    processTitle: 'How a siding visit works',
+    processIntro: 'One local crew. Photos of what failed. A written scope you can approve or change.',
+    steps: [
+      { n: '01', title: 'Walk & photograph', body: 'We walk the house and take photos of failed panels, open corners, and any stains inside. We also look at the roof edge, because water often starts there.' },
+      { n: '02', title: 'Scope & price', body: 'You get a written plan: repair a section, replace a wall, or replace more. If paint or a roof repair should come first, we say so.' },
+      { n: '03', title: 'Repair or replace', body: 'We match the remaining siding as closely as today’s products allow, fasten it correctly, and flash windows and the roof-to-wall joint.' },
+      { n: '04', title: 'Cleanup & walkthrough', body: 'We haul off old material, check the yard, and walk the job with you. Questions later go to the same Dallas number: (470) 236-1410.' },
+    ],
+    faqs: [
+      { q: 'Do you really offer siding, or only roofing?', a: 'Yes, we offer siding repair and replacement. It is part of the same local company. Call (470) 236-1410 if you want us to look at the walls as well as the roof.' },
+      { q: 'Can you match my existing siding?', a: 'We match color and profile as closely as current products allow. Older vinyl and fiber-cement lines get discontinued, so a full wall sometimes looks more even than a small patch. We will tell you which after we see it.' },
+      { q: 'Do you publish siding prices?', a: 'No. Height, access, how much has failed, and what is underneath all change the number. You get a written price after a visit.' },
+      { q: 'Will you fix the roof flashing at the same time?', a: 'If the leak is at the roof-to-wall joint, that flashing belongs in the plan. We would rather write it once than have two contractors argue over who left the gap.' },
+    ],
+    featuredLinks: [
+      { href: '/siding-dallas-ga/', label: 'Siding in Dallas, GA' },
+      { href: '/siding-hiram/', label: 'Siding in Hiram' },
+      { href: '/services/roof-repair/', label: 'Roof repair hub' },
+      { href: '/services/exterior-painting/', label: 'Exterior painting & staining' },
+      { href: '/dallas-ga-roofing/', label: 'Dallas GA roofing hub' },
+      { href: '/contact/', label: 'Request a visit' },
+    ],
+    deepenBlocks: [
+      {
+        title: 'Why siding and roofing belong in one conversation',
+        body: 'Water does not care which trade owns the corner. A loose J-channel under a drip edge, or kickout flashing that was never installed, will stain the wall and the ceiling. We look at both so you are not paying twice.',
+      },
+      {
+        title: 'Repair versus replacement',
+        body: 'A few storm-torn panels are a repair. Brittle vinyl on a whole elevation, or sheathing that got wet behind the wall, is a larger conversation. We show you photos and write both options when both are honest.',
+      },
+      {
+        title: 'Where we work',
+        body: 'Dallas is home base. We also take siding calls in Hiram, Douglasville, Powder Springs, Marietta, Acworth, Kennesaw, and Austell. Start at the city page or call (470) 236-1410.',
+      },
+    ],
+    cityPrefix: 'siding',
+    cityLabel: 'Siding by city',
+  },
+  'exterior-painting': {
+    eyebrow: 'Exterior painting & staining',
+    h1Before: 'Exterior Painting & Staining in Dallas, GA & ',
+    h1Accent: 'West Metro Atlanta',
+    lead:
+      'We paint and stain exteriors after we check for moisture, failing wood, and leaks at the roof edge. Family-owned in Dallas since 2019. You get a written prep-and-finish plan — not a one-line “paint the house” quote from a photo.',
+    bullets: [
+      'Wash, scrape, and prime where the old finish has failed',
+      'Paint or stain siding and trim after the surface is ready',
+      'Color samples on the house, in daylight',
+      'We will not paint over an active leak or rotten wood',
+    ],
+    processTitle: 'How a painting visit works',
+    processIntro: 'Prep decides how long the finish lasts. We write the prep down before anyone opens a bucket.',
+    steps: [
+      { n: '01', title: 'Inspect the surface', body: 'We look at chalking, peeling, bare wood, and any stains that point to a roof or gutter problem. If water is still getting in, paint waits.' },
+      { n: '02', title: 'Write the finish plan', body: 'You get the prep steps, the products in plain language, and color samples on the wall. Approve the written scope before we schedule the work.' },
+      { n: '03', title: 'Prep & coat', body: 'We wash, scrape, caulk where it belongs, and prime what needs primer. Then we apply paint or stain to the surfaces in the scope.' },
+      { n: '04', title: 'Walkthrough', body: 'We walk the house with you, note any touch-ups, and leave the site clean. The same Dallas number remains your contact: (470) 236-1410.' },
+    ],
+    faqs: [
+      { q: 'Do you offer exterior painting and staining?', a: 'Yes. It is one of our services, alongside roofing and siding. Call (470) 236-1410 to have us look at the house.' },
+      { q: 'Will you paint over peeling paint?', a: 'No. Peeling paint has to be scraped and primed, and sometimes the wood underneath has to be repaired first. That prep is part of the written plan.' },
+      { q: 'Do you publish painting prices?', a: 'No. Height, how much scraping is needed, and repairs to trim all change the number. You get a written price after we see the house.' },
+      { q: 'What if the roof or gutters are causing the peel?', a: 'We tell you. Painting a wet fascia is wasted money. We can talk about roof or gutter work as a separate, clearly written scope.' },
+    ],
+    featuredLinks: [
+      { href: '/exterior-painting-dallas-ga/', label: 'Exterior painting in Dallas, GA' },
+      { href: '/exterior-painting-hiram/', label: 'Exterior painting in Hiram' },
+      { href: '/services/siding/', label: 'Siding repair & replacement' },
+      { href: '/services/roof-repair/', label: 'Roof repair hub' },
+      { href: '/dallas-ga-roofing/', label: 'Dallas GA roofing hub' },
+      { href: '/contact/', label: 'Request a visit' },
+    ],
+    deepenBlocks: [
+      {
+        title: 'Prep is the job',
+        body: 'Georgia sun, pollen, and wind-driven rain punish a coat that went on over chalk or dirt. We would rather write a longer prep list than sell a cheap roll-on that fails at the eaves after one summer.',
+      },
+      {
+        title: 'Color in daylight',
+        body: 'Pick colors on the wall, not only from a fan deck indoors. Roof color, brick, and tree shade all change how a color reads at noon versus late afternoon.',
+      },
+      {
+        title: 'Where we work',
+        body: 'Dallas is home base. City pages cover Hiram, Douglasville, Powder Springs, Marietta, Acworth, Kennesaw, and Austell. Call (470) 236-1410 or use https://iroofercontractors.com/contact/.',
+      },
+    ],
+    cityPrefix: 'exterior-painting',
+    cityLabel: 'Exterior painting by city',
+  },
 };
+
 
 export function comboCities() {
   return cities.filter((c) => c.combo !== false);

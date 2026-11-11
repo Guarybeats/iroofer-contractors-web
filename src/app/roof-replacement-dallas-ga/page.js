@@ -56,7 +56,7 @@ export default function Page() {
             </div>
 
             <div className="rv">
-              <img src="/assets/service-replacement.webp?v=2" alt="Roof Replacement in Dallas, GA by iRoofer Contractors" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%', marginBottom: 24 }} />
+              <img src="/assets/cc-dallas-replacement-shingles.webp?v=1" width={1280} height={720} alt="Finished architectural shingles, pipe boot, and ridge on a Dallas, GA roof replacement by iRoofer Contractors" loading="lazy" style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%', height: 'auto', marginBottom: 24 }} />
               <FreeRoofCheckCta />
               <div style={{ maxWidth: 460, margin: 0 }}>
                 <QuoteForm variant="contact" id="roof-replacement-dallas-ga-quote" source="Roof Replacement Dallas GA" />

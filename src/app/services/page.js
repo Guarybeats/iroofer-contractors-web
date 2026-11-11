@@ -43,6 +43,20 @@ const cardExtras = {
     more: 'For builders and homeowners. We put the roof on to plan and on schedule.',
     money: [{ href: '/services/new-construction/', label: 'New construction hub' }],
   },
+  siding: {
+    more: 'Torn panels, open corners, and flashing where the wall meets the roof. Same local crew as our roofing work.',
+    money: [
+      { href: '/siding-dallas-ga/', label: 'Siding Dallas GA' },
+      { href: '/siding-hiram/', label: 'Hiram siding' },
+    ],
+  },
+  'exterior-painting': {
+    more: 'Exterior paint and stain after honest prep. We will not paint over an active leak or rotten wood.',
+    money: [
+      { href: '/exterior-painting-dallas-ga/', label: 'Painting Dallas GA' },
+      { href: '/exterior-painting-hiram/', label: 'Hiram painting' },
+    ],
+  },
 };
 
 const faqs = [
@@ -82,7 +96,7 @@ export default function ServicesPage() {
               return (
                 <div className="card" key={s.slug} style={{ color: 'inherit' }}>
                   <Link href={`/services/${s.slug}/`} style={{ color: 'inherit', textDecoration: 'none' }}>
-                    <Pic src={s.image} alt={s.imageAlt || s.title} />
+                    {s.image ? <Pic src={s.image} alt={s.imageAlt || s.title} /> : null}
                   </Link>
                   <div className="body">
                     <h2><Link href={`/services/${s.slug}/`} style={{ color: 'inherit', textDecoration: 'none' }}>{s.title}</Link></h2>

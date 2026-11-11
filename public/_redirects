@@ -8,7 +8,6 @@
 /roofing                      /services/                                    301
 /gutters-services             /services/gutter-repair-replacement/          301
 /financing                    /blog/cost-of-new-roof-2026-dallas-ga/       301
-/reviews                      /about/                                       301
 /privacy-policy               /privacy/                                     301
 
 # Legacy blog posts -> closest current article
@@ -61,7 +60,6 @@
 /contact-us/                  /contact/                                     301
 /gutters-services/            /services/gutter-repair-replacement/          301
 /financing/                   /blog/cost-of-new-roof-2026-dallas-ga/       301
-/reviews/                     /about/                                       301
 /roofing/                     /services/                                    301
 /privacy-policy/              /privacy/                                     301
 /terms-of-service             /terms/                                       301
@@ -76,3 +74,11 @@
 # Financing post retired 2026-10-25 (no financing offered)
 /blog/roof-financing-options-dallas-ga/   /blog/cost-of-new-roof-2026-dallas-ga/   301
 /blog/roof-financing-options-dallas-ga    /blog/cost-of-new-roof-2026-dallas-ga/   301
+
+# Retired 2026-11-10: /reviews is a real page again (no longer 301 → /about/).
+
+# Legacy service slugs still 404ing (Site Audit 2026-11-10)
+/services/roof-inspections                 /services/roof-inspection/          301
+/services/roof-inspections/                /services/roof-inspection/          301
+/services/residential-roof-replacements    /services/roof-replacement/         301
+/services/residential-roof-replacements/   /services/roof-replacement/         301

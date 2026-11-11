@@ -20,6 +20,7 @@ export const metadata = seo({
   description:
     'Roof leak repair in Dallas, GA and Paulding County. We trace the leak to its source, fix it, and show you photos. Free inspection. Call (470) 236-1410.',
   path: PATH,
+  canonicalPath: '/roof-repair-dallas-ga',
 });
 
 const sources = [
@@ -146,6 +147,10 @@ export default function RoofLeakRepairPage() {
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
                 Water stain on the ceiling? Dripping after every storm? iRoofer Contractors finds where your roof is leaking and fixes it, for homes in Dallas, GA (30157 and 30132), Hiram and across Paulding County. We are a family-owned roofer based at 152 Freedom Dr in Dallas. The inspection is free, and you see photos of the problem before you decide anything.
+              </p>
+              <p style={{ color: '#52606b', fontSize: '1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
+                Leak repair is part of our broader Dallas roof repair work. For the main Dallas repair page, go to{' '}
+                <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>roof repair in Dallas, GA</Link>.
               </p>
               <div className="cta" style={{ marginTop: 28 }}>
                 <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>{brand.phone}</a>

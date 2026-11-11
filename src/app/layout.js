@@ -23,9 +23,8 @@ const bigShoulders = Big_Shoulders_Display({
 
 export const metadata = {
   metadataBase: new URL('https://iroofercontractors.com'),
-  title: `Roof Repair & Replacement in Dallas, GA | iRoofer`,
-  description: `Family-owned Dallas, GA roofer since 2019: roof repair, replacement, and storm and hail damage with insurance photos. Free inspection. Call (470) 236-1410.`,
-  robots: { index: true, follow: true },
+  title: `iRoofer Contractors`,
+  description: `Family-owned roofing in Dallas, GA since 2019. Call (470) 236-1410.`,
   icons: {
     icon: [
       { url: '/favicon.ico', sizes: 'any' },
@@ -34,7 +33,6 @@ export const metadata = {
     ],
     apple: [{ url: '/assets/icon-180.png', sizes: '180x180' }],
   },
-  alternates: { canonical: 'https://iroofercontractors.com/' },
   openGraph: {
     type: 'website',
     url: 'https://iroofercontractors.com/',
@@ -73,6 +71,7 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body className={publicSans.className}>
+        <a className="skip-link" href="#main-content">Skip to main content</a>
         {/* TOP TICKER */}
         <div className="topbar" aria-hidden="true">
           <div className="track">
@@ -95,20 +94,29 @@ export default function RootLayout({ children }) {
         <header className="site-head" id="head">
           <div className="wrap nav">
             <a className="brand" href="/">
-              <img className="brand-logo" src="/assets/logo.webp" alt={`${brand.name} logo`} loading="eager" decoding="async" />
+              <img className="brand-logo" src="/assets/logo.webp" alt={`${brand.name} logo`} width={180} height={64} loading="eager" decoding="async" />
             </a>
             <nav className="menu" aria-label="Primary">
-              <a className="lnk" href="/services/">Services</a>
+              <div className="menu-drop">
+                <a className="lnk" href="/services/">Services</a>
+                <div className="menu-drop-panel" role="group" aria-label="Services">
+                  <a href="/services/">All services</a>
+                  <a href="/services/roof-repair/">Roof Repair</a>
+                  <a href="/services/roof-replacement/">Roof Replacement</a>
+                  <a href="/services/storm-damage-roof-repair/">Storm Damage</a>
+                  <a href="/services/gutter-repair-replacement/">Gutters</a>
+                  <a href="/services/new-construction/">New Construction</a>
+                  <a href="/services/siding/">Siding</a>
+                  <a href="/services/exterior-painting/">Exterior Painting</a>
+                  <a href="/emergency-roof-repair-dallas-ga/">Emergency</a>
+                  <a href="/estimator/">Free Estimate</a>
+                  <a href="/reviews/">Reviews</a>
+                </div>
+              </div>
               <a className="lnk" href="/service-areas/">Service Areas</a>
               <a className="lnk" href="/free-roof-check/">Free Roof Check</a>
-              <a className="lnk" href="/estimator/">Free Estimate</a>
-              <a className="lnk" href="/emergency-roof-repair-dallas-ga/">Emergency</a>
               <a className="lnk" href="/storm-damage-roof-repair-dallas-ga/">Storm Damage</a>
-              <a className="lnk" href="/#work">Our Work</a>
-              <a className="lnk" href="/#process">Process</a>
-              <a className="lnk" href="/#reviews">Reviews</a>
               <a className="lnk" href="/blog/">Blog</a>
-              <a className="lnk" href="/#faq">FAQ</a>
             </nav>
             <div className="head-cta">
               <a className="head-phone" href={`tel:${brand.phone}`} aria-label={`Call ${brand.name}`}>
@@ -124,13 +132,14 @@ export default function RootLayout({ children }) {
         {/* MOBILE NAV */}
         <nav className="mnav" id="mnav" aria-label="Mobile">
           <a href="/services/">Services</a>
+          <a href="/service-areas/">Service Areas</a>
           <a href="/free-roof-check/">Free Roof Check</a>
           <a href="/estimator/">Free Estimate</a>
           <a href="/emergency-roof-repair-dallas-ga/">Emergency</a>
           <a href="/storm-damage-roof-repair-dallas-ga/">Storm Damage</a>
           <a href="/#work">Our Work</a>
           <a href="/#process">Process</a>
-          <a href="/#reviews">Reviews</a>
+          <a href="/reviews/">Reviews</a>
           <a href="/blog/">Blog</a>
           <a href="/#faq">FAQ</a>
           <a href="/contact/">Contact</a>
@@ -139,14 +148,14 @@ export default function RootLayout({ children }) {
 
         <WebMcpTools />
 
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
 
         {/* FOOTER */}
         <footer>
           <div className="wrap">
             <div className="foot-grid">
               <div className="foot-brand">
-                <img className="brand-logo" src="/assets/logo.webp" alt={brand.name} style={{ height: 52 }} loading="eager" decoding="async" />
+                <img className="brand-logo" src="/assets/logo.webp" alt={brand.name} width={180} height={52} style={{ height: 52 }} loading="eager" decoding="async" />
                 <p>A local, family-owned roofing company built on showing up, doing it right, and standing behind the work — one Dallas, GA roof at a time.</p>
                 <div className="socials">
                   <a href="https://www.facebook.com/iroofercontractors" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5c0-1.1.4-2 2-2h2V2h-3c-3 0-4 1.8-4 4.5V10H7v4h3v8h3Z"/></svg></a>
@@ -161,6 +170,9 @@ export default function RootLayout({ children }) {
                 <a href="/services/roof-repair/">Roof Repair</a>
                 <a href="/services/roof-replacement/">Roof Replacement</a>
                 <a href="/services/new-construction/">New Construction</a>
+                <a href="/services/gutter-repair-replacement/">Gutter Repair &amp; Replacement</a>
+                <a href="/services/siding/">Siding Repair &amp; Replacement</a>
+                <a href="/services/exterior-painting/">Exterior Painting &amp; Staining</a>
                 <a href="/emergency-roof-repair-dallas-ga/">Emergency Roof Repair</a>
                 <a href="/storm-damage-roof-repair-dallas-ga/">Storm &amp; Insurance</a>
                 <a href="/hail-damage-roof-repair-dallas-ga/">Hail Damage Roof Repair</a>
@@ -171,7 +183,7 @@ export default function RootLayout({ children }) {
                 <h2>Company</h2>
                 <a href="/#work">Our Work</a>
                 <a href="/#process">Our Process</a>
-                <a href="/#reviews">Reviews</a>
+                <a href="/reviews/">Reviews</a>
                 <a href="/about/">About Us</a>
                 <a href="/blog/">Blog</a>
                 <a href="/privacy/">Privacy Policy</a>

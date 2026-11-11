@@ -70,7 +70,7 @@ export default function ServiceDetail({ params }) {
               <RelatedGuides slug={service.slug} />
             </div>
             <div className="rv">
-              <Pic src={service.image} alt={heroAlt} style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
+              {service.image ? <Pic src={service.image} alt={heroAlt} style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} /> : null}
               <FreeRoofCheckCta />
               <div style={{ maxWidth: 460, margin: '32px auto 0' }}>
                 <QuoteForm variant="detail" id={`quote-${service.slug}`} />
@@ -107,7 +107,7 @@ export default function ServiceDetail({ params }) {
             </p>
           </div>
           <div className="rv">
-            <Pic src={service.image} alt={heroAlt} style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} />
+            {service.image ? <Pic src={service.image} alt={heroAlt} style={{ borderRadius: 8, border: '1px solid rgba(22,29,37,.1)', width: '100%' }} /> : null}
           </div>
         </div>
 
@@ -208,7 +208,7 @@ export default function ServiceDetail({ params }) {
         <div className="cards" style={{ marginTop: 24 }}>
           {related.map((s) => (
             <Link key={s.slug} href={`/services/${s.slug}/`} className="card" style={{ color: 'inherit', textDecoration: 'none' }}>
-              <img src={s.webp || s.image} alt={s.imageAlt || s.title} loading="lazy" />
+              {(s.webp || s.image) ? <img src={s.webp || s.image} alt={s.imageAlt || s.title} loading="lazy" /> : null}
               <div className="body">
                 <h3>{s.title}</h3>
                 <p style={{ color: '#52606b' }}>{s.summary}</p>
