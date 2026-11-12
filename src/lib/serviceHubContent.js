@@ -45,10 +45,10 @@ export const serviceHubContent = {
     h1Before: 'Roof Replacement in Dallas, GA & ',
     h1Accent: 'West Metro Atlanta',
     lead:
-      'We take the old roof all the way off and put on a new one with thick, layered (architectural) shingles. We keep the job clean and build it to last. iRoofer Contractors is family-owned in Dallas since 2019. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when they fit your house. You get a written price after a free roof check. We don’t post prices online.',
+      'We take the old roof all the way off and put on a new one with thick, layered (architectural) shingles. We keep the job clean and build it to last. iRoofer Contractors is family-owned in Dallas since 2019. We install all major shingle brands, including Owens Corning. You get a written price after a free roof check. We don’t post prices online.',
     bullets: [
       'We strip the roof down to the wood and check it. Soft wood gets replaced, not covered up',
-      'Owens Corning shingles, put on the way Owens Corning says to, by a Contractor Rewards member (when you pick them)',
+      'Owens Corning shingles, installed to the manufacturer’s specifications (when you pick them)',
       'Leak barrier at the edges, a water-proof layer under the shingles, vents at the peak, and metal drip edge',
       'We sweep for nails with a magnet each day and haul off the dumpster. Your yard is left clean',
     ],
@@ -63,7 +63,7 @@ export const serviceHubContent = {
     ],
     faqs: [
       { q: 'How long does a full replacement take?', a: 'It depends on the size and steepness of the roof, how many old layers come off, wood repairs, and weather. We give you a real schedule in writing before we start.' },
-      { q: 'What shingles do you install?', a: 'Mostly Owens Corning shingles. We install them as an Owens Corning Contractor Rewards member when they fit the house. Once we see your home and any HOA rules, we can talk about other options and colors.' },
+      { q: 'What shingles do you install?', a: 'We install all major shingle brands, including Owens Corning. Once we see your home and any HOA rules, we can talk about options and colors.' },
       { q: 'What warranty do I get?', a: 'The shingle maker’s standard warranty, signed up in your name when allowed. Ask us for the exact terms on the shingle you pick before we start.' },
       { q: 'Partial vs full replacement?', a: 'Sometimes we can redo just one side. Often a full roof makes more sense, so it matches and lasts. We tell you which after we look. No scare talk over a pipe boot we can fix.' },
     ],
@@ -97,7 +97,7 @@ export const serviceHubContent = {
     h1Before: 'Storm Damage Roof Repair in Dallas, GA & ',
     h1Accent: 'West Metro Atlanta',
     lead:
-      'Wind, hail, and fallen limbs can hurt a roof in ways you can’t see from the ground. We check your roof. We tarp it if rain can get in. We take photos of what we find, so you can decide on a repair and on insurance if it applies. Family-owned in Dallas since 2019. Owens Corning Contractor Rewards member.',
+      'Wind, hail, and fallen limbs can hurt a roof in ways you can’t see from the ground. We check your roof. We tarp it if rain can get in. We take photos of what we find, so you can decide on a repair and on insurance if it applies. Family-owned in Dallas since 2019. We install all major shingle brands, including Owens Corning.',
     bullets: [
       'Free roof check after a storm, with photos',
       'Same-day tarp for open roofs when it is safe to get up',
@@ -150,7 +150,7 @@ export const serviceHubContent = {
     h1Before: 'New Construction Roofing — Built Clean for Dallas & ',
     h1Accent: 'West Metro Builds',
     lead:
-      'iRoofer Contractors installs new-construction roofs for builders and homeowners across Dallas, GA and our service map. Family-owned since 2019. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when the spec calls for that line. Call (470) 236-1410 or https://iroofercontractors.com/contact/. Builders: request a partner intro on the contact form.',
+      'iRoofer Contractors installs new-construction roofs for builders and homeowners across Dallas, GA and our service map. Family-owned since 2019. We install all major shingle brands, including Owens Corning, when the spec calls for that line. Call (470) 236-1410 or https://iroofercontractors.com/contact/. Builders: request a partner intro on the contact form.',
     bullets: [
       'Custom and production builders who need a reliable roofing partner',
       'Homeowners building or finishing a home who want one accountable crew',

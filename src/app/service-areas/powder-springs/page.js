@@ -37,7 +37,7 @@ const sections = [
   {
     h2: 'Roof replacement',
     paras: [
-      'End-of-life roofs get a full tear-off and architectural install. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that line is selected. See /roof-replacement-powder-springs/ and /roof-replacement-dallas-ga/.',
+      'End-of-life roofs get a full tear-off and architectural install. We install all major shingle brands, including Owens Corning, when that line is selected. See /roof-replacement-powder-springs/ and /roof-replacement-dallas-ga/.',
     ],
   },
   {

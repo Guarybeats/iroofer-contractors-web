@@ -9,7 +9,7 @@ import { FaqSchema } from '@/components/LocalSeo';
 // Hail-specific landing page for Dallas, GA + Paulding County (added 2026-10-10).
 // Copy rules: only verifiable facts. Business facts limited to what Cristian has
 // confirmed (152 Freedom Dr, (470) 236-1410, 5.0 Google rating, family-owned since
-// 2019, Owens Corning Contractor Rewards member, free inspections, same-day tarping
+// 2019, we install all major shingle brands including Owens Corning, free inspections, same-day tarping
 // when schedule allows). No review counts, job counts or invented stats.
 // Georgia law references checked 2026-10-10:
 //   O.C.G.A. § 10-1-393.12 (FindLaw text): 5-business-day cancel right after a written
@@ -231,7 +231,7 @@ export default function HailDamagePage() {
               On an insurance claim, the adjuster decides what the policy pays for. Adjusters commonly mark a test square on each slope and count the hits that broke or bruised the shingle, and the number that leads to a slope or full replacement varies by insurer and policy. There is no single count that applies to every roof, so be cautious of anyone who promises a free new roof before an adjuster has seen it.
             </p>
             <p style={p}>
-              When a roof does need replacing, shingles are installed by an Owens Corning Contractor Rewards member. See our <Link href="/roof-replacement-dallas-ga/" style={a}>roof replacement in Dallas, GA</Link> page for how a full replacement works.
+              When a roof does need replacing, it is installed with quality shingles like Owens Corning. See our <Link href="/roof-replacement-dallas-ga/" style={a}>roof replacement in Dallas, GA</Link> page for how a full replacement works.
             </p>
           </div>
 

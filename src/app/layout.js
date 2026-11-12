@@ -76,13 +76,13 @@ export default function RootLayout({ children }) {
         <div className="topbar" aria-hidden="true">
           <div className="track">
             <div className="set">
-              <div className="item">Owens Corning Contractor Rewards Member</div>
+              <div className="item">All Major Shingle Brands Installed</div>
               <div className="item">Emergency / Storm Response</div>
               <div className="item">Free No-Pressure Roof Inspections</div>
               <div className="item">Family-Owned &amp; Operated Since 2019</div>
             </div>
             <div className="set" aria-hidden="true">
-              <div className="item">Owens Corning Contractor Rewards Member</div>
+              <div className="item">All Major Shingle Brands Installed</div>
               <div className="item">Emergency / Storm Response</div>
               <div className="item">Free No-Pressure Roof Inspections</div>
               <div className="item">Family-Owned &amp; Operated Since 2019</div>
@@ -103,6 +103,8 @@ export default function RootLayout({ children }) {
                   <a href="/services/">All services</a>
                   <a href="/services/roof-repair/">Roof Repair</a>
                   <a href="/services/roof-replacement/">Roof Replacement</a>
+                  <a href="/metal-roofing-dallas-ga/">Metal Roofing</a>
+                  <a href="/services/#flat-roofing">Flat Roofing</a>
                   <a href="/services/storm-damage-roof-repair/">Storm Damage</a>
                   <a href="/services/gutter-repair-replacement/">Gutters</a>
                   <a href="/services/new-construction/">New Construction</a>
@@ -169,6 +171,8 @@ export default function RootLayout({ children }) {
                 <a href="/free-roof-check/">Free Roof Check</a>
                 <a href="/services/roof-repair/">Roof Repair</a>
                 <a href="/services/roof-replacement/">Roof Replacement</a>
+                <a href="/metal-roofing-dallas-ga/">Metal Roofing</a>
+                <a href="/services/#flat-roofing">Flat Roofing</a>
                 <a href="/services/new-construction/">New Construction</a>
                 <a href="/services/gutter-repair-replacement/">Gutter Repair &amp; Replacement</a>
                 <a href="/services/siding/">Siding Repair &amp; Replacement</a>
@@ -222,7 +226,7 @@ export default function RootLayout({ children }) {
                   {brand.hours.saturday}<br />
                   {brand.hours.sunday}
                 </p>
-                <p className="lic">Owens Corning Contractor Rewards Member<br />© {new Date().getFullYear()} {brand.name}</p>
+                <p className="lic">All Major Shingle Brands Installed<br />© {new Date().getFullYear()} {brand.name}</p>
               </div>
             </div>
             <div className="foot-bottom">

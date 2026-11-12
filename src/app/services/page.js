@@ -22,7 +22,7 @@ const cardExtras = {
     ],
   },
   'roof-replacement': {
-    more: 'We take the old roof off and put on a new one, built for Georgia weather. We keep the job clean. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when they fit.',
+    more: 'We take the old roof off and put on a new one, built for Georgia weather. We keep the job clean. We install all major shingle brands, including Owens Corning.',
     money: [
       { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement Dallas' },
       { href: '/roof-replacement-hiram/', label: 'Hiram replacement' },
@@ -82,7 +82,7 @@ export default function ServicesPage() {
             <p>
               From a quick fix to a new roof, the same local crew does every job. Same care, same phone number.
               iRoofer Contractors is family-owned in Dallas, GA since 2019. The owner is {brand.owner}.
-              We install Owens Corning shingles as an Owens Corning Contractor Rewards member when they fit.
+              We install all major shingle brands, including Owens Corning.
             </p>
             <p style={{ marginTop: 12 }}>
               <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>
@@ -135,6 +135,13 @@ export default function ServicesPage() {
                 <Link href="/metal-roofing-dallas-ga/" className="more">Learn more →</Link>
               </div>
             </div>
+            <div className="card" id="flat-roofing" style={{ color: 'inherit' }}>
+              <div className="body">
+                <h2>Flat Roofing</h2>
+                <p>We repair and replace low-slope and flat roofs.</p>
+                <Link href="/contact/" className="more">Request a quote →</Link>
+              </div>
+            </div>
             <div className="card" style={{ color: 'inherit' }}>
               <div className="body">
                 <h2><Link href="/services/roof-insurance-claims/" style={{ color: 'inherit', textDecoration: 'none' }}>Roof insurance claims</Link></h2>
@@ -185,7 +192,7 @@ export default function ServicesPage() {
             </p>
             <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
               <strong>About us:</strong> Family-owned since 2019 · {brand.owner} ·
-              We install Owens Corning shingles as an Owens Corning Contractor Rewards member when they fit.
+              We install all major shingle brands, including Owens Corning.
             </p>
             <p style={{ marginTop: 16 }}>
               Learn more:{' '}

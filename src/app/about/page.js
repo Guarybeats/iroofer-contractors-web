@@ -20,7 +20,7 @@ const values = [
 
 // VERIFY-OR-CUT: specific review totals / star claims softened pending live GBP confirmation.
 const credentials = [
-  { t: 'Owens Corning Contractor Rewards Member', d: 'We install Owens Corning shingles the way Owens Corning says to.' },
+  { t: 'All Major Shingle Brands Installed', d: 'We install all major shingle brands and all types of roofing materials, including Owens Corning.' },
   { t: 'Family-owned since 2019', d: 'Repairs, new roofs, storm claims, and new homes, for homeowners and builders west of Atlanta.' },
   { t: 'Google reviews you can read', d: 'From neighbors in Dallas, Hiram, Douglasville, and nearby towns. Read them yourself on Google.' },
 ];
@@ -65,7 +65,7 @@ export default function AboutPage() {
               <span className="eyebrow dark">About us</span>
               <h1 style={{ fontSize: 'clamp(2.2rem,4.4vw,3.4rem)', fontWeight: 900 }}>About iRoofer Contractors — Cristian Mendez &amp; Crew</h1>
               <p style={{ color: '#52606b', fontSize: '1.05rem', marginTop: 16 }}>
-                iRoofer Contractors is a family-owned roofing company based at 152 Freedom Dr, Dallas, GA 30157. Owner {brand.owner} started it in 2019. He wanted homeowners west of Atlanta to have a local crew that shows up, tells the truth about the roof, and stands behind the work. We install Owens Corning shingles as an Owens Corning Contractor Rewards member.
+                iRoofer Contractors is a family-owned roofing company based at 152 Freedom Dr, Dallas, GA 30157. Owner {brand.owner} started it in 2019. He wanted homeowners west of Atlanta to have a local crew that shows up, tells the truth about the roof, and stands behind the work. We install all major shingle brands, including Owens Corning.
               </p>
               <p style={{ color: '#52606b', marginTop: 12 }}>
                 Now that you know us, let’s talk about <em>your</em> roof. Free roof checks with photos. Written plans. Clean job sites with magnet nail sweeps. The same crew from start to finish.

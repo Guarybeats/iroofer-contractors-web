@@ -67,7 +67,7 @@ export default function FreeRoofCheckPage() {
                 <li>A local, family-owned crew since 2019</li>
               </ul>
               <p style={{ marginTop: 14, color: '#52606b' }}>
-                <strong>{brand.rating} on Google from {brand.reviewCount} reviews.</strong> Owens Corning Contractor Rewards Member.
+                <strong>{brand.rating} on Google from {brand.reviewCount} reviews.</strong> All Major Shingle Brands Installed.
               </p>
               <p style={{ marginTop: 18 }}>
                 <a className="btn btn-ghost" href={`tel:${brand.phone}`}>Call or text {brand.phone}</a>

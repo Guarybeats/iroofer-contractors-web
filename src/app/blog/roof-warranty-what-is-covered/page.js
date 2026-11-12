@@ -78,7 +78,7 @@ export default function BlogPostPage() {
               <li>Use of the specified underlayment / system components when the enhanced warranty requires them</li>
             </ul>
             <p>
-              We install Owens Corning shingles as an <strong>Owens Corning Contractor Rewards member</strong> when that product line is on the job, and we register the manufacturer’s standard warranty when the product line allows — not a blank promise that “everything is covered forever.”
+              We install all major shingle brands, including Owens Corning, when that product line is on the job, and we register the manufacturer’s standard warranty when the product line allows — not a blank promise that “everything is covered forever.”
             </p>
 
             <h2>What workmanship coverage is (and is not)</h2>

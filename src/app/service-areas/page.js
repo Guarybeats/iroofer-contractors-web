@@ -101,7 +101,7 @@ export default function ServiceAreas() {
             Roof repair, roof replacement, storm-damage inspections, new-construction roofing, gutter repair and replacement, siding repair and replacement, and exterior painting and staining. Emergency tarping is available when the roof is open and it is safe to get on it — we do not promise 24/7 coverage. Insurance documentation is available after a storm; what a policy pays is up to the carrier, not us.
           </p>
           <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
-            Dallas is home base: 152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019 by Cristian Mendez. Hours are {brand.hours.full}. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when they fit the house.
+            Dallas is home base: 152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019 by Cristian Mendez. Hours are {brand.hours.full}. We install all major shingle brands, including Owens Corning.
           </p>
         </div>
 
@@ -111,7 +111,7 @@ export default function ServiceAreas() {
         </div>
 
                 <p style={{ color: '#52606b', marginTop: 36, maxWidth: 720, lineHeight: 1.7, borderLeft: '3px solid var(--orange)', paddingLeft: 14 }}>
-          Family-owned since 2019 · Owens Corning Contractor Rewards Member · Based in Dallas, GA · Owner Cristian Mendez
+          Family-owned since 2019 · All Major Shingle Brands Installed · Based in Dallas, GA · Owner Cristian Mendez
         </p>
         <p style={{ marginTop: 20, color: '#52606b' }}>
           Ready to talk about your roof? Visit{' '}

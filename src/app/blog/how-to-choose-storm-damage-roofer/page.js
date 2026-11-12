@@ -87,7 +87,7 @@ export default function BlogPostPage() {
             <p><strong>Do I have to use the roofer who knocked on my door?</strong><br />No. You can get more than one inspection and pick the crew you trust.</p>
             <p><strong>Should I wait for my adjuster before calling a roofer?</strong><br />If water is getting in, get the opening covered first and photograph everything. For non-urgent damage, many homeowners like to have their own inspection photos before the adjuster visit.</p>
             <p><strong>How do I check a roofer's reviews?</strong><br />Read the Google reviews for the business name and address, and look for reviews that mention storm or insurance jobs specifically.</p>
-            <p><strong>Is iRoofer a storm chaser?</strong><br />No. We're a family-owned crew in Dallas, GA, owned by Cristian Mendez, and we're an Owens Corning Contractor Rewards member.</p>
+            <p><strong>Is iRoofer a storm chaser?</strong><br />No. We're a family-owned crew in Dallas, GA, owned by Cristian Mendez, and we install all major shingle brands, including Owens Corning.</p>
 
             <p style={{ marginTop: 24 }}>
               Related:{' '}

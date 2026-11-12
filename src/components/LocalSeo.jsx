@@ -1,6 +1,6 @@
 'use client';
 
-import { brand, services } from '@/lib/brand';
+import { brand, services, additionalServices } from '@/lib/brand';
 import { usePathname } from 'next/navigation';
 import { plainText } from '@/lib/inlineLinks';
 import { aggregateRatingNode } from '@/lib/reviewsConfig';
@@ -66,6 +66,7 @@ function breadcrumbLabel(segment) {
     'new-construction-dallas-ga': 'New Construction Dallas GA',
     'hail-damage-roof-repair-dallas-ga': 'Hail Damage Roof Repair Dallas GA',
     'roof-leak-repair-dallas-ga': 'Roof Leak Repair Dallas GA',
+    'metal-roofing-dallas-ga': 'Metal Roofing Dallas GA',
   };
   if (known[segment]) return known[segment];
 
@@ -155,14 +156,19 @@ export function buildSeoGraph(path) {
     publisher: { '@type': 'Organization', name: brand.name },
   };
 
-  const serviceGraph = services.map((s) => ({
+  const catalogServices = services.map((s) => ({
+    title: s.title,
+    summary: s.summary,
+    url: `/services/${s.slug}`,
+  }));
+  const serviceGraph = [...catalogServices, ...additionalServices].map((s) => ({
     '@type': 'Service',
     name: s.title,
     serviceType: s.title,
     provider: { '@type': 'RoofingContractor', name: brand.name, '@id': `${brand.url}/#business` },
     areaServed: brand.serviceArea.map((c) => c.replace(', GA', '')),
     description: s.summary,
-    url: absUrl(`/services/${s.slug}`),
+    url: absUrl(s.url),
   }));
 
   // NOTE (2026-08-30): the per-city combo Service nodes were removed. 32 near-identical

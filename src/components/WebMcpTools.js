@@ -18,7 +18,7 @@
  */
 
 import { useEffect } from "react";
-import { brand, services, cities, cityPath } from "@/lib/brand";
+import { brand, services, additionalServices, cities, cityPath } from "@/lib/brand";
 
 const ORIGIN = "https://iroofercontractors.com";
 
@@ -43,12 +43,20 @@ function setNativeValue(el, value) {
 }
 
 function buildTools() {
-  const serviceList = services.map((s) => ({
-    name: s.title,
-    slug: s.slug,
-    summary: s.summary,
-    url: `${ORIGIN}/services/${s.slug}/`,
-  }));
+  const serviceList = [
+    ...services.map((s) => ({
+      name: s.title,
+      slug: s.slug,
+      summary: s.summary,
+      url: `${ORIGIN}/services/${s.slug}/`,
+    })),
+    ...additionalServices.map((s) => ({
+      name: s.title,
+      slug: s.title.toLowerCase().replace(/\s+/g, "-"),
+      summary: s.summary,
+      url: `${ORIGIN}${s.url}`,
+    })),
+  ];
 
   const areaList = cities.map((c) => ({
     city: `${c.name}, ${c.state}`,
@@ -75,7 +83,7 @@ function buildTools() {
           hours: brand.hours.full,
           emergency: "Storm / active-leak response during shop hours; same-day when schedule allows",
           credentials: [
-            "Owens Corning Contractor Rewards Member",
+            "We install all major shingle brands, including Owens Corning",
             `Family-owned since ${brand.founded}`,
             `Google reviews on our Business Profile · family-owned since ${brand.founded}`,
           ],

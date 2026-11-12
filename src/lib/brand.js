@@ -29,7 +29,7 @@ export const brand = {
   // Qualitative trust only — no review totals, star ratings or job counts.
   trust: [
     { num: '2019', lbl: 'Family-Owned Since' },
-    { num: 'OC', lbl: 'Owens Corning Contractor Rewards Member' },
+    { num: 'All', lbl: 'Major Shingle Brands Installed' },
     { num: '100%', lbl: 'Local Dallas Crew' }
   ]
 };
@@ -57,13 +57,13 @@ export const services = [
     slug: 'roof-replacement',
     title: 'Roof Replacement',
     metaDesc:
-      'Full tear-off and replacement with architectural shingles, installed by an Owens Corning Contractor Rewards member in Dallas, GA & Metro Atlanta.',
+      'Full tear-off and replacement with architectural shingles, including brands like Owens Corning, in Dallas, GA & Metro Atlanta.',
     tagline: 'A new roof that lasts decades.',
     image: '/assets/cc-dallas-replacement-shingles.jpg?v=1',
     webp: '/assets/cc-dallas-replacement-shingles.webp?v=1',
     imageAlt: 'Finished architectural shingles, pipe boot, and ridge on a Dallas, GA roof replacement by iRoofer Contractors',
     summary:
-      'We take off the old roof and put on a new one, installed by an Owens Corning Contractor Rewards member. Clean and built to last, with the shingle maker’s standard warranty.',
+      'We take off the old roof and put on a new one, installed with quality shingles like Owens Corning. Clean and built to last, with the shingle maker’s standard warranty.',
     bullets: [
       'Complete tear-off & deck inspection',
       'Architectural & premium shingle options',
@@ -157,6 +157,21 @@ export const services = [
       'Written plan after a visit — no published prices'
     ]
   }
+];
+
+// Offerings quoted and listed on the site that are not /services/<slug> catalog entries.
+// Metal Roofing has its own page. Flat Roofing has no dedicated page — link to /services/.
+export const additionalServices = [
+  {
+    title: 'Metal Roofing',
+    summary: 'Standing-seam metal roofs for commercial buildings and homes. Free inspection and a written scope.',
+    url: '/metal-roofing-dallas-ga/',
+  },
+  {
+    title: 'Flat Roofing',
+    summary: 'We repair and replace low-slope and flat roofs.',
+    url: '/services/',
+  },
 ];
 
 export function getService(slug) {

@@ -92,7 +92,7 @@ export default function BlogPostPage() {
             <p><strong>Who should check my roof after a hailstorm?</strong><br />A local roofing crew that will show you dated photos of each slope and tell you plainly whether it's a repair, a replacement, or nothing.</p>
             <p><strong>Can I see hail damage from the ground?</strong><br />Sometimes you can see dented gutters or vents. Shingle bruising usually needs a close look. Don't climb a wet or steep roof yourself.</p>
             <p><strong>Does hail always mean an insurance claim?</strong><br />No. Small hail may leave no real damage. Get an inspection first, then decide with your insurance company.</p>
-            <p><strong>Who owns iRoofer?</strong><br />Cristian Mendez — family-owned in Dallas since 2019, and an Owens Corning Contractor Rewards member.</p>
+            <p><strong>Who owns iRoofer?</strong><br />Cristian Mendez — family-owned in Dallas since 2019. We install all major shingle brands, including Owens Corning.</p>
 
             <p style={{ marginTop: 24 }}>
               Related:{' '}

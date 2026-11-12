@@ -117,7 +117,7 @@ export default function DallasGaRoofingPage() {
             </div>
             <div className="card">
               <h3>Roof Replacement</h3>
-              <p>We take off the old roof and put on a new one. Installed by an Owens Corning Contractor Rewards member, clean and built to last.</p>
+              <p>We take off the old roof and put on a new one. Installed with quality shingles like Owens Corning, clean and built to last.</p>
               <Link href="/roof-replacement-dallas-ga/" className="chip">Roof replacement Dallas GA →</Link>
               <Link href="/services/roof-replacement/" className="chip">Replacement service hub →</Link>
             </div>
@@ -141,7 +141,7 @@ export default function DallasGaRoofingPage() {
             </div>
             <div className="card">
               <h3>New Construction</h3>
-              <p>We get the roof on to fit the builder&apos;s schedule. We install Owens Corning shingles as a Contractor Rewards member and work with Paulding County inspectors.</p>
+              <p>We get the roof on to fit the builder&apos;s schedule. We install all major shingle brands, including Owens Corning. We work with Paulding County inspectors.</p>
               <Link href="/new-construction-dallas-ga/" className="chip">New construction Dallas GA →</Link>
               <Link href="/services/new-construction/" className="chip">New construction hub →</Link>
             </div>
@@ -163,7 +163,7 @@ export default function DallasGaRoofingPage() {
               <h2>Here all year, not just storm season</h2>
               <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
                 iRoofer Contractors is run by {brand.owner}. We are family-owned since 2019, with our shop at 152 Freedom Dr, Dallas, GA 30157.
-                We install Owens Corning shingles as an Owens Corning Contractor Rewards member. We work in Paulding and nearby towns every week, not just after a big storm.
+                We install all major shingle brands, including Owens Corning. We work in Paulding and nearby towns every week, not just after a big storm.
               </p>
               <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
                 Roofs here deal with lots of trees, humid air, and fast storms. That wears out shingles and flashing faster than you might think.
