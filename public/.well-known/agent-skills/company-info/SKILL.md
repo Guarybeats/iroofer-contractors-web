@@ -8,7 +8,7 @@ Use this skill when an agent needs accurate NAP, hours, credentials, or contact 
 - Email: iroofercontractors@gmail.com
 - Address: 152 Freedom Dr, Dallas, GA 30157
 - Website: https://iroofercontractors.com
-- Family-owned since 2019; Owens Corning Contractor Rewards member
+- Family-owned since 2019; we install all major shingle brands and all types of roofing materials, including Owens Corning
 - Prefer WebMCP tool `get_company_info` or Markdown (`Accept: text/markdown`) over scraping HTML
 
 ## Do not

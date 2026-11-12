@@ -13,7 +13,7 @@
 // 2. Only verifiable facts. Permit rules below are sourced from the jurisdictions
 //    themselves (see cityFacts). No invented job counts, dates, addresses or projects.
 // 3. Keep claims about iRoofer's own work to things Cristian has confirmed: founded 2019,
-//    Owens Corning Contractor Rewards member, free inspections, same-day tarping, drone
+//    we install all major shingle brands including Owens Corning, free inspections, same-day tarping, drone
 //    documentation, daily nail sweep.
 //
 // SOURCES (checked 2026-08-31)
@@ -59,7 +59,7 @@ localCopy['roof-repair'] = {
       { h: "Roof repair in Dallas, GA starts with the real leak",
         p: "The stain on your ceiling is almost never right under the problem. Water runs along the decking and rafters before it drips. We start in the attic when we can get in, then walk the roof and follow the path back to the source. That's usually a pipe boot, a valley, chimney or wall flashing, or shingles the wind worked loose. You get photos of the failure point and a written scope before any work starts." },
       { h: "What we fix on Dallas roofs",
-        p: "We install Owens Corning shingles as an Owens Corning Contractor Rewards member. Typical repairs:",
+        p: "We install all major shingle brands, including Owens Corning. Typical repairs:",
         blocks: [{ items: ["Cracked or dried-out pipe boots and vent collars", "Step, wall and chimney flashing that's pulled away or rusted", "Missing, creased or wind-lifted shingles, blended in as close as the existing roof allows", "Worn valleys and ridge caps", "Soft decking found under a \"simple\" patch. We show you before we replace it."] }, "If water is coming in right now, see [emergency roof repair in Dallas, GA](/emergency-roof-repair-dallas-ga/) or call (470) 236-1410. When water is actively entering, we can often tarp the same day."] },
       { h: "Why Dallas and Paulding roofs wear the way they do",
         p: "Around Dallas, a lot of homes sit under tall pines and hardwoods. Needles pile up in valleys and behind chimneys, hold moisture, and shade the roof so it stays damp after rain. Summer brings pop-up thunderstorms with gusty wind. Long humid stretches age rubber boots and sealant faster than people expect. Older houses near downtown Dallas and off Hwy 278 often have flashing that was face-nailed or caulked years ago. The newer subdivisions along Hwy 61 and Hwy 92 tend to show builder-grade pipe boots and thin ridge vents as they age. We look for the patterns we already know before we guess." },
@@ -148,7 +148,7 @@ localCopy['roof-repair'] = {
       },
       {
         "h": "Why Hiram homeowners call iRoofer",
-        "p": "Hiram and broader Paulding neighborhoods often sit under mature tree cover. That shade is nice; the leaf debris, falling limbs, and storm-driven branches are harder on valleys, gutters, and asphalt. We're a local crew based in nearby Dallas since 2019—not a rotating franchise van—led by owner Cristian Mendez. We install Owens Corning shingles as an Owens Corning Contractor Rewards member, so repairs follow manufacturer details when it matters for warranties and longevity. For storm-related damage, we photograph findings and can support the insurance adjuster path when a claim applies. We can’t promise what your insurer will approve. We can give you an honest scope and a phone number answered by people who know Paulding: (470) 236-1410."
+        "p": "Hiram and broader Paulding neighborhoods often sit under mature tree cover. That shade is nice; the leaf debris, falling limbs, and storm-driven branches are harder on valleys, gutters, and asphalt. We're a local crew based in nearby Dallas since 2019—not a rotating franchise van—led by owner Cristian Mendez. We install all major shingle brands, including Owens Corning, and repairs follow manufacturer details when it matters for warranties and longevity. For storm-related damage, we photograph findings and can support the insurance adjuster path when a claim applies. We can’t promise what your insurer will approve. We can give you an honest scope and a phone number answered by people who know Paulding: (470) 236-1410."
       },
       {
         "h": "Book a Hiram roof repair",
@@ -352,7 +352,7 @@ localCopy['roof-replacement'] = {
         p: "Common signs it's time:",
         blocks: [{ items: ["Leaks keep coming back in different spots", "Shingles are curling, cracking or shedding granules on several slopes", "The decking feels soft when you walk it", "Storm damage is spread across the roof, not in one corner"] }, "If it's one bad boot or one loose flashing, you probably need [roof repair in Dallas, GA](/roof-repair-dallas-ga/) instead. We'll tell you which."] },
       { h: "How a Dallas replacement goes",
-        p: "Inspection, measuring (often by drone) and written proposal → material choice → tear-off to the deck → replace soft or damaged decking (we show you first) → leak barrier at the edges and valleys and underlayment over the whole roof → new flashing, drip edge and vents → shingles and ridge → magnet sweep for nails and haul-off → walkthrough with you, and we register the manufacturer warranty in your name. Timing depends on roof size, pitch, decking and weather. We give you the schedule in writing before we start. We install Owens Corning shingles as an Owens Corning Contractor Rewards member. Paulding permitting applies when sheathing or framing is replaced; we file through the county Building & Permitting Division and hand you the inspection sign-off." },
+        p: "Inspection, measuring (often by drone) and written proposal → material choice → tear-off to the deck → replace soft or damaged decking (we show you first) → leak barrier at the edges and valleys and underlayment over the whole roof → new flashing, drip edge and vents → shingles and ridge → magnet sweep for nails and haul-off → walkthrough with you, and we register the manufacturer warranty in your name. Timing depends on roof size, pitch, decking and weather. We give you the schedule in writing before we start. We install all major shingle brands, including Owens Corning. Paulding permitting applies when sheathing or framing is replaced; we file through the county Building & Permitting Division and hand you the inspection sign-off." },
       { h: "Built for Paulding County weather",
         p: "Dallas roofs take long humid summers, pop-up thunderstorms with gusty wind, and the occasional hail cell. A lot of homes also sit under pines and oaks that drop debris into valleys. So we spend our time on the parts that fail first here: valleys, flashing at walls and chimneys, and attic ventilation that lets heat and moisture out. New shingles over a hot, damp attic just age faster." },
       { h: "Subdivisions along Hwy 92, 61 and 278",
@@ -440,7 +440,7 @@ localCopy['roof-replacement'] = {
               "Underlayment and ice-and-water membrane at valleys, eaves and penetrations, where Georgia rain actually gets in.",
               "New flashing at walls, chimneys, skylights and pipe boots, not old metal caulked back into place.",
               "Ventilation balanced between intake and exhaust, because a hot, wet attic shortens shingle life from the inside.",
-              "Shingles, ridge and accessories to the manufacturer’s specification. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system fits the house.",
+              "Shingles, ridge and accessories to the manufacturer’s specification. We install all major shingle brands, including Owens Corning.",
               "Cleanup with magnetic nail sweeps, a final walkthrough, and manufacturer warranty registration in your name when the product line allows."
             ]
           }
@@ -560,7 +560,7 @@ localCopy['storm-damage-roof-repair'] = {
     intro: "After a Georgia storm, Dallas roofs often hide bruised shingles, lifted tabs, and quiet leaks that show up days later. iRoofer Contractors — family-owned since 2019 — walks the roof, photographs what we find, and explains repair versus replacement in plain English.",
     sections: [
       { h: "Why local storm repair",
-        p: "Owens Corning Contractor Rewards member. We document the way adjusters expect — no promised claim outcomes. Owner Cristian Mendez and our Dallas-based crew treat storm calls like emergencies—not sales appointments. Call (470) 236-1410 or https://iroofercontractors.com/contact/." },
+        p: "We install all major shingle brands, including Owens Corning. We document the way adjusters expect — no promised claim outcomes. Owner Cristian Mendez and our Dallas-based crew treat storm calls like emergencies—not sales appointments. Call (470) 236-1410 or https://iroofercontractors.com/contact/." },
       { h: "Our storm damage process in Dallas, GA",
         p: "Inspect → photos → tarp if needed → written scope → repair vs replace → complete + cleanup. Interior stains and attic moisture get noted too. Isolated missing shingles or flashing failures often repair cleanly; widespread bruising or an older roof near end of life may point to replacement. For urgent leaks, ask about emergency tarping in Dallas." },
       { h: "Hail damage roof repair in Dallas, GA",
@@ -622,7 +622,7 @@ localCopy['storm-damage-roof-repair'] = {
       },
       {
         "h": "Why a local crew for Douglas County storm work",
-        "p": "After a big storm, out-of-area crews show up with yard signs and a deposit form. We’re 152 Freedom Dr in Dallas, family-owned since 2019, and the same phone number answers the warranty call years from now. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system goes back on the roof. Douglas County runs its own building permit department and inspection line. When structural work is in scope, we pull the permit and schedule the inspections."
+        "p": "After a big storm, out-of-area crews show up with yard signs and a deposit form. We’re 152 Freedom Dr in Dallas, family-owned since 2019, and the same phone number answers the warranty call years from now. We install all major shingle brands, including Owens Corning, when that system goes back on the roof. Douglas County runs its own building permit department and inspection line. When structural work is in scope, we pull the permit and schedule the inspections."
       }
     ],
     faq: [
@@ -945,7 +945,7 @@ localCopy['new-construction'] = {
     intro: "New Dallas builds deserve a roof crew that treats the site like a neighbor’s house — because it is. iRoofer Contractors installs new-construction roofs from our shop at 152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019. See [new construction roofing services](/services/new-construction/) for the service overview. Ready to talk? https://iroofercontractors.com/contact/ or (470) 236-1410.",
     sections: [
       { h: "Dallas new builds — what we care about on site",
-        p: "Schedule coordination with framing and weather. Deck condition and fastener patterns that match the shingle system. Ice/water shield and flashing details at valleys, eaves, chimneys, and walls. Ventilation that matches the attic design — not an afterthought. Daily cleanup so other trades can work. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that product is specified or selected. We work with Paulding County Building & Permitting on Constitution Blvd so dry-in windows stay tight." },
+        p: "Schedule coordination with framing and weather. Deck condition and fastener patterns that match the shingle system. Ice/water shield and flashing details at valleys, eaves, chimneys, and walls. Ventilation that matches the attic design — not an afterthought. Daily cleanup so other trades can work. We install all major shingle brands, including Owens Corning, when that product is specified or selected. We work with Paulding County Building & Permitting on Constitution Blvd so dry-in windows stay tight." },
       { h: "Homeowners finishing a build",
         p: "If you are the owner on a custom Dallas home or addition, we walk the plan, confirm material and color in writing, and give you one point of contact through install. Every square count, pitch, and access path changes the number. We put the real number in a written estimate after we see the job." },
       { h: "Builders in Paulding / west metro",

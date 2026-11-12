@@ -20,7 +20,7 @@ const sections = [
   },
   {
     "h": "Roof replacement",
-    "p": "Full tear-off, decking inspection, synthetic underlayment, ice and water shield at eaves and valleys, and architectural shingles. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that line fits the home."
+    "p": "Full tear-off, decking inspection, synthetic underlayment, ice and water shield at eaves and valleys, and architectural shingles. We install all major shingle brands, including Owens Corning."
   },
   {
     "h": "Storm and hail damage",

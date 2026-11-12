@@ -89,7 +89,7 @@ export default function ContactPage() {
             <p style={{ color: '#52606b', lineHeight: 1.75, margin: 0 }}>
               iRoofer Contractors is family-owned since 2019 by Cristian Mendez, based at 152 Freedom Dr, Dallas, GA 30157. Tell us if you need a roof repair, a new roof, storm photos, or an emergency tarp. We’ll call you back with clear next steps. Prefer the phone? Call{' '}
               <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>.
-              {' '}We install Owens Corning shingles as an Owens Corning Contractor Rewards member.
+              {' '}We install all major shingle brands, including Owens Corning.
             </p>
             <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.7 }}>
               Helpful paths:{' '}
@@ -136,7 +136,7 @@ export default function ContactPage() {
               <h2 style={{ fontSize: 'clamp(1.4rem,2.4vw,1.85rem)', fontWeight: 800 }}>Who you&apos;re contacting</h2>
               <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
                 iRoofer Contractors is family-owned in Dallas since 2019.
-                We install Owens Corning shingles as an Owens Corning Contractor Rewards member.
+                We install all major shingle brands, including Owens Corning.
               </p>
               <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
                 A drip in Dallas, a storm in Hiram, or a new roof in Powder Springs: the same local crew shows up.

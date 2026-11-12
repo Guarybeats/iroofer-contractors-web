@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: 'Do you install Owens Corning shingles?',
-    a: 'Yes. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system fits your house and the job.',
+    a: 'Yes. We install all major shingle brands, including Owens Corning.',
   },
 ];
 

@@ -53,6 +53,8 @@ const SERVICES = [
     name: "Gutter Repair & Replacement",
     url: `${ORIGIN}/services/gutter-repair-replacement/`,
   },
+  { name: "Metal Roofing", url: `${ORIGIN}/metal-roofing-dallas-ga/` },
+  { name: "Flat Roofing", url: `${ORIGIN}/services/` },
 ];
 
 const CITIES = [
@@ -92,7 +94,7 @@ function callTool(name, args = {}) {
         address: "152 Freedom Dr, Dallas, GA 30157",
         hours: "Mon–Fri 9–7, Sat 9–5, Sun closed; storm / active-leak priority as crews allow (not 24/7)",
         credentials: [
-          "Owens Corning Contractor Rewards Member",
+          "We install all major shingle brands, including Owens Corning",
           "Family-owned since 2019",
         ],
         freeInspections: true,
@@ -123,7 +125,9 @@ function callTool(name, args = {}) {
               service.includes("storm") && n.includes("storm") ||
               service.includes("hail") && n.includes("storm") ||
               service.includes("gutter") && n.includes("gutter") ||
-              service.includes("new") && n.includes("new")
+              service.includes("new") && n.includes("new") ||
+              service.includes("metal") && n.includes("metal") ||
+              service.includes("flat") && n.includes("flat")
             );
           })
         : SERVICES;

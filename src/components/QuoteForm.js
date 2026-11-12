@@ -247,6 +247,8 @@ export default function QuoteForm({
           </option>
           <option>Roof Repair</option>
           <option>Roof Replacement</option>
+          <option>Metal Roofing</option>
+          <option>Flat Roofing</option>
           <option>New Construction</option>
           <option>Gutter Repair</option>
           <option>Gutter Replacement</option>

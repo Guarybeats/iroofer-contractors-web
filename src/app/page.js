@@ -26,6 +26,7 @@ const dallasLinks = [
   { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas' },
   { href: '/gutter-repair-replacement-dallas-ga/', label: 'Gutter repair & replacement' },
   { href: '/metal-roofing-dallas-ga/', label: 'Metal roofing in Dallas, GA' },
+  { href: '/services/#flat-roofing', label: 'Flat roofing' },
   { href: '/roof-replacement-hiram/', label: 'Roof replacement in Hiram' },
   { href: '/roof-repair-hiram/', label: 'Roof repair / inspection in Hiram' },
   { href: '/blog/roof-replacement-cost-dallas-ga/', label: 'Roof replacement cost factors' },
@@ -53,6 +54,13 @@ const svcs = [
   { n: '07', title: 'Exterior Painting & Staining', tag: 'Finish', img: '',
     href: '/services/exterior-painting/', cta: 'Exterior painting & staining',
     body: 'We paint and stain exteriors after honest prep. If the roof edge or trim is still taking on water, we tell you before anyone opens a bucket.' },
+  { n: '08', title: 'Metal Roofing', tag: 'Standing seam', img: '',
+    href: '/metal-roofing-dallas-ga/', cta: 'Metal roofing in Dallas, GA',
+    body: 'Standing-seam metal roofs for commercial buildings and homes. Free inspection and a written scope.' },
+  { n: '09', title: 'Flat Roofing', tag: 'Low-slope', img: '',
+    href: '/services/#flat-roofing', cta: 'Flat roofing',
+    body: 'We repair and replace low-slope and flat roofs.' },
+
 ];
 
 
@@ -112,7 +120,7 @@ export default function HomePage() {
           <div className="stats">
             <div className="stat"><div className="num">2019</div><div className="lbl">Family-owned in Dallas since</div></div>
             <div className="stat"><div className="num">Free</div><div className="lbl">No-pressure roof inspections</div></div>
-            <div className="stat"><div className="num">Local</div><div className="lbl">Owens Corning Contractor Rewards Member</div></div>
+            <div className="stat"><div className="num">All</div><div className="lbl">Major Shingle Brands Installed</div></div>
             <div className="stat"><div className="num">Real</div><div className="lbl">Crew — not a call center</div></div>
           </div>
         </div>
@@ -143,11 +151,11 @@ export default function HomePage() {
       <div className="certs" aria-label="Credentials">
         <div className="track">
           <div className="set">
-            <div className="c">Owens Corning Contractor Rewards Member</div>
+            <div className="c">All Major Shingle Brands Installed</div>
             <div className="c">Serving Paulding County Since 2019</div><div className="c">Local & Family-Owned</div><div className="c">Real Google Reviews</div>
           </div>
           <div className="set" aria-hidden="true">
-            <div className="c">Owens Corning Contractor Rewards Member</div>
+            <div className="c">All Major Shingle Brands Installed</div>
             <div className="c">Serving Paulding County Since 2019</div><div className="c">Local & Family-Owned</div><div className="c">Real Google Reviews</div>
           </div>
         </div>
@@ -161,7 +169,7 @@ export default function HomePage() {
             <div className="svc-intro rv">
               <span className="eyebrow dark">What we do</span>
               <h2>Every job on your roof, one local crew.</h2>
-              <p>From one leak to a whole new roof after hail, the same local team does it. We install Owens Corning shingles as an Owens Corning Contractor Rewards member. Tap a service to see what you get.</p>
+              <p>From one leak to a whole new roof after hail, the same local team does it. We install all major shingle brands, including Owens Corning. Tap a service to see what you get.</p>
               <a className="btn btn-ink" href="/contact/">Start a project <span className="arr">→</span></a>
             </div>
 

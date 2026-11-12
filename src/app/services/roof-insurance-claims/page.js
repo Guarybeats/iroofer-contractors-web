@@ -64,7 +64,7 @@ export default function Page() {
                 Roof Insurance Claims Help in Dallas, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680 }}>
-                After hail or wind, the paperwork can feel worse than the storm. iRoofer Contractors is family-owned in Dallas since 2019. We take photos of what we find on the roof and write a clear plan. We can meet your adjuster at your home. The owner is Cristian Mendez. We install Owens Corning shingles as an Owens Corning Contractor Rewards member.
+                After hail or wind, the paperwork can feel worse than the storm. iRoofer Contractors is family-owned in Dallas since 2019. We take photos of what we find on the roof and write a clear plan. We can meet your adjuster at your home. The owner is Cristian Mendez. We install all major shingle brands, including Owens Corning.
               </p>
               <p style={{ color: '#52606b', fontSize: '.98rem', marginTop: 12, maxWidth: 680, borderLeft: '3px solid var(--orange)', paddingLeft: 12 }}>
                 Paulding storms often leave hail and wind damage you can&apos;t see from the driveway.
@@ -199,7 +199,7 @@ export default function Page() {
           <div style={{ marginTop: 28 }}>
             <p style={{ color: '#52606b', marginBottom: 12 }}>
               Family-owned in Dallas since 2019. {brand.owner}&apos;s crew takes the photos and does the repairs.
-              Owens Corning Contractor Rewards member.
+              We install all major shingle brands, including Owens Corning.
             </p>
             <Link href="/storm-damage-roof-repair-dallas-ga/" className="btn btn-ink">Storm damage roof repair in Dallas, GA <span className="arr">→</span></Link>
             <Link href="/emergency-roof-repair-dallas-ga/" className="btn btn-ink" style={{ marginLeft: 12 }}>Emergency Dallas <span className="arr">→</span></Link>
