@@ -73,7 +73,7 @@ export default function Page() {
             <p>
               <Link href="/exterior-painting-austell/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Exterior painting in Austell</Link>
               {' · '}
-              <Link href="/roof-repair-austell/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof repair</Link>
+              <Link href="/service-areas/austell/#roof-repair" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof repair</Link>
               {' · '}
               <Link href="/roof-replacement-austell/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof replacement</Link>
               {' · '}
