@@ -151,7 +151,7 @@ export default function EstimatorPage() {
             {' '}
             <Link className="btn btn-ghost" href="/roof-replacement-dallas-ga/" style={{ marginLeft: 8 }}>Replacement Dallas</Link>
             {' '}
-            <Link className="btn btn-ghost" href="/dallas-ga-roofing/" style={{ marginLeft: 8 }}>Dallas hub</Link>
+            <Link className="btn btn-ghost" href="/" style={{ marginLeft: 8 }}>Dallas hub</Link>
           </p>
         </div>
       </section>

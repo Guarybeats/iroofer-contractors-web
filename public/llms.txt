@@ -5,12 +5,12 @@
 iRoofer Contractors is a local, family-owned roofing company based in Dallas, Georgia (Paulding County), serving the west Atlanta metro since 2019. It handles roof repair, full roof replacement, new-construction roofing, storm and hail damage restoration, insurance-claim support, and gutter repair/replacement. It offers free inspections with no-pressure written quotes; reviews are on its Google Business Profile.
 
 ## Services
-- [Roof Repair](https://iroofercontractors.com/services/roof-repair/): leak and storm-damage fixes, flashing, vent, and shingle repair across the Atlanta metro.
-- [Roof Replacement](https://iroofercontractors.com/services/roof-replacement/): full tear-off and re-roof with architectural asphalt shingles installed by an Owens Corning Contractor Rewards member, manufacturer standard warranty on the shingles plus a written workmanship guarantee.
+- [Roof Repair](https://iroofercontractors.com/roof-repair-dallas-ga/): leak and storm-damage fixes, flashing, vent, and shingle repair across the Atlanta metro.
+- [Roof Replacement](https://iroofercontractors.com/roof-replacement-dallas-ga/): full tear-off and re-roof with architectural asphalt shingles installed by an Owens Corning Contractor Rewards member, manufacturer standard warranty on the shingles plus a written workmanship guarantee.
 - [New Construction](https://iroofercontractors.com/services/new-construction/): roof installation for builders and homeowners on new builds.
 - [Hail Damage Roof Repair, Dallas GA](https://iroofercontractors.com/hail-damage-roof-repair-dallas-ga/): free hail damage inspections, photo documentation and Georgia claim guidance for Dallas and Paulding County.
-- [Storm & Hail Damage](https://iroofercontractors.com/services/storm-damage-roof-repair/): free inspections, emergency tarping, insurance documentation, and adjuster meetings.
-- [Gutter Repair & Replacement](https://iroofercontractors.com/services/gutter-repair-replacement/): repair, realignment, and replacement of gutters and downspouts.
+- [Storm & Hail Damage](https://iroofercontractors.com/storm-damage-roof-repair-dallas-ga/): free inspections, emergency tarping, insurance documentation, and adjuster meetings.
+- [Gutter Repair & Replacement](https://iroofercontractors.com/gutter-repair-replacement-dallas-ga/): repair, realignment, and replacement of gutters and downspouts.
 
 ## Key Pages
 - [Home](https://iroofercontractors.com/)
@@ -23,7 +23,7 @@ iRoofer Contractors is a local, family-owned roofing company based in Dallas, Ge
 ## Service Areas
 Dallas, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, Austell, Roswell, Alpharetta, and Canton, Georgia, plus greater west Metro Atlanta (Paulding, Douglas, Cobb, Fulton, Cherokee counties).
 
-- [Dallas, GA](https://iroofercontractors.com/dallas-ga-roofing/)
+- [Dallas, GA](https://iroofercontractors.com/)
 - [Douglasville](https://iroofercontractors.com/service-areas/douglasville/)
 - [Hiram](https://iroofercontractors.com/service-areas/hiram/)
 - [Powder Springs](https://iroofercontractors.com/service-areas/powder-springs/)
@@ -54,7 +54,7 @@ Roof repair, roof replacement, new construction, storm damage roof repair and gu
 
 ## Agent-Ready Resources
 - [llms.txt (well-known)](https://iroofercontractors.com/.well-known/llms.txt): same machine summary at the emerging standard path.
-- [Canonical "Roofing in Dallas GA" hub](https://iroofercontractors.com/dallas-ga-roofing/): services, storm/insurance process, FAQs, service area.
+- [Canonical "Roofing in Dallas GA" hub](https://iroofercontractors.com/): services, storm/insurance process, FAQs, service area.
 - [Structured local-intel JSON](https://iroofercontractors.com/data/roofing-dallas-ga.json): machine-readable signals on storm season, insurance and service area.
 - [Sitemap](https://iroofercontractors.com/sitemap.xml)
 

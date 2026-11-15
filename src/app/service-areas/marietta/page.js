@@ -31,7 +31,7 @@ const sections = [
   {
     h2: 'Roof repair in Marietta',
     paras: [
-      'Most repair calls east of our shop come down to flashing at walls and chimneys, worn valleys, lifted ridge caps, or a cracked pipe boot, not the whole roof. On older homes near the Square and mid-century Cobb houses, the leak usually starts at a tie-in or flashing detail. We find the real entry point, photograph it, and quote the repair in writing. Details: [roof repair in Marietta](/roof-repair-marietta/).',
+      'Most repair calls east of our shop come down to flashing at walls and chimneys, worn valleys, lifted ridge caps, or a cracked pipe boot, not the whole roof. On older homes near the Square and mid-century Cobb houses, the leak usually starts at a tie-in or flashing detail. We find the real entry point, photograph it, and quote the repair in writing. Details: [roof repair in Marietta](/service-areas/marietta/#roof-repair).',
     ],
   },
   {
@@ -87,7 +87,7 @@ const faq = [
 ];
 
 const relatedLinks = [
-  { href: '/roof-repair-marietta/', label: 'Roof repair in Marietta, GA' },
+  { href: '/service-areas/marietta/#roof-repair', label: 'Roof repair in Marietta, GA' },
   { href: '/roof-replacement-marietta/', label: 'Roof replacement in Marietta, GA' },
   { href: '/storm-damage-roof-repair-marietta/', label: 'Storm damage roof repair in Marietta' },
   { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair' },

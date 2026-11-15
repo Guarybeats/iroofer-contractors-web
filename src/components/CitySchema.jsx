@@ -5,7 +5,7 @@
 // readable entity: a Service node per offering tied to that City, plus an optional
 // FAQPage. Keep this in sync with the copy on the page — schema that claims things
 // the page does not say is a spam signal, not a ranking signal.
-import { brand, services } from '@/lib/brand';
+import { brand, services, servicePath } from '@/lib/brand';
 import { plainText } from '@/lib/inlineLinks';
 
 function absUrl(pathname) {
@@ -45,7 +45,7 @@ export default function CitySchema({ city, faq = null }) {
       description: s.summary,
       provider: { '@id': `${brand.url}/#business` },
       areaServed: cityNode,
-      url: absUrl(`/services/${s.slug}`),
+      url: absUrl(servicePath(s.slug)),
     })),
   ];
 

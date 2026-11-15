@@ -121,7 +121,7 @@ export default function BlogPostPage() {
               <li><Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)' }}>Storm damage roof repair Dallas</Link></li>
               <li><Link href="/blog/roof-repair-cost-dallas-ga/" style={{ color: 'var(--orange)' }}>Roof repair cost factors</Link></li>
               <li><Link href="/services/roof-insurance-claims/" style={{ color: 'var(--orange)' }}>Roof insurance claims help</Link></li>
-              <li><Link href="/dallas-ga-roofing/" style={{ color: 'var(--orange)' }}>Dallas GA roofing hub</Link></li>
+              <li><Link href="/" style={{ color: 'var(--orange)' }}>Dallas GA roofing hub</Link></li>
               <li><Link href="/contact/" style={{ color: 'var(--orange)' }}>Contact / free inspection</Link></li>
             </ul>
 

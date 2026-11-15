@@ -2,7 +2,7 @@
 //
 // Copy in localCopy.js, CityAreaPage `intro`/`paras`/`faq` and similar string data
 // can reference other pages in two ways:
-//   1. Markdown-style anchors: "[roof repair in Hiram](/roof-repair-hiram/)"
+//   1. Markdown-style anchors: "[roof repair in Hiram](/service-areas/hiram/#roof-repair)"
 //   2. Bare site paths:         "see /roof-replacement-hiram/"
 // Rendered as plain strings, both printed raw slugs to homeowners. renderInline()
 // (components/InlineText.jsx) turns them into real links with readable anchor text;
@@ -32,15 +32,15 @@ const FIXED = {
   '/blog/': 'our roofing blog',
   '/services/': 'all roofing services',
   '/service-areas/': 'all service areas',
-  '/dallas-ga-roofing/': 'Dallas, GA roofing',
+  '/': 'Dallas, GA roofing',
   '/new-construction/': 'new construction roofing',
   '/emergency-roof-repair-dallas-ga/': 'emergency roof repair',
   '/services/roof-insurance-claims/': 'roof insurance claims help',
-  '/services/roof-repair/': 'roof repair services',
-  '/services/roof-replacement/': 'roof replacement services',
+  '/roof-repair-dallas-ga/': 'roof repair services',
+  '/roof-replacement-dallas-ga/': 'roof replacement services',
   '/services/new-construction/': 'new construction roofing services',
-  '/services/gutter-repair-replacement/': 'gutter repair and replacement',
-  '/services/storm-damage-roof-repair/': 'storm damage roof repair services',
+  '/gutter-repair-replacement-dallas-ga/': 'gutter repair and replacement',
+  '/storm-damage-roof-repair-dallas-ga/': 'storm damage roof repair services',
 };
 
 const PREFIX = [
@@ -55,7 +55,7 @@ function titleCase(slug) {
   return slug.split('-').map((w) => (w.length > 2 ? w[0].toUpperCase() + w.slice(1) : w)).join(' ');
 }
 
-/** Human anchor text for an internal path ("/roof-repair-hiram/" → "roof repair in Hiram"). */
+/** Human anchor text for an internal path ("/service-areas/hiram/#roof-repair" → "roof repair in Hiram"). */
 export function pathLabel(path) {
   const p = path.endsWith('/') ? path : `${path}/`;
   if (FIXED[p]) return FIXED[p];

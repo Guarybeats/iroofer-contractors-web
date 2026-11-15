@@ -42,16 +42,16 @@ const TOOLS = [
 ];
 
 const SERVICES = [
-  { name: "Roof Repair", url: `${ORIGIN}/services/roof-repair/` },
-  { name: "Roof Replacement", url: `${ORIGIN}/services/roof-replacement/` },
+  { name: "Roof Repair", url: `${ORIGIN}/roof-repair-dallas-ga/` },
+  { name: "Roof Replacement", url: `${ORIGIN}/roof-replacement-dallas-ga/` },
   { name: "New Construction", url: `${ORIGIN}/services/new-construction/` },
   {
     name: "Storm & Hail Damage",
-    url: `${ORIGIN}/services/storm-damage-roof-repair/`,
+    url: `${ORIGIN}/storm-damage-roof-repair-dallas-ga/`,
   },
   {
     name: "Gutter Repair & Replacement",
-    url: `${ORIGIN}/services/gutter-repair-replacement/`,
+    url: `${ORIGIN}/gutter-repair-replacement-dallas-ga/`,
   },
 ];
 
@@ -71,7 +71,7 @@ const CITIES = [
   slug,
   url:
     slug === "dallas-ga"
-      ? `${ORIGIN}/dallas-ga-roofing/`
+      ? `${ORIGIN}/`
       : `${ORIGIN}/service-areas/${slug}/`,
 }));
 
@@ -138,7 +138,7 @@ function callTool(name, args = {}) {
       if (city && service.includes("repair")) {
         pages.push({
           name: `Roof repair ${city}`,
-          url: `${ORIGIN}/roof-repair-${city.replace(/-ga$/, "")}${city.includes("dallas") ? "-ga" : ""}/`.replace(/--/g, "-"),
+          url: city.includes("dallas") ? `${ORIGIN}/roof-repair-dallas-ga/` : `${ORIGIN}/service-areas/${city.replace(/-ga$/, "")}/#roof-repair`,
         });
       }
       return textResult({

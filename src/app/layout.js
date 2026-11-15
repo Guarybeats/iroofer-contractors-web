@@ -101,10 +101,10 @@ export default function RootLayout({ children }) {
                 <a className="lnk" href="/services/">Services</a>
                 <div className="menu-drop-panel" role="group" aria-label="Services">
                   <a href="/services/">All services</a>
-                  <a href="/services/roof-repair/">Roof Repair</a>
-                  <a href="/services/roof-replacement/">Roof Replacement</a>
-                  <a href="/services/storm-damage-roof-repair/">Storm Damage</a>
-                  <a href="/services/gutter-repair-replacement/">Gutters</a>
+                  <a href="/roof-repair-dallas-ga/">Roof Repair</a>
+                  <a href="/roof-replacement-dallas-ga/">Roof Replacement</a>
+                  <a href="/storm-damage-roof-repair-dallas-ga/">Storm Damage</a>
+                  <a href="/gutter-repair-replacement-dallas-ga/">Gutters</a>
                   <a href="/services/new-construction/">New Construction</a>
                   <a href="/services/siding/">Siding</a>
                   <a href="/services/exterior-painting/">Exterior Painting</a>
@@ -167,10 +167,10 @@ export default function RootLayout({ children }) {
               <div className="foot-col">
                 <h2>Services</h2>
                 <a href="/free-roof-check/">Free Roof Check</a>
-                <a href="/services/roof-repair/">Roof Repair</a>
-                <a href="/services/roof-replacement/">Roof Replacement</a>
+                <a href="/roof-repair-dallas-ga/">Roof Repair</a>
+                <a href="/roof-replacement-dallas-ga/">Roof Replacement</a>
                 <a href="/services/new-construction/">New Construction</a>
-                <a href="/services/gutter-repair-replacement/">Gutter Repair &amp; Replacement</a>
+                <a href="/gutter-repair-replacement-dallas-ga/">Gutter Repair &amp; Replacement</a>
                 <a href="/services/siding/">Siding Repair &amp; Replacement</a>
                 <a href="/services/exterior-painting/">Exterior Painting &amp; Staining</a>
                 <a href="/emergency-roof-repair-dallas-ga/">Emergency Roof Repair</a>
@@ -192,7 +192,7 @@ export default function RootLayout({ children }) {
               </div>
               <div className="foot-col">
                 <h2>Service Areas</h2>
-                <a href="/dallas-ga-roofing/">Dallas, GA</a>
+                <a href="/">Dallas, GA</a>
                 <a href="/service-areas/douglasville/">Douglasville</a>
                 <a href="/service-areas/hiram/">Hiram</a>
                 <a href="/service-areas/powder-springs/">Powder Springs</a>

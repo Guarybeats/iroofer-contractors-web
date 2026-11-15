@@ -44,7 +44,7 @@ const sections = [
   {
     h2: 'Roof repair in Kennesaw',
     paras: [
-      'Not every roof needs replacing. Localized leaks, a cracked pipe boot, failed flashing at a wall, or wind-lifted tabs on an otherwise sound roof are repairs. We find the actual entry point (often not right above the stain), photograph it, and quote the fix in writing. More: [roof repair in Kennesaw](/roof-repair-kennesaw/).',
+      'Not every roof needs replacing. Localized leaks, a cracked pipe boot, failed flashing at a wall, or wind-lifted tabs on an otherwise sound roof are repairs. We find the actual entry point (often not right above the stain), photograph it, and quote the fix in writing. More: [roof repair in Kennesaw](/service-areas/kennesaw/#roof-repair).',
     ],
   },
   {
@@ -95,7 +95,7 @@ const faq = [
 
 const relatedLinks = [
   { href: '/roof-replacement-kennesaw/', label: 'Roof replacement in Kennesaw, GA' },
-  { href: '/roof-repair-kennesaw/', label: 'Roof repair in Kennesaw' },
+  { href: '/service-areas/kennesaw/#roof-repair', label: 'Roof repair in Kennesaw' },
   { href: '/storm-damage-roof-repair-kennesaw/', label: 'Storm & emergency roof repair in Kennesaw' },
   { href: '/gutter-repair-replacement-kennesaw/', label: 'Gutter repair in Kennesaw' },
   { href: '/services/roof-insurance-claims/', label: 'Insurance claims help' },

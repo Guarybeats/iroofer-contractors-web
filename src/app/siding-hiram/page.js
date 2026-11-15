@@ -73,7 +73,7 @@ export default function Page() {
             <p>
               <Link href="/exterior-painting-hiram/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Exterior painting in Hiram</Link>
               {' · '}
-              <Link href="/roof-repair-hiram/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof repair</Link>
+              <Link href="/service-areas/hiram/#roof-repair" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof repair</Link>
               {' · '}
               <Link href="/roof-replacement-hiram/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof replacement</Link>
               {' · '}

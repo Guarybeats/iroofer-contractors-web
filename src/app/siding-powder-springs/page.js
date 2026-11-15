@@ -73,7 +73,7 @@ export default function Page() {
             <p>
               <Link href="/exterior-painting-powder-springs/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Exterior painting in Powder Springs</Link>
               {' · '}
-              <Link href="/roof-repair-powder-springs/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof repair</Link>
+              <Link href="/service-areas/powder-springs/#roof-repair" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof repair</Link>
               {' · '}
               <Link href="/roof-replacement-powder-springs/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof replacement</Link>
               {' · '}

@@ -91,7 +91,7 @@ export default function Page() {
             <h2>Other services we offer in Acworth, GA</h2>
           </div>
           <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
-            <Link key="roof-repair" href="/roof-repair-acworth/" className="svc-card">
+            <Link key="roof-repair" href="/service-areas/acworth/#roof-repair" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Repair in Acworth</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
