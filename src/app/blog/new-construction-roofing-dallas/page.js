@@ -80,8 +80,8 @@ export default function BlogPostPage() {
             </ul>
 
             <h2>Talk to us about your next build</h2>
-            <p>iRoofer Contractors is family-owned in Dallas, GA since 2019. Send us your plans and schedule, and we’ll put pricing in writing. See <Link href="/new-construction-dallas-ga/">new construction roofing in Dallas, GA</Link>, request a quote at <Link href="/contact/">https://iroofercontractors.com/contact/</Link>, or call (470) 236-1410.</p>
-            <p><Link href="/new-construction-dallas-ga/" className="btn btn-solid">New construction roofing →</Link></p>
+            <p>iRoofer Contractors is family-owned in Dallas, GA since 2019. Send us your plans and schedule, and we’ll put pricing in writing. See <Link href="/services/new-construction/">new construction roofing in Dallas, GA</Link>, request a quote at <Link href="/contact/">https://iroofercontractors.com/contact/</Link>, or call (470) 236-1410.</p>
+            <p><Link href="/services/new-construction/" className="btn btn-solid">New construction roofing →</Link></p>
           </div>
         </div>
             <RelatedPosts slug="new-construction-roofing-dallas" />
