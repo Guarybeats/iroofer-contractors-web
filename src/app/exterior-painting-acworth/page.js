@@ -73,7 +73,7 @@ export default function Page() {
             <p>
               <Link href="/siding-acworth/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Siding in Acworth</Link>
               {' · '}
-              <Link href="/roof-repair-acworth/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof repair</Link>
+              <Link href="/service-areas/acworth/#roof-repair" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof repair</Link>
               {' · '}
               <Link href="/roof-replacement-acworth/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof replacement</Link>
               {' · '}
