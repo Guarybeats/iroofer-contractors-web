@@ -59,7 +59,7 @@ const faqs = [
 ];
 const relatedLinks = [
   {
-    "href": "/dallas-ga-roofing/",
+    "href": "/",
     "label": "Dallas GA roofing hub"
   },
   {
