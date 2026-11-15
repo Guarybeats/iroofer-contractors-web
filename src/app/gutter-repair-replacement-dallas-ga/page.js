@@ -20,8 +20,8 @@ export const metadata = seo({
 const copy = localCopy['gutter-repair-replacement']['dallas-ga'];
 const faqs = copy.faq;
 const relatedLinks = [
-  { href: '/dallas-ga-roofing/', label: 'All Dallas GA roofing services' },
-  { href: '/services/gutter-repair-replacement/', label: 'Gutter repair & replacement hub' },
+  { href: '/', label: 'All Dallas GA roofing services' },
+  { href: '/gutter-repair-replacement-dallas-ga/', label: 'Gutter repair & replacement hub' },
   { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas GA' },
   { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas GA' },
 
@@ -35,7 +35,7 @@ export default function Page() {
         <div className="wrap" style={{ position: 'relative' }}>
           <div className="faq-grid" style={{ alignItems: 'start' }}>
             <div className="rv">
-              <Link href="/services/gutter-repair-replacement/" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>
+              <Link href="/gutter-repair-replacement-dallas-ga/" style={{ fontWeight: 700, color: 'var(--orange)', letterSpacing: '.04em', textTransform: 'uppercase', fontSize: '.8rem' }}>
                 ← Gutter Repair & Replacement
               </Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>Dallas, GA</span>
@@ -86,7 +86,7 @@ export default function Page() {
             ))}
           </div>
           <div style={{ marginTop: 28 }}>
-            <Link href="/dallas-ga-roofing/" className="btn btn-ink">Dallas GA roofing hub <span className="arr">→</span></Link>
+            <Link href="/" className="btn btn-ink">Dallas GA roofing hub <span className="arr">→</span></Link>
           </div>
         </div>
       </section>
@@ -122,7 +122,7 @@ export default function Page() {
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Dallas</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
-            <Link key="new-construction" href="/new-construction-dallas-ga/" className="svc-card">
+            <Link key="new-construction" href="/services/new-construction/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>New Construction in Dallas</h3>
               <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
             </Link>
