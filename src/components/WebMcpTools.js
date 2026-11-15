@@ -18,7 +18,7 @@
  */
 
 import { useEffect } from "react";
-import { brand, services, cities, cityPath } from "@/lib/brand";
+import { brand, services, cities, cityPath, servicePath } from "@/lib/brand";
 
 const ORIGIN = "https://iroofercontractors.com";
 
@@ -47,7 +47,7 @@ function buildTools() {
     name: s.title,
     slug: s.slug,
     summary: s.summary,
-    url: `${ORIGIN}/services/${s.slug}/`,
+    url: `${ORIGIN}${servicePath(s.slug)}`,
   }));
 
   const areaList = cities.map((c) => ({
