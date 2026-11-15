@@ -13,11 +13,17 @@ import QuoteForm from '@/components/QuoteForm';
 import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
 import ReviewButton from '@/components/ReviewButton';
 import { renderInline } from '@/components/InlineText';
-import { brand, services, cities, cityPath } from '@/lib/brand';
+import CopySection from '@/components/CopySection';
+import { localCopy } from '@/lib/localCopy';
+import { brand, services, cities, cityPath, servicePath, serviceCityPath } from '@/lib/brand';
 
 const MUTED = '#52606b';
 
-export default function CityAreaPage({ city, intro, sections = [], neighborhoods = [], faq = [], relatedLinks = [], h1, showLocalNote = true }) {
+export default function CityAreaPage({ city, intro, sections = [], neighborhoods = [], faq: hubFaq = [], relatedLinks = [], h1, showLocalNote = true }) {
+  // Nov 2026 dedupe: /roof-repair-{city}/ 301s here; its local copy and FAQ render in #roof-repair.
+  const repair = localCopy['roof-repair']?.[city.slug];
+  const seenQ = new Set(hubFaq.map((f) => f.q));
+  const faq = [...hubFaq, ...((repair?.faq || []).filter((f) => !seenQ.has(f.q)))];
   const heading = h1 || `Roofing in ${city.name}, ${city.state}`;
   return (
     <section className="sec-light sec-pad">
@@ -58,7 +64,7 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
         <div className="cards" style={{ marginTop: 36 }}>
           {services.map((s) => {
             const combo = city.combo !== false;
-            const href = combo ? `/${s.slug}-${city.slug}/` : `/services/${s.slug}/`;
+            const href = combo ? serviceCityPath(s.slug, city.slug) : servicePath(s.slug);
             const cta =
               s.slug === 'roof-repair' ? `Roof repair in ${city.name}` :
               s.slug === 'roof-replacement' ? `Roof replacement in ${city.name}` :
@@ -95,6 +101,14 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
             )}
           </div>
         ))}
+
+        {repair && (
+          <div id="roof-repair" style={{ marginTop: 44, maxWidth: 880, scrollMarginTop: 120 }}>
+            <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 14 }}>Roof repair in {city.name}, {city.state}</h2>
+            {repair.intro && <p style={{ color: MUTED, fontSize: '1.02rem', lineHeight: 1.75, marginBottom: 14 }}>{renderInline(repair.intro)}</p>}
+            {(repair.sections || []).map((sec) => <CopySection key={sec.h} sec={sec} />)}
+          </div>
+        )}
 
         <div className="faq-grid" style={{ marginTop: 44, alignItems: 'start' }}>
           <div className="rv">
