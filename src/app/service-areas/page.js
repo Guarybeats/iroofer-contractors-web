@@ -28,6 +28,8 @@ const cityHints = {
   marietta: 'Repair, replacement & storm help, city or Cobb permits',
   acworth: 'Leak repair, tear-offs & limb-strike tarping',
   kennesaw: 'Repair, replacement & storm help in north Cobb',
+  mableton: 'Repair, replacement, storm help & gutters in south Cobb',
+  'lithia-springs': 'Repair, replacement, storm help & gutters near I-20',
 };
 
 export default function ServiceAreas() {

@@ -218,6 +218,8 @@ export default function ServicesPage() {
               <Link href="/service-areas/kennesaw/" className="chip" style={{ textDecoration: 'none' }}>Kennesaw</Link>
               <Link href="/service-areas/acworth/" className="chip" style={{ textDecoration: 'none' }}>Acworth</Link>
               <Link href="/service-areas/austell/" className="chip" style={{ textDecoration: 'none' }}>Austell</Link>
+              <Link href="/service-areas/mableton/" className="chip" style={{ textDecoration: 'none' }}>Mableton</Link>
+              <Link href="/service-areas/lithia-springs/" className="chip" style={{ textDecoration: 'none' }}>Lithia Springs</Link>
             </div>
           </div>
         </div>

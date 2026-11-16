@@ -64,6 +64,8 @@ const CITIES = [
   "kennesaw",
   "acworth",
   "austell",
+  "mableton",
+  "lithia-springs",
   "roswell",
   "alpharetta",
   "canton",
