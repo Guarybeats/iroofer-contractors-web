@@ -100,3 +100,28 @@
   .grid,.pair{grid-template-columns:1fr}
   .photo{min-height:220px;aspect-ratio:16/10}
 }
+
+/* recent jobs map */
+.mapSec{background:#fff;border-top:1px solid var(--line)}
+.mapHead{max-width:46rem;margin-bottom:1.8rem}
+.mapHead h2{font-size:clamp(2rem,4.4vw,3.2rem);font-weight:900}
+.mapHead p{color:#52606b;margin-top:.6rem}
+.mapBox{position:relative;height:420px;border-radius:10px;overflow:hidden;border:1px solid var(--line);box-shadow:0 8px 24px -16px rgba(20,29,39,.35);background:#e8ecef;isolation:isolate}
+.map{position:absolute;inset:0}
+.mapBox :global(.rjm-loading){display:flex;align-items:center;justify-content:center;height:100%;color:#52606b;font-size:.9rem}
+.mapBox :global(.rjm-pin){background:none;border:0}
+.mapBox :global(.rjm-pin span){display:block;width:26px;height:26px;border-radius:50% 50% 50% 0;background:var(--orange,#ff5c1c);border:3px solid #fff;transform:rotate(-45deg);box-shadow:0 2px 6px rgba(0,0,0,.35)}
+.mapBox :global(.rjm-pop){display:flex;flex-direction:column;gap:2px;font-family:inherit}
+.mapBox :global(.rjm-pop img){width:200px;height:113px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block}
+.mapBox :global(.rjm-pop b){color:var(--ink);font-size:.95rem}
+.mapBox :global(.rjm-pop span){color:#2c3842;font-size:.85rem}
+.mapBox :global(.rjm-pop small){color:#52606b;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em}
+.mapNote{margin-top:.9rem;font-size:.82rem;color:#52606b}
+.mapLinks{margin-top:1.2rem;display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem 1rem;font-size:.92rem}
+.mapLinks span{color:#52606b;font-weight:700}
+.mapLinks ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.4rem 1.2rem}
+.mapLinks a{color:var(--ink);font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.mapLinks a:hover{color:var(--orange)}
+@media (max-width:760px){
+  .mapBox{height:320px}
+}

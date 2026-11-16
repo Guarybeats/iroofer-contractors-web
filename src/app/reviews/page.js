@@ -4,6 +4,8 @@ import { seo } from '@/lib/seo';
 import ReviewButton from '@/components/ReviewButton';
 import { googleReviewSummary, writtenReviews, starOnlyReviews } from '@/lib/googleReviews';
 import { jobPhotos } from '@/lib/jobPhotos';
+import { jobAreaLinks } from '@/lib/jobPins';
+import RecentJobsMapLoader from '@/components/RecentJobsMapLoader';
 import s from './reviews.module.css';
 
 // Schema note: the site-wide graph in components/LocalSeo.jsx already emits a
@@ -181,6 +183,29 @@ export default function ReviewsPage() {
             <a className="btn btn-solid" href={googleUrl} target="_blank" rel="noopener noreferrer">Read all reviews on Google <span className="arr">→</span></a>
             <ReviewButton variant="ink" label="Leave a review" />
           </div>
+        </div>
+      </section>
+
+      {/* RECENT JOBS MAP — city-level pins only (see src/lib/jobPins.js) */}
+      <section className={`${s.mapSec} sec-pad`} id="jobs-map">
+        <div className="wrap">
+          <div className={s.mapHead}>
+            <span className="eyebrow dark">Recent jobs map</span>
+            <h2>Where we&apos;ve worked recently</h2>
+            <p>Roof replacements, gutters, inspections, and storm work across west metro Atlanta. Tap a pin to see the job type, the month, and a photo where we have one.</p>
+          </div>
+          <div className={s.mapBox}>
+            <RecentJobsMapLoader className={s.map} />
+          </div>
+          <p className={s.mapNote}>Pins show the city, not the exact home, to protect customer privacy.</p>
+          <nav className={s.mapLinks} aria-label="Service areas on the map">
+            <span>Roofing in these areas:</span>
+            <ul>
+              {jobAreaLinks().map((a) => (
+                <li key={a.key}><Link href={a.href}>{a.label}</Link></li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </section>
 
