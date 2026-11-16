@@ -20,7 +20,7 @@ iRoofer Contractors is a local, family-owned roofing company based in Dallas, Ge
 - [Service areas](https://iroofercontractors.com/service-areas/)
 
 ## Service Areas
-Dallas, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, Austell, Roswell, Alpharetta, and Canton, Georgia, plus greater west Metro Atlanta (Paulding, Douglas, Cobb, Fulton, Cherokee counties).
+Dallas, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, Austell, Mableton, Lithia Springs, Roswell, Alpharetta, and Canton, Georgia, plus greater west Metro Atlanta (Paulding, Douglas, Cobb, Fulton, Cherokee counties).
 
 - [Dallas, GA](https://iroofercontractors.com/dallas-ga-roofing/)
 - [Douglasville](https://iroofercontractors.com/service-areas/douglasville/)
@@ -30,6 +30,8 @@ Dallas, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, Austel
 - [Kennesaw](https://iroofercontractors.com/service-areas/kennesaw/)
 - [Acworth](https://iroofercontractors.com/service-areas/acworth/)
 - [Austell](https://iroofercontractors.com/service-areas/austell/)
+- [Mableton](https://iroofercontractors.com/service-areas/mableton/)
+- [Lithia Springs](https://iroofercontractors.com/service-areas/lithia-springs/)
 - [Roswell](https://iroofercontractors.com/service-areas/roswell/)
 - [Alpharetta](https://iroofercontractors.com/service-areas/alpharetta/)
 - [Canton](https://iroofercontractors.com/service-areas/canton/)

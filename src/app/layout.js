@@ -200,6 +200,8 @@ export default function RootLayout({ children }) {
                 <a href="/service-areas/kennesaw/">Kennesaw</a>
                 <a href="/service-areas/acworth/">Acworth</a>
                 <a href="/service-areas/austell/">Austell</a>
+                <a href="/service-areas/mableton/">Mableton</a>
+                <a href="/service-areas/lithia-springs/">Lithia Springs</a>
                 <a href="/service-areas/">All areas →</a>
               </div>
               <div className="foot-col">

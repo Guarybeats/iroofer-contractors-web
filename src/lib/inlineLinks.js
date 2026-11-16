@@ -19,6 +19,8 @@ const CITY = {
   kennesaw: 'Kennesaw',
   acworth: 'Acworth',
   austell: 'Austell',
+  mableton: 'Mableton',
+  'lithia-springs': 'Lithia Springs',
   roswell: 'Roswell',
   alpharetta: 'Alpharetta',
   canton: 'Canton',

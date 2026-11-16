@@ -18,6 +18,7 @@ export const brand = {
   serviceArea: [
     'Dallas, GA', 'Douglasville', 'Hiram', 'Powder Springs',
     'Marietta', 'Acworth', 'Kennesaw', 'Austell',
+    'Mableton', 'Lithia Springs',
     'Roswell', 'Alpharetta', 'Canton'
   ],
   pitch:
@@ -189,6 +190,10 @@ export const cities = [
     localNote: 'Kennesaw homeowners rely on us for honest pricing and a real person on the phone — no call center, no surprise line items.' },
   { slug: 'austell', name: 'Austell', state: 'GA', county: 'Cobb County', blurb: 'emergency tarping and honest estimates for Austell property owners.',
     localNote: 'When a storm hits Austell we tarp the same day and meet your adjuster on-site, so your claim is documented before the next rain.' },
+  { slug: 'mableton', name: 'Mableton', state: 'GA', county: 'Cobb County', combo: false, blurb: 'roof repair, replacement, storm claims and gutters across south Cobb’s newest city.',
+    localNote: 'Mableton became a city in 2022, and since March 2025 the City of Mableton issues building permits inside city limits. We confirm whether your address goes to the city or to Cobb County and pull the right permit, whether the house is a mid-century ranch off Floyd Road or a newer subdivision near the Silver Comet Trail.' },
+  { slug: 'lithia-springs', name: 'Lithia Springs', state: 'GA', county: 'Douglas County', combo: false, blurb: 'storm inspections, roof repair, replacement and gutters along the I-20 corridor.',
+    localNote: 'Lithia Springs is unincorporated Douglas County, so permits run through the county. Around Sweetwater Creek State Park the tree cover means limb strikes in storms and gutters that clog every fall, so every inspection here includes overhanging limbs and drainage.' },
   { slug: 'roswell', name: 'Roswell', state: 'GA', county: 'Fulton County', combo: false, blurb: 'steep-slope replacements, historic-district repairs and storm claims in Roswell.',
     localNote: 'Roswell mixes 1980s Martin\u2019s Landing and Willeo Road two-story homes with the Canton Street historic district, where architectural review limits what can go on a roof. We spec shingles that pass review and still carry a full manufacturer warranty.' },
   { slug: 'alpharetta', name: 'Alpharetta', state: 'GA', county: 'Fulton County', combo: false, blurb: 'HOA-compliant roof replacements and leak diagnostics across Alpharetta.',

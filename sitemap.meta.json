@@ -119,6 +119,16 @@
     "changefreq": "monthly",
     "images": []
   },
+  "/service-areas/mableton/": {
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "images": []
+  },
+  "/service-areas/lithia-springs/": {
+    "priority": "0.7",
+    "changefreq": "monthly",
+    "images": []
+  },
   "/roof-leak-repair-dallas-ga/": {
     "priority": "0.9",
     "changefreq": "weekly",

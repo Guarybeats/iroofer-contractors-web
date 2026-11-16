@@ -26,7 +26,7 @@ const faqs = [
   { q: 'What do I get?', a: 'Photos of your roof and a short written summary. It says what we found and what we suggest: repair, new roof, or nothing for now.' },
   { q: 'Do I need to be home?', a: 'It helps if you are, so we can look at ceilings or the attic. If you can’t be there, we can check the outside and send you the photos.' },
   { q: 'Will you tell me the price?', a: 'If work is needed, we give you a written price after the check. We don’t post prices online, because every roof is different.' },
-  { q: 'What towns do you cover?', a: 'Dallas, GA and nearby towns like Hiram, Douglasville, Powder Springs, Marietta, Acworth, Kennesaw, and Austell.' },
+  { q: 'What towns do you cover?', a: 'Dallas, GA and nearby towns like Hiram, Douglasville, Powder Springs, Marietta, Acworth, Kennesaw, Austell, Mableton, and Lithia Springs.' },
 ];
 
 const pageSchema = {

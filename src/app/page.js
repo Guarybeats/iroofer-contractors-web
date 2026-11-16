@@ -67,7 +67,7 @@ const faqs = [
   { q: 'Are you based in Dallas, or just advertising here?', a: 'We are based here, at 152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019.' },
   { q: 'Do you publish prices here?', a: 'No. Every roof is different. You get a real price in writing after a free roof check. Ask for one at https://iroofercontractors.com/contact/ or call (470) 236-1410.' },
   { q: 'What do Georgia storms do to roofs here?', a: 'Spring and summer bring hail, strong winds, and falling limbs. That can mean dented shingles, lost shingle grit, loose flashing, and hidden leaks that show up weeks later. A free roof check catches them early.' },
-  { q: 'Which areas do you serve around Dallas, GA?', a: 'Dallas, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, Austell, Roswell, Alpharetta, Canton, plus greater west Metro Atlanta (Paulding, Douglas, and Cobb counties).' },
+  { q: 'Which areas do you serve around Dallas, GA?', a: 'Dallas, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, Austell, Mableton, Lithia Springs, Roswell, Alpharetta, Canton, plus greater west Metro Atlanta (Paulding, Douglas, and Cobb counties).' },
 ];
 
 export default function HomePage() {
