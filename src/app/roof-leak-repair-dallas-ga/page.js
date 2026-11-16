@@ -20,7 +20,6 @@ export const metadata = seo({
   description:
     'Roof leak repair in Dallas, GA and Paulding County. We trace the leak to its source, fix it, and show you photos. Free inspection. Call (470) 236-1410.',
   path: PATH,
-  canonicalPath: '/roof-repair-dallas-ga',
 });
 
 const sources = [
