@@ -20,7 +20,7 @@
     {
       "identifier": "urn:air:iroofercontractors.com:agent:a2a",
       "displayName": "iRoofer A2A agent card",
-      "type": "application/json",
+      "type": "application/agent-card+json",
       "url": "https://iroofercontractors.com/.well-known/agent-card.json",
       "representativeQueries": [
         "discover iRoofer agent skills",

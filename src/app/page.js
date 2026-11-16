@@ -32,19 +32,19 @@ const dallasLinks = [
 ];
 
 const svcs = [
-  { n: '01', title: 'Roof Repair', tag: 'Leaks & flashing', img: '/assets/service-repair.jpg?v=3',
+  { n: '01', title: 'Roof Repair', tag: 'Leaks & flashing', img: '/assets/service-repair.jpg?v=3', w: 900, h: 600,
     href: '/roof-repair-dallas-ga/', cta: 'Roof repair in Dallas, GA',
     body: 'Water stains, loose flashing, cracked pipe boots, and leaks you can’t find. We track down where the water gets in. Then we fix it, seal it, and match the color so the repair blends in.' },
-  { n: '02', title: 'Roof Replacement', tag: 'Most popular', img: '/assets/service-replacement.jpg?v=2',
+  { n: '02', title: 'Roof Replacement', tag: 'Most popular', img: '/assets/service-replacement.jpg?v=2', w: 900, h: 675,
     href: '/roof-replacement-dallas-ga/', cta: 'Roof replacement in Dallas, GA',
     body: 'We take the old roof off down to the wood. We add a leak barrier, a water-proof layer, and new shingles, put on the way the maker says to. You also get a vent at the peak, metal drip edge, and a magnet sweep for every nail.' },
-  { n: '03', title: 'New Construction', tag: 'Builders', img: '/assets/service-newconstruction.jpg?v=2',
+  { n: '03', title: 'New Construction', tag: 'Builders', img: '/assets/service-newconstruction.jpg?v=2', w: 900, h: 1350,
     href: '/services/new-construction/', cta: 'Talk to a local roofer',
     body: 'We work with builders and homeowners on new homes. We put on a roof that fits the design and the budget. It meets code, gets inspected, and is built to last.' },
-  { n: '04', title: 'Storm & Insurance Claims', tag: 'Same-day when schedule allows', img: '/assets/service-repair.jpg?v=3',
+  { n: '04', title: 'Storm & Insurance Claims', tag: 'Same-day when schedule allows', img: '/assets/service-repair.jpg?v=3', w: 900, h: 600,
     href: '/storm-damage-roof-repair-dallas-ga/', cta: 'Storm damage roof repair Dallas',
     body: 'We take photos of hail and wind damage and write up what needs fixing. We meet your insurance adjuster at the house. If they miss items, we ask them to add them. We help with the paperwork, so you don’t pay up front for what the claim should cover.' },
-  { n: '05', title: 'Gutter Repair & Replacement', tag: 'Protection', img: '/assets/service-gutters-main.jpg?v=2',
+  { n: '05', title: 'Gutter Repair & Replacement', tag: 'Protection', img: '/assets/service-gutters-main.jpg?v=2', w: 1024, h: 559,
     href: '/gutter-repair-replacement-dallas-ga/', cta: 'Gutter repair & replacement Dallas',
     body: 'Clogged or broken gutters can send water back under your shingles and against your home. We clean, fix, and replace seamless gutters so water flows away from your home, not into it.' },
   { n: '06', title: 'Siding Repair & Replacement', tag: 'Walls', img: '',
@@ -187,7 +187,7 @@ export default function HomePage() {
                       <p>{s.body}</p>
                       <Link className="svc-link" href={s.href || "/contact/"}>{s.cta || "Get an estimate"} →</Link>
                     </div>
-                    {s.img ? <Pic src={s.img} alt={`${s.title} by iRoofer Contractors in Dallas, GA`} /> : null}
+                    {s.img ? <Pic src={s.img} alt={`${s.title} by iRoofer Contractors in Dallas, GA`} width={s.w} height={s.h} /> : null}
                   </div></div></div>
                 </article>
               ))}
@@ -255,7 +255,7 @@ export default function HomePage() {
                 <div className="cap"><span>Dallas, GA</span><b>Replacement details</b></div>
               </div>
               <div className="gcard">
-                <img loading="lazy" src="/assets/hero.webp?v=3" alt="iRoofer crew installing architectural shingles on a Georgia home" />
+                <img loading="lazy" src="/assets/hero.webp?v=3" width={1100} height={825} alt="iRoofer crew installing architectural shingles on a Georgia home" />
                 <div className="cap"><span>West metro Atlanta</span><b>On the roof</b></div>
               </div>
             </div>

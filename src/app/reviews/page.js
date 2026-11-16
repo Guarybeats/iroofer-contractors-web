@@ -14,7 +14,29 @@ export const metadata = seo({
 });
 
 export default function ReviewsPage() {
+  // Review nodes only. No reviewRating: the quotes do not state a schema-valid
+  // score ("10 stars" in one comment is the homeowner's words, not a rating).
+  // No AggregateRating: self-serving LocalBusiness ratings are omitted on purpose.
+  const reviewLd = {
+    '@context': 'https://schema.org',
+    '@graph': reviews.map((r) => ({
+      '@type': 'Review',
+      author: { '@type': 'Person', name: r.who },
+      reviewBody: r.q,
+      itemReviewed: {
+        '@type': 'RoofingContractor',
+        name: brand.name,
+        '@id': `${brand.url}/#business`,
+      },
+    })),
+  };
+
   return (
+    <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewLd).replace(/</g, '\\u003c') }}
+    />
     <section className="sec-light sec-pad">
       <div className="tex" aria-hidden="true" />
       <div className="wrap" style={{ position: 'relative' }}>
@@ -59,5 +81,6 @@ export default function ReviewsPage() {
         </p>
       </div>
     </section>
+    </>
   );
 }

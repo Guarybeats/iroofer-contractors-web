@@ -168,7 +168,7 @@ const AGENT_LINK_HEADER = [
   '</docs/api>; rel="service-doc"; type="text/markdown"',
   '</.well-known/ai-catalog.json>; rel="describedby"; type="application/json"',
   '</.well-known/mcp/server-card.json>; rel="describedby"; type="application/json"',
-  '</.well-known/agent-card.json>; rel="describedby"; type="application/json"',
+  '</.well-known/agent-card.json>; rel="describedby"; type="application/agent-card+json"',
   '</llms.txt>; rel="describedby"; type="text/plain"',
 ].join(", ");
 
