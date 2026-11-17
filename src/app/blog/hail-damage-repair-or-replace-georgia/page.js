@@ -14,9 +14,9 @@ export const metadata = {
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: 'https://iroofercontractors.com/blog/hail-damage-repair-or-replace-georgia/',
   },
-  title: "Hail Damage: Repair or Replace Your Roof? | Georgia | iRoofer",
+  title: "Hail Damage in Georgia: Repair or Replace Your Roof?",
   description:
-    "After hail in Dallas, GA and west metro Atlanta: how to tell whether your roof needs a repair or a replacement, what hail damage looks like, and how documentation works. (470) 236-1410.",
+    "Hail hit your Georgia roof? Learn when a repair is enough, when replacement makes sense, and what photos your adjuster needs. Free inspection in Dallas, GA.",
 };
 
 const post = {
@@ -92,7 +92,7 @@ export default function BlogPostPage() {
             <p><strong>Who should check my roof after a hailstorm?</strong><br />A local roofing crew that will show you dated photos of each slope and tell you plainly whether it's a repair, a replacement, or nothing.</p>
             <p><strong>Can I see hail damage from the ground?</strong><br />Sometimes you can see dented gutters or vents. Shingle bruising usually needs a close look. Don't climb a wet or steep roof yourself.</p>
             <p><strong>Does hail always mean an insurance claim?</strong><br />No. Small hail may leave no real damage. Get an inspection first, then decide with your insurance company.</p>
-            <p><strong>Who owns iRoofer?</strong><br />Cristian Mendez — family-owned in Dallas since 2019, and an Owens Corning Contractor Rewards member.</p>
+            <p><strong>Who owns iRoofer?</strong><br />Family-owned in Dallas since 2019, and an Owens Corning Contractor Rewards member.</p>
 
             <p style={{ marginTop: 24 }}>
               Related:{' '}
