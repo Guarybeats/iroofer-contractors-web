@@ -36,7 +36,7 @@ export default function BlogPostingSchema({ slug, post: override }) {
     image: [`${BASE}/assets/hero.jpg`],
     inLanguage: 'en-US',
     isAccessibleForFree: true,
-    author: { '@type': 'Person', name: 'Cristian Mendez', jobTitle: 'Owner, iRoofer Contractors', url: `${BASE}/about/` },
+    author: { '@type': 'Organization', name: brand.name, url: `${BASE}/` },
     publisher: {
       '@type': 'Organization',
       name: brand.name,
