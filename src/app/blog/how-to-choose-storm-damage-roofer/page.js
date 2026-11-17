@@ -16,7 +16,7 @@ export const metadata = {
   },
   title: "How to Choose a Storm Damage Roofer | Dallas, GA | iRoofer",
   description:
-    "How to pick a storm damage roofer after hail or wind in Dallas, GA and west metro Atlanta: questions to ask, storm-chaser red flags, and what to get in writing. (470) 236-1410.",
+    "After a Georgia storm, how do you pick a roofer you can trust? 5 questions to ask, red flags to avoid, and what a good inspection looks like. Free inspection.",
 };
 
 const post = {
@@ -87,7 +87,7 @@ export default function BlogPostPage() {
             <p><strong>Do I have to use the roofer who knocked on my door?</strong><br />No. You can get more than one inspection and pick the crew you trust.</p>
             <p><strong>Should I wait for my adjuster before calling a roofer?</strong><br />If water is getting in, get the opening covered first and photograph everything. For non-urgent damage, many homeowners like to have their own inspection photos before the adjuster visit.</p>
             <p><strong>How do I check a roofer's reviews?</strong><br />Read the Google reviews for the business name and address, and look for reviews that mention storm or insurance jobs specifically.</p>
-            <p><strong>Is iRoofer a storm chaser?</strong><br />No. We're a family-owned crew in Dallas, GA, owned by Cristian Mendez, and we're an Owens Corning Contractor Rewards member.</p>
+            <p><strong>Is iRoofer a storm chaser?</strong><br />No. We're a family-owned crew in Dallas, GA, and we're an Owens Corning Contractor Rewards member.</p>
 
             <p style={{ marginTop: 24 }}>
               Related:{' '}
