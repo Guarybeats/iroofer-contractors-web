@@ -107,6 +107,7 @@ const serviceSchema = {
     telephone: brand.phone,
     address: {
       '@type': 'PostalAddress',
+      streetAddress: '152 Freedom Dr',
       addressLocality: 'Dallas',
       addressRegion: 'GA',
       postalCode: '30157',

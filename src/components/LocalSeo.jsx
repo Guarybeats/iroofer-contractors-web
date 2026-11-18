@@ -14,11 +14,11 @@ export const GBP_URL = 'https://maps.app.goo.gl/oZg9a1cuNvUi3Ut99';
 // GBP Maps link — it opens the business profile with "Write a review" one tap.
 export const REVIEW_URL = GBP_URL;
 
-// Owner decision (2026-11-18): the street address is NOT published anywhere on the
-// site, including JSON-LD. Schema stays city-level (Dallas, GA 30157) so it matches
-// the visible "Shop & office: Dallas, GA" text. Leave empty unless Cristian asks to
-// show the street address again.
-export const STREET_ADDRESS = '';
+// Owner decision (2026-11-18, updated same day): visible page copy stays
+// city-level only ("Dallas, GA"). The street address is restored in hidden
+// JSON-LD LocalBusiness/RoofingContractor schema only. Do not reuse this
+// constant in visible UI.
+export const STREET_ADDRESS = '152 Freedom Dr';
 
 const BBB_URL =
   'https://www.bbb.org/us/ga/dallas/profile/roofing-contractors/iroofer-contractors-0443-91832627';
@@ -130,6 +130,14 @@ export function buildSeoGraph(path) {
           postalCode: '30157',
           addressCountry: 'US',
         },
+    geo: {
+      '@type': 'GeoCoordinates',
+      // Matches the verified Google Business Profile pin for 152 Freedom Dr,
+      // Dallas, GA 30157. Do not change without re-checking the GBP map pin —
+      // a mismatch between schema geo and the GBP pin weakens local ranking.
+      latitude: 33.8810,
+      longitude: -84.8204,
+    },
     openingHoursSpecification: [
       { '@type': 'OpeningHoursSpecification', dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday'], opens: '09:00', closes: '19:00' },
       { '@type': 'OpeningHoursSpecification', dayOfWeek: 'Saturday', opens: '09:00', closes: '17:00' },
