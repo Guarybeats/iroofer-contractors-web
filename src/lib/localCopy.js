@@ -54,7 +54,7 @@ export const localCopy = {};
 // ─────────────────────────────────────────────────────────────── ROOF REPAIR
 localCopy['roof-repair'] = {
   'dallas-ga': {
-    intro: "Need roof repair in Dallas, GA? Most leaks we chase around Paulding County start small: a cracked pipe boot, a lifted shingle, or step flashing that let go along a wall. iRoofer Contractors is family-owned right here in Dallas since 2019. Owner Cristian Mendez's crew finds where the water actually gets in and fixes that spot, so a small repair stays small. Call (470) 236-1410 or book a free inspection at https://iroofercontractors.com/contact/.",
+    intro: "Need roof repair in Dallas, GA? Most leaks we chase around Paulding County start small: a cracked pipe boot, a lifted shingle, or step flashing that let go along a wall. iRoofer Contractors is family-owned right here in Dallas since 2019. Our crew finds where the water actually gets in and fixes that spot, so a small repair stays small. Call (470) 236-1410 or book a free inspection at https://iroofercontractors.com/contact/.",
     sections: [
       { h: "Roof repair in Dallas, GA starts with the real leak",
         p: "The stain on your ceiling is almost never right under the problem. Water runs along the decking and rafters before it drips. We start in the attic when we can get in, then walk the roof and follow the path back to the source. That's usually a pipe boot, a valley, chimney or wall flashing, or shingles the wind worked loose. You get photos of the failure point and a written scope before any work starts." },
@@ -81,7 +81,7 @@ localCopy['roof-repair'] = {
     ],
   },
   'hiram': {
-    intro: "Leaks, failed flashing, and storm wear show up on Hiram homes the same way they do in Dallas — humidity, trees, and sudden west-Georgia weather. iRoofer Contractors is family-owned in nearby Dallas since 2019. Same local crew. Cristian Mendez. We inspect, photograph, tarp when needed, and put a written repair scope in your hand. Prefer replacement talk instead? See [roof replacement in Hiram](/roof-replacement-hiram/). Book at https://iroofercontractors.com/contact/ or call (470) 236-1410.",
+    intro: "Leaks, failed flashing, and storm wear show up on Hiram homes the same way they do in Dallas — humidity, trees, and sudden west-Georgia weather. iRoofer Contractors is family-owned in nearby Dallas since 2019. Same local crew. We inspect, photograph, tarp when needed, and put a written repair scope in your hand. Prefer replacement talk instead? See [roof replacement in Hiram](/roof-replacement-hiram/). Book at https://iroofercontractors.com/contact/ or call (470) 236-1410.",
     sections: [
       {
         "id": "roof-inspection",
@@ -148,7 +148,7 @@ localCopy['roof-repair'] = {
       },
       {
         "h": "Why Hiram homeowners call iRoofer",
-        "p": "Hiram and broader Paulding neighborhoods often sit under mature tree cover. That shade is nice; the leaf debris, falling limbs, and storm-driven branches are harder on valleys, gutters, and asphalt. We're a local crew based in nearby Dallas since 2019—not a rotating franchise van—led by owner Cristian Mendez. We install Owens Corning shingles as an Owens Corning Contractor Rewards member, so repairs follow manufacturer details when it matters for warranties and longevity. For storm-related damage, we photograph findings and can support the insurance adjuster path when a claim applies. We can’t promise what your insurer will approve. We can give you an honest scope and a phone number answered by people who know Paulding: (470) 236-1410."
+        "p": "Hiram and broader Paulding neighborhoods often sit under mature tree cover. That shade is nice; the leaf debris, falling limbs, and storm-driven branches are harder on valleys, gutters, and asphalt. We're a local crew based in nearby Dallas since 2019—not a rotating franchise van. We install Owens Corning shingles as an Owens Corning Contractor Rewards member, so repairs follow manufacturer details when it matters for warranties and longevity. For storm-related damage, we photograph findings and can support the insurance adjuster path when a claim applies. We can’t promise what your insurer will approve. We can give you an honest scope and a phone number answered by people who know Paulding: (470) 236-1410."
       },
       {
         "h": "Book a Hiram roof repair",
@@ -346,7 +346,7 @@ localCopy['roof-repair'] = {
 // ───────────────────────────────────────────────────────── ROOF REPLACEMENT
 localCopy['roof-replacement'] = {
   'dallas-ga': {
-    intro: "Thinking about roof replacement in Dallas, GA? Usually it's because the patches stopped working: a third leak, granules in the gutters, shingles curling on more than one slope. iRoofer Contractors is family-owned in Dallas since 2019. Owner Cristian Mendez's crew walks the whole roof, shows you photos, and gives you a written plan, whether that's a full replacement or a repair that still makes sense. Call (470) 236-1410 or book a free inspection at https://iroofercontractors.com/contact/.",
+    intro: "Thinking about roof replacement in Dallas, GA? Usually it's because the patches stopped working: a third leak, granules in the gutters, shingles curling on more than one slope. iRoofer Contractors is family-owned in Dallas since 2019. Our crew walks the whole roof, shows you photos, and gives you a written plan, whether that's a full replacement or a repair that still makes sense. Call (470) 236-1410 or book a free inspection at https://iroofercontractors.com/contact/.",
     sections: [
       { h: "When roof replacement in Dallas makes sense",
         p: "Common signs it's time:",
@@ -371,7 +371,7 @@ localCopy['roof-replacement'] = {
     ],
   },
   'hiram': {
-    intro: "We replace roofs on Hiram homes: shingle roofs on family houses, mostly built in phases, where a whole street tends to wear out together. The job is a full tear-off to the deck, decking fixes where we find soft spots, then new underlayment, flashing, ventilation and architectural shingles. iRoofer Contractors is a family-owned crew from right down the road in Dallas, run by Cristian Mendez since 2019. Gutters giving you trouble too? That's its own job. See [gutter repair & replacement in Hiram](/gutter-repair-replacement-hiram/). Ready for a written quote? Use [our contact page](/contact/) or call (470) 236-1410.",
+    intro: "We replace roofs on Hiram homes: shingle roofs on family houses, mostly built in phases, where a whole street tends to wear out together. The job is a full tear-off to the deck, decking fixes where we find soft spots, then new underlayment, flashing, ventilation and architectural shingles. iRoofer Contractors is a family-owned crew from right down the road in Dallas since 2019. Gutters giving you trouble too? That's its own job. See [gutter repair & replacement in Hiram](/gutter-repair-replacement-hiram/). Ready for a written quote? Use [our contact page](/contact/) or call (470) 236-1410.",
     sections: [
       { h: "Matching the street without matching the corner-cutting",
         p: "Hiram neighbourhoods tend to have been built in phases, which means an entire street can be reaching the end of the same roof at the same time. That has two consequences. First, homeowners here want a replacement that still reads as part of the neighbourhood, so we spend real time on colour selection against the brick and trim rather than handing you a swatch book. Second, it means a lot of these roofs were originally installed to the same builder-grade spec — three-tab, felt underlayment, minimal valley protection. A replacement is the chance to correct that rather than reproduce it." },
@@ -560,7 +560,7 @@ localCopy['storm-damage-roof-repair'] = {
     intro: "After a Georgia storm, Dallas roofs often hide bruised shingles, lifted tabs, and quiet leaks that show up days later. iRoofer Contractors — family-owned since 2019 — walks the roof, photographs what we find, and explains repair versus replacement in plain English.",
     sections: [
       { h: "Why local storm repair",
-        p: "Owens Corning Contractor Rewards member. We document the way adjusters expect — no promised claim outcomes. Owner Cristian Mendez and our Dallas-based crew treat storm calls like emergencies—not sales appointments. Call (470) 236-1410 or https://iroofercontractors.com/contact/." },
+        p: "Owens Corning Contractor Rewards member. We document the way adjusters expect — no promised claim outcomes. Our Dallas-based crew treats storm calls like emergencies—not sales appointments. Call (470) 236-1410 or https://iroofercontractors.com/contact/." },
       { h: "Our storm damage process in Dallas, GA",
         p: "Inspect → photos → tarp if needed → written scope → repair vs replace → complete + cleanup. Interior stains and attic moisture get noted too. Isolated missing shingles or flashing failures often repair cleanly; widespread bruising or an older roof near end of life may point to replacement. For urgent leaks, ask about emergency tarping in Dallas." },
       { h: "Hail damage roof repair in Dallas, GA",
@@ -568,7 +568,7 @@ localCopy['storm-damage-roof-repair'] = {
       { h: "Why Paulding storm cells hit Dallas hard",
         p: "Paulding sits where west Georgia storm cells organize before they reach Atlanta — straight-line wind that strips slopes and lifts ridge caps, hail that bruises mats without breaking them, and tree-limb strikes on wooded lots. We photograph with dates, check soft metals (vents, gutter aprons) for impact dents, and meet your adjuster on the roof when a claim applies. If the damage does not support a claim, we say so and quote the repair directly." },
       { h: "Call now for storm response in Dallas",
-        p: "Call (470) 236-1410. Storm hit your roof? Don't wait for the next rain. Speak with Cristian's local crew today for inspection, tarping, and claim documentation. https://iroofercontractors.com/contact/" },
+        p: "Call (470) 236-1410. Storm hit your roof? Don't wait for the next rain. Speak with our local crew today for inspection, tarping, and claim documentation. https://iroofercontractors.com/contact/" },
     ],
     faq: [
       { q: "How soon after a storm should I get my Dallas roof inspected?", a: "As soon as it's safe. Hidden bruising and lifted shingles can leak on the next rain. Prompt photos also help if you file a claim. Call (470) 236-1410 for a Dallas inspection." },
@@ -806,7 +806,7 @@ localCopy['storm-damage-roof-repair'] = {
 // ──────────────────────────────────────────── GUTTER REPAIR & REPLACEMENT
 localCopy['gutter-repair-replacement'] = {
   'dallas-ga': {
-    intro: "Clogged or failing gutters are one of the most common causes of preventable roof-edge and foundation damage we see around Dallas and Paulding County. Overflow soaks fascia, softens decking at the eaves, and dumps water at the slab. iRoofer Contractors — family-owned in Dallas since 2019 — cleans, repairs, realigns, and replaces gutters and downspouts so water leaves the house, not enters it. Owner Cristian Mendez.",
+    intro: "Clogged or failing gutters are one of the most common causes of preventable roof-edge and foundation damage we see around Dallas and Paulding County. Overflow soaks fascia, softens decking at the eaves, and dumps water at the slab. iRoofer Contractors — family-owned in Dallas since 2019 — cleans, repairs, realigns, and replaces gutters and downspouts so water leaves the house, not enters it.",
     sections: [
       { h: "Capacity, not just condition",
         p: "Undersized 5\" runs and too few downspouts overshoot in Georgia downpours even when \"clean.\" We check roof area, fall, and outlets — and tell you if you need 6\", more downspouts, or realignment. Seamless aluminum formed on site means fewer leaky joints — the only joints are at corners and outlets." },
@@ -949,7 +949,7 @@ localCopy['new-construction'] = {
       { h: "Homeowners finishing a build",
         p: "If you are the owner on a custom Dallas home or addition, we walk the plan, confirm material and color in writing, and give you one point of contact through install. Every square count, pitch, and access path changes the number. We put the real number in a written estimate after we see the job." },
       { h: "Builders in Paulding / west metro",
-        p: "We know Dallas streets, supplier runs, and how fast a weather window closes in Georgia summers. Call early in the schedule — not the morning the deck is ready in a storm week. Owner Cristian Mendez keeps communication direct. Dry-in as soon as the deck is signed off so other trades stay on calendar." },
+        p: "We know Dallas streets, supplier runs, and how fast a weather window closes in Georgia summers. Call early in the schedule — not the morning the deck is ready in a storm week. We keep communication direct. Dry-in as soon as the deck is signed off so other trades stay on calendar." },
       { h: "Dry-in on schedule, every time",
         p: "The roof sits between framing and everything that happens inside, so a roofer who slips a week costs the builder far more than the roof line item. We schedule against the framing inspection rather than against a hopeful date and keep the house closed to weather while the trades that follow us get on with it." },
     ],

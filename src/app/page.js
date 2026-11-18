@@ -95,7 +95,7 @@ export default function HomePage() {
             <span className="eyebrow">Dallas, GA · Atlanta Metro</span>
             <h1>Dallas GA Roof Repair, Replacement &amp; Storm Damage <span className="stroke">— done local.</span></h1>
             <p className="hero-tagline">Strong Roofs. Smarter Homes.</p>
-            <p className="lead">Family-owned in Dallas since 2019. Cristian Mendez’s crew checks your roof, puts the plan in writing, and stands behind the work — leak repair, a new roof, or help after hail or wind.</p>
+            <p className="lead">Family-owned in Dallas since 2019. Our crew checks your roof, puts the plan in writing, and stands behind the work — leak repair, a new roof, or help after hail or wind.</p>
             <div className="hero-cta">
               <a className="btn btn-solid" href="/free-roof-check/">Get a Free Roof Check <span className="arr">→</span></a>
               <a className="btn btn-ghost" href={`tel:${brand.phone}`}>Call or text {brand.phone}</a>

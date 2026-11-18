@@ -57,7 +57,7 @@ export default function EstimatorPage() {
               Your Dallas roof&apos;s pitch, layers, decking, and access decide the price, so we don&apos;t guess over the phone or online.
             </p>
             <p style={{ color: '#52606b', maxWidth: '40rem', margin: '0.85rem auto 0', fontSize: '.98rem' }}>
-              iRoofer Contractors is family-owned here since 2019. {brand.owner}&apos;s local crew
+              iRoofer Contractors is family-owned here since 2019. Our local crew
               measures what you actually have — then puts it in writing.
             </p>
             <p style={{ marginTop: 14 }}>

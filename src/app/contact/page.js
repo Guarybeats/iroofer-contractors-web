@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: 'Where are you located?',
-    a: 'Dallas, GA. Family-owned since 2019 by Cristian Mendez.',
+    a: 'Dallas, GA. Family-owned since 2019.',
   },
 
   {
@@ -56,7 +56,7 @@ export default function ContactPage() {
             <p className="lead">
               Tell us what&apos;s going on with your roof and we&apos;ll get back to you during business hours.
               Free inspections, free estimates, zero pressure. You&apos;re reaching iRoofer Contractors in Dallas, GA —
-              owner {brand.owner}&apos;s crew, not a national call center.
+              our local crew, not a national call center.
             </p>
             <div className="cinfo">
               <div className="row">
@@ -87,7 +87,7 @@ export default function ContactPage() {
           <div className="rv" style={{ marginTop: 28, maxWidth: 820, background: '#fff', border: '1px solid rgba(22,29,37,.08)', borderRadius: 8, padding: '1.4rem 1.6rem' }}>
             <h2 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: 8 }}>You’re contacting a real Dallas shop</h2>
             <p style={{ color: '#52606b', lineHeight: 1.75, margin: 0 }}>
-              iRoofer Contractors is family-owned since 2019 by Cristian Mendez, based in Dallas, GA. Tell us if you need a roof repair, a new roof, storm photos, or an emergency tarp. We’ll call you back with clear next steps. Prefer the phone? Call{' '}
+              iRoofer Contractors is family-owned since 2019, based in Dallas, GA. Tell us if you need a roof repair, a new roof, storm photos, or an emergency tarp. We’ll call you back with clear next steps. Prefer the phone? Call{' '}
               <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>.
               {' '}We install Owens Corning shingles as an Owens Corning Contractor Rewards member.
             </p>
@@ -140,7 +140,7 @@ export default function ContactPage() {
               </p>
               <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
                 A drip in Dallas, a storm in Hiram, or a new roof in Powder Springs: the same local crew shows up.
-                Cristian does the estimates, the storm photos (by drone when it helps), and the schedule.
+                Our crew does the estimates, the storm photos (by drone when it helps), and the schedule.
               </p>
             </div>
             <div className="rv">

@@ -105,7 +105,7 @@ export default function BlogPostPage() {
             <p>We won’t put a price table in a blog post. A boot on a walkable ranch roof and a rebuilt valley on a steep two-story are different jobs, and a replacement depends on size, pitch, layers, decking and material. For the factors that move the number, see <Link href="/blog/roof-repair-cost-dallas-ga/">roof repair cost factors</Link> and <Link href="/blog/roof-replacement-cost-dallas-ga/">roof replacement cost factors</Link>. For a real figure, we inspect and put it in writing, free.</p>
 
             <h2>Get a straight answer</h2>
-            <p>iRoofer Contractors is a family-owned roofing crew based in Dallas, GA since 2019, led by owner Cristian Mendez. We’d rather do a good repair today and earn your replacement years from now than sell you a roof you don’t need. Book a free inspection at <Link href="/contact/">https://iroofercontractors.com/contact/</Link> or call <a href={`tel:${brand.phone}`}>{brand.phone}</a>.</p>
+            <p>iRoofer Contractors is a family-owned roofing crew based in Dallas, GA since 2019. We’d rather do a good repair today and earn your replacement years from now than sell you a roof you don’t need. Book a free inspection at <Link href="/contact/">https://iroofercontractors.com/contact/</Link> or call <a href={`tel:${brand.phone}`}>{brand.phone}</a>.</p>
             <p>Local pages: <Link href="/roof-repair-dallas-ga/">roof repair in Dallas, GA</Link> · <Link href="/roof-replacement-dallas-ga/">roof replacement in Dallas, GA</Link> · <Link href="/service-areas/hiram/#roof-repair">roof repair in Hiram</Link></p>
 
             <h2>Repair vs. replace: common questions</h2>

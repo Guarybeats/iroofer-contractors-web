@@ -24,7 +24,7 @@ export const metadata = {
 
 const intro = [
   'Lithia Springs is the east end of Douglas County: the I-20 and Thornton Road corridor, the old town along Bankhead Highway, and the wooded neighborhoods around Sweetwater Creek State Park. It sits between Douglasville and Austell, and it is a straight run down from our shop.',
-  'iRoofer Contractors — Cristian Mendez, family-owned since 2019 — serves Lithia Springs from Dallas, GA. We handle roof repair, full replacement, storm and hail damage inspections with insurance documentation, and gutters. It starts with a free roof check and a straight answer about what your roof needs.',
+  'iRoofer Contractors — family-owned since 2019 — serves Lithia Springs from Dallas, GA. We handle roof repair, full replacement, storm and hail damage inspections with insurance documentation, and gutters. It starts with a free roof check and a straight answer about what your roof needs.',
 ];
 
 const sections = [

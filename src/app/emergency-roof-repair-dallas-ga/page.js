@@ -143,7 +143,7 @@ export default function EmergencyPage() {
               >
                 <strong style={{ color: '#0b3d16' }}>iRoofer Contractors</strong>
                 <div style={{ color: '#52606b', fontSize: '.9rem', marginTop: 4 }}>
-                  Family-owned in Dallas, GA since 2019 · {brand.owner}
+                  Family-owned in Dallas, GA since 2019
                 </div>
                 <div style={{ marginTop: 6 }}>
                   <a href={`tel:${brand.phone}`} style={{ color: 'var(--orange)', fontWeight: 700 }}>{brand.phone}</a>

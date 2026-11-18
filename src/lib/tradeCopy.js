@@ -39,7 +39,7 @@ export const tradeCopy = {
         { q: 'Does every Dallas house need a county permit to be painted?', a: 'No. Paulding requires a permit when the work is structural — sheathing, rafters, or trusses — including siding replacement that reaches that point. A coat on sound material is not that. If we uncover rotten structure, we stop and call Building & Permitting at 240 Constitution Blvd before we continue.' },
         { q: 'Why do the south walls chalk and the north walls look dirty?', a: 'South and west take the UV. North and under pines stay damp, so pollen and mildew sit on the film. We treat the elevation we are standing in front of, not one recipe for the whole house.' },
         { q: 'Can you stain trim on the same visit as a roof-edge repair?', a: 'Often, if the wood is dry and the leak is already fixed. We write the paint scope and the roof scope as separate lines so you can approve one or both. Start with [roof repair in Dallas](/roof-repair-dallas-ga/) if water is still coming in.' },
-        { q: 'Who shows up?', a: 'The Dallas crew. Family-owned since 2019, shop in Dallas, GA. Cristian Mendez. Same people who roof these houses, not a paint sub we hand the address to.' },
+        { q: 'Who shows up?', a: 'The Dallas crew. Family-owned since 2019, shop in Dallas, GA. Same people who roof these houses, not a paint sub we hand the address to.' },
       ],
       related: [
         { href: '/siding-dallas-ga/', label: 'Siding in Dallas' },
@@ -76,7 +76,7 @@ export const tradeCopy = {
       faq: [
         { q: 'Will you paint fascia that is peeling but still nailed on?', a: 'Only if the wood is dry and sound. Peeling at the eave is often a wet board. We probe it. Soft wood is a repair, then a coat, not a coat alone.' },
         { q: 'Do shaded Hiram walls get the same product as the sunny side?', a: 'Not by default. Sunny elevations chalk. Shaded elevations grow mildew under the trees. Prep follows the wall, and the written scope says which is which.' },
-        { q: 'Is the Hiram visit a different company from the Dallas roof crew?', a: 'No. Family-owned in Dallas since 2019. Hiram is a short drive. Cristian Mendez’s crew does the look and the roof-edge call.' },
+        { q: 'Is the Hiram visit a different company from the Dallas roof crew?', a: 'No. Family-owned in Dallas since 2019. Hiram is a short drive. Our crew does the look and the roof-edge call.' },
         { q: 'Do you quote Hiram painting from the street?', a: 'No. Access, height, and how much film has failed change the number. You get it in writing after we are on the house. Nothing on this page is a price.' },
       ],
       related: [
