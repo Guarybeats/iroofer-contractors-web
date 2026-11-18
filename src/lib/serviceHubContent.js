@@ -25,7 +25,7 @@ export const serviceHubContent = {
     ],
     faqs: [
       { q: 'Can you fix a leak without replacing the whole roof?', a: 'Often, yes. A bad pipe boot, loose flashing, or a few storm-lifted shingles are normal repair jobs. If the wood under the shingles is soft in big areas, or the roof is worn out, we will tell you a new roof is the better move.' },
-      { q: 'How fast can you tarp an active leak?', a: 'If your roof is open or leaking now, we try to tarp it the same day. That depends on the weather and if it is safe to get up there. Then we set a date for the real fix.' },
+      { q: 'How fast can you tarp an active leak?', a: 'If your roof is open or leaking now, we try to get an emergency tarp on it fast. That depends on the weather and if it is safe to get up there. Then we set a date for the real fix.' },
       { q: 'Do you repair storm damage before insurance settles?', a: 'We can tarp it right away to stop more damage. The full repair or new roof usually waits for your insurance adjuster to say yes. That way you don’t pay up front for work the claim should cover.' },
       { q: 'Will the repair match my existing shingles?', a: 'We match the color as close as today’s shingles allow. Older roofs may look a little different, and that is normal. We place patches where they blend in best.' },
     ],
@@ -100,7 +100,7 @@ export const serviceHubContent = {
       'Wind, hail, and fallen limbs can hurt a roof in ways you can’t see from the ground. We check your roof. We tarp it if rain can get in. We take photos of what we find, so you can decide on a repair and on insurance if it applies. Family-owned in Dallas since 2019. Owens Corning Contractor Rewards member.',
     bullets: [
       'Free roof check after a storm, with photos',
-      'Same-day tarp for open roofs when it is safe to get up',
+      'Emergency tarp for open roofs when it is safe to get up',
       'We meet your insurance adjuster and ask for missed items. We can’t promise what they approve',
       'A repair or a new roof, once you decide',
     ],
@@ -118,7 +118,7 @@ export const serviceHubContent = {
       { q: 'Will filing a claim raise my rates?', a: 'It depends on your insurance company. We take photos of the facts. You decide if you want to file. We never file without your OK, and we won’t guess about your rates.' },
       { q: 'What if the adjuster only approves a small repair?', a: 'That happens a lot. We go over their estimate line by line. We ask them to add missed damage, items the building code requires, and matching when it is fair. We can’t promise the result.' },
       { q: 'Do you charge for the inspection?', a: 'Storm roof checks are free for homeowners in our area. If you need a tarp, we tell you the price first.' },
-      { q: 'Can you tarp the same day?', a: 'Often, yes, if the roof is open or water is pouring in and it is safe to get up. The full fix comes after, with a written plan.' },
+      { q: 'Can you tarp an open roof fast?', a: 'We try to, if the roof is open or water is pouring in and it is safe to get up. The full fix comes after, with a written plan.' },
     ],
     featuredLinks: [
       { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair Dallas GA' },

@@ -12,7 +12,7 @@ export const metadata = seo({
   path: '/paulding-county-roofing',
 });
 
-const intro = "iRoofer Contractors is based at 152 Freedom Dr in Dallas, the Paulding County seat, and has roofed homes here since 2019. Whether you are in Dallas, Hiram, or out along Hwy 278 and Hwy 92, you get a local crew that can be on your roof quickly, a free inspection with photos, and a written price before any work starts.";
+const intro = "iRoofer Contractors is based in Dallas, the Paulding County seat, and has roofed homes here since 2019. Whether you are in Dallas, Hiram, or out along Hwy 278 and Hwy 92, you get a local crew that can be on your roof quickly, a free inspection with photos, and a written price before any work starts.";
 const sections = [
   {
     "h": "Roof repair across Paulding County",
@@ -38,7 +38,7 @@ const sections = [
 const faqs = [
   {
     "q": "Are you actually based in Paulding County?",
-    "a": "Yes. Our office is at 152 Freedom Dr in Dallas, GA 30157, the Paulding County seat."
+    "a": "Yes. Our office is in Dallas, GA, the Paulding County seat."
   },
   {
     "q": "Which Paulding County towns do you serve?",

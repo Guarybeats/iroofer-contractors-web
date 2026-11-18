@@ -45,7 +45,7 @@ export default function BlogPostPage() {
 
           <div className="post-body rv">
             <p>
-              After a windy night in Dallas or west metro Atlanta, homeowners usually want two answers: Is the roof still protecting the house? And do I need a repair — or a claim? iRoofer Contractors is the local crew at 152 Freedom Dr: family-owned since 2019.
+              After a windy night in Dallas or west metro Atlanta, homeowners usually want two answers: Is the roof still protecting the house? And do I need a repair — or a claim? iRoofer Contractors is the local crew in Dallas, GA: family-owned since 2019.
             </p>
             <p>
               Ready to talk about your roof? Visit{' '}

@@ -70,7 +70,7 @@ const steps = [
 ];
 
 const checklist = [
-  'Local address you can drive to. Ours is 152 Freedom Dr, Dallas, GA 30157.',
+  'Local address you can drive to. Ours is in Dallas, GA.',
   'Proof of licensing and insurance. Ask for documents, not a promise.',
   'A written scope with photos before work starts, not a verbal number.',
   'Local permit know-how. Some cities run their own permitting with their own contractor requirements (Powder Springs, for example, requires a local business license and a code compliance bond).',

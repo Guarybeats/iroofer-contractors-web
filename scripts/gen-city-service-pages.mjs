@@ -19,7 +19,7 @@ const cities = [
   { slug: 'marietta', name: 'Marietta', state: 'GA', county: 'Cobb County', note: 'Marietta’s mix of historic homes and new builds means we tailor every scope to the property.' },
   { slug: 'acworth', name: 'Acworth', state: 'GA', county: 'Cobb County', note: 'Acworth lakefront and in-town homes alike call us for fast leak tracing and clean tear-offs.' },
   { slug: 'kennesaw', name: 'Kennesaw', state: 'GA', county: 'Cobb County', note: 'Kennesaw homeowners and small businesses rely on us for honest pricing and a real person on the phone.' },
-  { slug: 'austell', name: 'Austell', state: 'GA', county: 'Cobb County', note: 'When a storm hits Austell we tarp the same day and meet your adjuster on-site.' },
+  { slug: 'austell', name: 'Austell', state: 'GA', county: 'Cobb County', note: 'When a storm hits Austell we put on emergency tarps and meet your adjuster on-site.' },
 ];
 
 // ---- Services (mirrors src/lib/brand.js services) ----
@@ -67,7 +67,7 @@ const testimonials = [
 function faqsFor(svc, city) {
   return [
     { q: `Do you offer ${svc.title.toLowerCase()} in ${city.name}, ${city.state}?`, a: `Yes. ${svc.title} is one of our core services across ${city.county} and the greater Atlanta metro. ${city.note}` },
-    { q: `How fast can you start a ${svc.title.toLowerCase()} job in ${city.name}?`, a: `Most ${city.name} jobs are scheduled within 24–72 hours after a free inspection. ${svc.title === 'Storm Damage Roof Repair' ? 'For active storm leaks we offer same-day tarping.' : 'Emergency leaks get priority scheduling.'}` },
+    { q: `How fast can you start a ${svc.title.toLowerCase()} job in ${city.name}?`, a: `Most ${city.name} jobs are scheduled within 24–72 hours after a free inspection. ${svc.title === 'Storm Damage Roof Repair' ? 'For active storm leaks we offer emergency tarping.' : 'Emergency leaks get priority scheduling.'}` },
     { q: `Do you handle permits for ${city.name}, ${city.state}?`, a: `Yes. We pull the local roofing permit, follow current code for underlayment and ventilation, and leave you with the inspection sign-off.` },
     { q: `Will my insurance cover this in ${city.county}?`, a: `If the damage is storm- or hail-related, it often is. We document everything, meet your adjuster on-site, and handle supplements so your payout reflects the true scope.` },
     { q: `What does ${svc.title.toLowerCase()} cost in ${city.name}, ${city.state}?`, a: `It depends on size, pitch, and material — we give a free, written quote after inspection. Most repairs run $250–$3,500; full replacements $8,000–$30,000.` },

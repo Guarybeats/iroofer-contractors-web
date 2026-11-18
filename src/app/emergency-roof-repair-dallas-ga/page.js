@@ -40,10 +40,10 @@ const emergencyFaqs = [
   },
   {
     q: 'What are your hours for emergency roof repair in Dallas, GA?',
-    a: 'Our hours are Mon–Fri 9–7 and Sat 9–5. We are closed Sunday. Active leaks and storm damage go to the front of the line. We help the same day when our schedule allows. Call (470) 236-1410 and tell us if water is coming in now.',
+    a: 'Our hours are Mon–Fri 9–7 and Sat 9–5. We are closed Sunday. Active leaks and storm damage go to the front of the line. We help as soon as our schedule allows. Call (470) 236-1410 and tell us if water is coming in now.',
   },
   {
-    q: 'Can you tarp the same day?',
+    q: 'How fast can you tarp my roof?',
     a: 'Often, yes, if the roof is open or leaking and it is safe to get up. The full fix comes once the plan is clear.',
   },
   {
@@ -143,7 +143,7 @@ export default function EmergencyPage() {
               >
                 <strong style={{ color: '#0b3d16' }}>iRoofer Contractors</strong>
                 <div style={{ color: '#52606b', fontSize: '.9rem', marginTop: 4 }}>
-                  Family-owned in Dallas since 2019 · {brand.owner} · 152 Freedom Dr, Dallas, GA 30157
+                  Family-owned in Dallas, GA since 2019 · {brand.owner}
                 </div>
                 <div style={{ marginTop: 6 }}>
                   <a href={`tel:${brand.phone}`} style={{ color: 'var(--orange)', fontWeight: 700 }}>{brand.phone}</a>
@@ -184,10 +184,10 @@ export default function EmergencyPage() {
               It’s an emergency when water is coming into the house. It’s also an emergency when a tree or limb has punched a hole in the roof, wind has peeled back a row of shingles, or a ceiling stain is growing during a storm. In Dallas and Paulding County, a quick storm can turn one loose shingle into a wet attic in one afternoon.
             </p>
             <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, lineHeight: 1.75 }}>
-              We offer same-day emergency roof repair when our schedule allows and it is safe. If we can&apos;t come the same day, we give you a real time and tips to protect your home. Call {brand.phone} as soon as you can after the storm.
+              We offer emergency roof repair as soon as our schedule allows and it is safe. If we can&apos;t come right away, we give you a real time and tips to protect your home. Call {brand.phone} as soon as you can after the storm.
             </p>
             <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, lineHeight: 1.75 }}>
-              <strong>Outside Dallas?</strong> We cover the same west-metro cities from our shop at 152 Freedom Dr. Storm and emergency details for nearby cities:{' '}
+              <strong>Outside Dallas?</strong> We cover the same west-metro cities from our shop in Dallas, GA. Storm and emergency details for nearby cities:{' '}
               {[
                 ['/storm-damage-roof-repair-kennesaw/', 'Kennesaw'],
                 ['/storm-damage-roof-repair-douglasville/', 'Douglasville'],

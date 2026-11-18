@@ -42,7 +42,7 @@ export default function ServiceAreas() {
           Where We Roof — Service Areas Across West Metro Atlanta
         </h1>
         <p style={{ color: '#52606b', fontSize: '1.05rem', marginTop: 8, maxWidth: 680 }}>
-          iRoofer Contractors works from Dallas, GA — 152 Freedom Dr — across Paulding, Cobb, and nearby north-metro cities. Family-owned since 2019. Pick your city below, or tell us what the roof needs: repair, full replacement, or storm damage documentation.
+          iRoofer Contractors works from Dallas, GA, across Paulding, Cobb, and nearby north-metro cities. Family-owned since 2019. Pick your city below, or tell us what the roof needs: repair, full replacement, or storm damage documentation.
         </p>
         <p style={{ marginTop: 18 }}>
           <a className="btn btn-ink" href="/contact/">Get a free roof inspection <span className="arr">→</span></a>
@@ -103,7 +103,7 @@ export default function ServiceAreas() {
             Roof repair, roof replacement, storm-damage inspections, new-construction roofing, gutter repair and replacement, siding repair and replacement, and exterior painting and staining. Emergency tarping is available when the roof is open and it is safe to get on it — we do not promise 24/7 coverage. Insurance documentation is available after a storm; what a policy pays is up to the carrier, not us.
           </p>
           <p style={{ color: '#52606b', marginTop: 12, lineHeight: 1.75 }}>
-            Dallas is home base: 152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019 by Cristian Mendez. Hours are {brand.hours.full}. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when they fit the house.
+            Dallas, GA is home base. Family-owned since 2019 by Cristian Mendez. Hours are {brand.hours.full}. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when they fit the house.
           </p>
         </div>
 

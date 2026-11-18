@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const intro = [
-  'Whether your Kennesaw roof needs a full replacement, a repair, or a look after the last storm, it starts the same way: a free inspection, photos of what we find, and a written scope you can actually read. iRoofer Contractors is family-owned in Dallas, GA since 2019, and we work across north Cobb from our shop at 152 Freedom Dr.',
+  'Whether your Kennesaw roof needs a full replacement, a repair, or a look after the last storm, it starts the same way: a free inspection, photos of what we find, and a written scope you can actually read. iRoofer Contractors is family-owned in Dallas, GA since 2019, and we work across north Cobb from our shop in Dallas, GA.',
   'Ready to talk about your roof? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410. Cristian and the crew will give you a straight answer.',
 ];
 
@@ -50,7 +50,7 @@ const sections = [
   {
     h2: 'Storm damage and emergency roof repair in Kennesaw',
     paras: [
-      'Roof open after a storm, or water coming in? Call (470) 236-1410 and say it’s active. We tarp the same day when the schedule and safe access allow, then document the damage slope by slope for your adjuster. If the damage won’t support a claim, we’ll tell you and quote the repair. Full process: [storm and emergency roof repair in Kennesaw](/storm-damage-roof-repair-kennesaw/).',
+      'Roof open after a storm, or water coming in? Call (470) 236-1410 and say it’s active. We put on an emergency tarp as soon as the schedule and safe access allow, then document the damage slope by slope for your adjuster. If the damage won’t support a claim, we’ll tell you and quote the repair. Full process: [storm and emergency roof repair in Kennesaw](/storm-damage-roof-repair-kennesaw/).',
     ],
   },
   {
@@ -85,11 +85,11 @@ const faq = [
   },
   {
     q: 'Can you help with an emergency leak in Kennesaw?',
-    a: 'Yes. Call (470) 236-1410 and say water is coming in. Active leaks go ahead of routine work, and we tarp the same day when the schedule and safe access allow.',
+    a: 'Yes. Call (470) 236-1410 and say water is coming in. Active leaks go ahead of routine work, and we put on an emergency tarp as soon as the schedule and safe access allow.',
   },
   {
     q: 'Where is your shop?',
-    a: '152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019.',
+    a: 'Dallas, GA. Family-owned since 2019.',
   },
 ];
 

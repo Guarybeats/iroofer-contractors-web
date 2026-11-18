@@ -48,7 +48,7 @@ export default function BlogPostPage() {
             <p>After a Georgia storm rolls through Dallas and you’re looking at damage on your roof, the first question is how soon someone can get there. The honest answer: it depends on the weather, how many calls are already in line, and where you are. Here’s what affects the timeline and how to help us get to you faster.</p>
 
             <h2>When we answer</h2>
-            <p>Call <a href={`tel:${brand.phone}`}>{brand.phone}</a> during shop hours (Mon–Fri 9–7 / Sat 9–5; Sun closed). You’ll talk to a real person. Active leaks are prioritized, and we come out the same day when the schedule, weather and access allow. If you call outside hours, leave a message and we call back at open. When you call, we give you a realistic ETA rather than a promise we can’t keep.</p>
+            <p>Call <a href={`tel:${brand.phone}`}>{brand.phone}</a> during shop hours (Mon–Fri 9–7 / Sat 9–5; Sun closed). You’ll talk to a real person. Active leaks are prioritized, and we come out as soon as the schedule, weather and access allow. If you call outside hours, leave a message and we call back at open. When you call, we give you a realistic ETA rather than a promise we can’t keep.</p>
 
             <h2>What affects response time</h2>
             <h3>Storm size</h3>

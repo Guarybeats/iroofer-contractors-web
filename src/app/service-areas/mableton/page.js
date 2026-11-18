@@ -24,7 +24,7 @@ export const metadata = {
 
 const intro = [
   'Mableton sits in south Cobb between Austell and Smyrna, with the Silver Comet Trail running through town, the Chattahoochee River on its east side, and Six Flags Over Georgia at its southern edge. It is also Cobb County’s newest and largest city, and that changes a few things about how a roofing job gets done here.',
-  'iRoofer Contractors — Cristian Mendez, family-owned since 2019 — works Mableton from our shop at 152 Freedom Dr in Dallas, GA. We do roof repair, full replacement, storm and hail damage inspections with insurance documentation, and gutter work. Every job starts with a free roof check: dated photos and plain notes on what needs doing now and what can wait.',
+  'iRoofer Contractors — Cristian Mendez, family-owned since 2019 — works Mableton from our shop in Dallas, GA. We do roof repair, full replacement, storm and hail damage inspections with insurance documentation, and gutter work. Every job starts with a free roof check: dated photos and plain notes on what needs doing now and what can wait.',
 ];
 
 const sections = [
@@ -78,7 +78,7 @@ const neighborhoods = [
 const faq = [
   {
     q: 'Do you work in Mableton?',
-    a: 'Yes. Mableton is part of our regular west-metro service area, worked from our shop at 152 Freedom Dr, Dallas, GA 30157. Call (470) 236-1410 or use https://iroofercontractors.com/contact/.',
+    a: 'Yes. Mableton is part of our regular west-metro service area, worked from our shop in Dallas, GA. Call (470) 236-1410 or use https://iroofercontractors.com/contact/.',
   },
   {
     q: 'Who issues the roofing permit in Mableton — the city or Cobb County?',

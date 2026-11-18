@@ -43,7 +43,7 @@ const sections = [
   {
     h2: 'Storm damage and emergency roof repair in Marietta',
     paras: [
-      'Spring and summer cells cross Cobb County often enough that partial wind and hail damage is common: a few slopes lifted, ridge caps loose, dented gutters and vents. Water coming in? Call (470) 236-1410 and say it’s active. We tarp the same day when the schedule and safe access allow. Then we document slope by slope with dated photos, write a scope your adjuster can check, and meet the adjuster on site if you want us there. If the damage won’t support a claim, we’ll tell you and quote the repair. Details: [storm damage roof repair in Marietta](/storm-damage-roof-repair-marietta/) · [emergency roof repair](/emergency-roof-repair-dallas-ga/).',
+      'Spring and summer cells cross Cobb County often enough that partial wind and hail damage is common: a few slopes lifted, ridge caps loose, dented gutters and vents. Water coming in? Call (470) 236-1410 and say it’s active. We put on an emergency tarp as soon as the schedule and safe access allow. Then we document slope by slope with dated photos, write a scope your adjuster can check, and meet the adjuster on site if you want us there. If the damage won’t support a claim, we’ll tell you and quote the repair. Details: [storm damage roof repair in Marietta](/storm-damage-roof-repair-marietta/) · [emergency roof repair](/emergency-roof-repair-dallas-ga/).',
     ],
   },
   {
@@ -66,7 +66,7 @@ const neighborhoods = [
 const faq = [
   {
     q: 'Do you work in Marietta regularly?',
-    a: 'Yes: repairs, replacements, storm work, gutters and new-construction roofs across Marietta and East Cobb, from our shop at 152 Freedom Dr in Dallas.',
+    a: 'Yes: repairs, replacements, storm work, gutters and new-construction roofs across Marietta and East Cobb, from our shop in Dallas.',
   },
   {
     q: 'Who permits a roof replacement at a Marietta address?',
@@ -74,7 +74,7 @@ const faq = [
   },
   {
     q: 'How fast can you get to a Marietta leak?',
-    a: 'Active leaks are a priority. We tarp the same day when the schedule and safe access allow, then schedule the permanent repair once we can inspect it dry.',
+    a: 'Active leaks are a priority. We put on an emergency tarp as soon as the schedule and safe access allow, then schedule the permanent repair once we can inspect it dry.',
   },
   {
     q: 'Do you help with Cobb County insurance claims?',
@@ -82,7 +82,7 @@ const faq = [
   },
   {
     q: 'Are you local?',
-    a: 'Yes. Shop at 152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019.',
+    a: 'Yes. Our shop is in Dallas, GA. Family-owned since 2019.',
   },
 ];
 

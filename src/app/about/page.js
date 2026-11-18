@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     q: 'Where are you located?',
-    a: '152 Freedom Dr, Dallas, GA 30157. Phone (470) 236-1410.',
+    a: 'Dallas, GA. Phone (470) 236-1410.',
   },
   {
     q: 'Do you only work Dallas?',
@@ -65,7 +65,7 @@ export default function AboutPage() {
               <span className="eyebrow dark">About us</span>
               <h1 style={{ fontSize: 'clamp(2.2rem,4.4vw,3.4rem)', fontWeight: 900 }}>About iRoofer Contractors — Cristian Mendez &amp; Crew</h1>
               <p style={{ color: '#52606b', fontSize: '1.05rem', marginTop: 16 }}>
-                iRoofer Contractors is a family-owned roofing company based at 152 Freedom Dr, Dallas, GA 30157. Owner {brand.owner} started it in 2019. He wanted homeowners west of Atlanta to have a local crew that shows up, tells the truth about the roof, and stands behind the work. We install Owens Corning shingles as an Owens Corning Contractor Rewards member.
+                iRoofer Contractors is a family-owned roofing company based in Dallas, GA. Owner {brand.owner} started it in 2019. He wanted homeowners west of Atlanta to have a local crew that shows up, tells the truth about the roof, and stands behind the work. We install Owens Corning shingles as an Owens Corning Contractor Rewards member.
               </p>
               <p style={{ color: '#52606b', marginTop: 12 }}>
                 Now that you know us, let’s talk about <em>your</em> roof. Free roof checks with photos. Written plans. Clean job sites with magnet nail sweeps. The same crew from start to finish.
@@ -121,7 +121,8 @@ export default function AboutPage() {
                 not a far-away call center.
               </p>
               <p style={{ color: '#52606b', marginTop: 12 }}>
-                Shop &amp; office: 152 Freedom Dr, Dallas, GA 30157 (by appointment). Hours: {brand.hours.full}.
+                Shop &amp; office: Dallas, GA<br />
+                Hours: {brand.hours.full}.
               </p>
             </div>
             <div className="rv">

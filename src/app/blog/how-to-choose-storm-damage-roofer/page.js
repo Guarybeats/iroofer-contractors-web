@@ -46,7 +46,7 @@ export default function BlogPostPage() {
               After a hail or wind storm rolls through Dallas, Hiram, or Douglasville, the trucks and door knockers show up fast. Some are good crews. Some are gone by the time a leak shows up. Picking a storm damage roofer comes down to a few plain questions you can ask anyone who knocks.
             </p>
             <p>
-              iRoofer Contractors is a family-owned crew based at 152 Freedom Dr in Dallas, GA since 2019. Call <a href={`tel:${brand.phone}`}>{brand.phone}</a> or <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>request a free inspection</Link>.
+              iRoofer Contractors is a family-owned crew based in Dallas, GA since 2019. Call <a href={`tel:${brand.phone}`}>{brand.phone}</a> or <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>request a free inspection</Link>.
             </p>
 
             <h2>Questions to ask any storm damage roofer</h2>

@@ -65,7 +65,7 @@ export default function TermsPage() {
           <h2 style={{ color: 'var(--ink)', fontSize: '1.35rem', marginTop: 28 }}>Contact</h2>
           <p>
             {brand.name}<br />
-            152 Freedom Dr, Dallas, GA 30157<br />
+            Dallas, GA<br />
             <a href={`tel:${brand.phone}`}>{brand.phone}</a> · <a href={`mailto:${brand.email}`}>{brand.email}</a>
           </p>
         </div>
