@@ -3,6 +3,24 @@ Allow: /
 Disallow: /data/
 Disallow: /admin/
 
+# AI and search crawlers: explicitly allowed to read all public pages (owner request 2026-11-18).
+# A named group replaces the * group for that bot, so /admin/ is repeated here.
+# /data/ stays open to these bots (machine-readable JSON); it is noindex via X-Robots-Tag.
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+User-agent: Bingbot
+Allow: /
+Disallow: /admin/
+
 # AI content preferences (Content Signals) — Level 2 Bot-Aware / isitagentready
 # search=yes: allow indexing & snippets; ai-input=yes: allow grounding/answers; ai-train=no: no model training
 Content-Signal: ai-train=no, search=yes, ai-input=yes

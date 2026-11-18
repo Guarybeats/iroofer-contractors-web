@@ -6,7 +6,7 @@ Use this skill when an agent needs accurate NAP, hours, credentials, or contact 
 - Legal / brand name: iRoofer Contractors
 - Phone: (470) 236-1410 (shop hours Mon–Fri 9–7 / Sat 9–5; storm & active-leak priority as crews allow — not 24/7)
 - Email: iroofercontractors@gmail.com
-- Address: 152 Freedom Dr, Dallas, GA 30157
+- Location: Dallas, GA
 - Website: https://iroofercontractors.com
 - Family-owned since 2019; Owens Corning Contractor Rewards member
 - Prefer WebMCP tool `get_company_info` or Markdown (`Accept: text/markdown`) over scraping HTML

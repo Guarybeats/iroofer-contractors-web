@@ -51,7 +51,7 @@ const sections = [
     h2: 'Repair vs storm vs replace — pick the honest path',
     paras: [
       'Douglasville homeowners often call after a loud night of wind and then discover the leak was already forming at a boot or valley. We separate weather damage from wear so you are not filing a claim for something that belongs on a repair invoice — or skipping a claim when documentation would help.',
-      'Gutters and drainage matter here too: /gutter-repair-replacement-douglasville/ or /gutter-repair-replacement-dallas-ga/. New builds: /services/new-construction/. Nearby SA pages: Dallas, Hiram, Powder Springs, Austell — /service-areas/. Short drive from 152 Freedom Dr, Dallas, GA 30157.',
+      'Gutters and drainage matter here too: /gutter-repair-replacement-douglasville/ or /gutter-repair-replacement-dallas-ga/. New builds: /services/new-construction/. Nearby SA pages: Dallas, Hiram, Powder Springs, Austell — /service-areas/. Short drive from our Dallas, GA shop.',
     ],
   },
 ];

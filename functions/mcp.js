@@ -91,7 +91,7 @@ function callTool(name, args = {}) {
         phone: "(470) 236-1410",
         email: "iroofercontractors@gmail.com",
         website: ORIGIN,
-        address: "152 Freedom Dr, Dallas, GA 30157",
+        address: "Dallas, GA",
         hours: "Mon–Fri 9–7, Sat 9–5, Sun closed; storm / active-leak priority as crews allow (not 24/7)",
         credentials: [
           "Owens Corning Contractor Rewards Member",
@@ -153,7 +153,7 @@ function callTool(name, args = {}) {
       return textResult({
         phone: "(470) 236-1410",
         tel: "tel:+14702361410",
-        emergency: "Prioritize active leaks/storm as fast as crews allow during shop hours; same-day when schedule allows — not 24/7",
+        emergency: "Prioritize active leaks/storm as fast as crews allow during shop hours; as soon as the schedule allows — not 24/7",
       });
     default:
       return {

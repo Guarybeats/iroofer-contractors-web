@@ -12,7 +12,7 @@ export const tradeCopy = {
   'exterior-painting': {
     'dallas-ga': {
       title: 'Exterior Painting in Dallas, GA | iRoofer',
-      description: 'Dallas paint fails from sun, pollen, and wind-driven rain. The crew at 152 Freedom Dr writes the prep first. A color coat is not a Paulding structural permit.',
+      description: 'Dallas paint fails from sun, pollen, and wind-driven rain. The crew in Dallas, GA writes the prep first. A color coat is not a Paulding structural permit.',
       h1: 'Exterior Painting & Staining in Dallas, GA',
       eyebrow: 'Dallas, GA',
       cityName: 'Dallas',
@@ -20,7 +20,7 @@ export const tradeCopy = {
       hubLabel: 'Exterior Painting',
       formId: 'exterior-painting-dallas-ga-quote',
       formSource: 'Exterior Painting & Staining Dallas',
-      intro: 'Exterior painting and staining in Dallas is offered by the same family-owned crew based at 152 Freedom Dr. We talk through what the house actually needs — peeling paint, weathered stain, or trim that is failing at the roof edge — and put the plan in writing after we see the house.',
+      intro: 'Exterior painting and staining in Dallas is offered by the same family-owned crew based in Dallas, GA. We talk through what the house actually needs — peeling paint, weathered stain, or trim that is failing at the roof edge — and put the plan in writing after we see the house.',
       sections: [
         {
           h: 'What west Paulding weather does to a film',
@@ -39,7 +39,7 @@ export const tradeCopy = {
         { q: 'Does every Dallas house need a county permit to be painted?', a: 'No. Paulding requires a permit when the work is structural — sheathing, rafters, or trusses — including siding replacement that reaches that point. A coat on sound material is not that. If we uncover rotten structure, we stop and call Building & Permitting at 240 Constitution Blvd before we continue.' },
         { q: 'Why do the south walls chalk and the north walls look dirty?', a: 'South and west take the UV. North and under pines stay damp, so pollen and mildew sit on the film. We treat the elevation we are standing in front of, not one recipe for the whole house.' },
         { q: 'Can you stain trim on the same visit as a roof-edge repair?', a: 'Often, if the wood is dry and the leak is already fixed. We write the paint scope and the roof scope as separate lines so you can approve one or both. Start with [roof repair in Dallas](/roof-repair-dallas-ga/) if water is still coming in.' },
-        { q: 'Who shows up?', a: 'The Dallas crew. Family-owned since 2019, shop at 152 Freedom Dr. Cristian Mendez. Same people who roof these houses, not a paint sub we hand the address to.' },
+        { q: 'Who shows up?', a: 'The Dallas crew. Family-owned since 2019, shop in Dallas, GA. Cristian Mendez. Same people who roof these houses, not a paint sub we hand the address to.' },
       ],
       related: [
         { href: '/siding-dallas-ga/', label: 'Siding in Dallas' },
@@ -337,7 +337,7 @@ export const tradeCopy = {
         },
         {
           h: 'Paulding’s permit line is about the sheathing, and siding is named',
-          p: 'The county FAQ is specific. A permit is required for siding replacement when the work is structural: sheathing, rafters, or trusses. Building & Permitting is at 240 Constitution Blvd in Dallas. Inspections: 770-505-1398. Re-nailing a sound panel is not that. Replacing rotten sheathing is. When we open a wall and the sheathing has to come out, work stops, you see it, and the permit is pulled before the new panels close the house. We do not finish a structural re-side and “send the paperwork later.” Our shop is at 152 Freedom Dr, so this office is not a theory. It is the counter across town.',
+          p: 'The county FAQ is specific. A permit is required for siding replacement when the work is structural: sheathing, rafters, or trusses. Building & Permitting is at 240 Constitution Blvd in Dallas. Inspections: 770-505-1398. Re-nailing a sound panel is not that. Replacing rotten sheathing is. When we open a wall and the sheathing has to come out, work stops, you see it, and the permit is pulled before the new panels close the house. We do not finish a structural re-side and “send the paperwork later.” Our shop is in Dallas, GA, so this office is not a theory. It is the counter across town.',
         },
         {
           h: 'Roof-to-wall joints are where Dallas leaks pretend to be siding leaks',

@@ -13,7 +13,7 @@
 // 2. Only verifiable facts. Permit rules below are sourced from the jurisdictions
 //    themselves (see cityFacts). No invented job counts, dates, addresses or projects.
 // 3. Keep claims about iRoofer's own work to things Cristian has confirmed: founded 2019,
-//    Owens Corning Contractor Rewards member, free inspections, same-day tarping, drone
+//    Owens Corning Contractor Rewards member, free inspections, emergency tarping, drone
 //    documentation, daily nail sweep.
 //
 // SOURCES (checked 2026-08-31)
@@ -60,7 +60,7 @@ localCopy['roof-repair'] = {
         p: "The stain on your ceiling is almost never right under the problem. Water runs along the decking and rafters before it drips. We start in the attic when we can get in, then walk the roof and follow the path back to the source. That's usually a pipe boot, a valley, chimney or wall flashing, or shingles the wind worked loose. You get photos of the failure point and a written scope before any work starts." },
       { h: "What we fix on Dallas roofs",
         p: "We install Owens Corning shingles as an Owens Corning Contractor Rewards member. Typical repairs:",
-        blocks: [{ items: ["Cracked or dried-out pipe boots and vent collars", "Step, wall and chimney flashing that's pulled away or rusted", "Missing, creased or wind-lifted shingles, blended in as close as the existing roof allows", "Worn valleys and ridge caps", "Soft decking found under a \"simple\" patch. We show you before we replace it."] }, "If water is coming in right now, see [emergency roof repair in Dallas, GA](/emergency-roof-repair-dallas-ga/) or call (470) 236-1410. When water is actively entering, we can often tarp the same day."] },
+        blocks: [{ items: ["Cracked or dried-out pipe boots and vent collars", "Step, wall and chimney flashing that's pulled away or rusted", "Missing, creased or wind-lifted shingles, blended in as close as the existing roof allows", "Worn valleys and ridge caps", "Soft decking found under a \"simple\" patch. We show you before we replace it."] }, "If water is coming in right now, see [emergency roof repair in Dallas, GA](/emergency-roof-repair-dallas-ga/) or call (470) 236-1410. When water is actively entering, we can often get an emergency tarp on fast."] },
       { h: "Why Dallas and Paulding roofs wear the way they do",
         p: "Around Dallas, a lot of homes sit under tall pines and hardwoods. Needles pile up in valleys and behind chimneys, hold moisture, and shade the roof so it stays damp after rain. Summer brings pop-up thunderstorms with gusty wind. Long humid stretches age rubber boots and sealant faster than people expect. Older houses near downtown Dallas and off Hwy 278 often have flashing that was face-nailed or caulked years ago. The newer subdivisions along Hwy 61 and Hwy 92 tend to show builder-grade pipe boots and thin ridge vents as they age. We look for the patterns we already know before we guess." },
       { h: "Paulding County details that change the repair",
@@ -70,12 +70,12 @@ localCopy['roof-repair'] = {
       { h: "After a storm",
         p: "If the trouble showed up after hail or straight-line wind, start with documentation. See [storm damage roof repair in Dallas, GA](/storm-damage-roof-repair-dallas-ga/) and [roof insurance claims help](/services/roof-insurance-claims/). We photograph what we find and can meet your adjuster. Your policy decides what's covered." },
       { h: "Book a Dallas roof repair inspection",
-        p: "We're based at 152 Freedom Dr in Dallas, so we're not driving in from across the state. Call (470) 236-1410 or request your free inspection at https://iroofercontractors.com/contact/." },
+        p: "We're based in Dallas, so we're not driving in from across the state. Call (470) 236-1410 or request your free inspection at https://iroofercontractors.com/contact/." },
     ],
     faq: [
       { q: "How much does roof repair cost in Dallas, GA?", a: "It depends on what failed, how steep and reachable it is, and whether there's soft decking underneath. We don't quote blind. We inspect for free and put a written price in front of you. For the factors, see our [roof repair cost guide](/blog/roof-repair-cost-dallas-ga/)." },
       { q: "Should I repair or replace my roof?", a: "Isolated leaks, a bad boot or loose flashing usually repair well. Wear on every slope or repeat leaks in different spots usually point to replacement. We'll show you photos and give you a straight answer." },
-      { q: "Can you help if water is coming in now?", a: "Yes. Call (470) 236-1410. Active leaks get priority and a tarp when needed, often the same day, then we schedule the permanent repair. See [emergency roof repair in Dallas, GA](/emergency-roof-repair-dallas-ga/)." },
+      { q: "Can you help if water is coming in now?", a: "Yes. Call (470) 236-1410. Active leaks get priority and an emergency tarp when needed, then we schedule the permanent repair. See [emergency roof repair in Dallas, GA](/emergency-roof-repair-dallas-ga/)." },
       { q: "Ceiling stain but no drip. Is it still worth a look?", a: "If the stain grows after rain, yes. We trace it from the attic and the roof so you're not just painting over it." },
       { q: "Do you work outside Dallas?", a: "Yes. Dallas is home base, and we also cover Hiram, Powder Springs, Douglasville and nearby towns. Hiram homeowners can start at [roof repair in Hiram](/service-areas/hiram/#roof-repair)." },
     ],
@@ -152,7 +152,7 @@ localCopy['roof-repair'] = {
       },
       {
         "h": "Book a Hiram roof repair",
-        "p": "Call (470) 236-1410 or book at https://iroofercontractors.com/contact/. Active leak? Say so on the phone. Water coming in goes ahead of routine work, and we tarp the same day when the schedule and safe access allow. Everything else starts with a free inspection and a written scope."
+        "p": "Call (470) 236-1410 or book at https://iroofercontractors.com/contact/. Active leak? Say so on the phone. Water coming in goes ahead of routine work, and we put on an emergency tarp as soon as the schedule and safe access allow. Everything else starts with a free inspection and a written scope."
       }
     ],
     faq: [
@@ -181,8 +181,8 @@ localCopy['roof-repair'] = {
         "a": "Usually not. Paulding County only requires one for structural work: sheathing, rafters or trusses. If a repair turns structural once the roof is open, we stop, show you, and pull the permit."
       },
       {
-        "q": "Can I get same-day roof repair in Hiram?",
-        "a": "Often yes for urgent leaks and tarping. Call (470) 236-1410 and ask for same-day service in Hiram—we prioritize active water intrusion when we can."
+        "q": "Can I get emergency roof repair in Hiram?",
+        "a": "Often yes for urgent leaks and tarping. Call (470) 236-1410 and ask for emergency service in Hiram—we prioritize active water intrusion when we can."
       },
       {
         "q": "Do you really serve Hiram from Dallas?",
@@ -270,7 +270,7 @@ localCopy['roof-repair'] = {
       },
       {
         "q": "Can you get to an active leak in Powder Springs quickly?",
-        "a": "Active leaks go ahead of routine work. Call (470) 236-1410 and say water is coming in. We tarp the same day when the schedule and safe access allow, then make the permanent repair once it’s dry."
+        "a": "Active leaks go ahead of routine work. Call (470) 236-1410 and say water is coming in. We put on an emergency tarp as soon as the schedule and safe access allow, then make the permanent repair once it’s dry."
       },
       {
         "q": "Should I repair or replace my Powder Springs roof?",
@@ -320,7 +320,7 @@ localCopy['roof-repair'] = {
     faq: [
       { q: "Do I need a permit to repair my roof in Acworth?", a: "For replacing shingles, no — the City of Acworth classes that as an ordinary repair. Altering the roof design does require one, and unpermitted work carries a penalty of 100% of the permit fee on top of the fee." },
       { q: "There is moss and dark streaking on my north-facing slope. Is that damage?", a: "It is a warning sign rather than damage in itself. Shaded Acworth slopes stay damp, and the growth holds moisture against the shingle and works granules loose. We assess whether it is cosmetic or whether the mat underneath has gone." },
-      { q: "A limb came down on my roof. What now?", a: "Call us and stay off the roof. We inspect free, tarp the same day if the deck is open to weather, and photograph everything in case it becomes an insurance claim rather than a repair." },
+      { q: "A limb came down on my roof. What now?", a: "Call us and stay off the roof. We inspect free, put on an emergency tarp if the deck is open to weather, and photograph everything in case it becomes an insurance claim rather than a repair." },
       { q: "My valleys keep clogging with leaves. Can that be fixed permanently?", a: "The valley can be reworked so it sheds better, but the honest answer is that the tree above it is the actual variable. We will tell you what trimming would achieve before you spend money on the roof." },
       { q: "What does roof repair cost in Acworth, GA?", a: "Valley rebuilds and rot repair under a chronically damp slope cost more than surface work. Free inspection, photographs of what we found, written quote." },
     ],
@@ -336,7 +336,7 @@ localCopy['roof-repair'] = {
     faq: [
       { q: "Does a roof repair affect flood risk?", a: "Not directly, but where your roof discharges water does. We look at downspout runs and discharge points during the inspection and flag anything dumping volume next to your foundation." },
       { q: "Am I getting a flood insurance discount in Cobb County?", a: "Cobb participates in FEMA's Community Rating System at class 7, which earns residents a 15% discount on NFIP premiums. Worth confirming with your carrier that it is being applied — it is not something we handle, but it is money." },
-      { q: "How fast can you tarp a roof in Austell?", a: "Same day when a roof is open to weather. Getting a tarp on before the next rain is often the difference between a repair and a claim." },
+      { q: "How fast can you tarp a roof in Austell?", a: "As fast as we safely can when a roof is open to weather. Getting a tarp on before the next rain is often the difference between a repair and a claim." },
       { q: "Do I need a permit for roof repair in Austell?", a: "Austell falls under Cobb County. Routine shingle and flashing repair generally does not require one; structural work does. Floodplain permitting is a separate matter under the county code and does not apply to ordinary roof repair." },
       { q: "What does roof repair cost in Austell, GA?", a: "We quote in writing after a free inspection. If we find the real problem is drainage rather than the roof, we will tell you that — even though it is a smaller job for us." },
     ],
@@ -396,7 +396,7 @@ localCopy['roof-replacement'] = {
       { h: "Building the roof back to spec, not to the cheque",
         p: "When an insurer settles, the scope they write is not always the scope the roof needs — drip edge, ice-and-water at valleys, ridge vent and starter course are the line items most commonly left out. We build the roof correctly and supplement the claim for what the code and the manufacturer actually require, rather than quietly installing to whatever the initial cheque covers. That is the difference between a roof that carries a full manufacturer warranty and one that technically has shingles on it. Douglas County runs its own permitting department, with its own inspection line, and we file there when structural work is in scope." },
       { h: "Layers, decking and the three-layer rule",
-        p: "Older Douglasville homes have often been re-covered at least once. The residential code requires that a roof already carrying three layers be stripped to the deck rather than covered again, and we strip regardless — an overlay makes it impossible to inspect the sheathing you are about to warranty. Once the deck is open we walk it sheet by sheet, replace what is soft, and dry in the same day with synthetic underlayment. Nothing sits open overnight, which in a Douglasville spring is not a small consideration." },
+        p: "Older Douglasville homes have often been re-covered at least once. The residential code requires that a roof already carrying three layers be stripped to the deck rather than covered again, and we strip regardless — an overlay makes it impossible to inspect the sheathing you are about to warranty. Once the deck is open we walk it sheet by sheet, replace what is soft, and dry it in before we leave with synthetic underlayment. Nothing sits open overnight, which in a Douglasville spring is not a small consideration." },
     ],
     faq: [
       { q: "My insurance settled for less than your quote. What now?", a: "That is common and usually fixable. Missing line items — drip edge, valley membrane, ventilation, starter — get supplemented with documentation. We handle that with your adjuster rather than cutting the scope to fit the cheque." },
@@ -548,7 +548,7 @@ localCopy['roof-replacement'] = {
       { q: "Should I replace gutters at the same time as the roof?", a: "Often yes, and it is cheaper done together. If the existing runs are undersized or discharging next to the foundation, a new roof alone has not fixed your actual water problem." },
       { q: "Do I need a permit to replace a roof in Austell?", a: "Austell is under Cobb County. A like-for-like replacement generally does not require one unless structural work is involved. Floodplain permitting is separate and is not triggered by re-roofing." },
       { q: "Does Cobb County offer any flood insurance discount?", a: "Cobb participates in FEMA's Community Rating System at class 7, which earns residents a 15% discount on NFIP premiums. Worth confirming with your carrier that you are getting it." },
-      { q: "How long will my house be exposed?", a: "It is not. We tear off and dry in the same day — we do not leave a deck open overnight, and in this part of Cobb that is not a policy we are flexible about." },
+      { q: "How long will my house be exposed?", a: "It is not. We tear off and dry in before we leave — we do not leave a deck open overnight, and in this part of Cobb that is not a policy we are flexible about." },
       { q: "What does a roof replacement cost in Austell, GA?", a: "Squares, pitch, layer count and decking condition. If drainage work makes sense alongside it we price that separately so you can see both numbers and decide." },
     ],
   },
@@ -575,7 +575,7 @@ localCopy['storm-damage-roof-repair'] = {
       { q: "Will my insurance cover storm damage roof repair in Dallas, GA?", a: "Many policies cover sudden wind or hail damage, subject to deductibles and exclusions. We document findings and can walk you through a typical adjuster visit—we don't guarantee claim approval." },
       { q: "Do I always need a full replacement after hail?", a: "No — depends on how widespread the bruising is and the roof's age. We show you photos and put options in writing." },
       { q: "Should I file a claim for hail?", a: "Only if the damage and your deductible make sense — we'll say so honestly after we look." },
-      { q: "Do you offer emergency roof repair after storms in Dallas?", a: "Yes. We prioritize active leaks with tarping when needed, then move into permanent repair or replacement once the scope is clear. Same-day service is available when scheduling allows—call now or see emergency roof repair Dallas." },
+      { q: "Do you offer emergency roof repair after storms in Dallas?", a: "Yes. We prioritize active leaks with tarping when needed, then move into permanent repair or replacement once the scope is clear. Emergency service is available when scheduling allows—call now or see emergency roof repair Dallas." },
     ],
   },
   'hiram': {
@@ -584,14 +584,14 @@ localCopy['storm-damage-roof-repair'] = {
       { h: "Wind damage hides in plain sight",
         p: "Wind does not usually strip a roof. It lifts the tab, snaps the factory seal strip, and drops it back down. From the street the roof is perfect. From above there is a crease across the tab, a shiner where the nail has withdrawn, and a shingle that will now flex in every future gust until it fails properly. We inspect at roof level and photograph the creasing, because a claim built on general assertions about a windy night goes nowhere while a claim built on photographed creased tabs and a matching storm date does not." },
       { h: "Move quickly, and keep the paperwork",
-        p: "Georgia policies carry filing deadlines and insurers argue about causation as the trail cools, so the useful sequence is: free inspection while the evidence is fresh, tarp the same day if anything is open, document, then decide whether filing is worth it. We will tell you when we think it is not. If the repair turns out to involve structural work — replacing sheathing or rafters — Paulding County permitting applies and we handle it; ordinary shingle and flashing work does not require a permit here." },
+        p: "Georgia policies carry filing deadlines and insurers argue about causation as the trail cools, so the useful sequence is: free inspection while the evidence is fresh, tarp anything that is open, document, then decide whether filing is worth it. We will tell you when we think it is not. If the repair turns out to involve structural work — replacing sheathing or rafters — Paulding County permitting applies and we handle it; ordinary shingle and flashing work does not require a permit here." },
     ],
     faq: [
       { q: "My roof looks fine after a windstorm. Is an inspection worth it?", a: "Yes, and it costs nothing. Wind damage is usually broken seal strips and creased tabs, invisible from the ground and entirely capable of leaking at the next hard rain." },
       { q: "How long do I have to file a storm claim?", a: "Policies vary and deadlines are real, so do not sit on it. The practical risk is not just the deadline — the longer you wait, the easier it is for an insurer to argue the damage was wear rather than the storm." },
       { q: "What is a creased shingle?", a: "A shingle that wind lifted and folded before laying it back down. The seal is broken and the crease is a permanent weak line. It is one of the clearest pieces of wind-damage evidence there is." },
       { q: "Do storm repairs need a permit in Hiram?", a: "Not for shingle and flashing work. Paulding County requires permits when structural elements — sheathing, rafters, trusses — are replaced, which storm damage sometimes does involve." },
-      { q: "Do you tarp in Hiram?", a: "Same day when the roof is open. Hiram is a short drive from our Dallas shop, which is why our response time here is measured in hours rather than days." },
+      { q: "Do you tarp in Hiram?", a: "Yes, emergency tarping when the roof is open. Hiram is a short drive from our Dallas shop, which is why our response time here is measured in hours rather than days." },
     ],
   },
   'douglasville': {
@@ -599,7 +599,7 @@ localCopy['storm-damage-roof-repair'] = {
     sections: [
       {
         "h": "Roof leaking after a Douglasville storm? Start here",
-        "p": "If water is coming through a ceiling right now, call (470) 236-1410 before you do anything else and tell us it’s active. Stay off the roof, get people and electronics away from the wet area, and take photos inside and from the yard. Active leaks and roofs opened by wind or limbs go ahead of routine work, and we tarp the same day when the schedule and safe access allow. If we can’t be there today, you’ll get an honest window and tarping guidance. We keep shop hours (Mon–Fri 9–7, Sat 9–5) and don’t advertise 24/7 service."
+        "p": "If water is coming through a ceiling right now, call (470) 236-1410 before you do anything else and tell us it’s active. Stay off the roof, get people and electronics away from the wet area, and take photos inside and from the yard. Active leaks and roofs opened by wind or limbs go ahead of routine work, and we put on an emergency tarp as soon as the schedule and safe access allow. If we can’t be there today, you’ll get an honest window and tarping guidance. We keep shop hours (Mon–Fri 9–7, Sat 9–5) and don’t advertise 24/7 service."
       },
       {
         "h": "Straight-line wind leaves a pattern",
@@ -622,13 +622,13 @@ localCopy['storm-damage-roof-repair'] = {
       },
       {
         "h": "Why a local crew for Douglas County storm work",
-        "p": "After a big storm, out-of-area crews show up with yard signs and a deposit form. We’re 152 Freedom Dr in Dallas, family-owned since 2019, and the same phone number answers the warranty call years from now. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system goes back on the roof. Douglas County runs its own building permit department and inspection line. When structural work is in scope, we pull the permit and schedule the inspections."
+        "p": "After a big storm, out-of-area crews show up with yard signs and a deposit form. We’re in Dallas, family-owned since 2019, and the same phone number answers the warranty call years from now. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system goes back on the roof. Douglas County runs its own building permit department and inspection line. When structural work is in scope, we pull the permit and schedule the inspections."
       }
     ],
     faq: [
       {
         "q": "Do you do emergency roof repair in Douglasville, GA?",
-        "a": "Yes. Roofs open to weather and active leaks go to the front of the line. Call (470) 236-1410 and say water is coming in. We tarp the same day when the schedule and safe access allow, then come back for the permanent repair once it’s dry."
+        "a": "Yes. Roofs open to weather and active leaks go to the front of the line. Call (470) 236-1410 and say water is coming in. We put on an emergency tarp as soon as the schedule and safe access allow, then come back for the permanent repair once it’s dry."
       },
       {
         "q": "Is it hail or wind damage, and does it matter?",
@@ -648,7 +648,7 @@ localCopy['storm-damage-roof-repair'] = {
       },
       {
         "q": "Do you do emergency tarping in Douglasville?",
-        "a": "Yes, same day when the schedule and safe access allow and a roof is open to weather. Mitigating promptly also protects your claim, since insurers can reduce settlements for damage that worsened afterwards."
+        "a": "Yes, as soon as the schedule and safe access allow when a roof is open to weather. Mitigating promptly also protects your claim, since insurers can reduce settlements for damage that worsened afterwards."
       },
       {
         "q": "Who permits storm repairs in Douglasville?",
@@ -682,13 +682,13 @@ localCopy['storm-damage-roof-repair'] = {
       { h: "When the repair is subject to design review",
         p: "If your property sits within one of Marietta's historic districts, exterior work can require a Certificate of Appropriateness under the city's historic preservation ordinance. That matters for a storm claim because like-for-like replacement may not be an available option, and the specification you are required to install may cost more than the insurer's default scope assumes. It is a documentable difference and it belongs in the claim from the start rather than being discovered at approval stage. We confirm your jurisdiction and any review requirement before writing the scope." },
       { h: "Older rooflines, more places to look",
-        p: "Marietta's older homes carry more valleys, dormers, chimneys and sidewall transitions than a modern build, and every one is both a likely damage point and a likely leak point. After a storm we inspect each of those individually rather than assessing the roof as a single surface, and we check the attic for daylight and moisture. We tarp the same day where anything is open. Whether your address is permitted by the city or by Cobb County depends on your tax district, and we establish that up front." },
+        p: "Marietta's older homes carry more valleys, dormers, chimneys and sidewall transitions than a modern build, and every one is both a likely damage point and a likely leak point. After a storm we inspect each of those individually rather than assessing the roof as a single surface, and we check the attic for daylight and moisture. We tarp anything that is open. Whether your address is permitted by the city or by Cobb County depends on your tax district, and we establish that up front." },
     ],
     faq: [
       { q: "Does living in a historic district change my storm claim?", a: "It can. If a Certificate of Appropriateness governs what you may install, like-for-like may not be permitted and the required specification can cost more. That difference is documentable and belongs in the claim." },
       { q: "Who permits storm repairs at my Marietta address?", a: "Depends on tax district: (4) MARIETTA means the City of Marietta, (9) UNINCORPORATED means Cobb County. We confirm before scoping, because it changes both process and timeline." },
       { q: "Why do older homes need a longer inspection?", a: "More valleys, dormers, chimneys and sidewall transitions — each one an individual failure point. We assess them separately rather than treating the roof as one surface, and we check the attic too." },
-      { q: "Do you tarp in Marietta?", a: "Same day when a roof is open to weather. Prompt mitigation also protects your claim, since insurers can reduce settlement for damage that worsened afterwards." },
+      { q: "Do you tarp in Marietta?", a: "As fast as we safely can when a roof is open to weather. Prompt mitigation also protects your claim, since insurers can reduce settlement for damage that worsened afterwards." },
       { q: "Will you meet my adjuster?", a: "Yes, on site with full photographic documentation, including drone imagery on steep or fragile older roofs where walking every slope is not sensible." },
     ],
   },
@@ -709,7 +709,7 @@ localCopy['storm-damage-roof-repair'] = {
               "Call (470) 236-1410. Tell us water is entering now. We’ll give you an honest arrival window and tarp as soon as access is safe."
             ]
           },
-          "We keep shop hours (Mon–Fri 9–7, Sat 9–5) and we don’t advertise 24/7 service. We do prioritize open roofs and active leaks ahead of routine work, and we’ll tell you straight if we can’t be there the same day."
+          "We keep shop hours (Mon–Fri 9–7, Sat 9–5) and we don’t advertise 24/7 service. We do prioritize open roofs and active leaks ahead of routine work, and we’ll tell you straight if we can’t be there soon."
         ]
       },
       {
@@ -757,7 +757,7 @@ localCopy['storm-damage-roof-repair'] = {
       },
       {
         "q": "How fast can you get a tarp on in Kennesaw?",
-        "a": "Same day when the schedule and safe access allow. If we can’t make it the same day, you’ll get a straight answer and tarping guidance instead of silence. Inspections are free either way."
+        "a": "As soon as the schedule and safe access allow. If we can’t make it soon, you’ll get a straight answer and tarping guidance instead of silence. Inspections are free either way."
       },
       {
         "q": "How does Kennesaw permitting affect a storm repair?",
@@ -773,29 +773,29 @@ localCopy['storm-damage-roof-repair'] = {
     intro: "In Acworth the storm damage that puts a hole in your roof usually arrives attached to a tree. Mature canopy is why the neighbourhood looks the way it does and why limb strikes are our most common emergency call here.",
     sections: [
       { h: "Limb strikes, punctures and what to do first",
-        p: "A limb strike is different from wind or hail: the damage is concentrated, structural, and often includes broken decking or a cracked rafter rather than just lost shingles. Stay off the roof. Call, and we will tarp the same day so the interior is protected before the next rain, then assess what is actually broken underneath. Because a limb strike has an obvious cause and an obvious date, these claims tend to be less contested than hail — but the scope still needs documenting properly, including any structural member that has to be replaced rather than sistered." },
+        p: "A limb strike is different from wind or hail: the damage is concentrated, structural, and often includes broken decking or a cracked rafter rather than just lost shingles. Stay off the roof. Call, and we will put on an emergency tarp so the interior is protected before the next rain, then assess what is actually broken underneath. Because a limb strike has an obvious cause and an obvious date, these claims tend to be less contested than hail — but the scope still needs documenting properly, including any structural member that has to be replaced rather than sistered." },
       { h: "Permits: repair versus altering the roof",
         p: "The City of Acworth does not require a permit for ordinary repairs such as replacing shingles, but structural work is a different matter, and limb damage frequently involves exactly that. Acworth also charges a penalty equal to 100% of the standard permit fee, in addition to the fee, for work begun without a required permit — a genuine risk when a homeowner is under pressure to get a roof closed up fast and a crew offers to start immediately. We establish what your job needs before we start, and we file where filing is required." },
     ],
     faq: [
-      { q: "A tree limb hit my roof. What do I do right now?", a: "Stay off the roof and call us. We tarp the same day when the deck is open, then assess the structure underneath — limb strikes often break decking or crack a rafter, not just shingles." },
+      { q: "A tree limb hit my roof. What do I do right now?", a: "Stay off the roof and call us. We put on an emergency tarp when the deck is open, then assess the structure underneath — limb strikes often break decking or crack a rafter, not just shingles." },
       { q: "Are limb-strike claims easier than hail claims?", a: "Generally less contested, because cause and date are obvious. The scope still has to be documented properly, especially any structural member that needs replacing rather than reinforcing." },
       { q: "Do I need a permit for storm repairs in Acworth?", a: "Not for replacing shingles, which the city treats as ordinary repair. Structural work does require one, and limb damage often involves structural work. Unpermitted work carries a 100% penalty on top of the fee." },
       { q: "Should I have the tree removed too?", a: "That is a question for an arborist, not a roofer, but we will tell you honestly what we can see from the roof about what is overhanging and what has already been abrading your shingles." },
-      { q: "How fast can you get a tarp on in Acworth?", a: "Same day when the roof is open to weather. Getting it sealed before the next rain is usually the difference between a roof claim and a roof-plus-interior claim." },
+      { q: "How fast can you get a tarp on in Acworth?", a: "As fast as we safely can when the roof is open to weather. Getting it sealed before the next rain is usually the difference between a roof claim and a roof-plus-interior claim." },
     ],
   },
   'austell': {
     intro: "In Austell a storm rarely does one kind of damage. Wind opens the roof, the rain that follows finds the opening, and in a part of Cobb with real flood history the water keeps going after it gets inside.",
     sections: [
       { h: "Sequence matters: seal it, then document it",
-        p: "Our first move on an Austell storm call is to stop the intrusion — same-day tarping wherever the deck is exposed — and only then to work through documentation. That order matters here more than most places because the interior damage escalates fast and because insurers can reduce a settlement for loss that worsened through failure to mitigate. Once it is sealed we photograph the roof by elevation, drone the property, and record the soft-metal denting on gutters, vents and flashing that corroborates the event date." },
+        p: "Our first move on an Austell storm call is to stop the intrusion — emergency tarping wherever the deck is exposed — and only then to work through documentation. That order matters here more than most places because the interior damage escalates fast and because insurers can reduce a settlement for loss that worsened through failure to mitigate. Once it is sealed we photograph the roof by elevation, drone the property, and record the soft-metal denting on gutters, vents and flashing that corroborates the event date." },
       { h: "Flood, wind and two different policies",
         p: "It is worth being clear which policy covers what, because homeowners here are often dealing with both. Wind and hail damage to the roof is a homeowners claim. Rising water is not — that falls under flood insurance, and Cobb County has significant history there: the September 2009 event affected more than 1,600 homes countywide. Cobb participates in FEMA's Community Rating System at class 7, which earns residents a 15% discount on NFIP premiums. We handle the roof side and document it properly; we will not pretend to be your flood adjuster." },
     ],
     faq: [
       { q: "Is storm damage to my roof covered by flood insurance?", a: "No — wind and hail damage to a roof is a homeowners claim. Flood insurance covers rising water. They are separate policies and after a bad storm in Austell you may unfortunately be dealing with both." },
-      { q: "How fast can you tarp in Austell?", a: "Same day when the deck is open. Sealing it first is both the right order of operations and protection for your claim, since insurers can reduce settlement for damage that worsened afterwards." },
+      { q: "How fast can you tarp in Austell?", a: "As fast as we safely can when the deck is open. Sealing it first is both the right order of operations and protection for your claim, since insurers can reduce settlement for damage that worsened afterwards." },
       { q: "Does Cobb County give a flood insurance discount?", a: "Cobb participates in FEMA's Community Rating System at class 7, which earns residents a 15% discount on NFIP premiums. Worth confirming with your carrier that it is applied." },
       { q: "Do storm repairs need a permit in Austell?", a: "Austell falls under Cobb County. Surface repairs generally do not require a permit; structural work does. Floodplain permitting is governed separately under the county code." },
       { q: "Will you meet my adjuster on the roof?", a: "Yes, with the documentation already prepared. Agreeing scope on site is faster and cleaner than negotiating it afterwards while the building keeps taking water." },
@@ -942,7 +942,7 @@ localCopy['gutter-repair-replacement'] = {
 // ──────────────────────────────────────────────────────── NEW CONSTRUCTION
 localCopy['new-construction'] = {
   'dallas-ga': {
-    intro: "New Dallas builds deserve a roof crew that treats the site like a neighbor’s house — because it is. iRoofer Contractors installs new-construction roofs from our shop at 152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019. See [new construction roofing services](/services/new-construction/) for the service overview. Ready to talk? https://iroofercontractors.com/contact/ or (470) 236-1410.",
+    intro: "New Dallas builds deserve a roof crew that treats the site like a neighbor’s house — because it is. iRoofer Contractors installs new-construction roofs from our shop in Dallas, GA. Family-owned since 2019. See [new construction roofing services](/services/new-construction/) for the service overview. Ready to talk? https://iroofercontractors.com/contact/ or (470) 236-1410.",
     sections: [
       { h: "Dallas new builds — what we care about on site",
         p: "Schedule coordination with framing and weather. Deck condition and fastener patterns that match the shingle system. Ice/water shield and flashing details at valleys, eaves, chimneys, and walls. Ventilation that matches the attic design — not an afterthought. Daily cleanup so other trades can work. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that product is specified or selected. We work with Paulding County Building & Permitting on Constitution Blvd so dry-in windows stay tight." },
@@ -961,7 +961,7 @@ localCopy['new-construction'] = {
       { q: "Who pulls the permit on new construction in Dallas?", a: "New construction is fully permitted through Paulding County's Building and Permitting Division, here in Dallas. On builder projects it is typically part of the overall building permit; we coordinate our inspections into it." },
       { q: "Can I choose the shingle on a spec build?", a: "If you are the buyer, usually yes, and earlier is better. Colour and profile are far easier to change before material is ordered than after the first squares are on the roof." },
       { q: "Is ventilation included?", a: "It is designed in, not added on. New construction is the one chance to balance intake and exhaust properly from the framing stage, and it is what determines how long the roof actually lasts." },
-      { q: "What warranty comes with a new construction roof?", a: "The Owens Corning manufacturer warranty, which depends on installing to their specification, plus our workmanship warranty. We register it in the homeowner's name at completion." },
+      { q: "What warranty comes with a new construction roof?", a: "The Owens Corning manufacturer warranty, which depends on installing to their specification. We register it in the homeowner's name at completion." },
     ],
   },
   'hiram': {

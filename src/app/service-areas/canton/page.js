@@ -46,7 +46,7 @@ const sections = [
     h2: 'The storm-chaser season in Cherokee County',
     paras: [
       'A hail event in Canton is followed within days by out-of-town crews canvassing subdivisions. Some do good work. Many will not be reachable when a workmanship issue shows up two winters later, and some ask homeowners to sign contingency agreements that commit them to that contractor regardless of the claim outcome.',
-      'Before you sign anything: get a dated photo report from a company with a verifiable local address and local reviews, and read the paperwork. We are at 152 Freedom Dr in Dallas, GA, family-owned since 2019, with reviews you can read on our Google Business Profile — and we will still be at that number after the season ends.',
+      'Before you sign anything: get a dated photo report from a company with a verifiable local address and local reviews, and read the paperwork. We are in Dallas, GA, family-owned since 2019, with reviews you can read on our Google Business Profile — and we will still be at that number after the season ends.',
     ],
   },
   {
@@ -82,7 +82,7 @@ const faq = [
   },
   {
     q: 'Are you local to Canton?',
-    a: 'We are based at 152 Freedom Dr, Dallas, GA — west of Canton in Paulding County — and north Cherokee is part of our regular service area. You get a fixed local address, local reviews, and the same crew chief through the whole job.',
+    a: 'We are based in Dallas, GA — west of Canton in Paulding County — and north Cherokee is part of our regular service area. You get a fixed local address, local reviews, and the same crew chief through the whole job.',
   },
   {
     q: 'Does Canton weather change what you install?',

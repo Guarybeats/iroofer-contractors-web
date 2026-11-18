@@ -9,9 +9,9 @@ import { FaqSchema } from '@/components/LocalSeo';
 // Target: "roof leak repair Dallas GA" (+ near me, leak detection, ceiling leak, leak after rain).
 // Supports /roof-repair-dallas-ga/ (general repair) without duplicating it: this page is
 // about finding the source of a leak and stopping it. No prices, counts or invented stats.
-// Business facts limited to what Cristian has confirmed (152 Freedom Dr, (470) 236-1410,
+// Business facts limited to what Cristian has confirmed (Dallas, GA, city-level only, no street address; (470) 236-1410,
 // family-owned since 2019, free inspections, hours Mon-Fri 9-7 / Sat 9-5 / Sun closed,
-// same-day help when schedule and safe access allow; no 24/7 promise).
+// help as soon as schedule and safe access allow; no 24/7 or same-day promise).
 
 const PATH = '/roof-leak-repair-dallas-ga';
 
@@ -54,7 +54,7 @@ const faqs = [
   },
   {
     q: 'What should I do right now if my roof is leaking?',
-    a: 'Move belongings and electronics out of the way, put a bucket under the drip, and if the ceiling is bulging with water, poke a small hole in the center of the bulge to let it drain into the bucket. Take photos for your records. Then call (470) 236-1410. If water is pouring in, see our emergency roof repair page; we tarp the same day when the schedule and safe access allow.',
+    a: 'Move belongings and electronics out of the way, put a bucket under the drip, and if the ceiling is bulging with water, poke a small hole in the center of the bulge to let it drain into the bucket. Take photos for your records. Then call (470) 236-1410. If water is pouring in, see our emergency roof repair page; we put on an emergency tarp as soon as the schedule and safe access allow.',
   },
   {
     q: 'How much does roof leak repair cost in Dallas, GA?',
@@ -74,7 +74,7 @@ const faqs = [
   },
   {
     q: 'Do you repair roof leaks near me in Hiram and Paulding County?',
-    a: 'Yes. We are based at 152 Freedom Dr in Dallas, GA 30157 and repair roof leaks across Paulding County, including Dallas and Hiram, and in nearby Powder Springs, Douglasville and Acworth. Call (470) 236-1410 to book a free inspection.',
+    a: 'Yes. We are based in Dallas, GA and repair roof leaks across Paulding County, including Dallas and Hiram, and in nearby Powder Springs, Douglasville and Acworth. Call (470) 236-1410 to book a free inspection.',
   },
 ];
 
@@ -107,7 +107,6 @@ const serviceSchema = {
     telephone: brand.phone,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '152 Freedom Dr',
       addressLocality: 'Dallas',
       addressRegion: 'GA',
       postalCode: '30157',
@@ -145,7 +144,7 @@ export default function RoofLeakRepairPage() {
                 Roof Leak Repair in Dallas, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
-                Water stain on the ceiling? Dripping after every storm? iRoofer Contractors finds where your roof is leaking and fixes it, for homes in Dallas, GA (30157 and 30132), Hiram and across Paulding County. We are a family-owned roofer based at 152 Freedom Dr in Dallas. The inspection is free, and you see photos of the problem before you decide anything.
+                Water stain on the ceiling? Dripping after every storm? iRoofer Contractors finds where your roof is leaking and fixes it, for homes in Dallas, GA (30157 and 30132), Hiram and across Paulding County. We are a family-owned roofer based in Dallas. The inspection is free, and you see photos of the problem before you decide anything.
               </p>
               <p style={{ color: '#52606b', fontSize: '1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
                 Leak repair is part of our broader Dallas roof repair work. For the main Dallas repair page, go to{' '}
@@ -208,7 +207,7 @@ export default function RoofLeakRepairPage() {
           <div className="rv" style={{ maxWidth: 780, marginBottom: 34 }}>
             <h2 style={h2}>Water coming in right now?</h2>
             <p style={p}>
-              Move valuables, set out buckets, and stay off the roof, especially when it is wet. Then call {brand.phone} and tell us water is entering now. Our hours are {brand.hours.full}, and we prioritize active leaks, with same-day tarping when the schedule and safe access allow. See <Link href="/emergency-roof-repair-dallas-ga/" style={a}>emergency roof repair in Dallas, GA</Link> for more.
+              Move valuables, set out buckets, and stay off the roof, especially when it is wet. Then call {brand.phone} and tell us water is entering now. Our hours are {brand.hours.full}, and we prioritize active leaks, with emergency tarping as soon as the schedule and safe access allow. See <Link href="/emergency-roof-repair-dallas-ga/" style={a}>emergency roof repair in Dallas, GA</Link> for more.
             </p>
           </div>
 

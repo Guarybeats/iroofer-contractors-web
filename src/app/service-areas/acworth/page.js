@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const intro = [
-  'Acworth roof calls are often urgent — active leaks, overnight wind, a tree limb. iRoofer Contractors answers from Dallas, GA (152 Freedom Dr): family-owned since 2019. We tarp when the roof is open, then schedule the permanent fix.',
+  'Acworth roof calls are often urgent — active leaks, overnight wind, a tree limb. iRoofer Contractors answers from Dallas, GA: family-owned since 2019. We tarp when the roof is open, then schedule the permanent fix.',
   'Ready to talk about your roof? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
 ];
 
@@ -32,7 +32,7 @@ const sections = [
     h2: 'Emergency and urgent leaks in Acworth',
     paras: [
       'If water is coming in now, call (470) 236-1410. Priority is stop the water — tarping and temporary protection — then a dry-weather inspection for the permanent repair. More: [emergency roof repair](/emergency-roof-repair-dallas-ga/).',
-      'We prioritize open roofs and active leaks, and we will tell you honestly what we can do the same day.',
+      'We prioritize open roofs and active leaks, and we will tell you honestly how fast we can get there.',
     ],
   },
   {
@@ -50,7 +50,7 @@ const sections = [
   {
     h2: 'Nearby and why a Dallas shop covers Acworth',
     paras: [
-      'Kennesaw, Marietta, Canton edges, and the Dallas hub — /service-areas/kennesaw/, /service-areas/marietta/, /service-areas/, /. Cristian Mendez’s crew runs the same cleanup standards (magnetic nail sweeps, daily tidy) whether the job is five minutes or a longer drive from 152 Freedom Dr.',
+      'Kennesaw, Marietta, Canton edges, and the Dallas hub — /service-areas/kennesaw/, /service-areas/marietta/, /service-areas/, /. Cristian Mendez’s crew runs the same cleanup standards (magnetic nail sweeps, daily tidy) whether the job is five minutes or a longer drive from our Dallas shop.',
     ],
   },
 ];
@@ -67,7 +67,7 @@ const neighborhoods = [
 const faq = [
   {
     q: 'Do you handle after-hours emergencies?',
-    a: 'Call the main number — active leaks and open roofs are prioritized. We will tell you what we can do same day.',
+    a: 'Call the main number — active leaks and open roofs are prioritized. We will tell you how fast we can get there.',
   },
   {
     q: 'Is Acworth in your regular area?',

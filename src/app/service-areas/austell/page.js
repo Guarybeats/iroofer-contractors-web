@@ -70,7 +70,7 @@ const neighborhoods = [
 const faq = [
   {
     q: 'Can you tarp my roof today?',
-    a: 'For active leaks we prioritize same-day emergency tarping. We fasten and lap the tarp so it actually sheds water, and we photograph the damage before covering it so your insurance claim is documented first.',
+    a: 'For active leaks we prioritize emergency tarping. We fasten and lap the tarp so it actually sheds water, and we photograph the damage before covering it so your insurance claim is documented first.',
   },
   {
     q: 'My gutters overflow every heavy rain. Is that a roof problem?',
@@ -86,7 +86,7 @@ const faq = [
   },
   {
     q: 'Are you actually local to Austell?',
-    a: 'We are based at 152 Freedom Dr in Dallas, GA — about 20 miles northwest — and Austell has been part of our regular service area for years. Same crew chief through the whole job, and a real phone number that we answer.',
+    a: 'We are based in Dallas, GA — about 20 miles northwest — and Austell has been part of our regular service area for years. Same crew chief through the whole job, and a real phone number that we answer.',
   },
 ];
 

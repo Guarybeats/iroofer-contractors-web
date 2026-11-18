@@ -8,8 +8,8 @@ import { FaqSchema } from '@/components/LocalSeo';
 
 // Hail-specific landing page for Dallas, GA + Paulding County (added 2026-10-10).
 // Copy rules: only verifiable facts. Business facts limited to what Cristian has
-// confirmed (152 Freedom Dr, (470) 236-1410, 5.0 Google rating, family-owned since
-// 2019, Owens Corning Contractor Rewards member, free inspections, same-day tarping
+// confirmed (Dallas, GA, city-level only; (470) 236-1410, 5.0 Google rating, family-owned since
+// 2019, Owens Corning Contractor Rewards member, free inspections, emergency tarping
 // when schedule allows). No review counts, job counts or invented stats.
 // Georgia law references checked 2026-10-10:
 //   O.C.G.A. § 10-1-393.12 (FindLaw text): 5-business-day cancel right after a written
@@ -103,7 +103,7 @@ const faqs = [
   },
   {
     q: 'Do you do hail damage roof inspections near me in Hiram and Paulding County?',
-    a: 'Yes. We are based at 152 Freedom Dr in Dallas, GA 30157 and inspect roofs across Paulding County, including Dallas and Hiram, and nearby Powder Springs and Acworth. The inspection is free. Call (470) 236-1410 to get on the schedule.',
+    a: 'Yes. We are based in Dallas, GA and inspect roofs across Paulding County, including Dallas and Hiram, and nearby Powder Springs and Acworth. The inspection is free. Call (470) 236-1410 to get on the schedule.',
   },
 ];
 
@@ -130,7 +130,7 @@ const serviceSchema = {
   serviceType: 'Hail damage roof repair',
   url: absoluteUrl(PATH),
   description:
-    'Free hail damage roof inspections with photo documentation, same-day tarping when schedule allows, and repair or replacement for homeowners in Dallas, GA and Paulding County.',
+    'Free hail damage roof inspections with photo documentation, emergency tarping when the schedule allows, and repair or replacement for homeowners in Dallas, GA and Paulding County.',
   provider: {
     '@type': ['RoofingContractor', 'LocalBusiness'],
     '@id': `${brand.url}/#business`,
@@ -138,7 +138,6 @@ const serviceSchema = {
     telephone: brand.phone,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '152 Freedom Dr',
       addressLocality: 'Dallas',
       addressRegion: 'GA',
       postalCode: '30157',
@@ -174,7 +173,7 @@ export default function HailDamagePage() {
                 Hail Damage Roof Repair in Dallas, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
-                Book a free hail damage roof inspection in Dallas, GA (30157 and 30132) and across Paulding County, including Hiram. iRoofer Contractors is a family-owned roofer based at 152 Freedom Dr in Dallas, Georgia. After a storm we inspect your roof, photograph exactly what we find, and tell you plainly whether it looks like an insurance claim, a simple hail damage roof repair, or nothing to worry about.
+                Book a free hail damage roof inspection in Dallas, GA (30157 and 30132) and across Paulding County, including Hiram. iRoofer Contractors is a family-owned roofer based in Dallas, Georgia. After a storm we inspect your roof, photograph exactly what we find, and tell you plainly whether it looks like an insurance claim, a simple hail damage roof repair, or nothing to worry about.
               </p>
               <div className="cta" style={{ marginTop: 28 }}>
                 <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>{brand.phone}</a>
@@ -218,7 +217,7 @@ export default function HailDamagePage() {
               ))}
             </ol>
             <p style={p}>
-              If a storm has opened the roof and water is entering now, go straight to our <Link href="/emergency-roof-repair-dallas-ga/" style={a}>emergency roof repair</Link> page or call {brand.phone}. We tarp the same day when the schedule and safe access allow.
+              If a storm has opened the roof and water is entering now, go straight to our <Link href="/emergency-roof-repair-dallas-ga/" style={a}>emergency roof repair</Link> page or call {brand.phone}. We put on an emergency tarp as soon as the schedule and safe access allow.
             </p>
           </div>
 
@@ -277,7 +276,7 @@ export default function HailDamagePage() {
               ))}
             </ul>
             <p style={p}>
-              Waiving a deductible is not a favor. The Georgia Secretary of State warns that inflating a quote to cover your deductible can be insurance fraud under O.C.G.A. § 33-1-9, for the homeowner as well as the contractor. Before you sign, look the company up on the Georgia Secretary of State website, ask for proof of insurance, get the estimate in writing, and make sure there is a local address you can drive to. Ours is 152 Freedom Dr, Dallas, GA 30157, and you can reach us at {brand.phone}.
+              Waiving a deductible is not a favor. The Georgia Secretary of State warns that inflating a quote to cover your deductible can be insurance fraud under O.C.G.A. § 33-1-9, for the homeowner as well as the contractor. Before you sign, look the company up on the Georgia Secretary of State website, ask for proof of insurance, get the estimate in writing, and make sure there is a local address you can drive to. Ours is in Dallas, GA, and you can reach us at {brand.phone}.
             </p>
           </div>
 

@@ -73,7 +73,7 @@ function buildTools() {
           website: ORIGIN,
           basedIn: brand.location,
           hours: brand.hours.full,
-          emergency: "Storm / active-leak response during shop hours; same-day when schedule allows",
+          emergency: "Storm / active-leak response during shop hours; as soon as the schedule allows",
           credentials: [
             "Owens Corning Contractor Rewards Member",
             `Family-owned since ${brand.founded}`,
@@ -243,8 +243,8 @@ function buildTools() {
           dial: `tel:${tel}`,
           hours: brand.hours.full,
           emergency: input?.urgent
-            ? "Active leak or storm damage: call now — we prioritize these as fast as crews allow and can often tarp same day when the schedule allows. Shop hours Mon–Fri 9–7 / Sat 9–5; not a 24/7 promise."
-            : "Standard hours above. For active leaks, call and we will prioritize as fast as crews allow — same-day when schedule allows.",
+            ? "Active leak or storm damage: call now — we prioritize these as fast as crews allow and can often get an emergency tarp on when the schedule allows. Shop hours Mon–Fri 9–7 / Sat 9–5; not a 24/7 promise."
+            : "Standard hours above. For active leaks, call and we will prioritize as fast as crews allow — as soon as the schedule allows.",
         });
       },
     },

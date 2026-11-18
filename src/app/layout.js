@@ -218,7 +218,7 @@ export default function RootLayout({ children }) {
                 <h2>Get in touch</h2>
                 <a href={`tel:${brand.phone}`}>{brand.phone}</a>
                 <a href={`mailto:${brand.email}`}>{brand.email}</a>
-                <a href="/contact/">152 Freedom Dr<br />Dallas, GA 30157</a>
+                <a href="/contact/">Dallas, GA</a>
                 <p className="lic foot-hours">
                   {brand.hours.weekdays}<br />
                   {brand.hours.saturday}<br />

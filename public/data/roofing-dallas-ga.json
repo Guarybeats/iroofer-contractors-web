@@ -6,7 +6,6 @@
       "LocalBusiness"
     ],
     "address": {
-      "streetAddress": "152 Freedom Dr",
       "addressLocality": "Dallas",
       "addressRegion": "GA",
       "postalCode": "30157",
@@ -42,7 +41,7 @@
     },
     {
       "name": "Storm & Hail Damage",
-      "summary": "Free inspections, same-day emergency tarping, insurance documentation."
+      "summary": "Free inspections, emergency tarping, insurance documentation."
     },
     {
       "name": "Gutter Repair & Replacement",

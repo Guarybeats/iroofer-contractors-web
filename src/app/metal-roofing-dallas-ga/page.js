@@ -71,7 +71,7 @@ const serviceSchema = {
     '@id': `${brand.url}/#business`,
     name: brand.name,
     telephone: brand.phone,
-    address: { '@type': 'PostalAddress', streetAddress: '152 Freedom Dr', addressLocality: 'Dallas', addressRegion: 'GA', postalCode: '30157', addressCountry: 'US' },
+    address: { '@type': 'PostalAddress', addressLocality: 'Dallas', addressRegion: 'GA', postalCode: '30157', addressCountry: 'US' },
   },
   areaServed: [
     { '@type': 'City', name: 'Dallas', containedInPlace: { '@type': 'AdministrativeArea', name: 'Paulding County' } },

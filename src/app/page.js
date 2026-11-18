@@ -41,7 +41,7 @@ const svcs = [
   { n: '03', title: 'New Construction', tag: 'Builders', img: '/assets/service-newconstruction.jpg?v=2', w: 900, h: 1350,
     href: '/services/new-construction/', cta: 'Talk to a local roofer',
     body: 'We work with builders and homeowners on new homes. We put on a roof that fits the design and the budget. It meets code, gets inspected, and is built to last.' },
-  { n: '04', title: 'Storm & Insurance Claims', tag: 'Same-day when schedule allows', img: '/assets/service-repair.jpg?v=3', w: 900, h: 600,
+  { n: '04', title: 'Storm & Insurance Claims', tag: 'Emergency tarping', img: '/assets/service-repair.jpg?v=3', w: 900, h: 600,
     href: '/storm-damage-roof-repair-dallas-ga/', cta: 'Storm damage roof repair Dallas',
     body: 'We take photos of hail and wind damage and write up what needs fixing. We meet your insurance adjuster at the house. If they miss items, we ask them to add them. We help with the paperwork, so you don’t pay up front for what the claim should cover.' },
   { n: '05', title: 'Gutter Repair & Replacement', tag: 'Protection', img: '/assets/service-gutters-main.jpg?v=2', w: 1024, h: 559,
@@ -64,7 +64,7 @@ const faqs = [
   { q: 'Looking for a Dallas roofing contractor?', a: 'Pick the service you need: repair, new roof, or storm. You can also call (470) 236-1410 or use https://iroofercontractors.com/contact/.' },
   { q: 'How long does a full replacement take?', a: 'It depends on the size and steepness of the roof, how many old layers come off, wood repairs, and weather. We give you a real schedule in writing before we start.' },
   { q: 'Do I need to be home during the work?', a: 'No. All the work is outside. We text you photos as we go and walk the job with you when you’re free. We sweep for nails with a magnet on every new roof.' },
-  { q: 'Are you based in Dallas, or just advertising here?', a: 'We are based here, at 152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019.' },
+  { q: 'Are you based in Dallas, or just advertising here?', a: 'We are based here in Dallas, GA. Family-owned since 2019.' },
   { q: 'Do you publish prices here?', a: 'No. Every roof is different. You get a real price in writing after a free roof check. Ask for one at https://iroofercontractors.com/contact/ or call (470) 236-1410.' },
   { q: 'What do Georgia storms do to roofs here?', a: 'Spring and summer bring hail, strong winds, and falling limbs. That can mean dented shingles, lost shingle grit, loose flashing, and hidden leaks that show up weeks later. A free roof check catches them early.' },
   { q: 'Which areas do you serve around Dallas, GA?', a: 'Dallas, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, Austell, Mableton, Lithia Springs, Roswell, Alpharetta, Canton, plus greater west Metro Atlanta (Paulding, Douglas, and Cobb counties).' },
@@ -117,7 +117,7 @@ export default function HomePage() {
             <div className="stat"><div className="num">2019</div><div className="lbl">Family-owned in Dallas since</div></div>
             <div className="stat"><div className="num">Free</div><div className="lbl">No-pressure roof inspections</div></div>
             <div className="stat"><div className="num">Local</div><div className="lbl">Owens Corning Contractor Rewards Member</div></div>
-            <div className="stat"><div className="num">Real</div><div className="lbl">Crew — not a call center</div></div>
+            <div className="stat"><div className="num">Licensed</div><div className="lbl">and insured</div></div>
           </div>
         </div>
       </div>

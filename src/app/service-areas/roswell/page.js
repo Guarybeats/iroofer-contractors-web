@@ -78,7 +78,7 @@ const faq = [
   },
   {
     q: 'How long does a two-story Roswell roof replacement take?',
-    a: 'It depends on the roof: steep two-story elevations, multiple roof planes, or deck repairs found at tear-off all add time. We tell you the expected window at the estimate and let you know the same day if anything under the shingles changes it.',
+    a: 'It depends on the roof: steep two-story elevations, multiple roof planes, or deck repairs found at tear-off all add time. We tell you the expected window at the estimate and let you know right away if anything under the shingles changes it.',
   },
   {
     q: 'Can you help with a Roswell storm claim after wind or hail?',

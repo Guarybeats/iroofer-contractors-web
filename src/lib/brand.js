@@ -108,16 +108,16 @@ export const services = [
     slug: 'storm-damage-roof-repair',
     title: 'Storm Damage Roof Repair',
     metaDesc:
-      'Wind, hail and limb damage is easy to miss from the ground. Free inspection, same-day tarping, and full documentation for your claim.',
-    tagline: 'Storm response across west Metro Atlanta — same-day when schedule allows.',
+      'Wind, hail and limb damage is easy to miss from the ground. Free inspection, emergency tarping, and full documentation for your claim.',
+    tagline: 'Storm response across west Metro Atlanta.',
     image: '/assets/storm-damage.jpg?v=2',
     webp: '/assets/storm-damage.webp?v=2',
     imageAlt: 'Storm damage roof inspection and repair after hail and wind in west Metro Atlanta',
     summary:
-      'Wind, hail, and fallen limbs do damage that is easy to miss from the ground. We inspect free, tarp the same day when a roof is open to the weather, and document everything you need for your claim.',
+      'Wind, hail, and fallen limbs do damage that is easy to miss from the ground. We inspect free, put on an emergency tarp when a roof is open to the weather, and document everything you need for your claim.',
     bullets: [
       'Free post-storm roof inspection',
-      'Same-day emergency tarping',
+      'Emergency tarping',
       'Hail and wind damage documentation for your claim',
       'Full repair or replacement once the claim is settled'
     ]
@@ -174,7 +174,7 @@ export function getService(slug) {
 // the winner unpredictably. Adding a city here without a page (or path override)
 // means the service-areas index links to a 404.
 export const cities = [
-  { slug: 'dallas-ga', name: 'Dallas', state: 'GA', county: 'Paulding County', path: '/', blurb: 'our home base — same-day roof inspections across Dallas and across the county line.',
+  { slug: 'dallas-ga', name: 'Dallas', state: 'GA', county: 'Paulding County', path: '/', blurb: 'our home base — free roof inspections across Dallas and across the county line.',
     localNote: 'As the town we call home, Dallas homeowners get priority scheduling and the crew chief on every job. From historic downtown to the new subdivisions off Hwy 92, we know the rooflines here.' },
   { slug: 'douglasville', name: 'Douglasville', state: 'GA', county: 'Douglas County', blurb: 'fast storm-response and full replacements for Douglasville homeowners.',
     localNote: 'Douglasville sees its share of spring straight-line winds off the ridge. We document hail and wind damage for your insurance claim and rebuild to manufacturer spec.' },
@@ -189,7 +189,7 @@ export const cities = [
   { slug: 'kennesaw', name: 'Kennesaw', state: 'GA', county: 'Cobb County', blurb: 'local, family-owned roofing for Kennesaw homes.',
     localNote: 'Kennesaw homeowners rely on us for honest pricing and a real person on the phone — no call center, no surprise line items.' },
   { slug: 'austell', name: 'Austell', state: 'GA', county: 'Cobb County', blurb: 'emergency tarping and honest estimates for Austell property owners.',
-    localNote: 'When a storm hits Austell we tarp the same day and meet your adjuster on-site, so your claim is documented before the next rain.' },
+    localNote: 'When a storm hits Austell we put on emergency tarps and meet your adjuster on-site, so your claim is documented before the next rain.' },
   { slug: 'mableton', name: 'Mableton', state: 'GA', county: 'Cobb County', combo: false, blurb: 'roof repair, replacement, storm claims and gutters across south Cobb’s newest city.',
     localNote: 'Mableton became a city in 2022, and since March 2025 the City of Mableton issues building permits inside city limits. We confirm whether your address goes to the city or to Cobb County and pull the right permit, whether the house is a mid-century ranch off Floyd Road or a newer subdivision near the Silver Comet Trail.' },
   { slug: 'lithia-springs', name: 'Lithia Springs', state: 'GA', county: 'Douglas County', combo: false, blurb: 'storm inspections, roof repair, replacement and gutters along the I-20 corridor.',

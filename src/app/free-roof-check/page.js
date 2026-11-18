@@ -132,7 +132,7 @@ export default function FreeRoofCheckPage() {
               Water coming in right now? Call us and say so. See <Link href="/emergency-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>emergency roof repair</Link>.
             </p>
             <p style={{ color: '#52606b', marginTop: 12 }}>
-              {brand.name} · 152 Freedom Dr, Dallas, GA 30157 · <a href={`tel:${brand.phone}`} style={{ color: 'var(--orange)', fontWeight: 700 }}>{brand.phone}</a>
+              {brand.name} · Dallas, GA · <a href={`tel:${brand.phone}`} style={{ color: 'var(--orange)', fontWeight: 700 }}>{brand.phone}</a>
             </p>
             <p style={{ marginTop: 12, fontSize: '.95rem' }}>
               More help: <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof repair</Link>

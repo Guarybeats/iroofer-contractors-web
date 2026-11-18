@@ -26,7 +26,7 @@ export default function PrivacyPage() {
           <h2 style={{ color: 'var(--ink)', fontSize: '1.35rem', marginTop: 28 }}>Who we are</h2>
           <p>
             {brand.name}<br />
-            152 Freedom Dr, Dallas, GA 30157<br />
+            Dallas, GA<br />
             Phone: <a href={`tel:${brand.phone}`}>{brand.phone}</a><br />
             Email: <a href={`mailto:${brand.email}`}>{brand.email}</a>
           </p>

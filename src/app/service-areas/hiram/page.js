@@ -23,7 +23,7 @@ export const metadata = {
 };
 
 const intro = [
-  'Hiram is a short drive from our shop at 152 Freedom Dr in Dallas, and it’s part of our regular service area. iRoofer Contractors is family-owned since 2019. Below you’ll find the right page for what your roof needs: a repair, an inspection, a full replacement, storm help, or gutters.',
+  'Hiram is a short drive from our shop in Dallas, and it’s part of our regular service area. iRoofer Contractors is family-owned since 2019. Below you’ll find the right page for what your roof needs: a repair, an inspection, a full replacement, storm help, or gutters.',
   'Not sure which one it is? That’s what the free inspection is for. Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
 ];
 
@@ -78,7 +78,7 @@ const neighborhoods = [
 const faq = [
   {
     q: 'Are you based in Hiram?',
-    a: 'We’re based in Dallas (152 Freedom Dr) and serve Hiram regularly. Same crew, same standards.',
+    a: 'We’re based in Dallas and serve Hiram regularly. Same crew, same standards.',
   },
   {
     q: 'Which page should I use: repair, inspection or replacement?',
