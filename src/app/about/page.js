@@ -63,7 +63,7 @@ export default function AboutPage() {
           <div className="faq-grid" style={{ alignItems: 'center' }}>
             <div className="rv">
               <span className="eyebrow dark">About us</span>
-              <h1 style={{ fontSize: 'clamp(2.2rem,4.4vw,3.4rem)', fontWeight: 900 }}>About iRoofer Contractors — Cristian Mendez &amp; Crew</h1>
+              <h1 style={{ fontSize: 'clamp(2.2rem,4.4vw,3.4rem)', fontWeight: 900 }}>About iRoofer Contractors</h1>
               <p style={{ color: '#52606b', fontSize: '1.05rem', marginTop: 16 }}>
                 iRoofer Contractors is a family-owned roofing company based in Dallas, GA. Owner {brand.owner} started it in 2019. He wanted homeowners west of Atlanta to have a local crew that shows up, tells the truth about the roof, and stands behind the work. We install Owens Corning shingles as an Owens Corning Contractor Rewards member.
               </p>
