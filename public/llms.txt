@@ -1,78 +1,133 @@
 # iRoofer Contractors
 
-> Family-owned roofing contractor in Dallas, Georgia, providing roof repair, replacement, new-construction roofing, storm and hail damage restoration with insurance-claim support, and gutter work across the west Atlanta metro.
+> Family-owned roofing contractor in Dallas, Georgia (Paulding County), serving the west Atlanta metro since 2019: roof repair, roof replacement, storm and hail damage, insurance-claim documentation, new-construction roofing, gutters, siding and exterior painting.
 
-iRoofer Contractors is a local, family-owned roofing company based in Dallas, Georgia (Paulding County), serving the west Atlanta metro since 2019. It handles roof repair, full roof replacement, new-construction roofing, storm and hail damage restoration, insurance-claim support, and gutter repair/replacement. It offers free inspections with no-pressure written quotes; reviews are on its Google Business Profile.
+iRoofer Contractors is run by owner Cristian Mendez. It offers free roof inspections with no-pressure written quotes, photo documentation for insurance claims, and emergency tarping after storms when the schedule and safe access allow. It is licensed and insured and an Owens Corning Contractor Rewards member. No prices are published; a free inspection gives a written figure. Reviews are on its Google Business Profile.
 
-## Services
-- [Roof Repair](https://iroofercontractors.com/roof-repair-dallas-ga/): leak and storm-damage fixes, flashing, vent, and shingle repair across the Atlanta metro.
-- [Roof Replacement](https://iroofercontractors.com/roof-replacement-dallas-ga/): full tear-off and re-roof with architectural asphalt shingles installed by an Owens Corning Contractor Rewards member, manufacturer standard warranty on the shingles plus a written workmanship guarantee.
-- [New Construction](https://iroofercontractors.com/services/new-construction/): roof installation for builders and homeowners on new builds.
-- [Hail Damage Roof Repair, Dallas GA](https://iroofercontractors.com/hail-damage-roof-repair-dallas-ga/): free hail damage inspections, photo documentation and Georgia claim guidance for Dallas and Paulding County.
-- [Storm & Hail Damage](https://iroofercontractors.com/storm-damage-roof-repair-dallas-ga/): free inspections, emergency tarping, insurance documentation, and adjuster meetings.
-- [Gutter Repair & Replacement](https://iroofercontractors.com/gutter-repair-replacement-dallas-ga/): repair, realignment, and replacement of gutters and downspouts.
+## AI and LLM access
 
-## Key Pages
-- [Home](https://iroofercontractors.com/)
-- [Services overview](https://iroofercontractors.com/services/)
-- [Free quote / contact](https://iroofercontractors.com/contact/)
-- [About](https://iroofercontractors.com/about/)
-- [Blog (guides & checklists)](https://iroofercontractors.com/blog/)
-- [Service areas](https://iroofercontractors.com/service-areas/)
+All public content on iroofercontractors.com may be read by AI models and LLMs and used for indexing, ranking, and answers, with no restrictions. This file is a guide to the site, not an access control; crawler rules are in https://iroofercontractors.com/robots.txt.
 
-## Service Areas
-Dallas, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, Austell, Mableton, Lithia Springs, Roswell, Alpharetta, and Canton, Georgia, plus greater west Metro Atlanta (Paulding, Douglas, Cobb, Fulton, Cherokee counties).
+## Key pages
+- [Home](https://iroofercontractors.com/): services overview, storm and insurance process, FAQs
+- [Services](https://iroofercontractors.com/services/): all services
+- [Free Roof Check](https://iroofercontractors.com/free-roof-check/): book a free roof inspection; includes a repair-or-replace quiz
+- [Get a Roof Estimate](https://iroofercontractors.com/estimator/): request a free written estimate
+- [Contact](https://iroofercontractors.com/contact/): call, text, email or send a request
+- [About](https://iroofercontractors.com/about/): owner, crew and how we work
+- [Reviews](https://iroofercontractors.com/reviews/): customer reviews
+- [Service areas](https://iroofercontractors.com/service-areas/): cities we serve
+- [Blog](https://iroofercontractors.com/blog/): homeowner guides and checklists
 
-- [Dallas, GA](https://iroofercontractors.com/)
-- [Douglasville](https://iroofercontractors.com/service-areas/douglasville/)
-- [Hiram](https://iroofercontractors.com/service-areas/hiram/)
-- [Powder Springs](https://iroofercontractors.com/service-areas/powder-springs/)
-- [Marietta](https://iroofercontractors.com/service-areas/marietta/)
-- [Kennesaw](https://iroofercontractors.com/service-areas/kennesaw/)
-- [Acworth](https://iroofercontractors.com/service-areas/acworth/)
-- [Austell](https://iroofercontractors.com/service-areas/austell/)
-- [Mableton](https://iroofercontractors.com/service-areas/mableton/)
-- [Lithia Springs](https://iroofercontractors.com/service-areas/lithia-springs/)
-- [Roswell](https://iroofercontractors.com/service-areas/roswell/)
-- [Alpharetta](https://iroofercontractors.com/service-areas/alpharetta/)
-- [Canton](https://iroofercontractors.com/service-areas/canton/)
-
-## Service-by-City Landing Pages
-Roof repair, roof replacement, new construction, storm damage roof repair and gutter repair/replacement each have a dedicated page for Dallas GA, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth and Austell, following the pattern `https://iroofercontractors.com/<service>-<city>/`.
-
+## Services (Dallas, GA)
 - [Roof Repair Dallas GA](https://iroofercontractors.com/roof-repair-dallas-ga/)
-- [Roof Replacement Marietta](https://iroofercontractors.com/roof-replacement-marietta/)
-- [Storm Damage Roof Repair Kennesaw](https://iroofercontractors.com/storm-damage-roof-repair-kennesaw/)
+- [Roof Leak Repair Dallas GA](https://iroofercontractors.com/roof-leak-repair-dallas-ga/)
+- [Roof Replacement Dallas GA](https://iroofercontractors.com/roof-replacement-dallas-ga/)
+- [Storm Damage Roof Repair Dallas GA](https://iroofercontractors.com/storm-damage-roof-repair-dallas-ga/)
+- [Hail Damage Roof Repair Dallas GA](https://iroofercontractors.com/hail-damage-roof-repair-dallas-ga/)
+- [Emergency Roof Repair Dallas GA](https://iroofercontractors.com/emergency-roof-repair-dallas-ga/)
+- [Metal Roofing Dallas GA](https://iroofercontractors.com/metal-roofing-dallas-ga/)
+- [Gutter Repair & Replacement Dallas GA](https://iroofercontractors.com/gutter-repair-replacement-dallas-ga/)
+- [Siding Dallas GA](https://iroofercontractors.com/siding-dallas-ga/)
+- [Exterior Painting Dallas GA](https://iroofercontractors.com/exterior-painting-dallas-ga/)
+- [Roof Inspection](https://iroofercontractors.com/services/roof-inspection/)
+- [Roof Insurance Claims](https://iroofercontractors.com/services/roof-insurance-claims/)
+- [New Construction](https://iroofercontractors.com/services/new-construction/)
+- [Paulding County Roofing](https://iroofercontractors.com/paulding-county-roofing/)
+
+## City pages
+- [Acworth, GA](https://iroofercontractors.com/service-areas/acworth/)
+- [Alpharetta, GA](https://iroofercontractors.com/service-areas/alpharetta/)
+- [Austell, GA](https://iroofercontractors.com/service-areas/austell/)
+- [Canton, GA](https://iroofercontractors.com/service-areas/canton/)
+- [Douglasville, GA](https://iroofercontractors.com/service-areas/douglasville/)
+- [Hiram, GA](https://iroofercontractors.com/service-areas/hiram/)
+- [Kennesaw, GA](https://iroofercontractors.com/service-areas/kennesaw/)
+- [Lithia Springs, GA](https://iroofercontractors.com/service-areas/lithia-springs/)
+- [Mableton, GA](https://iroofercontractors.com/service-areas/mableton/)
+- [Marietta, GA](https://iroofercontractors.com/service-areas/marietta/)
+- [Powder Springs, GA](https://iroofercontractors.com/service-areas/powder-springs/)
+- [Roswell, GA](https://iroofercontractors.com/service-areas/roswell/)
+
+## Service-by-city pages
+- [Exterior Painting Acworth](https://iroofercontractors.com/exterior-painting-acworth/)
+- [Exterior Painting Austell](https://iroofercontractors.com/exterior-painting-austell/)
+- [Exterior Painting Douglasville](https://iroofercontractors.com/exterior-painting-douglasville/)
+- [Exterior Painting Hiram](https://iroofercontractors.com/exterior-painting-hiram/)
+- [Exterior Painting Kennesaw](https://iroofercontractors.com/exterior-painting-kennesaw/)
+- [Exterior Painting Marietta](https://iroofercontractors.com/exterior-painting-marietta/)
+- [Exterior Painting Powder Springs](https://iroofercontractors.com/exterior-painting-powder-springs/)
 - [Gutter Repair & Replacement Acworth](https://iroofercontractors.com/gutter-repair-replacement-acworth/)
+- [Gutter Repair & Replacement Austell](https://iroofercontractors.com/gutter-repair-replacement-austell/)
+- [Gutter Repair & Replacement Douglasville](https://iroofercontractors.com/gutter-repair-replacement-douglasville/)
+- [Gutter Repair & Replacement Hiram](https://iroofercontractors.com/gutter-repair-replacement-hiram/)
+- [Gutter Repair & Replacement Kennesaw](https://iroofercontractors.com/gutter-repair-replacement-kennesaw/)
+- [Gutter Repair & Replacement Marietta](https://iroofercontractors.com/gutter-repair-replacement-marietta/)
+- [Gutter Repair & Replacement Powder Springs](https://iroofercontractors.com/gutter-repair-replacement-powder-springs/)
+- [New Construction Acworth](https://iroofercontractors.com/new-construction-acworth/)
+- [New Construction Austell](https://iroofercontractors.com/new-construction-austell/)
+- [New Construction Douglasville](https://iroofercontractors.com/new-construction-douglasville/)
+- [New Construction Hiram](https://iroofercontractors.com/new-construction-hiram/)
+- [New Construction Kennesaw](https://iroofercontractors.com/new-construction-kennesaw/)
+- [New Construction Marietta](https://iroofercontractors.com/new-construction-marietta/)
+- [New Construction Powder Springs](https://iroofercontractors.com/new-construction-powder-springs/)
+- [Roof Replacement Acworth](https://iroofercontractors.com/roof-replacement-acworth/)
+- [Roof Replacement Austell](https://iroofercontractors.com/roof-replacement-austell/)
+- [Roof Replacement Douglasville](https://iroofercontractors.com/roof-replacement-douglasville/)
+- [Roof Replacement Hiram](https://iroofercontractors.com/roof-replacement-hiram/)
+- [Roof Replacement Kennesaw](https://iroofercontractors.com/roof-replacement-kennesaw/)
+- [Roof Replacement Marietta](https://iroofercontractors.com/roof-replacement-marietta/)
+- [Roof Replacement Powder Springs](https://iroofercontractors.com/roof-replacement-powder-springs/)
+- [Siding Acworth](https://iroofercontractors.com/siding-acworth/)
+- [Siding Austell](https://iroofercontractors.com/siding-austell/)
+- [Siding Douglasville](https://iroofercontractors.com/siding-douglasville/)
+- [Siding Hiram](https://iroofercontractors.com/siding-hiram/)
+- [Siding Kennesaw](https://iroofercontractors.com/siding-kennesaw/)
+- [Siding Marietta](https://iroofercontractors.com/siding-marietta/)
+- [Siding Powder Springs](https://iroofercontractors.com/siding-powder-springs/)
+- [Storm Damage Roof Repair Acworth](https://iroofercontractors.com/storm-damage-roof-repair-acworth/)
+- [Storm Damage Roof Repair Austell](https://iroofercontractors.com/storm-damage-roof-repair-austell/)
+- [Storm Damage Roof Repair Douglasville](https://iroofercontractors.com/storm-damage-roof-repair-douglasville/)
+- [Storm Damage Roof Repair Hiram](https://iroofercontractors.com/storm-damage-roof-repair-hiram/)
+- [Storm Damage Roof Repair Kennesaw](https://iroofercontractors.com/storm-damage-roof-repair-kennesaw/)
+- [Storm Damage Roof Repair Marietta](https://iroofercontractors.com/storm-damage-roof-repair-marietta/)
+- [Storm Damage Roof Repair Powder Springs](https://iroofercontractors.com/storm-damage-roof-repair-powder-springs/)
 
-## Guides & Helpful Articles
-- [Georgia hail storm roof inspection checklist](https://iroofercontractors.com/blog/georgia-hail-storm-roof-checklist/)
-- [Dallas GA hail & storm insurance claims](https://iroofercontractors.com/blog/dallas-ga-hail-storm-insurance-claims/)
-- [When to replace vs repair a roof](https://iroofercontractors.com/blog/when-to-replace-vs-repair-a-roof/)
-- [Cost of a new roof in Dallas GA 2026](https://iroofercontractors.com/blog/cost-of-new-roof-2026-dallas-ga/)
-- [Emergency roof tarping in Dallas](https://iroofercontractors.com/blog/emergency-roof-tarping-dallas/)
-- [Choosing a roofing contractor in Dallas GA](https://iroofercontractors.com/blog/how-to-choose-roofing-contractor-dallas-ga/)
-- [Roof maintenance calendar for Dallas GA](https://iroofercontractors.com/blog/roof-maintenance-calendar-dallas-ga/)
-
-## Agent-Ready Resources
-- [llms.txt (well-known)](https://iroofercontractors.com/.well-known/llms.txt): same machine summary at the emerging standard path.
-- [Canonical "Roofing in Dallas GA" hub](https://iroofercontractors.com/): services, storm/insurance process, FAQs, service area.
-- [Structured local-intel JSON](https://iroofercontractors.com/data/roofing-dallas-ga.json): machine-readable signals on storm season, insurance and service area.
-- [Sitemap](https://iroofercontractors.com/sitemap.xml)
+## Guides
+- [Architectural Vs 3 Tab Shingles](https://iroofercontractors.com/blog/architectural-vs-3-tab-shingles/)
+- [Attic Ventilation Dallas Heat](https://iroofercontractors.com/blog/attic-ventilation-dallas-heat/)
+- [Choosing Roofing Materials Dallas GA](https://iroofercontractors.com/blog/choosing-roofing-materials-dallas-ga/)
+- [Cost Of New Roof 2026 Dallas GA](https://iroofercontractors.com/blog/cost-of-new-roof-2026-dallas-ga/)
+- [Dallas GA Hail Storm Insurance Claims](https://iroofercontractors.com/blog/dallas-ga-hail-storm-insurance-claims/)
+- [Emergency Roof Response Time Dallas](https://iroofercontractors.com/blog/emergency-roof-response-time-dallas/)
+- [Emergency Roof Tarping Dallas](https://iroofercontractors.com/blog/emergency-roof-tarping-dallas/)
+- [Georgia Hail Storm Roof Checklist](https://iroofercontractors.com/blog/georgia-hail-storm-roof-checklist/)
+- [Georgia Winter Roof Inspection](https://iroofercontractors.com/blog/georgia-winter-roof-inspection/)
+- [Gutter Maintenance Dallas GA](https://iroofercontractors.com/blog/gutter-maintenance-dallas-ga/)
+- [Hail Damage Repair Or Replace Georgia](https://iroofercontractors.com/blog/hail-damage-repair-or-replace-georgia/)
+- [How To Choose Roofing Contractor Dallas GA](https://iroofercontractors.com/blog/how-to-choose-roofing-contractor-dallas-ga/)
+- [How To Choose Storm Damage Roofer](https://iroofercontractors.com/blog/how-to-choose-storm-damage-roofer/)
+- [Metal Roofing Pros Cons Dallas](https://iroofercontractors.com/blog/metal-roofing-pros-cons-dallas/)
+- [New Construction Roofing Dallas](https://iroofercontractors.com/blog/new-construction-roofing-dallas/)
+- [Roof Maintenance Calendar Dallas GA](https://iroofercontractors.com/blog/roof-maintenance-calendar-dallas-ga/)
+- [Roof Repair Cost Dallas GA](https://iroofercontractors.com/blog/roof-repair-cost-dallas-ga/)
+- [Roof Replacement Cost Dallas GA](https://iroofercontractors.com/blog/roof-replacement-cost-dallas-ga/)
+- [Roof Warranty What Is Covered](https://iroofercontractors.com/blog/roof-warranty-what-is-covered/)
+- [Skylight Leak Repair Dallas GA](https://iroofercontractors.com/blog/skylight-leak-repair-dallas-ga/)
+- [Solar Panels Roof Dallas GA](https://iroofercontractors.com/blog/solar-panels-roof-dallas-ga/)
+- [Water Stain On Ceiling Roof Leak](https://iroofercontractors.com/blog/water-stain-on-ceiling-roof-leak/)
+- [When To Replace Vs Repair A Roof](https://iroofercontractors.com/blog/when-to-replace-vs-repair-a-roof/)
+- [Wind Damage Roof Repair Dallas](https://iroofercontractors.com/blog/wind-damage-roof-repair-dallas/)
 
 ## Contact
 - Phone: (470) 236-1410
 - Email: iroofercontractors@gmail.com
-- Address: Dallas, GA
-- Hours: MON-FRI 9am-7pm, SAT 9am-5pm, SUN closed
+- Location: Dallas, GA
+- Hours: Mon-Fri 9am-7pm, Sat 9am-5pm, Sun closed
 - [Google Business Profile](https://maps.app.goo.gl/oZg9a1cuNvUi3Ut99)
 
 ## Optional
-Facts LLMs can cite:
-- Founded 2019; family-owned; Dallas, GA based.
-- Reviews: see the Google Business Profile (link above).
-- Owens Corning Contractor Rewards member (we install Owens Corning shingles).
-- Free roof inspections and written quotes; no-pressure sales.
-- Helps homeowners document damage for insurance claims and can meet the adjuster.
-- Emergency tarping after storms when the schedule allows.
-- No prices are published; a free on-site inspection gives a written figure. Pricing varies by size, pitch, material and access.
+- [Sitemap](https://iroofercontractors.com/sitemap.xml)
+- [llms.txt at the well-known path](https://iroofercontractors.com/.well-known/llms.txt)
+- [Privacy](https://iroofercontractors.com/privacy/)
+- [Terms](https://iroofercontractors.com/terms/)

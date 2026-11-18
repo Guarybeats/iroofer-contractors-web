@@ -396,7 +396,7 @@ localCopy['roof-replacement'] = {
       { h: "Building the roof back to spec, not to the cheque",
         p: "When an insurer settles, the scope they write is not always the scope the roof needs — drip edge, ice-and-water at valleys, ridge vent and starter course are the line items most commonly left out. We build the roof correctly and supplement the claim for what the code and the manufacturer actually require, rather than quietly installing to whatever the initial cheque covers. That is the difference between a roof that carries a full manufacturer warranty and one that technically has shingles on it. Douglas County runs its own permitting department, with its own inspection line, and we file there when structural work is in scope." },
       { h: "Layers, decking and the three-layer rule",
-        p: "Older Douglasville homes have often been re-covered at least once. The residential code requires that a roof already carrying three layers be stripped to the deck rather than covered again, and we strip regardless — an overlay makes it impossible to inspect the sheathing you are about to warranty. Once the deck is open we walk it sheet by sheet, replace what is soft, and dry in the same day with synthetic underlayment. Nothing sits open overnight, which in a Douglasville spring is not a small consideration." },
+        p: "Older Douglasville homes have often been re-covered at least once. The residential code requires that a roof already carrying three layers be stripped to the deck rather than covered again, and we strip regardless — an overlay makes it impossible to inspect the sheathing you are about to warranty. Once the deck is open we walk it sheet by sheet, replace what is soft, and dry it in before we leave with synthetic underlayment. Nothing sits open overnight, which in a Douglasville spring is not a small consideration." },
     ],
     faq: [
       { q: "My insurance settled for less than your quote. What now?", a: "That is common and usually fixable. Missing line items — drip edge, valley membrane, ventilation, starter — get supplemented with documentation. We handle that with your adjuster rather than cutting the scope to fit the cheque." },
@@ -548,7 +548,7 @@ localCopy['roof-replacement'] = {
       { q: "Should I replace gutters at the same time as the roof?", a: "Often yes, and it is cheaper done together. If the existing runs are undersized or discharging next to the foundation, a new roof alone has not fixed your actual water problem." },
       { q: "Do I need a permit to replace a roof in Austell?", a: "Austell is under Cobb County. A like-for-like replacement generally does not require one unless structural work is involved. Floodplain permitting is separate and is not triggered by re-roofing." },
       { q: "Does Cobb County offer any flood insurance discount?", a: "Cobb participates in FEMA's Community Rating System at class 7, which earns residents a 15% discount on NFIP premiums. Worth confirming with your carrier that you are getting it." },
-      { q: "How long will my house be exposed?", a: "It is not. We tear off and dry in the same day — we do not leave a deck open overnight, and in this part of Cobb that is not a policy we are flexible about." },
+      { q: "How long will my house be exposed?", a: "It is not. We tear off and dry in before we leave — we do not leave a deck open overnight, and in this part of Cobb that is not a policy we are flexible about." },
       { q: "What does a roof replacement cost in Austell, GA?", a: "Squares, pitch, layer count and decking condition. If drainage work makes sense alongside it we price that separately so you can see both numbers and decide." },
     ],
   },
@@ -961,7 +961,7 @@ localCopy['new-construction'] = {
       { q: "Who pulls the permit on new construction in Dallas?", a: "New construction is fully permitted through Paulding County's Building and Permitting Division, here in Dallas. On builder projects it is typically part of the overall building permit; we coordinate our inspections into it." },
       { q: "Can I choose the shingle on a spec build?", a: "If you are the buyer, usually yes, and earlier is better. Colour and profile are far easier to change before material is ordered than after the first squares are on the roof." },
       { q: "Is ventilation included?", a: "It is designed in, not added on. New construction is the one chance to balance intake and exhaust properly from the framing stage, and it is what determines how long the roof actually lasts." },
-      { q: "What warranty comes with a new construction roof?", a: "The Owens Corning manufacturer warranty, which depends on installing to their specification, plus our workmanship warranty. We register it in the homeowner's name at completion." },
+      { q: "What warranty comes with a new construction roof?", a: "The Owens Corning manufacturer warranty, which depends on installing to their specification. We register it in the homeowner's name at completion." },
     ],
   },
   'hiram': {
