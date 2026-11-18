@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     q: 'Where are you located?',
-    a: 'Dallas, GA. Family-owned since 2019.',
+    a: '152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019.',
   },
 
   {
@@ -69,7 +69,7 @@ export default function ContactPage() {
               </div>
               <div className="row">
                 <span className="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" /></svg></span>
-                <div><div className="lbl">Shop &amp; office</div><span className="val">{brand.location}</span></div>
+                <div><div className="lbl">Shop &amp; office</div><span className="val">152 Freedom Dr, Dallas, GA 30157</span></div>
               </div>
             </div>
           </div>
@@ -87,7 +87,7 @@ export default function ContactPage() {
           <div className="rv" style={{ marginTop: 28, maxWidth: 820, background: '#fff', border: '1px solid rgba(22,29,37,.08)', borderRadius: 8, padding: '1.4rem 1.6rem' }}>
             <h2 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: 8 }}>You’re contacting a real Dallas shop</h2>
             <p style={{ color: '#52606b', lineHeight: 1.75, margin: 0 }}>
-              iRoofer Contractors is family-owned since 2019, based in Dallas, GA. Tell us if you need a roof repair, a new roof, storm photos, or an emergency tarp. We’ll call you back with clear next steps. Prefer the phone? Call{' '}
+              iRoofer Contractors is family-owned since 2019, based at 152 Freedom Dr, Dallas, GA 30157. Tell us if you need a roof repair, a new roof, storm photos, or an emergency tarp. We’ll call you back with clear next steps. Prefer the phone? Call{' '}
               <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>.
               {' '}We install Owens Corning shingles as an Owens Corning Contractor Rewards member.
             </p>
