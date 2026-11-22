@@ -2,7 +2,6 @@
 export const brand = {
   name: 'iRoofer Contractors',
   shortName: 'iRoofer',
-  owner: 'Cristian Mendez',
   founded: 2019,
   tagline: 'Local, family-owned roofing you can trust',
   location: 'Dallas, GA',

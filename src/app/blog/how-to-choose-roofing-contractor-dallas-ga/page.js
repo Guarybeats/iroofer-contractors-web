@@ -79,7 +79,7 @@ export default function BlogPostPage() {
             <ul>
               <li>Local since 2019 — Dallas, GA based, not a storm-chaser satellite office</li>
               <li>Owens Corning Contractor Rewards member — we install Owens Corning shingles</li>
-              <li>Family-owned, led by owner Cristian Mendez — you talk to a real person at (470) 236-1410</li>
+              <li>Family-owned — you talk to a real person at (470) 236-1410</li>
               <li>Written scope and pricing after a free inspection</li>
             </ul>
 

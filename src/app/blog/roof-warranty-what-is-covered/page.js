@@ -103,7 +103,7 @@ export default function BlogPostPage() {
             <ul>
               <li><Link href="/roof-replacement-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof replacement in Dallas, GA</Link> — when a new install is the right conversation</li>
               <li><Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Roof repair in Dallas, GA</Link> — when a targeted fix is enough</li>
-              <li><Link href="/about/" style={{ color: 'var(--orange)', fontWeight: 700 }}>About iRoofer</Link> — who stands behind the work (Cristian Mendez, Dallas, GA)</li>
+              <li><Link href="/about/" style={{ color: 'var(--orange)', fontWeight: 700 }}>About iRoofer</Link> — who stands behind the work (Dallas, GA)</li>
               <li><Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Contact</Link></li>
             </ul>
 

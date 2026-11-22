@@ -228,7 +228,7 @@ export default function QuoteForm({
             pattern="\d{5}(-\d{4})?"
             minLength={5}
             maxLength={10}
-            placeholder="30132"
+            placeholder="30157"
             className={errors.zip ? "err" : ""}
             aria-invalid={errors.zip ? "true" : "false"}
             aria-describedby={`${id}-zip-error`}

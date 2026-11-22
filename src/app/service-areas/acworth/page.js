@@ -50,7 +50,7 @@ const sections = [
   {
     h2: 'Nearby and why a Dallas shop covers Acworth',
     paras: [
-      'Kennesaw, Marietta, Canton edges, and the Dallas hub — /service-areas/kennesaw/, /service-areas/marietta/, /service-areas/, /. Cristian Mendez’s crew runs the same cleanup standards (magnetic nail sweeps, daily tidy) whether the job is five minutes or a longer drive from our Dallas shop.',
+      'Kennesaw, Marietta, Canton edges, and the Dallas hub — /service-areas/kennesaw/, /service-areas/marietta/, /service-areas/, /. Our crew runs the same cleanup standards (magnetic nail sweeps, daily tidy) whether the job is five minutes or a longer drive from our Dallas shop.',
     ],
   },
 ];

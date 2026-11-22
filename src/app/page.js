@@ -64,7 +64,7 @@ const faqs = [
   { q: 'Looking for a Dallas roofing contractor?', a: 'Pick the service you need: repair, new roof, or storm. You can also call (470) 236-1410 or use https://iroofercontractors.com/contact/.' },
   { q: 'How long does a full replacement take?', a: 'It depends on the size and steepness of the roof, how many old layers come off, wood repairs, and weather. We give you a real schedule in writing before we start.' },
   { q: 'Do I need to be home during the work?', a: 'No. All the work is outside. We text you photos as we go and walk the job with you when you’re free. We sweep for nails with a magnet on every new roof.' },
-  { q: 'Are you based in Dallas, or just advertising here?', a: 'We are based here in Dallas, GA. Family-owned since 2019.' },
+  { q: 'Are you based in Dallas, or just advertising here?', a: 'We are based here, at 152 Freedom Dr, Dallas, GA 30157. Family-owned since 2019.' },
   { q: 'Do you publish prices here?', a: 'No. Every roof is different. You get a real price in writing after a free roof check. Ask for one at https://iroofercontractors.com/contact/ or call (470) 236-1410.' },
   { q: 'What do Georgia storms do to roofs here?', a: 'Spring and summer bring hail, strong winds, and falling limbs. That can mean dented shingles, lost shingle grit, loose flashing, and hidden leaks that show up weeks later. A free roof check catches them early.' },
   { q: 'Which areas do you serve around Dallas, GA?', a: 'Dallas, Douglasville, Hiram, Powder Springs, Marietta, Kennesaw, Acworth, Austell, Mableton, Lithia Springs, Roswell, Alpharetta, Canton, plus greater west Metro Atlanta (Paulding, Douglas, and Cobb counties).' },
@@ -95,7 +95,7 @@ export default function HomePage() {
             <span className="eyebrow">Dallas, GA · Atlanta Metro</span>
             <h1>Dallas GA Roof Repair, Replacement &amp; Storm Damage <span className="stroke">— done local.</span></h1>
             <p className="hero-tagline">Strong Roofs. Smarter Homes.</p>
-            <p className="lead">Family-owned in Dallas since 2019. Cristian Mendez’s crew checks your roof, puts the plan in writing, and stands behind the work — leak repair, a new roof, or help after hail or wind.</p>
+            <p className="lead">Family-owned in Dallas since 2019. Our crew checks your roof, puts the plan in writing, and stands behind the work — leak repair, a new roof, or help after hail or wind.</p>
             <div className="hero-cta">
               <a className="btn btn-solid" href="/free-roof-check/">Get a Free Roof Check <span className="arr">→</span></a>
               <a className="btn btn-ghost" href={`tel:${brand.phone}`}>Call or text {brand.phone}</a>
@@ -377,7 +377,7 @@ export default function HomePage() {
               </div>
               <div className="row">
                 <span className="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z" /></svg></span>
-                <div><div className="lbl">Shop &amp; office</div><span className="val">{brand.location}</span></div>
+                <div><div className="lbl">Shop &amp; office</div><span className="val">152 Freedom Dr, Dallas, GA 30157</span></div>
               </div>
             </div>
             <div className="towns">

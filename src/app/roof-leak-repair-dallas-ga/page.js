@@ -144,7 +144,7 @@ export default function RoofLeakRepairPage() {
                 Roof Leak Repair in Dallas, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
-                Water stain on the ceiling? Dripping after every storm? iRoofer Contractors finds where your roof is leaking and fixes it, for homes in Dallas, GA (30157 and 30132), Hiram and across Paulding County. We are a family-owned roofer based in Dallas. The inspection is free, and you see photos of the problem before you decide anything.
+                Water stain on the ceiling? Dripping after every storm? iRoofer Contractors finds where your roof is leaking and fixes it, for homes in Dallas ZIP codes 30132 and 30157, Hiram and across Paulding County. We are a family-owned roofer based in Dallas, GA 30157. The inspection is free, and you see photos of the problem before you decide anything.
               </p>
               <p style={{ color: '#52606b', fontSize: '1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
                 Leak repair is part of our broader Dallas roof repair work. For the main Dallas repair page, go to{' '}

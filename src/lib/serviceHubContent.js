@@ -86,7 +86,7 @@ export const serviceHubContent = {
       },
       {
         title: 'After the install',
-        body: 'We walk the roof with you when we can. We sign you up for the shingle warranty when the product allows. We leave simple care tips, like keeping valleys and gutters clear. Questions later? Call (470) 236-1410 or go to https://iroofercontractors.com/contact/. Same local crew as our repair and storm work. Family-owned since 2019 by Cristian Mendez.',
+        body: 'We walk the roof with you when we can. We sign you up for the shingle warranty when the product allows. We leave simple care tips, like keeping valleys and gutters clear. Questions later? Call (470) 236-1410 or go to https://iroofercontractors.com/contact/. Same local crew as our repair and storm work. Family-owned since 2019.',
       },
     ],
     cityPrefix: 'roof-replacement',
@@ -198,7 +198,7 @@ export const serviceHubContent = {
       },
       {
         title: 'Why local matters on new construction',
-        body: 'Storm-chaser crews disappear when the subdivision moves on. We’re based in Dallas year-round — same phone number for the builder’s warranty callback and the homeowner’s first heavy rain. Family-owned since 2019 under Cristian Mendez. Start a conversation: (470) 236-1410 · https://iroofercontractors.com/contact/.',
+        body: 'Storm-chaser crews disappear when the subdivision moves on. We’re based in Dallas year-round — same phone number for the builder’s warranty callback and the homeowner’s first heavy rain. Family-owned since 2019. Start a conversation: (470) 236-1410 · https://iroofercontractors.com/contact/.',
       },
     ],
     cityPrefix: 'new-construction',

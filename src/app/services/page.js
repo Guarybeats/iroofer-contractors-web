@@ -81,7 +81,7 @@ export default function ServicesPage() {
             <h1>Roofing services for your home</h1>
             <p>
               From a quick fix to a new roof, the same local crew does every job. Same care, same phone number.
-              iRoofer Contractors is family-owned in Dallas, GA since 2019. The owner is {brand.owner}.
+              iRoofer Contractors is family-owned in Dallas, GA since 2019.
               We install Owens Corning shingles as an Owens Corning Contractor Rewards member when they fit.
             </p>
             <p style={{ marginTop: 12 }}>
@@ -184,7 +184,7 @@ export default function ServicesPage() {
               No pressure. You get photos and a short written summary.
             </p>
             <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
-              <strong>About us:</strong> Family-owned since 2019 · {brand.owner} ·
+              <strong>About us:</strong> Family-owned since 2019 ·
               We install Owens Corning shingles as an Owens Corning Contractor Rewards member when they fit.
             </p>
             <p style={{ marginTop: 16 }}>

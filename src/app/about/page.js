@@ -7,7 +7,7 @@ import { renderInline } from '@/components/InlineText';
 export const metadata = seo({
   title: 'About iRoofer | Family-Owned Dallas GA Roofing Since 2019',
   description:
-    'Meet Cristian Mendez and the iRoofer crew — family-owned in Dallas, GA since 2019. Call (470) 236-1410 or visit our contact page.',
+    'Meet the iRoofer crew — family-owned in Dallas, GA since 2019. Call (470) 236-1410 or visit our contact page.',
   path: '/about',
 });
 
@@ -37,12 +37,12 @@ const process = [
 
 const faqs = [
   {
-    q: 'Who owns iRoofer?',
-    a: 'Cristian Mendez. Family-owned since 2019.',
+    q: 'Is iRoofer family-owned?',
+    a: 'Yes. Family-owned in Dallas, GA since 2019.',
   },
   {
     q: 'Where are you located?',
-    a: 'Dallas, GA. Phone (470) 236-1410.',
+    a: '152 Freedom Dr, Dallas, GA 30157. Phone (470) 236-1410.',
   },
   {
     q: 'Do you only work Dallas?',
@@ -63,9 +63,9 @@ export default function AboutPage() {
           <div className="faq-grid" style={{ alignItems: 'center' }}>
             <div className="rv">
               <span className="eyebrow dark">About us</span>
-              <h1 style={{ fontSize: 'clamp(2.2rem,4.4vw,3.4rem)', fontWeight: 900 }}>About iRoofer Contractors — Cristian Mendez &amp; Crew</h1>
+              <h1 style={{ fontSize: 'clamp(2.2rem,4.4vw,3.4rem)', fontWeight: 900 }}>About iRoofer Contractors</h1>
               <p style={{ color: '#52606b', fontSize: '1.05rem', marginTop: 16 }}>
-                iRoofer Contractors is a family-owned roofing company based in Dallas, GA. Owner {brand.owner} started it in 2019. He wanted homeowners west of Atlanta to have a local crew that shows up, tells the truth about the roof, and stands behind the work. We install Owens Corning shingles as an Owens Corning Contractor Rewards member.
+                iRoofer Contractors is a family-owned roofing company based at 152 Freedom Dr, Dallas, GA 30157, started in 2019. We wanted homeowners west of Atlanta to have a local crew that shows up, tells the truth about the roof, and stands behind the work. We install Owens Corning shingles as an Owens Corning Contractor Rewards member.
               </p>
               <p style={{ color: '#52606b', marginTop: 12 }}>
                 Now that you know us, let’s talk about <em>your</em> roof. Free roof checks with photos. Written plans. Clean job sites with magnet nail sweeps. The same crew from start to finish.
@@ -114,14 +114,14 @@ export default function AboutPage() {
           <div className="faq-grid" style={{ marginTop: 64, alignItems: 'start' }}>
             <div className="rv">
               <span className="eyebrow dark">Who you’ll work with</span>
-              <h2 style={{ fontSize: 'clamp(1.8rem,3.6vw,2.6rem)', fontWeight: 900 }}>{brand.owner}</h2>
+              <h2 style={{ fontSize: 'clamp(1.8rem,3.6vw,2.6rem)', fontWeight: 900 }}>The iRoofer crew</h2>
               <p style={{ color: '#52606b', marginTop: 12 }}>
-                The owner, based in Dallas, GA. Cristian does the estimates, the storm photos (by drone when it helps),
-                and the crew schedule. When you call {brand.phone}, you reach the people who work on your roof,
+                We're based in Dallas, GA. Our crew does the estimates, the storm photos (by drone when it helps),
+                and the schedule. When you call {brand.phone}, you reach the people who work on your roof,
                 not a far-away call center.
               </p>
               <p style={{ color: '#52606b', marginTop: 12 }}>
-                Shop &amp; office: Dallas, GA<br />
+                Shop &amp; office: 152 Freedom Dr, Dallas, GA 30157<br />
                 Hours: {brand.hours.full}.
               </p>
             </div>
@@ -184,7 +184,7 @@ export default function AboutPage() {
             ))}
           </div>
           <p style={{ marginTop: 24 }}>
-            Talk to Cristian’s crew: <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>
+            Talk to our crew: <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>
             {' · '}
             <Link href="/contact/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Contact</Link>
           </p>
