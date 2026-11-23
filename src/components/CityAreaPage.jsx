@@ -16,7 +16,7 @@ import { renderInline } from '@/components/InlineText';
 import CopySection from '@/components/CopySection';
 import { localCopy } from '@/lib/localCopy';
 import { cityAreaExtras } from '@/lib/cityAreaExtras';
-import { projectForCity } from '@/lib/projects';
+import { projectForCity, coverPhoto } from '@/lib/projects';
 import { brand, services, cities, cityPath, servicePath, serviceCityPath } from '@/lib/brand';
 
 const MUTED = '#52606b';
@@ -29,6 +29,7 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
   const heading = h1 || `Roofing in ${city.name}, ${city.state}`;
   const extra = cityAreaExtras[city.slug] || {};
   const project = projectForCity(city.slug);
+  const cover = project ? coverPhoto(project) : null;
   return (
     <section className="sec-light sec-pad">
       <div className="tex" aria-hidden="true" />
@@ -120,9 +121,9 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
 
         {project && (
           <div id="local-project" style={{ marginTop: 44, maxWidth: 880, scrollMarginTop: 120 }}>
-            <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 14 }}>A completed project in {city.name}</h2>
+            <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 14 }}>{project.cityHeading || `A completed project in ${city.name}`}</h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 18, alignItems: 'start' }}>
-              <img src={project.photos[0].src} alt={project.photos[0].alt} width={project.photos[0].w} height={project.photos[0].h} loading="lazy" decoding="async" style={{ width: '100%', height: 'auto', borderRadius: 8 }} />
+              <img src={cover.src} alt={cover.alt} width={cover.w} height={cover.h} loading="lazy" decoding="async" style={{ width: '100%', height: 'auto', borderRadius: 8 }} />
               <div>
                 <p style={{ color: MUTED, fontSize: '1.02rem', lineHeight: 1.75, margin: 0 }}>{project.summary}</p>
                 <p style={{ marginTop: 12 }}>

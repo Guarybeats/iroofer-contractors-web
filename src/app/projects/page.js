@@ -5,7 +5,7 @@ import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
 
 export const metadata = seo({
   title: 'Completed Roofing Projects | iRoofer Contractors',
-  description: 'Recent roof replacement and gutter projects from iRoofer Contractors in Dallas, Powder Springs and Austell, GA, with real job photos and the scope of work.',
+  description: 'Recent roofing projects from iRoofer Contractors in Dallas, Powder Springs, Alpharetta and Mableton, GA, with real job photos, a before and after, and the scope of work.',
   path: '/projects',
 });
 
@@ -30,22 +30,25 @@ export default function ProjectsPage() {
           Recent roofing projects in west metro Atlanta
         </h1>
         <p style={{ color: MUTED, fontSize: '1.08rem', marginTop: 14, maxWidth: 720, lineHeight: 1.7 }}>
-          These are real jobs, shot by our crew, not stock photos. We list each project by city only and keep
+          These are real jobs, shot by our crew, not stock photos. Photos are resized and stripped of location data. We list each project by city only and keep
           homeowners&apos; names and addresses private. Each one links to the service page and the city page
           where you can read how we handle that kind of work in your area.
         </p>
 
-        {projects.map((p) => (
+        {projects.map((p, pi) => (
           <article key={p.id} id={p.id} style={{ marginTop: 48, scrollMarginTop: 120, borderTop: '1px solid rgba(22,29,37,.12)', paddingTop: 28 }}>
             <span className="eyebrow dark">{p.city} · {p.service}</span>
             <h2 style={{ fontSize: 'clamp(1.5rem,3vw,2.1rem)', fontWeight: 800, marginTop: 6 }}>{p.title}</h2>
             <p style={{ color: MUTED, marginTop: 10, maxWidth: 760, lineHeight: 1.7 }}>{p.summary}</p>
 
             <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(300px,1fr))', gap: 18, marginTop: 18 }}>
-              {p.photos.map((ph) => (
+              {p.photos.map((ph, i) => (
                 <figure key={ph.src} style={{ margin: 0 }}>
-                  <img src={ph.src} alt={ph.alt} width={ph.w} height={ph.h} loading="lazy" decoding="async" style={{ width: '100%', height: 'auto', borderRadius: 8, border: '1px solid rgba(22,29,37,.1)' }} />
-                  <figcaption style={{ color: MUTED, fontSize: '.9rem', marginTop: 6 }}>{p.city} · {ph.caption}</figcaption>
+                  {ph.label ? (
+                    <span style={{ display: 'inline-block', background: ph.label === 'After' ? 'var(--orange)' : 'var(--ink)', color: '#fff', fontWeight: 800, fontSize: '.78rem', letterSpacing: '.06em', textTransform: 'uppercase', padding: '3px 10px', borderRadius: 4, marginBottom: 6 }}>{ph.label}</span>
+                  ) : null}
+                  <img src={ph.src} alt={ph.alt} width={ph.w} height={ph.h} loading={pi === 0 && i === 0 ? 'eager' : 'lazy'} decoding="async" style={{ width: '100%', height: 'auto', borderRadius: 8, border: '1px solid rgba(22,29,37,.1)' }} />
+                  <figcaption style={{ color: MUTED, fontSize: '.9rem', marginTop: 6 }}>{ph.label ? <strong style={{ color: 'var(--ink)' }}>{ph.label}: </strong> : null}{p.city} · {ph.caption}</figcaption>
                 </figure>
               ))}
             </div>

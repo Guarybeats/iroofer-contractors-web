@@ -6,8 +6,9 @@ import { brand } from '@/lib/brand';
 import { FaqSchema } from '@/components/LocalSeo';
 import { renderInline } from '@/components/InlineText';
 import CopySection from '@/components/CopySection';
+import { JobPhotoGrid } from '@/components/JobPhotoGallery';
 
-export default function TradeCityPage({ copy }) {
+export default function TradeCityPage({ copy, photoSet }) {
   return (
     <>
       <FaqSchema faq={copy.faq} />
@@ -36,6 +37,12 @@ export default function TradeCityPage({ copy }) {
               <QuoteForm variant="contact" id={copy.formId} source={copy.formSource} />
             </div>
           </div>
+
+          {photoSet ? (
+            <div style={{ marginTop: 48 }}>
+              <JobPhotoGrid set={photoSet} />
+            </div>
+          ) : null}
 
           <div style={{ marginTop: 48 }}>
             {copy.sections.map((sec) => (

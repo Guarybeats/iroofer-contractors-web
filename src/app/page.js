@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { projects } from '@/lib/projects';
+import { projects, coverPhoto } from '@/lib/projects';
 import QuoteForm from '@/components/QuoteForm';
 import HeroForm from '@/components/HeroForm';
 import ReviewButton from '@/components/ReviewButton';
@@ -230,13 +230,13 @@ export default function HomePage() {
           <div className="sec-head rv">
             <span className="eyebrow dark">Proof, not promises</span>
             <h2>Completed <span className="ac">projects.</span></h2>
-            <p>Real job photos from recent roof replacements in Dallas, Powder Springs and Austell. Locations are listed by city only.</p>
+            <p>Real job photos from recent roofing jobs in Dallas, Powder Springs, Alpharetta and Mableton. Locations are listed by city only.</p>
           </div>
 
           <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(260px,1fr))', gap: 20 }}>
             {projects.map((p) => (
               <Link key={p.id} href={`/projects/#${p.id}`} className="svc-card rv" style={{ padding: 0, overflow: 'hidden' }}>
-                <img src={p.photos[0].src} width={p.photos[0].w} height={p.photos[0].h} alt={p.photos[0].alt} loading="lazy" decoding="async" style={{ width: '100%', height: 'auto', display: 'block' }} />
+                <img src={coverPhoto(p).src} width={coverPhoto(p).w} height={coverPhoto(p).h} alt={coverPhoto(p).alt} loading="lazy" decoding="async" style={{ width: '100%', height: 'auto', display: 'block' }} />
                 <div style={{ padding: '14px 16px 18px' }}>
                   <span className="eyebrow dark">{p.city}</span>
                   <h3 style={{ fontSize: '1.1rem', fontWeight: 800, marginTop: 4 }}>{p.title}</h3>

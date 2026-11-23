@@ -1,3 +1,4 @@
+import JobPhotoGallery from '@/components/JobPhotoGallery';
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
 import RelatedGuides from '@/components/RelatedGuides';
@@ -165,6 +166,8 @@ export default function RoofLeakRepairPage() {
           </div>
         </div>
       </section>
+
+      <JobPhotoGallery set="leak" />
 
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">

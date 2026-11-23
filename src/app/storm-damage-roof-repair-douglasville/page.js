@@ -1,3 +1,4 @@
+import JobPhotoGallery from '@/components/JobPhotoGallery';
 import Link from 'next/link';
 import RelatedGuides from '@/components/RelatedGuides';
 import QuoteForm from '@/components/QuoteForm';
@@ -55,6 +56,8 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <JobPhotoGallery set="storm" />
 
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">

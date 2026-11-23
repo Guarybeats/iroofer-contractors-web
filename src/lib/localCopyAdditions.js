@@ -611,12 +611,9 @@ more('storm-damage-roof-repair', 'powder-springs',
     p: "Call or use the form with your address and the date of the storm. We will set a time, walk the roof and send you photos and a written scope you can share with your insurer." });
 
 // Links from service pages back to the local completed project (see src/lib/projects.js).
-more('roof-replacement', 'austell',
-  { h: "A recent Austell replacement",
-    p: "On one recent Austell job, the old roof came off and new wood decking went down before the new roof was installed. You can see the photo and the scope on our [completed projects page](/projects/#austell-roof-decking)." });
 more('roof-replacement', 'powder-springs',
   { h: "A recent Powder Springs project",
-    p: "We recently replaced the roof and gutters on a two-story brick and siding home in Powder Springs, finished in architectural shingles. The photo and scope are on our [completed projects page](/projects/#powder-springs-roof-gutters)." });
+    p: "We recently replaced the roof and gutters on a two-story brick and siding home in Powder Springs, finished in architectural shingles. The before and after photos and the scope are on our [completed projects page](/projects/#powder-springs-roof-gutters)." });
 more('gutter-repair-replacement', 'powder-springs',
   { h: "Gutters on a recent Powder Springs roof job",
     p: "New gutters went on with a recent roof replacement on a two-story home here. See it on our [Powder Springs project page](/projects/#powder-springs-roof-gutters)." });

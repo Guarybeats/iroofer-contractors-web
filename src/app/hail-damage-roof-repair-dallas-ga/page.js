@@ -1,3 +1,4 @@
+import JobPhotoGallery from '@/components/JobPhotoGallery';
 import Link from 'next/link';
 import QuoteForm from '@/components/QuoteForm';
 import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
@@ -191,6 +192,8 @@ export default function HailDamagePage() {
           </div>
         </div>
       </section>
+
+      <JobPhotoGallery set="storm-dallas" />
 
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
