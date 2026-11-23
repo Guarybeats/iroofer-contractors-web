@@ -22,8 +22,9 @@ const copy = localCopy['roof-repair']['dallas-ga'];
 const faqs = copy.faq;
 const relatedLinks = [
               { href: '/', label: 'All Dallas GA roofing services' },
-              { href: '/roof-repair-dallas-ga/', label: 'Metro Atlanta roof repair hub' },
+              { href: '/services/roof-inspection/', label: 'Free roof inspection' },
               { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair in Dallas GA' },
+              { href: '/hail-damage-roof-repair-dallas-ga/', label: 'Hail damage roof repair in Dallas GA' },
               { href: '/roof-leak-repair-dallas-ga/', label: 'Roof leak repair in Dallas GA' },
               { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas GA' },
               { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas GA' },
@@ -73,6 +74,8 @@ export default function Page() {
           ))}
         </div>
       </section>
+
+      <ServiceProcess slug="roof-repair" />
 
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
@@ -141,7 +144,6 @@ export default function Page() {
           <RelatedGuides slug="roof-repair" heading="Local roofing guides" />
         </div>
       </section>
-      <ServiceProcess slug="roof-repair" />
       <FaqSchema faq={faqs} />
     </>
   );

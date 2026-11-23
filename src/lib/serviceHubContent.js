@@ -14,14 +14,15 @@ export const serviceHubContent = {
       'We fix flashing, vents, pipe boots, and shingles, matched to your roof color',
       'Honest advice: fix it first. No push to replace a roof that still has years left',
     ],
-    processTitle: 'How a repair visit works',
+    processTitle: 'Our roof inspection & repair process',
     processIntro:
       'One local crew. A clear plan. A written price before we start.',
     steps: [
-      { n: '01', title: 'Inspect & document', body: 'We get on the roof and take photos of the problem. We check the attic for stains if we can. We also point out worn spots that could fail next.' },
-      { n: '02', title: 'Scope & price', body: 'You get a written plan and price. If a new roof is the better deal over time, we show you both prices side by side.' },
-      { n: '03', title: 'Repair & seal', body: 'We reset flashing, swap pipe boots, and blend in new shingles. We only use sealant where it belongs. We don’t use it to hide a bigger problem.' },
-      { n: '04', title: 'Cleanup & check', body: 'We sweep for nails with a magnet and haul off the mess. When it helps, we run a hose to test the fix.' },
+      { n: '01', title: 'Call & triage', body: 'Tell us what you’re seeing: a stain, missing shingles, a drip. If water is coming in now, we put you ahead of routine work and tarp as soon as it’s safe.' },
+      { n: '02', title: 'Free inspection & photos', body: 'We check the attic for stains if we can, then walk the roof, or fly a drone when it’s too steep. You get dated photos of the problem, plus worn spots that could fail next. See [roof inspections](/services/roof-inspection/).' },
+      { n: '03', title: 'Written scope & price', body: 'You get a written plan and price for the repair. If a new roof is the better deal over time, we show you both prices side by side and let you decide.' },
+      { n: '04', title: 'Repair & seal', body: 'We reset flashing, swap pipe boots, and blend in new shingles. We only use sealant where it belongs. We don’t use it to hide a bigger problem.' },
+      { n: '05', title: 'Cleanup & check', body: 'We sweep for nails with a magnet and haul off the mess. When it helps, we run a hose to test the fix, and you get photos of the finished repair.' },
     ],
     faqs: [
       { q: 'Can you fix a leak without replacing the whole roof?', a: 'Often, yes. A bad pipe boot, loose flashing, or a few storm-lifted shingles are normal repair jobs. If the wood under the shingles is soft in big areas, or the roof is worn out, we will tell you a new roof is the better move.' },

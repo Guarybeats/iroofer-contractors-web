@@ -10,8 +10,8 @@ import { renderInline } from '@/components/InlineText';
 import CopySection from '@/components/CopySection';
 
 export const metadata = seo({
-  title: 'Storm & Emergency Roof Repair in Kennesaw, GA | iRoofer',
-  description: 'Roof opened up by a storm in Kennesaw? We tarp active leaks, document hail and wind damage for your adjuster, and repair it right. Call (470) 236-1410.',
+  title: 'Storm Damage Roof Repair in Kennesaw, GA | iRoofer',
+  description: 'Storm damage roof repair in Kennesaw, GA: drone inspections, dated photos, tarping and adjuster meetings from a family-owned crew since 2019. (470) 236-1410.',
   path: '/storm-damage-roof-repair-kennesaw',
 });
 
@@ -33,7 +33,7 @@ export default function Page() {
               </Link>
               <span className="eyebrow dark" style={{ marginTop: 16, display: 'inline-block' }}>Kennesaw, GA</span>
               <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02, marginTop: 8 }}>
-                Storm Damage &amp; Emergency Roof Repair in Kennesaw, GA
+                Storm Damage Roof Repair in Kennesaw, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
                 {renderInline(copy.intro)}
@@ -79,10 +79,10 @@ export default function Page() {
             ))}
           </div>
           <p style={{ marginTop: 20, color: '#52606b' }}>
-            Closer to Dallas or Paulding County? See <Link href="/emergency-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>emergency roof repair in Dallas, GA</Link>.
+            Before you call, run through our <Link href="/blog/georgia-hail-storm-roof-checklist/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Georgia hail damage roof checklist</Link>. Closer to Dallas or Paulding County? See <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>roof repair in Dallas, GA</Link> or <Link href="/emergency-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>emergency roof repair in Dallas, GA</Link>.
           </p>
           <div style={{ marginTop: 28 }}>
-            <Link href="/service-areas/kennesaw/" className="btn btn-ink">More about our Kennesaw service area <span className="arr">→</span></Link>
+            <Link href="/service-areas/kennesaw/" className="btn btn-ink">Roofing in Kennesaw: our service area <span className="arr">→</span></Link>
           </div>
         </div>
       </section>

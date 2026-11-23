@@ -58,17 +58,27 @@ localCopy['roof-repair'] = {
     sections: [
       { h: "Roof repair in Dallas, GA starts with the real leak",
         p: "The stain on your ceiling is almost never right under the problem. Water runs along the decking and rafters before it drips. We start in the attic when we can get in, then walk the roof and follow the path back to the source. That's usually a pipe boot, a valley, chimney or wall flashing, or shingles the wind worked loose. You get photos of the failure point and a written scope before any work starts." },
-      { h: "What we fix on Dallas roofs",
-        p: "We install Owens Corning shingles as an Owens Corning Contractor Rewards member. Typical repairs:",
-        blocks: [{ items: ["Cracked or dried-out pipe boots and vent collars", "Step, wall and chimney flashing that's pulled away or rusted", "Missing, creased or wind-lifted shingles, blended in as close as the existing roof allows", "Worn valleys and ridge caps", "Soft decking found under a \"simple\" patch. We show you before we replace it."] }, "If water is coming in right now, see [emergency roof repair in Dallas, GA](/emergency-roof-repair-dallas-ga/) or call (470) 236-1410. When water is actively entering, we can often get an emergency tarp on fast."] },
+      { h: "Residential roof repairs we handle in Dallas, GA",
+        p: "We repair homes, not commercial buildings, and we install Owens Corning shingles as an Owens Corning Contractor Rewards member. These are the repairs we make most around Dallas and Paulding County:",
+        blocks: [
+          { title: "Roof leaks", items: ["We trace the water from the attic and the roof back to where it actually gets in, then fix that spot instead of patching under the stain. More on leak tracing: [roof leak repair in Dallas, GA](/roof-leak-repair-dallas-ga/)."] },
+          { title: "Missing or damaged shingles", items: ["Blown-off, cracked or creased shingles replaced and sealed down, blended as close to the existing roof as today's colors allow. We check the underlayment and decking under the gap before we close it up."] },
+          { title: "Wind damage", items: ["Wind breaks the seal strip and can lay a tab back down looking normal. We look for the crease lines along rakes, ridges and eaves, then reseal or replace what's lifted. Wind or hail after a storm? See [storm damage roof repair in Dallas, GA](/storm-damage-roof-repair-dallas-ga/) and [hail damage roof repair in Dallas, GA](/hail-damage-roof-repair-dallas-ga/)."] },
+          { title: "Flashing", items: ["Step, wall, chimney and skylight flashing that has pulled away, rusted, or was caulked instead of woven in. We reset or replace the metal so the joint sheds water on its own."] },
+          { title: "Pipe boots and vents", items: ["The rubber collars around plumbing vents crack in the Georgia sun long before the shingles wear out. Swapping a failed boot is one of the most common fixes we make."] },
+          { title: "Emergency tarping", items: ["When water is coming in now, we tarp first and schedule the permanent repair once the roof is dry. See [emergency roof repair in Dallas, GA](/emergency-roof-repair-dallas-ga/) or call (470) 236-1410."] },
+          "Also common: worn valleys under pine needles, loose ridge caps, and soft decking found under a \"simple\" patch. We show you photos before we replace any wood.",
+        ] },
+      { h: "Inspection first, then the repair",
+        p: "Every repair starts with a free [roof inspection](/services/roof-inspection/). We check the attic when we can get in, walk the roof when it's safe, and use a drone on steep or fragile roofs. You get dated photos of what failed and a written scope before any work starts. The step-by-step version is in our repair process below." },
       { h: "Why Dallas and Paulding roofs wear the way they do",
         p: "Around Dallas, a lot of homes sit under tall pines and hardwoods. Needles pile up in valleys and behind chimneys, hold moisture, and shade the roof so it stays damp after rain. Summer brings pop-up thunderstorms with gusty wind. Long humid stretches age rubber boots and sealant faster than people expect. Older houses near downtown Dallas and off Hwy 278 often have flashing that was face-nailed or caulked years ago. The newer subdivisions along Hwy 61 and Hwy 92 tend to show builder-grade pipe boots and thin ridge vents as they age. We look for the patterns we already know before we guess." },
       { h: "Paulding County details that change the repair",
         p: "Paulding County Building & Permitting (240 Constitution Blvd, Dallas) requires a permit for roofing when the work is structural — sheathing, rafters, or trusses — not for routine shingle and flashing repairs above the deck. We check layer count and deck condition during the inspection so you know before tools come out." },
       { h: "Repair or replace: we'll tell you straight",
         p: "If one area failed and the rest of the roof is sound, repair it. If we're finding the same wear on every slope, or you've patched the same leak more than once, we'll say so and walk you through [roof replacement in Dallas, GA](/roof-replacement-dallas-ga/) as an option. Either way it's your call, and you'll have photos to decide with." },
-      { h: "After a storm",
-        p: "If the trouble showed up after hail or straight-line wind, start with documentation. See [storm damage roof repair in Dallas, GA](/storm-damage-roof-repair-dallas-ga/) and [roof insurance claims help](/services/roof-insurance-claims/). We photograph what we find and can meet your adjuster. Your policy decides what's covered." },
+      { h: "Storm, hail and insurance-related damage",
+        p: "If the trouble showed up after hail or straight-line wind, start with documentation. We photograph damage slope by slope with dates, note dents in vents and gutters that tie it to a storm, and write a scope your adjuster can check. We can meet the adjuster at the house if you want us there. Your policy and your carrier decide what's covered, so we don't promise an outcome. See [storm damage roof repair in Dallas, GA](/storm-damage-roof-repair-dallas-ga/), [hail damage roof repair](/hail-damage-roof-repair-dallas-ga/) and [roof insurance claims help](/services/roof-insurance-claims/)." },
       { h: "Book a Dallas roof repair inspection",
         p: "We're based in Dallas, so we're not driving in from across the state. Call (470) 236-1410 or request your free inspection at https://iroofercontractors.com/contact/." },
     ],
@@ -77,6 +87,9 @@ localCopy['roof-repair'] = {
       { q: "Should I repair or replace my roof?", a: "Isolated leaks, a bad boot or loose flashing usually repair well. Wear on every slope or repeat leaks in different spots usually point to replacement. We'll show you photos and give you a straight answer." },
       { q: "Can you help if water is coming in now?", a: "Yes. Call (470) 236-1410. Active leaks get priority and an emergency tarp when needed, then we schedule the permanent repair. See [emergency roof repair in Dallas, GA](/emergency-roof-repair-dallas-ga/)." },
       { q: "Ceiling stain but no drip. Is it still worth a look?", a: "If the stain grows after rain, yes. We trace it from the attic and the roof so you're not just painting over it." },
+      { q: "Is a roof inspection free?", a: "Yes. We inspect the roof, check the attic when we can get in, and use a drone when the roof is too steep to walk safely. You get dated photos and a plain-English finding: repair it, keep an eye on it, or plan a replacement. See [roof inspections](/services/roof-inspection/)." },
+      { q: "What's in a roof repair estimate?", a: "A written scope: what failed, photos of it, what we'll replace, and the price. If there's a chance of soft decking under the area, the estimate says how that would be handled before we start. No pressure to sign the same day." },
+      { q: "Will insurance pay for my roof repair?", a: "We can't promise that. Coverage depends on your policy and the adjuster's findings. What we do is document storm or hail damage with dated photos and a written scope, and meet your adjuster on site if you'd like. If the damage won't support a claim, we'll tell you and quote the repair directly." },
       { q: "Do you work outside Dallas?", a: "Yes. Dallas is home base, and we also cover Hiram, Powder Springs, Douglasville and nearby towns. Hiram homeowners can start at [roof repair in Hiram](/service-areas/hiram/#roof-repair)." },
     ],
   },
@@ -693,7 +706,7 @@ localCopy['storm-damage-roof-repair'] = {
     ],
   },
   'kennesaw': {
-    intro: "Storm damage in Kennesaw usually shows up one of two ways: a roof that’s plainly open after a cell blows through, or a leak that starts three rains later from shingles the wind lifted and quietly laid back down. We handle both for Kennesaw homes. iRoofer Contractors is family-owned in Dallas, GA since 2019. If water is coming in, we tarp first, then document every slope and make the permanent repair once the roof is dry. Call (470) 236-1410 or book at https://iroofercontractors.com/contact/.",
+    intro: "Storm damage roof repair in Kennesaw usually starts one of two ways: a roof that’s plainly open after a cell blows through, or a leak that starts three rains later from shingles the wind lifted and quietly laid back down. We handle both for Kennesaw homes. iRoofer Contractors is family-owned in Dallas, GA since 2019. If water is coming in, we tarp first. Then we inspect every slope (by drone when the roof is steep), photograph the damage with dates for your claim, and make the permanent repair once the roof is dry. Call (470) 236-1410 or book at https://iroofercontractors.com/contact/.",
     sections: [
       {
         "h": "Emergency roof repair in Kennesaw: the first hour",
@@ -734,8 +747,39 @@ localCopy['storm-damage-roof-repair'] = {
         ]
       },
       {
-        "h": "Insurance: what we do and what we don’t",
-        "p": "We photograph damage slope by slope with dates, mark it on a roof diagram, write a scope an adjuster can check, and meet the adjuster on the roof if you want us there. When a desk estimate misses code-required items, we supplement it with documentation instead of quietly building a lesser roof to fit the cheque. What we won’t do is promise an approval or a payout. That’s between you, your policy and your carrier. If the damage won’t support a claim, we’ll say so and quote the repair directly. More on the claim side: [roof insurance claims help](/services/roof-insurance-claims/)."
+        "h": "Drone inspections and photo documentation",
+        "p": "A lot of Kennesaw homes are steep two-stories with dormers and long valleys, and a storm-soaked roof is not the place for anyone to be guessing their footing. When walking the roof isn’t the safe or useful option, we fly a drone over every slope. When it is, we walk it and get close. Either way, what you get back is the same:",
+        "blocks": [
+          {
+            "items": [
+              "Dated photos of each slope, marked on a simple roof diagram so you (and an adjuster) can see where each photo was taken.",
+              "Close-ups of the evidence that ties damage to a storm: creased tabs, bruised shingles, and dents in vents, flashing and gutters.",
+              "Attic photos when we can get in: wet decking, stains, daylight where there shouldn’t be any.",
+              "A plain-English finding: repair it, replace it, or nothing storm-related worth claiming. If there’s no real damage, we say so."
+            ]
+          },
+          "Not sure yet if the storm did anything? Our [Georgia hail damage roof checklist](/blog/georgia-hail-storm-roof-checklist/) covers what to look for from the ground before you call."
+        ]
+      },
+      {
+        "h": "How we help with the claim and the adjuster meeting",
+        "p": "We don’t file your claim for you, and we don’t promise approvals or payouts. That’s between you, your policy and your carrier. What we do is make the roof easy to evaluate:",
+        "blocks": [
+          {
+            "ordered": true,
+            "items": [
+              "Document first: the photo set and diagram above, plus a written scope an adjuster can check line by line.",
+              "Meet the adjuster on the roof if you want us there, so the scope gets agreed with photos in hand instead of over weeks of email.",
+              "Flag missed items: when a desk estimate leaves out code-required items, we send documentation for the adjuster to review rather than quietly building a lesser roof to fit the cheque.",
+              "Quote it straight if there’s no claim: if the damage won’t support a claim, we tell you and price the repair directly."
+            ]
+          },
+          "More on the claim side: [roof insurance claims help](/services/roof-insurance-claims/)."
+        ]
+      },
+      {
+        "h": "Cobb County context for Kennesaw homeowners",
+        "p": "Kennesaw sits in Cobb County, which has real flood history: the September 2009 flooding affected more than 1,600 homes countywide. Cobb County participates in FEMA’s Community Rating System at class 7, which comes with a 15% discount on NFIP flood insurance premiums. Flood coverage is a separate policy from the homeowners policy a wind or hail roof claim usually goes through, and the City of Kennesaw runs its own permitting, so ask your insurance agent which rating applies to your address. While we’re on the roof, we also look at the gutters and downspouts, because storm water that overshoots the gutters ends up against the foundation."
       },
       {
         "h": "Permits and the historic district ordering rule",
@@ -766,6 +810,14 @@ localCopy['storm-damage-roof-repair'] = {
       {
         "q": "Will you work directly with my adjuster?",
         "a": "Yes, on site. Agreeing scope on the roof with photographs beats correspondence that drags on while the house keeps taking water."
+      },
+      {
+        "q": "Do you use drones for storm inspections in Kennesaw?",
+        "a": "Yes, when the roof is steep, wet or fragile, or when a drone simply gets the better view. You still get dated photos of every slope and a written finding."
+      },
+      {
+        "q": "Can you guarantee my insurance claim gets approved?",
+        "a": "No, and be wary of anyone who does. We document the damage, write a scope and can meet your adjuster. The decision belongs to your carrier under your policy."
       }
     ],
   },

@@ -7,7 +7,7 @@ import { renderInline } from '@/components/InlineText';
 export const metadata = seo({
   title: 'About iRoofer | Family-Owned Dallas GA Roofing Since 2019',
   description:
-    'Meet the iRoofer crew — family-owned in Dallas, GA since 2019. Call (470) 236-1410 or visit our contact page.',
+    'Latino-owned, family-owned roofing company in Dallas, GA since 2019. Meet the iRoofer crew, then call (470) 236-1410 for a free roof inspection.',
   path: '/about',
 });
 
@@ -64,6 +64,9 @@ export default function AboutPage() {
             <div className="rv">
               <span className="eyebrow dark">About us</span>
               <h1 style={{ fontSize: 'clamp(2.2rem,4.4vw,3.4rem)', fontWeight: 900 }}>About iRoofer Contractors</h1>
+              <p style={{ color: 'var(--ink)', fontSize: '1.15rem', fontWeight: 700, marginTop: 12 }}>
+                Latino-owned, family-owned roofing company in Dallas, GA since 2019.
+              </p>
               <p style={{ color: '#52606b', fontSize: '1.05rem', marginTop: 16 }}>
                 iRoofer Contractors is a family-owned roofing company based at 152 Freedom Dr, Dallas, GA 30157, started in 2019. We wanted homeowners west of Atlanta to have a local crew that shows up, tells the truth about the roof, and stands behind the work. We install Owens Corning shingles as an Owens Corning Contractor Rewards member.
               </p>

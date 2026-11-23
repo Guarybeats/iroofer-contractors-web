@@ -12,8 +12,8 @@ import { GBP_URL } from '@/components/LocalSeo';
 import { seo } from '@/lib/seo';
 
 export const metadata = seo({
-  title: 'Roof Repair & Replacement in Dallas, GA | iRoofer',
-  description: 'Family-owned Dallas, GA roofer since 2019: roof repair, replacement, and storm and hail damage with insurance photos. Free inspection. Call (470) 236-1410.',
+  title: 'Roofing Contractor in Dallas, GA | iRoofer Contractors',
+  description: 'Family-owned Dallas, GA roofer since 2019: repair, replacement, storm damage & drone inspections in Paulding County & west metro Atlanta. Call (470) 236-1410.',
   path: '/',
 });
 
@@ -21,6 +21,7 @@ const dallasLinks = [
   { href: '/roof-replacement-dallas-ga/', label: 'Roof replacement in Dallas, GA' },
   { href: '/roof-repair-dallas-ga/', label: 'Roof repair / leak repair in Dallas, GA' },
   { href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm & hail damage roof repair Dallas' },
+  { href: '/services/roof-inspection/', label: 'Free roof inspection in Dallas, GA' },
   { href: '/services/roof-insurance-claims/', label: 'Insurance claims help' },
   { href: '/', label: 'Dallas roofing company hub' },
   { href: '/emergency-roof-repair-dallas-ga/', label: 'Emergency roof repair Dallas' },
@@ -29,6 +30,15 @@ const dallasLinks = [
   { href: '/roof-replacement-hiram/', label: 'Roof replacement in Hiram' },
   { href: '/service-areas/hiram/#roof-repair', label: 'Roof repair / inspection in Hiram' },
   { href: '/blog/roof-replacement-cost-dallas-ga/', label: 'Roof replacement cost factors' },
+];
+
+// Primary service paths, shown as cards right under the hero.
+const primaryLinks = [
+  { href: '/roof-repair-dallas-ga/', title: 'Roof Repair', body: 'Leaks, missing shingles, flashing, pipe boots and emergency tarping.' },
+  { href: '/roof-replacement-dallas-ga/', title: 'Roof Replacement', body: 'Full tear-off to the deck and a new Owens Corning roof system.' },
+  { href: '/storm-damage-roof-repair-dallas-ga/', title: 'Storm Damage Repair', body: 'Hail and wind damage photographed slope by slope; we can meet your adjuster.' },
+  { href: '/services/roof-inspection/', title: 'Roof Inspection', body: 'Free inspection with dated photos, including drone photos on steep roofs.' },
+  { href: '/gutter-repair-replacement-dallas-ga/', title: 'Gutters', body: 'Seamless gutter repair and replacement that moves water off the roof and away from the house.' },
 ];
 
 const svcs = [
@@ -92,10 +102,10 @@ export default function HomePage() {
         <div className="hero-bgword" aria-hidden="true">Roofing</div>
         <div className="wrap">
           <div className="hero-copy">
-            <span className="eyebrow">Dallas, GA · Atlanta Metro</span>
-            <h1>Dallas GA Roof Repair, Replacement &amp; Storm Damage <span className="stroke">— done local.</span></h1>
+            <span className="eyebrow">Dallas, GA · Paulding County · West Metro Atlanta</span>
+            <h1>Roofing Contractor in Dallas, GA <span className="stroke">— repair, replacement &amp; storm damage.</span></h1>
             <p className="hero-tagline">Strong Roofs. Smarter Homes.</p>
-            <p className="lead">Family-owned in Dallas since 2019. Our crew checks your roof, puts the plan in writing, and stands behind the work — leak repair, a new roof, or help after hail or wind.</p>
+            <p className="lead">iRoofer Contractors is a family-owned roofing contractor in Dallas, GA since 2019. Our crew checks your roof (by drone when it’s steep), puts the plan in writing, and stands behind the work: leak repair, a new roof, or help after hail or wind across Paulding County and west metro Atlanta.</p>
             <div className="hero-cta">
               <a className="btn btn-solid" href="/free-roof-check/">Get a Free Roof Check <span className="arr">→</span></a>
               <a className="btn btn-ghost" href={`tel:${brand.phone}`}>Call or text {brand.phone}</a>
@@ -126,6 +136,16 @@ export default function HomePage() {
       {/* ATF INTENT CARDS — service links */}
       <section className="sec-light" style={{ padding: '28px 0 8px' }} aria-label="Start with the service you need">
         <div className="wrap">
+          <h2 style={{ fontSize: 'clamp(1.4rem,2.6vw,1.9rem)', fontWeight: 800, marginBottom: 16 }}>Roofing services in Dallas, GA</h2>
+          <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(200px,1fr))', gap: 18, marginBottom: 24 }}>
+            {primaryLinks.map((l) => (
+              <Link key={l.href} href={l.href} className="svc-card">
+                <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>{l.title}</h3>
+                <p style={{ color: '#52606b', marginTop: 6, fontSize: '.92rem' }}>{l.body}</p>
+                <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 10, display: 'inline-block' }}>{l.title} in Dallas →</span>
+              </Link>
+            ))}
+          </div>
           <p style={{ color: '#52606b', marginBottom: 14, maxWidth: 720 }}>
             Looking for a roofer in Dallas? Leaks and storm wear start with{' '}
             <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>roof repair in Dallas, GA</Link>; worn-out roofs go to{' '}

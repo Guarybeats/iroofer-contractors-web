@@ -90,7 +90,7 @@ export default function Page() {
             ))}
           </div>
           <div style={{ marginTop: 28 }}>
-            <Link href="/service-areas/hiram/" className="btn btn-ink">More about our Hiram service area <span className="arr">→</span></Link>
+            <Link href="/service-areas/hiram/" className="btn btn-ink">Hiram roofing contractor: repair &amp; replacement <span className="arr">→</span></Link>
           </div>
         </div>
       </section>
