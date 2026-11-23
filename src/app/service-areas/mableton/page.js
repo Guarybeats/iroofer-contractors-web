@@ -78,7 +78,7 @@ const neighborhoods = [
 const faq = [
   {
     q: 'Do you work in Mableton?',
-    a: 'Yes. Mableton is part of our regular west-metro service area, worked from our shop in Dallas, GA. Call (470) 236-1410 or use https://iroofercontractors.com/contact/.',
+    a: 'Yes, Mableton is part of our regular west-metro service area, worked from our shop in Dallas, GA. Call (470) 236-1410 or use https://iroofercontractors.com/contact/.',
   },
   {
     q: 'Who issues the roofing permit in Mableton — the city or Cobb County?',
@@ -86,15 +86,15 @@ const faq = [
   },
   {
     q: 'Is a roof check really free?',
-    a: 'Yes. We inspect, take dated photos, and tell you what we found — repair, replacement, or nothing needed yet. No pressure. Book a [free roof check](/free-roof-check/).',
+    a: 'Yes, we inspect, take dated photos, and tell you what we found — repair, replacement, or nothing needed yet. No pressure. Book a [free roof check](/free-roof-check/).',
   },
   {
     q: 'Can you help with a storm or hail insurance claim?',
-    a: 'Yes. We document the damage, write a scope an adjuster can verify, and meet the adjuster on site. Your policy and your insurer decide what is covered, so we cannot promise a result, and we tell you when a claim may not hold.',
+    a: 'Yes, we document the damage, write a scope an adjuster can verify, and meet the adjuster on site. Your policy and your insurer decide what is covered, so we cannot promise a result, and we tell you when a claim may not hold.',
   },
   {
     q: 'Do you list prices online?',
-    a: 'No. Every roof is different. You get a written price after we see the roof.',
+    a: 'No, every roof is different. You get a written price after we see the roof.',
   },
 ];
 

@@ -93,26 +93,26 @@ export default function Page() {
           <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
             <Link key="roof-repair" href="/service-areas/acworth/#roof-repair" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Repair in Acworth</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
             <Link key="roof-replacement" href="/roof-replacement-acworth/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Acworth</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
             <Link key="new-construction" href="/new-construction-acworth/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>New Construction in Acworth</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
             <Link key="storm-damage-roof-repair" href="/storm-damage-roof-repair-acworth/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Storm Damage Roof Repair in Acworth</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
           </div>
         </div>
       </section>
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
-          <RelatedGuides slug="gutter-repair-replacement" heading="Local roofing guides" />
+          <RelatedGuides slug="gutter-repair-replacement" city="acworth" />
         </div>
       </section>
       <FaqSchema faq={faqs} />

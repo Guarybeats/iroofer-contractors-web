@@ -78,7 +78,7 @@ const faq = [
   },
   {
     q: 'Will you meet my insurance adjuster?',
-    a: 'Yes. We walk the roof with the adjuster, show the same marked test squares and soft-metal evidence we documented, and handle supplements when items get missed in the first estimate.',
+    a: 'Yes, we walk the roof with the adjuster, show the same marked test squares and soft-metal evidence we documented, and handle supplements when items get missed in the first estimate.',
   },
   {
     q: 'Are you local to Canton?',

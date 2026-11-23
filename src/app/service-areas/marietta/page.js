@@ -82,7 +82,7 @@ const faq = [
   },
   {
     q: 'Are you local?',
-    a: 'Yes. Our shop is in Dallas, GA. Family-owned since 2019.',
+    a: 'Yes, our shop is in Dallas, GA. Family-owned since 2019.',
   },
 ];
 

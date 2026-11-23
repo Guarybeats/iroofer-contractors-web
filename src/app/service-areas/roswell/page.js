@@ -74,7 +74,7 @@ const faq = [
   },
   {
     q: 'My Roswell home is in the historic district. Can you still replace the roof?',
-    a: 'Yes. We will show you shingle options that suit a reviewed property, put the exact product and color in the written scope, and give you the documentation you need for architectural review or your HOA before any material is ordered.',
+    a: 'Yes, we will show you shingle options that suit a reviewed property, put the exact product and color in the written scope, and give you the documentation you need for architectural review or your HOA before any material is ordered.',
   },
   {
     q: 'How long does a two-story Roswell roof replacement take?',
@@ -82,7 +82,7 @@ const faq = [
   },
   {
     q: 'Can you help with a Roswell storm claim after wind or hail?',
-    a: 'Yes. We document damage with dated photos and a roof diagram, write the scope of work, and meet your insurance adjuster on site. If we do not believe the damage supports a claim, we say so and quote the repair directly instead.',
+    a: 'Yes, we document damage with dated photos and a roof diagram, write the scope of work, and meet your insurance adjuster on site. If we do not believe the damage supports a claim, we say so and quote the repair directly instead.',
   },
   {
     q: 'What does a roof inspection cost in Roswell?',

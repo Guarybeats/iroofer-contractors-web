@@ -1,12 +1,13 @@
 import Link from 'next/link';
-import { getGuides } from '@/lib/relatedGuides';
+import { getGuides, guideHeading } from '@/lib/relatedGuides';
 
-export default function RelatedGuides({ slug, heading = 'Local roofing guides' }) {
-  const guides = getGuides(slug);
+export default function RelatedGuides({ slug, city, heading }) {
+  const guides = getGuides(slug, city);
   if (!guides.length) return null;
+  const label = heading || (city && guideHeading[city]) || 'Local roofing guides';
   return (
     <div className="rv" style={{ marginTop: 34, borderTop: '1px solid rgba(22,29,37,.12)', paddingTop: 22 }}>
-      <span className="eyebrow dark">{heading}</span>
+      <span className="eyebrow dark">{label}</span>
       <ul style={{ lineHeight: 2, marginTop: 10, color: '#52606b' }}>
         {guides.map((g) => (
           <li key={g.href}>

@@ -82,7 +82,7 @@ const faq = [
   },
   {
     q: 'Do you work with builders on new construction in Alpharetta?',
-    a: 'Yes. We install new-construction roofing for builders and homeowners, coordinate with your schedule and inspector, match the roof to the design, and complete a final walkthrough with warranty registration.',
+    a: 'Yes, we install new-construction roofing for builders and homeowners, coordinate with your schedule and inspector, match the roof to the design, and complete a final walkthrough with warranty registration.',
   },
   {
     q: 'How long will my roof replacement take?',

@@ -72,7 +72,7 @@ const faq = [
   },
   {
     q: 'Is Douglasville a regular service area?',
-    a: 'Yes. Listed on our service-areas hub with the rest of the west-metro map.',
+    a: 'Yes, listed on our service-areas hub with the rest of the west-metro map.',
   },
   {
     q: 'Who do I call?',

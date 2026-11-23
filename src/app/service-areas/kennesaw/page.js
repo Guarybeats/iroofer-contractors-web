@@ -73,7 +73,7 @@ const neighborhoods = [
 const faq = [
   {
     q: 'Do you do full roof replacements in Kennesaw?',
-    a: 'Yes. Full tear-off to the deck, decking repairs as found, new underlayment, flashing and ventilation, and shingles installed to spec. Free measured inspection and a written proposal first.',
+    a: 'Yes, full tear-off to the deck, decking repairs as found, new underlayment, flashing and ventilation, and shingles installed to spec. Free measured inspection and a written proposal first.',
   },
   {
     q: 'How much does a roof replacement cost in Kennesaw?',
@@ -85,7 +85,7 @@ const faq = [
   },
   {
     q: 'Can you help with an emergency leak in Kennesaw?',
-    a: 'Yes. Call (470) 236-1410 and say water is coming in. Active leaks go ahead of routine work, and we put on an emergency tarp as soon as the schedule and safe access allow.',
+    a: 'Yes, call (470) 236-1410 and say water is coming in. Active leaks go ahead of routine work, and we put on an emergency tarp as soon as the schedule and safe access allow.',
   },
   {
     q: 'Where is your shop?',

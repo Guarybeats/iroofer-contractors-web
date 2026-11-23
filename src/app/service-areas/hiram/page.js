@@ -95,7 +95,7 @@ const faq = [
   },
   {
     q: 'Do you install and repair gutters in Hiram?',
-    a: 'Yes. Gutter repair, re-pitching and replacement, sized to the roof that feeds them. See our Hiram gutter page or call (470) 236-1410.',
+    a: 'Yes, Gutter repair, re-pitching and replacement, sized to the roof that feeds them. See our Hiram gutter page or call (470) 236-1410.',
   },
   {
     q: 'Do you help with insurance after storm damage?',
