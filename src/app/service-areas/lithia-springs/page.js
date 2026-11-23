@@ -54,7 +54,7 @@ const sections = [
     h2: 'Storm and hail damage along the I-20 corridor',
     paras: [
       'Spring and summer storms that build west of Atlanta often run the I-20 corridor straight through Douglas County. Straight-line wind lifts shingles and ridge caps, hail bruises shingles and dents vents, and falling limbs punch through decking. Some of it shows right away; some shows up as a leak weeks later.',
-      'We inspect free after a storm, tarp an open roof, and document with dated photos, soft-metal checks and a written scope. We meet your adjuster on site when you file, and we tell you plainly when a claim will not hold. See [storm damage roof repair](/storm-damage-roof-repair-dallas-ga/), [hail damage inspections](/hail-damage-roof-repair-dallas-ga/) and [roof insurance claims help](/services/roof-insurance-claims/).',
+      'We inspect free after a storm, tarp an open roof, and document with dated photos, soft-metal checks and a written scope. We can meet your adjuster on site when you file, and we tell you plainly when a claim will not hold. See [storm damage roof repair](/storm-damage-roof-repair-dallas-ga/), [hail damage inspections](/hail-damage-roof-repair-dallas-ga/) and [roof insurance claims help](/services/roof-insurance-claims/).',
     ],
   },
   {
@@ -77,7 +77,7 @@ const neighborhoods = [
 const faq = [
   {
     q: 'Do you serve Lithia Springs?',
-    a: 'Yes, Lithia Springs is part of our regular west-metro service area, worked from our shop in Dallas, GA. Call (470) 236-1410 or use https://iroofercontractors.com/contact/.',
+    a: 'Yes, Lithia Springs is part of our regular west-metro service area, worked from our shop in Dallas, GA. Call (470) 236-1410 or [request a free roof inspection](/contact/).',
   },
   {
     q: 'Who handles roofing permits in Lithia Springs?',

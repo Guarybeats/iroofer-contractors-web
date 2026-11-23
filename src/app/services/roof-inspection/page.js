@@ -38,7 +38,7 @@ const sections = [
 const faqs = [
   {
     "q": "Is the roof inspection really free?",
-    "a": "Yes. Inspections are free and come with no obligation to hire us for the work."
+    "a": "They are. Inspections are free and come with no obligation to hire us for the work."
   },
   {
     "q": "Do you use drones?",
@@ -129,8 +129,8 @@ export default function Page() {
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="sec-head rv">
-            <span className="eyebrow dark">FAQ</span>
-            <h2>Questions homeowners ask us</h2>
+            <span className="eyebrow dark">Roof inspection FAQ</span>
+            <h2>What people ask before booking an inspection</h2>
           </div>
           <div className="faq-list rv">
             {faqs.map((f, i) => (
@@ -146,25 +146,25 @@ export default function Page() {
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="sec-head rv">
-            <span className="eyebrow dark">Services</span>
-            <h2>Where to go next</h2>
+            <span className="eyebrow dark">After the inspection</span>
+            <h2>Services an inspection usually leads to</h2>
           </div>
           <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
             <Link key="/roof-repair-dallas-ga/" href="/roof-repair-dallas-ga/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Repair in Dallas, GA</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
             <Link key="/roof-replacement-dallas-ga/" href="/roof-replacement-dallas-ga/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Dallas, GA</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
             <Link key="/storm-damage-roof-repair-dallas-ga/" href="/storm-damage-roof-repair-dallas-ga/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Storm Damage Roof Repair in Dallas, GA</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
             <Link key="/emergency-roof-repair-dallas-ga/" href="/emergency-roof-repair-dallas-ga/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Emergency Roof Repair in Dallas, GA</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
           </div>
         </div>
@@ -174,7 +174,7 @@ export default function Page() {
         <div className="wrap">
           <div className="sec-head rv">
             <span className="eyebrow dark">Related pages</span>
-            <h2>Helpful links for homeowners</h2>
+            <h2>More on inspections, claims and areas we cover</h2>
           </div>
           <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '.6rem 1.4rem', marginTop: 8, listStyle: 'none', padding: 0 }}>
             {relatedLinks.map((l) => (
@@ -187,7 +187,7 @@ export default function Page() {
       </section>
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
-          <RelatedGuides slug="roof-repair" heading="Local roofing guides" />
+          <RelatedGuides slug="roof-repair" heading="Read before your inspection" />
         </div>
       </section>
       <FaqSchema faq={faqs} />

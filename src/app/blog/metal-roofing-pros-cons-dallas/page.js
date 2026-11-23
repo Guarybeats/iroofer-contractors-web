@@ -82,7 +82,7 @@ export default function BlogPostPage() {
             <p>Most re-roofs we do around Dallas are architectural shingle systems. See <Link href="/blog/architectural-vs-3-tab-shingles/">architectural vs. 3-tab shingles</Link> and <Link href="/blog/choosing-roofing-materials-dallas-ga/">choosing roofing materials</Link>.</p>
 
             <h2>Still deciding?</h2>
-            <p>Talk it through with us during a free roof inspection. We’ll look at your roof, your goals and your budget and give you a straight answer in writing. Book at <Link href="/contact/">https://iroofercontractors.com/contact/</Link> or call (470) 236-1410.</p>
+            <p>Talk it through with us during a free roof inspection. We’ll look at your roof, your goals and your budget and give you a straight answer in writing. <Link href="/contact/">Book a free roof inspection</Link> or call (470) 236-1410.</p>
             <RelatedPosts slug="metal-roofing-pros-cons-dallas" />
             <p><Link href="/contact/" className="btn btn-solid">Book a free roof inspection →</Link></p>
           </div>

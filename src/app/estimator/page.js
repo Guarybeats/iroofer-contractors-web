@@ -107,8 +107,8 @@ export default function EstimatorPage() {
                 <li>You get a <strong>written</strong> proposal — tear-off, decking assumptions, materials, flashings</li>
                 <li>You decide — no same-day hard sell</li>
               </ol>
-              <p style={{ color: '#52606b', marginTop: 12 }}>The inspection is the quote. Request one at{' '}
-                <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>https://iroofercontractors.com/contact/</Link> or call {brand.phone}.</p>
+              <p style={{ color: '#52606b', marginTop: 12 }}>The inspection is the quote. {' '}
+                <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Request one online</Link> or call {brand.phone}.</p>
             </div>
             <div className="rv">
               <h2 style={{ fontSize: 'clamp(1.5rem,2.6vw,2rem)', fontWeight: 800 }}>Repair vs replace</h2>

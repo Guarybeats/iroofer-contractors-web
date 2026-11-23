@@ -82,7 +82,7 @@ const faq = [
   },
   {
     q: 'Do you handle insurance claims?',
-    a: 'Yes — dated photos, soft-metal impact testing, a roof diagram, a written scope, and we meet your adjuster on site. If we do not think the damage supports a claim, we tell you and quote the repair instead.',
+    a: 'Yes — dated photos, soft-metal impact testing, a roof diagram, a written scope, and we can meet your adjuster on site. If we do not think the damage supports a claim, we tell you and quote the repair instead.',
   },
   {
     q: 'Are you actually local to Austell?',

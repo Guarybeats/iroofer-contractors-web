@@ -67,9 +67,7 @@ export default function BlogPostPage() {
             <p>
               iRoofer Contractors is family-owned in Dallas since 2019. Call{' '}
               <a href={`tel:${brand.phone}`}>{brand.phone}</a> or{' '}
-              <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>
-                https://iroofercontractors.com/contact/
-              </Link>
+              <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>contact our Dallas team</Link>
               .
             </p>
 
@@ -164,8 +162,8 @@ export default function BlogPostPage() {
             <h2>How to get a real number</h2>
             <ol>
               <li>
-                Book a free inspection at{' '}
-                <Link href="/contact/" style={{ color: 'var(--orange)' }}>https://iroofercontractors.com/contact/</Link> or call {brand.phone}
+                {' '}
+                <Link href="/contact/" style={{ color: 'var(--orange)' }}>Book a free inspection</Link> or call {brand.phone}
               </li>
               <li>We find the source and photograph it</li>
               <li>You get a written scope</li>

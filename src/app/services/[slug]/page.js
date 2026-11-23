@@ -92,7 +92,7 @@ export default function ServiceDetail({ params }) {
           <div className="rv">
             <span className="eyebrow dark">{hub.eyebrow}</span>
             <h1 style={{ fontSize: 'clamp(2.2rem,4.6vw,3.6rem)', fontWeight: 900, lineHeight: 1.04 }}>{hub.h1Before}<span className="ac">{hub.h1Accent}</span></h1>
-            <p style={{ color: '#52606b', fontSize: '1.05rem', marginTop: 14, maxWidth: 640 }}>{hub.lead}</p>
+            <p style={{ color: "#52606b", fontSize: "1.05rem", marginTop: 14, maxWidth: 640 }}>{renderInline(hub.lead)}</p>
             <ul style={{ lineHeight: 2.1, color: '#52606b', marginTop: 16 }}>
               {hub.bullets.map((b) => <li key={b}>{b}</li>)}
             </ul>
@@ -115,7 +115,7 @@ export default function ServiceDetail({ params }) {
           <div className="svc-intro rv">
             <span className="eyebrow dark">Process</span>
             <h2 style={{ fontSize: 'clamp(1.8rem,3.6vw,2.6rem)', fontWeight: 900, lineHeight: 1.08 }}>{hub.processTitle}</h2>
-            <p style={{ color: '#52606b', marginTop: 12 }}>{hub.processIntro}</p>
+            <p style={{ color: "#52606b", marginTop: 12 }}>{renderInline(hub.processIntro)}</p>
           </div>
           <div className="svc-list rv" style={{ marginTop: 0 }}>
             {hub.steps.map((s) => (

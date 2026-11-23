@@ -74,7 +74,7 @@ export default function BlogPostPage() {
             <p>We don’t publish prices online. Tarping cost depends on the size and location of the damage and the roof’s pitch and access, and we tell you the price before we start. Many homeowner’s policies expect you to take reasonable steps to prevent further damage, and emergency tarping is often part of a storm claim, but coverage depends on your policy. Keep your receipt and photos. More on claims: <Link href="/blog/dallas-ga-hail-storm-insurance-claims/">our insurance claim guide</Link>.</p>
 
             <h2>Call (470) 236-1410</h2>
-            <p>We answer during shop hours (Mon–Fri 9–7 / Sat 9–5). If we’re on another call, we’ll call back as soon as we can, and active leaks are prioritized. See <Link href="/emergency-roof-repair-dallas-ga/">emergency roof repair in Dallas, GA</Link> or request help at <Link href="/contact/">https://iroofercontractors.com/contact/</Link>.</p>
+            <p>We answer during shop hours (Mon–Fri 9–7 / Sat 9–5). If we’re on another call, we’ll call back as soon as we can, and active leaks are prioritized. See <Link href="/emergency-roof-repair-dallas-ga/">emergency roof repair in Dallas, GA</Link> or <Link href="/contact/">request help from our Dallas team</Link>.</p>
             <p><Link href="/emergency-roof-repair-dallas-ga/" className="btn btn-solid">Get emergency help →</Link></p>
           </div>
         </div>

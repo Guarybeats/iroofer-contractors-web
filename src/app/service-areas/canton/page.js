@@ -39,7 +39,7 @@ const sections = [
     h2: 'Claim documentation that stands up',
     paras: [
       'Our Canton inspection is built around what an adjuster has to verify: dated photographs of every slope, marked test squares, soft-metal dent photos, hail size estimates where we can support them, and damage plotted on a roof diagram, followed by a written scope of work tied to that evidence.',
-      'Then we meet your adjuster on the roof, walk the same test squares with them, and handle supplements if items are missed. And when the evidence is not there, we say so — north Cherokee gets enough real hail that nobody needs to be talked into a claim they will lose.',
+      'Then we can meet your adjuster on the roof and walk the same test squares with them. Your insurer decides coverage; we do not negotiate claims and are not public adjusters. And when the evidence is not there, we say so — north Cherokee gets enough real hail that nobody needs to be talked into a claim they will lose.',
     ],
   },
   {
@@ -78,7 +78,7 @@ const faq = [
   },
   {
     q: 'Will you meet my insurance adjuster?',
-    a: 'Yes, we walk the roof with the adjuster, show the same marked test squares and soft-metal evidence we documented, and handle supplements when items get missed in the first estimate.',
+    a: 'We can. We walk the roof with the adjuster and show the same marked test squares and soft-metal evidence we documented. The coverage decision is your insurer’s, and we do not guarantee approval.',
   },
   {
     q: 'Are you local to Canton?',

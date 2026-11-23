@@ -56,7 +56,7 @@ export const localCopy = {};
 // ─────────────────────────────────────────────────────────────── ROOF REPAIR
 localCopy['roof-repair'] = {
   'dallas-ga': {
-    intro: "Need roof repair in Dallas, GA? Most leaks we chase around Paulding County start small: a cracked pipe boot, a lifted shingle, or step flashing that let go along a wall. iRoofer Contractors is family-owned right here in Dallas since 2019. Our crew finds where the water actually gets in and fixes that spot, so a small repair stays small. Call (470) 236-1410 or book a free inspection at https://iroofercontractors.com/contact/.",
+    intro: "Need roof repair in Dallas, GA? Most leaks we chase around Paulding County start small: a cracked pipe boot, a lifted shingle, or step flashing that let go along a wall. iRoofer Contractors is family-owned right here in Dallas since 2019. Our crew finds where the water actually gets in and fixes that spot, so a small repair stays small. Call (470) 236-1410 or [book a free inspection](/contact/).",
     sections: [
       { h: "Roof repair in Dallas, GA starts with the real leak",
         p: "The stain on your ceiling is almost never right under the problem. Water runs along the decking and rafters before it drips. We start in the attic when we can get in, then walk the roof and follow the path back to the source. That's usually a pipe boot, a valley, chimney or wall flashing, or shingles the wind worked loose. You get photos of the failure point and a written scope before any work starts." },
@@ -82,7 +82,7 @@ localCopy['roof-repair'] = {
       { h: "Storm, hail and insurance-related damage",
         p: "If the trouble showed up after hail or straight-line wind, start with documentation. We photograph damage slope by slope with dates, note dents in vents and gutters that tie it to a storm, and write a scope your adjuster can check. We can meet the adjuster at the house if you want us there. Your policy and your carrier decide what's covered, so we don't promise an outcome. See [storm damage roof repair in Dallas, GA](/storm-damage-roof-repair-dallas-ga/), [hail damage roof repair](/hail-damage-roof-repair-dallas-ga/) and [roof insurance claims help](/services/roof-insurance-claims/)." },
       { h: "Book a Dallas roof repair inspection",
-        p: "We're based in Dallas, so we're not driving in from across the state. Call (470) 236-1410 or request your free inspection at https://iroofercontractors.com/contact/." },
+        p: "We're based in Dallas, so we're not driving in from across the state. Call (470) 236-1410 or [request your free inspection](/contact/)." },
     ],
     faq: [
       { q: "How much does roof repair cost in Dallas, GA?", a: "It depends on what failed, how steep and reachable it is, and whether there's soft decking underneath. We don't quote blind. We inspect for free and put a written price in front of you. For the factors, see our [roof repair cost guide](/blog/roof-repair-cost-dallas-ga/)." },
@@ -96,7 +96,7 @@ localCopy['roof-repair'] = {
     ],
   },
   'hiram': {
-    intro: "Leaks, failed flashing, and storm wear show up on Hiram homes the same way they do in Dallas — humidity, trees, and sudden west-Georgia weather. iRoofer Contractors is family-owned in nearby Dallas since 2019. Same local crew. We inspect, photograph, tarp when needed, and put a written repair scope in your hand. Prefer replacement talk instead? See [roof replacement in Hiram](/roof-replacement-hiram/). Book at https://iroofercontractors.com/contact/ or call (470) 236-1410.",
+    intro: "Leaks, failed flashing, and storm wear show up on Hiram homes the same way they do in Dallas — humidity, trees, and sudden west-Georgia weather. iRoofer Contractors is family-owned in nearby Dallas since 2019. Same local crew. We inspect, photograph, tarp when needed, and put a written repair scope in your hand. Prefer replacement talk instead? See [roof replacement in Hiram](/roof-replacement-hiram/). [Book a free roof inspection](/contact/) or call (470) 236-1410.",
     sections: [
       {
         "id": "roof-inspection",
@@ -128,7 +128,7 @@ localCopy['roof-repair'] = {
             ]
           },
           "Inspection first, then the right page. If the inspection finds a repair, it’s handled here. Widespread wear goes to [roof replacement in Hiram](/roof-replacement-hiram/). Hail or wind damage goes to [storm damage roof repair in Hiram](/storm-damage-roof-repair-hiram/), where we document it for your adjuster.",
-          "Book a free roof inspection: https://iroofercontractors.com/contact/ or (470) 236-1410."
+          "[Book a free roof inspection](/contact/) or (470) 236-1410."
         ]
       },
       {
@@ -167,13 +167,13 @@ localCopy['roof-repair'] = {
       },
       {
         "h": "Book a Hiram roof repair",
-        "p": "Call (470) 236-1410 or book at https://iroofercontractors.com/contact/. Active leak? Say so on the phone. Water coming in goes ahead of routine work, and we put on an emergency tarp as soon as the schedule and safe access allow. Everything else starts with a free inspection and a written scope."
+        "p": "Call (470) 236-1410 or [book a free roof inspection](/contact/). Active leak? Say so on the phone. Water coming in goes ahead of routine work, and we put on an emergency tarp as soon as the schedule and safe access allow. Everything else starts with a free inspection and a written scope."
       }
     ],
     faq: [
       {
         "q": "Is a Hiram roof inspection free?",
-        "a": "We offer a no-pressure inspection tied to a clear written finding — call (470) 236-1410 or use https://iroofercontractors.com/contact/."
+        "a": "We offer a no-pressure inspection tied to a clear written finding — call (470) 236-1410 or [request a free roof inspection](/contact/)."
       },
       {
         "q": "Are you a certified home inspector?",
@@ -361,7 +361,7 @@ localCopy['roof-repair'] = {
 // ───────────────────────────────────────────────────────── ROOF REPLACEMENT
 localCopy['roof-replacement'] = {
   'dallas-ga': {
-    intro: "Thinking about roof replacement in Dallas, GA? Usually it's because the patches stopped working: a third leak, granules in the gutters, shingles curling on more than one slope. iRoofer Contractors is family-owned in Dallas since 2019. Our crew walks the whole roof, shows you photos, and gives you a written plan, whether that's a full replacement or a repair that still makes sense. Call (470) 236-1410 or book a free inspection at https://iroofercontractors.com/contact/.",
+    intro: "Thinking about roof replacement in Dallas, GA? Usually it's because the patches stopped working: a third leak, granules in the gutters, shingles curling on more than one slope. iRoofer Contractors is family-owned in Dallas since 2019. Our crew walks the whole roof, shows you photos, and gives you a written plan, whether that's a full replacement or a repair that still makes sense. Call (470) 236-1410 or [book a free inspection](/contact/).",
     sections: [
       { h: "When roof replacement in Dallas makes sense",
         p: "Common signs it's time:",
@@ -375,7 +375,7 @@ localCopy['roof-replacement'] = {
       { h: "Cost and insurance",
         p: "We don't publish prices. Size, pitch, layers, decking and the shingle you pick all change the number. Our [roof replacement cost guide](/blog/roof-replacement-cost-dallas-ga/) explains the factors, and we put a real figure in writing after the inspection. If a storm caused the damage, start with [storm damage roof repair in Dallas, GA](/storm-damage-roof-repair-dallas-ga/) and [roof insurance claims help](/services/roof-insurance-claims/). We document what we find and can meet your adjuster. Your policy decides what's covered." },
       { h: "Get your Dallas replacement plan",
-        p: "Free inspection, photos, a written scope, and no pressure to sign that day. Call (470) 236-1410 or start at https://iroofercontractors.com/contact/." },
+        p: "Free inspection, photos, a written scope, and no pressure to sign that day. Call (470) 236-1410 or [request a free roof inspection](/contact/)." },
     ],
     faq: [
       { q: "How long does a roof replacement take in Dallas, GA?", a: "It depends on size, pitch, how much decking needs replacing, and the weather. You get a realistic schedule in writing after the inspection." },
@@ -393,9 +393,9 @@ localCopy['roof-replacement'] = {
       { h: "The layer count decides the job",
         p: "Under the residential code a roof already carrying three layers has to come off to the deck rather than be covered again — and we take everything to the deck as standard regardless, because you cannot inspect what you cannot see. On Hiram homes that have been re-covered once already, the tear-off is heavier and the quote reflects it honestly rather than being discovered as a change order. Paulding County permitting comes into play if sheathing or framing has to be replaced; we pull it through the county's Building & Permitting Division and hand you the sign-off. No overlays." },
       { h: "How a Hiram replacement works",
-        p: "Inspect/measure → written proposal → tear-off → decking → underlayment/flashings → shingles/ridge → cleanup → walkthrough + warranty registration. Prefer a repair instead? See [roof repair in Hiram](/service-areas/hiram/#roof-repair). Wondering what drives the price? See [roof replacement cost factors](/blog/roof-replacement-cost-dallas-ga/). More about the area: [our Hiram service area](/service-areas/hiram/). Call (470) 236-1410 or https://iroofercontractors.com/contact/." },
+        p: "Inspect/measure → written proposal → tear-off → decking → underlayment/flashings → shingles/ridge → cleanup → walkthrough + warranty registration. Prefer a repair instead? See [roof repair in Hiram](/service-areas/hiram/#roof-repair). Wondering what drives the price? See [roof replacement cost factors](/blog/roof-replacement-cost-dallas-ga/). More about the area: [our Hiram service area](/service-areas/hiram/). Call (470) 236-1410 or [contact our Dallas team](/contact/)." },
       { h: "Storm / insurance cross-link",
-        p: "If hail or wind started this conversation, document first: /storm-damage-roof-repair-dallas-ga/ and /services/roof-insurance-claims/. No guaranteed claim outcomes." },
+        p: "If hail or wind started this conversation, get it documented first: see [storm damage roof repair in Dallas](/storm-damage-roof-repair-dallas-ga/) and [how we help with roof insurance claims](/services/roof-insurance-claims/). We don't guarantee claim approval." },
     ],
     faq: [
       { q: "Can you just go over my existing shingles?", a: "We do not. Overlays hide the deck, add weight, shorten the life of the new shingles and make future leaks harder to trace. Code requires a tear-off at three layers; we tear off at one." },
@@ -409,12 +409,12 @@ localCopy['roof-replacement'] = {
     intro: "A lot of Douglasville replacements start as a storm claim. Whether yours is insurance-funded or out of pocket changes the paperwork, but it should not change the standard of the installation.",
     sections: [
       { h: "Building the roof back to spec, not to the check",
-        p: "When an insurer settles, the scope they write is not always the scope the roof needs — drip edge, ice-and-water at valleys, ridge vent and starter course are the line items most commonly left out. We build the roof correctly and supplement the claim for what the code and the manufacturer actually require, rather than quietly installing to whatever the initial check covers. That is the difference between a roof that carries a full manufacturer warranty and one that technically has shingles on it. Douglas County runs its own permitting department, with its own inspection line, and we file there when structural work is in scope." },
+        p: "When an insurer settles, the scope they write is not always the scope the roof needs — drip edge, ice-and-water at valleys, ridge vent and starter course are the line items most commonly left out. We document what the code and the manufacturer require, explain the proposed work to you and your adjuster, and build the roof correctly rather than quietly installing to whatever the initial check covers. Your insurer decides coverage, and we do not negotiate claims or act as public adjusters. That is the difference between a roof that carries a full manufacturer warranty and one that technically has shingles on it. Douglas County runs its own permitting department, with its own inspection line, and we file there when structural work is in scope." },
       { h: "Layers, decking and the three-layer rule",
         p: "Older Douglasville homes have often been re-covered at least once. The residential code requires that a roof already carrying three layers be stripped to the deck rather than covered again, and we strip regardless — an overlay makes it impossible to inspect the sheathing you are about to warranty. Once the deck is open we walk it sheet by sheet, replace what is soft, and dry it in before we leave with synthetic underlayment. Nothing sits open overnight, which in a Douglasville spring is not a small consideration." },
     ],
     faq: [
-      { q: "My insurance settled for less than your quote. What now?", a: "That is common and usually fixable. Missing line items — drip edge, valley membrane, ventilation, starter — get supplemented with documentation. We handle that with your adjuster rather than cutting the scope to fit the check." },
+      { q: "My insurance settled for less than your quote. What now?", a: "It happens. We show you, with photos and the written scope, which items the roof needs that the estimate leaves out, such as drip edge, valley membrane, ventilation or starter. You can share that documentation with your insurer; they decide coverage. We do not negotiate claims, and we will not cut the scope to fit the check." },
       { q: "Will you install to whatever my insurance pays?", a: "No, we install to code and to manufacturer specification, because that is what keeps the warranty valid. If there is a genuine gap we will show you exactly what it is before you commit." },
       { q: "Do you tear off or go over?", a: "Always tear off. Code mandates it at three layers; we do it at one, because the deck underneath is the part you are actually buying and nobody can inspect it through an overlay." },
       { q: "Who issues the permit in Douglasville?", a: "Douglas County runs its own building permit department with separate inspection scheduling. We file when structural work is in scope and hand you the sign-off." },
@@ -481,7 +481,7 @@ localCopy['roof-replacement'] = {
         "h": "How replacement week goes",
         "p": "Before we start, you get the schedule and the scope in writing. On the day, we protect landscaping and the driveway, tear off, and walk the deck. If we find decking that needs replacing, we show you before we replace it. Then underlayment, flashing, shingles and ridge go on, and the yard gets a magnetic sweep before we leave. At the end we walk the job with you and register the warranty. How long it takes depends on size, layers, decking and weather, and we’ll tell you up front rather than guess here.",
         "blocks": [
-          "Not sure you need a full replacement? A lot of Marietta calls turn out to be repairs: [roof repair in Marietta](/service-areas/marietta/#roof-repair). Book a free inspection at https://iroofercontractors.com/contact/ or call (470) 236-1410."
+          "Not sure you need a full replacement? A lot of Marietta calls turn out to be repairs: [roof repair in Marietta](/service-areas/marietta/#roof-repair). [Book a free inspection](/contact/) or call (470) 236-1410."
         ]
       }
     ],
@@ -575,7 +575,7 @@ localCopy['storm-damage-roof-repair'] = {
     intro: "After a Georgia storm, Dallas roofs often hide bruised shingles, lifted tabs, and quiet leaks that show up days later. iRoofer Contractors — family-owned since 2019 — walks the roof, photographs what we find, and explains repair versus replacement in plain English.",
     sections: [
       { h: "Why local storm repair",
-        p: "Owens Corning Contractor Rewards member. We document the way adjusters expect — no promised claim outcomes. Our Dallas-based crew treats storm calls like emergencies—not sales appointments. Call (470) 236-1410 or https://iroofercontractors.com/contact/." },
+        p: "Owens Corning Contractor Rewards member. We document the way adjusters expect — no promised claim outcomes. Our Dallas-based crew treats storm calls like emergencies—not sales appointments. Call (470) 236-1410 or [contact our Dallas team](/contact/)." },
       { h: "Our storm damage process in Dallas, GA",
         p: "Inspect → photos → tarp if needed → written scope → repair vs replace → complete + cleanup. Interior stains and attic moisture get noted too. Isolated missing shingles or flashing failures often repair cleanly; widespread bruising or an older roof near end of life may point to replacement. For urgent leaks, ask about emergency tarping in Dallas." },
       { h: "Hail damage roof repair in Dallas, GA",
@@ -583,7 +583,7 @@ localCopy['storm-damage-roof-repair'] = {
       { h: "Why Paulding storm cells hit Dallas hard",
         p: "Paulding sits where west Georgia storm cells organize before they reach Atlanta — straight-line wind that strips slopes and lifts ridge caps, hail that bruises mats without breaking them, and tree-limb strikes on wooded lots. We photograph with dates, check soft metals (vents, gutter aprons) for impact dents, and meet your adjuster on the roof when a claim applies. If the damage does not support a claim, we say so and quote the repair directly." },
       { h: "Call now for storm response in Dallas",
-        p: "Call (470) 236-1410. Storm hit your roof? Don't wait for the next rain. Speak with our local crew today for inspection, tarping, and claim documentation. https://iroofercontractors.com/contact/" },
+        p: "Call (470) 236-1410. Storm hit your roof? Don't wait for the next rain. Speak with our local crew today for inspection, tarping, and claim documentation. [Request a free roof inspection](/contact/)." },
     ],
     faq: [
       { q: "How soon after a storm should I get my Dallas roof inspected?", a: "As soon as it's safe. Hidden bruising and lifted shingles can leak on the next rain. Prompt photos also help if you file a claim. Call (470) 236-1410 for a Dallas inspection." },
@@ -610,7 +610,7 @@ localCopy['storm-damage-roof-repair'] = {
     ],
   },
   'douglasville': {
-    intro: "Douglasville takes straight-line wind off the ridge most springs, and hail cells track through Douglas County often enough that we know where to look before the ladder goes up. iRoofer Contractors is a family-owned crew based in nearby Dallas, GA since 2019. After a storm we tarp anything open to the weather, map the damage slope by slope, and give you a written scope you and your adjuster can both check. Call (470) 236-1410 or start at https://iroofercontractors.com/contact/.",
+    intro: "Douglasville takes straight-line wind off the ridge most springs, and hail cells track through Douglas County often enough that we know where to look before the ladder goes up. iRoofer Contractors is a family-owned crew based in nearby Dallas, GA since 2019. After a storm we tarp anything open to the weather, map the damage slope by slope, and give you a written scope you and your adjuster can both check. Call (470) 236-1410 or [request a free roof inspection](/contact/).",
     sections: [
       {
         "h": "Roof leaking after a Douglasville storm? Start here",
@@ -625,8 +625,8 @@ localCopy['storm-damage-roof-repair'] = {
         "p": "Hail scatters where wind is directional, so we read it differently. On the shingles we look for bruises: soft spots where granules have been knocked loose and the mat underneath is exposed or fractured. Off the shingles we check the soft metals: box vents, pipe-boot collars, flashing, gutters and downspouts. Dents there are dated evidence that ties the roof damage to a specific storm. We photograph it all by elevation, with a scale reference, because “the roof has hail damage” is a sentence an adjuster can argue with and a slope-by-slope photo set mostly isn’t. More: [our Georgia hail damage checklist](/blog/georgia-hail-storm-roof-checklist/)."
       },
       {
-        "h": "Claim scope, supplements, and building it back properly",
-        "p": "Insurers frequently write an initial scope that omits what the code and manufacturer actually require — drip edge, valley membrane, starter course, adequate ventilation. Those omissions are not usually bad faith, they are a desk estimate written without the roof in front of them, and they are correctable with documentation. We supplement rather than silently reducing the build to fit the check, because a roof installed outside manufacturer specification does not carry the warranty you think it does. Douglas County handles its own permitting and inspections when structural work is in scope.",
+        "h": "Claim scope, documentation, and building it back properly",
+        "p": "Insurers frequently write an initial scope that omits what the code and manufacturer actually require — drip edge, valley membrane, starter course, adequate ventilation. Those omissions are not usually bad faith, they are a desk estimate written without the roof in front of them, and documentation is how they get reviewed. We photograph the roof, explain the proposed work, and can meet your adjuster; your insurer decides coverage. We do not silently reduce the build to fit the check, because a roof installed outside manufacturer specification does not carry the warranty you think it does. Douglas County handles its own permitting and inspections when structural work is in scope.",
         "blocks": [
           "More on how we handle the claim side: [roof insurance claims help](/services/roof-insurance-claims/)."
         ]
@@ -659,7 +659,7 @@ localCopy['storm-damage-roof-repair'] = {
       },
       {
         "q": "My insurer's estimate is lower than your quote. Is one of you wrong?",
-        "a": "Usually neither — their desk estimate often omits code-required items like drip edge, valley membrane or ventilation. That gets supplemented with documentation rather than by cutting the build quality."
+        "a": "Usually neither. A desk estimate often leaves out code-required items like drip edge, valley membrane or ventilation. We document those items with photos and a written scope you can share with your insurer, who decides coverage. We do not cut build quality to match the number."
       },
       {
         "q": "Do you do emergency tarping in Douglasville?",
@@ -681,14 +681,14 @@ localCopy['storm-damage-roof-repair'] = {
       { h: "The door-knocker filter",
         p: "The City of Powder Springs requires any contractor pulling a permit here to hold a state license, a local business license and a code compliance bond. That is a genuinely useful filter and it costs you nothing to apply it at your front door. Ask for all three before anyone climbs on your roof, and be wary of anyone asking you to sign a document authorising them to deal with your insurer before you have seen a written scope. A legitimate contractor inspects, documents, and gives you a quote you can take to anyone." },
       { h: "Documenting hail on a low-slope roof",
-        p: "Many Powder Springs homes are single-slope ranches, and hail behaves differently on a shallow pitch — impacts land closer to perpendicular, so bruising is often more pronounced than on a steep elevation catching the same storm at a glancing angle. We mark test squares, photograph soft-metal denting on gutters, vents and flashing as corroborating evidence, and drone the property so the whole roof is on record. Then we meet your adjuster on the roof and agree scope there rather than by correspondence." },
+        p: "Many Powder Springs homes are single-slope ranches, and hail behaves differently on a shallow pitch — impacts land closer to perpendicular, so bruising is often more pronounced than on a steep elevation catching the same storm at a glancing angle. We mark test squares, photograph soft-metal denting on gutters, vents and flashing as corroborating evidence, and drone the property so the whole roof is on record. Then we can meet your adjuster on the roof and agree scope there rather than by correspondence." },
     ],
     faq: [
       { q: "Someone knocked on my door after the hail. Should I sign anything?", a: "Not before you have a written scope you understand. Be especially careful with documents authorising a contractor to negotiate with your insurer on your behalf. Get the quote, keep the choice." },
       { q: "How do I check a storm contractor is legitimate here?", a: "Ask for a Georgia state license, a local business license and proof of the code compliance bond Powder Springs requires. Without all three they cannot be issued a permit in this city." },
       { q: "Does a low-slope roof get worse hail damage?", a: "It can present differently — shallow pitches catch impacts closer to perpendicular, so bruising is often more pronounced than on a steep slope hit by the same storm. We mark test squares to document it properly." },
       { q: "Will you meet my adjuster on site?", a: "Yes, agreeing scope on the roof with photographs in hand is far faster and far less contentious than arguing it by email after the fact." },
-      { q: "What does storm damage repair cost in Powder Springs, GA?", a: "If it is a covered claim, often your deductible plus any upgrades you choose. If it is not, we quote the repair in writing after a free inspection. We will tell you which it is." },
+      { q: "What does storm damage repair cost in Powder Springs, GA?", a: "We give you a written price after a free inspection. If you file a claim, your insurer decides what is covered and you are responsible for your deductible and anything the policy does not cover. We document the damage and explain the proposed work." },
     ],
   },
   'marietta': {
@@ -708,7 +708,7 @@ localCopy['storm-damage-roof-repair'] = {
     ],
   },
   'kennesaw': {
-    intro: "Storm damage roof repair in Kennesaw usually starts one of two ways: a roof that’s plainly open after a cell blows through, or a leak that starts three rains later from shingles the wind lifted and quietly laid back down. We handle both for Kennesaw homes. iRoofer Contractors is family-owned in Dallas, GA since 2019. If water is coming in, we tarp first. Then we inspect every slope (by drone when the roof is steep), photograph the damage with dates for your claim, and make the permanent repair once the roof is dry. Call (470) 236-1410 or book at https://iroofercontractors.com/contact/.",
+    intro: "Storm damage roof repair in Kennesaw usually starts one of two ways: a roof that’s plainly open after a cell blows through, or a leak that starts three rains later from shingles the wind lifted and quietly laid back down. We handle both for Kennesaw homes. iRoofer Contractors is family-owned in Dallas, GA since 2019. If water is coming in, we tarp first. Then we inspect every slope (by drone when the roof is steep), photograph the damage with dates for your claim, and make the permanent repair once the roof is dry. Call (470) 236-1410 or [book a free roof inspection](/contact/).",
     sections: [
       {
         "h": "Emergency roof repair in Kennesaw: the first hour",
@@ -852,7 +852,7 @@ localCopy['storm-damage-roof-repair'] = {
       { q: "How fast can you tarp in Austell?", a: "As fast as we safely can when the deck is open. Sealing it first is both the right order of operations and protection for your claim, since insurers can reduce settlement for damage that worsened afterwards." },
       { q: "Does Cobb County give a flood insurance discount?", a: "Cobb participates in FEMA's Community Rating System at class 7, which earns residents a 15% discount on NFIP premiums. Worth confirming with your carrier that it is applied." },
       { q: "Do storm repairs need a permit in Austell?", a: "Austell falls under Cobb County. Surface repairs generally do not require a permit; structural work does. Floodplain permitting is governed separately under the county code." },
-      { q: "Will you meet my adjuster on the roof?", a: "Yes, with the documentation already prepared. Agreeing scope on site is faster and cleaner than negotiating it afterwards while the building keeps taking water." },
+      { q: "Will you meet my adjuster on the roof?", a: "We can, with the photos and written scope already prepared, so the adjuster sees the same damage we documented. We do not negotiate the claim; your insurer decides coverage." },
     ],
   },
 };
@@ -869,7 +869,7 @@ localCopy['gutter-repair-replacement'] = {
       { h: "Repair vs replacement",
         p: "Loose hangers and minor seams often repair. Chronic overflow, separation, or systemic undersizing → replacement sized correctly. We measure rather than defaulting, then put the recommendation in writing." },
       { h: "Roof + gutter together",
-        p: "Failing gutters soak eaves and can look like a \"roof leak.\" If stains track the perimeter, we check both — see also roof repair in Dallas. Call (470) 236-1410 or https://iroofercontractors.com/contact/." },
+        p: "Failing gutters soak eaves and can look like a \"roof leak.\" If stains track the perimeter, we check both — see also roof repair in Dallas. Call (470) 236-1410 or [contact our Dallas team](/contact/)." },
     ],
     faq: [
       { q: "My gutters overflow even though they are clean. Why?", a: "Almost always capacity or fall, not blockage. An undersized run or too few downspouts for the roof area will overshoot in a heavy Georgia downpour regardless of how clear it is." },
@@ -996,7 +996,7 @@ localCopy['gutter-repair-replacement'] = {
 // ──────────────────────────────────────────────────────── NEW CONSTRUCTION
 localCopy['new-construction'] = {
   'dallas-ga': {
-    intro: "New Dallas builds deserve a roof crew that treats the site like a neighbor’s house — because it is. iRoofer Contractors installs new-construction roofs from our shop in Dallas, GA. Family-owned since 2019. See [new construction roofing services](/services/new-construction/) for the service overview. Ready to talk? https://iroofercontractors.com/contact/ or (470) 236-1410.",
+    intro: "New Dallas builds deserve a roof crew that treats the site like a neighbor’s house — because it is. iRoofer Contractors installs new-construction roofs from our shop in Dallas, GA. Family-owned since 2019. See [new construction roofing services](/services/new-construction/) for the service overview. Ready to talk? [Contact our Dallas team](/contact/) or (470) 236-1410.",
     sections: [
       { h: "Dallas new builds — what we care about on site",
         p: "Schedule coordination with framing and weather. Deck condition and fastener patterns that match the shingle system. Ice/water shield and flashing details at valleys, eaves, chimneys, and walls. Ventilation that matches the attic design — not an afterthought. Daily cleanup so other trades can work. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that product is specified or selected. We work with Paulding County Building & Permitting on Constitution Blvd so dry-in windows stay tight." },

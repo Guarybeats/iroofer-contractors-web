@@ -26,7 +26,7 @@ export const metadata = {
 
 const intro = [
   'Need roof repair or a roof replacement in Hiram? iRoofer Contractors is a family-owned roofing contractor based a short drive away in Dallas, GA, working in Hiram since 2019. Most Hiram calls are one of two jobs: fixing a leak or storm-worn spot on a roof that still has years left, or replacing a roof that has reached the end. We tell you which one yours is, with photos.',
-  'Start with a free inspection at https://iroofercontractors.com/contact/ or call (470) 236-1410.',
+  'Start with a [free roof inspection](/contact/) or call (470) 236-1410.',
 ];
 
 const sections = [

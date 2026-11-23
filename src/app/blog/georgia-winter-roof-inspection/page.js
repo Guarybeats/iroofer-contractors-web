@@ -94,7 +94,7 @@ export default function BlogPostPage() {
             </ul>
 
             <h2>Get your roof ready for winter</h2>
-            <p>Book a free roof inspection at <Link href="/contact/">https://iroofercontractors.com/contact/</Link> or call (470) 236-1410. Related: <Link href="/roof-repair-dallas-ga/">roof repair in Dallas, GA</Link> and <Link href="/gutter-repair-replacement-dallas-ga/">gutter repair &amp; replacement</Link>.</p>
+            <p><Link href="/contact/">Book a free roof inspection</Link> or call (470) 236-1410. Related: <Link href="/roof-repair-dallas-ga/">roof repair in Dallas, GA</Link> and <Link href="/gutter-repair-replacement-dallas-ga/">gutter repair &amp; replacement</Link>.</p>
             <p><Link href="/contact/" className="btn btn-solid">Schedule a winter inspection →</Link></p>
           </div>
         </div>

@@ -230,8 +230,8 @@ export default function BlogStormChecklist() {
         <div className="rv" style={{ marginTop: 48, padding: '2rem', background: '#fff', border: '1px solid rgba(22,29,37,.1)', borderRadius: 8 }}>
           <h2 style={{ marginTop: 0, fontSize: '1.3rem' }}>Think hail got your roof?</h2>
           <p style={{ color: MUTED }}>
-            Book a free storm-damage inspection at{' '}
-            <Link href="/contact/" style={A}>https://iroofercontractors.com/contact/</Link>
+            {' '}
+            <Link href="/contact/" style={A}>Book a free storm-damage inspection</Link>
             {' '}or call{' '}
             <a href={`tel:${brand.phone}`} style={A}>{brand.phone}</a>. We’ll photograph what we find, tell you honestly whether it’s a claim or a repair, and meet your adjuster if you want us there.
           </p>

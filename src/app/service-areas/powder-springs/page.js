@@ -24,7 +24,7 @@ export const metadata = {
 
 const intro = [
   'We roof houses in Powder Springs: ranches off Macland Road, two-stories toward Lost Mountain, and the wooded lots where limbs and leaves wear a roof down early. iRoofer Contractors is a family-owned residential crew from Dallas, GA, since 2019. We handle [roof repair](/service-areas/powder-springs/#roof-repair), [full replacement](/roof-replacement-powder-springs/) and storm inspections on homes.',
-  'Gutters or fascia the real problem? Head to [gutter repair & replacement in Powder Springs](/gutter-repair-replacement-powder-springs/). For your roof, use [https://iroofercontractors.com/contact/](/contact/) or call (470) 236-1410.',
+  'Gutters or fascia the real problem? Head to [gutter repair & replacement in Powder Springs](/gutter-repair-replacement-powder-springs/). For your roof, [request a free roof inspection](/contact/) or call (470) 236-1410.',
 ];
 
 const sections = [

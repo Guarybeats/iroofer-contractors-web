@@ -87,7 +87,7 @@ export default function ServicesPage() {
             <p style={{ marginTop: 12 }}>
               <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>
               {' · '}
-              <Link href="/contact/" style={{ fontWeight: 700, color: 'var(--orange)' }}>https://iroofercontractors.com/contact/</Link>
+              <Link href="/contact/" style={{ fontWeight: 700, color: 'var(--orange)' }}>contact our Dallas team</Link>
             </p>
           </div>
           <div className="cards">
@@ -171,8 +171,8 @@ export default function ServicesPage() {
             <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
               Call or text{' '}
               <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>
-              {' or send the address and what you are seeing at '}
-              <Link href="/contact/" style={{ fontWeight: 700, color: 'var(--orange)' }}>https://iroofercontractors.com/contact/</Link>
+              {' or '}
+              <Link href="/contact/" style={{ fontWeight: 700, color: 'var(--orange)' }}>send us the address and what you are seeing</Link>
               . If water is coming in now, tell us first thing so we come to you first.
             </p>
           </div>

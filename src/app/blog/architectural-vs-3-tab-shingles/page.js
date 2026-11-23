@@ -73,7 +73,7 @@ export default function BlogPostPage() {
             <p>As an Owens Corning Contractor Rewards member, we install Owens Corning architectural shingle systems when that line fits the house, and we’ll show you samples and colors during your inspection. More on materials: <Link href="/blog/choosing-roofing-materials-dallas-ga/">choosing roofing materials</Link>.</p>
 
             <h2>Still deciding?</h2>
-            <p>We’ll walk you through the options during a free inspection and give you written pricing for your roof. No pressure. Book at <Link href="/contact/">https://iroofercontractors.com/contact/</Link> or call (470) 236-1410.</p>
+            <p>We’ll walk you through the options during a free inspection and give you written pricing for your roof. No pressure. <Link href="/contact/">Book a free roof inspection</Link> or call (470) 236-1410.</p>
             <RelatedPosts slug="architectural-vs-3-tab-shingles" />
             <p><Link href="/contact/" className="btn btn-solid">Book a free inspection →</Link></p>
           </div>

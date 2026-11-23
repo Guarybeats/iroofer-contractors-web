@@ -49,8 +49,8 @@ export default function BlogPostPage() {
               A new roof usually comes with <strong>two</strong> warranties: one from the shingle manufacturer, and one from the contractor for workmanship. Mixing them up is how homeowners lose time when something goes wrong. iRoofer Contractors — Dallas, GA, family-owned since 2019 — registers manufacturer coverage when we install and puts workmanship terms in writing.
             </p>
             <p>
-              Ready to talk about your roof? Visit{' '}
-              <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>https://iroofercontractors.com/contact/</Link>
+              Ready to talk about your roof? {' '}
+              <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Request a free roof inspection</Link>
               {' '}or call <a href={`tel:${brand.phone}`}>{brand.phone}</a>.
             </p>
 
@@ -111,7 +111,7 @@ export default function BlogPostPage() {
             <p><strong>Does a manufacturer warranty cover storm damage?</strong><br />Usually no — that is an insurance conversation.</p>
             <p><strong>Does workmanship transfer when I sell?</strong><br />Often no, or only under specific written terms. Manufacturer transfer rules vary — registration matters. Ask us to review your packet.</p>
             <p><strong>Can you explain a warranty another company wrote?</strong><br />We can give an honest read of common terms; we cannot rewrite another contractor’s obligations.</p>
-            <p><strong>Who do I call for an iRoofer install?</strong><br />{brand.phone} or https://iroofercontractors.com/contact/</p>
+            <p><strong>Who do I call for an iRoofer install?</strong><br />{brand.phone} or <Link href="/contact/">contact our Dallas team</Link></p>
 
             <p>
               <Link href="/contact/" className="btn btn-solid">Review my warranty paperwork →</Link>

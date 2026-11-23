@@ -79,7 +79,7 @@ export default function BlogPostPage() {
             <p>Once the roof is secured, we photograph the damage, write up the permanent repair, and schedule it with you. If insurance is involved, we help you document damage for your insurance claim. For what to do while you wait, see <Link href="/blog/emergency-roof-tarping-dallas/">our emergency tarping guide</Link>.</p>
 
             <h2>Need help now?</h2>
-            <p>Call <a href={`tel:${brand.phone}`}>{brand.phone}</a> or see <Link href="/emergency-roof-repair-dallas-ga/">emergency roof repair in Dallas, GA</Link>. You can also send details at <Link href="/contact/">https://iroofercontractors.com/contact/</Link>.</p>
+            <p>Call <a href={`tel:${brand.phone}`}>{brand.phone}</a> or see <Link href="/emergency-roof-repair-dallas-ga/">emergency roof repair in Dallas, GA</Link>. You can also <Link href="/contact/">send us the details</Link>.</p>
             <p><Link href="/emergency-roof-repair-dallas-ga/" className="btn btn-solid">Emergency roof help →</Link></p>
           </div>
         </div>

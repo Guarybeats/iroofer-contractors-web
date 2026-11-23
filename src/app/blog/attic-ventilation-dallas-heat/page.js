@@ -76,7 +76,7 @@ export default function BlogPostPage() {
             <p>On a roof replacement, we look at the whole system: ridge vent, soffit intake, and whether insulation is blocking airflow at the eaves (baffles fix that). On an existing roof, a ridge vent can often be retrofitted, but if the roof is near the end of its life it usually makes more sense to fix ventilation as part of the replacement.</p>
 
             <h2>Want us to check your attic?</h2>
-            <p>Book a free inspection and we’ll look at your intake, exhaust and attic conditions and tell you what, if anything, your home needs. Book at <Link href="/contact/">https://iroofercontractors.com/contact/</Link> or call (470) 236-1410. Related: <Link href="/roof-replacement-dallas-ga/">roof replacement in Dallas, GA</Link>.</p>
+            <p>Book a free inspection and we’ll look at your intake, exhaust and attic conditions and tell you what, if anything, your home needs. <Link href="/contact/">Book a free roof inspection</Link> or call (470) 236-1410. Related: <Link href="/roof-replacement-dallas-ga/">roof replacement in Dallas, GA</Link>.</p>
             <RelatedPosts slug="attic-ventilation-dallas-heat" />
             <p><Link href="/contact/" className="btn btn-solid">Book a free roof inspection →</Link></p>
           </div>

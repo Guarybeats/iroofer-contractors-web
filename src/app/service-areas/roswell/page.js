@@ -46,7 +46,7 @@ const sections = [
     h2: 'Storm damage and insurance claims in Fulton County',
     paras: [
       'North Fulton catches hard spring and summer cells moving in from the northwest. What actually decides a Roswell claim is not the size of the storm but the quality of the evidence: dated photographs, soft-metal test squares on vents and gutter aprons, bruised mats marked on a roof diagram, and a scope of work that matches what an adjuster can verify on site.',
-      'We inspect for that evidence first and tell you honestly whether a claim is worth filing. If it is, we write the scope, meet your adjuster on the roof, and handle supplements. If it is not, we quote the repair directly so you are not spending a deductible chasing a claim that will be denied.',
+      'We inspect for that evidence first and tell you honestly whether a claim is worth filing. If it is, we write the scope and can meet your adjuster on the roof. Your insurer decides coverage; we do not guarantee approval. If it is not, we quote the repair directly so you are not spending a deductible chasing a claim that will be denied.',
     ],
   },
   {

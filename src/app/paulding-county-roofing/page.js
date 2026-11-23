@@ -12,8 +12,12 @@ export const metadata = seo({
   path: '/paulding-county-roofing',
 });
 
-const intro = "iRoofer Contractors is based in Dallas, the Paulding County seat, and has roofed homes here since 2019. Whether you are in Dallas, Hiram, or out along Hwy 278 and Hwy 92, you get a local crew that can be on your roof quickly, a free inspection with photos, and a written price before any work starts.";
+const intro = "iRoofer Contractors is based in Dallas, the Paulding County seat, and has roofed homes here since 2019. From Dallas and Hiram out along Hwy 278 and Hwy 92, you get a local crew that can be on your roof quickly, a free inspection with photos, and a written price before any work starts.";
 const sections = [
+  {
+    "h": "Paulding County houses are young, and their roofs are coming due",
+    "p": "Census estimates for 2020 to 2024 put the median year built at 2002 in Dallas and 2004 in Hiram, so most homes in the county's two cities are around twenty years old. That is the age when builder pipe boots crack, ridge vents show their limits and the first round of shingle wear shows up on the south and west slopes. Many of those roofs need a repair, not a replacement. We will tell you which, with photos, after a free inspection."
+  },
   {
     "h": "Roof repair across Paulding County",
     "p": "Leaks, lifted flashing, cracked pipe boots, and missing shingles are most of what we fix in Paulding County. We find the source, repair it to manufacturer spec, and tell you honestly when a repair is no longer worth it."
@@ -38,7 +42,7 @@ const sections = [
 const faqs = [
   {
     "q": "Are you actually based in Paulding County?",
-    "a": "Yes. Our office is in Dallas, GA, the Paulding County seat."
+    "a": "It is. Our office is in Dallas, GA, the Paulding County seat."
   },
   {
     "q": "Which Paulding County towns do you serve?",
@@ -46,7 +50,7 @@ const faqs = [
   },
   {
     "q": "Is the inspection free?",
-    "a": "Yes. Roof inspections are free with no obligation."
+    "a": "Roof inspections are free with no obligation."
   },
   {
     "q": "Do you help with insurance claims?",
@@ -129,8 +133,8 @@ export default function Page() {
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="sec-head rv">
-            <span className="eyebrow dark">FAQ</span>
-            <h2>Questions homeowners ask us</h2>
+            <span className="eyebrow dark">Paulding County FAQ</span>
+            <h2>What Paulding County homeowners ask us</h2>
           </div>
           <div className="faq-list rv">
             {faqs.map((f, i) => (
@@ -146,41 +150,41 @@ export default function Page() {
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
           <div className="sec-head rv">
-            <span className="eyebrow dark">Services</span>
-            <h2>Where to go next</h2>
+            <span className="eyebrow dark">Paulding services</span>
+            <h2>Roofing services across Paulding County</h2>
           </div>
           <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
             <Link key="/roof-repair-dallas-ga/" href="/roof-repair-dallas-ga/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Repair in Dallas</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
             <Link key="/service-areas/hiram/#roof-repair" href="/service-areas/hiram/#roof-repair" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Repair in Hiram</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
             <Link key="/roof-replacement-dallas-ga/" href="/roof-replacement-dallas-ga/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Dallas</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
             <Link key="/roof-replacement-hiram/" href="/roof-replacement-hiram/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Hiram</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
             <Link key="/storm-damage-roof-repair-dallas-ga/" href="/storm-damage-roof-repair-dallas-ga/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Storm Damage in Dallas</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
             <Link key="/storm-damage-roof-repair-hiram/" href="/storm-damage-roof-repair-hiram/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Storm Damage in Hiram</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
             <Link key="/services/new-construction/" href="/services/new-construction/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>New Construction in Dallas</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
             <Link key="/gutter-repair-replacement-dallas-ga/" href="/gutter-repair-replacement-dallas-ga/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Gutters in Dallas</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
           </div>
         </div>
@@ -190,7 +194,7 @@ export default function Page() {
         <div className="wrap">
           <div className="sec-head rv">
             <span className="eyebrow dark">Related pages</span>
-            <h2>Helpful links for homeowners</h2>
+            <h2>Paulding County pages and guides</h2>
           </div>
           <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '.6rem 1.4rem', marginTop: 8, listStyle: 'none', padding: 0 }}>
             {relatedLinks.map((l) => (
@@ -203,7 +207,7 @@ export default function Page() {
       </section>
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
-          <RelatedGuides slug="roof-replacement" heading="Local roofing guides" />
+          <RelatedGuides slug="roof-replacement" heading="Guides for Paulding homeowners" />
         </div>
       </section>
       <FaqSchema faq={faqs} />

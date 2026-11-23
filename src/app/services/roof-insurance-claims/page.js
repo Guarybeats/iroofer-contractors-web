@@ -18,7 +18,7 @@ export const metadata = seo({
 const faqs = [
   {
     q: "Do you help with the roof insurance claim itself?",
-    a: "Yes. We check the roof and take photos of the damage. We give you the details you need to file. We meet your adjuster on the roof. If they miss something, we ask them to add it. You file the claim. We can’t promise it will be approved."
+    a: "We inspect the roof, document the damage with photos, and explain the work we propose. We can meet your adjuster on the roof. You file the claim and your insurer decides coverage. We don’t guarantee approval and we aren’t public adjusters."
   },
   {
     q: "What roof damage does homeowners insurance usually cover in Georgia?",
@@ -45,9 +45,9 @@ const faqs = [
 const steps = [
   ['1. Free inspection', 'We walk the roof, and fly a drone when it helps. We take dated photos of hail hits, wind creases, and damage to vents, gutters, and siding.'],
   ['2. You file, we back you up', 'You call your insurance company. We give you the storm date and the damage details, so your claim starts strong.'],
-  ['3. We meet your adjuster', 'We get on the roof with them, so real damage isn’t missed from the driveway.'],
-  ['4. We check their estimate', 'We go over their estimate line by line. If it leaves out work the job needs, we ask them to add it.'],
-  ['5. We build the roof', 'We install the roof the way the shingle maker says to. Then we help with the last paperwork to get any held-back money, when your policy allows it.'],
+  ['3. We can meet your adjuster', 'We can get on the roof with them and show the damage we documented.'],
+  ['4. We explain the scope', 'If you share the adjuster’s estimate, we explain how it compares with the damage we documented. Your insurer decides coverage; we don’t negotiate claims.'],
+  ['5. We build the roof', 'We install the roof the way the shingle maker says to. Then we give you the completion photos and final invoice, which you may need if your policy releases a held-back payment.'],
 ];
 
 export default function Page() {
@@ -111,11 +111,11 @@ export default function Page() {
           <div className="rv" style={{ maxWidth: 780 }}>
             <h2 style={{ fontSize: 'clamp(1.35rem,2.2vw,1.75rem)', fontWeight: 800 }}>Hail claims: photos, not promises</h2>
             <p style={{ color: '#52606b', lineHeight: 1.75, marginTop: 10 }}>
-              We take dated photos that show hail hits, not just wear. We meet your adjuster. We ask for missed items.
-              What gets approved depends on your policy. Start at{' '}
+              We take dated photos that show hail hits, not just wear, and we can meet your adjuster.
+              Your insurer decides coverage. We don’t guarantee approval and we aren’t public adjusters. Start at{' '}
               <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>storm damage roof repair Dallas</Link>.
               Call {brand.phone} or{' '}
-              <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>https://iroofercontractors.com/contact/</Link>.
+              <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>contact our Dallas team</Link>.
             </p>
           </div>
         </div>

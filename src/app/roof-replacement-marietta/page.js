@@ -36,7 +36,7 @@ export default function Page() {
                 Roof Replacement in Marietta, GA
               </h1>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
-                {renderInline('Replacing a roof in Marietta? We do full tear-offs to the deck on everything from older homes near the Square to East Cobb two-stories. Free measured inspection, written proposal, no overlays. iRoofer Contractors is family-owned in nearby Dallas, GA since 2019. Call (470) 236-1410 or start at https://iroofercontractors.com/contact/.')}
+                {renderInline('Replacing a roof in Marietta? We do full tear-offs to the deck on everything from older homes near the Square to East Cobb two-stories. Free measured inspection, written proposal, no overlays. iRoofer Contractors is family-owned in nearby Dallas, GA since 2019. Call (470) 236-1410 or [request a free roof inspection](/contact/).')}
               </p>
               <p style={{ color: '#52606b', fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
                 {renderInline(copy.intro)}
