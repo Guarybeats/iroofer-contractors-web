@@ -127,9 +127,9 @@ export const services = [
     metaDesc:
       'Siding repair and replacement in Dallas, GA and west Metro Atlanta. Same local crew as our roofing work. Free visit. Call (470) 236-1410.',
     tagline: 'Walls that shed water like the roof does.',
-    image: '',
-    webp: '',
-    imageAlt: '',
+    image: '/images/jobs/shake-siding-smyrna-ga-2.webp',
+    webp: '/images/jobs/shake-siding-smyrna-ga-2.webp',
+    imageAlt: 'Gray shake siding and white trim on a home after siding work by iRoofer Contractors in Smyrna, GA',
     summary:
       'We repair and replace siding, and we pay attention to where the wall meets the roof. A torn panel or open corner is often how water gets behind the house.',
     bullets: [
