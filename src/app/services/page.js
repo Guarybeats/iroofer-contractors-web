@@ -131,7 +131,7 @@ export default function ServicesPage() {
             <div className="card" style={{ color: 'inherit' }}>
               <div className="body">
                 <h2><Link href="/metal-roofing-dallas-ga/" style={{ color: 'inherit', textDecoration: 'none' }}>Metal roofing</Link></h2>
-                <p>Standing-seam metal roofs for commercial buildings and homes. Free inspection and a written scope.</p>
+                <p>Metal roofs for homes, from full roofs to porches and low-slope sections. Free inspection and a written scope.</p>
                 <Link href="/metal-roofing-dallas-ga/" className="more">Learn more →</Link>
               </div>
             </div>
