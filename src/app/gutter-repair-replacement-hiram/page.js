@@ -1,3 +1,4 @@
+import JobPhotoGallery from '@/components/JobPhotoGallery';
 import Link from 'next/link';
 import RelatedGuides from '@/components/RelatedGuides';
 import QuoteForm from '@/components/QuoteForm';
@@ -56,6 +57,8 @@ export default function Page() {
         </div>
       </section>
 
+      <JobPhotoGallery set="gutter" />
+
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
           {copy.sections.map((sec) => (
@@ -79,7 +82,7 @@ export default function Page() {
             ))}
           </div>
           <div style={{ marginTop: 28 }}>
-            <Link href="/service-areas/hiram/" className="btn btn-ink">More about our Hiram service area <span className="arr">→</span></Link>
+            <Link href="/service-areas/hiram/" className="btn btn-ink">Hiram roofing contractor: repair &amp; replacement <span className="arr">→</span></Link>
           </div>
         </div>
       </section>
@@ -93,26 +96,26 @@ export default function Page() {
           <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(230px,1fr))' }}>
             <Link key="roof-repair" href="/service-areas/hiram/#roof-repair" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Repair in Hiram</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
             <Link key="roof-replacement" href="/roof-replacement-hiram/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Roof Replacement in Hiram</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
             <Link key="new-construction" href="/new-construction-hiram/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>New Construction in Hiram</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
             <Link key="storm-damage-roof-repair" href="/storm-damage-roof-repair-hiram/" className="svc-card">
               <h3 style={{ fontSize: '1.1rem', fontWeight: 800 }}>Storm Damage Roof Repair in Hiram</h3>
-              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>View →</span>
+              <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }} aria-hidden="true">→</span>
             </Link>
           </div>
         </div>
       </section>
       <section className="sec-light sec-pad" style={{ paddingTop: 0 }}>
         <div className="wrap">
-          <RelatedGuides slug="gutter-repair-replacement" heading="Local roofing guides" />
+          <RelatedGuides slug="gutter-repair-replacement" city="hiram" />
         </div>
       </section>
       <FaqSchema faq={faqs} />

@@ -14,19 +14,20 @@ export const serviceHubContent = {
       'We fix flashing, vents, pipe boots, and shingles, matched to your roof color',
       'Honest advice: fix it first. No push to replace a roof that still has years left',
     ],
-    processTitle: 'How a repair visit works',
+    processTitle: 'Our roof inspection & repair process',
     processIntro:
       'One local crew. A clear plan. A written price before we start.',
     steps: [
-      { n: '01', title: 'Inspect & document', body: 'We get on the roof and take photos of the problem. We check the attic for stains if we can. We also point out worn spots that could fail next.' },
-      { n: '02', title: 'Scope & price', body: 'You get a written plan and price. If a new roof is the better deal over time, we show you both prices side by side.' },
-      { n: '03', title: 'Repair & seal', body: 'We reset flashing, swap pipe boots, and blend in new shingles. We only use sealant where it belongs. We don’t use it to hide a bigger problem.' },
-      { n: '04', title: 'Cleanup & check', body: 'We sweep for nails with a magnet and haul off the mess. When it helps, we run a hose to test the fix.' },
+      { n: '01', title: 'Call & triage', body: 'Tell us what you’re seeing: a stain, missing shingles, a drip. If water is coming in now, we put you ahead of routine work and tarp as soon as it’s safe.' },
+      { n: '02', title: 'Free inspection & photos', body: 'We check the attic for stains if we can, then walk the roof, or fly a drone when it’s too steep. You get dated photos of the problem, plus worn spots that could fail next. See [roof inspections](/services/roof-inspection/).' },
+      { n: '03', title: 'Written scope & price', body: 'You get a written plan and price for the repair. If a new roof is the better deal over time, we show you both prices side by side and let you decide.' },
+      { n: '04', title: 'Repair & seal', body: 'We reset flashing, swap pipe boots, and blend in new shingles. We only use sealant where it belongs. We don’t use it to hide a bigger problem.' },
+      { n: '05', title: 'Cleanup & check', body: 'We sweep for nails with a magnet and haul off the mess. When it helps, we run a hose to test the fix, and you get photos of the finished repair.' },
     ],
     faqs: [
       { q: 'Can you fix a leak without replacing the whole roof?', a: 'Often, yes. A bad pipe boot, loose flashing, or a few storm-lifted shingles are normal repair jobs. If the wood under the shingles is soft in big areas, or the roof is worn out, we will tell you a new roof is the better move.' },
       { q: 'How fast can you tarp an active leak?', a: 'If your roof is open or leaking now, we try to get an emergency tarp on it fast. That depends on the weather and if it is safe to get up there. Then we set a date for the real fix.' },
-      { q: 'Do you repair storm damage before insurance settles?', a: 'We can tarp it right away to stop more damage. The full repair or new roof usually waits for your insurance adjuster to say yes. That way you don’t pay up front for work the claim should cover.' },
+      { q: 'Do you repair storm damage before insurance settles?', a: 'We can tarp it right away to stop more damage. If you file a claim, the full repair usually waits until you hear from your insurer. Your insurer decides coverage, and you will have a written price from us either way.' },
       { q: 'Will the repair match my existing shingles?', a: 'We match the color as close as today’s shingles allow. Older roofs may look a little different, and that is normal. We place patches where they blend in best.' },
     ],
     featuredLinks: [
@@ -86,7 +87,7 @@ export const serviceHubContent = {
       },
       {
         title: 'After the install',
-        body: 'We walk the roof with you when we can. We sign you up for the shingle warranty when the product allows. We leave simple care tips, like keeping valleys and gutters clear. Questions later? Call (470) 236-1410 or go to https://iroofercontractors.com/contact/. Same local crew as our repair and storm work. Family-owned since 2019.',
+        body: 'We walk the roof with you when we can. We sign you up for the shingle warranty when the product allows. We leave simple care tips, like keeping valleys and gutters clear. Questions later? Call (470) 236-1410 or [request a free roof inspection](/contact/). Same local crew as our repair and storm work. Family-owned since 2019.',
       },
     ],
     cityPrefix: 'roof-replacement',
@@ -110,13 +111,13 @@ export const serviceHubContent = {
     steps: [
       { n: '01', title: 'Inspect & photo', body: 'We mark hail and wind hits on the roof, check vents and metal for dents, and look in the attic if we can. You get a short report in plain words.' },
       { n: '02', title: 'Tarp if needed', body: 'If it is leaking, we cover it first. That stops damage inside while the claim or repair plan moves ahead.' },
-      { n: '03', title: 'Meet the adjuster', body: 'We walk the roof with your insurance adjuster and show what we found. If they missed items, we ask them to add them. What gets approved still depends on your policy.' },
+      { n: '03', title: 'Meet the adjuster', body: 'We can walk the roof with your insurance adjuster and show the damage we documented. Your insurer decides coverage; we don’t guarantee approval.' },
       { n: '04', title: 'Repair or replace', body: 'Once the plan is set, the same crew that took the photos does the work. Not a stranger who never saw the damage.' },
     ],
     faqs: [
       { q: 'How soon after a storm should I call?', a: 'Soon. Storm marks fade over time, and some policies have time limits. Call (470) 236-1410 for a free roof check.' },
       { q: 'Will filing a claim raise my rates?', a: 'It depends on your insurance company. We take photos of the facts. You decide if you want to file. We never file without your OK, and we won’t guess about your rates.' },
-      { q: 'What if the adjuster only approves a small repair?', a: 'That happens a lot. We go over their estimate line by line. We ask them to add missed damage, items the building code requires, and matching when it is fair. We can’t promise the result.' },
+      { q: 'What if the adjuster only approves a small repair?', a: 'It happens. We explain how their estimate compares with the damage we photographed and the work the code requires, so you can raise it with your insurer. Your insurer decides coverage. We don’t negotiate claims and can’t promise the result.' },
       { q: 'Do you charge for the inspection?', a: 'Storm roof checks are free for homeowners in our area. If you need a tarp, we tell you the price first.' },
       { q: 'Can you tarp an open roof fast?', a: 'We try to, if the roof is open or water is pouring in and it is safe to get up. The full fix comes after, with a written plan.' },
     ],
@@ -139,7 +140,7 @@ export const serviceHubContent = {
       },
       {
         title: 'When it’s not storm damage',
-        body: 'Old age, bad metal work from the start, or skipped upkeep can look bad after a rain. But that may not be storm damage insurance covers. We will tell you. That keeps you from filing a claim that only causes trouble. Questions? Call (470) 236-1410 and a real person answers. Contact: https://iroofercontractors.com/contact/.',
+        body: 'Old age, bad metal work from the start, or skipped upkeep can look bad after a rain. But that may not be storm damage insurance covers. We will tell you. That keeps you from filing a claim that only causes trouble. Questions? Call (470) 236-1410 and a real person answers. Or [contact our Dallas team](/contact/).',
       },
     ],
     cityPrefix: 'storm-damage-roof-repair',
@@ -150,7 +151,7 @@ export const serviceHubContent = {
     h1Before: 'New Construction Roofing — Built Clean for Dallas & ',
     h1Accent: 'West Metro Builds',
     lead:
-      'iRoofer Contractors installs new-construction roofs for builders and homeowners across Dallas, GA and our service map. Family-owned since 2019. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when the spec calls for that line. Call (470) 236-1410 or https://iroofercontractors.com/contact/. Builders: request a partner intro on the contact form.',
+      'iRoofer Contractors installs new-construction roofs for builders and homeowners across Dallas, GA and our service map. Family-owned since 2019. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when the spec calls for that line. Call (470) 236-1410 or [contact our Dallas team](/contact/). Builders: request a partner intro on the contact form.',
     bullets: [
       'Custom and production builders who need a reliable roofing partner',
       'Homeowners building or finishing a home who want one accountable crew',
@@ -198,7 +199,7 @@ export const serviceHubContent = {
       },
       {
         title: 'Why local matters on new construction',
-        body: 'Storm-chaser crews disappear when the subdivision moves on. We’re based in Dallas year-round — same phone number for the builder’s warranty callback and the homeowner’s first heavy rain. Family-owned since 2019. Start a conversation: (470) 236-1410 · https://iroofercontractors.com/contact/.',
+        body: 'Storm-chaser crews disappear when the subdivision moves on. We’re based in Dallas year-round — same phone number for the builder’s warranty callback and the homeowner’s first heavy rain. Family-owned since 2019. Start a conversation: (470) 236-1410 or [contact our Dallas team](/contact/).',
       },
     ],
     cityPrefix: 'new-construction',
@@ -300,7 +301,7 @@ export const serviceHubContent = {
       },
       {
         title: 'Where we work',
-        body: 'Dallas is home base. City pages cover Hiram, Douglasville, Powder Springs, Marietta, Acworth, Kennesaw, and Austell. Call (470) 236-1410 or use https://iroofercontractors.com/contact/.',
+        body: 'Dallas is home base. City pages cover Hiram, Douglasville, Powder Springs, Marietta, Acworth, Kennesaw, and Austell. Call (470) 236-1410 or [request a free roof inspection](/contact/).',
       },
     ],
     cityPrefix: 'exterior-painting',

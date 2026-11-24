@@ -24,7 +24,7 @@ export const metadata = {
 
 const intro = [
   'Acworth roof calls are often urgent — active leaks, overnight wind, a tree limb. iRoofer Contractors answers from Dallas, GA: family-owned since 2019. We tarp when the roof is open, then schedule the permanent fix.',
-  'Ready to talk about your roof? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
+  'Ready to talk about your roof? [Request a free roof inspection](/contact/) or call (470) 236-1410.',
 ];
 
 const sections = [

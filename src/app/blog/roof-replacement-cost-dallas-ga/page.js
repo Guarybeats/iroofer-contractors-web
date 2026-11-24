@@ -53,7 +53,7 @@ export default function BlogPostPage() {
               }}
             >
               <strong>Not a quote.</strong> Every roof is different. The factors below help you plan a conversation.
-              iRoofer puts a real figure in writing only after an on-site inspection. We are not publishing dollar tables here.
+              A replacement number is only real once someone has measured your roof, checked the pitch and looked at the decking, so we put ours in writing after an on-site visit and skip the dollar tables here.
             </p>
           </div>
 
@@ -67,7 +67,7 @@ export default function BlogPostPage() {
               iRoofer Contractors is family-owned in Dallas since 2019. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that system fits.
               We&apos;ll walk the roof and write the number — not guess it on the phone.
               Call <a href={`tel:${brand.phone}`}>{brand.phone}</a> or{' '}
-              <Link href="/contact/" style={{ color: 'var(--orange)' }}>https://iroofercontractors.com/contact/</Link>.
+              <Link href="/contact/" style={{ color: 'var(--orange)' }}>contact our Dallas team</Link>.
             </p>
 
             <h2>What changes roof replacement cost locally</h2>
@@ -93,12 +93,12 @@ export default function BlogPostPage() {
               We&apos;ll say which after we see the roof.
             </p>
 
-            <h2>How to get a real number</h2>
+            <h2>Getting a written replacement figure</h2>
             <ol>
               <li>Book an inspection — <Link href="/contact/" style={{ color: 'var(--orange)' }}>contact form</Link> or call {brand.phone}</li>
               <li>We measure and photograph</li>
               <li>You get a written proposal</li>
-              <li>No pressure to sign same day</li>
+              <li>Take the written figure home and compare it with other bids</li>
             </ol>
 
             <h2>Paulding / Dallas context</h2>
@@ -109,9 +109,9 @@ export default function BlogPostPage() {
             </p>
 
             <h2>FAQ</h2>
-            <p><strong>Can you quote over the phone?</strong><br />No — not accurately.</p>
+            <p><strong>Can you quote over the phone?</strong><br />Not for a full replacement. Squares, pitch and decking all have to be seen in person.</p>
             <p><strong>Do you finance?</strong><br />Ask about current options when you call; availability can change.</p>
-            <p><strong>Why don&apos;t you list prices here?</strong><br />Because every roof is different and prices change. A written figure after an inspection is the number you can rely on.</p>
+            <p><strong>Why don&apos;t you list prices here?</strong><br />A replacement depends on roof size, pitch, layers and decking, and material prices move during the year. A published table would be wrong for most houses, so we give you a written number for yours instead.</p>
             <p><strong>Is storm damage priced differently?</strong><br />Scope still follows the roof. Insurance may apply; we help you document damage for your insurance claim, and your policy decides the outcome.</p>
 
             <h2>Related Dallas pages</h2>

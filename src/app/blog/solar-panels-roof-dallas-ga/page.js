@@ -78,7 +78,7 @@ export default function BlogPostPage() {
             <p>Get it in writing from both contractors that the other’s work won’t void their warranty, and read your solar contract. Some leases and PPAs require their own approved roofer for removal and reinstall.</p>
 
             <h2>Start with a roof assessment</h2>
-            <p>We’ll tell you how much life your roof has left and what, if anything, needs doing before solar goes on. The inspection is free. Book at <Link href="/contact/">https://iroofercontractors.com/contact/</Link> or call (470) 236-1410. Related: <Link href="/roof-replacement-dallas-ga/">roof replacement in Dallas, GA</Link>.</p>
+            <p>We’ll tell you how much life your roof has left and what, if anything, needs doing before solar goes on. The inspection is free. <Link href="/contact/">Book a free roof inspection</Link> or call (470) 236-1410. Related: <Link href="/roof-replacement-dallas-ga/">roof replacement in Dallas, GA</Link>.</p>
             <RelatedPosts slug="solar-panels-roof-dallas-ga" />
             <p><Link href="/contact/" className="btn btn-solid">Get a free roof assessment →</Link></p>
           </div>

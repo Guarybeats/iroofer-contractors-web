@@ -24,7 +24,7 @@ export const metadata = {
 
 const intro = [
   'Douglasville homeowners call us from just west/southwest of our Dallas shop when wind, age, or a stubborn leak shows up. iRoofer Contractors — family-owned since 2019 — works Douglasville from our Dallas shop. Storm work is a natural fit here: we document and repair weather damage.',
-  'Ready to talk about your roof? Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
+  'Ready to talk about your roof? [Request a free roof inspection](/contact/) or call (470) 236-1410.',
 ];
 
 const sections = [
@@ -72,11 +72,11 @@ const faq = [
   },
   {
     q: 'Is Douglasville a regular service area?',
-    a: 'Yes. Listed on our service-areas hub with the rest of the west-metro map.',
+    a: 'Yes, listed on our service-areas hub with the rest of the west-metro map.',
   },
   {
     q: 'Who do I call?',
-    a: '(470) 236-1410 or https://iroofercontractors.com/contact/',
+    a: '(470) 236-1410 or [contact our Dallas team](/contact/)',
   },
   {
     q: 'Can you promise my storm claim will be approved?',

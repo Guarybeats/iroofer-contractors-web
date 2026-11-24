@@ -48,8 +48,8 @@ export default function BlogPostPage() {
               After a windy night in Dallas or west metro Atlanta, homeowners usually want two answers: Is the roof still protecting the house? And do I need a repair — or a claim? iRoofer Contractors is the local crew in Dallas, GA: family-owned since 2019.
             </p>
             <p>
-              Ready to talk about your roof? Visit{' '}
-              <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>https://iroofercontractors.com/contact/</Link>
+              Ready to talk about your roof? {' '}
+              <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Request a free roof inspection</Link>
               {' '}or call <a href={`tel:${brand.phone}`}>{brand.phone}</a>.
             </p>
 

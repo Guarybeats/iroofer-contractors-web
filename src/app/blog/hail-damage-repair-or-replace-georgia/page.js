@@ -16,7 +16,7 @@ export const metadata = {
   },
   title: "Hail Damage in Georgia: Repair or Replace Your Roof?",
   description:
-    "Hail hit your Georgia roof? Learn when a repair is enough, when replacement makes sense, and what photos your adjuster needs. Free inspection in Dallas, GA.",
+    "Hail hit your Georgia roof? When a repair is enough, when replacement makes sense, and what photos your adjuster needs. Free inspection in Dallas, GA.",
 };
 
 const post = {
@@ -49,6 +49,14 @@ export default function BlogPostPage() {
               iRoofer Contractors is a family-owned crew in Dallas, GA. Call <a href={`tel:${brand.phone}`}>{brand.phone}</a> or <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>request a free inspection</Link>.
             </p>
 
+            <h2>The short answer</h2>
+            <p>
+              <strong>Repair</strong> when the hail damage is limited to a few spots or one slope and the rest of the roof is
+              sound. <strong>Replace</strong> when damage is spread across several slopes, the roof was already worn, or the
+              decking underneath is soft. <strong>Do nothing</strong> when an inspection finds no real damage, which happens
+              more often than people expect after small hail.
+            </p>
+
             <h2>What hail damage looks like on asphalt shingles</h2>
             <ul>
               <li>Dark, soft spots where the granules were knocked off</li>
@@ -74,6 +82,14 @@ export default function BlogPostPage() {
               <li>The decking underneath has gone soft</li>
               <li>Your shingles are discontinued and a patch would not match</li>
             </ul>
+            <h2>Repair or replace: the questions that decide it</h2>
+            <ol>
+              <li><strong>How many slopes took hits?</strong> One slope with scattered bruises is usually a repair. Hits on most slopes point toward replacement.</li>
+              <li><strong>How old and worn was the roof before the storm?</strong> A roof that was already curling, losing granules or patched repeatedly rarely makes sense to repair again.</li>
+              <li><strong>Can the shingles be matched?</strong> If your shingle is discontinued, a patch may not blend in, and that matters more on the front of the house.</li>
+              <li><strong>Is the decking still solid?</strong> Soft or wet decking under the damage turns a shingle repair into a bigger job.</li>
+              <li><strong>What does your policy say?</strong> Coverage is decided by your policy and adjuster, not by the roofer. We document the damage so the decision is based on photos, not guesses.</li>
+            </ol>
             <p>
               We put the reason in writing either way. For the general version of this question, see <Link href="/blog/when-to-replace-vs-repair-a-roof/" style={{ color: 'var(--orange)', fontWeight: 700 }}>when to repair vs. replace a roof</Link>.
             </p>

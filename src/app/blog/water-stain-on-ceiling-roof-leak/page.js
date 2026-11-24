@@ -16,7 +16,7 @@ export const metadata = {
   },
   title: "Water Stain on Ceiling: Is It a Roof Leak? | Dallas, GA | iRoofer",
   description:
-    "Found a water stain on your ceiling? How to tell if it is the roof, a pipe, or condensation, what to do right now, and when to call a roofer in Dallas, GA. (470) 236-1410.",
+    "Water stain on your ceiling? How to tell a roof leak from a pipe or condensation, what to do now, and when to call a Dallas, GA roofer. (470) 236-1410.",
 };
 
 const post = {

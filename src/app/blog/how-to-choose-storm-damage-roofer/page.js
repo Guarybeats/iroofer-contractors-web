@@ -16,7 +16,7 @@ export const metadata = {
   },
   title: "How to Choose a Storm Damage Roofer | Dallas, GA | iRoofer",
   description:
-    "After a Georgia storm, how do you pick a roofer you can trust? 5 questions to ask, red flags to avoid, and what a good inspection looks like. Free inspection.",
+    "After a Georgia storm, how do you pick a roofer you can trust? Questions to ask, red flags to avoid, and what a good inspection looks like. Free inspection.",
 };
 
 const post = {

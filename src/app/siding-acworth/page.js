@@ -11,5 +11,5 @@ export const metadata = seo({
 });
 
 export default function Page() {
-  return <TradeCityPage copy={copy} />;
+  return <TradeCityPage copy={copy} photoSet="siding" />;
 }

@@ -4,9 +4,9 @@ import { brand } from '@/lib/brand';
 import BlogPostingSchema from '@/components/BlogPostingSchema';
 import { FaqSchema } from '@/components/LocalSeo';
 
-const TITLE = 'Hail Damage Roof Checklist for Georgia Homeowners';
+const TITLE = 'Georgia Hail Damage Roof Checklist | When to Call a Roofer';
 const DESC =
-  'Hail hit your Georgia roof? What hail damage looks like, what to photograph, when to call your insurer and a roofer — from a family-owned Dallas, GA crew.';
+  'A Georgia hail damage roof checklist: what to look for, what to photograph, and when to call a roofer for a free storm inspection. Dallas, GA crew since 2019.';
 const URL = 'https://iroofercontractors.com/blog/georgia-hail-storm-roof-checklist/';
 
 export const metadata = {
@@ -27,6 +27,26 @@ export const metadata = {
 
 const MUTED = '#52606b';
 const A = { color: 'var(--orange)', fontWeight: 700 };
+
+const quickChecklist = [
+  'Wait for the storm to pass and stay off the roof.',
+  'Walk the yard: look for dented gutters, downspouts, vents and AC fins, and granules at the downspouts.',
+  'Check siding, window screens, fences and cars for hail dings.',
+  'Look inside: ceiling stains, damp spots, drips in the attic.',
+  'Photograph everything with the date and time of the storm.',
+  'If water is coming in, call for a tarp before anything else.',
+  'Get a free roof inspection before you decide on a claim.',
+  'Read your policy’s notice rules and deductible, then call your insurer.',
+];
+
+const whenToCall = [
+  'Water is coming in, or a ceiling is sagging or dripping. Call now for a tarp.',
+  'You can see dents in gutters, vents or downspouts, or granules piling up at the downspouts.',
+  'Neighbors’ roofs, cars or siding took hail damage.',
+  'A ceiling or attic stain shows up or grows in the weeks after the storm.',
+  'Shingles, ridge caps or flashing are missing or lying in the yard.',
+  'Your roof is older and you want to know where it stands before the next storm season.',
+];
 
 const signs = [
   ['Bruised shingles', 'dark spots where granules have been knocked off, sometimes soft to the touch, scattered randomly across a slope. (Wind damage is directional; hail is random.)'],
@@ -112,15 +132,29 @@ export default function BlogStormChecklist() {
       <article className="sec-light sec-pad">
       <div className="wrap">
         <div className="rv">
-          <span className="eyebrow dark">Updated October 2026</span>
+          <span className="eyebrow dark">Updated November 2026</span>
           <h1 style={{ fontSize: 'clamp(2.4rem, 5vw, 3.4rem)', fontWeight: 900, lineHeight: 1.05 }}>
-            Hail Damage on Your Georgia Roof: What It Looks Like and What to Do (6 Steps)
+            Georgia Hail Damage Roof Checklist: What to Check and When to Call a Roofer
           </h1>
           <p style={{ color: MUTED, marginTop: 12, fontSize: '1.05rem' }}>
             North Georgia gets hail most years, and hail damage is easy to miss from the ground. A roof can look fine from the driveway and still have bruised shingles that start leaking months later. Here’s what hail damage actually looks like, and a six-step checklist for the days after a storm, from iRoofer Contractors, a family-owned roofing crew in Dallas, GA since 2019.
           </p>
           <p className="byline">
             By iRoofer Contractors
+          </p>
+        </div>
+
+        <div className="rv" style={{ marginTop: 32, maxWidth: 820, padding: '1.6rem', background: '#fff', border: '1px solid rgba(22,29,37,.1)', borderRadius: 8 }}>
+          <h2 style={{ fontSize: '1.4rem', fontWeight: 800, marginTop: 0 }}>Quick hail damage checklist</h2>
+          <ul style={{ color: MUTED, lineHeight: 1.7, marginTop: 10, paddingLeft: 0, listStyle: 'none' }}>
+            {quickChecklist.map((c) => (
+              <li key={c} style={{ marginBottom: 6 }}>☐ {c}</li>
+            ))}
+          </ul>
+          <p style={{ color: MUTED, marginTop: 10, marginBottom: 0 }}>
+            Ready for a professional look?{' '}
+            <Link href="/hail-damage-roof-repair-dallas-ga/" style={A}>Book a hail damage roof inspection</Link>{' '}
+            or call <a href={`tel:${brand.phone}`} style={A}>{brand.phone}</a>.
           </p>
         </div>
 
@@ -153,6 +187,23 @@ export default function BlogStormChecklist() {
         </div>
 
         <div className="rv" style={{ marginTop: 48, maxWidth: 820 }}>
+          <h2 style={{ fontSize: '1.5rem', fontWeight: 800 }}>When to call a roofer after hail</h2>
+          <p style={{ color: MUTED, marginTop: 10, lineHeight: 1.7 }}>
+            Small hail can pass without leaving real damage, and a good roofer will tell you that. Call a pro for an inspection when any of these are true:
+          </p>
+          <ul style={{ color: MUTED, lineHeight: 1.7, marginTop: 10, paddingLeft: 22 }}>
+            {whenToCall.map((c) => (
+              <li key={c} style={{ marginBottom: 6 }}>{c}</li>
+            ))}
+          </ul>
+          <p style={{ color: MUTED, marginTop: 10, lineHeight: 1.7 }}>
+            A roofer can see what you can’t from the ground: bruised shingles, cracked mats and lifted tabs. We inspect on the roof or by drone when it’s steep, photograph each slope with dates, and tell you whether it looks like a claim, a repair, or nothing. See our{' '}
+            <Link href="/storm-damage-roof-repair-dallas-ga/" style={A}>storm damage roof repair</Link> and{' '}
+            <Link href="/services/roof-inspection/" style={A}>roof inspection</Link> pages.
+          </p>
+        </div>
+
+        <div className="rv" style={{ marginTop: 48, maxWidth: 820 }}>
           <h2 style={{ fontSize: '1.5rem', fontWeight: 800 }}>How to choose a roofer after a hail storm (checklist)</h2>
           <p style={{ color: MUTED, marginTop: 10 }}>After a big hail event, out-of-town crews follow the storm. Before anyone gets on your roof:</p>
           <ul style={{ color: MUTED, lineHeight: 1.7, marginTop: 10, paddingLeft: 0, listStyle: 'none' }}>
@@ -179,8 +230,8 @@ export default function BlogStormChecklist() {
         <div className="rv" style={{ marginTop: 48, padding: '2rem', background: '#fff', border: '1px solid rgba(22,29,37,.1)', borderRadius: 8 }}>
           <h2 style={{ marginTop: 0, fontSize: '1.3rem' }}>Think hail got your roof?</h2>
           <p style={{ color: MUTED }}>
-            Book a free storm-damage inspection at{' '}
-            <Link href="/contact/" style={A}>https://iroofercontractors.com/contact/</Link>
+            {' '}
+            <Link href="/contact/" style={A}>Book a free storm-damage inspection</Link>
             {' '}or call{' '}
             <a href={`tel:${brand.phone}`} style={A}>{brand.phone}</a>. We’ll photograph what we find, tell you honestly whether it’s a claim or a repair, and meet your adjuster if you want us there.
           </p>
@@ -188,8 +239,8 @@ export default function BlogStormChecklist() {
             <strong>Water coming in right now?</strong>{' '}
             <Link href="/emergency-roof-repair-dallas-ga/" style={A}>Emergency roof repair</Link>
           </p>
-          <Link href="/contact/" className="btn btn-solid" style={{ display: 'inline-block', marginTop: 16 }}>
-            Book a free storm inspection <span className="arr">→</span>
+          <Link href="/hail-damage-roof-repair-dallas-ga/" className="btn btn-solid" style={{ display: 'inline-block', marginTop: 16 }}>
+            Book a free hail &amp; storm inspection <span className="arr">→</span>
           </Link>
         </div>
 

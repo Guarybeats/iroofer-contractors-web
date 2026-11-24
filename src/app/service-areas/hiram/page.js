@@ -4,11 +4,14 @@ import { getCity, brand } from '@/lib/brand';
 
 const city = getCity('hiram');
 
+const TITLE = 'Roofing Contractor in Hiram, GA | iRoofer';
+const DESC =
+  'Roof repair and replacement in Hiram, GA from a family-owned Dallas crew since 2019. Free inspections, plus storm checks, gutters and siding. (470) 236-1410.';
+
 export const metadata = {
   twitter: { card: 'summary_large_image', images: [OG_IMAGE] },
-  title: 'Hiram, GA Roofing | Repair, Inspection & Gutters | iRoofer',
-  description:
-    'Hiram roof repair, inspections, replacement, storm and gutter help from a family-owned crew minutes away in Dallas, GA. Call (470) 236-1410.',
+  title: TITLE,
+  description: DESC,
   alternates: { canonical: `${brand.url}/service-areas/hiram/` },
   openGraph: {
     type: 'website',
@@ -16,52 +19,58 @@ export const metadata = {
     locale: 'en_US',
     images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
     url: `${brand.url}/service-areas/hiram/`,
-    title: 'Hiram, GA Roofing | Repair, Inspection & Gutters | iRoofer',
-    description:
-      'Hiram roof repair, inspections, replacement, storm and gutter help from a family-owned crew minutes away in Dallas, GA. Call (470) 236-1410.',
+    title: TITLE,
+    description: DESC,
   },
 };
 
 const intro = [
-  'Hiram is a short drive from our shop in Dallas, and it’s part of our regular service area. iRoofer Contractors is family-owned since 2019. Below you’ll find the right page for what your roof needs: a repair, an inspection, a full replacement, storm help, or gutters.',
-  'Not sure which one it is? That’s what the free inspection is for. Visit https://iroofercontractors.com/contact/ or call (470) 236-1410.',
+  'Need roof repair or a roof replacement in Hiram? iRoofer Contractors is a family-owned roofing contractor based a short drive away in Dallas, GA, working in Hiram since 2019. Most Hiram calls are one of two jobs: fixing a leak or storm-worn spot on a roof that still has years left, or replacing a roof that has reached the end. We tell you which one yours is, with photos.',
+  'Start with a [free roof inspection](/contact/) or call (470) 236-1410.',
 ];
 
 const sections = [
   {
     h2: 'Roof repair in Hiram',
     paras: [
-      'Leaks, cracked pipe boots, worn valleys under tree cover, flashing at walls and chimneys, wind-lifted shingles. We find the real entry point, photograph it, and fix that. See [roof repair in Hiram](/service-areas/hiram/#roof-repair).',
-    ],
-  },
-  {
-    h2: 'Roof inspection in Hiram',
-    paras: [
-      'After a storm, when a stain is growing, or when you just want to know where your roof stands: a free inspection with photos and a written finding (repair it, watch it, or plan a replacement). See [roof inspection in Hiram](/service-areas/hiram/#roof-inspection).',
+      'Leaks, cracked pipe boots, worn valleys under tree cover, flashing at walls and chimneys, wind-lifted shingles. We trace the water back to where it actually gets in, photograph it, and fix that spot so a small repair stays small. If water is coming in now, we tarp first. The full repair guide for Hiram homes, with what we check and how a visit works, is in the [roof repair in Hiram](/service-areas/hiram/#roof-repair) section below.',
     ],
   },
   {
     h2: 'Roof replacement in Hiram',
     paras: [
-      'When repairs stop making sense: full tear-off to the deck, decking repaired as found, Owens Corning systems when that line fits. See [roof replacement in Hiram](/roof-replacement-hiram/).',
+      'When repairs stop making sense: full tear-off to the deck, decking repaired as found, then underlayment, flashing, ventilation and Owens Corning shingles installed as an Owens Corning Contractor Rewards member. Many Hiram subdivisions were built in phases, so whole streets reach the end of their roofs around the same time. If yours is one of them, see [roof replacement in Hiram](/roof-replacement-hiram/) for how the job runs.',
     ],
   },
   {
-    h2: 'Storm damage in Hiram',
+    h2: 'Repair or replace? How we decide on a Hiram roof',
     paras: [
-      'Hail and wind damage documented slope by slope for your adjuster, with tarping first if the roof is open. See [storm damage roof repair in Hiram](/storm-damage-roof-repair-hiram/).',
+      {
+        items: [
+          'Repair: the problem is local (one boot, one valley, one stretch of flashing, a few wind-damaged tabs) and the rest of the roof is sound.',
+          'Replace: wear shows on several slopes, the same roof keeps leaking in different places, or the decking underneath has gone soft.',
+          'Either way, you get dated photos and a written scope, and the decision is yours.',
+        ],
+      },
     ],
   },
   {
-    h2: 'Gutters in Hiram',
+    h2: 'Supporting services in Hiram: storm inspections, gutters and siding',
     paras: [
-      'Overflowing or pulling-away gutters soak fascia and the edge of the roof deck. We repair, re-pitch and replace gutters as part of the same roof system. See [gutter repair & replacement in Hiram](/gutter-repair-replacement-hiram/).',
+      'The roof is the main job. These are the services that keep it working, done by the same crew:',
+      {
+        items: [
+          'Storm inspections: hail and wind damage documented slope by slope for your adjuster, with tarping first if the roof is open. See [storm damage roof repair in Hiram](/storm-damage-roof-repair-hiram/) and the [roof inspection in Hiram](/service-areas/hiram/#roof-inspection) details.',
+          'Gutters: overflowing or pulling-away gutters soak fascia and the edge of the roof deck. We repair, re-pitch and replace them sized to the roof. See [gutter repair & replacement in Hiram](/gutter-repair-replacement-hiram/).',
+          'Siding: torn panels and water at the roof-to-wall joint, handled alongside the roof. See [siding in Hiram](/siding-hiram/).',
+        ],
+      },
     ],
   },
   {
     h2: 'Roofing in Hiram: what’s different here',
     paras: [
-      'Hiram is in Paulding County, so roofing permits go through the county’s Building & Permitting office in Dallas, and they’re only required when work is structural (sheathing, rafters, trusses). A lot of Hiram streets sit under mature trees, which is hard on valleys and gutters. Many subdivisions were built in phases, so whole streets reach the end of their roofs around the same time. We work along the Highway 92 corridor, Bill Carruth Parkway, Nebo Road, the Cedarcrest side, Old Cartersville Road, and the Hiram–Dallas line. Building new? See [new construction roofing in Hiram](/new-construction-hiram/).',
+      'Hiram is in Paulding County, so roofing permits go through the county’s Building & Permitting office in Dallas, and they’re only required when work is structural (sheathing, rafters, trusses). A lot of Hiram streets sit under mature trees, which is hard on valleys and gutters. We work along the Highway 92 corridor, Bill Carruth Parkway, Nebo Road, the Cedarcrest side, Old Cartersville Road, and the Hiram–Dallas line. Building new? See [new construction roofing in Hiram](/new-construction-hiram/).',
     ],
   },
 ];
@@ -81,22 +90,23 @@ const faq = [
     a: 'We’re based in Dallas and serve Hiram regularly. Same crew, same standards.',
   },
   {
-    q: 'Which page should I use: repair, inspection or replacement?',
-    a: 'If you know what’s wrong, use the matching page above. If you don’t, book a free inspection. We’ll tell you whether it’s a repair, something to watch, or time to plan a replacement.',
+    q: 'Do I need a roof repair or a replacement?',
+    a: 'Book a free inspection and we’ll tell you with photos: a repair, something to watch, or time to plan a replacement. A local problem on a sound roof is usually a repair; wear across several slopes usually points to replacement.',
   },
   {
     q: 'Do you install and repair gutters in Hiram?',
-    a: 'Yes. Gutter repair, re-pitching and replacement, sized to the roof that feeds them. See our Hiram gutter page or call (470) 236-1410.',
+    a: 'Yes, Gutter repair, re-pitching and replacement, sized to the roof that feeds them. See our Hiram gutter page or call (470) 236-1410.',
   },
   {
     q: 'Do you help with insurance after storm damage?',
-    a: 'Yes: photos, diagram, scope, adjuster meeting on request.',
+    a: 'Yes: dated photos, a roof diagram, a written scope, and an adjuster meeting on request. Your policy decides what’s covered, so we don’t promise an outcome.',
   },
 ];
 
 const relatedLinks = [
   { href: '/service-areas/hiram/#roof-repair', label: 'Roof repair in Hiram' },
   { href: '/service-areas/hiram/#roof-inspection', label: 'Roof inspection in Hiram' },
+  { href: '/siding-hiram/', label: 'Siding in Hiram' },
   { href: '/roof-replacement-hiram/', label: 'Roof replacement in Hiram' },
   { href: '/storm-damage-roof-repair-hiram/', label: 'Storm damage roof repair in Hiram' },
   { href: '/gutter-repair-replacement-hiram/', label: 'Gutter repair & replacement in Hiram' },
@@ -110,7 +120,7 @@ export default function HiramPage() {
   return (
     <CityAreaPage
       city={city}
-      h1="Roofing & Gutters in Hiram, GA: Find the Right Service"
+      h1="Roof Repair & Replacement in Hiram, GA"
       intro={intro}
       sections={sections}
       neighborhoods={neighborhoods}

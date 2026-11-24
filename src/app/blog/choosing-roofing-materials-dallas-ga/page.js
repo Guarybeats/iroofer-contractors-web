@@ -69,7 +69,7 @@ export default function BlogPostPage() {
             <p>Lighter colors and reflective products absorb less heat, and good attic ventilation matters as much as the material. See our <Link href="/blog/attic-ventilation-dallas-heat/">attic ventilation guide</Link>.</p>
 
             <h2>Still deciding?</h2>
-            <p>We’ll walk you through the options during a free, no-pressure inspection, show you samples, and give you written pricing for your roof. Book at <Link href="/contact/">https://iroofercontractors.com/contact/</Link> or call (470) 236-1410.</p>
+            <p>We’ll walk you through the options during a free, no-pressure inspection, show you samples, and give you written pricing for your roof. <Link href="/contact/">Book a free roof inspection</Link> or call (470) 236-1410.</p>
             <RelatedPosts slug="choosing-roofing-materials-dallas-ga" />
             <p><Link href="/contact/" className="btn btn-solid">Book a free inspection →</Link></p>
           </div>

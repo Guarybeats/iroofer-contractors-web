@@ -99,7 +99,7 @@ export default function BlogPostPage() {
             <p>We don’t promise claim outcomes. Your policy and your insurer decide that. See <Link href="/services/roof-insurance-claims/">roof insurance claims help</Link>, <Link href="/storm-damage-roof-repair-dallas-ga/">storm damage roof repair in Dallas</Link>, and our <Link href="/blog/georgia-hail-storm-roof-checklist/">hail damage roof checklist</Link>.</p>
 
             <h2>Not sure whether you have damage?</h2>
-            <p>Book a free storm-damage inspection at <Link href="/contact/">https://iroofercontractors.com/contact/</Link> or call (470) 236-1410. You’ll get photos and a written report, with no pressure and no obligation.</p>
+            <p><Link href="/contact/">Book a free storm-damage inspection</Link> or call (470) 236-1410. You’ll get photos and a written report, with no pressure and no obligation.</p>
             <p><Link href="/contact/" className="btn btn-solid">Schedule a free storm-damage inspection →</Link></p>
           </div>
         </div>

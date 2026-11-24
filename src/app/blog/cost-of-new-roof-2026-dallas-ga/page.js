@@ -81,7 +81,7 @@ export default function BlogPostPage() {
             </ul>
 
             <h2>Get a real number for your roof</h2>
-            <p>We inspect the roof for free, take photos, measure, and put a written figure in front of you, with no pressure. Book at <Link href="/contact/">https://iroofercontractors.com/contact/</Link> or call <a href={`tel:${brand.phone}`}>{brand.phone}</a>. More on the process: <Link href="/roof-replacement-dallas-ga/">roof replacement in Dallas, GA</Link> and <Link href="/blog/roof-replacement-cost-dallas-ga/">roof replacement cost factors</Link>.</p>
+            <p>We inspect the roof for free, take photos, measure, and put a written figure in front of you, with no pressure. <Link href="/contact/">Book a free roof inspection</Link> or call <a href={`tel:${brand.phone}`}>{brand.phone}</a>. More on the process: <Link href="/roof-replacement-dallas-ga/">roof replacement in Dallas, GA</Link> and <Link href="/blog/roof-replacement-cost-dallas-ga/">roof replacement cost factors</Link>.</p>
             <RelatedPosts slug="cost-of-new-roof-2026-dallas-ga" />
             <p><Link href="/contact/" className="btn btn-solid">Request a free estimate →</Link></p>
           </div>

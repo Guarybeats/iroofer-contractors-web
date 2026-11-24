@@ -52,7 +52,7 @@ const emergencyFaqs = [
   },
   {
     q: 'Will insurance cover emergency roof repairs?',
-    a: 'Sudden wind or storm damage is often covered. It depends on your policy and deductible. We take photos and can work with your adjuster. We can’t promise a claim will be approved or how much it will pay.',
+    a: 'Sudden wind or storm damage is often covered. It depends on your policy and deductible. We take photos, explain the proposed work and can meet your adjuster. Your insurer decides coverage; we can’t promise a claim will be approved or how much it will pay.',
   },
   {
     q: 'Do you cover emergencies outside Dallas?',
@@ -98,8 +98,8 @@ export default function EmergencyPage() {
                 <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>permanent roof repair</Link>
                 {' '}or{' '}
                 <Link href="/storm-damage-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>storm damage photos and paperwork</Link>.
-                Call <strong>(470) 236-1410</strong> now or use{' '}
-                <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>https://iroofercontractors.com/contact/</Link>.
+                Call <strong>(470) 236-1410</strong> now or{' '}
+                <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>request help online</Link>.
                 We won’t make up a time we can’t keep. We give you an honest window and get a tarp on as soon as it’s safe.
               </p>
 
@@ -253,8 +253,8 @@ export default function EmergencyPage() {
           </div>
           <p style={{ marginTop: 24, color: '#52606b' }}>
             <strong>Roof open or leaking right now?</strong> Call{' '}
-            <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>. Not urgent? Book a free inspection at{' '}
-            <Link href="/contact/" style={{ fontWeight: 700, color: 'var(--orange)' }}>https://iroofercontractors.com/contact/</Link>.
+            <a href={`tel:${brand.phone}`} style={{ fontWeight: 800, color: 'var(--orange)' }}>{brand.phone}</a>. Not urgent? {' '}
+            <Link href="/contact/" style={{ fontWeight: 700, color: 'var(--orange)' }}>Book a free inspection</Link>.
           </p>
         </div>
       </section>

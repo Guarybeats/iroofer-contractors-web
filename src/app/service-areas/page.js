@@ -116,8 +116,8 @@ export default function ServiceAreas() {
           Family-owned since 2019 · Owens Corning Contractor Rewards Member · Based in Dallas, GA
         </p>
         <p style={{ marginTop: 20, color: '#52606b' }}>
-          Ready to talk about your roof? Visit{' '}
-          <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>https://iroofercontractors.com/contact/</Link>
+          Ready to talk about your roof? {' '}
+          <Link href="/contact/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Request a free roof inspection</Link>
           {' '}or call {brand.phone}.
         </p>
       </div>

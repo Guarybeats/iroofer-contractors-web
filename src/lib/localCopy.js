@@ -9,7 +9,7 @@
 //
 // RULES FOR EDITING
 // 1. Every entry must be written for that one service in that one city. Do NOT copy a
-//    neighbouring city's paragraph and swap the name — that is the bug this file fixes.
+//    neighboring city's paragraph and swap the name — that is the bug this file fixes.
 // 2. Only verifiable facts. Permit rules below are sourced from the jurisdictions
 //    themselves (see cityFacts). No invented job counts, dates, addresses or projects.
 // 3. Keep claims about iRoofer's own work to things Cristian has confirmed: founded 2019,
@@ -38,6 +38,8 @@
 //     CRS class 7 rating (15% NFIP premium discount); floodplain rules Ch. 58, Art. 2.
 //   IRC R907.4 — a roof already carrying three layers must be torn to the deck.
 
+import { additions } from './localCopyAdditions';
+
 export const cityFacts = {
   'dallas-ga':      { name: 'Dallas',        county: 'Paulding County' },
   'hiram':          { name: 'Hiram',         county: 'Paulding County' },
@@ -54,34 +56,47 @@ export const localCopy = {};
 // ─────────────────────────────────────────────────────────────── ROOF REPAIR
 localCopy['roof-repair'] = {
   'dallas-ga': {
-    intro: "Need roof repair in Dallas, GA? Most leaks we chase around Paulding County start small: a cracked pipe boot, a lifted shingle, or step flashing that let go along a wall. iRoofer Contractors is family-owned right here in Dallas since 2019. Our crew finds where the water actually gets in and fixes that spot, so a small repair stays small. Call (470) 236-1410 or book a free inspection at https://iroofercontractors.com/contact/.",
+    intro: "Need roof repair in Dallas, GA? Most leaks we chase around Paulding County start small: a cracked pipe boot, a lifted shingle, or step flashing that let go along a wall. iRoofer Contractors is family-owned right here in Dallas since 2019. Our crew finds where the water actually gets in and fixes that spot, so a small repair stays small. Call (470) 236-1410 or [book a free inspection](/contact/).",
     sections: [
       { h: "Roof repair in Dallas, GA starts with the real leak",
         p: "The stain on your ceiling is almost never right under the problem. Water runs along the decking and rafters before it drips. We start in the attic when we can get in, then walk the roof and follow the path back to the source. That's usually a pipe boot, a valley, chimney or wall flashing, or shingles the wind worked loose. You get photos of the failure point and a written scope before any work starts." },
-      { h: "What we fix on Dallas roofs",
-        p: "We install Owens Corning shingles as an Owens Corning Contractor Rewards member. Typical repairs:",
-        blocks: [{ items: ["Cracked or dried-out pipe boots and vent collars", "Step, wall and chimney flashing that's pulled away or rusted", "Missing, creased or wind-lifted shingles, blended in as close as the existing roof allows", "Worn valleys and ridge caps", "Soft decking found under a \"simple\" patch. We show you before we replace it."] }, "If water is coming in right now, see [emergency roof repair in Dallas, GA](/emergency-roof-repair-dallas-ga/) or call (470) 236-1410. When water is actively entering, we can often get an emergency tarp on fast."] },
+      { h: "Residential roof repairs we handle in Dallas, GA",
+        p: "We repair homes, not commercial buildings, and we install Owens Corning shingles as an Owens Corning Contractor Rewards member. These are the repairs we make most around Dallas and Paulding County:",
+        blocks: [
+          { title: "Roof leaks", items: ["We trace the water from the attic and the roof back to where it actually gets in, then fix that spot instead of patching under the stain. More on leak tracing: [roof leak repair in Dallas, GA](/roof-leak-repair-dallas-ga/)."] },
+          { title: "Missing or damaged shingles", items: ["Blown-off, cracked or creased shingles replaced and sealed down, blended as close to the existing roof as today's colors allow. We check the underlayment and decking under the gap before we close it up."] },
+          { title: "Wind damage", items: ["Wind breaks the seal strip and can lay a tab back down looking normal. We look for the crease lines along rakes, ridges and eaves, then reseal or replace what's lifted. Wind or hail after a storm? See [storm damage roof repair in Dallas, GA](/storm-damage-roof-repair-dallas-ga/) and [hail damage roof repair in Dallas, GA](/hail-damage-roof-repair-dallas-ga/)."] },
+          { title: "Flashing", items: ["Step, wall, chimney and skylight flashing that has pulled away, rusted, or was caulked instead of woven in. We reset or replace the metal so the joint sheds water on its own."] },
+          { title: "Pipe boots and vents", items: ["The rubber collars around plumbing vents crack in the Georgia sun long before the shingles wear out. Swapping a failed boot is one of the most common fixes we make."] },
+          { title: "Emergency tarping", items: ["When water is coming in now, we tarp first and schedule the permanent repair once the roof is dry. See [emergency roof repair in Dallas, GA](/emergency-roof-repair-dallas-ga/) or call (470) 236-1410."] },
+          "Also common: worn valleys under pine needles, loose ridge caps, and soft decking found under a \"simple\" patch. We show you photos before we replace any wood.",
+        ] },
+      { h: "Inspection first, then the repair",
+        p: "Every repair starts with a free [roof inspection](/services/roof-inspection/). We check the attic when we can get in, walk the roof when it's safe, and use a drone on steep or fragile roofs. You get dated photos of what failed and a written scope before any work starts. The step-by-step version is in our repair process below." },
       { h: "Why Dallas and Paulding roofs wear the way they do",
         p: "Around Dallas, a lot of homes sit under tall pines and hardwoods. Needles pile up in valleys and behind chimneys, hold moisture, and shade the roof so it stays damp after rain. Summer brings pop-up thunderstorms with gusty wind. Long humid stretches age rubber boots and sealant faster than people expect. Older houses near downtown Dallas and off Hwy 278 often have flashing that was face-nailed or caulked years ago. The newer subdivisions along Hwy 61 and Hwy 92 tend to show builder-grade pipe boots and thin ridge vents as they age. We look for the patterns we already know before we guess." },
       { h: "Paulding County details that change the repair",
         p: "Paulding County Building & Permitting (240 Constitution Blvd, Dallas) requires a permit for roofing when the work is structural — sheathing, rafters, or trusses — not for routine shingle and flashing repairs above the deck. We check layer count and deck condition during the inspection so you know before tools come out." },
       { h: "Repair or replace: we'll tell you straight",
         p: "If one area failed and the rest of the roof is sound, repair it. If we're finding the same wear on every slope, or you've patched the same leak more than once, we'll say so and walk you through [roof replacement in Dallas, GA](/roof-replacement-dallas-ga/) as an option. Either way it's your call, and you'll have photos to decide with." },
-      { h: "After a storm",
-        p: "If the trouble showed up after hail or straight-line wind, start with documentation. See [storm damage roof repair in Dallas, GA](/storm-damage-roof-repair-dallas-ga/) and [roof insurance claims help](/services/roof-insurance-claims/). We photograph what we find and can meet your adjuster. Your policy decides what's covered." },
+      { h: "Storm, hail and insurance-related damage",
+        p: "If the trouble showed up after hail or straight-line wind, start with documentation. We photograph damage slope by slope with dates, note dents in vents and gutters that tie it to a storm, and write a scope your adjuster can check. We can meet the adjuster at the house if you want us there. Your policy and your carrier decide what's covered, so we don't promise an outcome. See [storm damage roof repair in Dallas, GA](/storm-damage-roof-repair-dallas-ga/), [hail damage roof repair](/hail-damage-roof-repair-dallas-ga/) and [roof insurance claims help](/services/roof-insurance-claims/)." },
       { h: "Book a Dallas roof repair inspection",
-        p: "We're based in Dallas, so we're not driving in from across the state. Call (470) 236-1410 or request your free inspection at https://iroofercontractors.com/contact/." },
+        p: "We're based in Dallas, so we're not driving in from across the state. Call (470) 236-1410 or [request your free inspection](/contact/)." },
     ],
     faq: [
       { q: "How much does roof repair cost in Dallas, GA?", a: "It depends on what failed, how steep and reachable it is, and whether there's soft decking underneath. We don't quote blind. We inspect for free and put a written price in front of you. For the factors, see our [roof repair cost guide](/blog/roof-repair-cost-dallas-ga/)." },
       { q: "Should I repair or replace my roof?", a: "Isolated leaks, a bad boot or loose flashing usually repair well. Wear on every slope or repeat leaks in different spots usually point to replacement. We'll show you photos and give you a straight answer." },
-      { q: "Can you help if water is coming in now?", a: "Yes. Call (470) 236-1410. Active leaks get priority and an emergency tarp when needed, then we schedule the permanent repair. See [emergency roof repair in Dallas, GA](/emergency-roof-repair-dallas-ga/)." },
+      { q: "Can you help if water is coming in now?", a: "Yes, call (470) 236-1410. Active leaks get priority and an emergency tarp when needed, then we schedule the permanent repair. See [emergency roof repair in Dallas, GA](/emergency-roof-repair-dallas-ga/)." },
       { q: "Ceiling stain but no drip. Is it still worth a look?", a: "If the stain grows after rain, yes. We trace it from the attic and the roof so you're not just painting over it." },
-      { q: "Do you work outside Dallas?", a: "Yes. Dallas is home base, and we also cover Hiram, Powder Springs, Douglasville and nearby towns. Hiram homeowners can start at [roof repair in Hiram](/service-areas/hiram/#roof-repair)." },
+      { q: "Is a roof inspection free?", a: "Yes, we inspect the roof, check the attic when we can get in, and use a drone when the roof is too steep to walk safely. You get dated photos and a plain-English finding: repair it, keep an eye on it, or plan a replacement. See [roof inspections](/services/roof-inspection/)." },
+      { q: "What's in a roof repair estimate?", a: "A written scope: what failed, photos of it, what we'll replace, and the price. If there's a chance of soft decking under the area, the estimate says how that would be handled before we start. No pressure to sign the same day." },
+      { q: "Will insurance pay for my roof repair?", a: "We can't promise that. Coverage depends on your policy and the adjuster's findings. What we do is document storm or hail damage with dated photos and a written scope, and meet your adjuster on site if you'd like. If the damage won't support a claim, we'll tell you and quote the repair directly." },
+      { q: "Do you work outside Dallas?", a: "Yes, Dallas is home base, and we also cover Hiram, Powder Springs, Douglasville and nearby towns. Hiram homeowners can start at [roof repair in Hiram](/service-areas/hiram/#roof-repair)." },
     ],
   },
   'hiram': {
-    intro: "Leaks, failed flashing, and storm wear show up on Hiram homes the same way they do in Dallas — humidity, trees, and sudden west-Georgia weather. iRoofer Contractors is family-owned in nearby Dallas since 2019. Same local crew. We inspect, photograph, tarp when needed, and put a written repair scope in your hand. Prefer replacement talk instead? See [roof replacement in Hiram](/roof-replacement-hiram/). Book at https://iroofercontractors.com/contact/ or call (470) 236-1410.",
+    intro: "Leaks, failed flashing, and storm wear show up on Hiram homes the same way they do in Dallas — humidity, trees, and sudden west-Georgia weather. iRoofer Contractors is family-owned in nearby Dallas since 2019. Same local crew. We inspect, photograph, tarp when needed, and put a written repair scope in your hand. Prefer replacement talk instead? See [roof replacement in Hiram](/roof-replacement-hiram/). [Book a free roof inspection](/contact/) or call (470) 236-1410.",
     sections: [
       {
         "id": "roof-inspection",
@@ -113,7 +128,7 @@ localCopy['roof-repair'] = {
             ]
           },
           "Inspection first, then the right page. If the inspection finds a repair, it’s handled here. Widespread wear goes to [roof replacement in Hiram](/roof-replacement-hiram/). Hail or wind damage goes to [storm damage roof repair in Hiram](/storm-damage-roof-repair-hiram/), where we document it for your adjuster.",
-          "Book a free roof inspection: https://iroofercontractors.com/contact/ or (470) 236-1410."
+          "[Book a free roof inspection](/contact/) or (470) 236-1410."
         ]
       },
       {
@@ -152,17 +167,17 @@ localCopy['roof-repair'] = {
       },
       {
         "h": "Book a Hiram roof repair",
-        "p": "Call (470) 236-1410 or book at https://iroofercontractors.com/contact/. Active leak? Say so on the phone. Water coming in goes ahead of routine work, and we put on an emergency tarp as soon as the schedule and safe access allow. Everything else starts with a free inspection and a written scope."
+        "p": "Call (470) 236-1410 or [book a free roof inspection](/contact/). Active leak? Say so on the phone. Water coming in goes ahead of routine work, and we put on an emergency tarp as soon as the schedule and safe access allow. Everything else starts with a free inspection and a written scope."
       }
     ],
     faq: [
       {
         "q": "Is a Hiram roof inspection free?",
-        "a": "We offer a no-pressure inspection tied to a clear written finding — call (470) 236-1410 or use https://iroofercontractors.com/contact/."
+        "a": "We offer a no-pressure inspection tied to a clear written finding — call (470) 236-1410 or [request a free roof inspection](/contact/)."
       },
       {
         "q": "Are you a certified home inspector?",
-        "a": "No. We’re a roofing contractor. A home inspector looks at the whole house. We look at the roof in the detail a roofer does: flashing, decking, ventilation, storm damage."
+        "a": "No, we’re a roofing contractor. A home inspector looks at the whole house. We look at the roof in the detail a roofer does: flashing, decking, ventilation, storm damage."
       },
       {
         "q": "Inspection vs estimate?",
@@ -186,7 +201,7 @@ localCopy['roof-repair'] = {
       },
       {
         "q": "Do you really serve Hiram from Dallas?",
-        "a": "Yes. Dallas is our home base, and Hiram is a core Paulding County service area. Same crew, same standards—short drive, local accountability."
+        "a": "Yes, Dallas is our home base, and Hiram is a core Paulding County service area. Same crew, same standards—short drive, local accountability."
       },
       {
         "q": "Storm after inspection?",
@@ -211,11 +226,11 @@ localCopy['roof-repair'] = {
     ],
   },
   'powder-springs': {
-    intro: "Powder Springs runs the gamut from single-slope ranch roofs to steep two-storey elevations, and the right repair looks different on each. We diagnose first and quote second.",
+    intro: "Powder Springs runs the gamut from single-slope ranch roofs to steep two-story elevations, and the right repair looks different on each. We diagnose first and quote second.",
     sections: [
       {
         "h": "Pitch changes the repair, not just the price",
-        "p": "On the low-slope ranch roofs common through Powder Springs, water moves slowly and lingers at valleys and transitions, so a repair that ignores underlayment beneath the shingle will leak again. On the steeper two-storey elevations the failure is usually mechanical — wind at the rake, ridge caps working loose, or step flashing that was never properly woven into a sidewall. We tell you which of those you have, and we will happily tell you that what you actually need is a ventilation fix rather than a repair, if that is what the attic shows."
+        "p": "On the low-slope ranch roofs common through Powder Springs, water moves slowly and lingers at valleys and transitions, so a repair that ignores underlayment beneath the shingle will leak again. On the steeper two-story elevations the failure is usually mechanical — wind at the rake, ridge caps working loose, or step flashing that was never properly woven into a sidewall. We tell you which of those you have, and we will happily tell you that what you actually need is a ventilation fix rather than a repair, if that is what the attic shows."
       },
       {
         "h": "What we fix most on Powder Springs roofs",
@@ -236,7 +251,7 @@ localCopy['roof-repair'] = {
       },
       {
         "h": "Powder Springs issues its own permits",
-        "p": "Unlike much of unincorporated Cobb, the City of Powder Springs runs its own permitting process and publishes its own roofing building guide. The city requires a contractor to carry a state licence, a local business licence and a code compliance bond before it will issue a permit. That is a real filter, and it is worth asking any roofer knocking on your door after a storm whether they can meet it. For a repair that stays above the deck you will usually not need a permit at all; we will tell you the moment your job crosses that line."
+        "p": "Unlike much of unincorporated Cobb, the City of Powder Springs runs its own permitting process and publishes its own roofing building guide. The city requires a contractor to carry a state license, a local business license and a code compliance bond before it will issue a permit. That is a real filter, and it is worth asking any roofer knocking on your door after a storm whether they can meet it. For a repair that stays above the deck you will usually not need a permit at all; we will tell you the moment your job crosses that line."
       },
       {
         "h": "Repair or replace? Straight answers",
@@ -254,7 +269,7 @@ localCopy['roof-repair'] = {
       },
       {
         "q": "What should I ask a storm-chaser who knocks on my door?",
-        "a": "Ask for a state licence, a local business licence and proof of the code compliance bond Powder Springs requires. Anyone who cannot produce all three cannot legally pull your permit."
+        "a": "Ask for a state license, a local business license and proof of the code compliance bond Powder Springs requires. Anyone who cannot produce all three cannot legally pull your permit."
       },
       {
         "q": "My roof is low-slope. Does that change anything?",
@@ -266,7 +281,7 @@ localCopy['roof-repair'] = {
       },
       {
         "q": "What does roof repair cost in Powder Springs, GA?",
-        "a": "It depends on cause, pitch and access — a steep two-storey repair takes longer and costs more than the same fix on a ranch. Free inspection, written quote, no pressure."
+        "a": "It depends on cause, pitch and access — a steep two-story repair takes longer and costs more than the same fix on a ranch. Free inspection, written quote, no pressure."
       },
       {
         "q": "Can you get to an active leak in Powder Springs quickly?",
@@ -304,7 +319,7 @@ localCopy['roof-repair'] = {
     ],
     faq: [
       { q: "How do permits work in Kennesaw?", a: "The City of Kennesaw handles its own permitting and applications are online only. Most simple repairs do not require one. If your property is in the historic district, a Certificate of Appropriateness has to be approved before a permit application." },
-      { q: "Will I talk to a real person or a call centre?", a: "A real person. iRoofer has been family-owned since 2019 and the number on this page reaches us directly, not a lead broker who sells your details on." },
+      { q: "Will I talk to a real person or a call center?", a: "A real person. iRoofer has been family-owned since 2019 and the number on this page reaches us directly, not a lead broker who sells your details on." },
       { q: "Where do most Kennesaw roof leaks start?", a: "At penetrations and transitions — pipe boots, step flashing at walls, chimneys and valleys — far more often than the open field of the roof." },
       { q: "What does roof repair cost in Kennesaw, GA?", a: "What failed, how many areas, and access drive most of it. We inspect free, show you the photographs, and put the number in writing before anything starts." },
     ],
@@ -346,7 +361,7 @@ localCopy['roof-repair'] = {
 // ───────────────────────────────────────────────────────── ROOF REPLACEMENT
 localCopy['roof-replacement'] = {
   'dallas-ga': {
-    intro: "Thinking about roof replacement in Dallas, GA? Usually it's because the patches stopped working: a third leak, granules in the gutters, shingles curling on more than one slope. iRoofer Contractors is family-owned in Dallas since 2019. Our crew walks the whole roof, shows you photos, and gives you a written plan, whether that's a full replacement or a repair that still makes sense. Call (470) 236-1410 or book a free inspection at https://iroofercontractors.com/contact/.",
+    intro: "Thinking about roof replacement in Dallas, GA? Usually it's because the patches stopped working: a third leak, granules in the gutters, shingles curling on more than one slope. iRoofer Contractors is family-owned in Dallas since 2019. Our crew walks the whole roof, shows you photos, and gives you a written plan, whether that's a full replacement or a repair that still makes sense. Call (470) 236-1410 or [book a free inspection](/contact/).",
     sections: [
       { h: "When roof replacement in Dallas makes sense",
         p: "Common signs it's time:",
@@ -360,32 +375,32 @@ localCopy['roof-replacement'] = {
       { h: "Cost and insurance",
         p: "We don't publish prices. Size, pitch, layers, decking and the shingle you pick all change the number. Our [roof replacement cost guide](/blog/roof-replacement-cost-dallas-ga/) explains the factors, and we put a real figure in writing after the inspection. If a storm caused the damage, start with [storm damage roof repair in Dallas, GA](/storm-damage-roof-repair-dallas-ga/) and [roof insurance claims help](/services/roof-insurance-claims/). We document what we find and can meet your adjuster. Your policy decides what's covered." },
       { h: "Get your Dallas replacement plan",
-        p: "Free inspection, photos, a written scope, and no pressure to sign that day. Call (470) 236-1410 or start at https://iroofercontractors.com/contact/." },
+        p: "Free inspection, photos, a written scope, and no pressure to sign that day. Call (470) 236-1410 or [request a free roof inspection](/contact/)." },
     ],
     faq: [
       { q: "How long does a roof replacement take in Dallas, GA?", a: "It depends on size, pitch, how much decking needs replacing, and the weather. You get a realistic schedule in writing after the inspection." },
       { q: "Can I replace just part of my roof?", a: "Sometimes, if the damage is limited to one area and the shingles can be matched. Often a full replacement looks better and leaks less over time. We'll explain both after we see it." },
       { q: "How do I know it's replacement and not repair?", a: "Wear on several slopes, repeat leaks or soft decking usually mean replacement. A single failed spot usually means repair. See [roof repair in Dallas, GA](/roof-repair-dallas-ga/)." },
       { q: "What does a new roof cost in Dallas?", a: "We price it after an inspection, in writing. For the factors behind the number, read the [roof replacement cost guide](/blog/roof-replacement-cost-dallas-ga/)." },
-      { q: "Do you help when storm damage is involved?", a: "Yes. We photograph damage and can meet your adjuster. We don't promise what insurance will approve." },
+      { q: "Do you help when storm damage is involved?", a: "Yes, we photograph damage and can meet your adjuster. We don't promise what insurance will approve." },
     ],
   },
   'hiram': {
     intro: "We replace roofs on Hiram homes: shingle roofs on family houses, mostly built in phases, where a whole street tends to wear out together. The job is a full tear-off to the deck, decking fixes where we find soft spots, then new underlayment, flashing, ventilation and architectural shingles. iRoofer Contractors is a family-owned crew from right down the road in Dallas since 2019. Gutters giving you trouble too? That's its own job. See [gutter repair & replacement in Hiram](/gutter-repair-replacement-hiram/). Ready for a written quote? Use [our contact page](/contact/) or call (470) 236-1410.",
     sections: [
       { h: "Matching the street without matching the corner-cutting",
-        p: "Hiram neighbourhoods tend to have been built in phases, which means an entire street can be reaching the end of the same roof at the same time. That has two consequences. First, homeowners here want a replacement that still reads as part of the neighbourhood, so we spend real time on colour selection against the brick and trim rather than handing you a swatch book. Second, it means a lot of these roofs were originally installed to the same builder-grade spec — three-tab, felt underlayment, minimal valley protection. A replacement is the chance to correct that rather than reproduce it." },
+        p: "Hiram neighborhoods tend to have been built in phases, which means an entire street can be reaching the end of the same roof at the same time. That has two consequences. First, homeowners here want a replacement that still reads as part of the neighborhood, so we spend real time on color selection against the brick and trim rather than handing you a swatch book. Second, it means a lot of these roofs were originally installed to the same builder-grade spec — three-tab, felt underlayment, minimal valley protection. A replacement is the chance to correct that rather than reproduce it." },
       { h: "The layer count decides the job",
         p: "Under the residential code a roof already carrying three layers has to come off to the deck rather than be covered again — and we take everything to the deck as standard regardless, because you cannot inspect what you cannot see. On Hiram homes that have been re-covered once already, the tear-off is heavier and the quote reflects it honestly rather than being discovered as a change order. Paulding County permitting comes into play if sheathing or framing has to be replaced; we pull it through the county's Building & Permitting Division and hand you the sign-off. No overlays." },
       { h: "How a Hiram replacement works",
-        p: "Inspect/measure → written proposal → tear-off → decking → underlayment/flashings → shingles/ridge → cleanup → walkthrough + warranty registration. Prefer a repair instead? See [roof repair in Hiram](/service-areas/hiram/#roof-repair). Wondering what drives the price? See [roof replacement cost factors](/blog/roof-replacement-cost-dallas-ga/). More about the area: [our Hiram service area](/service-areas/hiram/). Call (470) 236-1410 or https://iroofercontractors.com/contact/." },
+        p: "Inspect/measure → written proposal → tear-off → decking → underlayment/flashings → shingles/ridge → cleanup → walkthrough + warranty registration. Prefer a repair instead? See [roof repair in Hiram](/service-areas/hiram/#roof-repair). Wondering what drives the price? See [roof replacement cost factors](/blog/roof-replacement-cost-dallas-ga/). More about the area: [our Hiram service area](/service-areas/hiram/). Call (470) 236-1410 or [contact our Dallas team](/contact/)." },
       { h: "Storm / insurance cross-link",
-        p: "If hail or wind started this conversation, document first: /storm-damage-roof-repair-dallas-ga/ and /services/roof-insurance-claims/. No guaranteed claim outcomes." },
+        p: "If hail or wind started this conversation, get it documented first: see [storm damage roof repair in Dallas](/storm-damage-roof-repair-dallas-ga/) and [how we help with roof insurance claims](/services/roof-insurance-claims/). We don't guarantee claim approval." },
     ],
     faq: [
       { q: "Can you just go over my existing shingles?", a: "We do not. Overlays hide the deck, add weight, shorten the life of the new shingles and make future leaks harder to trace. Code requires a tear-off at three layers; we tear off at one." },
-      { q: "Everyone on my street is replacing their roof at once. Should I be suspicious of that?", a: "Not necessarily — phased-built neighbourhoods age together. Be suspicious of out-of-town crews who appear after a storm, take a deposit and are unreachable when the warranty matters." },
-      { q: "How do I choose a colour?", a: "Against your brick and trim, in daylight, with full-size samples on the roof — not from a brochure indoors. We bring them out. It is worth taking twenty minutes over." },
+      { q: "Everyone on my street is replacing their roof at once. Should I be suspicious of that?", a: "Not necessarily — phased-built neighborhoods age together. Be suspicious of out-of-town crews who appear after a storm, take a deposit and are unreachable when the warranty matters." },
+      { q: "How do I choose a color?", a: "Against your brick and trim, in daylight, with full-size samples on the roof — not from a brochure indoors. We bring them out. It is worth taking twenty minutes over." },
       { q: "Do I need a permit for a replacement in Hiram?", a: "Only if structural work is involved. Paulding County requires a permit for sheathing, rafter or truss work — which replacements sometimes uncover. We file it and hand you the inspection sign-off." },
       { q: "What does a roof replacement cost in Hiram, GA?", a: "Squares, pitch, access, layer count and decking condition all move it. We measure the roof — often by drone — and put a written figure in your hand. We do not quote roofs over the phone." },
     ],
@@ -393,30 +408,30 @@ localCopy['roof-replacement'] = {
   'douglasville': {
     intro: "A lot of Douglasville replacements start as a storm claim. Whether yours is insurance-funded or out of pocket changes the paperwork, but it should not change the standard of the installation.",
     sections: [
-      { h: "Building the roof back to spec, not to the cheque",
-        p: "When an insurer settles, the scope they write is not always the scope the roof needs — drip edge, ice-and-water at valleys, ridge vent and starter course are the line items most commonly left out. We build the roof correctly and supplement the claim for what the code and the manufacturer actually require, rather than quietly installing to whatever the initial cheque covers. That is the difference between a roof that carries a full manufacturer warranty and one that technically has shingles on it. Douglas County runs its own permitting department, with its own inspection line, and we file there when structural work is in scope." },
+      { h: "Building the roof back to spec, not to the check",
+        p: "When an insurer settles, the scope they write is not always the scope the roof needs — drip edge, ice-and-water at valleys, ridge vent and starter course are the line items most commonly left out. We document what the code and the manufacturer require, explain the proposed work to you and your adjuster, and build the roof correctly rather than quietly installing to whatever the initial check covers. Your insurer decides coverage, and we do not negotiate claims or act as public adjusters. That is the difference between a roof that carries a full manufacturer warranty and one that technically has shingles on it. Douglas County runs its own permitting department, with its own inspection line, and we file there when structural work is in scope." },
       { h: "Layers, decking and the three-layer rule",
         p: "Older Douglasville homes have often been re-covered at least once. The residential code requires that a roof already carrying three layers be stripped to the deck rather than covered again, and we strip regardless — an overlay makes it impossible to inspect the sheathing you are about to warranty. Once the deck is open we walk it sheet by sheet, replace what is soft, and dry it in before we leave with synthetic underlayment. Nothing sits open overnight, which in a Douglasville spring is not a small consideration." },
     ],
     faq: [
-      { q: "My insurance settled for less than your quote. What now?", a: "That is common and usually fixable. Missing line items — drip edge, valley membrane, ventilation, starter — get supplemented with documentation. We handle that with your adjuster rather than cutting the scope to fit the cheque." },
-      { q: "Will you install to whatever my insurance pays?", a: "No. We install to code and to manufacturer specification, because that is what keeps the warranty valid. If there is a genuine gap we will show you exactly what it is before you commit." },
+      { q: "My insurance settled for less than your quote. What now?", a: "It happens. We show you, with photos and the written scope, which items the roof needs that the estimate leaves out, such as drip edge, valley membrane, ventilation or starter. You can share that documentation with your insurer; they decide coverage. We do not negotiate claims, and we will not cut the scope to fit the check." },
+      { q: "Will you install to whatever my insurance pays?", a: "No, we install to code and to manufacturer specification, because that is what keeps the warranty valid. If there is a genuine gap we will show you exactly what it is before you commit." },
       { q: "Do you tear off or go over?", a: "Always tear off. Code mandates it at three layers; we do it at one, because the deck underneath is the part you are actually buying and nobody can inspect it through an overlay." },
       { q: "Who issues the permit in Douglasville?", a: "Douglas County runs its own building permit department with separate inspection scheduling. We file when structural work is in scope and hand you the sign-off." },
       { q: "What does a roof replacement cost in Douglasville, GA?", a: "Free inspection and a written measured quote — usually with drone imagery so you can see what we are pricing. Layer count and decking condition are the two biggest swing factors." },
     ],
   },
   'powder-springs': {
-    intro: "Powder Springs replacements split neatly between low-slope ranch roofs where the underlayment does the heavy lifting and steep two-storey elevations where access and safety drive the schedule.",
+    intro: "Powder Springs replacements split neatly between low-slope ranch roofs where the underlayment does the heavy lifting and steep two-story elevations where access and safety drive the schedule.",
     sections: [
       { h: "Pitch, access and what they actually cost",
-        p: "A shallow ranch roof and a steep two-storey with limited yard access are not the same job even at identical square footage. On the low slope, water moves slowly and lingers, so we extend ice-and-water coverage further than the minimum at valleys and eaves rather than treating the shingle as the only barrier. On the steep elevations, staging and fall protection add time, and any quote that ignores that difference is either padding the easy roof or under-pricing the hard one. We measure and price the roof you actually have, and we tell you which of those two categories you are in." },
+        p: "A shallow ranch roof and a steep two-story with limited yard access are not the same job even at identical square footage. On the low slope, water moves slowly and lingers, so we extend ice-and-water coverage further than the minimum at valleys and eaves rather than treating the shingle as the only barrier. On the steep elevations, staging and fall protection add time, and any quote that ignores that difference is either padding the easy roof or under-pricing the hard one. We measure and price the roof you actually have, and we tell you which of those two categories you are in." },
       { h: "Your contractor has to clear the city's bar",
-        p: "Powder Springs runs its own permitting rather than deferring to Cobb County, and it sets a genuinely meaningful requirement: a state licence, a local business licence and a code compliance bond before a contractor can be issued a permit. The city also publishes its own roofing building guide setting out what it expects to see. If you take one thing from this page, make it this — after the next hail event, ask every door-knocker for those three things. It filters out most of the people you do not want on your roof." },
+        p: "Powder Springs runs its own permitting rather than deferring to Cobb County, and it sets a genuinely meaningful requirement: a state license, a local business license and a code compliance bond before a contractor can be issued a permit. The city also publishes its own roofing building guide setting out what it expects to see. If you take one thing from this page, make it this — after the next hail event, ask every door-knocker for those three things. It filters out most of the people you do not want on your roof." },
     ],
     faq: [
-      { q: "What should I check before hiring anyone in Powder Springs?", a: "State licence, local business licence, and the code compliance bond the city requires. Those are Powder Springs' own conditions for issuing a permit, and they are easy to ask for and hard to fake." },
-      { q: "Does my low-slope ranch roof need anything special?", a: "Yes. Water moves slowly on shallow pitch and lingers at valleys and eaves, so we extend the ice-and-water membrane beyond the bare minimum. Treating the shingle as the only barrier is how low-slope roofs leak." },
+      { q: "What should I check before hiring anyone in Powder Springs?", a: "State license, local business license, and the code compliance bond the city requires. Those are Powder Springs' own conditions for issuing a permit, and they are easy to ask for and hard to fake." },
+      { q: "Does my low-slope ranch roof need anything special?", a: "Yes, water moves slowly on shallow pitch and lingers at valleys and eaves, so we extend the ice-and-water membrane beyond the bare minimum. Treating the shingle as the only barrier is how low-slope roofs leak." },
       { q: "Why is a steep roof more expensive?", a: "Staging and fall protection take time, and material moves up the roof more slowly. Same squares, different labour. We price the roof in front of us rather than a table average." },
       { q: "Who issues the permit?", a: "The City of Powder Springs, which permits separately from Cobb County. The city publishes a roofing guide setting out its requirements, and we confirm what your job needs at inspection." },
       { q: "What does a roof replacement cost in Powder Springs, GA?", a: "Pitch and access are the biggest variables here, alongside decking condition. Free measured inspection, written quote, and we walk you through what is driving the number." },
@@ -427,7 +442,7 @@ localCopy['roof-replacement'] = {
     sections: [
       {
         "h": "Jurisdiction first, shingles second",
-        "p": "A Marietta address does not automatically mean City of Marietta permitting. The county parcel lookup shows a tax district, and (4) MARIETTA means the city handles your permit while (9) UNINCORPORATED means Cobb County does. Getting this wrong costs weeks. If the property falls within one of Marietta's historic districts, exterior work can require a Certificate of Appropriateness under the city's historic preservation rules — which means your shingle profile and colour may need approval rather than simply being your choice. We establish all of this before we quote, not after you have signed."
+        "p": "A Marietta address does not automatically mean City of Marietta permitting. The county parcel lookup shows a tax district, and (4) MARIETTA means the city handles your permit while (9) UNINCORPORATED means Cobb County does. Getting this wrong costs weeks. If the property falls within one of Marietta's historic districts, exterior work can require a Certificate of Appropriateness under the city's historic preservation rules — which means your shingle profile and color may need approval rather than simply being your choice. We establish all of this before we quote, not after you have signed."
       },
       {
         "h": "What’s in a Marietta roof replacement",
@@ -466,7 +481,7 @@ localCopy['roof-replacement'] = {
         "h": "How replacement week goes",
         "p": "Before we start, you get the schedule and the scope in writing. On the day, we protect landscaping and the driveway, tear off, and walk the deck. If we find decking that needs replacing, we show you before we replace it. Then underlayment, flashing, shingles and ridge go on, and the yard gets a magnetic sweep before we leave. At the end we walk the job with you and register the warranty. How long it takes depends on size, layers, decking and weather, and we’ll tell you up front rather than guess here.",
         "blocks": [
-          "Not sure you need a full replacement? A lot of Marietta calls turn out to be repairs: [roof repair in Marietta](/service-areas/marietta/#roof-repair). Book a free inspection at https://iroofercontractors.com/contact/ or call (470) 236-1410."
+          "Not sure you need a full replacement? A lot of Marietta calls turn out to be repairs: [roof repair in Marietta](/service-areas/marietta/#roof-repair). [Book a free inspection](/contact/) or call (470) 236-1410."
         ]
       }
     ],
@@ -485,11 +500,11 @@ localCopy['roof-replacement'] = {
       },
       {
         "q": "Will you match the character of an older home?",
-        "a": "That is most of the job on Marietta's older streets. Profile and colour against original brick and trim matter, and so does flashing that is done properly rather than caulked."
+        "a": "That is most of the job on Marietta's older streets. Profile and color against original brick and trim matter, and so does flashing that is done properly rather than caulked."
       },
       {
         "q": "What does a roof replacement cost in Marietta, GA?",
-        "a": "Complex older rooflines with multiple valleys and dormers cost more than a simple gable, and decking work adds to it. Free measured inspection and a written quote that itemises the difference."
+        "a": "Complex older rooflines with multiple valleys and dormers cost more than a simple gable, and decking work adds to it. Free measured inspection and a written quote that itemizes the difference."
       },
       {
         "q": "Is roof installation the same as roof replacement?",
@@ -497,7 +512,7 @@ localCopy['roof-replacement'] = {
       },
       {
         "q": "My East Cobb HOA has shingle rules. Can you work with that?",
-        "a": "Yes. Check your covenants for approved colors or profiles before material is ordered, and we’ll quote options that fit them."
+        "a": "Yes, check your covenants for approved colors or profiles before material is ordered, and we’ll quote options that fit them."
       },
       {
         "q": "How long does a Marietta roof replacement take?",
@@ -560,7 +575,7 @@ localCopy['storm-damage-roof-repair'] = {
     intro: "After a Georgia storm, Dallas roofs often hide bruised shingles, lifted tabs, and quiet leaks that show up days later. iRoofer Contractors — family-owned since 2019 — walks the roof, photographs what we find, and explains repair versus replacement in plain English.",
     sections: [
       { h: "Why local storm repair",
-        p: "Owens Corning Contractor Rewards member. We document the way adjusters expect — no promised claim outcomes. Our Dallas-based crew treats storm calls like emergencies—not sales appointments. Call (470) 236-1410 or https://iroofercontractors.com/contact/." },
+        p: "Owens Corning Contractor Rewards member. We document the way adjusters expect — no promised claim outcomes. Our Dallas-based crew treats storm calls like emergencies—not sales appointments. Call (470) 236-1410 or [contact our Dallas team](/contact/)." },
       { h: "Our storm damage process in Dallas, GA",
         p: "Inspect → photos → tarp if needed → written scope → repair vs replace → complete + cleanup. Interior stains and attic moisture get noted too. Isolated missing shingles or flashing failures often repair cleanly; widespread bruising or an older roof near end of life may point to replacement. For urgent leaks, ask about emergency tarping in Dallas." },
       { h: "Hail damage roof repair in Dallas, GA",
@@ -568,14 +583,14 @@ localCopy['storm-damage-roof-repair'] = {
       { h: "Why Paulding storm cells hit Dallas hard",
         p: "Paulding sits where west Georgia storm cells organize before they reach Atlanta — straight-line wind that strips slopes and lifts ridge caps, hail that bruises mats without breaking them, and tree-limb strikes on wooded lots. We photograph with dates, check soft metals (vents, gutter aprons) for impact dents, and meet your adjuster on the roof when a claim applies. If the damage does not support a claim, we say so and quote the repair directly." },
       { h: "Call now for storm response in Dallas",
-        p: "Call (470) 236-1410. Storm hit your roof? Don't wait for the next rain. Speak with our local crew today for inspection, tarping, and claim documentation. https://iroofercontractors.com/contact/" },
+        p: "Call (470) 236-1410. Storm hit your roof? Don't wait for the next rain. Speak with our local crew today for inspection, tarping, and claim documentation. [Request a free roof inspection](/contact/)." },
     ],
     faq: [
       { q: "How soon after a storm should I get my Dallas roof inspected?", a: "As soon as it's safe. Hidden bruising and lifted shingles can leak on the next rain. Prompt photos also help if you file a claim. Call (470) 236-1410 for a Dallas inspection." },
       { q: "Will my insurance cover storm damage roof repair in Dallas, GA?", a: "Many policies cover sudden wind or hail damage, subject to deductibles and exclusions. We document findings and can walk you through a typical adjuster visit—we don't guarantee claim approval." },
       { q: "Do I always need a full replacement after hail?", a: "No — depends on how widespread the bruising is and the roof's age. We show you photos and put options in writing." },
       { q: "Should I file a claim for hail?", a: "Only if the damage and your deductible make sense — we'll say so honestly after we look." },
-      { q: "Do you offer emergency roof repair after storms in Dallas?", a: "Yes. We prioritize active leaks with tarping when needed, then move into permanent repair or replacement once the scope is clear. Emergency service is available when scheduling allows—call now or see emergency roof repair Dallas." },
+      { q: "Do you offer emergency roof repair after storms in Dallas?", a: "Yes, we prioritize active leaks with tarping when needed, then move into permanent repair or replacement once the scope is clear. Emergency service is available when scheduling allows—call now or see emergency roof repair Dallas." },
     ],
   },
   'hiram': {
@@ -595,7 +610,7 @@ localCopy['storm-damage-roof-repair'] = {
     ],
   },
   'douglasville': {
-    intro: "Douglasville takes straight-line wind off the ridge most springs, and hail cells track through Douglas County often enough that we know where to look before the ladder goes up. iRoofer Contractors is a family-owned crew based in nearby Dallas, GA since 2019. After a storm we tarp anything open to the weather, map the damage slope by slope, and give you a written scope you and your adjuster can both check. Call (470) 236-1410 or start at https://iroofercontractors.com/contact/.",
+    intro: "Douglasville takes straight-line wind off the ridge most springs, and hail cells track through Douglas County often enough that we know where to look before the ladder goes up. iRoofer Contractors is a family-owned crew based in nearby Dallas, GA since 2019. After a storm we tarp anything open to the weather, map the damage slope by slope, and give you a written scope you and your adjuster can both check. Call (470) 236-1410 or [request a free roof inspection](/contact/).",
     sections: [
       {
         "h": "Roof leaking after a Douglasville storm? Start here",
@@ -610,8 +625,8 @@ localCopy['storm-damage-roof-repair'] = {
         "p": "Hail scatters where wind is directional, so we read it differently. On the shingles we look for bruises: soft spots where granules have been knocked loose and the mat underneath is exposed or fractured. Off the shingles we check the soft metals: box vents, pipe-boot collars, flashing, gutters and downspouts. Dents there are dated evidence that ties the roof damage to a specific storm. We photograph it all by elevation, with a scale reference, because “the roof has hail damage” is a sentence an adjuster can argue with and a slope-by-slope photo set mostly isn’t. More: [our Georgia hail damage checklist](/blog/georgia-hail-storm-roof-checklist/)."
       },
       {
-        "h": "Claim scope, supplements, and building it back properly",
-        "p": "Insurers frequently write an initial scope that omits what the code and manufacturer actually require — drip edge, valley membrane, starter course, adequate ventilation. Those omissions are not usually bad faith, they are a desk estimate written without the roof in front of them, and they are correctable with documentation. We supplement rather than silently reducing the build to fit the cheque, because a roof installed outside manufacturer specification does not carry the warranty you think it does. Douglas County handles its own permitting and inspections when structural work is in scope.",
+        "h": "Claim scope, documentation, and building it back properly",
+        "p": "Insurers frequently write an initial scope that omits what the code and manufacturer actually require — drip edge, valley membrane, starter course, adequate ventilation. Those omissions are not usually bad faith, they are a desk estimate written without the roof in front of them, and documentation is how they get reviewed. We photograph the roof, explain the proposed work, and can meet your adjuster; your insurer decides coverage. We do not silently reduce the build to fit the check, because a roof installed outside manufacturer specification does not carry the warranty you think it does. Douglas County handles its own permitting and inspections when structural work is in scope.",
         "blocks": [
           "More on how we handle the claim side: [roof insurance claims help](/services/roof-insurance-claims/)."
         ]
@@ -628,7 +643,7 @@ localCopy['storm-damage-roof-repair'] = {
     faq: [
       {
         "q": "Do you do emergency roof repair in Douglasville, GA?",
-        "a": "Yes. Roofs open to weather and active leaks go to the front of the line. Call (470) 236-1410 and say water is coming in. We put on an emergency tarp as soon as the schedule and safe access allow, then come back for the permanent repair once it’s dry."
+        "a": "Yes, roofs open to weather and active leaks go to the front of the line. Call (470) 236-1410 and say water is coming in. We put on an emergency tarp as soon as the schedule and safe access allow, then come back for the permanent repair once it’s dry."
       },
       {
         "q": "Is it hail or wind damage, and does it matter?",
@@ -644,7 +659,7 @@ localCopy['storm-damage-roof-repair'] = {
       },
       {
         "q": "My insurer's estimate is lower than your quote. Is one of you wrong?",
-        "a": "Usually neither — their desk estimate often omits code-required items like drip edge, valley membrane or ventilation. That gets supplemented with documentation rather than by cutting the build quality."
+        "a": "Usually neither. A desk estimate often leaves out code-required items like drip edge, valley membrane or ventilation. We document those items with photos and a written scope you can share with your insurer, who decides coverage. We do not cut build quality to match the number."
       },
       {
         "q": "Do you do emergency tarping in Douglasville?",
@@ -656,7 +671,7 @@ localCopy['storm-damage-roof-repair'] = {
       },
       {
         "q": "Do I have to use the contractor my insurer suggests?",
-        "a": "No. You choose your contractor. A preferred-vendor list is a convenience for the insurer, not an obligation on you."
+        "a": "No, you choose your contractor. A preferred-vendor list is a convenience for the insurer, not an obligation on you."
       }
     ],
   },
@@ -664,16 +679,16 @@ localCopy['storm-damage-roof-repair'] = {
     intro: "After a hail event in Powder Springs your roof gets a lot of attention from people you did not call. Here is how to tell a legitimate inspection from a sales pitch.",
     sections: [
       { h: "The door-knocker filter",
-        p: "The City of Powder Springs requires any contractor pulling a permit here to hold a state licence, a local business licence and a code compliance bond. That is a genuinely useful filter and it costs you nothing to apply it at your front door. Ask for all three before anyone climbs on your roof, and be wary of anyone asking you to sign a document authorising them to deal with your insurer before you have seen a written scope. A legitimate contractor inspects, documents, and gives you a quote you can take to anyone." },
+        p: "The City of Powder Springs requires any contractor pulling a permit here to hold a state license, a local business license and a code compliance bond. That is a genuinely useful filter and it costs you nothing to apply it at your front door. Ask for all three before anyone climbs on your roof, and be wary of anyone asking you to sign a document authorising them to deal with your insurer before you have seen a written scope. A legitimate contractor inspects, documents, and gives you a quote you can take to anyone." },
       { h: "Documenting hail on a low-slope roof",
-        p: "Many Powder Springs homes are single-slope ranches, and hail behaves differently on a shallow pitch — impacts land closer to perpendicular, so bruising is often more pronounced than on a steep elevation catching the same storm at a glancing angle. We mark test squares, photograph soft-metal denting on gutters, vents and flashing as corroborating evidence, and drone the property so the whole roof is on record. Then we meet your adjuster on the roof and agree scope there rather than by correspondence." },
+        p: "Many Powder Springs homes are single-slope ranches, and hail behaves differently on a shallow pitch — impacts land closer to perpendicular, so bruising is often more pronounced than on a steep elevation catching the same storm at a glancing angle. We mark test squares, photograph soft-metal denting on gutters, vents and flashing as corroborating evidence, and drone the property so the whole roof is on record. Then we can meet your adjuster on the roof and agree scope there rather than by correspondence." },
     ],
     faq: [
       { q: "Someone knocked on my door after the hail. Should I sign anything?", a: "Not before you have a written scope you understand. Be especially careful with documents authorising a contractor to negotiate with your insurer on your behalf. Get the quote, keep the choice." },
-      { q: "How do I check a storm contractor is legitimate here?", a: "Ask for a Georgia state licence, a local business licence and proof of the code compliance bond Powder Springs requires. Without all three they cannot be issued a permit in this city." },
+      { q: "How do I check a storm contractor is legitimate here?", a: "Ask for a Georgia state license, a local business license and proof of the code compliance bond Powder Springs requires. Without all three they cannot be issued a permit in this city." },
       { q: "Does a low-slope roof get worse hail damage?", a: "It can present differently — shallow pitches catch impacts closer to perpendicular, so bruising is often more pronounced than on a steep slope hit by the same storm. We mark test squares to document it properly." },
-      { q: "Will you meet my adjuster on site?", a: "Yes. Agreeing scope on the roof with photographs in hand is far faster and far less contentious than arguing it by email after the fact." },
-      { q: "What does storm damage repair cost in Powder Springs, GA?", a: "If it is a covered claim, often your deductible plus any upgrades you choose. If it is not, we quote the repair in writing after a free inspection. We will tell you which it is." },
+      { q: "Will you meet my adjuster on site?", a: "Yes, agreeing scope on the roof with photographs in hand is far faster and far less contentious than arguing it by email after the fact." },
+      { q: "What does storm damage repair cost in Powder Springs, GA?", a: "We give you a written price after a free inspection. If you file a claim, your insurer decides what is covered and you are responsible for your deductible and anything the policy does not cover. We document the damage and explain the proposed work." },
     ],
   },
   'marietta': {
@@ -693,7 +708,7 @@ localCopy['storm-damage-roof-repair'] = {
     ],
   },
   'kennesaw': {
-    intro: "Storm damage in Kennesaw usually shows up one of two ways: a roof that’s plainly open after a cell blows through, or a leak that starts three rains later from shingles the wind lifted and quietly laid back down. We handle both for Kennesaw homes. iRoofer Contractors is family-owned in Dallas, GA since 2019. If water is coming in, we tarp first, then document every slope and make the permanent repair once the roof is dry. Call (470) 236-1410 or book at https://iroofercontractors.com/contact/.",
+    intro: "Storm damage roof repair in Kennesaw usually starts one of two ways: a roof that’s plainly open after a cell blows through, or a leak that starts three rains later from shingles the wind lifted and quietly laid back down. We handle both for Kennesaw homes. iRoofer Contractors is family-owned in Dallas, GA since 2019. If water is coming in, we tarp first. Then we inspect every slope (by drone when the roof is steep), photograph the damage with dates for your claim, and make the permanent repair once the roof is dry. Call (470) 236-1410 or [book a free roof inspection](/contact/).",
     sections: [
       {
         "h": "Emergency roof repair in Kennesaw: the first hour",
@@ -734,8 +749,39 @@ localCopy['storm-damage-roof-repair'] = {
         ]
       },
       {
-        "h": "Insurance: what we do and what we don’t",
-        "p": "We photograph damage slope by slope with dates, mark it on a roof diagram, write a scope an adjuster can check, and meet the adjuster on the roof if you want us there. When a desk estimate misses code-required items, we supplement it with documentation instead of quietly building a lesser roof to fit the cheque. What we won’t do is promise an approval or a payout. That’s between you, your policy and your carrier. If the damage won’t support a claim, we’ll say so and quote the repair directly. More on the claim side: [roof insurance claims help](/services/roof-insurance-claims/)."
+        "h": "Drone inspections and photo documentation",
+        "p": "A lot of Kennesaw homes are steep two-stories with dormers and long valleys, and a storm-soaked roof is not the place for anyone to be guessing their footing. When walking the roof isn’t the safe or useful option, we fly a drone over every slope. When it is, we walk it and get close. Either way, what you get back is the same:",
+        "blocks": [
+          {
+            "items": [
+              "Dated photos of each slope, marked on a simple roof diagram so you (and an adjuster) can see where each photo was taken.",
+              "Close-ups of the evidence that ties damage to a storm: creased tabs, bruised shingles, and dents in vents, flashing and gutters.",
+              "Attic photos when we can get in: wet decking, stains, daylight where there shouldn’t be any.",
+              "A plain-English finding: repair it, replace it, or nothing storm-related worth claiming. If there’s no real damage, we say so."
+            ]
+          },
+          "Not sure yet if the storm did anything? Our [Georgia hail damage roof checklist](/blog/georgia-hail-storm-roof-checklist/) covers what to look for from the ground before you call."
+        ]
+      },
+      {
+        "h": "How we help with the claim and the adjuster meeting",
+        "p": "We don’t file your claim for you, and we don’t promise approvals or payouts. That’s between you, your policy and your carrier. What we do is make the roof easy to evaluate:",
+        "blocks": [
+          {
+            "ordered": true,
+            "items": [
+              "Document first: the photo set and diagram above, plus a written scope an adjuster can check line by line.",
+              "Meet the adjuster on the roof if you want us there, so the scope gets agreed with photos in hand instead of over weeks of email.",
+              "Flag missed items: when a desk estimate leaves out code-required items, we send documentation for the adjuster to review rather than quietly building a lesser roof to fit the check.",
+              "Quote it straight if there’s no claim: if the damage won’t support a claim, we tell you and price the repair directly."
+            ]
+          },
+          "More on the claim side: [roof insurance claims help](/services/roof-insurance-claims/)."
+        ]
+      },
+      {
+        "h": "Cobb County context for Kennesaw homeowners",
+        "p": "Kennesaw sits in Cobb County, which has real flood history: the September 2009 flooding affected more than 1,600 homes countywide. Cobb County participates in FEMA’s Community Rating System at class 7, which comes with a 15% discount on NFIP flood insurance premiums. Flood coverage is a separate policy from the homeowners policy a wind or hail roof claim usually goes through, and the City of Kennesaw runs its own permitting, so ask your insurance agent which rating applies to your address. While we’re on the roof, we also look at the gutters and downspouts, because storm water that overshoots the gutters ends up against the foundation."
       },
       {
         "h": "Permits and the historic district ordering rule",
@@ -745,7 +791,7 @@ localCopy['storm-damage-roof-repair'] = {
     faq: [
       {
         "q": "Do you do emergency roof repair in Kennesaw?",
-        "a": "Yes. Active leaks and roofs opened by storms or limbs come ahead of routine work. Call (470) 236-1410, tell us water is coming in, and we’ll give you a real arrival window and tarp as soon as it’s safe to get on the roof."
+        "a": "Yes, active leaks and roofs opened by storms or limbs come ahead of routine work. Call (470) 236-1410, tell us water is coming in, and we’ll give you a real arrival window and tarp as soon as it’s safe to get on the roof."
       },
       {
         "q": "Are you open 24/7?",
@@ -766,11 +812,19 @@ localCopy['storm-damage-roof-repair'] = {
       {
         "q": "Will you work directly with my adjuster?",
         "a": "Yes, on site. Agreeing scope on the roof with photographs beats correspondence that drags on while the house keeps taking water."
+      },
+      {
+        "q": "Do you use drones for storm inspections in Kennesaw?",
+        "a": "Yes, when the roof is steep, wet or fragile, or when a drone simply gets the better view. You still get dated photos of every slope and a written finding."
+      },
+      {
+        "q": "Can you guarantee my insurance claim gets approved?",
+        "a": "No, and be wary of anyone who does. We document the damage, write a scope and can meet your adjuster. The decision belongs to your carrier under your policy."
       }
     ],
   },
   'acworth': {
-    intro: "In Acworth the storm damage that puts a hole in your roof usually arrives attached to a tree. Mature canopy is why the neighbourhood looks the way it does and why limb strikes are our most common emergency call here.",
+    intro: "In Acworth the storm damage that puts a hole in your roof usually arrives attached to a tree. Mature canopy is why the neighborhood looks the way it does and why limb strikes are our most common emergency call here.",
     sections: [
       { h: "Limb strikes, punctures and what to do first",
         p: "A limb strike is different from wind or hail: the damage is concentrated, structural, and often includes broken decking or a cracked rafter rather than just lost shingles. Stay off the roof. Call, and we will put on an emergency tarp so the interior is protected before the next rain, then assess what is actually broken underneath. Because a limb strike has an obvious cause and an obvious date, these claims tend to be less contested than hail — but the scope still needs documenting properly, including any structural member that has to be replaced rather than sistered." },
@@ -798,7 +852,7 @@ localCopy['storm-damage-roof-repair'] = {
       { q: "How fast can you tarp in Austell?", a: "As fast as we safely can when the deck is open. Sealing it first is both the right order of operations and protection for your claim, since insurers can reduce settlement for damage that worsened afterwards." },
       { q: "Does Cobb County give a flood insurance discount?", a: "Cobb participates in FEMA's Community Rating System at class 7, which earns residents a 15% discount on NFIP premiums. Worth confirming with your carrier that it is applied." },
       { q: "Do storm repairs need a permit in Austell?", a: "Austell falls under Cobb County. Surface repairs generally do not require a permit; structural work does. Floodplain permitting is governed separately under the county code." },
-      { q: "Will you meet my adjuster on the roof?", a: "Yes, with the documentation already prepared. Agreeing scope on site is faster and cleaner than negotiating it afterwards while the building keeps taking water." },
+      { q: "Will you meet my adjuster on the roof?", a: "We can, with the photos and written scope already prepared, so the adjuster sees the same damage we documented. We do not negotiate the claim; your insurer decides coverage." },
     ],
   },
 };
@@ -815,30 +869,30 @@ localCopy['gutter-repair-replacement'] = {
       { h: "Repair vs replacement",
         p: "Loose hangers and minor seams often repair. Chronic overflow, separation, or systemic undersizing → replacement sized correctly. We measure rather than defaulting, then put the recommendation in writing." },
       { h: "Roof + gutter together",
-        p: "Failing gutters soak eaves and can look like a \"roof leak.\" If stains track the perimeter, we check both — see also roof repair in Dallas. Call (470) 236-1410 or https://iroofercontractors.com/contact/." },
+        p: "Failing gutters soak eaves and can look like a \"roof leak.\" If stains track the perimeter, we check both — see also roof repair in Dallas. Call (470) 236-1410 or [contact our Dallas team](/contact/)." },
     ],
     faq: [
       { q: "My gutters overflow even though they are clean. Why?", a: "Almost always capacity or fall, not blockage. An undersized run or too few downspouts for the roof area will overshoot in a heavy Georgia downpour regardless of how clear it is." },
       { q: "Five-inch or six-inch gutters?", a: "It depends on the roof area and pitch feeding each run. Six-inch with properly placed downspouts is often the right answer on larger or steeper slopes. We measure rather than defaulting." },
       { q: "Do gutter guards actually work?", a: "They reduce cleaning, they do not eliminate it, and a cheap guard on an undersized gutter makes overflow worse. We will tell you whether yours is a guard problem or a capacity problem." },
       { q: "The wood behind my gutter is soft. Is that included?", a: "It has to be addressed — hanging new gutter on rotten fascia fails fast. We quote the fascia work separately so you can see exactly what it is, and we fix the detail that let water behind in the first place." },
-      { q: "Do I need a permit for gutter work in Dallas, GA?", a: "No. Paulding County requires permits for structural work, not gutters. If replacing rotten structural wood becomes part of the job we will tell you before we start." },
+      { q: "Do I need a permit for gutter work in Dallas, GA?", a: "No, Paulding County requires permits for structural work, not gutters. If replacing rotten structural wood becomes part of the job we will tell you before we start." },
     ],
   },
   'hiram': {
     intro: "On Hiram's exposed ridge-line lots, gutters take wind as well as water — and a run that has been pulled loose at one end quietly stops draining long before anyone notices.",
     sections: [
       { h: "Fall, fastening and wind",
-        p: "A gutter only works if it falls consistently toward the outlet, and at 965 feet with regular wind exposure, hangers work loose and runs sag out of pitch faster here than in sheltered neighbourhoods. A sag of half an inch in the wrong place turns a gutter into a trough that holds standing water, breeds mosquitoes, freezes in a Georgia cold snap and eventually pulls the fascia with its own weight. We check fall with a level rather than by eye, refasten with hidden hangers at proper spacing, and replace runs where the metal has already deformed." },
+        p: "A gutter only works if it falls consistently toward the outlet, and at 965 feet with regular wind exposure, hangers work loose and runs sag out of pitch faster here than in sheltered neighborhoods. A sag of half an inch in the wrong place turns a gutter into a trough that holds standing water, breeds mosquitoes, freezes in a Georgia cold snap and eventually pulls the fascia with its own weight. We check fall with a level rather than by eye, refasten with hidden hangers at proper spacing, and replace runs where the metal has already deformed." },
       { h: "Doing it once, alongside the roof",
-        p: "If you are already replacing the roof, doing the gutters at the same time is materially cheaper — the access is paid for, the drip edge and gutter apron can be integrated properly rather than retro-fitted, and there is no second mobilisation. Where homeowners lose money is in replacing a roof, then deciding a year later that the gutters were tired too, and paying for the same set-up twice. Gutter work does not require a permit in Paulding County; we will tell you if any structural wood replacement changes that." },
+        p: "If you are already replacing the roof, doing the gutters at the same time is materially cheaper — the access is paid for, the drip edge and gutter apron can be integrated properly rather than retro-fitted, and there is no second mobilization. Where homeowners lose money is in replacing a roof, then deciding a year later that the gutters were tired too, and paying for the same set-up twice. Gutter work does not require a permit in Paulding County; we will tell you if any structural wood replacement changes that." },
     ],
     faq: [
       { q: "Why do my gutters keep pulling away from the house?", a: "Usually hanger spacing, weight from standing water in a sagging run, or fascia that has already softened. On exposed Hiram lots wind accelerates all three. We fix the cause, not just the symptom." },
       { q: "Should I replace gutters at the same time as the roof?", a: "If they are near the end anyway, yes — the access is already paid for and the drip edge can be integrated properly. Doing it separately means paying to set up twice." },
-      { q: "There is standing water in my gutter. Is that a problem?", a: "Yes. It means the fall is wrong or the run has sagged. Standing water adds weight, accelerates the sag, and eventually takes the fascia with it." },
+      { q: "There is standing water in my gutter. Is that a problem?", a: "Yes, it means the fall is wrong or the run has sagged. Standing water adds weight, accelerates the sag, and eventually takes the fascia with it." },
       { q: "Seamless or sectional?", a: "Seamless, formed on site. Sectional gutter leaks at exactly the joints you do not need to have. With seamless the only joints are corners and outlets." },
-      { q: "Do I need a permit for gutters in Hiram?", a: "No. Paulding County requires permits for structural work only. If rotten structural wood has to be replaced we will flag it before starting." },
+      { q: "Do I need a permit for gutters in Hiram?", a: "No, Paulding County requires permits for structural work only. If rotten structural wood has to be replaced we will flag it before starting." },
     ],
   },
   'douglasville': {
@@ -853,22 +907,22 @@ localCopy['gutter-repair-replacement'] = {
       { q: "My gutters overflow only in heavy storms. Is that normal?", a: "It is common and it is still a problem. It means the run is sized for average rain, not for the burst rainfall Douglasville gets in spring — which is exactly when overflow does damage." },
       { q: "My gutters are dented after hail. Should I just replace them?", a: "Get them inspected and photographed first. Soft-metal denting is some of the strongest evidence that hail hit your address, and it corroborates damage to the roof. Replacing first removes the evidence." },
       { q: "How many downspouts do I need?", a: "It depends on the roof area feeding each run and the pitch. One downspout serving a large slope is the single most common cause of overflow we find. We calculate rather than guess." },
-      { q: "Do gutters need a permit in Douglasville?", a: "No. Douglas County permits structural work; gutters are not that. If rotten structural wood needs replacing we will tell you before we start." },
-      { q: "What does gutter replacement cost in Douglasville, GA?", a: "Linear footage, gutter size, downspout count and any fascia repair. Free inspection and a written quote that itemises those separately so you can see what you are paying for." },
+      { q: "Do gutters need a permit in Douglasville?", a: "No, Douglas County permits structural work; gutters are not that. If rotten structural wood needs replacing we will tell you before we start." },
+      { q: "What does gutter replacement cost in Douglasville, GA?", a: "Linear footage, gutter size, downspout count and any fascia repair. Free inspection and a written quote that itemizes those separately so you can see what you are paying for." },
     ],
   },
   'powder-springs': {
     intro: "On the low-slope ranch roofs common through Powder Springs, gutters carry more of the load than people expect — shallow pitch means water arrives slower but stays longer, and the run has to be right.",
     sections: [
-      { h: "Low pitch changes the drainage maths",
+      { h: "Low pitch changes the drainage math",
         p: "On a steep roof water arrives at the gutter fast and with momentum, which is why overshoot is the classic steep-roof gutter failure. On the shallow pitches common here the opposite problem dominates: water arrives slowly and spreads along the edge, so any low spot in the run collects, any inadequate fall holds, and debris that would be flushed off a steep roof settles instead. The fix is fall and outlet placement rather than simply bigger gutter, and it is worth getting a level on the existing run before anyone sells you a full replacement you may not need." },
       { h: "Licensing, bonds and who is allowed to work here",
-        p: "The City of Powder Springs permits separately from Cobb County and requires contractors to hold a state licence, a local business licence and a code compliance bond. Gutter work on its own does not require a permit, so that requirement is not directly triggered — but it is a reasonable standard to hold any contractor to regardless, and it is a fast way to sort a company that will honour a warranty from one that will not be reachable next spring." },
+        p: "The City of Powder Springs permits separately from Cobb County and requires contractors to hold a state license, a local business license and a code compliance bond. Gutter work on its own does not require a permit, so that requirement is not directly triggered — but it is a reasonable standard to hold any contractor to regardless, and it is a fast way to sort a company that will honour a warranty from one that will not be reachable next spring." },
     ],
     faq: [
       { q: "Do I need bigger gutters or just better fall?", a: "On a low-slope roof it is very often fall and outlet placement rather than size. We put a level on the existing run before recommending a replacement you may not need." },
       { q: "Why does debris sit in my gutters even without many trees?", a: "Shallow pitch does not flush. Water arrives slowly and spreads along the edge rather than washing debris through, so it settles. It is a pitch characteristic, not neglect." },
-      { q: "Do gutters require a permit in Powder Springs?", a: "No. The city permits building work, and gutters on their own are not that. It is still worth asking any contractor for the licence, business licence and bond the city requires of permit holders." },
+      { q: "Do gutters require a permit in Powder Springs?", a: "No, The city permits building work, and gutters on their own are not that. It is still worth asking any contractor for the license, business license and bond the city requires of permit holders." },
       { q: "Can you add downspouts without replacing everything?", a: "Often yes, and it is frequently the cheapest real fix. Adding capacity where the run is overloaded beats replacing a run that is otherwise sound." },
       { q: "What does gutter work cost in Powder Springs, GA?", a: "A realignment and extra downspout is a fraction of a full seamless replacement. We inspect free and tell you which one you actually need." },
     ],
@@ -886,7 +940,7 @@ localCopy['gutter-repair-replacement'] = {
       { q: "Does a historic district affect gutter replacement?", a: "It can. Profile and material are exterior changes, and Marietta's historic districts can require a Certificate of Appropriateness. Worth confirming before ordering material rather than after." },
       { q: "Can I keep half-round gutters?", a: "Yes, and on some older Marietta homes it is the right call aesthetically. We will price both honestly rather than steering you to standard K-style because it is quicker to hang." },
       { q: "Do gutters need a permit in Marietta?", a: "Gutter work on its own does not require a building permit. Design review in a historic district is a separate matter. Which authority applies depends on your tax district — city or unincorporated Cobb." },
-      { q: "What does gutter replacement cost in Marietta, GA?", a: "Profile, material, linear footage and any fascia repair. Older homes often need the flashing detail corrected too, and we itemise that rather than burying it." },
+      { q: "What does gutter replacement cost in Marietta, GA?", a: "Profile, material, linear footage and any fascia repair. Older homes often need the flashing detail corrected too, and we itemize that rather than burying it." },
     ],
   },
   'kennesaw': {
@@ -900,7 +954,7 @@ localCopy['gutter-repair-replacement'] = {
     faq: [
       { q: "Will you just replace what is there?", a: "Not automatically. We check roof area, pitch and downspout count so the new gutters can actually carry the water, rather than replacing like for like." },
       { q: "Where should my downspouts discharge?", a: "Clear of the foundation — extensions, splash blocks or a buried run to daylight. A downspout emptying at the base of the wall has just moved the problem from your roof to your footing." },
-      { q: "Do gutters need a permit in Kennesaw?", a: "No. The City of Kennesaw permits building work and does so online only. Gutters alone do not require it, though structural repair discovered during the job would." },
+      { q: "Do gutters need a permit in Kennesaw?", a: "No, The City of Kennesaw permits building work and does so online only. Gutters alone do not require it, though structural repair discovered during the job would." },
       { q: "Will the price change once you start?", a: "Only with your approval, after photographs, and only if the scope genuinely changes — fascia rot being the usual reason. The written number is the number." },
       { q: "What does gutter replacement cost in Kennesaw, GA?", a: "Linear footage, size, downspout count, and whether fascia repair is needed. Free inspection, written quote." },
     ],
@@ -911,14 +965,14 @@ localCopy['gutter-repair-replacement'] = {
       { h: "The honest version of the gutter guard conversation",
         p: "Under heavy canopy no guard eliminates cleaning. A good one converts a twice-yearly clear-out into an annual check, and a bad one traps a mat of wet leaf litter on top where you cannot see it and the gutter overflows behind it while looking pristine from the ground. What actually determines performance on a wooded Acworth lot is capacity: six-inch runs, more downspouts, oversized outlets. Get the capacity right first, then decide about guards. Anyone who leads with the guard and never mentions the sizing is selling a product rather than solving your drainage." },
       { h: "Wet slopes, standing debris and fascia",
-        p: "Shaded lots stay damp, and a gutter packed with decomposing leaf litter holds moisture against the fascia continuously rather than seasonally. That is why the fascia rot we find here tends to be worse than in open neighbourhoods with the same age of house. Replacing the gutter is only half the job if the wood behind it has gone. Acworth does not require a permit for ordinary repairs, and gutter work is not permitted work — but be aware the city charges a 100% penalty on top of the fee for work that did require a permit and started without one." },
+        p: "Shaded lots stay damp, and a gutter packed with decomposing leaf litter holds moisture against the fascia continuously rather than seasonally. That is why the fascia rot we find here tends to be worse than in open neighborhoods with the same age of house. Replacing the gutter is only half the job if the wood behind it has gone. Acworth does not require a permit for ordinary repairs, and gutter work is not permitted work — but be aware the city charges a 100% penalty on top of the fee for work that did require a permit and started without one." },
     ],
     faq: [
       { q: "Will gutter guards mean I never clean my gutters again?", a: "No, and anyone saying otherwise on a wooded Acworth lot is overselling. A good guard turns twice-yearly cleaning into an annual check. A bad one hides overflow until the fascia has gone." },
       { q: "What size gutters do I need under heavy trees?", a: "Usually six-inch with additional downspouts and oversized outlets. Capacity matters more than guards here, and it should be sorted first." },
-      { q: "My fascia is soft behind the gutter. How bad is that?", a: "It needs replacing — new gutter hung on rotten wood fails within a year. On shaded lots the rot is often worse than on comparable houses in open neighbourhoods, because the debris stays wet." },
-      { q: "Do gutters require a permit in Acworth?", a: "No. The city permits building work; gutters are not that. Note that Acworth charges a penalty of 100% of the permit fee for permitted work started without one, so it is worth knowing which category any job falls into." },
-      { q: "What does gutter replacement cost in Acworth, GA?", a: "Footage, size, downspout count and fascia repair, plus access on wooded lots. Free inspection and an itemised written quote." },
+      { q: "My fascia is soft behind the gutter. How bad is that?", a: "It needs replacing — new gutter hung on rotten wood fails within a year. On shaded lots the rot is often worse than on comparable houses in open neighborhoods, because the debris stays wet." },
+      { q: "Do gutters require a permit in Acworth?", a: "No, The city permits building work; gutters are not that. Note that Acworth charges a penalty of 100% of the permit fee for permitted work started without one, so it is worth knowing which category any job falls into." },
+      { q: "What does gutter replacement cost in Acworth, GA?", a: "Footage, size, downspout count and fascia repair, plus access on wooded lots. Free inspection and an itemized written quote." },
     ],
   },
   'austell': {
@@ -942,7 +996,7 @@ localCopy['gutter-repair-replacement'] = {
 // ──────────────────────────────────────────────────────── NEW CONSTRUCTION
 localCopy['new-construction'] = {
   'dallas-ga': {
-    intro: "New Dallas builds deserve a roof crew that treats the site like a neighbor’s house — because it is. iRoofer Contractors installs new-construction roofs from our shop in Dallas, GA. Family-owned since 2019. See [new construction roofing services](/services/new-construction/) for the service overview. Ready to talk? https://iroofercontractors.com/contact/ or (470) 236-1410.",
+    intro: "New Dallas builds deserve a roof crew that treats the site like a neighbor’s house — because it is. iRoofer Contractors installs new-construction roofs from our shop in Dallas, GA. Family-owned since 2019. See [new construction roofing services](/services/new-construction/) for the service overview. Ready to talk? [Contact our Dallas team](/contact/) or (470) 236-1410.",
     sections: [
       { h: "Dallas new builds — what we care about on site",
         p: "Schedule coordination with framing and weather. Deck condition and fastener patterns that match the shingle system. Ice/water shield and flashing details at valleys, eaves, chimneys, and walls. Ventilation that matches the attic design — not an afterthought. Daily cleanup so other trades can work. We install Owens Corning shingles as an Owens Corning Contractor Rewards member when that product is specified or selected. We work with Paulding County Building & Permitting on Constitution Blvd so dry-in windows stay tight." },
@@ -959,7 +1013,7 @@ localCopy['new-construction'] = {
       { q: "How do I get on the schedule?", a: "Contact form or (470) 236-1410 with address, timeline, and plans if available." },
       { q: "Do you work with builders on a schedule?", a: "That is most of our new construction work. We schedule against the framing inspection and dry in as soon as the deck is signed off, because a roofer who slips the schedule costs a builder far more than the roof." },
       { q: "Who pulls the permit on new construction in Dallas?", a: "New construction is fully permitted through Paulding County's Building and Permitting Division, here in Dallas. On builder projects it is typically part of the overall building permit; we coordinate our inspections into it." },
-      { q: "Can I choose the shingle on a spec build?", a: "If you are the buyer, usually yes, and earlier is better. Colour and profile are far easier to change before material is ordered than after the first squares are on the roof." },
+      { q: "Can I choose the shingle on a spec build?", a: "If you are the buyer, usually yes, and earlier is better. Color and profile are far easier to change before material is ordered than after the first squares are on the roof." },
       { q: "Is ventilation included?", a: "It is designed in, not added on. New construction is the one chance to balance intake and exhaust properly from the framing stage, and it is what determines how long the roof actually lasts." },
       { q: "What warranty comes with a new construction roof?", a: "The Owens Corning manufacturer warranty, which depends on installing to their specification. We register it in the homeowner's name at completion." },
     ],
@@ -977,7 +1031,7 @@ localCopy['new-construction'] = {
       { q: "What is kick-out flashing and why does it matter?", a: "It diverts water away from the wall where a roof edge meets a vertical surface. It is one of the most commonly omitted details in production building, and without it water gets inside the wall unseen. We fit it as standard." },
       { q: "How quickly can you dry a house in?", a: "As soon as the deck is ready and signed off. Hiram is minutes from our shop, so we can work in tight windows around framing rather than requiring a whole week blocked out." },
       { q: "Who handles permits on a new build in Hiram?", a: "New construction is permitted through Paulding County. On builder-led projects it is part of the overall building permit and we coordinate our work into that inspection sequence." },
-      { q: "Can homeowners hire you directly for a custom build?", a: "Yes. We work with builders and directly with homeowners, and on a self-managed build we will walk you through the specification decisions rather than just quoting squares." },
+      { q: "Can homeowners hire you directly for a custom build?", a: "Yes, we work with builders and directly with homeowners, and on a self-managed build we will walk you through the specification decisions rather than just quoting squares." },
     ],
   },
   'douglasville': {
@@ -990,23 +1044,23 @@ localCopy['new-construction'] = {
     ],
     faq: [
       { q: "What makes a new roof wind resistant?", a: "Nailing pattern and placement more than shingle choice, plus a proper starter course at eaves and rakes. The edge is where uplift begins, and it is the detail production crews skip most often." },
-      { q: "Do you follow the county inspection sequence?", a: "Yes. Douglas County runs its own building department and inspection scheduling. Our work slots into the wider sequence, which means we plan around the framing inspection rather than around our own calendar." },
+      { q: "Do you follow the county inspection sequence?", a: "Yes, Douglas County runs its own building department and inspection scheduling. Our work slots into the wider sequence, which means we plan around the framing inspection rather than around our own calendar." },
       { q: "Is high-wind nailing more expensive?", a: "Barely — a handful of extra fasteners per square. It is also a condition of the manufacturer's wind warranty, so skipping it costs far more than it saves." },
       { q: "Do you work for builders across county lines?", a: "Yes, and knowing that Douglas, Cobb and Paulding each run different processes is part of the job. That difference is where schedules quietly slip for crews who have not worked here before." },
-      { q: "Can you match a roof across a phased development?", a: "Yes. We record the exact manufacturer, line and colour so later phases match rather than being visibly a different batch or product." },
+      { q: "Can you match a roof across a phased development?", a: "Yes, we record the exact manufacturer, line and color so later phases match rather than being visibly a different batch or product." },
     ],
   },
   'powder-springs': {
     intro: "New construction inside Powder Springs city limits runs through the city's own permitting process, and it has requirements that catch out subcontractors who assume Cobb County rules apply.",
     sections: [
       { h: "The city's requirements are specific",
-        p: "Powder Springs issues its own building permits rather than deferring to Cobb County, and it requires each trade contractor to submit a state licence, a local business licence and a code compliance bond. There is a defined sequence — plan review, permit issue for foundation, an approved foundation survey before framing may begin — and the city publishes its own building guides including one for roofing. For a builder, a roofing subcontractor who already meets those conditions and knows the sequence is worth more than one who is marginally cheaper and discovers the requirements at the counter." },
+        p: "Powder Springs issues its own building permits rather than deferring to Cobb County, and it requires each trade contractor to submit a state license, a local business license and a code compliance bond. There is a defined sequence — plan review, permit issue for foundation, an approved foundation survey before framing may begin — and the city publishes its own building guides including one for roofing. For a builder, a roofing subcontractor who already meets those conditions and knows the sequence is worth more than one who is marginally cheaper and discovers the requirements at the counter." },
       { h: "Designing the roof into the house",
         p: "On new construction we would rather be involved before the roof geometry is final. Every additional valley, dormer and roof-to-wall transition is a permanent future maintenance point, and some of them appear on plans purely because they looked good in elevation. Where the design is settled, the work is in executing it properly: balanced ventilation designed from the framing stage, kick-out and step flashing at every wall termination, membrane in the valleys, and a starter course that is actually there." },
     ],
     faq: [
       { q: "Does Powder Springs permit its own new construction?", a: "Yes, the city permits separately from Cobb County, with its own plan review sequence and its own published building guides — including one for roofing." },
-      { q: "What does the city require of trade contractors?", a: "A state licence, a local business licence and a code compliance bond. Each trade contractor submits their own. It is worth confirming any subcontractor can meet it before the schedule depends on them." },
+      { q: "What does the city require of trade contractors?", a: "A state license, a local business license and a code compliance bond. Each trade contractor submits their own. It is worth confirming any subcontractor can meet it before the schedule depends on them." },
       { q: "Can you advise on roof design before plans are final?", a: "We would prefer it. Every extra valley, dormer and wall transition is a permanent maintenance point, and some exist only because they looked good in elevation." },
       { q: "How does the inspection sequence work here?", a: "Plan review, then permit for the foundation, then an approved foundation survey before framing begins. Roofing follows the framing inspection. Knowing the order matters more than most people expect." },
       { q: "Do you work with builders on multi-home projects?", a: "Yes, and consistency across phases is part of it — same crew, recorded material specification so later houses match the earlier ones." },
@@ -1016,16 +1070,16 @@ localCopy['new-construction'] = {
     intro: "New construction in Marietta is rarely a blank field. It is usually infill, a rebuild, or an addition on a street with existing character — and often inside a jurisdiction with an opinion about how it should look.",
     sections: [
       { h: "Building new on an established street",
-        p: "Infill work in Marietta has an aesthetic obligation the outer suburbs do not: a new roof on an old street is visible from the moment it goes on, and profile, colour and even shingle scale determine whether the house sits comfortably among its neighbours or announces itself. We spend real time on that specification. The technical work is standard new construction done properly — designed-in ventilation, membrane at valleys, step and kick-out flashing at every wall termination, correct starter course — but the specification conversation is longer here, and it should be." },
+        p: "Infill work in Marietta has an aesthetic obligation the outer suburbs do not: a new roof on an old street is visible from the moment it goes on, and profile, color and even shingle scale determine whether the house sits comfortably among its neighbors or announces itself. We spend real time on that specification. The technical work is standard new construction done properly — designed-in ventilation, membrane at valleys, step and kick-out flashing at every wall termination, correct starter course — but the specification conversation is longer here, and it should be." },
       { h: "Jurisdiction and design review",
         p: "Two things have to be settled before anything is ordered. First, whether your address is permitted by the City of Marietta or by Cobb County — the county parcel lookup shows the tax district, where (4) MARIETTA means the city and (9) UNINCORPORATED means the county. Second, whether the property falls within a historic district, in which case exterior work can require a Certificate of Appropriateness under the city's historic preservation ordinance, and roofing material is exterior. On infill next to a historic district that question is worth asking early rather than assuming." },
     ],
     faq: [
       { q: "Who permits new construction at my Marietta address?", a: "Depends on the tax district in the county parcel lookup — (4) MARIETTA means the City of Marietta, (9) UNINCORPORATED means Cobb County. This should be settled before anything is ordered." },
       { q: "Does a historic district affect a new build?", a: "It can, including on infill near one. Marietta's historic preservation rules can require a Certificate of Appropriateness for exterior work, and roofing material is exterior. Worth asking early." },
-      { q: "How do you choose a roof for a house on an old street?", a: "Profile, colour and scale against the neighbours, not just against the brick. A new roof on an established street is visible immediately, and it is a long time to live with the wrong call." },
+      { q: "How do you choose a roof for a house on an old street?", a: "Profile, color and scale against the neighbors, not just against the brick. A new roof on an established street is visible immediately, and it is a long time to live with the wrong call." },
       { q: "Do you do additions as well as full builds?", a: "Yes, and tying new roof geometry into existing structure well is its own skill — the transition is where these jobs leak if the flashing is treated as an afterthought." },
-      { q: "Can you work to an architect's specification?", a: "Yes. If the specification has gaps around ventilation or flashing details we will raise them rather than building in a problem and pointing at the drawing later." },
+      { q: "Can you work to an architect's specification?", a: "Yes, if the specification has gaps around ventilation or flashing details we will raise them rather than building in a problem and pointing at the drawing later." },
     ],
   },
   'kennesaw': {
@@ -1038,9 +1092,9 @@ localCopy['new-construction'] = {
     ],
     faq: [
       { q: "How does Kennesaw permitting work for a new build?", a: "Through the City of Kennesaw's own Building Services department, with online-only applications and a certificate-of-occupancy checklist at completion." },
-      { q: "What if the site is in the historic district?", a: "The Certificate of Appropriateness has to be approved before the building permit application — not alongside it. Worth building into the programme rather than discovering it at the counter." },
+      { q: "What if the site is in the historic district?", a: "The Certificate of Appropriateness has to be approved before the building permit application — not alongside it. Worth building into the schedule rather than discovering it at the counter." },
       { q: "Will you hold the dry-in date?", a: "That is the commitment. We schedule against the framing inspection rather than a hopeful date, because everything after us depends on the house being closed to weather." },
-      { q: "Do you coordinate with the other trades?", a: "Yes. Vents and other penetrations are much easier to flash properly when they are planned before the roof goes on than when they are cut in afterward." },
+      { q: "Do you coordinate with the other trades?", a: "Yes, vents and other penetrations are much easier to flash properly when they are planned before the roof goes on than when they are cut in afterward." },
     ],
   },
   'acworth': {
@@ -1054,7 +1108,7 @@ localCopy['new-construction'] = {
     faq: [
       { q: "Does tree cover change how you spec a new roof?", a: "It should. Algae-resistant shingles on shaded elevations, extended valley membrane where litter will collect, and gutters sized for a debris load. Cheap at build stage, expensive to retrofit." },
       { q: "Is new construction permitted in Acworth?", a: "Yes, fully — through the City of Acworth's Building Services department with inspections across the build. It is repairs like re-shingling that are exempt, not new construction." },
-      { q: "What is the penalty for unpermitted work?", a: "Acworth charges 100% of the standard permit fee on top of the fee itself for work started without a required permit. On new construction there is no grey area about whether one is needed." },
+      { q: "What is the penalty for unpermitted work?", a: "Acworth charges 100% of the standard permit fee on top of the fee itself for work started without a required permit. On new construction there is no gray area about whether one is needed." },
       { q: "Can you advise on roof geometry before plans are final?", a: "Yes, and it is worth doing. A valley placed directly under a mature limb is a maintenance obligation the owner inherits permanently, and it is free to avoid on paper." },
       { q: "Do you work with builders or homeowners?", a: "Both. On a self-managed build we walk you through the specification decisions rather than just pricing squares off a plan." },
     ],
@@ -1076,3 +1130,27 @@ localCopy['new-construction'] = {
     ],
   },
 };
+
+// ─────────────────────────────────────────────────────────────── NOV 2026 ADDITIONS
+// Merge the dedupe/depth pass from localCopyAdditions.js (see that file's header).
+for (const [svc, byCity] of Object.entries(additions)) {
+  for (const [city, a] of Object.entries(byCity)) {
+    const e = localCopy[svc]?.[city];
+    if (!e) throw new Error(`localCopyAdditions: no localCopy entry for ${svc}/${city}`);
+    if (a.intro) e.intro = a.intro;
+    if (a.rename) {
+      for (const sec of e.sections) if (a.rename[sec.h]) sec.h = a.rename[sec.h];
+      const missing = Object.keys(a.rename).filter((h) => !e.sections.some((s) => s.h === a.rename[h]));
+      if (missing.length) throw new Error(`localCopyAdditions: ${svc}/${city} rename target not found: ${missing.join(' | ')}`);
+    }
+    if (a.faqEdit) {
+      for (const f of e.faq || []) if (a.faqEdit[f.q]) f.a = a.faqEdit[f.q];
+    }
+    if (a.faqDrop) e.faq = (e.faq || []).filter((f) => !a.faqDrop.includes(f.q));
+    if (a.sections) {
+      const at = a.at ?? e.sections.length;
+      e.sections.splice(at, 0, ...a.sections);
+    }
+    if (a.faq) e.faq = [...(e.faq || []), ...a.faq];
+  }
+}

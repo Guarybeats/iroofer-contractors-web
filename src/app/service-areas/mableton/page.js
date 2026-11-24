@@ -54,7 +54,7 @@ const sections = [
     h2: 'Storm and hail damage, and insurance help',
     paras: [
       'Storms tracking northeast out of Douglas County cross south Cobb on their way toward the river, and wind, hail and limb strikes here are often partial: one or two slopes, a ridge, a dented vent. That kind of loss is easy to miss from the ground and easy to under-document.',
-      'After a storm we inspect free, tarp when the roof is open, and document with dated photos, soft-metal checks and a written scope. We meet your adjuster on the roof when you file. If the damage will not support a claim, we say so and quote the repair. Details: [storm damage roof repair](/storm-damage-roof-repair-dallas-ga/), [hail damage inspections](/hail-damage-roof-repair-dallas-ga/) and [roof insurance claims help](/services/roof-insurance-claims/).',
+      'After a storm we inspect free, tarp when the roof is open, and document with dated photos, soft-metal checks and a written scope. We can meet your adjuster on the roof when you file. If the damage will not support a claim, we say so and quote the repair. Details: [storm damage roof repair](/storm-damage-roof-repair-dallas-ga/), [hail damage inspections](/hail-damage-roof-repair-dallas-ga/) and [roof insurance claims help](/services/roof-insurance-claims/).',
     ],
   },
   {
@@ -78,7 +78,7 @@ const neighborhoods = [
 const faq = [
   {
     q: 'Do you work in Mableton?',
-    a: 'Yes. Mableton is part of our regular west-metro service area, worked from our shop in Dallas, GA. Call (470) 236-1410 or use https://iroofercontractors.com/contact/.',
+    a: 'Yes, Mableton is part of our regular west-metro service area, worked from our shop in Dallas, GA. Call (470) 236-1410 or [request a free roof inspection](/contact/).',
   },
   {
     q: 'Who issues the roofing permit in Mableton — the city or Cobb County?',
@@ -86,15 +86,15 @@ const faq = [
   },
   {
     q: 'Is a roof check really free?',
-    a: 'Yes. We inspect, take dated photos, and tell you what we found — repair, replacement, or nothing needed yet. No pressure. Book a [free roof check](/free-roof-check/).',
+    a: 'Yes, we inspect, take dated photos, and tell you what we found — repair, replacement, or nothing needed yet. No pressure. Book a [free roof check](/free-roof-check/).',
   },
   {
     q: 'Can you help with a storm or hail insurance claim?',
-    a: 'Yes. We document the damage, write a scope an adjuster can verify, and meet the adjuster on site. Your policy and your insurer decide what is covered, so we cannot promise a result, and we tell you when a claim may not hold.',
+    a: 'Yes, we document the damage, write a scope an adjuster can verify, and meet the adjuster on site. Your policy and your insurer decide what is covered, so we cannot promise a result, and we tell you when a claim may not hold.',
   },
   {
     q: 'Do you list prices online?',
-    a: 'No. Every roof is different. You get a written price after we see the roof.',
+    a: 'No, every roof is different. You get a written price after we see the roof.',
   },
 ];
 

@@ -99,12 +99,12 @@ export function inlineParts(str) {
     if (m[1]) {
       parts.push({ href: internalHref(m[2]), label: m[1] });
     } else if (m[0].startsWith('https://')) {
-      // Full site URL (e.g. the /contact/ CTA) stays visible as written, but clickable.
+      // Full site URL: render descriptive anchor text, never the raw URL (Nov 2026).
       let url = m[0];
       let trail = '';
       // Don't swallow sentence punctuation into the link.
       while (/[.,;:]$/.test(url)) { trail = url.slice(-1) + trail; url = url.slice(0, -1); }
-      parts.push({ href: internalHref(url), label: url });
+      parts.push({ href: internalHref(url), label: pathLabel(internalHref(url)) });
       if (trail) parts.push({ text: trail });
     } else {
       const path = m[4];

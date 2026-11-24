@@ -75,7 +75,7 @@ export const posts = [
   },
   {
     slug: 'georgia-hail-storm-roof-checklist',
-    title: 'Hail Damage on Your Georgia Roof: What It Looks Like and What to Do (6 Steps)',
+    title: 'Georgia Hail Damage Roof Checklist: What to Check and When to Call a Roofer',
     date: 'October 2025',
     excerpt: 'Hail damage is easy to miss from the ground. What bruised shingles and dented soft metals look like, a six-step checklist for the days after a storm, and how to choose a roofer.',
     readTime: '6 min read',

@@ -15,6 +15,8 @@ import ReviewButton from '@/components/ReviewButton';
 import { renderInline } from '@/components/InlineText';
 import CopySection from '@/components/CopySection';
 import { localCopy } from '@/lib/localCopy';
+import { cityAreaExtras } from '@/lib/cityAreaExtras';
+import { projectForCity, coverPhoto } from '@/lib/projects';
 import { brand, services, cities, cityPath, servicePath, serviceCityPath } from '@/lib/brand';
 
 const MUTED = '#52606b';
@@ -25,6 +27,9 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
   const seenQ = new Set(hubFaq.map((f) => f.q));
   const faq = [...hubFaq, ...((repair?.faq || []).filter((f) => !seenQ.has(f.q)))];
   const heading = h1 || `Roofing in ${city.name}, ${city.state}`;
+  const extra = cityAreaExtras[city.slug] || {};
+  const project = projectForCity(city.slug);
+  const cover = project ? coverPhoto(project) : null;
   return (
     <section className="sec-light sec-pad">
       <div className="tex" aria-hidden="true" />
@@ -42,12 +47,15 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
           <h1 style={{ fontSize: 'clamp(2.4rem,5vw,4rem)', fontWeight: 900, lineHeight: 1.02 }}>
             {heading}
           </h1>
+          {extra.lead ? (
+            <p style={{ color: MUTED, fontSize: '1.1rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>{renderInline(extra.lead)}</p>
+          ) : null}
           {intro.map((p, i) => (
-            <p key={i} style={{ color: MUTED, fontSize: i === 0 ? '1.1rem' : '1.02rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
+            <p key={i} style={{ color: MUTED, fontSize: i === 0 && !extra.lead ? '1.1rem' : '1.02rem', marginTop: 14, maxWidth: 680, lineHeight: 1.7 }}>
               {renderInline(p)}
             </p>
           ))}
-          <p style={{ marginTop: 18, maxWidth: 680 }}>
+          <p data-cta="" style={{ marginTop: 18, maxWidth: 680 }}>
             <a className="btn btn-ink" href="/contact/">Get a free roof inspection <span className="arr">→</span></a>
             {' '}
             <a className="btn btn-ghost" href={`tel:${brand.phone}`} style={{ marginLeft: 8 }}>{brand.phone}</a>
@@ -73,7 +81,7 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
             return (
               <Link key={s.slug} href={href} className="svc-card">
                 <h2 style={{ fontSize: '1.3rem', fontWeight: 800 }}>{s.title} in {city.name}</h2>
-                <p style={{ color: MUTED, marginTop: 8, fontSize: '.95rem' }}>{s.summary}</p>
+                <p style={{ color: MUTED, marginTop: 8, fontSize: '.95rem' }}>{extra.cards?.[s.slug] || s.summary}</p>
                 <span className="arr" style={{ color: 'var(--orange)', fontWeight: 800, marginTop: 12, display: 'inline-block' }}>
                   {cta} →
                 </span>
@@ -102,6 +110,30 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
           </div>
         ))}
 
+        {extra.section && (
+          <div style={{ marginTop: 44, maxWidth: 880 }}>
+            <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 14 }}>{extra.section.h2}</h2>
+            {extra.section.paras.map((p, j) => (
+              <p key={j} style={{ color: MUTED, fontSize: '1.02rem', lineHeight: 1.75, marginBottom: 14 }}>{renderInline(p)}</p>
+            ))}
+          </div>
+        )}
+
+        {project && (
+          <div id="local-project" style={{ marginTop: 44, maxWidth: 880, scrollMarginTop: 120 }}>
+            <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 14 }}>{project.cityHeading || `A completed project in ${city.name}`}</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(240px,1fr))', gap: 18, alignItems: 'start' }}>
+              <img src={cover.src} alt={cover.alt} width={cover.w} height={cover.h} loading="lazy" decoding="async" style={{ width: '100%', height: 'auto', borderRadius: 8 }} />
+              <div>
+                <p style={{ color: MUTED, fontSize: '1.02rem', lineHeight: 1.75, margin: 0 }}>{project.summary}</p>
+                <p style={{ marginTop: 12 }}>
+                  <Link href={`/projects/#${project.id}`} style={{ color: 'var(--orange)', fontWeight: 700 }}>See the {city.name} project photos and scope →</Link>
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+
         {repair && (
           <div id="roof-repair" style={{ marginTop: 44, maxWidth: 880, scrollMarginTop: 120 }}>
             <h2 style={{ fontSize: 'clamp(1.4rem,3vw,1.8rem)', fontWeight: 800, marginBottom: 14 }}>Roof repair in {city.name}, {city.state}</h2>
@@ -113,15 +145,16 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
         <div className="faq-grid" style={{ marginTop: 44, alignItems: 'start' }}>
           <div className="rv">
             <h2 style={{ fontSize: 'clamp(1.6rem,3vw,2.2rem)', fontWeight: 900 }}>
-              Why {city.name} homeowners choose iRoofer
+              {extra.trustH || `Why ${city.name} homeowners choose iRoofer`}
             </h2>
             <ul style={{ lineHeight: 2.1, color: MUTED, marginTop: 12 }}>
-              <li>Local &amp; family-owned, based in Dallas, GA since {brand.founded}.</li>
-              <li>Free, no-pressure roof inspections with photo documentation.</li>
-              <li>Honest upfront pricing — no surprise line items.</li>
-              <li>Storm &amp; insurance claim help, including adjuster meetings.</li>
-              <li>Daily cleanup and magnetic nail sweeps on every job.</li>
-              <li>Strong Google reviews from west-metro neighbors — family-owned accountability since {brand.founded}.</li>
+              {(extra.trust || [
+                `Local & family-owned, based in Dallas, GA since ${brand.founded}.`,
+                'Free, no-pressure roof inspections with photo documentation.',
+                'Honest upfront pricing — no surprise line items.',
+                'We document storm damage with photos and can meet your adjuster. Your insurer decides coverage.',
+                'Daily cleanup and magnetic nail sweeps on every job.',
+              ]).map((t) => <li key={t}>{t}</li>)}
             </ul>
             {neighborhoods.length > 0 && (
               <p style={{ marginTop: 18, color: MUTED }}>
@@ -129,14 +162,14 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
                 {neighborhoods.join(' · ')}
               </p>
             )}
-            <p style={{ marginTop: 18 }}>
+            <p data-cta="" style={{ marginTop: 18 }}>
               <a className="btn btn-ink" href="/contact/">
                 Talk about your roof <span className="arr">→</span>
               </a>
               {' '}
               <a className="btn btn-ghost" href={`tel:${brand.phone}`} style={{ marginLeft: 8 }}>{brand.phone}</a>
             </p>
-            <p style={{ marginTop: 14 }}>
+            <p data-cta="" style={{ marginTop: 14 }}>
               <a className="btn btn-ghost" href="/contact/">Request a free estimate →</a>
             </p>
             <p style={{ marginTop: 14, color: MUTED }}>
@@ -197,7 +230,7 @@ export default function CityAreaPage({ city, intro, sections = [], neighborhoods
           </div>
         )}
 
-        <div style={{ marginTop: 32, textAlign: 'center' }}>
+        <div data-cta="" style={{ marginTop: 32, textAlign: 'center' }}>
           <ReviewButton variant="orange" label="Leave us a Google review" />
         </div>
       </div>

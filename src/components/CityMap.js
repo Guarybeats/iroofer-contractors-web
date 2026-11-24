@@ -43,6 +43,7 @@ export default function CityMap({ city, state = 'GA', className }) {
           iRoofer Contractors serves <strong>{city}, {state}</strong> &amp; surrounding communities.
         </span>
         <a
+          data-cta=""
           href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
             `${city}, ${state}`
           )}`}
