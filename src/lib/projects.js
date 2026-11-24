@@ -105,7 +105,7 @@ export const projects = [
     serviceLabel: 'Roof repair',
     extraLinks: [{ href: '/storm-damage-roof-repair-dallas-ga/', label: 'Storm damage roof repair' }],
     title: 'Torn shingles documented on a shingle roof in Mableton',
-    summary: 'A roof check on a ranch home with a screened porch in Mableton, photographed on August 5, 2026. The roof has gray architectural-style shingles that still look fairly new, with hip caps, roof vents and a drip edge, but several shingle strips along a hip and in the field had torn loose and left the underlayment showing. The worst area is outlined in yellow on the photo below.',
+    summary: 'A roof check on a ranch home with a screened porch in Mableton, photographed on August 5, 2026. The roof has gray architectural-style shingles that still look fairly new, with hip caps, roof vents and a drip edge, but several shingle strips along a hip and in the field had torn loose and left the underlayment showing.',
     findings: 'Shingle strips torn off along a hip and in the open field, with the underlayment exposed; a slipped shingle course above the gutter; damaged flashing on a pipe boot.',
     scope: [
       'Roof check with dated photos',
@@ -114,7 +114,7 @@ export const projects = [
     ],
     photos: [
       { src: '/images/jobs/roof-mableton-ga-1.webp', w: 1400, h: 788, alt: 'Shingle roof on a ranch home with a screened porch in Mableton, GA', caption: 'The home and roof' },
-      { src: '/images/jobs/torn-shingles-mableton-ga-1.webp', w: 1280, h: 720, alt: 'Torn shingles along a hip outlined in yellow on a damage photo in Mableton, GA', caption: 'Torn shingles along a hip, marked for repair' },
+      { src: '/images/jobs/torn-shingles-mableton-ga-1.webp', w: 1280, h: 720, alt: 'Torn shingle strips along a hip exposing underlayment on a roof in Mableton, GA', caption: 'Torn shingle strips along a hip' },
       { src: '/images/jobs/torn-shingles-mableton-ga-2.webp', w: 720, h: 1280, alt: 'Missing shingle strip exposing underlayment on a roof in Mableton, GA', caption: 'Missing shingle strip, underlayment showing' },
       { src: '/images/jobs/roof-vent-hip-mableton-ga.webp', w: 1400, h: 642, alt: 'Hip caps and roof vent on a gray shingle roof in Mableton, GA', caption: 'Hip caps and roof vent' },
     ],

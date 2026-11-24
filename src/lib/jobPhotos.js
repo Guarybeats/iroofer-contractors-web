@@ -30,7 +30,7 @@ export const jobPhotos = {
 
   // Mableton, photographed Aug 5, 2026
   mabletonHouse: { src: `${J}roof-mableton-ga-1.webp`, w: 1400, h: 788, city: 'Mableton, GA', alt: 'Shingle roof on a ranch home with a screened porch in Mableton, GA', caption: 'The home and roof' },
-  mabletonTornOutlined: { src: `${J}torn-shingles-mableton-ga-1.webp`, w: 1280, h: 720, city: 'Mableton, GA', alt: 'Torn shingles along a hip outlined in yellow on a damage photo in Mableton, GA', caption: 'Torn shingles along a hip, marked for repair' },
+  mabletonTornHip: { src: `${J}torn-shingles-mableton-ga-1.webp`, w: 1280, h: 720, city: 'Mableton, GA', alt: 'Torn shingle strips along a hip exposing underlayment on a roof in Mableton, GA', caption: 'Torn shingle strips along a hip' },
   mabletonTornStrip: { src: `${J}torn-shingles-mableton-ga-2.webp`, w: 720, h: 1280, city: 'Mableton, GA', alt: 'Missing shingle strip exposing underlayment on a roof in Mableton, GA', caption: 'Missing shingle strip, underlayment showing' },
   mabletonTornField: { src: `${J}torn-shingles-mableton-ga-3.webp`, w: 1400, h: 788, city: 'Mableton, GA', alt: 'Shingles torn off below a hip leaving underlayment exposed on a roof in Mableton, GA', caption: 'Shingles torn off below a hip' },
   mabletonSlipped: { src: `${J}slipped-shingle-mableton-ga.webp`, w: 900, h: 1600, city: 'Mableton, GA', alt: 'Roofer lifting a slipped shingle course above the gutter during a roof repair check in Mableton, GA', caption: 'Slipped shingle course above the gutter' },
@@ -56,8 +56,8 @@ export const jobPhotoSets = {
   'replacement-powder-springs': { title: 'Before and after: a Powder Springs roof', photos: [P.powderSpringsBefore, P.powderSpringsAfter] },
   repair: { title: 'Roof repair problems we photograph', photos: [P.mabletonSlipped, P.mabletonTornStrip, P.mabletonPipeBoot] },
   leak: { title: 'Common leak sources from real jobs', photos: [P.mabletonPipeBoot, P.powderSpringsPipeBoot, P.mabletonTornField] },
-  storm: { title: 'Storm damage photos from real jobs', photos: [P.mabletonTornOutlined, P.mabletonTornField, P.dallasPitchGauge] },
-  'storm-dallas': { title: 'Storm inspection photos from real jobs', photos: [P.dallasPitchGauge, P.dallasRoof, P.mabletonTornOutlined] },
+  storm: { title: 'Storm damage photos from real jobs', photos: [P.mabletonTornHip, P.mabletonTornField, P.dallasPitchGauge] },
+  'storm-dallas': { title: 'Storm inspection photos from real jobs', photos: [P.dallasPitchGauge, P.dallasRoof, P.mabletonTornHip] },
   inspection: { title: 'Drone and on-roof inspection photos', photos: [P.alpharettaDroneTop, P.alpharettaDronePlanes, P.dallasPitchGauge] },
   gutter: { title: 'Gutter and roof-edge photos from real jobs', photos: [P.mabletonGutter, P.alpharettaFascia] },
   'gutter-powder-springs': { title: 'Gutter photos from real jobs', photos: [P.powderSpringsAfter, P.mabletonGutter] },
