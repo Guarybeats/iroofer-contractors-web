@@ -147,7 +147,7 @@ export default function BlogPostPage() {
             </ul>
 
             <h2>Stay Ahead of the Weather</h2>
-            <p><Link href="/contact/">Book a free roof inspection</Link> or call (470) 236-1410. Related: <Link href="/blog/georgia-winter-roof-inspection/">our winter roof checklist</Link>.</p>
+            <p><Link href="/contact/">Book a free roof inspection</Link> or call (470) 236-1410. If you already have a leak or missing shingles, see <Link href="/roof-repair-dallas-ga/">roof repair in Dallas, GA</Link>. Related: <Link href="/blog/georgia-winter-roof-inspection/">our winter roof checklist</Link>.</p>
             <RelatedPosts slug="roof-maintenance-calendar-dallas-ga" />
             <p><Link href="/contact/" className="btn btn-solid">Schedule an inspection →</Link></p>
           </div>

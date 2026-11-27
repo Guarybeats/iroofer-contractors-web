@@ -27,6 +27,7 @@ export const projects = [
     service: 'Roof replacement',
     serviceHref: '/roof-replacement-dallas-ga/',
     serviceLabel: 'Roof replacement in Dallas, GA',
+    extraLinks: [{ href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas, GA' }],
     title: 'Full roof replacement in Dallas, GA',
     summary: 'A full roof replacement on a Dallas home, finished with new architectural shingles. The close-up shows the shingles where they meet the pipe boot and the ridge vent.',
     scope: [

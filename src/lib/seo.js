@@ -7,6 +7,12 @@ import { brand } from './brand';
 const BASE = brand.url.replace(/\/$/, ''); // https://iroofercontractors.com
 export const OG_IMAGE = `${BASE}/assets/og-roof-replacement.jpg`;
 
+// JSON-LD Organization.logo / LocalBusiness.image.
+// Google wants a crawlable PNG or JPG at least 112x112. Do not point schema at logo.webp.
+// public/assets/logo.png is the same artwork as the visible header logo (/assets/logo.webp), 767x488.
+// Changing this URL or replacing the file is a schema change and needs an explicit yes before publish.
+export const SCHEMA_LOGO = `${BASE}/assets/logo.png`;
+
 /** Absolute site URL with trailing slash. Root → https://iroofercontractors.com/ */
 export function absoluteUrl(path = '') {
   if (!path || path === '/' || path === '') return `${BASE}/`;

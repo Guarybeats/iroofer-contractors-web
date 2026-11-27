@@ -5,6 +5,7 @@ import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
 import { brand } from '@/lib/brand';
 import { seo } from '@/lib/seo';
 import { FaqSchema } from '@/components/LocalSeo';
+import { renderInline } from '@/components/InlineText';
 
 export const metadata = seo({
   title: "Paulding County Roofing Contractor | iRoofer Contractors",
@@ -20,7 +21,7 @@ const sections = [
   },
   {
     "h": "Roof repair across Paulding County",
-    "p": "Leaks, lifted flashing, cracked pipe boots, and missing shingles are most of what we fix in Paulding County. We find the source, repair it to manufacturer spec, and tell you honestly when a repair is no longer worth it."
+    "p": "Leaks, lifted flashing, cracked pipe boots, and missing shingles are most of what we fix in Paulding County. For homes in the county seat, start with [roof repair in Dallas, GA](/roof-repair-dallas-ga/). We find the source, repair it to manufacturer spec, and tell you honestly when a repair is no longer worth it."
   },
   {
     "h": "Roof replacement",
@@ -65,6 +66,10 @@ const relatedLinks = [
   {
     "href": "/",
     "label": "Dallas GA roofing"
+  },
+  {
+    "href": "/roof-repair-dallas-ga/",
+    "label": "Roof repair in Dallas, GA"
   },
   {
     "href": "/service-areas/hiram/",
@@ -124,7 +129,7 @@ export default function Page() {
           {sections.map((sec) => (
             <div key={sec.h} className="rv" style={{ maxWidth: 780, marginBottom: 34 }}>
               <h2 style={{ fontSize: 'clamp(1.5rem,2.6vw,2rem)', fontWeight: 800, lineHeight: 1.15 }}>{sec.h}</h2>
-              <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, lineHeight: 1.75 }}>{sec.p}</p>
+              <p style={{ color: '#52606b', fontSize: '1.02rem', marginTop: 12, lineHeight: 1.75 }}>{renderInline(sec.p)}</p>
             </div>
           ))}
         </div>

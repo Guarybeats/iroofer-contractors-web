@@ -1,4 +1,5 @@
 import { brand } from '@/lib/brand';
+import { SCHEMA_LOGO } from '@/lib/seo';
 import { posts } from '@/lib/posts';
 
 const BASE = brand.url.replace(/\/$/, '');
@@ -41,7 +42,7 @@ export default function BlogPostingSchema({ slug, post: override }) {
       '@type': 'Organization',
       name: brand.name,
       url: `${BASE}/`,
-      logo: { '@type': 'ImageObject', url: `${BASE}/assets/logo.png` },
+      logo: { '@type': 'ImageObject', url: SCHEMA_LOGO },
     },
   };
 

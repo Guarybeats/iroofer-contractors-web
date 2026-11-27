@@ -12,7 +12,7 @@ import CopySection from '@/components/CopySection';
 import ServiceProcess from '@/components/ServiceProcess';
 
 export const metadata = seo({
-  title: "Roof Repair Dallas GA | Local Leak & Flashing Fixes",
+  title: "Roof Repair in Dallas, GA | Leaks & Flashing Fixes",
   description: "Roof repair in Dallas, GA from a family-owned Paulding County crew. Leaks, flashing, pipe boots, storm wear. Free inspection: (470) 236-1410.",
   path: '/roof-repair-dallas-ga',
 });

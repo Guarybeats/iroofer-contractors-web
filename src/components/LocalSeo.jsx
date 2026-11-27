@@ -1,6 +1,7 @@
 'use client';
 
 import { brand, services, servicePath } from '@/lib/brand';
+import { SCHEMA_LOGO } from '@/lib/seo';
 import { usePathname } from 'next/navigation';
 import { plainText } from '@/lib/inlineLinks';
 import { aggregateRatingNode } from '@/lib/reviewsConfig';
@@ -93,8 +94,8 @@ export function buildSeoGraph(path) {
     email: brand.email,
     priceRange: '$$',
     foundingDate: String(brand.founded),
-    image: `${brand.url}/assets/logo.png`,
-    logo: `${brand.url}/assets/logo.png`,
+    image: SCHEMA_LOGO,
+    logo: SCHEMA_LOGO,
     sameAs: [
       GBP_URL,
       'https://twitter.com/irooferc',

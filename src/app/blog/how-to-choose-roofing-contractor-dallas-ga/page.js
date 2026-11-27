@@ -84,7 +84,7 @@ export default function BlogPostPage() {
             </ul>
 
             <h2>Get a Second Opinion — Free</h2>
-            <p>Already have a quote? We'll review it line by line at no cost. No pressure to switch — just honest feedback on scope, materials, and pricing.</p>
+            <p>Already have a quote? We'll review it line by line at no cost. No pressure to switch — just honest feedback on scope, materials, and pricing. If you already know you need a repair, start with <Link href="/roof-repair-dallas-ga/">roof repair in Dallas, GA</Link>.</p>
             <RelatedPosts slug="how-to-choose-roofing-contractor-dallas-ga" />
             <p><Link href="/contact/" className="btn btn-solid">Request a free quote review →</Link></p>
           </div>
