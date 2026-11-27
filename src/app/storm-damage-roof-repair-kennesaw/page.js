@@ -12,9 +12,13 @@ import CopySection from '@/components/CopySection';
 
 export const metadata = seo({
   title: 'Storm Damage Roof Repair in Kennesaw, GA | iRoofer',
-  description: 'Storm damage roof repair in Kennesaw, GA: drone inspections, dated photos, tarping and adjuster meetings from a family-owned crew since 2019. (470) 236-1410.',
+  description: 'Storm damage roof repair in Kennesaw, GA. Free inspection after hail or wind, with dated photos from a local crew. Call (470) 236-1410.',
   path: '/storm-damage-roof-repair-kennesaw',
 });
+
+// Flip to true only when /services/hail-and-wind-damage/ ships in the same release.
+// The storm guide is still an unpublished draft. Leaving this false avoids a 404.
+const STORM_GUIDE_LIVE = false;
 
 // Page-specific copy lives in src/lib/localCopy.js — one entry per service x city.
 // Do not inline generic template text here; see the header of that file for why.
@@ -40,8 +44,8 @@ export default function Page() {
                 {renderInline(copy.intro)}
               </p>
               <div className="cta" style={{ marginTop: 28 }}>
-                <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>Water coming in? Call {brand.phone}</a>
-                <Link className="btn btn-solid" href="/contact/" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Request storm or emergency help <span className="arr">→</span></Link>
+                <a className="bigphone" style={{ display: 'inline-block', fontSize: '1.4rem', fontWeight: 700, color: 'var(--orange)' }} href={`tel:${brand.phone}`}>Call {brand.phone}</a>
+                <Link className="btn btn-solid" href="/free-roof-check/" style={{ marginLeft: 16, verticalAlign: 'middle' }}>Book a free inspection <span className="arr">→</span></Link>
               </div>
 
             </div>
@@ -82,7 +86,11 @@ export default function Page() {
             ))}
           </div>
           <p style={{ marginTop: 20, color: '#52606b' }}>
-            Before you call, run through our <Link href="/blog/georgia-hail-storm-roof-checklist/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Georgia hail damage roof checklist</Link>. Closer to Dallas or Paulding County? See <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>roof repair in Dallas, GA</Link> or <Link href="/emergency-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>emergency roof repair in Dallas, GA</Link>.
+            Before you call, run through our <Link href="/blog/georgia-hail-storm-roof-checklist/" style={{ color: 'var(--orange)', fontWeight: 700 }}>Georgia hail damage roof checklist</Link>
+            {STORM_GUIDE_LIVE ? (
+              <> or the <Link href="/services/hail-and-wind-damage/" style={{ color: 'var(--orange)', fontWeight: 700 }}>what to do after hail or wind</Link> guide</>
+            ) : null}
+            . Closer to Dallas or Paulding County? See <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>roof repair in Dallas, GA</Link> or <Link href="/emergency-roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>emergency roof repair in Dallas, GA</Link>.
           </p>
           <div style={{ marginTop: 28 }}>
             <Link href="/service-areas/kennesaw/" className="btn btn-ink">Roofing in Kennesaw: our service area <span className="arr">→</span></Link>

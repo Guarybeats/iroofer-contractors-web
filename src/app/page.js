@@ -245,7 +245,10 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
-          <p style={{ marginTop: 22 }}>
+          <p style={{ marginTop: 22, color: '#52606b' }}>
+            Need a leak or flashing fix in Dallas instead? See <Link href="/roof-repair-dallas-ga/" style={{ color: 'var(--orange)', fontWeight: 700 }}>roof repair in Dallas, GA</Link>.
+          </p>
+          <p style={{ marginTop: 16 }}>
             <Link href="/projects/" className="btn btn-ink">See the completed projects <span className="arr">→</span></Link>
           </p>
         </div>

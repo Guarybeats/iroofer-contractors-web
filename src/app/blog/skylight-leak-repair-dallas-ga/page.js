@@ -95,7 +95,7 @@ export default function BlogPostPage() {
             </ul>
 
             <h2>Leaking Skylight? We'll Diagnose It Free.</h2>
-            <p>Not sure if it's a leak or condensation? We'll climb up, run a hose test, and tell you exactly what's happening — no charge if you're in our service area. <Link href="/contact/">Book a free roof inspection</Link> or call (470) 236-1410.</p>
+            <p>Not sure if it's a leak or condensation? We'll climb up, run a hose test, and tell you exactly what's happening — no charge if you're in our service area. <Link href="/contact/">Book a free roof inspection</Link> or call (470) 236-1410. For other leaks, flashing, and pipe boots, see <Link href="/roof-repair-dallas-ga/">roof repair in Dallas, GA</Link>.</p>
             <RelatedPosts slug="skylight-leak-repair-dallas-ga" />
             <p><Link href="/contact/" className="btn btn-solid">Schedule a skylight inspection →</Link></p>
           </div>
