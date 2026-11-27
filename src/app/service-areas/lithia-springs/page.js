@@ -14,7 +14,7 @@ export const metadata = {
     type: 'website',
     siteName: 'iRoofer Contractors',
     locale: 'en_US',
-    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
+    images: [{ url: OG_IMAGE, alt: 'New roof on a home by iRoofer Contractors', width: 1200, height: 630 }],
     url: `${brand.url}/service-areas/lithia-springs/`,
     title: 'Lithia Springs GA Roof Repair & Replacement | iRoofer',
     description:

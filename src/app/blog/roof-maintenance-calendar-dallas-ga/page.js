@@ -12,7 +12,7 @@ export const metadata = {
     type: 'website',
     siteName: 'iRoofer Contractors',
     locale: 'en_US',
-    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/roof-maintenance-calendar-dallas-ga' },
+    images: [{ url: OG_IMAGE, alt: 'New roof on a home by iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/roof-maintenance-calendar-dallas-ga' },
 
   title: 'Roof Maintenance Calendar | Dallas, GA Homeowners',
   description: 'A seasonal checklist: what to inspect, clean, and repair each quarter to extend your roof life and catch small issues before they become expensive leaks.',

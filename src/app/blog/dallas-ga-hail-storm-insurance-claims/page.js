@@ -11,7 +11,7 @@ export const metadata = {
     type: 'website',
     siteName: 'iRoofer Contractors',
     locale: 'en_US',
-    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/dallas-ga-hail-storm-insurance-claims' },
+    images: [{ url: OG_IMAGE, alt: 'New roof on a home by iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/dallas-ga-hail-storm-insurance-claims' },
 
   title: 'Hail Damage Insurance Claims | Dallas, GA Roofing',
   description:

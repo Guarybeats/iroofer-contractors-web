@@ -12,7 +12,7 @@ export const metadata = {
     type: 'website',
     siteName: 'iRoofer Contractors',
     locale: 'en_US',
-    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/how-to-choose-roofing-contractor-dallas-ga' },
+    images: [{ url: OG_IMAGE, alt: 'New roof on a home by iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/how-to-choose-roofing-contractor-dallas-ga' },
 
   title: 'How to Choose a Roofing Contractor in Dallas, GA',
   description: 'Red flags, the questions that separate pros from storm chasers, and how to verify a roofer’s license and insurance in Georgia.',

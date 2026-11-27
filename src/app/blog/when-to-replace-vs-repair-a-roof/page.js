@@ -28,7 +28,7 @@ export const metadata = {
     locale: 'en_US',
     title: TITLE,
     description: DESC,
-    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
+    images: [{ url: OG_IMAGE, alt: 'New roof on a home by iRoofer Contractors', width: 1200, height: 630 }],
     url: URL,
   },
   title: TITLE,

@@ -109,3 +109,9 @@
 /services/roof-inspections/                /services/roof-inspection/          301
 /services/residential-roof-replacements    /roof-replacement-dallas-ga/  301
 /services/residential-roof-replacements/   /roof-replacement-dallas-ga/  301
+
+# Audit Nov 27 2026: hub URLs never built; send to Dallas pages
+/services/siding                  /siding-dallas-ga/                 301
+/services/siding/                 /siding-dallas-ga/                 301
+/services/exterior-painting       /exterior-painting-dallas-ga/      301
+/services/exterior-painting/      /exterior-painting-dallas-ga/      301

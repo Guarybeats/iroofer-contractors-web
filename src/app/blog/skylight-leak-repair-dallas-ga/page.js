@@ -12,7 +12,7 @@ export const metadata = {
     type: 'website',
     siteName: 'iRoofer Contractors',
     locale: 'en_US',
-    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/skylight-leak-repair-dallas-ga' },
+    images: [{ url: OG_IMAGE, alt: 'New roof on a home by iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/skylight-leak-repair-dallas-ga' },
 
   title: 'Skylight Leak Repair in Dallas, GA',
   description: 'Skylights are a common source of roof leaks in Dallas homes. Why they fail, leak vs. condensation, and when to repair or replace.',

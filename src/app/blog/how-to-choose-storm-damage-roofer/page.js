@@ -11,7 +11,7 @@ export const metadata = {
     type: 'website',
     siteName: 'iRoofer Contractors',
     locale: 'en_US',
-    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
+    images: [{ url: OG_IMAGE, alt: 'New roof on a home by iRoofer Contractors', width: 1200, height: 630 }],
     url: 'https://iroofercontractors.com/blog/how-to-choose-storm-damage-roofer/',
   },
   title: "How to Choose a Storm Damage Roofer | Dallas, GA | iRoofer",

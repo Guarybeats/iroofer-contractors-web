@@ -11,10 +11,10 @@ export const metadata = {
     type: 'website',
     siteName: 'iRoofer Contractors',
     locale: 'en_US',
-    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
+    images: [{ url: OG_IMAGE, alt: 'New roof on a home by iRoofer Contractors', width: 1200, height: 630 }],
     url: 'https://iroofercontractors.com/blog/water-stain-on-ceiling-roof-leak/',
   },
-  title: "Water Stain on Ceiling: Is It a Roof Leak? | Dallas, GA | iRoofer",
+  title: "Water Stain on Ceiling: Roof Leak? | Dallas, GA | iRoofer",
   description:
     "Water stain on your ceiling? How to tell a roof leak from a pipe or condensation, what to do now, and when to call a Dallas, GA roofer. (470) 236-1410.",
 };

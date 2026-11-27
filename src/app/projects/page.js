@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import { seo } from '@/lib/seo';
-import { projects } from '@/lib/projects';
+import { projects, jobSrcSet } from '@/lib/projects';
 import FreeRoofCheckCta from '@/components/FreeRoofCheckCta';
 
 export const metadata = seo({
   title: 'Completed Roofing Projects | iRoofer Contractors',
-  description: 'Recent roofing projects from iRoofer Contractors in Dallas, Powder Springs, Alpharetta and Mableton, GA, with real job photos, a before and after, and the scope of work.',
+  description: 'Recent iRoofer Contractors roofing projects in Dallas, Powder Springs, Alpharetta and Mableton, GA, with real job photos and the scope of work.',
   path: '/projects',
 });
 
@@ -47,7 +47,7 @@ export default function ProjectsPage() {
                   {ph.label ? (
                     <span style={{ display: 'inline-block', background: ph.label === 'After' ? 'var(--orange)' : 'var(--ink)', color: '#fff', fontWeight: 800, fontSize: '.78rem', letterSpacing: '.06em', textTransform: 'uppercase', padding: '3px 10px', borderRadius: 4, marginBottom: 6 }}>{ph.label}</span>
                   ) : null}
-                  <img src={ph.src} alt={ph.alt} width={ph.w} height={ph.h} loading={pi === 0 && i === 0 ? 'eager' : 'lazy'} decoding="async" style={{ width: '100%', height: 'auto', borderRadius: 8, border: '1px solid rgba(22,29,37,.1)' }} />
+                  <img src={ph.src} srcSet={jobSrcSet(ph)} sizes="(max-width: 700px) 92vw, 45vw" alt={ph.alt} width={ph.w} height={ph.h} loading={pi === 0 && i === 0 ? 'eager' : 'lazy'} decoding="async" style={{ width: '100%', height: 'auto', borderRadius: 8, border: '1px solid rgba(22,29,37,.1)' }} />
                   <figcaption style={{ color: MUTED, fontSize: '.9rem', marginTop: 6 }}>{ph.label ? <strong style={{ color: 'var(--ink)' }}>{ph.label}: </strong> : null}{p.city} · {ph.caption}</figcaption>
                 </figure>
               ))}
