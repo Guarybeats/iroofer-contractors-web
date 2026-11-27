@@ -129,3 +129,13 @@ export function projectForCity(citySlug) {
 export function coverPhoto(p) {
   return p.photos[p.coverIndex || 0];
 }
+
+/** Responsive srcset for a job photo under /images/jobs/ (480/800 WebP variants + original). */
+export function jobSrcSet(ph) {
+  if (!ph || !ph.src || !ph.src.startsWith('/images/jobs/') || !ph.src.endsWith('.webp')) return undefined;
+  const base = ph.src.slice(0, -5);
+  const parts = [`${base}-480.webp 480w`];
+  if (ph.w > 800) parts.push(`${base}-800.webp 800w`);
+  parts.push(`${ph.src} ${ph.w}w`);
+  return parts.join(', ');
+}

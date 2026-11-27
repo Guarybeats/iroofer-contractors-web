@@ -40,7 +40,7 @@ export const metadata = {
     title: `Roof Repair & Replacement in Dallas, GA | iRoofer`,
     description: `Family-owned Dallas, GA roofer since 2019: roof repair, replacement, and storm and hail damage with insurance photos. Free inspection. Call (470) 236-1410.`,
     locale: 'en_US',
-    images: [{ url: 'https://iroofercontractors.com/assets/hero.jpg', alt: 'iRoofer Contractors roofing a home in Dallas, GA', width: 1280, height: 960 }],
+    images: [{ url: 'https://iroofercontractors.com/assets/og-roof-replacement.jpg', alt: 'New roof on a home by iRoofer Contractors', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -48,7 +48,7 @@ export const metadata = {
     creator: '@irooferc',
     title: `Roof Repair & Replacement in Dallas, GA | iRoofer`,
     description: `Family-owned Dallas, GA roofer since 2019: roof repair, replacement, and storm and hail damage with insurance photos. Free inspection. Call (470) 236-1410.`,
-    images: ['https://iroofercontractors.com/assets/hero.jpg'],
+    images: ['https://iroofercontractors.com/assets/og-roof-replacement.jpg'],
   },
 };
 
@@ -106,8 +106,8 @@ export default function RootLayout({ children }) {
                   <a href="/storm-damage-roof-repair-dallas-ga/">Storm Damage</a>
                   <a href="/gutter-repair-replacement-dallas-ga/">Gutters</a>
                   <a href="/services/new-construction/">New Construction</a>
-                  <a href="/services/siding/">Siding</a>
-                  <a href="/services/exterior-painting/">Exterior Painting</a>
+                  <a href="/siding-dallas-ga/">Siding</a>
+                  <a href="/exterior-painting-dallas-ga/">Exterior Painting</a>
                   <a href="/emergency-roof-repair-dallas-ga/">Emergency</a>
                   <a href="/estimator/">Free Estimate</a>
                   <a href="/reviews/">Reviews</a>
@@ -171,8 +171,8 @@ export default function RootLayout({ children }) {
                 <a href="/roof-replacement-dallas-ga/">Roof Replacement</a>
                 <a href="/services/new-construction/">New Construction</a>
                 <a href="/gutter-repair-replacement-dallas-ga/">Gutter Repair &amp; Replacement</a>
-                <a href="/services/siding/">Siding Repair &amp; Replacement</a>
-                <a href="/services/exterior-painting/">Exterior Painting &amp; Staining</a>
+                <a href="/siding-dallas-ga/">Siding Repair &amp; Replacement</a>
+                <a href="/exterior-painting-dallas-ga/">Exterior Painting &amp; Staining</a>
                 <a href="/emergency-roof-repair-dallas-ga/">Emergency Roof Repair</a>
                 <a href="/storm-damage-roof-repair-dallas-ga/">Storm &amp; Insurance</a>
                 <a href="/hail-damage-roof-repair-dallas-ga/">Hail Damage Roof Repair</a>

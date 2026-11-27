@@ -235,7 +235,7 @@ export const serviceHubContent = {
       { href: '/siding-dallas-ga/', label: 'Siding in Dallas, GA' },
       { href: '/siding-hiram/', label: 'Siding in Hiram' },
       { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas, GA' },
-      { href: '/services/exterior-painting/', label: 'Exterior painting & staining' },
+      { href: '/exterior-painting-dallas-ga/', label: 'Exterior painting & staining' },
       { href: '/', label: 'Dallas GA roofing' },
       { href: '/contact/', label: 'Request a visit' },
     ],
@@ -285,7 +285,7 @@ export const serviceHubContent = {
     featuredLinks: [
       { href: '/exterior-painting-dallas-ga/', label: 'Exterior painting in Dallas, GA' },
       { href: '/exterior-painting-hiram/', label: 'Exterior painting in Hiram' },
-      { href: '/services/siding/', label: 'Siding repair & replacement' },
+      { href: '/siding-dallas-ga/', label: 'Siding repair & replacement' },
       { href: '/roof-repair-dallas-ga/', label: 'Roof repair in Dallas, GA' },
       { href: '/', label: 'Dallas GA roofing' },
       { href: '/contact/', label: 'Request a visit' },

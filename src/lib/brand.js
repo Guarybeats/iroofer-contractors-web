@@ -208,6 +208,8 @@ const SERVICE_CANONICAL = {
   'storm-damage-roof-repair': '/storm-damage-roof-repair-dallas-ga/',
   'gutter-repair-replacement': '/gutter-repair-replacement-dallas-ga/',
   'new-construction': '/services/new-construction/',
+  siding: '/siding-dallas-ga/',
+  'exterior-painting': '/exterior-painting-dallas-ga/',
 };
 export function servicePath(slug) {
   return SERVICE_CANONICAL[slug] || `/services/${slug}/`;

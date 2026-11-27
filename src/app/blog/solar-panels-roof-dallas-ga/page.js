@@ -12,7 +12,7 @@ export const metadata = {
     type: 'website',
     siteName: 'iRoofer Contractors',
     locale: 'en_US',
-    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/solar-panels-roof-dallas-ga' },
+    images: [{ url: OG_IMAGE, alt: 'New roof on a home by iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/solar-panels-roof-dallas-ga' },
 
   title: 'Solar Panels on Your Dallas, GA Roof: What to Know',
   description: 'Solar + roofing: the install order matters, flashing details make or break leaks, and removal/reinstall costs. Get it right the first time.',

@@ -5,7 +5,7 @@
 import { brand } from './brand';
 
 const BASE = brand.url.replace(/\/$/, ''); // https://iroofercontractors.com
-export const OG_IMAGE = `${BASE}/assets/logo.png`;
+export const OG_IMAGE = `${BASE}/assets/og-roof-replacement.jpg`;
 
 /** Absolute site URL with trailing slash. Root → https://iroofercontractors.com/ */
 export function absoluteUrl(path = '') {
@@ -39,7 +39,7 @@ export function seo({
       title,
       description,
       locale: 'en_US',
-      images: [{ url: OG_IMAGE, alt: `${brand.name} logo`, width: 1200, height: 630 }],
+      images: [{ url: OG_IMAGE, alt: `New roof on a home by ${brand.name}`, width: 1200, height: 630 }],
     },
     twitter: {
       card: 'summary_large_image',

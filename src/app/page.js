@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { projects, coverPhoto } from '@/lib/projects';
+import { projects, coverPhoto, jobSrcSet } from '@/lib/projects';
 import QuoteForm from '@/components/QuoteForm';
 import HeroForm from '@/components/HeroForm';
 import ReviewButton from '@/components/ReviewButton';
@@ -48,10 +48,10 @@ const svcs = [
     href: '/gutter-repair-replacement-dallas-ga/', cta: 'Gutter repair & replacement Dallas',
     body: 'Clogged or broken gutters can send water back under your shingles and against your home. We clean, fix, and replace seamless gutters so water flows away from your home, not into it.' },
   { n: '06', title: 'Siding Repair & Replacement', tag: 'Walls', img: '',
-    href: '/services/siding/', cta: 'Siding repair & replacement',
+    href: '/siding-dallas-ga/', cta: 'Siding repair & replacement',
     body: 'Torn panels, open corners, and water at the roof-to-wall joint. We repair or replace siding with the same local crew that does the roof.' },
   { n: '07', title: 'Exterior Painting & Staining', tag: 'Finish', img: '',
-    href: '/services/exterior-painting/', cta: 'Exterior painting & staining',
+    href: '/exterior-painting-dallas-ga/', cta: 'Exterior painting & staining',
     body: 'We paint and stain exteriors after honest prep. If the roof edge or trim is still taking on water, we tell you before anyone opens a bucket.' },
 ];
 
@@ -236,7 +236,7 @@ export default function HomePage() {
           <div className="cards" style={{ gridTemplateColumns: 'repeat(auto-fill,minmax(260px,1fr))', gap: 20 }}>
             {projects.map((p) => (
               <Link key={p.id} href={`/projects/#${p.id}`} className="svc-card rv" style={{ padding: 0, overflow: 'hidden' }}>
-                <img src={coverPhoto(p).src} width={coverPhoto(p).w} height={coverPhoto(p).h} alt={coverPhoto(p).alt} loading="lazy" decoding="async" style={{ width: '100%', height: 'auto', display: 'block' }} />
+                <img src={coverPhoto(p).src} srcSet={jobSrcSet(coverPhoto(p))} sizes="(max-width: 700px) 92vw, 33vw" width={coverPhoto(p).w} height={coverPhoto(p).h} alt={coverPhoto(p).alt} loading="lazy" decoding="async" style={{ width: '100%', height: 'auto', display: 'block' }} />
                 <div style={{ padding: '14px 16px 18px' }}>
                   <span className="eyebrow dark">{p.city}</span>
                   <h3 style={{ fontSize: '1.1rem', fontWeight: 800, marginTop: 4 }}>{p.title}</h3>

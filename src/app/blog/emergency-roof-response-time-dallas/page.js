@@ -12,7 +12,7 @@ export const metadata = {
     type: 'website',
     siteName: 'iRoofer Contractors',
     locale: 'en_US',
-    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/emergency-roof-response-time-dallas' },
+    images: [{ url: OG_IMAGE, alt: 'New roof on a home by iRoofer Contractors', width: 1200, height: 630 }], url: 'https://iroofercontractors.com/blog/emergency-roof-response-time-dallas' },
 
   title: 'Emergency Roof Repair: How Fast We Respond',
   description:

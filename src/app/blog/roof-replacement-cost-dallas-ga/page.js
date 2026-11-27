@@ -12,7 +12,7 @@ export const metadata = {
     type: 'website',
     siteName: 'iRoofer Contractors',
     locale: 'en_US',
-    images: [{ url: OG_IMAGE, alt: 'iRoofer Contractors', width: 1200, height: 630 }],
+    images: [{ url: OG_IMAGE, alt: 'New roof on a home by iRoofer Contractors', width: 1200, height: 630 }],
     url: 'https://iroofercontractors.com/blog/roof-replacement-cost-dallas-ga',
   },
   title: 'Roof Replacement Cost in Dallas, GA: Price Factors | iRoofer',

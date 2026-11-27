@@ -58,8 +58,8 @@ export default function ServiceAreas() {
               <Link key={l.href} href={l.href} className="chip" style={{ fontWeight: 700 }}>{l.label} →</Link>
             ))}
             <Link href="/paulding-county-roofing/" className="chip" style={{ fontWeight: 700 }}>Paulding County roofing →</Link>
-            <Link href="/services/siding/" className="chip" style={{ fontWeight: 700 }}>Siding →</Link>
-            <Link href="/services/exterior-painting/" className="chip" style={{ fontWeight: 700 }}>Exterior painting →</Link>
+            <Link href="/siding-dallas-ga/" className="chip" style={{ fontWeight: 700 }}>Siding →</Link>
+            <Link href="/exterior-painting-dallas-ga/" className="chip" style={{ fontWeight: 700 }}>Exterior painting →</Link>
             <Link href="/services/" className="chip" style={{ fontWeight: 700 }}>All services →</Link>
           </div>
         </div>
